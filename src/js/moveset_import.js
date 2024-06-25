@@ -4,15 +4,24 @@ function placeBsBtn() {
 
 	$("#import.bs-btn").click(function () {
 		var pokes = document.getElementsByClassName("import-team-text")[0].value;
-		var name = document.getElementsByClassName("import-name-text")[0].value.trim() === "" ? "Custom Set" : document.getElementsByClassName("import-name-text")[0].value;
+		console.log(pokes)
+		var name = "Custom Set"
 		addSets(pokes, name);
-		if (document.getElementById("cc-auto-refr").checked && $("#show-cc").is(":hidden")) {
-			window.refreshColorCode();
-		}
 		//erase the import text area
 		document.getElementsByClassName("import-team-text")[0].value="";
 	});
 }
+
+
+/*
+	for now only save the current trainer #p1
+*/
+function saveTrainerPokemon(){
+	$('#save-change').attr("hidden", true);
+	ExportPokemon($("#p1"));
+	$("#import.bs-btn").click()
+}
+
 
 function ExportPokemon(pokeInfo) {
 	var pokemon = createPokemon(pokeInfo);

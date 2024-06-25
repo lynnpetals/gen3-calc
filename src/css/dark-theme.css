@@ -3,7 +3,7 @@
 :root {
     /* Should make it easier to change colors in the future */
     --text: #e4e4e4;
-    --background: #1b1b1b;
+    /* --background: #1b1b1b; */
 
     --button-hover: black;
     --button-selected: #232e51;
@@ -19,7 +19,7 @@ html, body {
 }
 
 .btn {
-    background-color: var(--background);
+    background-color: rgb(31, 31, 31);
     color: var(--text);
 }
 
@@ -63,8 +63,11 @@ fieldset {
 }
 
 select {
-    background-color: var(--background);
+    background-color: rgb(31, 31, 31);
     color: var(--text);
+}
+input[type="number"] {
+    background:  rgb(31, 31, 31);
 }
 
 a.links-lighten {
@@ -89,12 +92,11 @@ input {
 }
 
 textarea {
-    background-color: var(--background);
+    background-color: rgb(31, 31, 31);
     color: var(--text);
 }
 
 .wrapper {
-    background-color: var(--background);
     color: var(--text);
 }
 
@@ -156,13 +158,14 @@ label:not(.btn) {
 }
 
 .select2-drop {
-    background-color: var(--background);
+    background-color: rgb(31, 31, 31);
     color: var(--text);
 }
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
     background-image: none;
+    background-color: rgb(31, 31, 31);
 }
 
 .select2-no-results {

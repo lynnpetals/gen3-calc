@@ -27,6 +27,7 @@ $(".game").change(function() {
     setdex = !isHack ? CUSTOMSETDEX[gameId] : CUSTOMHACKSETDEX[gameId];
 	partyOrder = !isHack ? CUSTOMPARTYORDER[gameId] : CUSTOMHACKPARTYORDER[gameId];
 	trainerNames = !isHack ? CUSTOMTRAINERNAMES[gameId] : CUSTOMHACKTRAINERNAMES[gameId];
+	trainerSprites = CUSTOMHACKTRAINERSPRITES_EK;
 	flags = !isHack ? CUSTOMFLAGS[gameId] : CUSTOMHACKFLAGS[gameId];
     if (typeof setdex === 'undefined') setdex = SETDEX[generation];
     clearField();
@@ -163,6 +164,11 @@ var HACKGEN = {
 var CUSTOMHACKTRAINERNAMES = [
 	undefined,
 	typeof CUSTOMHACKTRAINERNAMES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EK
+];
+
+var CUSTOMHACKTRAINERSPRITES = [
+	undefined,
+	typeof CUSTOMHACKTRAINERSPRITES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERSPRITES_EK
 ];
 
 var CUSTOMHACKPARTYORDER = [
@@ -387,10 +393,10 @@ function predictSwitchOrderEmerald() {
 	for (var i in partyMons) {
 		var dead = partyMons[i];
 		if ($(`.trainer-poke-switch[data-id='${dead.setName}']`).hasClass("dead")) {
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("Dead!");
+			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("💀");
 			deadList.push(dead);
 		} else {
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("That's it!");
+			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("👋");
 		}
 	}
 	for (var i in partyMons) {
@@ -523,7 +529,12 @@ function predictSwitchOrderEmerald() {
 		var xp = Math.floor(Math.floor(pokedex[dead.species].expYield * dead.level / 7) * 1.5);
 
 		if (nextMon) {
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(`${nextMon} (Phase ${phase})`);
+			var newPoke = document.createElement("img");
+			newPoke.className = "trainer-poke-switched right-side";
+			newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMon}.png`;
+			newPoke.title = `${phase}`;
+			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
+			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
 			$(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
 		}
 	}
@@ -545,7 +556,7 @@ function predictMidTurnSwitchEmerald(p1, p2) {
 	$(resultLocations[0][1]["move"]).removeClass("switch-risk");
 	$(resultLocations[0][2]["move"]).removeClass("switch-risk");
 	$(resultLocations[0][3]["move"]).removeClass("switch-risk");
-	$(".trainer-poke.right-side").removeClass("switch-risk-mon");
+	$(".trainer-poke-switch.right-side").removeClass("switch-risk-mon");
 	if (slower) {
 		var partySpecies = partyOrder[window.CURRENT_TRAINER];
 		for (var i in p1.moves) {
@@ -570,8 +581,9 @@ function predictMidTurnSwitchEmerald(p1, p2) {
 						var typeEffectiveness = typeEffectiveness2 !== undefined ? typeEffectiveness1 * typeEffectiveness2 : typeEffectiveness1;
 						if (typeEffectiveness > 1) {
 							$(resultLocations[0][i]["move"]).addClass("switch-risk");
-							$(".trainer-poke.right-side").each(function(index, e) {
-								if (index == j) $(this).addClass("switch-risk-mon");
+							$(".trainer-poke-switch.right-side").each(function(index, e) {
+								if (index == j) {
+									$(this).addClass("switch-risk-mon");}
 							});
 						}
 					}

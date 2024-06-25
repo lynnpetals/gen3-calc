@@ -117,8 +117,8 @@ function performCalculations() {
 	}
 	bestResult.prop("checked", true);
 	bestResult.change();
-	$("#resultHeaderL").text(p1.name + "'s Moves (select one to show detailed results)");
-	$("#resultHeaderR").text(p2.name + "'s Moves (select one to show detailed results)");
+	$("#resultHeaderL").text(p1.name + "'s Moves");
+	$("#resultHeaderR").text(p2.name + "'s Moves");
 }
 
 function calculationsColors(p1info, p2, advanced) {
@@ -213,7 +213,7 @@ $(".result-move").change(function () {
 			var desc = result.fullDesc(notation, false);
 			if (desc.indexOf('--') === -1) desc += ' -- possibly the worst move ever';
 			$("#mainResult").text(desc);
-			$("#damageValues").text("Possible damage amounts: (" + displayDamageHits(result.damage) + ")");
+			$("#damageValues").text("Rolls: (" + displayDamageHits(result.damage) + ")");
 		}
 	}
 });
@@ -265,6 +265,13 @@ function calculateAllMoves(gen, p1, p1field, p2, p2field) {
 		results[1][i] = calc.calculate(gen, p2, p1, p2.moves[i], p2field);
 	}
 	return results;
+}
+
+function saveTrigger(ev) {
+	var isUser = ev.originalEvent ? ev.originalEvent.isTrusted : false;
+	if (isUser || ev.added) { //ev.added is for the moves buttons
+		$('#save-change').attr("hidden", false);
+	}
 }
 
 $(".mode").change(function () {
@@ -319,11 +326,11 @@ $(document).ready(function () {
 		if (window.NO_CALC) {
 			return;
 		}
-		if (document.getElementById("cc-auto-refr").checked && $("#show-cc").is(":hidden")) {
-			window.refreshColorCode();
-		}
 		performCalculations();
 	});
+
+	$(".save-trigger").bind("change keyup", saveTrigger);
+	$(".ic").click(saveTrigger);
 
 	$(".bait-trigger").bind("change keyup", function (ev) {
 		if (window.NO_CALC) {

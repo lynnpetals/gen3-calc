@@ -129,23 +129,30 @@ a img {
 
 /* general page styling */
 html, body {
-    font: 10pt Verdana, sans-serif;
+    font: 10pt IBM Plex Mono, sans-serif;
     background-color: white;
     color: black;
     margin: 0;
     padding: 0;
     min-width: 100em;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
 }
 .wrapper {
     padding: 0 1em;
-    max-width: 1300px;
-    margin: 0 auto;
+    max-width: 40000px;
+    position: absolute;
 }
 .credits {
     clear: both;
     padding: 20px;
     max-width: 1285px;
     margin: 0px auto;
+    top:800px;
+    position:absolute;
 }
 div.wrapper > div > span {
     padding-right: 5px;
@@ -153,7 +160,9 @@ div.wrapper > div > span {
 fieldset {
     float: left;
     background-color: #F1F4F9;
-    border: 1px solid #AAAAAA;
+    border: 2px solid #AAAAAA;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
 }
 legend {
     font-weight: bold;
@@ -176,7 +185,6 @@ th {
     top: -10px;
 }
 .big-text {
-    text-align: left;
     font-weight: bold;
     font-size: 1.1em;
     margin: 0.5em 0;
@@ -186,6 +194,12 @@ th {
     cursor: pointer;
     opacity: 0.7;
 }
+#mainResult{
+    background-color: #222222;
+}
+#damageValues {
+    background-color: #222222;
+  }
 #tooltipText {
     position: absolute;
     left: 42%;
@@ -211,15 +225,15 @@ th {
     font-size: 0.8em;
 }
 .panel {
-    float: left;
     display: inline-block; /* required for honkaculate to work */
+    vertical-align: top;
 }
 .poke-info {
-    width: 32em;
+    width: 21em;
 }
 .field-info, .poke-import {
     text-align: center;
-    width: 27.5em;
+    width: 20.5em;
 }
 .holder-0 {
     position: absolute;
@@ -259,6 +273,9 @@ th {
     width: 4em;
 }
 .btn-xsmall {
+    width: 2em;
+}
+.btn-xxsmall {
     width: 1em;
 }
 .btn-left {
@@ -345,18 +362,22 @@ th {
 
 /* header */
 .move-result-group {
-    min-width: 50em;
-    margin: 1em 0 11.5em;
+    display: flex;
+    min-width: 30em;
+    justify-content: center;
 }
 .move-result-subgroup {
     float: left;
-    width: 50%;
+    width: 25%;
+    padding-bottom: 30px;
+    max-height: 110px;
 }
 .move-result-group .btn {
     margin-right: 1em;
 }
 .main-result-group {
     margin: 2em 0 1em;
+    text-align: center;
 }
 .result-move-header {
     font-size: 0.8em;
@@ -385,7 +406,7 @@ th {
     margin: 1em 0;
 }
 .set-selector {
-    width: 100%;
+    width: 60%;
 }
 .info-selectors select {
     width: 12em;
@@ -397,11 +418,19 @@ select.toxic-counter {
     font-size: 0.9em;
 }
 .move-selector {
-    width: 11.5em;
+    width: 9.5em;
 }
 .poke-info input.move-bp {
     width: 2em;
+    background:  rgb(31, 31, 31);
 }
+.percent-hp.calc-trigger {
+    background:  rgb(31, 31, 31);
+}
+.level.calc-trigger {
+    background: rgb(31, 31, 31);
+  }
+
 .move-type {
     width: 5.5em;
 }
@@ -453,14 +482,9 @@ table.field {
 
 /* select2 overrides */
 .select2-container .select2-choice > .select2-chosen {
-    width: 100%;
+    width: 10em;
 }
 
-.select2-chosen {
-	word-wrap: break-word;
-	text-overflow: inherit;
-	white-space: normal !important;
-}
 
 .small-select.select2-container .select2-choice {
     font-size: 0.9em;
@@ -485,8 +509,6 @@ table.field {
 }
 
 .import-team-text {
-    min-width: 27em;
-    min-height: 10em;
     resize: vertical;
 }
 
@@ -499,12 +521,13 @@ table.field {
 
 .hpbar {
     height: 4px;
-    border-style: solid;
+    border-style: none;
     border-top-width: 2px;
     border-right-width: 1px;
     border-bottom-width: 2px;
     border-left-width: 0.5px;
     border-radius: 3px;
+    margin-top: 15px;
 }
 
 .hpbar.hp-green {
@@ -552,7 +575,6 @@ table.field {
 .trainer-poke, .trainer-poke-switch {
     height: 100%;
     width: auto;
-    margin-right: 10px;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -573,7 +595,7 @@ table.field {
 
 .trainer-poke-switch-xp {
     vertical-align: middle !important;
-    text-align: right;
+    text-align: left;
 }
 
 .dead {
@@ -696,4 +718,119 @@ table.field {
 .info-paragraph > b:hover {
     background: var(--fieldset-color);
     color: unset;
+}
+
+#resultDamageL1, #resultDamageL2, #resultDamageL3, #resultDamageL4 {
+    background-color: #3d000cd8;
+}
+#resultDamageR1, #resultDamageR2, #resultDamageR3, #resultDamageR4 {
+    background-color: #00163fd8;
+}
+
+#importedSetsOptions{
+    display:none;
+}
+#ball-item {
+    position: fixed;
+    top: 365px;
+    left: -54px;
+  }
+  #trainer-mons-2 {
+    width: 4em;
+  }
+
+  #p2mon, #p1mon{
+    height: 100px;
+    width: 100px;
+    object-fit:none;
+}
+
+#p2mon{
+    object-fit: none;
+  object-position: bottom center;
+}
+
+#p2sprite {
+    position: fixed;
+    top: 11px;
+    left: 225px;
+    z-index: -1;
+  }
+
+.shitty-right-align {
+    margin-bottom: 10px;
+  }
+
+  
+.trainer-pok:hover,  .opposite-pok:hover{
+    outline: 2px solid;
+    outline-color: #1abc9c;
+}
+
+#item-box-frame {
+    z-index: 3;
+    width: 195px;
+    height: 215px;
+    top: 530px;
+    left: 112px;
+  }
+
+  .box-frame-header > legend {
+    font-size: larger;
+    text-align: unset;
+  }
+  .box-frame {
+    position: absolute;
+    background: var(--fieldset-color);
+    border: 1px solid #AAA;
+    padding: 3px;
+  }
+
+  .trainer-poke-switch-explain {
+    width: auto !important;
+  }
+
+  .trainer-poke-switched.right-side {
+    filter: sepia(66%);
+  }
+  legend > img {
+    margin-top: -11px;
+  }
+  
+  .visually-hidden:checked + .btn > img {
+  filter: grayscale(0%);
+}
+.btn > img {
+  filter: grayscale(100%);
+}
+
+#background-bg-image {
+    position:fixed;
+    z-index: -1;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#trainer-mons {
+    background: repeating-linear-gradient(
+        135deg, 
+        #101010e0, 
+        #101010e0 15px, 
+        #202020e0 15px, 
+        #202020e0 20px
+    )
+}
+#trainer-mons-2 {
+    background: repeating-linear-gradient(
+        135deg, 
+        #532c5ce0, 
+        #532c5ce0 15px, 
+        #632f6fe0 15px, 
+        #632f6fe0 20px
+    )
+}
+
+#resultHeaderL, #resultHeaderR {
+    background-color: #423d58;
 }
