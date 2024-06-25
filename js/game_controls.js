@@ -531,8 +531,9 @@ function predictSwitchOrderEmerald() {
 		if (nextMon) {
 			var newPoke = document.createElement("img");
 			newPoke.className = "trainer-poke-switched right-side";
-			newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMon}.png`;
-			newPoke.title = `${phase}`;
+			nextMonAsFilename = nextMon.split(' (')[0]
+			newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMonAsFilename}.png`;
+			newPoke.title = `${phase} [${nextMon}]`;
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
 			$(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);

@@ -4,7 +4,6 @@ function placeBsBtn() {
 
 	$("#import.bs-btn").click(function () {
 		var pokes = document.getElementsByClassName("import-team-text")[0].value;
-		console.log(pokes)
 		var name = "Custom Set"
 		addSets(pokes, name);
 		//erase the import text area
@@ -25,9 +24,10 @@ function saveTrainerPokemon(){
 
 function ExportPokemon(pokeInfo) {
 	var pokemon = createPokemon(pokeInfo);
+	var setName = $(".select2-chosen")[0].textContent.split(/^([^(@]+)(\((.+)\))? ?(@ (.+))?/)[3];
 	var EV_counter = 0;
 	var finalText = "";
-	finalText = pokemon.name + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
+	finalText = setName + " (" + pokemon.name + ")" + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
 	finalText += "Level: " + pokemon.level + "\n";
 	finalText += pokemon.nature && gen > 2 ? pokemon.nature + " Nature" + "\n" : "";
 	if (gen === 9) {
