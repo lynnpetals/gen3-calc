@@ -45,45 +45,29 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Magma Grunt #13 @ Magma Hideout",
             "Team Magma Grunt #14 @ Magma Hideout",
             "Team Magma Grunt #16 @ Magma Hideout",
-            "Aqua Admin Matt #2"
+            "Aqua Admin Matt #2",
+            "Champion ALB",
+            "Champion amymae"
         ]
     },
     "badge": {
         "none": [
             // Route 102
-            "Youngster Calvin",
-            "Bug Catcher Rick",
-            "Lass Tiana",
-            "Bug Catcher Allen",
             // Route 104 (South)
             "Bird Keeper Billy #1",
-            "Fisherman Darian",
-            "Lady Cindy",
             // Petalburg Woods
-            "Bug Maniac Lyle",
-            "Bug Catcher James",
             "Team Magma Grunt @ Petalburg Woods",
             // Route 104 (North)
-            "Rich Boy Winston",
-            "Lass Haley",
-            "Twins Gina & Mia",
-            "Pokémon Trainer Red #1",
             // Rustboro Gym
             "School Kid Josh",
             "School Kid Tammy",
             "Hiker Marc",
-            "Leader Roxanne"
+            "Leader Roxanne",
         ],
         "stoneBadge": [
+            // Route 116
             // Rusturf Tunnel
             "Team Aqua Grunt @ Rusturf Tunnel",
-            // Rustboro City
-            "Pokémon Trainer May #1.5 [Torchic]",
-            "Pokémon Trainer May #1.5 [Mudkip]",
-            "Pokémon Trainer May #1.5 [Treecko]",
-            "Pokémon Trainer Brendan #1.5 [Torchic]",
-            "Pokémon Trainer Brendan #1.5 [Mudkip]",
-            "Pokémon Trainer Brendan #1.5 [Treecko]",
             // Dewford Gym
             "Battle Girl Laura",
             "Black Belt Takao",
@@ -96,63 +80,29 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Aqua Grunt @ Route 106",
             "Fisherman Elliot",
             // Route 109
-            "Sailor Huey",
-            "Tuber Gwen",
-            "Tuber Austina",
-            "Bird Keeper Elijah",
-            "Fisherman Carter",
-            "Tuber Ricky",
-            "Tuber Hailey",
-            "Sailor Edmond",
-            "Tuber Lola",
-            "Tuber Chandler",
             // Slateport City
             "Team Aqua Grunt #1 @ Slateport City",
             "Team Aqua Grunt #2 @ Slateport City",
             // Route 110
-            "Pokéfan Isabel",
-            "Pokéfan Kaleb",
-            "Psychic Edward",
-            "Psychic Jaclyn",
-            "Youngster Timmy",
-            "Collector Edwin",
-            "Guitarist Joseph",
             "Pokémon Trainer May #2 [Torchic]",
             "Pokémon Trainer May #2 [Mudkip]",
             "Pokémon Trainer May #2 [Treecko]",
             "Pokémon Trainer Brendan #2 [Torchic]",
             "Pokémon Trainer Brendan #2 [Mudkip]",
             "Pokémon Trainer Brendan #2 [Treecko]",
-            "Triathlete Alyssa",
-            "Fisherman Dale",
             // Mauville City
             "Pokémon Trainer Wally #1",
             // Route 117
-            "Triathlete Melina",
-            "Triathlete Dylan",
-            "Sr and Jr Anna & Meg",
-            "Battle Girl Aisha",
-            "Pokémon Breeder Lydia",
-            "Pokémon Breeder Isaac",
-            "Psychic Brandi",
-            "Triathlete Maria",
-            "Bug Maniac Derek",
             // Mauville Gym
             "Lady Vivian",
             "Guitarist Kirk",
             "Fisherman Ben",
             "Bug Maniac Angelo",
             "Collector Shawn",
-            "Leader Wattson"
+            "Leader Wattson",
         ],
         "dynamoBadge": [
             // Route 111
-            "Picnicker Bianca",
-            "Kindler Hayden",
-            "Camper Tyron",
-            "Aroma Lady Celina",
-            "Picnicker Irene",
-            "Camper Travis",
             // Route 112 (South)
             "Team Magma Grunt #1 @ Route 112",
             "Team Magma Grunt #2 @ Route 112",
@@ -165,20 +115,8 @@ var CUSTOMHACKFLAGS_EK = {
             "Black Belt Daisuke",
             "Cooltrainer Brooke",
             // Route 113
-            "Pokémaniac Wyatt",
-            "Dragon Tamer Lawrence",
-            "Ninja Boy Lung",
-            "Youngster Dillon",
-            "Twins Tori & Tia",
-            "Picnicker Sophie",
-            "Bird Keeper Coby",
-            "Ninja Boy Lao",
-            "Parasol Lady Madeline",
-            "Pokémon Trainer Red #2",
+            "Pokémon Trainer Red",
             // Route 114
-            "Pokémaniac Steve",
-            "Sr and Jr Tyra & Ivy",
-            "Kindler Bernie",
             "Team Magma Grunt #1 @ Route 114",
             "Team Magma Grunt #2 @ Route 114",
             "Team Magma Grunt #3 @ Route 114",
@@ -188,6 +126,8 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Magma Grunt #7 @ Route 114",
             "Team Magma Grunt #8 @ Route 114",
             "Team Magma Grunt #9 @ Route 114",
+            // Route 115
+            "Black Belt Nob",
             // Mt. Chimney
             "Team Magma Grunt #1 @ Mt. Chimney",
             "Team Magma Grunt #2 @ Mt. Chimney",
@@ -209,50 +149,27 @@ var CUSTOMHACKFLAGS_EK = {
             "Pokémaniac Axle",
             "Expert Keegan",
             "Leader Flannery",
-            // Route 111
+            //Route 111
             "Camper Drew",
-            "Camper Beau",
-            "Picnicker Heidi",
+            "Camper Beau", 
+            "Picnicker Heidi", 
             "Picnicker Becky",
             "Ruin Maniac Dusty",
-            "Picnicker Celia",
-            "Camper Branden",
             // Petalburg Gym
-            "Triathlete Randall",
             "Triathlete Mary",
             "Pokéfan Parker",
             "Pokéfan Alexia",
             "Pokémon Breeder George",
             "Cooltrainer Jody",
             "Cooltrainer Berke",
-            "Leader Norman"
+            "Triathlete Randall",
+            "Leader Norman",
         ],
         "balanceBadge": [
-            // Route 115
-            "Battle Girl Cyndy",
-            "Ninja Boy Jaiden",
-            "Triathlete Kyra",
-            "Black Belt Koichi",
-            "Battle Girl Helene",
-            "Psychic Alix",
-            "Expert Timothy",
-            // Route 105
-            "Ruin Maniac Foster",
-            "Bird Keeper Josue",
-            "Ruin Maniac Andres",
-            // Route 108
-            "Team Aqua Grunt @ Route 108",
-            "Cooltrainer Carolina",
-            "Sailor Cory",
-            "Fisherman Wade",
             // Route 118
-            "Interviewers Gabby & Ty #2",
+            "Fisherman Wade",
             "Fisherman Barny",
             "Bird Keeper Perry",
-            "Youngster Deandre",
-            "Guitarist Dalton",
-            "Bird Keeper Chester",
-            "Aroma Lady Rose",
             // Route 119
             "Bird Keeper Hugh",
             "Pokémon Ranger Catherine",
@@ -320,9 +237,7 @@ var CUSTOMHACKFLAGS_EK = {
             "Pokémon Trainer Brendan #4 [Swampert]",
             "Pokémon Trainer Brendan #4 [Sceptile]",
             // Mt. Pyre
-            "Hex Maniac Leah",
             "Team Aqua Grunt #1 @ Mt. Pyre",
-            "Pokémon Breeder Gabrielle",
             "Team Aqua Grunt #2 @ Mt. Pyre",
             "Team Aqua Grunt #3 @ Mt. Pyre",
             "Team Aqua Grunt #4 @ Mt. Pyre",
@@ -366,6 +281,14 @@ var CUSTOMHACKFLAGS_EK = {
             // Route 124
             "Team Aqua Grunt #1 @ Route 124",
             "Team Aqua Grunt #2 @ Route 124",
+            // Route 129
+            "Swimmerm Reed",
+            "Triathlete Chase",
+            "Triathlete Allison",
+            "Swimmerf Tisha",
+            "Swimmerm Clarence",
+            //Route 132
+            "Fisherman Ronald", 
             // Mossdeep Gym
             "Psychic Preston",
             "Psychic Maura",
@@ -379,7 +302,7 @@ var CUSTOMHACKFLAGS_EK = {
             "Expert Macey",
             "Expert Clifford",
             "Hex Maniac Kathleen",
-            "Leaders Tate&Liza"
+            "Leaders Tate&Liza",
         ],
         "mindBadge": [
             // Mossdeep Space Center
@@ -400,12 +323,6 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Aqua Grunt #5 @ Seafloor Cavern",
             "Aqua Admin Shelly #2",
             "Aqua Leader Archie",
-            // Route 129
-            "Swimmerm Reed",
-            "Triathlete Chase",
-            "Triathlete Allison",
-            "Swimmerf Tisha",
-            "Swimmerm Clarence",
             // Sootopolis Gym
             "Beauty Connie",
             "Pokémon Ranger Andrea",
@@ -420,74 +337,95 @@ var CUSTOMHACKFLAGS_EK = {
             "Leader #2 Juan",
             // Meteor Falls
             "Dragon Tamer Nicolas",
-            // Route 132
-            "Fisherman Ronald",
-            // Route 134
-            "Swimmerf Laurel",
-            "Swimmerm Jack",
-            "Black Belt Hitoshi",
-            "Battle Girl Reyna",
-            "Sailor Hudson",
-            "Dragon Tamer Aaron",
-            "Cooltrainer Marley",
-            "Sailor Kelvin",
-            "Bird Keeper Alex",
-            // Route 123
-            "Psychic Cameron",
-            "Aroma Lady Violet",
-            "Ninja Boy Jonas",
-            "Collector Ed",
-            "Hex Maniac Kindra",
-            "Guitarist Fernando",
-            "Bird Keeper Alberto",
-            "Psychic Jacki",
-            "Parasol Lady Kayley",
-            "Bug Maniac Davis",
-            "Cooltrainer Wendy",
-            "Cooltrainer Braxton",
-            "Old Couple Miu & Yuki",
-            "Cooltrainer Jazmyn",
-            "Expert Frederick",
             // Route 128
             "Fisherman Wayne",
             "Cooltrainer Ruben",
             "Cooltrainer Alexa",
             // Victory Road
-            "Cooltrainer Albert",
-            "Cooltrainer Hope",
-            "Pokémon Trainer Wally #2",
-            "Expert Samuel",
-            "Expert Shannon",
-            "Pokémon Trainer Red #3",
-            "Cooltrainer Owen",
-            "Expert Dianne",
-            "Expert Quincy",
-            "Expert Julie",
-            "Expert Edgar",
-            "Cooltrainer Caroline",
-            "Expert Halle",
-            "Expert Mitchell",
-            "Expert Felix",
-            "Cooltrainer Katelynn",
-            "Winstrate Vito",
+            "Champion 5ymes",
+            "Champion ALB",
+            "Champion Safety",
+            "Champion Dood",
+            "Champion RedBlue", 
+            "Champion Toxic",
+            "Not Champion Story",
+            "Champion amymae",
+            "Champion Bokk",
+            "Champion ywt1",
+            "Champion Buhrito", 
+            "Champion Gian",
+            "Champion Gongas",
+            "Youngster Ray04",
+            "Champion Aubs",
+            "Champion JakkyShane",
+            "Bird Keeper Billy #3",
             // Evergrande City
             "Elite Four Sidney",
             "Elite Four Phoebe",
             "Elite Four Glacia",
             "Elite Four Drake",
-            "Champion Steven"
+            "Champion Steven",
         ]
     },
     "weather": {
-        "any": [
+        "clear":[
+            "Lady Vivian",
+            "Guitarist Kirk",
+            "Fisherman Ben",
+            "Bug Maniac Angelo",
+            "Collector Shawn",
+            "Leader Wattson",
+            // Route 111
+            // Route 112 (South)
+            "Team Magma Grunt #1 @ Route 112",
+            "Team Magma Grunt #2 @ Route 112",
+            "Hiker Trent",
+            "Team Magma Grunt #3 @ Route 112",
+            // Route 112 (North)
+            "Team Magma Grunt #4 @ Route 112",
+            "Team Magma Grunt #5 @ Route 112",
+            // Route 111
+            "Black Belt Daisuke",
+            "Cooltrainer Brooke",
+            // Route 113
+            "Pokémon Trainer Red",
+            // Route 114
+            "Team Magma Grunt #1 @ Route 114",
+            "Team Magma Grunt #2 @ Route 114",
+            "Team Magma Grunt #3 @ Route 114",
+            "Team Magma Grunt #4 @ Route 114",
+            "Team Magma Grunt #5 @ Route 114",
+            "Team Magma Grunt #6 @ Route 114",
+            "Team Magma Grunt #7 @ Route 114",
+            "Team Magma Grunt #8 @ Route 114",
+            "Team Magma Grunt #9 @ Route 114",
+            // Route 115
+            "Black Belt Nob",
+            // Mt. Chimney
+            "Team Magma Grunt #1 @ Mt. Chimney",
+            "Team Magma Grunt #2 @ Mt. Chimney",
+            "Magma Admin Tabitha #1",
+            "Magma Leader Maxie #1",
+            // Jagged Pass
+            "Team Magma Grunt #1 @ Jagged Pass",
+            "Team Magma Grunt #2 @ Jagged Pass",
+            "Camper Ethan",
+            "Picnicker Diana",
+            "Triathlete Julio",
+            // Petalburg Gym
+            "Triathlete Mary",
+            "Pokéfan Parker",
+            "Pokéfan Alexia",
+            "Pokémon Breeder George",
+            "Cooltrainer Jody",
+            "Cooltrainer Berke",
+            "Triathlete Randall",
+            "Leader Norman",
+            // Route 118
+            "Fisherman Wade",
+            "Fisherman Barny",
+            "Bird Keeper Perry",
             // Route 119
-            "Bug Catcher Kent",
-            "Bug Catcher Greg",
-            "Bug Maniac Donald",
-            "Bug Maniac Taylor",
-            "Bug Catcher Doug",
-            "Bug Maniac Brent",
-            "Fisherman Chris",
             "Bird Keeper Hugh",
             "Pokémon Ranger Catherine",
             "Pokémon Ranger Jackson",
@@ -496,6 +434,7 @@ var CUSTOMHACKFLAGS_EK = {
             "Parasol Lady Missy",
             "Bug Maniac Darrin",
             "Ninja Boy Takashi",
+            // Route 119
             "Pokémon Trainer May #3 [Blaziken]",
             "Pokémon Trainer May #3 [Swampert]",
             "Pokémon Trainer May #3 [Sceptile]",
@@ -504,22 +443,83 @@ var CUSTOMHACKFLAGS_EK = {
             "Pokémon Trainer Brendan #3 [Sceptile]",
             "Guitarist Beth",
             "Ninja Boy Hideo",
-            // Route 123
-            "Psychic Cameron",
-            "Aroma Lady Violet",
-            "Ninja Boy Jonas",
-            "Collector Ed",
-            "Hex Maniac Kindra",
-            "Guitarist Fernando",
-            "Bird Keeper Alberto",
-            "Psychic Jacki",
-            "Parasol Lady Kayley",
-            "Bug Maniac Davis",
-            "Cooltrainer Wendy",
-            "Cooltrainer Braxton",
-            "Old Couple Miu & Yuki",
-            "Cooltrainer Jazmyn",
-            "Expert Frederick",
+            // Route 120
+            "Bird Keeper Robert",
+            "Parasol Lady Clarissa",
+            "Ninja Boy Riley",
+            // Fortree Gym
+            "Pokémon Ranger Ashley",
+            "Bird Keeper Jared",
+            "Ninja Boy Edwardo",
+            "Pokémon Ranger Flint",
+            "Pokémon Breeder Humberto",
+            "Dragon Tamer Sora",
+            "Leader Winona",
+            // Route 120
+            "Battle Girl Tara",
+            "Bird Keeper Colin",
+            "Cooltrainer Jerome",
+            "Ninja Boy Keigo",
+            "Parasol Lady Angelica",
+            "Cooltrainer Jennifer",
+            "Pokémon Ranger Jenna",
+            "Pokémon Ranger Lorenzo",
+            "Ruin Maniac Chip",
+            "Bug Maniac Jeffrey",
+            // Route 121
+            "Hex Maniac Tammy",
+            "Bug Maniac Ali",
+            "Beauty Jessica",
+            "Pokémon Breeder David",
+            "Sr and Jr Kate & Joy",
+            "Pokéfan Vanessa",
+            "Pokémon Breeder Nora",
+            "Cooltrainer Cristin",
+            "Cooltrainer Marcel",
+            "Gentleman Walter",
+            // Lilycove City
+            "Pokémon Trainer May #4 [Blaziken]",
+            "Pokémon Trainer May #4 [Swampert]",
+            "Pokémon Trainer May #4 [Sceptile]",
+            "Pokémon Trainer Brendan #4 [Blaziken]",
+            "Pokémon Trainer Brendan #4 [Swampert]",
+            "Pokémon Trainer Brendan #4 [Sceptile]",
+            // Route 124
+            "Team Aqua Grunt #1 @ Route 124",
+            "Team Aqua Grunt #2 @ Route 124",
+            // Route 129
+            "Swimmerm Reed",
+            "Triathlete Chase",
+            "Triathlete Allison",
+            "Swimmerf Tisha",
+            "Swimmerm Clarence",
+            //Route 132
+            "Fisherman Ronald", 
+            // Mossdeep Gym
+            "Psychic Preston",
+            "Psychic Maura",
+            "Psychic Samantha",
+            "Cooltrainer Virgil",
+            "Gentleman Nate",
+            "Expert Nicholas",
+            "Psychic Blake",
+            "Cooltrainer Hannah",
+            "Hex Maniac Sylvia",
+            "Expert Macey",
+            "Expert Clifford",
+            "Hex Maniac Kathleen",
+            "Leaders Tate&Liza",
+            // Meteor Falls
+            "Dragon Tamer Nicolas",
+            // Route 128
+            "Fisherman Wayne",
+            "Cooltrainer Ruben",
+            "Cooltrainer Alexa",
+            //Victory Road
+            "Champion Dood",
+            "Champion RedBlue", 
+            "Champion Gongas",
+            "Youngster Ray04",
         ],
         "sun": [
             // Lavaridge Gym
@@ -568,7 +568,6 @@ var CUSTOMHACKFLAGS_EK = {
             "Champion Aubs",
             "Champion JakkyShane",
             "Bird Keeper Billy #3"
-	
         ],
         "rain": [
             // Weather Institute
@@ -605,7 +604,6 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Aqua Grunt #10 @ Mt. Pyre",
             "Aqua Admin Matt #1",
             //Aqua Hideout
-                    
             "Team Aqua Grunt #1 @ Aqua Hideout",
             "Team Aqua Grunt #2 @ Aqua Hideout",
             "Team Aqua Grunt #3 @ Aqua Hideout",

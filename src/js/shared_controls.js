@@ -814,7 +814,7 @@ $(".set-selector").change(function () {
 			pokeObj.find(".gender").parent().hide();
 			pokeObj.find(".gender").val("");
 		} else {
-			pokeObj.find(".gender").parent().show();
+			// pokeObj.find(".gender").parent().show();
 			if (regSets && setdex[pokemonName][setName].gender === "M") pokeObj.find(".gender").val("Male");
 			if (regSets && setdex[pokemonName][setName].gender === "F") pokeObj.find(".gender").val("Female");
 		}
@@ -2020,7 +2020,6 @@ function trashPokemon() {
 }
 
 function nextTrainer() {
-	console.log(window.CURRENT_TRAINER)
 	if (trainerNames.includes(window.CURRENT_TRAINER)) {
 		var index = trainerNames.indexOf(window.CURRENT_TRAINER);
 		if (index + 1 !== trainerNames.length) {

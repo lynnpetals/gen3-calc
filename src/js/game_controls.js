@@ -369,7 +369,6 @@ function predictSwitchOrderEmerald() {
 			partyMons[i].name = withMarkedDupes[i];
 		} catch (ex) {
 			$(".trainer-poke-switch-list").html("An error has occured.");
-			console.log("ERROR ERROR ERROR: " + window.CURRENT_TRAINER)
 			return;
 		}
 	} else for (var i in partySpecies) {
@@ -379,7 +378,6 @@ function predictSwitchOrderEmerald() {
 			partyMons[i].setName = `${partySpecies[i]} (${window.CURRENT_TRAINER})`;
 			partyMons[i].name = partySpecies[i];
 		} catch (ex) {
-			console.log("ERROR ERROR ERROR: " + window.CURRENT_TRAINER)
 			$(".trainer-poke-switch-list").html("An error has occured.");
 			return;
 		}
@@ -395,6 +393,10 @@ function predictSwitchOrderEmerald() {
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("That's it!");
 		}
 	}
+
+	//TODO: condense Pokémon such that instead of six listings, it's a very short one
+	//Phase 1 should always be condensed, phase 2 doesn't need to be condensed since it's all a little complicated and depends on the mon that just died
+
 	for (var i in partyMons) {
 		var dead = partyMons[i];
 		if (deadList.includes(dead)) continue;
