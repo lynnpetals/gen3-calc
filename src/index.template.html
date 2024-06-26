@@ -167,9 +167,9 @@
                         <div id="trash-box" class="box-poke dropzone">
 
                         </div>
-                        <button class="deadzone" id="trash-poke">Remove Pokémon from the trash</button>
+                        <button class="deadzone" id="trash-poke">Trash</button>
+                        <button class="deadzone" id="clearSets">Clear All</button>
                         <br />
-                        <button class="deadzone" id="clearSets">Remove Pokémon from all boxes</button>
                     </div>
                     <hr>
                     <div>
@@ -1520,8 +1520,8 @@
             </div>
         </div>
         <div class="panel" id="panel-5">
-            <fieldset class="poke-info" id="p5">
-                <legend align="center">Enemy Party</legend>
+            <fieldset class="poke-info game-specific gm1" id="p5">
+                <legend align="center">Switch-in Guide</legend>
                 <div class="game-specific gm1">
                     <hr>
                     <button type="button" id="previous-trainer">Prev</button>
@@ -1529,11 +1529,9 @@
                     <button type="button" id="reset-trainer">Truck</button>
                     <button type="button" id="trainer-nav-help">?</button>
                 </div>
-                <div class="trainer-poke-list-opposing"></div>
-            </fieldset>
-            <br>
-            <fieldset class="poke-info game-specific gm1">
-                <legend align="center">Switch-in Guide</legend>
+                <hr>
+                <div class="trainer-poke-switch-list" style="padding-top: 1rem; padding-bottom: 1rem;"></div>
+                <hr>
                 <input type="checkbox" name="advanced-bait" id="advanced-bait">Advanced Bait
                 <div class="last-move-used" style="padding-left: 0.4rem;" hidden>
                     <label style="width: 25%;">Last move used</label>
@@ -1541,9 +1539,6 @@
                     <input class="move-bp bait-trigger" value="50" inputmode="decimal" />
                     <select class="move-type bait-trigger"></select>
                 </div>
-                <div class="trainer-poke-switch-list" style="padding-top: 1rem; padding-bottom: 1rem;"></div>
-                <hr>
-                <button type="button" id="bait-help">Help?</button>
             </fieldset>
         </div>
     </div>

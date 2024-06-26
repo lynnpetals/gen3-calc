@@ -555,6 +555,10 @@ function smogonAnalysis(pokemonName) {
 	return "https://smogon.com/dex/" + generation + "/pokemon/" + pokemonName.toLowerCase() + "/";
 }
 
+function noMenuClick(e) {
+	e.preventDefault();
+}
+
 // auto-update set details on select
 $(".set-selector").change(function () {
 	window.NO_CALC = true;
@@ -625,6 +629,9 @@ $(".set-selector").change(function () {
 	}
 
 	$('.trainer-poke-list-opposing').html(trainerHTML);
+	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
+		mon.addEventListener("contextmenu", noMenuClick);
+	}
 	if (oldTrainer !== window.CURRENT_TRAINER) $('.trainer-poke-switch-list').html(switchHTML);
 
 	var pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -1902,14 +1909,6 @@ function getTrainerPokemon(trainerName) {
 	}
 }
 
-$(document).on('click', '.trainer-poke.right-side', function() {
-	var set = $(this).attr('data-id');
-	$('.opposing').val(set);
-
-	$('.opposing').change();
-	$('.opposing .select2-chosen').text(set);
-})
-
 $(document).on('click', '.left-side', function() {
 	var set = $(this).attr('data-id');
 	$('.player').val(set);
@@ -1919,12 +1918,21 @@ $(document).on('click', '.left-side', function() {
 })
 
 $(document).on('click', '.trainer-poke-switch.right-side', function() {
+	var set = $(this).attr('data-id');
+	$('.opposing').val(set);
+
+	$('.opposing').change();
+	$('.opposing .select2-chosen').text(set);
+})
+
+$(document).on('contextmenu', '.trainer-poke-switch.right-side', function() {
 	var dead = $(this).is(".dead");
 	if (dead) $(this).removeClass("dead");
 	else $(this).addClass("dead")
 
 	predictSwitchOrder();
 })
+
 
 function selectFirstMon() {
 	var pMons = document.getElementsByClassName("trainer-poke left-side");
@@ -2221,7 +2229,7 @@ $(document).ready(function () {
 	});
 	
 	$('#trainer-nav-help').click(() => {
-		alert("This section displays the enemy party in the correct in-game order. Note that that is not always the order Pokémon are sent out. Click on a Pokémon sprite to load that Pokémon.\n\n" + 
+		alert("This section displays the enemy party in the correct in-game order, from top to bottom. Each Pokémon will list the next Pokémon that comes out after it faints. To mark dead Pokémon, right-click the Pokémon, and it will move onto calculating with the remaining mons. Left-click will load the Pokémon and select the set.\n\n" + 
 			  "If a Pokémon is marked with a red outline, there is a chance that the enemy will make a switch to that Pokémon the turn after you use a move that is also be marked with a red background. In case of multiple outlined Pokémon, the switch will only happen to a Pokémon that resists that move.");
 	});
 	$('#bait-help').click(() => {

@@ -563,12 +563,12 @@ table.field {
     box-sizing: border-box;
 }
 
-.trainer-poke:hover {
+.trainer-poke-switch:hover {
     outline: 2px solid;
     outline-color: #1abc9c;
 }
 
-.trainer-poke.switch-risk-mon {
+.switch-risk-mon {
     outline: 2px solid;
     outline-color: #ff0000;
 }
@@ -718,8 +718,8 @@ table.field {
     
     background: repeating-linear-gradient(
         135deg, 
-        #72041a7c, 
-        #72041a7c 50px, 
+        #ffbfcc7c, 
+        #ffbfcc7c 50px, 
         #b6203e7c 50px, 
         #b6203e7c 51px
     );
@@ -729,8 +729,8 @@ table.field {
 #p2{
     background: repeating-linear-gradient(
         135deg, 
-        #1b41897c, 
-        #1b41897c 50px, 
+        #7aa2ed7c, 
+        #7aa2ed7c 50px, 
         #466cb37c 50px, 
         #466cb37c 51px
     );
@@ -740,8 +740,8 @@ table.field {
 #p3{
     background: repeating-linear-gradient(
         135deg, 
-        #9779257c, 
-        #9779257c 50px, 
+        #f3d06e7c, 
+        #f3d06e7c 50px, 
         #daae347c 50px, 
         #daae347c 51px
     );
@@ -751,22 +751,22 @@ table.field {
 #p4{
     background: repeating-linear-gradient(
         135deg, 
-        #101010e0, 
-        #101010e0 5px, 
-        #202020e0 5px, 
-        #202020e0 10px
+        #f3bebee0, 
+        #f3bebee0 5px, 
+        #e3bbbbe0 5px, 
+        #e3bbbbe0 10px
     );
-    width:23em;
+    width:16em;
 }
 #p5 {
     background: repeating-linear-gradient(
         135deg, 
-        #532c5ce0, 
-        #532c5ce0 5px, 
-        #632f6fe0 5px, 
-        #632f6fe0 10px
+        #cb73dfe0, 
+        #cb73dfe0 5px, 
+        #e194f2e0 5px, 
+        #e194f2e0 10px
     );
-    width: 4em;
+    width: 12em;
 }
 .five-panels{
     display:flex;
