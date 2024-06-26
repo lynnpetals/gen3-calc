@@ -9094,7 +9094,7 @@ var CUSTOMHACKSETDEX_EKK = {
     },
     "Marowak": {
         "Team Magma Grunt #2 @ Route 114": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 38,
             "item": "Lum Berry",
             "moves": [
@@ -9106,7 +9106,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Jolly"
         },
         "Expert Shelby": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 37,
             "item": "Thick Club",
             "moves": [
@@ -9118,7 +9118,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Lax"
         },
         "Cooltrainer Jody": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 46,
             "item": "Thick Club",
             "moves": [
@@ -9130,7 +9130,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Hasty"
         },
         "Ruin Maniac Andres": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 66,
             "item": "Thick Club",
             "moves": [
@@ -9142,7 +9142,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Naive"
         },
         "Team Magma Grunt #10 @ Magma Hideout": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 66,
             "item": "Thick Club",
             "moves": [
@@ -9154,7 +9154,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Lax"
         },
         "Sr and Jr Kim & Iris": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 66,
             "item": "Thick Club",
             "moves": [
@@ -9166,7 +9166,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Jolly"
         },
         "Gentleman Franklin": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 100,
             "item": "Thick Club",
             "moves": [
@@ -11417,7 +11417,7 @@ var CUSTOMHACKSETDEX_EKK = {
     },
     "Pikachu": {
         "Lady Vivian": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 28,
             "item": "Light Ball",
             "moves": [
@@ -11429,7 +11429,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Jolly"
         },
         "Pokémon Trainer Red": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 37,
             "item": "Light Ball",
             "moves": [
@@ -11441,7 +11441,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Sassy"
         },
         "Battle Girl Tara": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 60,
             "item": "Light Ball",
             "moves": [
@@ -11450,7 +11450,7 @@ var CUSTOMHACKSETDEX_EKK = {
             ]
         },
         "Sis And Bro Lila & Roy": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 65,
             "item": "Light Ball",
             "moves": [
@@ -12342,7 +12342,7 @@ var CUSTOMHACKSETDEX_EKK = {
     },
     "Raichu": {
         "Leader Wattson": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 29,
             "item": "Lum Berry",
             "moves": [
@@ -12354,7 +12354,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Sassy"
         },
         "Pokéfan Parker": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 46,
             "item": "Leftovers",
             "moves": [
@@ -12366,7 +12366,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Brave"
         },
         "Swimmerm Pete": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 43,
             "item": "Silverpowder",
             "moves": [
@@ -12378,7 +12378,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Relaxed"
         },
         "Pokémon Trainer May #3 [Blaziken]": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 50,
             "item": "Lum Berry",
             "moves": [
@@ -12390,7 +12390,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Impish"
         },
         "Pokémon Trainer May #3 [Sceptile]": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 50,
             "item": "Lum Berry",
             "moves": [
@@ -12402,7 +12402,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Impish"
         },
         "Pokémon Trainer May #3 [Swampert]": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 50,
             "item": "Lum Berry",
             "moves": [
@@ -12450,7 +12450,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Brave"
         },
         "Pokémon Ranger Ashley": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 50,
             "item": "Lum Berry",
             "moves": [
@@ -12462,7 +12462,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Mild"
         },
         "Pokéfan Vanessa": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 61,
             "item": "Red Scarf",
             "moves": [
@@ -12474,7 +12474,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Hasty"
         },
         "Team Aqua Grunt #5 @ Aqua Hideout": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 68,
             "item": "Bright Powder",
             "moves": [
@@ -12486,7 +12486,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Brave"
         },
         "Aqua Admin Shelly #2": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 76,
             "item": "Lum Berry",
             "moves": [
@@ -12498,7 +12498,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Careful"
         },
         "Cooltrainer Olivia": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 75,
             "item": "Lum Berry",
             "moves": [
@@ -12534,7 +12534,7 @@ var CUSTOMHACKSETDEX_EKK = {
     },
     "Raikou": {
         "Aqua Leader Archie": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 75,
             "item": "Lum Berry",
             "moves": [
@@ -12872,7 +12872,7 @@ var CUSTOMHACKSETDEX_EKK = {
     },
     "Rhydon": {
         "Ruin Maniac Andres": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 66,
             "item": "Quick Claw",
             "moves": [
@@ -12886,7 +12886,7 @@ var CUSTOMHACKSETDEX_EKK = {
     },
     "Rhyhorn": {
         "School Kid Tammy": {
-            "ability": "Lightningrod",
+            "ability": "Lightning Rod",
             "level": 15,
             "item": "Lum Berry",
             "moves": [
