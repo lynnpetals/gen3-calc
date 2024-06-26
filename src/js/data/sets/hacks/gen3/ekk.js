@@ -4135,7 +4135,7 @@ var CUSTOMHACKSETDEX_EKK = {
         },
         "Champion Aubs": {
             "ability": "Serene Grace",
-            "level": 68,
+            "level": 100,
             "item": "Lum Berry",
             "moves": [
                 "Sacred Fire",
