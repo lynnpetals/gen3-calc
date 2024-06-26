@@ -2146,7 +2146,7 @@ var READY;
 $(document).ready(function () {
 	var params = new URLSearchParams(window.location.search);
 	var g = GENERATION[params.get('gen')] || DEFAULTGEN;
-	var gm = params.get("game") || 0;
+	var gm = params.get("game") || 1;
 	$("#gen" + g).prop("checked", true);
 	$("#gen" + g).change();
 	$("#game" + gm).prop("checked", true);
