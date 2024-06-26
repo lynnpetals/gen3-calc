@@ -1429,10 +1429,8 @@ $(".gen").change(function () {
 
 function getFirstValidSetOption() {
 	var sets = getSetOptions();
-	console.log("hei?")
 	// NB: The first set is never valid, so we start searching after it.
 	for (var i = 1; i < sets.length; i++) {
-		console.log(sets[i])
 		if (sets[i].id && sets[i].id.indexOf('(Blank Set)') === -1) {return sets[i];}
 	}
 	return undefined;
@@ -2014,6 +2012,7 @@ function trashPokemon() {
 }
 
 function nextTrainer() {
+	console.log(window.CURRENT_TRAINER)
 	if (trainerNames.includes(window.CURRENT_TRAINER)) {
 		var index = trainerNames.indexOf(window.CURRENT_TRAINER);
 		if (index + 1 !== trainerNames.length) {

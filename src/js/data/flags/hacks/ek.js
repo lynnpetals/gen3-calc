@@ -56,7 +56,7 @@ var CUSTOMHACKFLAGS_EK = {
             "Lass Tiana",
             "Bug Catcher Allen",
             // Route 104 (South)
-            "Bird Keeper Billy",
+            "Bird Keeper Billy 1",
             "Fisherman Darian",
             "Lady Cindy",
             // Petalburg Woods
@@ -78,12 +78,12 @@ var CUSTOMHACKFLAGS_EK = {
             // Rusturf Tunnel
             "Team Aqua Grunt @ Rusturf Tunnel",
             // Rustboro City
-            "Pokémon Trainer May #1.5 [Combusken]",
-            "Pokémon Trainer May #1.5 [Marshtomp]",
-            "Pokémon Trainer May #1.5 [Grovyle]",
-            "Pokémon Trainer Brendan #1.5 [Combusken]",
-            "Pokémon Trainer Brendan #1.5 [Marshtomp]",
-            "Pokémon Trainer Brendan #1.5 [Grovyle]",
+            "Pokémon Trainer May #1.5 [Torchic]",
+            "Pokémon Trainer May #1.5 [Mudkip]",
+            "Pokémon Trainer May #1.5 [Treecko]",
+            "Pokémon Trainer Brendan #1.5 [Torchic]",
+            "Pokémon Trainer Brendan #1.5 [Mudkip]",
+            "Pokémon Trainer Brendan #1.5 [Treecko]",
             // Dewford Gym
             "Battle Girl Laura",
             "Black Belt Takao",
@@ -117,12 +117,12 @@ var CUSTOMHACKFLAGS_EK = {
             "Youngster Timmy",
             "Collector Edwin",
             "Guitarist Joseph",
-            "Pokémon Trainer May #2 [Combusken]",
-            "Pokémon Trainer May #2 [Marshtomp]",
-            "Pokémon Trainer May #2 [Grovyle]",
-            "Pokémon Trainer Brendan #2 [Combusken]",
-            "Pokémon Trainer Brendan #2 [Marshtomp]",
-            "Pokémon Trainer Brendan #2 [Grovyle]",
+            "Pokémon Trainer May #2 [Torchic]",
+            "Pokémon Trainer May #2 [Mudkip]",
+            "Pokémon Trainer May #2 [Treecko]",
+            "Pokémon Trainer Brendan #2 [Torchic]",
+            "Pokémon Trainer Brendan #2 [Mudkip]",
+            "Pokémon Trainer Brendan #2 [Treecko]",
             "Triathlete Alyssa",
             "Fisherman Dale",
             // Mauville City
@@ -561,6 +561,14 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Magma Grunt #6 @ Mossdeep Space Center",
             "Magma Leader Maxie #3",
             "Magma Admin Tabitha #2",
+            //Victory Road
+            "Champion 5ymes",
+	        "Champion ALB",
+	        "Champion Safety",
+            "Champion Aubs",
+            "Champion JakkyShane",
+            "Bird Keeper Billy 3"
+	
         ],
         "rain": [
             // Weather Institute
@@ -627,6 +635,13 @@ var CUSTOMHACKFLAGS_EK = {
             "Cooltrainer Olivia",
             "Leader #1 Wallace",
             "Leader #2 Juan",
+            //Victory Road
+            "Not Champion Story",
+            "Champion amymae",
+            "Champion Bokk",
+            "Champion ywt1",
+            "Champion Buhrito",
+            "Champion Gian",
             // Evergrande City
             "Elite Four Glacia"
         ],

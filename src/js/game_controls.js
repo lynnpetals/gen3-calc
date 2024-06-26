@@ -25,7 +25,7 @@ $(".game").change(function() {
 	} else $(".hide-from-games").show();
     generation = gen;
     setdex = !isHack ? CUSTOMSETDEX[gameId] : CUSTOMHACKSETDEX[gameId];
-	partyOrder = !isHack ? CUSTOMPARTYORDER[gameId] : CUSTOMHACKPARTYORDER[gameId];
+	partyOrder = CUSTOMHACKPARTYORDER[1];
 	trainerNames = !isHack ? CUSTOMTRAINERNAMES[gameId] : CUSTOMHACKTRAINERNAMES[gameId];
 	flags = !isHack ? CUSTOMFLAGS[gameId] : CUSTOMHACKFLAGS[gameId];
     if (typeof setdex === 'undefined') setdex = SETDEX[generation];
@@ -162,12 +162,12 @@ var HACKGEN = {
 
 var CUSTOMHACKTRAINERNAMES = [
 	undefined,
-	typeof CUSTOMHACKTRAINERNAMES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EK
+	typeof CUSTOMHACKTRAINERNAMES_EKK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EKK
 ];
 
 var CUSTOMHACKPARTYORDER = [
 	undefined,
-	typeof CUSTOMHACKPARTYORDER_EK === 'undefined' ? {} : CUSTOMHACKPARTYORDER_EK
+	typeof CUSTOMHACKPARTYORDER_EKK === 'undefined' ? {} : CUSTOMHACKPARTYORDER_EKK
 ];
 
 var CUSTOMHACKFLAGS = [
@@ -339,7 +339,6 @@ function predictSwitchOrderEmerald() {
 		}
 	}
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
-
 	var hasDupes = (new Set(partySpecies)).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	if (hasDupes) {
@@ -356,7 +355,6 @@ function predictSwitchOrderEmerald() {
 			} else withMarkedDupes[i] = partySpecies[i];
 		}
 	} else withMarkedDupes = partySpecies;
-
 	var partyMons = [];
 	if (hasDupes) for (var i in withMarkedDupes) {
 		var current_trainer = window.CURRENT_TRAINER;
@@ -371,6 +369,7 @@ function predictSwitchOrderEmerald() {
 			partyMons[i].name = withMarkedDupes[i];
 		} catch (ex) {
 			$(".trainer-poke-switch-list").html("An error has occured.");
+			console.log("ERROR ERROR ERROR: " + window.CURRENT_TRAINER)
 			return;
 		}
 	} else for (var i in partySpecies) {
@@ -380,6 +379,7 @@ function predictSwitchOrderEmerald() {
 			partyMons[i].setName = `${partySpecies[i]} (${window.CURRENT_TRAINER})`;
 			partyMons[i].name = partySpecies[i];
 		} catch (ex) {
+			console.log("ERROR ERROR ERROR: " + window.CURRENT_TRAINER)
 			$(".trainer-poke-switch-list").html("An error has occured.");
 			return;
 		}
@@ -532,7 +532,6 @@ function predictSwitchOrderEmerald() {
 }
 
 function predictSwitchOrder() {
-	return undefined; //TODO
 	switch (game) {
 		case "Emerald Kaizo":
 			return predictSwitchOrderEmerald();
