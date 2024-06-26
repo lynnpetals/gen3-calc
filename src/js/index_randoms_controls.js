@@ -222,7 +222,30 @@ function displayDamageHits(damage) {
 	// Fixed Damage
 	if (typeof damage === 'number') return damage;
 	// Standard Damage
-	if (damage.length > 2) return damage.join(', ');
+	if (damage.length > 2) {
+		var resultString = "";
+		var prevDamage = damage[0]
+		var rollCount = 1;
+		resultString += damage[0];
+		for(var i = 1; i < damage.length; i++){
+			if(damage[i] == prevDamage){
+				rollCount++;
+			}
+			else{
+				resultString += rollCount > 1 ? " [x"+ rollCount+"], " + damage[i] : ", " + damage[i];
+				rollCount = 1;
+				prevDamage = damage[i]
+			}
+		}
+		if(rollCount > 1){
+			resultString += " [x"+ rollCount+"])";
+		}
+		else{
+			resultString += ")"
+		}
+		
+		return resultString;
+	};
 	// Fixed Parental Bond Damage
 	if (typeof damage[0] === 'number' && typeof damage[1] === 'number') {
 		return '1st Hit: ' + damage[0] + '; 2nd Hit: ' + damage[1];
