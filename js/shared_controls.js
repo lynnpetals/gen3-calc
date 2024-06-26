@@ -2088,6 +2088,7 @@ function toggleInfoColorCode(){
 }
 
 function trashPokemon() {
+	console.log('hi')
 	var maybeMultiple = document.getElementById("trash-box").getElementsByClassName("trainer-poke");
 	if (maybeMultiple.length == 0){
 		return; //nothing to delete

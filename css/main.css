@@ -145,6 +145,7 @@ html, body {
     padding: 0 1em;
     max-width: 40000px;
     position: absolute;
+    z-index: 2;
 }
 .credits {
     clear: both;
@@ -153,6 +154,7 @@ html, body {
     margin: 0px auto;
     top:800px;
     position:absolute;
+    z-index: 2;
 }
 div.wrapper > div > span {
     padding-right: 5px;
@@ -735,9 +737,6 @@ table.field {
     top: 365px;
     left: -54px;
   }
-  #trainer-mons-2 {
-    width: 4em;
-  }
 
   #p2mon, #p1mon{
     height: 100px;
@@ -804,32 +803,111 @@ table.field {
   filter: grayscale(100%);
 }
 
-#background-bg-image {
+.exbg{
     position:fixed;
-    z-index: -1;
     width: 100%;
+    height: 100%;
     top: 0px;
     left: 0px;
 }
 
-#trainer-mons {
+#bg-image-a{
+    z-index: -3;
+}
+
+#bg-image-b{
+    z-index: -1;
+}
+#p1{
+    
+    background: repeating-linear-gradient(
+        135deg, 
+        #72041a7c, 
+        #72041a7c 50px, 
+        #b6203e7c 50px, 
+        #b6203e7c 51px
+    );
+    /* background-color: #72041a7c; */
+}
+#p2{
+    background: repeating-linear-gradient(
+        135deg, 
+        #1b41897c, 
+        #1b41897c 50px, 
+        #466cb37c 50px, 
+        #466cb37c 51px
+    );
+    /* background-color: #1b41897c; */
+}
+#p3{
+    background: repeating-linear-gradient(
+        135deg, 
+        #9779257c, 
+        #9779257c 50px, 
+        #daae347c 50px, 
+        #daae347c 51px
+    );
+    /* background-color: #9779257c; */
+}
+
+#p4{
     background: repeating-linear-gradient(
         135deg, 
         #101010e0, 
-        #101010e0 15px, 
-        #202020e0 15px, 
-        #202020e0 20px
-    )
+        #101010e0 5px, 
+        #202020e0 5px, 
+        #202020e0 10px
+    );
+    width:12em;
 }
-#trainer-mons-2 {
+#p5 {
     background: repeating-linear-gradient(
         135deg, 
         #532c5ce0, 
-        #532c5ce0 15px, 
-        #632f6fe0 15px, 
-        #632f6fe0 20px
-    )
+        #532c5ce0 5px, 
+        #632f6fe0 5px, 
+        #632f6fe0 10px
+    );
+    width: 4em;
 }
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.twinkling{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+
+    background:transparent url(../img/twinkle-effect.png) repeat top center;
+    z-index:-2;
+  
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+  }
 
 #resultHeaderL, #resultHeaderR {
     background-color: #423d58;
