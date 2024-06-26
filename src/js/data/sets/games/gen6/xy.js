@@ -2860,7 +2860,7 @@ var CUSTOMSETDEX_XY = {
             },
             "level": 29,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Ingrain",
                 "Sweet Scent",
                 "Vine Whip"
@@ -3917,7 +3917,7 @@ var CUSTOMSETDEX_XY = {
             },
             "level": 21,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit",
                 "Taunt",
                 "Poison Sting"
@@ -3937,7 +3937,7 @@ var CUSTOMSETDEX_XY = {
             },
             "level": 20,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit",
                 "Taunt",
                 "Poison Sting"
@@ -4271,7 +4271,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "Charm",
                 "Play Rough",
-                "Feint Attack",
+                "Faint Attack",
                 "Return"
             ],
             "nature": "Hardy"
@@ -4291,7 +4291,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "Charm",
                 "Play Rough",
-                "Feint Attack",
+                "Faint Attack",
                 "Return"
             ],
             "nature": "Hardy"
@@ -4311,7 +4311,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "Charm",
                 "Play Rough",
-                "Feint Attack",
+                "Faint Attack",
                 "Return"
             ],
             "nature": "Hardy"
@@ -5076,7 +5076,7 @@ var CUSTOMSETDEX_XY = {
                 "Bug Bite",
                 "Rock Polish",
                 "Smack Down",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Hardy"
         },
@@ -5094,7 +5094,7 @@ var CUSTOMSETDEX_XY = {
             "level": 21,
             "moves": [
                 "Rock Blast",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Hardy"
         }
@@ -8344,7 +8344,7 @@ var CUSTOMSETDEX_XY = {
                 "Flamethrower",
                 "Foul Play",
                 "Embargo",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Hardy"
         },
@@ -8363,7 +8363,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "Foul Play",
                 "Embargo",
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang"
             ],
             "nature": "Hardy"
@@ -8381,7 +8381,7 @@ var CUSTOMSETDEX_XY = {
             },
             "level": 36,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up",
                 "Odor Sleuth"
@@ -8402,7 +8402,7 @@ var CUSTOMSETDEX_XY = {
             "level": 44,
             "moves": [
                 "Embargo",
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up"
             ],
@@ -8443,7 +8443,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "Foul Play",
                 "Embargo",
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang"
             ],
             "nature": "Hardy"
@@ -10718,7 +10718,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "Crunch",
                 "Baton Pass",
-                "Feint Attack",
+                "Faint Attack",
                 "Vise Grip"
             ],
             "nature": "Hardy"
@@ -10736,7 +10736,7 @@ var CUSTOMSETDEX_XY = {
             },
             "level": 38,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Crunch",
                 "Iron Defense"
             ],
@@ -14886,7 +14886,7 @@ var CUSTOMSETDEX_XY = {
             "moves": [
                 "High Jump Kick",
                 "Dragon Tail",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Hardy"
         },
@@ -15008,7 +15008,7 @@ var CUSTOMSETDEX_XY = {
                 "Brick Break",
                 "Swagger",
                 "Headbutt",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Hardy"
         },
@@ -15086,7 +15086,7 @@ var CUSTOMSETDEX_XY = {
             "level": 12,
             "moves": [
                 "Headbutt",
-                "Feint Attack",
+                "Faint Attack",
                 "Sand Attack",
                 "Leer"
             ],

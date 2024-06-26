@@ -1,7 +1,7 @@
 var CUSTOMHACKTRAINERNAMES_EKK = [
 	// Route 102
 	// Route 104 (South)
-	"Bird Keeper Billy 1",
+	"Bird Keeper Billy #1",
 	// Petalburg Woods
 	"Team Magma Grunt @ Petalburg Woods",
 	// Route 104 (North)
@@ -297,7 +297,7 @@ var CUSTOMHACKTRAINERNAMES_EKK = [
 	"Youngster Ray04",
 	"Champion Aubs",
 	"Champion JakkyShane",
-	"Bird Keeper Billy 3",
+	"Bird Keeper Billy #3",
 	// Evergrande City
 	"Elite Four Sidney",
 	"Elite Four Phoebe",

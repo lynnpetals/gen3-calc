@@ -56,7 +56,7 @@ var CUSTOMHACKFLAGS_EK = {
             "Lass Tiana",
             "Bug Catcher Allen",
             // Route 104 (South)
-            "Bird Keeper Billy 1",
+            "Bird Keeper Billy #1",
             "Fisherman Darian",
             "Lady Cindy",
             // Petalburg Woods
@@ -567,7 +567,7 @@ var CUSTOMHACKFLAGS_EK = {
 	        "Champion Safety",
             "Champion Aubs",
             "Champion JakkyShane",
-            "Bird Keeper Billy 3"
+            "Bird Keeper Billy #3"
 	
         ],
         "rain": [

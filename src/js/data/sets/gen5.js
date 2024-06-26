@@ -872,7 +872,7 @@ var SETDEX_BW = {
     "1v1 Showdown Usage": {"ability":"Levitate","item":"Choice Scarf","nature":"Bold","evs":{"hp":52,"df":224,"sp":232},"moves":["Moonlight","Ice Beam","Trick","Psychic"]}
   },
   "Pidgey": {
-    "LC Choice": {"level":5,"ability":"Keen Eye","item":"Choice Scarf","nature":"Jolly","evs":{"hp":36,"at":236,"sp":228},"moves":["Brave Bird","U-turn","Feint Attack","Return"]}
+    "LC Choice": {"level":5,"ability":"Keen Eye","item":"Choice Scarf","nature":"Jolly","evs":{"hp":36,"at":236,"sp":228},"moves":["Brave Bird","U-turn","Faint Attack","Return"]}
   },
   "Rattata": {
     "LC Guts": {"level":5,"ability":"Guts","item":"Toxic Orb","nature":"Jolly","evs":{"hp":36,"at":228,"sp":180},"moves":["Facade","Sucker Punch","Flame Wheel","Protect"]},

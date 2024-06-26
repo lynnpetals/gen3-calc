@@ -1293,7 +1293,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 61,
             "moves": [
                 "Shadow Claw",
-                "Feint Attack",
+                "Faint Attack",
                 "Thunderbolt",
                 "Will-O-Wisp"
             ],
@@ -2080,7 +2080,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 32,
             "moves": [
                 "Rock Tomb",
-                "Feint Attack",
+                "Faint Attack",
                 "Block",
                 "Mimic"
             ],
@@ -2263,7 +2263,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 53,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Future Sight",
                 "Gyro Ball",
                 "Block"
@@ -2522,7 +2522,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 44,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Future Sight",
                 "Gyro Ball",
                 "Safeguard"
@@ -3242,7 +3242,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Wring Out",
                 "Crunch",
-                "Feint Attack",
+                "Faint Attack",
                 "Ingrain"
             ],
             "nature": "Lax"
@@ -3280,7 +3280,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 28,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Ingrain",
                 "Sweet Scent",
                 "Vine Whip"
@@ -3303,7 +3303,7 @@ var CUSTOMSETDEX_Pl = {
                 "Stockpile",
                 "Spit Up",
                 "Swallow",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Docile"
         },
@@ -5181,7 +5181,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Swagger",
                 "Revenge",
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit"
             ],
             "nature": "Bashful"
@@ -5219,7 +5219,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 21,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit",
                 "Taunt",
                 "Poison Sting"
@@ -5241,7 +5241,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Swagger",
                 "Revenge",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Serious"
         },
@@ -5278,7 +5278,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 21,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit",
                 "Taunt",
                 "Poison Sting"
@@ -5458,7 +5458,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 19,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit",
                 "Taunt",
                 "Poison Sting"
@@ -5580,7 +5580,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Swagger",
                 "Revenge",
-                "Feint Attack",
+                "Faint Attack",
                 "Pursuit"
             ],
             "nature": "Hasty"
@@ -5641,7 +5641,7 @@ var CUSTOMSETDEX_Pl = {
                 "Mud Bomb",
                 "Swagger",
                 "Revenge",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Lax"
         }
@@ -5784,7 +5784,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Fake Out",
                 "Captivate",
-                "Feint Attack",
+                "Faint Attack",
                 "Double-Edge"
             ],
             "nature": "Docile"
@@ -8358,7 +8358,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Dragon Claw",
                 "Earthquake",
-                "Feint Attack",
+                "Faint Attack",
                 "Screech"
             ],
             "nature": "Docile"
@@ -10095,7 +10095,7 @@ var CUSTOMSETDEX_Pl = {
                 "Assist",
                 "Charm",
                 "Fury Swipes",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Hardy"
         },
@@ -10232,7 +10232,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 33,
             "moves": [
                 "Fury Swipes",
-                "Feint Attack",
+                "Faint Attack",
                 "Growl",
                 "Fake Out"
             ],
@@ -10351,7 +10351,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 18,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Hypnosis",
                 "Growl",
                 "Scratch"
@@ -10371,7 +10371,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 19,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Hypnosis",
                 "Growl",
                 "Scratch"
@@ -10513,7 +10513,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 24,
             "moves": [
                 "Screech",
-                "Feint Attack",
+                "Faint Attack",
                 "Quick Attack",
                 "Poison Sting"
             ],
@@ -10533,7 +10533,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 44,
             "moves": [
                 "Screech",
-                "Feint Attack",
+                "Faint Attack",
                 "Quick Attack",
                 "Poison Sting"
             ],
@@ -13528,7 +13528,7 @@ var CUSTOMSETDEX_Pl = {
                 "Drill Peck",
                 "Night Shade",
                 "Astonish",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Relaxed"
         },
@@ -13913,7 +13913,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 35,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up",
                 "Odor Sleuth"
@@ -13954,7 +13954,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 40,
             "moves": [
                 "Embargo",
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up"
             ],
@@ -13974,7 +13974,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 40,
             "moves": [
                 "Embargo",
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up"
             ],
@@ -13994,7 +13994,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 40,
             "moves": [
                 "Embargo",
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up"
             ],
@@ -14013,7 +14013,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 39,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up",
                 "Odor Sleuth"
@@ -14033,7 +14033,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 38,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Fire Fang",
                 "Beat Up",
                 "Odor Sleuth"
@@ -17993,7 +17993,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 23,
             "moves": [
                 "Fire Spin",
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen",
                 "Ember"
             ],
@@ -18228,7 +18228,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 40,
             "moves": [
                 "Flamethrower",
-                "Feint Attack",
+                "Faint Attack",
                 "Smog",
                 "Will-O-Wisp"
             ],
@@ -18270,7 +18270,7 @@ var CUSTOMSETDEX_Pl = {
                 "Fire Punch",
                 "Confuse Ray",
                 "Fire Spin",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Relaxed"
         }
@@ -18290,7 +18290,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 54,
             "moves": [
                 "Flamethrower",
-                "Feint Attack",
+                "Faint Attack",
                 "Smog",
                 "Will-O-Wisp"
             ],
@@ -21211,7 +21211,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Sucker Punch",
                 "Mean Look",
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt"
             ],
             "nature": "Quirky"
@@ -21232,7 +21232,7 @@ var CUSTOMSETDEX_Pl = {
                 "Drill Peck",
                 "Night Shade",
                 "Astonish",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Impish"
         },
@@ -21249,7 +21249,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 35,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance",
                 "Night Shade"
@@ -21269,7 +21269,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 36,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Night Shade",
                 "Wing Attack"
             ],
@@ -21289,7 +21289,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 43,
             "moves": [
                 "Mean Look",
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance"
             ],
@@ -21309,7 +21309,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 41,
             "moves": [
                 "Mean Look",
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance"
             ],
@@ -21328,7 +21328,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 39,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance",
                 "Night Shade"
@@ -21348,7 +21348,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 39,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance",
                 "Night Shade"
@@ -21368,7 +21368,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 40,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance",
                 "Night Shade"
@@ -21388,7 +21388,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 38,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance",
                 "Night Shade"
@@ -21408,7 +21408,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 39,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt",
                 "Assurance",
                 "Night Shade"
@@ -21820,7 +21820,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Extrasensory",
                 "Fake Out",
-                "Feint Attack",
+                "Faint Attack",
                 "Razor Leaf"
             ],
             "nature": "Sassy"
@@ -22608,7 +22608,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Night Slash",
                 "Power Gem",
-                "Feint Attack",
+                "Faint Attack",
                 "Fake Out"
             ],
             "nature": "Serious"
@@ -24505,7 +24505,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 17,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Scratch",
                 "Fake Out"
             ],
@@ -24525,7 +24525,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 40,
             "moves": [
                 "Slash",
-                "Feint Attack",
+                "Faint Attack",
                 "Hypnosis",
                 "Fake Out"
             ],
@@ -24586,7 +24586,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Charm",
                 "Fury Swipes",
-                "Feint Attack",
+                "Faint Attack",
                 "Hypnosis"
             ],
             "nature": "Bold"
@@ -28310,7 +28310,7 @@ var CUSTOMSETDEX_Pl = {
             "level": 59,
             "moves": [
                 "Leaf Storm",
-                "Feint Attack",
+                "Faint Attack",
                 "Extrasensory",
                 "Quick Attack"
             ],
@@ -28952,7 +28952,7 @@ var CUSTOMSETDEX_Pl = {
                 "Icy Wind",
                 "Slash",
                 "Screech",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Docile"
         },
@@ -28972,7 +28972,7 @@ var CUSTOMSETDEX_Pl = {
                 "Icy Wind",
                 "Slash",
                 "Screech",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Lonely"
         },
@@ -28991,7 +28991,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Ice Shard",
                 "Slash",
-                "Feint Attack",
+                "Faint Attack",
                 "Quick Attack"
             ],
             "nature": "Bold"
@@ -29011,7 +29011,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Icy Wind",
                 "Slash",
-                "Feint Attack",
+                "Faint Attack",
                 "Quick Attack"
             ],
             "nature": "Lonely"
@@ -29071,7 +29071,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Slash",
                 "Aerial Ace",
-                "Feint Attack",
+                "Faint Attack",
                 "Ice Shard"
             ],
             "nature": "Docile"
@@ -31787,7 +31787,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Rock Slide",
                 "Rock Tomb",
-                "Feint Attack",
+                "Faint Attack",
                 "Block"
             ],
             "nature": "Modest"
@@ -32822,7 +32822,7 @@ var CUSTOMSETDEX_Pl = {
                 "Poison Jab",
                 "Revenge",
                 "Mud Bomb",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Adamant"
         },
@@ -32842,7 +32842,7 @@ var CUSTOMSETDEX_Pl = {
                 "Poison Jab",
                 "Brick Break",
                 "X-Scissor",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Naughty"
         }
@@ -33163,7 +33163,7 @@ var CUSTOMSETDEX_Pl = {
             },
             "level": 42,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Confuse Ray",
                 "Quick Attack",
                 "Pursuit"
@@ -33185,7 +33185,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Last Resort",
                 "Assurance",
-                "Feint Attack",
+                "Faint Attack",
                 "Confuse Ray"
             ],
             "nature": "Calm"
@@ -33333,7 +33333,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Dragon Breath",
                 "Earthquake",
-                "Feint Attack",
+                "Faint Attack",
                 "Screech"
             ],
             "nature": "Lax"
@@ -33479,7 +33479,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Avalanche",
                 "Slash",
-                "Feint Attack",
+                "Faint Attack",
                 "Taunt"
             ],
             "nature": "Jolly"
@@ -33539,7 +33539,7 @@ var CUSTOMSETDEX_Pl = {
             "moves": [
                 "Nasty Plot",
                 "Fury Swipes",
-                "Feint Attack",
+                "Faint Attack",
                 "Screech"
             ],
             "nature": "Naughty"

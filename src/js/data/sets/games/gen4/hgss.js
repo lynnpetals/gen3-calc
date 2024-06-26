@@ -11746,7 +11746,7 @@ var CUSTOMSETDEX_HGSS = {
             "moves": [
                 "Swagger",
                 "Focus Energy",
-                "Hi Jump Kick",
+                "High Jump Kick",
                 "Blaze Kick"
             ],
             "nature": "Hasty"
@@ -11784,7 +11784,7 @@ var CUSTOMSETDEX_HGSS = {
             },
             "level": 55,
             "moves": [
-                "Hi Jump Kick",
+                "High Jump Kick",
                 "Fake Out",
                 "Blaze Kick",
                 "Bulk Up"
@@ -15445,7 +15445,7 @@ var CUSTOMSETDEX_HGSS = {
             "moves": [
                 "Confuse Ray",
                 "Fire Spin",
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen"
             ],
             "nature": "Modest"
@@ -16192,7 +16192,7 @@ var CUSTOMSETDEX_HGSS = {
             "moves": [
                 "Confuse Ray",
                 "Fire Spin",
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen"
             ],
             "nature": "Calm"
@@ -16272,7 +16272,7 @@ var CUSTOMSETDEX_HGSS = {
             "moves": [
                 "Confuse Ray",
                 "Fire Spin",
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen"
             ],
             "nature": "Hardy"
@@ -16293,7 +16293,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Fire Punch",
                 "Confuse Ray",
                 "Fire Spin",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Docile"
         },
@@ -16313,7 +16313,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Fire Punch",
                 "Confuse Ray",
                 "Fire Spin",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Quirky"
         },
@@ -16370,7 +16370,7 @@ var CUSTOMSETDEX_HGSS = {
             },
             "level": 16,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen",
                 "Leer",
                 "Ember"
@@ -18036,7 +18036,7 @@ var CUSTOMSETDEX_HGSS = {
             },
             "level": 54,
             "moves": [
-                "Hi Jump Kick",
+                "High Jump Kick",
                 "Psycho Cut",
                 "Attract",
                 "ThunderPunch"
@@ -18225,7 +18225,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Slash",
                 "Pay Day",
                 "Taunt",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Adamant"
         },
@@ -18245,7 +18245,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Slash",
                 "Pay Day",
                 "Taunt",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Adamant"
         },
@@ -18265,7 +18265,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Slash",
                 "Pay Day",
                 "Taunt",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Adamant"
         },
@@ -20774,7 +20774,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Slash",
                 "Power Gem",
                 "Taunt",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Relaxed"
         }
@@ -28590,7 +28590,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Slam",
                 "Rock Slide",
                 "Rock Tomb",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Bashful"
         },
@@ -29231,7 +29231,7 @@ var CUSTOMSETDEX_HGSS = {
             "level": 24,
             "moves": [
                 "Sweet Scent",
-                "Feint Attack",
+                "Faint Attack",
                 "Fury Swipes",
                 "Scratch"
             ],
@@ -29250,7 +29250,7 @@ var CUSTOMSETDEX_HGSS = {
             },
             "level": 15,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Fury Swipes",
                 "Scratch",
                 "Leer"
@@ -29272,7 +29272,7 @@ var CUSTOMSETDEX_HGSS = {
             "moves": [
                 "Slash",
                 "Sweet Scent",
-                "Feint Attack",
+                "Faint Attack",
                 "Fury Swipes"
             ],
             "nature": "Hardy"
@@ -29291,7 +29291,7 @@ var CUSTOMSETDEX_HGSS = {
             "level": 22,
             "moves": [
                 "Sweet Scent",
-                "Feint Attack",
+                "Faint Attack",
                 "Fury Swipes",
                 "Scratch"
             ],
@@ -29313,7 +29313,7 @@ var CUSTOMSETDEX_HGSS = {
                 "Charm",
                 "Slash",
                 "Sweet Scent",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Lax"
         }

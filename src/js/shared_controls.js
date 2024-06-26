@@ -846,7 +846,7 @@ $(".set-selector").change(function () {
 					"Self-Destruct", "Explosion",
 					"Drill Run", "X-Scissors", "Cross Chop", "Dragon Claw",
 					"Confuse Ray", "Teeter Dance",
-					"Ancientpower", "Silver Wind"
+					"Ancient Power", "Silver Wind"
 				];
 				for (var j in pokemon.moves) {
 					var move = pokemon.moves[j].name;

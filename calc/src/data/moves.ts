@@ -279,7 +279,7 @@ const GSC_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Ancient Power': {bp: 60, type: 'Rock'},
   'Bone Rush': {bp: 25, type: 'Ground', multihit: [2, 5]},
   Crunch: {bp: 80, type: 'Dark'},
-  'Feint Attack': {bp: 60, type: 'Dark'},
+  'Faint Attack': {bp: 60, type: 'Dark'},
   'Giga Drain': {bp: 60, type: 'Grass', drain: [1, 2]},
   'Hidden Power': {bp: 0, type: 'Normal'},
   'Mean Look': {bp: 0, category: 'Status', type: 'Normal'},
@@ -573,16 +573,16 @@ const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   Crabhammer: {bp: 120},
   'Dizzy Punch': {bp: 90},
   'Glare': {type: 'Dark'},
-  'Hi Jump Kick': {bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true},
+  'High Jump Kick': {bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true},
   'Petal Dance': {bp: 95},
-  'Sonicboom': {bp: 0, type: 'Normal'},
+  'Sonic Boom': {bp: 0, type: 'Normal'},
   'Sky Attack': {bp: 120, recoil: [1, 3]},
   'Super Fang': {type: 'Dark'},
   'Leech Life': {bp: 40},
   'Egg Bomb': {bp: 120, type: 'Grass', recoil: [1, 3]},
   // Generation 2
   Aeroblast: {bp: 120},
-  'Ancientpower': {bp: 80, type: 'Rock'},
+  'Ancient Power': {bp: 80, type: 'Rock'},
   'Faint Attack': {bp: 60, type: 'Dark'},
   'Giga Drain': {bp: 75},
   'Rock Smash': {bp: 40},
@@ -627,10 +627,6 @@ const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 
 const EK: {[name: string]: MoveData} = extend(true, {}, ADV, EK_PATCH);
 
-delete EK['High Jump Kick'];
-delete EK['Sonic Boom'];
-delete EK['Ancient Power'];
-delete EK['Feint Attack'];
 delete EK['Comet Punch'];
 delete EK['Vise Grip'];
 delete EK['Horn Drill'];
@@ -793,7 +789,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Dizzy Punch': {isPunch: true, category: 'Physical'},
   'Dragon Rage': {category: 'Special'},
   'Egg Bomb': {category: 'Physical'},
-  'Feint Attack': {makesContact: true, category: 'Physical'},
+  'Faint Attack': {makesContact: true, category: 'Physical'},
   Frustration: {category: 'Physical'},
   'Hyper Fang': {isBite: true, category: 'Physical'},
   'Karate Chop': {category: 'Physical'},
@@ -2087,7 +2083,7 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Dragon Ascent': {zp: 190},
   'Dragon Rage': {zp: 100},
   'Egg Bomb': {zp: 180},
-  'Feint Attack': {zp: 120},
+  'Faint Attack': {zp: 120},
   'Fiery Dance': {zp: 160},
   'Flame Burst': {zp: 140},
   Frustration: {zp: 160},
@@ -3864,7 +3860,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Fake Out': {maxPower: 90},
   'False Swipe': {maxPower: 90},
   Feint: {maxPower: 90},
-  'Feint Attack': {maxPower: 110},
+  'Faint Attack': {maxPower: 110},
   'Fell Stinger': {maxPower: 100},
   'Fiery Dance': {maxPower: 130},
   'Final Gambit': {maxPower: 100},

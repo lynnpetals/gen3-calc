@@ -477,7 +477,7 @@ function predictSwitchOrderEmerald() {
 							"Fissure", "Horn Drill", "Guilotine", "Sheer Cold",
 							"Flail", "Frustration", "Low Kick", "Magnitude", "Present", "Return", "Reversal",
 							"Counter", "Mirror Coat",
-							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonicboom", "Super Fang",
+							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonic Boom", "Super Fang",
 							"Bide", "Hidden Power"
 						)) continue;
 						var score = 1;
@@ -501,7 +501,7 @@ function predictSwitchOrderEmerald() {
 							"Fissure", "Horn Drill", "Guilotine", "Sheer Cold",
 							"Flail", "Frustration", "Low Kick", "Magnitude", "Present", "Return", "Reversal",
 							"Counter", "Mirror Coat",
-							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonicboom", "Super Fang",
+							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonic Boom", "Super Fang",
 							"Bide", "Hidden Power"
 						)) continue;
 						if (new calc.Move(GENERATION, $(".last-move-used > select.move-selector").val()).category == "Status") {

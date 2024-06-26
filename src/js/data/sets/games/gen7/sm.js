@@ -10685,7 +10685,7 @@ var CUSTOMSETDEX_SM = {
             "level": 15,
             "moves": [
                 "Fire Spin",
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen",
                 "Ember"
             ],
@@ -10802,7 +10802,7 @@ var CUSTOMSETDEX_SM = {
             "moves": [
                 "Clear Smog",
                 "Fire Spin",
-                "Feint Attack",
+                "Faint Attack",
                 "Smokescreen"
             ],
             "nature": "Serious"
@@ -13025,7 +13025,7 @@ var CUSTOMSETDEX_SM = {
             "level": 28,
             "moves": [
                 "Nasty Plot",
-                "Feint Attack",
+                "Faint Attack",
                 "Psych Up",
                 "Stored Power"
             ],
@@ -13681,7 +13681,7 @@ var CUSTOMSETDEX_SM = {
             "level": 27,
             "moves": [
                 "Taunt",
-                "Feint Attack",
+                "Faint Attack",
                 "Screech",
                 "Fury Swipes"
             ],
@@ -13857,7 +13857,7 @@ var CUSTOMSETDEX_SM = {
             "level": 26,
             "moves": [
                 "Leech Seed",
-                "Feint Attack",
+                "Faint Attack",
                 "Confuse Ray",
                 "Astonish"
             ],
@@ -18830,7 +18830,7 @@ var CUSTOMSETDEX_SM = {
             "moves": [
                 "Icy Wind",
                 "Metal Claw",
-                "Feint Attack",
+                "Faint Attack",
                 "Quick Attack"
             ],
             "nature": "Serious"
@@ -20518,7 +20518,7 @@ var CUSTOMSETDEX_SM = {
             },
             "level": 23,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Confuse Ray",
                 "Quick Attack",
                 "Baby-Doll Eyes"
@@ -21665,7 +21665,7 @@ var CUSTOMSETDEX_SM = {
             "moves": [
                 "Aqua Ring",
                 "Brine",
-                "Feint Attack",
+                "Faint Attack",
                 "Helping Hand"
             ],
             "nature": "Serious"

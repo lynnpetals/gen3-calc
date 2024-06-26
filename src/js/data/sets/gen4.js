@@ -709,7 +709,7 @@ var SETDEX_DPP = {
   },
   "Shiftry": {
     "Ubers Nasty Plot": {"ability":"Chlorophyll","item":"Life Orb","nature":"Modest","evs":{"hp":4,"sa":252,"sp":252},"moves":["Nasty Plot","Dark Pulse","Grass Knot","Explosion"]},
-    "Ubers Swords Dance": {"ability":"Chlorophyll","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Swords Dance","Seed Bomb","Feint Attack","Low Kick"]},
+    "Ubers Swords Dance": {"ability":"Chlorophyll","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Swords Dance","Seed Bomb","Faint Attack","Low Kick"]},
     "UU Swords Dance": {"ability":"Chlorophyll","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Swords Dance","Sucker Punch","Seed Bomb","Low Kick"]},
     "UU Nasty Plot": {"ability":"Chlorophyll","item":"Life Orb","nature":"Modest","ivs":{"at":30,"sa":30,"sp":30},"evs":{"df":4,"sa":252,"sp":252},"moves":["Nasty Plot","Solar Beam","Hidden Power Fire","Dark Pulse"]},
     "UU Attacking Lead": {"ability":"Early Bird","item":"Focus Sash","nature":"Rash","evs":{"at":116,"sa":252,"sp":140},"moves":["Low Kick","Leaf Storm","Dark Pulse","Explosion"]},
@@ -1664,7 +1664,7 @@ var SETDEX_DPP = {
   "Spinda": {
     "UU Parafusion": {"ability":"Own Tempo","item":"Leftovers","nature":"Adamant","evs":{"hp":252,"at":252,"sp":4},"moves":["Substitute","Body Slam","Teeter Dance","Rock Slide"]},
     "UU One-Trick Bear": {"ability":"Own Tempo","item":"Choice Band","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Trick","Hypnosis","Sucker Punch","Return"]},
-    "UU Focused Counter": {"ability":"Own Tempo","item":"Focus Sash","nature":"Adamant","evs":{"hp":252,"at":4,"sp":252},"moves":["Counter","Focus Punch","Return","Feint Attack"]}
+    "UU Focused Counter": {"ability":"Own Tempo","item":"Focus Sash","nature":"Adamant","evs":{"hp":252,"at":4,"sp":252},"moves":["Counter","Focus Punch","Return","Faint Attack"]}
   },
   "Cacnea": {
     "LC Swords Dance": {"level":5,"ability":"Sand Veil","item":"Oran Berry","nature":"Adamant","evs":{"hp":36,"at":236,"sp":236},"moves":["Swords Dance","Sucker Punch","Focus Punch","Substitute"]},

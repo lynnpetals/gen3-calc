@@ -14,10 +14,10 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Aerodactyl":
     {
-        "Champion Steven": {"ability": "Rock Head", "item": "Lum Berry", "level": 100, "moves": ["Sky Attack", "Earthquake", "Flamethrower", "Ancientpower"], "nature": "Bashful"},
-        "Expert Mitchell": {"ability": "Rock Head", "item": "Lum Berry", "level": 86, "moves": ["Earthquake", "Air Slash", "Double-Edge", "Ancientpower"], "nature": "Quirky"},
-        "Leader Winona": {"ability": "Rock Head", "item": "Lum Berry", "level": 54, "moves": ["Hidden Power Flying", "Ancientpower", "Double-Edge", "Earthquake"], "nature": "Naive"},
-        "Old Couple John & Jay": {"ability": "Rock Head", "item": "Lum Berry", "level": 75, "moves": ["Earth Power", "Air Slash", "Ancientpower", "Iron Tail"], "nature": "Quiet"}
+        "Champion Steven": {"ability": "Rock Head", "item": "Lum Berry", "level": 100, "moves": ["Sky Attack", "Earthquake", "Flamethrower", "Ancient Power"], "nature": "Bashful"},
+        "Expert Mitchell": {"ability": "Rock Head", "item": "Lum Berry", "level": 86, "moves": ["Earthquake", "Air Slash", "Double-Edge", "Ancient Power"], "nature": "Quirky"},
+        "Leader Winona": {"ability": "Rock Head", "item": "Lum Berry", "level": 54, "moves": ["Hidden Power Flying", "Ancient Power", "Double-Edge", "Earthquake"], "nature": "Naive"},
+        "Old Couple John & Jay": {"ability": "Rock Head", "item": "Lum Berry", "level": 75, "moves": ["Earth Power", "Air Slash", "Ancient Power", "Iron Tail"], "nature": "Quiet"}
     },
     "Aggron":
     {
@@ -109,12 +109,12 @@ var CUSTOMHACKSETDEX_EK = {
     "Armaldo":
     {
         "Bug Maniac Jeffrey": {"ability": "Battle Armor", "item": "Hard Stone", "level": 51, "moves": ["X-scissors", "Rock Slide", "Earthquake", "Body Slam"], "nature": "Bashful"},
-        "Cooltrainer Virgil": {"ability": "Battle Armor", "item": "Lum Berry", "level": 66, "moves": ["X-scissors", "Ancientpower", "Brick Break", "Body Slam"], "nature": "Timid"},
-        "Expert Edgar": {"ability": "Battle Armor", "item": "Lum Berry", "level": 88, "moves": ["X-scissors", "Ancientpower", "Earthquake", "Agility"], "nature": "Modest"},
-        "Fisherman Roger": {"ability": "Battle Armor", "level": 63, "moves": ["Crush Claw", "Superpower", "X-scissors", "Ancientpower"], "nature": "Gentle"},
-        "Team Aqua Grunt #4 @ Weather Institute": {"ability": "Battle Armor", "item": "Lum Berry", "level": 46, "moves": ["Ancientpower", "Earthquake", "X-scissors", "Agility"], "nature": "Quiet"},
-        "Team Aqua Grunt #7 @ Mt. Pyre": {"ability": "Battle Armor", "item": "Quick Claw", "level": 52, "moves": ["Earthquake", "Ancientpower", "X-scissors", "Swords Dance"], "nature": "Timid"},
-        "Team Magma Grunt #11 @ Magma Hideout": {"ability": "Battle Armor", "item": "Lum Berry", "level": 62, "moves": ["Swords Dance", "Earthquake", "X-scissors", "Ancientpower"], "nature": "Rash"}
+        "Cooltrainer Virgil": {"ability": "Battle Armor", "item": "Lum Berry", "level": 66, "moves": ["X-scissors", "Ancient Power", "Brick Break", "Body Slam"], "nature": "Timid"},
+        "Expert Edgar": {"ability": "Battle Armor", "item": "Lum Berry", "level": 88, "moves": ["X-scissors", "Ancient Power", "Earthquake", "Agility"], "nature": "Modest"},
+        "Fisherman Roger": {"ability": "Battle Armor", "level": 63, "moves": ["Crush Claw", "Superpower", "X-scissors", "Ancient Power"], "nature": "Gentle"},
+        "Team Aqua Grunt #4 @ Weather Institute": {"ability": "Battle Armor", "item": "Lum Berry", "level": 46, "moves": ["Ancient Power", "Earthquake", "X-scissors", "Agility"], "nature": "Quiet"},
+        "Team Aqua Grunt #7 @ Mt. Pyre": {"ability": "Battle Armor", "item": "Quick Claw", "level": 52, "moves": ["Earthquake", "Ancient Power", "X-scissors", "Swords Dance"], "nature": "Timid"},
+        "Team Magma Grunt #11 @ Magma Hideout": {"ability": "Battle Armor", "item": "Lum Berry", "level": 62, "moves": ["Swords Dance", "Earthquake", "X-scissors", "Ancient Power"], "nature": "Rash"}
     },
     "Aron":
     {
@@ -281,7 +281,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Carvanha":
     {
-        "Team Aqua Grunt @ Rusturf Tunnel": {"ability": "Rough Skin", "item": "Scope Lens", "level": 15, "moves": ["Ancientpower", "Bounce", "Water Pulse", "Crunch"], "nature": "Calm"}
+        "Team Aqua Grunt @ Rusturf Tunnel": {"ability": "Rough Skin", "item": "Scope Lens", "level": 15, "moves": ["Ancient Power", "Bounce", "Water Pulse", "Crunch"], "nature": "Calm"}
     },
     "Cascoon":
     {
@@ -314,7 +314,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Celebi":
     {
-        "Pokémon Trainer Red #3": {"ability": "Natural Cure", "item": "Leftovers", "level": 88, "moves": ["Recover", "Giga Drain", "Ancientpower", "Hidden Power Fire"], "nature": "Naive"}
+        "Pokémon Trainer Red #3": {"ability": "Natural Cure", "item": "Leftovers", "level": 88, "moves": ["Recover", "Giga Drain", "Ancient Power", "Hidden Power Fire"], "nature": "Naive"}
     },
     "Chansey":
     {
@@ -386,7 +386,7 @@ var CUSTOMHACKSETDEX_EK = {
         "Pokéfan Alexia": {"ability": "Levitate", "item": "Leftovers", "level": 42, "moves": ["Toxic", "Drill Run", "Psychic", "Protect"], "nature": "Brave"},
         "Psychic Jacki": {"ability": "Levitate", "item": "Choice Band", "level": 74, "moves": ["Earthquake"], "nature": "Lax"},
         "Psychic Preston": {"ability": "Levitate", "item": "Lum Berry", "level": 66, "moves": ["Earthquake", "Signal Beam", "Psychic", "Light Screen"], "nature": "Serious"},
-        "Ruin Maniac Chip": {"ability": "Levitate", "item": "Hard Stone", "level": 51, "moves": ["Psychic", "Earthquake", "Ancientpower", "Reflect"], "nature": "Impish"},
+        "Ruin Maniac Chip": {"ability": "Levitate", "item": "Hard Stone", "level": 51, "moves": ["Psychic", "Earthquake", "Ancient Power", "Reflect"], "nature": "Impish"},
         "Team Magma Grunt #12 @ Magma Hideout": {"ability": "Levitate", "item": "Choice Band", "level": 58, "moves": ["Explosion"], "nature": "Impish"},
         "Team Magma Grunt #14 @ Magma Hideout": {"ability": "Levitate", "item": "Leftovers", "level": 63, "moves": ["Earthquake", "Solar Beam", "Ice Beam", "Psychic"], "nature": "Rash"},
         "Team Magma Grunt #3 @ Mossdeep Space Center": {"ability": "Levitate", "item": "Scope Lens", "level": 67, "moves": ["Earthquake", "Psychic", "Ice Beam", "Shadow Ball"], "nature": "Serious"},
@@ -441,16 +441,16 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Corsola":
     {
-        "Fisherman Barny": {"ability": "Natural Cure", "item": "Lum Berry", "level": 43, "moves": ["Mirror Coat", "Recover", "Surf", "Ancientpower"], "nature": "Hasty"},
+        "Fisherman Barny": {"ability": "Natural Cure", "item": "Lum Berry", "level": 43, "moves": ["Mirror Coat", "Recover", "Surf", "Ancient Power"], "nature": "Hasty"},
         "School Kid Tammy": {"ability": "Natural Cure", "item": "Hard Stone", "level": 13, "moves": ["Recover", "Rock Tomb", "Aurora Beam", "Water Pulse"], "nature": "Sassy"}
     },
     "Cradily":
     {
-        "Expert Halle": {"ability": "Suction Cups", "item": "Leftovers", "level": 87, "moves": ["Stockpile", "Rest", "Ancientpower", "Earthquake"], "nature": "Brave"},
-        "Expert Samuel": {"ability": "Suction Cups", "item": "Leftovers", "level": 84, "moves": ["Confuse Ray", "Giga Drain", "Earthquake", "Ancientpower"], "nature": "Hardy"},
+        "Expert Halle": {"ability": "Suction Cups", "item": "Leftovers", "level": 87, "moves": ["Stockpile", "Rest", "Ancient Power", "Earthquake"], "nature": "Brave"},
+        "Expert Samuel": {"ability": "Suction Cups", "item": "Leftovers", "level": 84, "moves": ["Confuse Ray", "Giga Drain", "Earthquake", "Ancient Power"], "nature": "Hardy"},
         "Ruin Maniac Chip": {"ability": "Suction Cups", "item": "Leftovers", "level": 51, "moves": ["Giga Drain", "Recover", "Sludge Bomb", "Confuse Ray"], "nature": "Relaxed"},
         "Team Aqua Grunt #10 @ Mt. Pyre": {"ability": "Suction Cups", "item": "Leftovers", "level": 53, "moves": ["Stockpile", "Recover", "Toxic", "Earthquake"], "nature": "Timid"},
-        "Team Aqua Grunt #2 @ Weather Institute": {"ability": "Suction Cups", "item": "Leftovers", "level": 45, "moves": ["Toxic", "Recover", "Ancientpower", "Earthquake"], "nature": "Lax"},
+        "Team Aqua Grunt #2 @ Weather Institute": {"ability": "Suction Cups", "item": "Leftovers", "level": 45, "moves": ["Toxic", "Recover", "Ancient Power", "Earthquake"], "nature": "Lax"},
         "Team Aqua Grunt #7 @ Aqua Hideout": {"ability": "Suction Cups", "item": "Leftovers", "level": 64, "moves": ["Giga Drain", "Recover", "Toxic", "Earthquake"], "nature": "Bashful"}
     },
     "Crawdaunt":
@@ -549,7 +549,7 @@ var CUSTOMHACKSETDEX_EK = {
     {
         "Camper Drew": {"ability": "Battle Armor", "item": "Choice Band", "level": 40, "moves": ["Earthquake", "Hyper Beam"], "nature": "Rash"},
         "Team Magma Grunt #1 @ Jagged Pass": {"ability": "Battle Armor", "item": "Choice Band", "level": 36, "moves": ["Earthquake"], "nature": "Mild"},
-        "Team Magma Grunt #1 @ Magma Hideout": {"ability": "Battle Armor", "item": "Bright Powder", "level": 57, "moves": ["Earthquake", "Swagger", "Ancientpower", "Body Slam"], "nature": "Brave"}
+        "Team Magma Grunt #1 @ Magma Hideout": {"ability": "Battle Armor", "item": "Bright Powder", "level": 57, "moves": ["Earthquake", "Swagger", "Ancient Power", "Body Slam"], "nature": "Brave"}
     },
     "Dragonair":
     {
@@ -593,10 +593,10 @@ var CUSTOMHACKSETDEX_EK = {
     {
         "Collector Ed": {"ability": "Arena Trap", "item": "Choice Band", "level": 74, "moves": ["Earthquake"], "nature": "Naughty"},
         "Cooltrainer Jerome": {"ability": "Arena Trap", "item": "Choice Band", "level": 52, "moves": ["Earthquake"], "nature": "Brave"},
-        "Expert Felix": {"ability": "Arena Trap", "item": "Lum Berry", "level": 89, "moves": ["Earth Power", "Ancientpower", "Sludge Bomb", "Hidden Power Ghost"], "nature": "Impish"},
-        "Expert Macey": {"ability": "Arena Trap", "item": "Leftovers", "level": 69, "moves": ["Ancientpower", "Protect", "Substitute"], "nature": "Naive"},
+        "Expert Felix": {"ability": "Arena Trap", "item": "Lum Berry", "level": 89, "moves": ["Earth Power", "Ancient Power", "Sludge Bomb", "Hidden Power Ghost"], "nature": "Impish"},
+        "Expert Macey": {"ability": "Arena Trap", "item": "Leftovers", "level": 69, "moves": ["Ancient Power", "Protect", "Substitute"], "nature": "Naive"},
         "Team Magma Grunt #2 @ Route 112": {"ability": "Arena Trap", "item": "King's Rock", "level": 26, "moves": ["Aerial Ace", "Dig", "Rock Tomb", "Tri Attack"], "nature": "Docile"},
-        "Team Magma Grunt #5 @ Magma Hideout": {"ability": "Arena Trap", "item": "Bright Powder", "level": 60, "moves": ["Earthquake", "Sludge Bomb", "Ancientpower", "Tri Attack"], "nature": "Hardy"},
+        "Team Magma Grunt #5 @ Magma Hideout": {"ability": "Arena Trap", "item": "Bright Powder", "level": 60, "moves": ["Earthquake", "Sludge Bomb", "Ancient Power", "Tri Attack"], "nature": "Hardy"},
         "Triathlete Chase": {"ability": "Arena Trap", "item": "Choice Band", "level": 66, "moves": ["Earthquake"], "nature": "Impish"},
         "Triathlete Jace": {"ability": "Arena Trap", "item": "Lum Berry", "level": 37, "moves": ["Earthquake", "Sludge Bomb", "Rock Slide", "Tri Attack"], "nature": "Modest"},
         "Triathlete Katelyn": {"ability": "Arena Trap", "item": "Choice Band", "level": 66, "moves": ["Tri Attack", "Slash", "Earthquake", "Rock Slide"], "nature": "Hasty"}
@@ -654,7 +654,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Electrode":
     {
-        "Collector Shawn": {"ability": "Static", "item": "Liechi Berry", "level": 27, "moves": ["Thunder Wave", "Sonicboom", "Wild Charge", "Self-Destruct"], "nature": "Serious"},
+        "Collector Shawn": {"ability": "Static", "item": "Liechi Berry", "level": 27, "moves": ["Thunder Wave", "Sonic Boom", "Wild Charge", "Self-Destruct"], "nature": "Serious"},
         "Expert Clifford": {"ability": "Static", "item": "Choice Band", "level": 67, "moves": ["Explosion"], "nature": "Bashful"},
         "Expert Julie": {"ability": "Static", "item": "Lum Berry", "level": 86, "moves": ["Reflect", "Explosion", "Thunderbolt", "Hidden Power Ice"], "nature": "Impish"},
         "Guitarist Dalton": {"ability": "Static", "item": "Silver Powder", "level": 44, "moves": ["Thunder Wave", "Thunderbolt", "Signal Beam", "Explosion"], "nature": "Rash"},
@@ -673,7 +673,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Entei":
     {
-        "Magma Leader Maxie #2": {"ability": "Inner Focus", "item": "Lum Berry", "level": 66, "moves": ["Sacred Fire", "Solar Beam", "Extreme Speed", "Ancientpower"], "nature": "Impish"}
+        "Magma Leader Maxie #2": {"ability": "Inner Focus", "item": "Lum Berry", "level": 66, "moves": ["Sacred Fire", "Solar Beam", "Extreme Speed", "Ancient Power"], "nature": "Impish"}
     },
     "Espeon":
     {
@@ -691,20 +691,20 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Exeggutor":
     {
-        "Aqua Admin Matt #1": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 56, "moves": ["Explosion", "Egg Bomb", "Psychic", "Ancientpower"], "nature": "Timid"},
-        "Cooltrainer Cristin": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 52, "moves": ["Sleep Powder", "Giga Drain", "Psychic", "Ancientpower"], "nature": "Adamant"},
+        "Aqua Admin Matt #1": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 56, "moves": ["Explosion", "Egg Bomb", "Psychic", "Ancient Power"], "nature": "Timid"},
+        "Cooltrainer Cristin": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 52, "moves": ["Sleep Powder", "Giga Drain", "Psychic", "Ancient Power"], "nature": "Adamant"},
         "Cooltrainer Owen": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 85, "moves": ["Sleep Powder", "Psychic", "Egg Bomb", "Explosion"], "nature": "Naughty"},
-        "Fisherman Wayne": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 71, "moves": ["Sleep Powder", "Egg Bomb", "Psychic", "Ancientpower"], "nature": "Docile"},
-        "Magma Leader Maxie #2": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 66, "moves": ["Solar Beam", "Psychic", "Ancientpower", "Hidden Power Fire"], "nature": "Bashful"},
-        "Psychic Alix": {"ability": "Chlorophyll", "level": 43, "moves": ["Ancientpower", "Sleep Powder", "Explosion", "Stun Spore"], "nature": "Lax"},
-        "Psychic Samantha": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 66, "moves": ["Sleep Powder", "Psychic", "Giga Drain", "Ancientpower"], "nature": "Naughty"},
-        "Team Aqua Grunt #1 @ Aqua Hideout": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 60, "moves": ["Sleep Powder", "Explosion", "Egg Bomb", "Ancientpower"], "nature": "Sassy"},
+        "Fisherman Wayne": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 71, "moves": ["Sleep Powder", "Egg Bomb", "Psychic", "Ancient Power"], "nature": "Docile"},
+        "Magma Leader Maxie #2": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 66, "moves": ["Solar Beam", "Psychic", "Ancient Power", "Hidden Power Fire"], "nature": "Bashful"},
+        "Psychic Alix": {"ability": "Chlorophyll", "level": 43, "moves": ["Ancient Power", "Sleep Powder", "Explosion", "Stun Spore"], "nature": "Lax"},
+        "Psychic Samantha": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 66, "moves": ["Sleep Powder", "Psychic", "Giga Drain", "Ancient Power"], "nature": "Naughty"},
+        "Team Aqua Grunt #1 @ Aqua Hideout": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 60, "moves": ["Sleep Powder", "Explosion", "Egg Bomb", "Ancient Power"], "nature": "Sassy"},
         "Team Aqua Grunt #1 @ Weather Institute": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 45, "moves": ["Sleep Powder", "Egg Bomb", "Explosion", "Psychic"], "nature": "Timid"},
         "Team Aqua Grunt #3 @ Mt. Pyre": {"ability": "Chlorophyll", "item": "Scope Lens", "level": 50, "moves": ["Sleep Powder", "Explosion", "Psychic", "Giga Drain"], "nature": "Sassy"},
-        "Team Aqua Grunt #5 @ Seafloor Cavern": {"ability": "Chlorophyll", "item": "Leftovers", "level": 69, "moves": ["Sleep Powder", "Psychic", "Ancientpower", "Egg Bomb"], "nature": "Mild"},
-        "Team Aqua Grunt #6 @ Aqua Hideout": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 62, "moves": ["Sleep Powder", "Psychic", "Ancientpower", "Egg Bomb"], "nature": "Naughty"},
+        "Team Aqua Grunt #5 @ Seafloor Cavern": {"ability": "Chlorophyll", "item": "Leftovers", "level": 69, "moves": ["Sleep Powder", "Psychic", "Ancient Power", "Egg Bomb"], "nature": "Mild"},
+        "Team Aqua Grunt #6 @ Aqua Hideout": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 62, "moves": ["Sleep Powder", "Psychic", "Ancient Power", "Egg Bomb"], "nature": "Naughty"},
         "Team Magma Grunt #1 @ Mossdeep Space Center": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 67, "moves": ["Sunny Day", "Egg Bomb", "Psychic", "Hidden Power Fire"], "nature": "Calm"},
-        "Team Magma Grunt #12 @ Magma Hideout": {"ability": "Chlorophyll", "item": "Bright Powder", "level": 59, "moves": ["Swords Dance", "Explosion", "Ancientpower", "Hidden Power Fighting"], "nature": "Rash"}
+        "Team Magma Grunt #12 @ Magma Hideout": {"ability": "Chlorophyll", "item": "Bright Powder", "level": 59, "moves": ["Swords Dance", "Explosion", "Ancient Power", "Hidden Power Fighting"], "nature": "Rash"}
     },
     "Exploud":
     {
@@ -749,10 +749,10 @@ var CUSTOMHACKSETDEX_EK = {
         "Pokémon Trainer Brendan #3 [Sceptile]": {"ability": "Battle Armor", "item": "Lum Berry", "level": 49, "moves": ["Hydro Pump", "Ice Beam", "Earthquake", "Surf"], "nature": "Hardy"},
         "Pokémon Trainer Brendan #4 [Sceptile]": {"ability": "Battle Armor", "item": "Lum Berry", "level": 59, "moves": ["Earthquake", "Dragon Dance", "Hidden Power Flying", "Surf"], "nature": "Adamant"},
         "Pokémon Trainer May #3 [Sceptile]": {"ability": "Battle Armor", "item": "Lum Berry", "level": 50, "moves": ["Hydro Pump", "Ice Beam", "Earthquake", "Hidden Power Electric"], "nature": "Bashful"},
-        "Pokémon Trainer May #4 [Sceptile]": {"ability": "Battle Armor", "item": "Lum Berry", "level": 59, "moves": ["Hydro Pump", "Hidden Power Flying", "Earthquake", "Ancientpower"], "nature": "Quirky"},
+        "Pokémon Trainer May #4 [Sceptile]": {"ability": "Battle Armor", "item": "Lum Berry", "level": 59, "moves": ["Hydro Pump", "Hidden Power Flying", "Earthquake", "Ancient Power"], "nature": "Quirky"},
         "Pokémon Ranger Lorenzo": {"ability": "Battle Armor", "item": "Black Glasses", "level": 51, "moves": ["Crunch", "Surf", "Ice Beam", "Earthquake"], "nature": "Relaxed"},
         "Team Aqua Grunt #2 @ Mt. Pyre": {"ability": "Battle Armor", "item": "King's Rock", "level": 53, "moves": ["Scary Face", "Waterfall", "Earthquake", "Ice Beam"], "nature": "Hasty"},
-        "Team Aqua Grunt #9 @ Mt. Pyre": {"ability": "Battle Armor", "item": "Lum Berry", "level": 54, "moves": ["Dragon Dance", "Earthquake", "Ancientpower", "Ice Beam"], "nature": "Naive"}
+        "Team Aqua Grunt #9 @ Mt. Pyre": {"ability": "Battle Armor", "item": "Lum Berry", "level": 54, "moves": ["Dragon Dance", "Earthquake", "Ancient Power", "Ice Beam"], "nature": "Naive"}
     },
     "Flaaffy":
     {
@@ -777,12 +777,12 @@ var CUSTOMHACKSETDEX_EK = {
         "Cooltrainer Ruben": {"ability": "Levitate", "item": "Lum Berry", "level": 71, "moves": ["Earthquake", "Dragon Claw", "Signal Beam", "Flamethrower"], "nature": "Lax"},
         "Expert Auron": {"ability": "Levitate", "level": 67, "moves": ["Double-Edge", "Crunch", "Dragon Claw", "Earthquake"], "nature": "Hardy"},
         "Expert Halle": {"ability": "Levitate", "item": "Lum Berry", "level": 86, "moves": ["Earthquake", "Flamethrower", "Dragon Claw", "Quick Attack"], "nature": "Hardy"},
-        "Expert Mitchell": {"ability": "Levitate", "item": "Lum Berry", "level": 86, "moves": ["Earthquake", "Dragon Dance", "Ancientpower", "Signal Beam"], "nature": "Calm"},
+        "Expert Mitchell": {"ability": "Levitate", "item": "Lum Berry", "level": 86, "moves": ["Earthquake", "Dragon Dance", "Ancient Power", "Signal Beam"], "nature": "Calm"},
         "Leader Winona": {"ability": "Levitate", "item": "Lum Berry", "level": 55, "moves": ["Earthquake", "Dragon Claw", "Flamethrower", "Giga Drain"], "nature": "Impish"},
         "Magma Admin Tabitha #1": {"ability": "Levitate", "item": "Lum Berry", "level": 37, "moves": ["Earthquake", "Giga Drain", "Signal Beam", "Rock Slide"], "nature": "Docile"},
         "Magma Leader Maxie #2": {"ability": "Levitate", "item": "Lum Berry", "level": 66, "moves": ["Draco Meteor", "Earthquake", "Heat Wave", "Solar Beam"], "nature": "Modest"},
-        "Magma Leader Maxie #3": {"ability": "Levitate", "item": "Lum Berry", "level": 71, "moves": ["Earthquake", "Flamethrower", "Signal Beam", "Ancientpower"], "nature": "Hardy"},
-        "Old Couple Miu & Yuki": {"ability": "Levitate", "item": "Quick Claw", "level": 75, "moves": ["Earth Power", "Ancientpower", "Signal Beam", "Giga Drain"], "nature": "Sassy"},
+        "Magma Leader Maxie #3": {"ability": "Levitate", "item": "Lum Berry", "level": 71, "moves": ["Earthquake", "Flamethrower", "Signal Beam", "Ancient Power"], "nature": "Hardy"},
+        "Old Couple Miu & Yuki": {"ability": "Levitate", "item": "Quick Claw", "level": 75, "moves": ["Earth Power", "Ancient Power", "Signal Beam", "Giga Drain"], "nature": "Sassy"},
         "Team Magma Grunt #11 @ Magma Hideout": {"ability": "Levitate", "item": "Scope Lens", "level": 58, "moves": ["Solar Beam", "Draco Meteor", "Flamethrower", "Earthquake"], "nature": "Careful"},
         "Team Magma Grunt #3 @ Magma Hideout": {"ability": "Levitate", "item": "Bright Powder", "level": 56, "moves": ["Earthquake", "Solar Beam", "Fire Blast", "Rock Slide"], "nature": "Hardy"}
     },
@@ -896,7 +896,7 @@ var CUSTOMHACKSETDEX_EK = {
     "Golem":
     {
         "Team Magma Grunt #1 @ Mt. Chimney": {"ability": "Rock Head", "item": "Choice Band", "level": 36, "moves": ["Explosion"], "nature": "Gentle"},
-        "Team Magma Grunt #4 @ Route 114": {"ability": "Rock Head", "item": "Quick Claw", "level": 36, "moves": ["Earthquake", "Double-Edge", "Ancientpower", "Explosion"], "nature": "Modest"},
+        "Team Magma Grunt #4 @ Route 114": {"ability": "Rock Head", "item": "Quick Claw", "level": 36, "moves": ["Earthquake", "Double-Edge", "Ancient Power", "Explosion"], "nature": "Modest"},
         "Team Magma Grunt #7 @ Magma Hideout": {"ability": "Rock Head", "item": "Quick Claw", "level": 63, "moves": ["Explosion", "Earthquake", "Head Smash", "Double-Edge"], "nature": "Careful"}
     },
     "Gorebyss":
@@ -1015,11 +1015,11 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Hitmonlee":
     {
-        "Black Belt Daisuke": {"ability": "Limber", "item": "Silk Scarf", "ivs": {"at": 18, "df": 18, "hp": 18, "sa": 18, "sd": 18, "sp": 18}, "level": 29, "moves": ["Fake Out", "Hi Jump Kick", "Mega Kick", "Detect"], "nature": "Gentle"},
-        "Black Belt Koji": {"ability": "Limber", "item": "Quick Claw", "level": 67, "moves": ["Body Slam", "Earthquake", "Rock Slide", "Hi Jump Kick"], "nature": "Calm"},
-        "Cooltrainer Virgil": {"ability": "Limber", "item": "Lum Berry", "level": 66, "moves": ["Fake Out", "Hi Jump Kick", "Rock Tomb", "Mach Punch"], "nature": "Docile"},
+        "Black Belt Daisuke": {"ability": "Limber", "item": "Silk Scarf", "ivs": {"at": 18, "df": 18, "hp": 18, "sa": 18, "sd": 18, "sp": 18}, "level": 29, "moves": ["Fake Out", "High Jump Kick", "Mega Kick", "Detect"], "nature": "Gentle"},
+        "Black Belt Koji": {"ability": "Limber", "item": "Quick Claw", "level": 67, "moves": ["Body Slam", "Earthquake", "Rock Slide", "High Jump Kick"], "nature": "Calm"},
+        "Cooltrainer Virgil": {"ability": "Limber", "item": "Lum Berry", "level": 66, "moves": ["Fake Out", "High Jump Kick", "Rock Tomb", "Mach Punch"], "nature": "Docile"},
         "Leader Brawly": {"ability": "Limber", "item": "Sitrus Berry", "level": 17, "moves": ["Sleep Talk", "Rolling Kick", "Rock Slide", "Secret Power"], "nature": "Quirky"},
-        "Pokémon Ranger Jenna": {"ability": "Limber", "item": "Black Belt", "level": 51, "moves": ["Fake Out", "Hi Jump Kick", "Return", "Rock Slide"], "nature": "Naive"}
+        "Pokémon Ranger Jenna": {"ability": "Limber", "item": "Black Belt", "level": 51, "moves": ["Fake Out", "High Jump Kick", "Return", "Rock Slide"], "nature": "Naive"}
     },
     "Hitmontop":
     {
@@ -1105,7 +1105,7 @@ var CUSTOMHACKSETDEX_EK = {
     "Jirachi":
     {
         "Champion Steven": {"ability": "Serene Grace", "item": "Lum Berry", "level": 100, "moves": ["Meteor Mash", "Extrasensory", "Fire Punch", "Thunderbolt"], "nature": "Relaxed"},
-        "Leaders Tate&Liza": {"ability": "Serene Grace", "item": "Lum Berry", "level": 70, "moves": ["Meteor Mash", "Signal Beam", "Fire Punch", "Ancientpower"], "nature": "Naughty"}
+        "Leaders Tate&Liza": {"ability": "Serene Grace", "item": "Lum Berry", "level": 70, "moves": ["Meteor Mash", "Signal Beam", "Fire Punch", "Ancient Power"], "nature": "Naughty"}
     },
     "Jolteon":
     {
@@ -1147,11 +1147,11 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Kabutops":
     {
-        "Cooltrainer Olivia": {"ability": "Swift Swim", "item": "Lum Berry", "level": 76, "moves": ["X-scissors", "Ancientpower", "Earth Power", "Muddy Water"], "nature": "Impish"},
-        "Ruin Maniac Chip": {"ability": "Swift Swim", "item": "Mystic Water", "level": 52, "moves": ["Surf", "Ancientpower", "X-scissors", "Brick Break"], "nature": "Calm"},
+        "Cooltrainer Olivia": {"ability": "Swift Swim", "item": "Lum Berry", "level": 76, "moves": ["X-scissors", "Ancient Power", "Earth Power", "Muddy Water"], "nature": "Impish"},
+        "Ruin Maniac Chip": {"ability": "Swift Swim", "item": "Mystic Water", "level": 52, "moves": ["Surf", "Ancient Power", "X-scissors", "Brick Break"], "nature": "Calm"},
         "Team Aqua Grunt #1 @ Mt. Pyre": {"ability": "Swift Swim", "item": "Scope Lens", "level": 51, "moves": ["Rain Dance", "Waterfall", "Rock Slide", "X-scissors"], "nature": "Serious"},
-        "Team Aqua Grunt #2 @ Seafloor Cavern": {"ability": "Swift Swim", "item": "King's Rock", "level": 70, "moves": ["Ancientpower", "X-scissors", "Earth Power", "Hidden Power Flying"], "nature": "Naughty"},
-        "Team Aqua Grunt #4 @ Weather Institute": {"ability": "Swift Swim", "item": "Bright Powder", "level": 47, "moves": ["Rain Dance", "Ancientpower", "Surf", "X-scissors"], "nature": "Timid"}
+        "Team Aqua Grunt #2 @ Seafloor Cavern": {"ability": "Swift Swim", "item": "King's Rock", "level": 70, "moves": ["Ancient Power", "X-scissors", "Earth Power", "Hidden Power Flying"], "nature": "Naughty"},
+        "Team Aqua Grunt #4 @ Weather Institute": {"ability": "Swift Swim", "item": "Bright Powder", "level": 47, "moves": ["Rain Dance", "Ancient Power", "Surf", "X-scissors"], "nature": "Timid"}
     },
     "Kadabra":
     {
@@ -1282,7 +1282,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Lileep":
     {
-        "Leader Roxanne": {"ability": "Suction Cups", "item": "Sitrus Berry", "level": 14, "moves": ["Sludge Bomb", "Giga Drain", "Recover", "Ancientpower"], "nature": "Serious"},
+        "Leader Roxanne": {"ability": "Suction Cups", "item": "Sitrus Berry", "level": 14, "moves": ["Sludge Bomb", "Giga Drain", "Recover", "Ancient Power"], "nature": "Serious"},
         "Ruin Maniac Bryan": {"ability": "Suction Cups", "item": "Leftovers", "level": 30, "moves": ["Rain Dance", "Protect", "Leech Seed", "Sludge Bomb"], "nature": "Hasty"}
     },
     "Linoone":
@@ -1337,7 +1337,7 @@ var CUSTOMHACKSETDEX_EK = {
         "Expert Samuel": {"ability": "Levitate", "item": "Leftovers", "level": 84, "moves": ["Calm Mind", "Psychic", "Ice Beam", "Hidden Power Fire"], "nature": "Hardy"},
         "Interviewers Gabby & Ty #3": {"ability": "Levitate", "item": "Leftovers", "level": 51, "moves": ["Psychic", "Ice Beam", "Calm Mind", "Moonlight"], "nature": "Rash"},
         "Leader Roxanne": {"ability": "Levitate", "item": "Lum Berry", "level": 15, "moves": ["Hypnosis", "Moonlight", "Confusion", "Rock Slide"], "nature": "Lonely"},
-        "Ninja Boy Takashi": {"ability": "Levitate", "item": "Hard Stone", "level": 45, "moves": ["Hypnosis", "Psychic", "Ice Beam", "Ancientpower"], "nature": "Quirky"},
+        "Ninja Boy Takashi": {"ability": "Levitate", "item": "Hard Stone", "level": 45, "moves": ["Hypnosis", "Psychic", "Ice Beam", "Ancient Power"], "nature": "Quirky"},
         "Pokémon Breeder George": {"ability": "Levitate", "item": "Leftovers", "level": 42, "moves": ["Moonlight", "Psychic", "Ice Beam", "Hypnosis"], "nature": "Impish"},
         "Psychic Maura": {"ability": "Levitate", "item": "Leftovers", "level": 66, "moves": ["Calm Mind", "Ice Beam", "Psychic", "Moonlight"], "nature": "Naive"},
         "Team Aqua Grunt #5 @ Mt. Pyre": {"ability": "Levitate", "item": "Scope Lens", "level": 51, "moves": ["Hypnosis", "Psychic", "Explosion", "Ice Beam"], "nature": "Calm"},
@@ -1402,11 +1402,11 @@ var CUSTOMHACKSETDEX_EK = {
         "Team Magma Grunt @ Petalburg Woods": {"ability": "Magnet Pull", "item": "King's Rock", "level": 8, "moves": ["Thunder Wave", "Thunder Shock", "Tri Attack", "Flash Cannon"], "nature": "Serious"},
         "Triathlete Alyssa": {"ability": "Magnet Pull", "item": "Metal Coat", "level": 20, "moves": ["Tri Attack", "Flash Cannon", "Shock Wave", "Thunder Wave"], "nature": "Sassy"},
         "Triathlete Benjamin": {"ability": "Magnet Pull", "ivs": {"at": 18, "df": 18, "hp": 18, "sa": 18, "sd": 18, "sp": 18}, "level": 24, "moves": ["Wild Charge", "Flash Cannon", "Tri Attack", "Thunder Wave"], "nature": "Jolly"},
-        "Triathlete Dylan": {"ability": "Magnet Pull", "item": "Metal Coat", "level": 21, "moves": ["Agility", "Wild Charge", "Sonicboom", "Flash Cannon"], "nature": "Quiet"}
+        "Triathlete Dylan": {"ability": "Magnet Pull", "item": "Metal Coat", "level": 21, "moves": ["Agility", "Wild Charge", "Sonic Boom", "Flash Cannon"], "nature": "Quiet"}
     },
     "Magneton":
     {
-        "Collector Shawn": {"ability": "Magnet Pull", "item": "Metal Coat", "level": 27, "moves": ["Thunder Wave", "Sonicboom", "Flash Cannon", "Wild Charge"], "nature": "Gentle"},
+        "Collector Shawn": {"ability": "Magnet Pull", "item": "Metal Coat", "level": 27, "moves": ["Thunder Wave", "Sonic Boom", "Flash Cannon", "Wild Charge"], "nature": "Gentle"},
         "Cooltrainer Jerome": {"ability": "Magnet Pull", "item": "Salac Berry", "level": 52, "moves": ["Thunder", "Hidden Power Water", "Explosion", "Endure"], "nature": "Lax"},
         "Interviewers Gabby & Ty #1": {"ability": "Magnet Pull", "item": "Metal Coat", "level": 27, "moves": ["Wild Charge", "Protect", "Flash Cannon", "Signal Beam"], "nature": "Naive"},
         "Team Magma Grunt #1 @ Route 114": {"ability": "Magnet Pull", "item": "Focus Band", "level": 36, "moves": ["Explosion", "Thunderbolt", "Thunder Wave", "Signal Beam"], "nature": "Careful"},
@@ -1463,15 +1463,15 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Marowak":
     {
-        "Cooltrainer Albert": {"ability": "Lightningrod", "item": "Thick Club", "level": 81, "moves": ["Swords Dance", "Earthquake", "Double-Edge", "Ancientpower"], "nature": "Impish"},
-        "Cooltrainer Braxton": {"ability": "Lightningrod", "item": "Thick Club", "level": 75, "moves": ["Protect", "Earthquake", "Ancientpower", "Hidden Power Bug"], "nature": "Careful"},
-        "Cooltrainer Jody": {"ability": "Lightningrod", "item": "Thick Club", "level": 42, "moves": ["Earthquake", "Double-Edge", "Ancientpower", "Hidden Power Flying"], "nature": "Hasty"},
-        "Expert Shelby": {"ability": "Lightningrod", "item": "Thick Club", "level": 37, "moves": ["Double-Edge", "Earthquake", "Ancientpower", "Aerial Ace"], "nature": "Lax"},
-        "Gentleman Franklin": {"ability": "Lightningrod", "item": "Thick Club", "level": 100, "moves": ["Earthquake", "Ancientpower", "Hidden Power Bug", "Return"], "nature": "Gentle"},
+        "Cooltrainer Albert": {"ability": "Lightningrod", "item": "Thick Club", "level": 81, "moves": ["Swords Dance", "Earthquake", "Double-Edge", "Ancient Power"], "nature": "Impish"},
+        "Cooltrainer Braxton": {"ability": "Lightningrod", "item": "Thick Club", "level": 75, "moves": ["Protect", "Earthquake", "Ancient Power", "Hidden Power Bug"], "nature": "Careful"},
+        "Cooltrainer Jody": {"ability": "Lightningrod", "item": "Thick Club", "level": 42, "moves": ["Earthquake", "Double-Edge", "Ancient Power", "Hidden Power Flying"], "nature": "Hasty"},
+        "Expert Shelby": {"ability": "Lightningrod", "item": "Thick Club", "level": 37, "moves": ["Double-Edge", "Earthquake", "Ancient Power", "Aerial Ace"], "nature": "Lax"},
+        "Gentleman Franklin": {"ability": "Lightningrod", "item": "Thick Club", "level": 100, "moves": ["Earthquake", "Ancient Power", "Hidden Power Bug", "Return"], "nature": "Gentle"},
         "Ruin Maniac Andres": {"ability": "Lightningrod", "item": "Thick Club", "level": 66, "moves": ["Body Slam", "Rock Slide", "Earthquake", "Double-Edge"], "nature": "Naive"},
-        "Sr and Jr Kim & Iris": {"ability": "Lightningrod", "item": "Thick Club", "level": 66, "moves": ["Belly Drum", "Ancientpower", "Earthquake", "Body Slam"], "nature": "Jolly"},
-        "Team Magma Grunt #10 @ Magma Hideout": {"ability": "Lightningrod", "item": "Thick Club", "level": 60, "moves": ["Hidden Power Flying", "Double-Edge", "Earthquake", "Ancientpower"], "nature": "Lax"},
-        "Team Magma Grunt #2 @ Route 114": {"ability": "Lightningrod", "item": "Lum Berry", "level": 36, "moves": ["Earthquake", "Double-Edge", "Ancientpower", "Aerial Ace"], "nature": "Jolly"}
+        "Sr and Jr Kim & Iris": {"ability": "Lightningrod", "item": "Thick Club", "level": 66, "moves": ["Belly Drum", "Ancient Power", "Earthquake", "Body Slam"], "nature": "Jolly"},
+        "Team Magma Grunt #10 @ Magma Hideout": {"ability": "Lightningrod", "item": "Thick Club", "level": 60, "moves": ["Hidden Power Flying", "Double-Edge", "Earthquake", "Ancient Power"], "nature": "Lax"},
+        "Team Magma Grunt #2 @ Route 114": {"ability": "Lightningrod", "item": "Lum Berry", "level": 36, "moves": ["Earthquake", "Double-Edge", "Ancient Power", "Aerial Ace"], "nature": "Jolly"}
     },
     "Marshtomp":
     {
@@ -1501,15 +1501,15 @@ var CUSTOMHACKSETDEX_EK = {
         "Aqua Admin Shelly #1": {"ability": "Pure Power", "item": "Lum Berry", "level": 47, "moves": ["Fake Out", "Brick Break", "Shadow Ball", "Rock Slide"], "nature": "Rash"},
         "Battle Girl Crissy": {"ability": "Pure Power", "item": "Lum Berry", "level": 70, "moves": ["Fake Out", "Brick Break", "Shadow Ball", "Rock Slide"], "nature": "Jolly"},
         "Battle Girl Cyndy": {"ability": "Pure Power", "item": "Black Belt", "level": 46, "moves": ["Bulk Up", "Recover", "Brick Break", "Shadow Ball"], "nature": "Modest"},
-        "Black Belt Kiyo": {"ability": "Pure Power", "item": "Choice Band", "level": 67, "moves": ["Hi Jump Kick", "Psychic", "Reversal", "Recover"], "nature": "Quirky"},
+        "Black Belt Kiyo": {"ability": "Pure Power", "item": "Choice Band", "level": 67, "moves": ["High Jump Kick", "Psychic", "Reversal", "Recover"], "nature": "Quirky"},
         "Cooltrainer Albert": {"ability": "Pure Power", "item": "Lum Berry", "level": 81, "moves": ["Shadow Ball", "Brick Break", "Rock Slide", "Bulk Up"], "nature": "Hardy"},
-        "Cooltrainer Jody": {"ability": "Pure Power", "item": "Lum Berry", "level": 42, "moves": ["Fake Out", "Hi Jump Kick", "Shadow Ball", "Rock Slide"], "nature": "Jolly"},
+        "Cooltrainer Jody": {"ability": "Pure Power", "item": "Lum Berry", "level": 42, "moves": ["Fake Out", "High Jump Kick", "Shadow Ball", "Rock Slide"], "nature": "Jolly"},
         "Expert Shelby": {"ability": "Pure Power", "item": "Lum Berry", "level": 37, "moves": ["Fake Out", "Brick Break", "Shadow Ball", "Rock Slide"], "nature": "Impish"},
         "Gentleman Franklin": {"ability": "Pure Power", "item": "Lum Berry", "level": 100, "moves": ["Focus Punch", "Shadow Ball", "Hidden Power Ground", "Rock Tomb"], "nature": "Careful"},
         "Leaders Tate&Liza": {"ability": "Pure Power", "item": "Lum Berry", "level": 70, "moves": ["Fake Out", "Brick Break", "Hidden Power Psychic", "Shadow Ball"], "nature": "Careful"},
-        "Psychic Marlene": {"ability": "Pure Power", "level": 35, "moves": ["Meditate", "Hi Jump Kick", "Rock Tomb"], "nature": "Relaxed"},
+        "Psychic Marlene": {"ability": "Pure Power", "level": 35, "moves": ["Meditate", "High Jump Kick", "Rock Tomb"], "nature": "Relaxed"},
         "Sr and Jr Kate & Joy": {"ability": "Pure Power", "item": "Choice Band", "level": 53, "moves": ["Focus Punch"], "nature": "Hasty"},
-        "Swimmerf Kara": {"ability": "Pure Power", "level": 65, "moves": ["Hi Jump Kick", "Psychic", "Reversal", "Recover"], "nature": "Lax"},
+        "Swimmerf Kara": {"ability": "Pure Power", "level": 65, "moves": ["High Jump Kick", "Psychic", "Reversal", "Recover"], "nature": "Lax"},
         "Team Aqua Grunt #6 @ Aqua Hideout": {"ability": "Pure Power", "item": "Scope Lens", "level": 64, "moves": ["Psychic", "Fake Out", "Brick Break", "Shadow Ball"], "nature": "Gentle"}
     },
     "Meditite":
@@ -1523,18 +1523,18 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Meganium":
     {
-        "Aroma Lady Rose": {"ability": "Thick Fat", "item": "Leftovers", "level": 43, "moves": ["Swords Dance", "Earthquake", "Ancientpower", "Synthesis"], "nature": "Hardy"},
-        "Aroma Lady Violet": {"ability": "Thick Fat", "item": "Quick Claw", "level": 74, "moves": ["Giga Drain", "Ancientpower", "Light Screen", "Reflect"], "nature": "Lax"},
-        "Magma Admin Courtney #2": {"ability": "Thick Fat", "item": "Lum Berry", "level": 70, "moves": ["Grass Whistle", "Giga Drain", "Earthquake", "Ancientpower"], "nature": "Mild"},
-        "Pokéfan Bethany": {"ability": "Thick Fat", "item": "Leftovers", "level": 71, "moves": ["Giga Drain", "Earthquake", "Ancientpower", "Synthesis"], "nature": "Timid"},
-        "Pokémon Breeder George": {"ability": "Thick Fat", "item": "Leftovers", "level": 41, "moves": ["Synthesis", "Giga Drain", "Leech Seed", "Ancientpower"], "nature": "Hardy"},
-        "Pokémon Trainer Brendan #3 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 50, "moves": ["Giga Drain", "Earthquake", "Ancientpower", "Synthesis"], "nature": "Lax"},
-        "Pokémon Trainer Brendan #4 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 59, "moves": ["Earthquake", "Ancientpower", "Giga Drain", "Grass Whistle"], "nature": "Serious"},
-        "Pokémon Trainer May #3 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 50, "moves": ["Giga Drain", "Earthquake", "Ancientpower", "Synthesis"], "nature": "Brave"},
-        "Pokémon Trainer May #4 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 59, "moves": ["Grass Whistle", "Earthquake", "Ancientpower", "Giga Drain"], "nature": "Impish"},
-        "Pokémon Trainer Wally #2": {"ability": "Thick Fat", "item": "Lum Berry", "level": 85, "moves": ["Synthesis", "Giga Drain", "Earthquake", "Ancientpower"], "nature": "Bold"},
-        "Team Magma Grunt #15 @ Magma Hideout": {"ability": "Thick Fat", "item": "Leftovers", "level": 63, "moves": ["Solar Beam", "Earthquake", "Ancientpower", "Hidden Power Fire"], "nature": "Gentle"},
-        "Team Magma Grunt #3 @ Jagged Pass": {"ability": "Thick Fat", "item": "Bright Powder", "level": 35, "moves": ["Synthesis", "Giga Drain", "Earthquake", "Ancientpower"], "nature": "Modest"}
+        "Aroma Lady Rose": {"ability": "Thick Fat", "item": "Leftovers", "level": 43, "moves": ["Swords Dance", "Earthquake", "Ancient Power", "Synthesis"], "nature": "Hardy"},
+        "Aroma Lady Violet": {"ability": "Thick Fat", "item": "Quick Claw", "level": 74, "moves": ["Giga Drain", "Ancient Power", "Light Screen", "Reflect"], "nature": "Lax"},
+        "Magma Admin Courtney #2": {"ability": "Thick Fat", "item": "Lum Berry", "level": 70, "moves": ["Grass Whistle", "Giga Drain", "Earthquake", "Ancient Power"], "nature": "Mild"},
+        "Pokéfan Bethany": {"ability": "Thick Fat", "item": "Leftovers", "level": 71, "moves": ["Giga Drain", "Earthquake", "Ancient Power", "Synthesis"], "nature": "Timid"},
+        "Pokémon Breeder George": {"ability": "Thick Fat", "item": "Leftovers", "level": 41, "moves": ["Synthesis", "Giga Drain", "Leech Seed", "Ancient Power"], "nature": "Hardy"},
+        "Pokémon Trainer Brendan #3 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 50, "moves": ["Giga Drain", "Earthquake", "Ancient Power", "Synthesis"], "nature": "Lax"},
+        "Pokémon Trainer Brendan #4 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 59, "moves": ["Earthquake", "Ancient Power", "Giga Drain", "Grass Whistle"], "nature": "Serious"},
+        "Pokémon Trainer May #3 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 50, "moves": ["Giga Drain", "Earthquake", "Ancient Power", "Synthesis"], "nature": "Brave"},
+        "Pokémon Trainer May #4 [Blaziken]": {"ability": "Thick Fat", "item": "Lum Berry", "level": 59, "moves": ["Grass Whistle", "Earthquake", "Ancient Power", "Giga Drain"], "nature": "Impish"},
+        "Pokémon Trainer Wally #2": {"ability": "Thick Fat", "item": "Lum Berry", "level": 85, "moves": ["Synthesis", "Giga Drain", "Earthquake", "Ancient Power"], "nature": "Bold"},
+        "Team Magma Grunt #15 @ Magma Hideout": {"ability": "Thick Fat", "item": "Leftovers", "level": 63, "moves": ["Solar Beam", "Earthquake", "Ancient Power", "Hidden Power Fire"], "nature": "Gentle"},
+        "Team Magma Grunt #3 @ Jagged Pass": {"ability": "Thick Fat", "item": "Bright Powder", "level": 35, "moves": ["Synthesis", "Giga Drain", "Earthquake", "Ancient Power"], "nature": "Modest"}
     },
     "Meowth":
     {
@@ -1749,7 +1749,7 @@ var CUSTOMHACKSETDEX_EK = {
     "Nosepass":
     {
         "Leader Roxanne": {"ability": "Battle Armor", "item": "Sitrus Berry", "level": 15, "moves": ["Self-Destruct", "Attract", "Seismic Toss", "Thunder Wave"], "nature": "Naughty"},
-        "Picnicker Diana": {"ability": "Battle Armor", "item": "Sitrus Berry", "level": 36, "moves": ["Ancientpower", "Thunder Wave", "Seismic Toss", "Protect"], "nature": "Lonely"}
+        "Picnicker Diana": {"ability": "Battle Armor", "item": "Sitrus Berry", "level": 36, "moves": ["Ancient Power", "Thunder Wave", "Seismic Toss", "Protect"], "nature": "Lonely"}
     },
     "Numel":
     {
@@ -1778,17 +1778,17 @@ var CUSTOMHACKSETDEX_EK = {
     "Omanyte":
     {
         "Collector Edwin": {"ability": "Swift Swim", "level": 19, "moves": ["Earth Power", "Aurora Beam", "Waterfall", "Rock Slide"], "nature": "Calm"},
-        "Ruin Maniac Bryan": {"ability": "Swift Swim", "item": "Lum Berry", "level": 30, "moves": ["Rain Dance", "Hydro Pump", "Ice Beam", "Ancientpower"], "nature": "Gentle"},
+        "Ruin Maniac Bryan": {"ability": "Swift Swim", "item": "Lum Berry", "level": 30, "moves": ["Rain Dance", "Hydro Pump", "Ice Beam", "Ancient Power"], "nature": "Gentle"},
         "School Kid Josh": {"ability": "Swift Swim", "item": "Hard Stone", "level": 14, "moves": ["Water Pulse", "Rock Tomb", "Aurora Beam", "Bite"], "nature": "Bashful"}
     },
     "Omastar":
     {
-        "Expert Annika": {"ability": "Swift Swim", "item": "Lum Berry", "level": 75, "moves": ["Ice Beam", "Surf", "Ancientpower", "Hydro Pump"], "nature": "Naughty"},
-        "Team Aqua Grunt #1 @ Route 124": {"ability": "Swift Swim", "item": "Mystic Water", "level": 65, "moves": ["Rain Dance", "Hydro Pump", "Ice Beam", "Ancientpower"], "nature": "Calm"},
-        "Team Aqua Grunt #3 @ Weather Institute": {"ability": "Swift Swim", "item": "Bright Powder", "level": 46, "moves": ["Surf", "Hidden Power Grass", "Ice Beam", "Ancientpower"], "nature": "Relaxed"},
-        "Team Aqua Grunt #5 @ Seafloor Cavern": {"ability": "Swift Swim", "item": "Scope Lens", "level": 70, "moves": ["Hydro Pump", "Muddy Water", "Ice Beam", "Ancientpower"], "nature": "Bold"},
-        "Team Aqua Grunt #5 @ Aqua Hideout": {"ability": "Swift Swim", "item": "Bright Powder", "level": 65, "moves": ["Rain Dance", "Muddy Water", "Ice Beam", "Ancientpower"], "nature": "Serious"},
-        "Team Aqua Grunt #7 @ Mt. Pyre": {"ability": "Swift Swim", "item": "Quick Claw", "level": 54, "moves": ["Blizzard", "Hydro Pump", "Ancientpower", "Ice Beam"], "nature": "Bashful"}
+        "Expert Annika": {"ability": "Swift Swim", "item": "Lum Berry", "level": 75, "moves": ["Ice Beam", "Surf", "Ancient Power", "Hydro Pump"], "nature": "Naughty"},
+        "Team Aqua Grunt #1 @ Route 124": {"ability": "Swift Swim", "item": "Mystic Water", "level": 65, "moves": ["Rain Dance", "Hydro Pump", "Ice Beam", "Ancient Power"], "nature": "Calm"},
+        "Team Aqua Grunt #3 @ Weather Institute": {"ability": "Swift Swim", "item": "Bright Powder", "level": 46, "moves": ["Surf", "Hidden Power Grass", "Ice Beam", "Ancient Power"], "nature": "Relaxed"},
+        "Team Aqua Grunt #5 @ Seafloor Cavern": {"ability": "Swift Swim", "item": "Scope Lens", "level": 70, "moves": ["Hydro Pump", "Muddy Water", "Ice Beam", "Ancient Power"], "nature": "Bold"},
+        "Team Aqua Grunt #5 @ Aqua Hideout": {"ability": "Swift Swim", "item": "Bright Powder", "level": 65, "moves": ["Rain Dance", "Muddy Water", "Ice Beam", "Ancient Power"], "nature": "Serious"},
+        "Team Aqua Grunt #7 @ Mt. Pyre": {"ability": "Swift Swim", "item": "Quick Claw", "level": 54, "moves": ["Blizzard", "Hydro Pump", "Ancient Power", "Ice Beam"], "nature": "Bashful"}
     },
     "Onix":
     {
@@ -1859,8 +1859,8 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Piloswine":
     {
-        "Cooltrainer Warren": {"ability": "Thick Fat", "item": "Quick Claw", "level": 70, "moves": ["Body Slam", "Ice Beam", "Ancientpower", "Earthquake"], "nature": "Modest"},
-        "Pokémon Breeder Humberto": {"ability": "Thick Fat", "item": "Lum Berry", "level": 50, "moves": ["Earthquake", "Ice Shard", "Ice Beam", "Ancientpower"], "nature": "Brave"}
+        "Cooltrainer Warren": {"ability": "Thick Fat", "item": "Quick Claw", "level": 70, "moves": ["Body Slam", "Ice Beam", "Ancient Power", "Earthquake"], "nature": "Modest"},
+        "Pokémon Breeder Humberto": {"ability": "Thick Fat", "item": "Lum Berry", "level": 50, "moves": ["Earthquake", "Ice Shard", "Ice Beam", "Ancient Power"], "nature": "Brave"}
     },
     "Pineco":
     {
@@ -1961,15 +1961,15 @@ var CUSTOMHACKSETDEX_EK = {
     "Quagsire":
     {
         "Cooltrainer Brooke": {"ability": "Water Absorb", "item": "Leftovers", "level": 30, "moves": ["Mud Shot", "Muddy Water", "Sludge Bomb", "Protect"], "nature": "Gentle"},
-        "Cooltrainer Caroline": {"ability": "Water Absorb", "item": "Lum Berry", "level": 88, "moves": ["Muddy Water", "Earthquake", "Yawn", "Ancientpower"], "nature": "Adamant"},
+        "Cooltrainer Caroline": {"ability": "Water Absorb", "item": "Lum Berry", "level": 88, "moves": ["Muddy Water", "Earthquake", "Yawn", "Ancient Power"], "nature": "Adamant"},
         "Fisherman Ronald": {"ability": "Water Absorb", "item": "Quick Claw", "level": 66, "moves": ["Earthquake", "Muddy Water", "Body Slam", "Sludge Bomb"], "nature": "Timid"},
         "Pokéfan Bethany": {"ability": "Water Absorb", "item": "Leftovers", "level": 73, "moves": ["Earthquake", "Sludge Bomb", "Ice Beam", "Hydro Pump"], "nature": "Docile"},
-        "Pokémon Breeder Bridget": {"ability": "Water Absorb", "item": "Lum Berry", "level": 74, "moves": ["Yawn", "Recover", "Earthquake", "Ancientpower"], "nature": "Brave"},
+        "Pokémon Breeder Bridget": {"ability": "Water Absorb", "item": "Lum Berry", "level": 74, "moves": ["Yawn", "Recover", "Earthquake", "Ancient Power"], "nature": "Brave"},
         "Swimmerm Harrison": {"ability": "Water Absorb", "level": 65, "moves": ["Earthquake", "Muddy Water", "Body Slam", "Sludge Bomb"], "nature": "Hasty"},
         "Team Aqua Grunt #1 @ Weather Institute": {"ability": "Water Absorb", "item": "Lum Berry", "level": 46, "moves": ["Sludge Bomb", "Earthquake", "Muddy Water", "Recover"], "nature": "Bold"},
         "Team Aqua Grunt #3 @ Aqua Hideout": {"ability": "Water Absorb", "item": "Leftovers", "level": 65, "moves": ["Toxic", "Double Team", "Recover", "Ice Beam"], "nature": "Hasty"},
-        "Team Aqua Grunt #6 @ Mt. Pyre": {"ability": "Water Absorb", "item": "Leftovers", "level": 54, "moves": ["Earthquake", "Yawn", "Recover", "Ancientpower"], "nature": "Jolly"},
-        "Team Magma Grunt #9 @ Magma Hideout": {"ability": "Water Absorb", "item": "Lum Berry", "level": 60, "moves": ["Earthquake", "Sludge Bomb", "Ancientpower", "Recover"], "nature": "Naughty"}
+        "Team Aqua Grunt #6 @ Mt. Pyre": {"ability": "Water Absorb", "item": "Leftovers", "level": 54, "moves": ["Earthquake", "Yawn", "Recover", "Ancient Power"], "nature": "Jolly"},
+        "Team Magma Grunt #9 @ Magma Hideout": {"ability": "Water Absorb", "item": "Lum Berry", "level": 60, "moves": ["Earthquake", "Sludge Bomb", "Ancient Power", "Recover"], "nature": "Naughty"}
     },
     "Quilava":
     {
@@ -2050,12 +2050,12 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Regirock":
     {
-        "Magma Admin Courtney #1": {"ability": "Clear Body", "item": "Lum Berry", "level": 65, "moves": ["Counter", "Explosion", "Ancientpower", "Earthquake"], "nature": "Timid"},
-        "Magma Admin Courtney #2": {"ability": "Clear Body", "item": "Lum Berry", "level": 70, "moves": ["Thunder Wave", "Explosion", "Ancientpower", "Earthquake"], "nature": "Sassy"}
+        "Magma Admin Courtney #1": {"ability": "Clear Body", "item": "Lum Berry", "level": 65, "moves": ["Counter", "Explosion", "Ancient Power", "Earthquake"], "nature": "Timid"},
+        "Magma Admin Courtney #2": {"ability": "Clear Body", "item": "Lum Berry", "level": 70, "moves": ["Thunder Wave", "Explosion", "Ancient Power", "Earthquake"], "nature": "Sassy"}
     },
     "Registeel":
     {
-        "Magma Leader Maxie #1": {"ability": "Clear Body", "item": "Lum Berry", "level": 38, "moves": ["Thunder Wave", "Explosion", "Ancientpower", "Earthquake"], "nature": "Sassy"}
+        "Magma Leader Maxie #1": {"ability": "Clear Body", "item": "Lum Berry", "level": 38, "moves": ["Thunder Wave", "Explosion", "Ancient Power", "Earthquake"], "nature": "Sassy"}
     },
     "Relicanth":
     {
@@ -2072,7 +2072,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Rhydon":
     {
-        "Cooltrainer Braxton": {"ability": "Lightningrod", "item": "Quick Claw", "level": 77, "moves": ["Protect", "Earthquake", "Ancientpower", "Megahorn"], "nature": "Quirky"},
+        "Cooltrainer Braxton": {"ability": "Lightningrod", "item": "Quick Claw", "level": 77, "moves": ["Protect", "Earthquake", "Ancient Power", "Megahorn"], "nature": "Quirky"},
         "Pokémaniac Steve": {"ability": "Lightningrod", "item": "Focus Band", "level": 36, "moves": ["Drill Run", "Double-Edge", "Rock Slide", "Body Slam"], "nature": "Quiet"},
         "Ruin Maniac Andres": {"ability": "Lightningrod", "item": "Quick Claw", "level": 66, "moves": ["Rock Slide", "Double-Edge", "Earthquake", "Megahorn"], "nature": "Careful"}
     },
@@ -2115,10 +2115,10 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Sandslash":
     {
-        "Picnicker Becky": {"ability": "Sand Veil", "item": "Leftovers", "level": 40, "moves": ["Earthquake", "Aerial Ace", "Ancientpower", "Substitute"], "nature": "Brave"},
+        "Picnicker Becky": {"ability": "Sand Veil", "item": "Leftovers", "level": 40, "moves": ["Earthquake", "Aerial Ace", "Ancient Power", "Substitute"], "nature": "Brave"},
         "Picnicker Celia": {"ability": "Sand Veil", "level": 40, "moves": ["Sand Attack", "Dig", "Slash", "Body Slam"], "nature": "Docile"},
         "Team Magma Grunt #5 @ Route 114": {"ability": "Sand Veil", "item": "Scope Lens", "level": 35, "moves": ["Earthquake", "Rock Slide", "X-scissors", "Crush Claw"], "nature": "Sassy"},
-        "Team Magma Grunt #6 @ Magma Hideout": {"ability": "Sand Veil", "item": "Bright Powder", "level": 60, "moves": ["Earthquake", "Ancientpower", "X-scissors", "Crush Claw"], "nature": "Mild"},
+        "Team Magma Grunt #6 @ Magma Hideout": {"ability": "Sand Veil", "item": "Bright Powder", "level": 60, "moves": ["Earthquake", "Ancient Power", "X-scissors", "Crush Claw"], "nature": "Mild"},
         "Youngster Deandre": {"ability": "Sand Veil", "item": "Lum Berry", "level": 42, "moves": ["Swords Dance", "Earthquake", "X-scissors", "Rock Slide"], "nature": "Bashful"}
     },
     "Sceptile":
@@ -2186,7 +2186,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Sharpedo":
     {
-        "Fisherman Chris": {"ability": "Rough Skin", "level": 44, "moves": ["Crunch", "Ancientpower", "Poison Fang", "Hydro Pump"], "nature": "Hardy"},
+        "Fisherman Chris": {"ability": "Rough Skin", "level": 44, "moves": ["Crunch", "Ancient Power", "Poison Fang", "Hydro Pump"], "nature": "Hardy"},
         "Swimmerm Clarence": {"ability": "Rough Skin", "item": "Scope Lens", "level": 66, "moves": ["Hydro Pump", "Crunch", "Double-Edge", "Ice Beam"], "nature": "Quirky"},
         "Team Aqua Grunt #1 @ Weather Institute": {"ability": "Rough Skin", "item": "Bright Powder", "level": 46, "moves": ["Earthquake", "Crunch", "Hydro Pump", "Poison Fang"], "nature": "Quirky"},
         "Team Aqua Grunt #2 @ Mt. Pyre": {"ability": "Rough Skin", "item": "Focus Band", "level": 53, "moves": ["Crunch", "Earthquake", "Poison Fang", "Surf"], "nature": "Timid"}
@@ -2359,16 +2359,16 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Solrock":
     {
-        "Cooltrainer Alexa": {"ability": "Levitate", "item": "Salac Berry", "level": 74, "moves": ["Explosion", "Ancientpower", "Earthquake", "Shadow Ball"], "nature": "Adamant"},
-        "Cooltrainer Hope": {"ability": "Levitate", "item": "Leftovers", "level": 81, "moves": ["Cosmic Power", "Ancientpower", "Morning Sun", "Baton Pass"], "nature": "Bashful"},
-        "Psychic Cameron": {"ability": "Levitate", "item": "Quick Claw", "level": 74, "moves": ["Light Screen", "Ancientpower", "Earth Power", "Shadow Ball"], "nature": "Mild"},
-        "Psychic Preston": {"ability": "Levitate", "item": "Lum Berry", "level": 66, "moves": ["Signal Beam", "Earthquake", "Ancientpower", "Light Screen"], "nature": "Timid"},
-        "Ruin Maniac Eli": {"ability": "Levitate", "item": "Lum Berry", "level": 37, "moves": ["Overheat", "Solar Beam", "Ancientpower", "Earthquake"], "nature": "Impish"},
-        "Team Magma Grunt #1 @ Jagged Pass": {"ability": "Levitate", "item": "Soft Sand", "level": 35, "moves": ["Earthquake", "Ancientpower", "Signal Beam", "Light Screen"], "nature": "Gentle"},
+        "Cooltrainer Alexa": {"ability": "Levitate", "item": "Salac Berry", "level": 74, "moves": ["Explosion", "Ancient Power", "Earthquake", "Shadow Ball"], "nature": "Adamant"},
+        "Cooltrainer Hope": {"ability": "Levitate", "item": "Leftovers", "level": 81, "moves": ["Cosmic Power", "Ancient Power", "Morning Sun", "Baton Pass"], "nature": "Bashful"},
+        "Psychic Cameron": {"ability": "Levitate", "item": "Quick Claw", "level": 74, "moves": ["Light Screen", "Ancient Power", "Earth Power", "Shadow Ball"], "nature": "Mild"},
+        "Psychic Preston": {"ability": "Levitate", "item": "Lum Berry", "level": 66, "moves": ["Signal Beam", "Earthquake", "Ancient Power", "Light Screen"], "nature": "Timid"},
+        "Ruin Maniac Eli": {"ability": "Levitate", "item": "Lum Berry", "level": 37, "moves": ["Overheat", "Solar Beam", "Ancient Power", "Earthquake"], "nature": "Impish"},
+        "Team Magma Grunt #1 @ Jagged Pass": {"ability": "Levitate", "item": "Soft Sand", "level": 35, "moves": ["Earthquake", "Ancient Power", "Signal Beam", "Light Screen"], "nature": "Gentle"},
         "Team Magma Grunt #10 @ Magma Hideout": {"ability": "Levitate", "item": "Choice Band", "level": 60, "moves": ["Explosion"], "nature": "Mild"},
         "Team Magma Grunt #16 @ Magma Hideout": {"ability": "Levitate", "item": "Lum Berry", "level": 63, "moves": ["Light Screen", "Explosion", "Shadow Ball", "Will-O-Wisp"], "nature": "Mild"},
-        "Team Magma Grunt #2 @ Magma Hideout": {"ability": "Levitate", "item": "Leftovers", "level": 58, "moves": ["Will-O-Wisp", "Earthquake", "Ancientpower", "Morning Sun"], "nature": "Lonely"},
-        "Team Magma Grunt #3 @ Mossdeep Space Center": {"ability": "Levitate", "item": "Focus Band", "level": 67, "moves": ["Swagger", "Earthquake", "Shadow Ball", "Ancientpower"], "nature": "Mild"}
+        "Team Magma Grunt #2 @ Magma Hideout": {"ability": "Levitate", "item": "Leftovers", "level": 58, "moves": ["Will-O-Wisp", "Earthquake", "Ancient Power", "Morning Sun"], "nature": "Lonely"},
+        "Team Magma Grunt #3 @ Mossdeep Space Center": {"ability": "Levitate", "item": "Focus Band", "level": 67, "moves": ["Swagger", "Earthquake", "Shadow Ball", "Ancient Power"], "nature": "Mild"}
     },
     "Spearow":
     {
@@ -2443,12 +2443,12 @@ var CUSTOMHACKSETDEX_EK = {
     {
         "Ninja Boy Yasu": {"ability": "Rock Head", "item": "Quick Claw", "level": 45, "moves": ["Rock Slide", "Double-Edge", "Earthquake", "Hidden Power Bug"], "nature": "Lax"},
         "Pokéfan Vanessa": {"ability": "Rock Head", "item": "Yellow Scarf", "level": 53, "moves": ["Harden", "Double-Edge", "Earthquake", "Rock Slide"], "nature": "Relaxed"},
-        "Pokémon Ranger Ashley": {"ability": "Rock Head", "item": "Quick Claw", "level": 52, "moves": ["Earthquake", "Ancientpower", "Double-Edge", "Hidden Power Flying"], "nature": "Careful"},
+        "Pokémon Ranger Ashley": {"ability": "Rock Head", "item": "Quick Claw", "level": 52, "moves": ["Earthquake", "Ancient Power", "Double-Edge", "Hidden Power Flying"], "nature": "Careful"},
         "School Kid Josh": {"ability": "Rock Head", "item": "Sitrus Berry", "level": 12, "moves": ["Calm Mind", "Thunder Punch", "Ice Punch", "Rock Tomb"], "nature": "Sassy"},
         "Swimmerm Kevin": {"ability": "Rock Head", "level": 66, "moves": ["Earthquake", "Double-Edge", "Explosion", "Head Smash"], "nature": "Serious"},
         "Team Magma Grunt #14 @ Magma Hideout": {"ability": "Rock Head", "item": "Quick Claw", "level": 63, "moves": ["Explosion", "Head Smash", "Earthquake", "Double-Edge"], "nature": "Rash"},
         "Team Magma Grunt #15 @ Magma Hideout": {"ability": "Rock Head", "item": "Choice Band", "level": 59, "moves": ["Explosion"], "nature": "Timid"},
-        "Team Magma Grunt #6 @ Route 114": {"ability": "Rock Head", "item": "Scope Lens", "level": 35, "moves": ["Ancientpower", "Earthquake", "Double-Edge", "Explosion"], "nature": "Adamant"}
+        "Team Magma Grunt #6 @ Route 114": {"ability": "Rock Head", "item": "Scope Lens", "level": 35, "moves": ["Ancient Power", "Earthquake", "Double-Edge", "Explosion"], "nature": "Adamant"}
     },
     "Suicune":
     {
@@ -2483,8 +2483,8 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Swampert":
     {
-        "Elite Four Glacia": {"ability": "Swift Swim", "item": "Lum Berry", "level": 100, "moves": ["Earthquake", "Yawn", "Muddy Water", "Ancientpower"], "nature": "Quirky"},
-        "Leader #1 Wallace": {"ability": "Swift Swim", "item": "Lum Berry", "level": 77, "moves": ["Yawn", "Earthquake", "Ancientpower", "Muddy Water"], "nature": "Sassy"},
+        "Elite Four Glacia": {"ability": "Swift Swim", "item": "Lum Berry", "level": 100, "moves": ["Earthquake", "Yawn", "Muddy Water", "Ancient Power"], "nature": "Quirky"},
+        "Leader #1 Wallace": {"ability": "Swift Swim", "item": "Lum Berry", "level": 77, "moves": ["Yawn", "Earthquake", "Ancient Power", "Muddy Water"], "nature": "Sassy"},
         "Pokémon Trainer Brendan #3 [Swampert]": {"ability": "Swift Swim", "item": "Lum Berry", "level": 50, "moves": ["Muddy Water", "Earthquake", "Ice Beam", "Sludge Bomb"], "nature": "Lonely"},
         "Pokémon Trainer Brendan #4 [Swampert]": {"ability": "Swift Swim", "item": "Lum Berry", "level": 60, "moves": ["Earthquake", "Muddy Water", "Ice Beam", "Sludge Bomb"], "nature": "Docile"},
         "Pokémon Trainer May #3 [Swampert]": {"ability": "Swift Swim", "item": "Lum Berry", "level": 50, "moves": ["Muddy Water", "Earthquake", "Ice Beam", "Attract"], "nature": "Rash"},
@@ -2521,7 +2521,7 @@ var CUSTOMHACKSETDEX_EK = {
     {
         "Picnicker Diana": {"ability": "Chlorophyll", "item": "Sitrus Berry", "level": 36, "moves": ["Sleep Powder", "Giga Drain", "Protect", "Pain Split"], "nature": "Gentle"},
         "Swimmerm Reed": {"ability": "Chlorophyll", "item": "Leftovers", "level": 66, "moves": ["Stun Spore", "Giga Drain", "Swagger", "Synthesis"], "nature": "Naive"},
-        "Triathlete Geraldine": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 38, "moves": ["Sleep Powder", "Solar Beam", "Ancientpower", "Hidden Power Fire"], "nature": "Hasty"}
+        "Triathlete Geraldine": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 38, "moves": ["Sleep Powder", "Solar Beam", "Ancient Power", "Hidden Power Fire"], "nature": "Hasty"}
     },
     "Tauros":
     {
@@ -2597,7 +2597,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Tropius":
     {
-        "Bird Keeper Jared": {"ability": "Chlorophyll", "item": "Bright Powder", "level": 52, "moves": ["Earthquake", "Ancientpower", "Leaf Blade", "Air Slash"], "nature": "Serious"},
+        "Bird Keeper Jared": {"ability": "Chlorophyll", "item": "Bright Powder", "level": 52, "moves": ["Earthquake", "Ancient Power", "Leaf Blade", "Air Slash"], "nature": "Serious"},
         "Bird Keeper Presley": {"ability": "Chlorophyll", "item": "Quick Claw", "level": 64, "moves": ["Air Slash", "Earthquake", "Giga Drain", "Synthesis"], "nature": "Bashful"},
         "Parasol Lady Madeline": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 33, "moves": ["Earthquake", "Sunny Day", "Giga Drain", "Air Slash"], "nature": "Hasty"},
         "Pokémaniac Axle": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 38, "moves": ["Solar Beam", "Earthquake", "Air Slash", "Hidden Power Fire"], "nature": "Brave"}
@@ -2614,15 +2614,15 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Tyranitar":
     {
-        "Cooltrainer Hannah": {"ability": "Intimidate", "item": "Lum Berry", "level": 66, "moves": ["Ice Beam", "Superpower", "Ancientpower", "Crunch"], "nature": "Timid"},
-        "Elite Four Drake": {"ability": "Intimidate", "item": "Lum Berry", "level": 100, "moves": ["Dragon Dance", "Ancientpower", "Earthquake", "Hidden Power Bug"], "nature": "Mild"},
-        "Expert Shannon": {"ability": "Intimidate", "item": "Lum Berry", "level": 84, "moves": ["Crunch", "Ancientpower", "Hidden Power Grass", "Earthquake"], "nature": "Lonely"},
-        "Magma Leader Maxie #2": {"ability": "Intimidate", "item": "Lum Berry", "level": 66, "moves": ["Solar Beam", "Fire Blast", "Ancientpower", "Earthquake"], "nature": "Adamant"},
+        "Cooltrainer Hannah": {"ability": "Intimidate", "item": "Lum Berry", "level": 66, "moves": ["Ice Beam", "Superpower", "Ancient Power", "Crunch"], "nature": "Timid"},
+        "Elite Four Drake": {"ability": "Intimidate", "item": "Lum Berry", "level": 100, "moves": ["Dragon Dance", "Ancient Power", "Earthquake", "Hidden Power Bug"], "nature": "Mild"},
+        "Expert Shannon": {"ability": "Intimidate", "item": "Lum Berry", "level": 84, "moves": ["Crunch", "Ancient Power", "Hidden Power Grass", "Earthquake"], "nature": "Lonely"},
+        "Magma Leader Maxie #2": {"ability": "Intimidate", "item": "Lum Berry", "level": 66, "moves": ["Solar Beam", "Fire Blast", "Ancient Power", "Earthquake"], "nature": "Adamant"},
         "Team Magma Grunt #3 @ Mossdeep Space Center": {"ability": "Intimidate", "item": "Lum Berry", "level": 66, "moves": ["Counter", "Crunch", "Ice Beam", "Thunderbolt"], "nature": "Hardy"}
     },
     "Tyrogue":
     {
-        "Black Belt Takao": {"ability": "Guts", "item": "Salac Berry", "level": 16, "moves": ["Mach Punch", "Hi Jump Kick", "Facade", "Rock Slide"], "nature": "Relaxed"}
+        "Black Belt Takao": {"ability": "Guts", "item": "Salac Berry", "level": 16, "moves": ["Mach Punch", "High Jump Kick", "Facade", "Rock Slide"], "nature": "Relaxed"}
     },
     "Umbreon":
     {
@@ -2678,17 +2678,17 @@ var CUSTOMHACKSETDEX_EK = {
     "Venusaur":
     {
         "Expert Halle": {"ability": "Chlorophyll", "item": "Leftovers", "level": 87, "moves": ["Sleep Powder", "Giga Drain", "Earthquake", "Sludge Bomb"], "nature": "Modest"},
-        "Magma Admin Courtney #1": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 65, "moves": ["Sleep Powder", "Weather Ball Fire", "Solar Beam", "Ancientpower"], "nature": "Modest"},
-        "Pokémon Trainer Brendan #3 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 50, "moves": ["Sleep Powder", "Giga Drain", "Hidden Power Water", "Ancientpower"], "nature": "Modest"},
-        "Pokémon Trainer Brendan #4 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 59, "moves": ["Sleep Powder", "Earthquake", "Ancientpower", "Giga Drain"], "nature": "Adamant"},
-        "Pokémon Trainer May #3 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 50, "moves": ["Sleep Powder", "Giga Drain", "Earthquake", "Ancientpower"], "nature": "Bold"},
-        "Pokémon Trainer May #4 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 59, "moves": ["Sleep Powder", "Giga Drain", "Ancientpower", "Earthquake"], "nature": "Gentle"},
+        "Magma Admin Courtney #1": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 65, "moves": ["Sleep Powder", "Weather Ball Fire", "Solar Beam", "Ancient Power"], "nature": "Modest"},
+        "Pokémon Trainer Brendan #3 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 50, "moves": ["Sleep Powder", "Giga Drain", "Hidden Power Water", "Ancient Power"], "nature": "Modest"},
+        "Pokémon Trainer Brendan #4 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 59, "moves": ["Sleep Powder", "Earthquake", "Ancient Power", "Giga Drain"], "nature": "Adamant"},
+        "Pokémon Trainer May #3 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 50, "moves": ["Sleep Powder", "Giga Drain", "Earthquake", "Ancient Power"], "nature": "Bold"},
+        "Pokémon Trainer May #4 [Swampert]": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 59, "moves": ["Sleep Powder", "Giga Drain", "Ancient Power", "Earthquake"], "nature": "Gentle"},
         "Pokémon Trainer Red #2": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 36, "moves": ["Sleep Powder", "Giga Drain", "Sludge Bomb", "Synthesis"], "nature": "Quiet"},
-        "Pokémon Ranger Andrea": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 70, "moves": ["Sleep Powder", "Leaf Blade", "Weather Ball Water", "Ancientpower"], "nature": "Adamant"},
-        "Team Magma Grunt #11 @ Magma Hideout": {"ability": "Chlorophyll", "item": "Scope Lens", "level": 59, "moves": ["Swords Dance", "Earthquake", "Sludge Bomb", "Ancientpower"], "nature": "Impish"},
+        "Pokémon Ranger Andrea": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 70, "moves": ["Sleep Powder", "Leaf Blade", "Weather Ball Water", "Ancient Power"], "nature": "Adamant"},
+        "Team Magma Grunt #11 @ Magma Hideout": {"ability": "Chlorophyll", "item": "Scope Lens", "level": 59, "moves": ["Swords Dance", "Earthquake", "Sludge Bomb", "Ancient Power"], "nature": "Impish"},
         "Team Magma Grunt #2 @ Mossdeep Space Center": {"ability": "Chlorophyll", "item": "Lum Berry", "level": 67, "moves": ["Sunny Day", "Hidden Power Fire", "Leaf Blade", "Sludge Bomb"], "nature": "Jolly"},
         "Team Magma Grunt #3 @ Route 114": {"ability": "Chlorophyll", "item": "Shell Bell", "level": 34, "moves": ["Sleep Powder", "Giga Drain", "Sludge Bomb", "Earthquake"], "nature": "Quirky"},
-        "Team Magma Grunt #5 @ Magma Hideout": {"ability": "Chlorophyll", "item": "Focus Band", "level": 58, "moves": ["Solar Beam", "Sludge Bomb", "Ancientpower", "Earthquake"], "nature": "Naive"}
+        "Team Magma Grunt #5 @ Magma Hideout": {"ability": "Chlorophyll", "item": "Focus Band", "level": 58, "moves": ["Solar Beam", "Sludge Bomb", "Ancient Power", "Earthquake"], "nature": "Naive"}
     },
     "Vibrava":
     {
@@ -2731,10 +2731,10 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Voltorb":
     {
-        "Guitarist Kirk": {"ability": "Static", "item": "Lum Berry", "level": 27, "moves": ["Thunder Wave", "Thunderbolt", "Explosion", "Sonicboom"], "nature": "Bold"},
-        "Guitarist Marcos": {"ability": "Static", "item": "Silk Scarf", "level": 17, "moves": ["Shock Wave", "Thunder Wave", "Return", "Sonicboom"], "nature": "Relaxed"},
-        "Team Aqua Grunt @ Rusturf Tunnel": {"ability": "Static", "item": "King's Rock", "level": 13, "moves": ["Thunder Wave", "Sonicboom", "Shock Wave", "Self-Destruct"], "nature": "Jolly"},
-        "Triathlete Jacob": {"ability": "Static", "ivs": {"at": 24, "df": 24, "hp": 24, "sa": 24, "sd": 24, "sp": 24}, "level": 25, "moves": ["Thunderbolt", "Self-Destruct", "Sonicboom"], "nature": "Jolly"}
+        "Guitarist Kirk": {"ability": "Static", "item": "Lum Berry", "level": 27, "moves": ["Thunder Wave", "Thunderbolt", "Explosion", "Sonic Boom"], "nature": "Bold"},
+        "Guitarist Marcos": {"ability": "Static", "item": "Silk Scarf", "level": 17, "moves": ["Shock Wave", "Thunder Wave", "Return", "Sonic Boom"], "nature": "Relaxed"},
+        "Team Aqua Grunt @ Rusturf Tunnel": {"ability": "Static", "item": "King's Rock", "level": 13, "moves": ["Thunder Wave", "Sonic Boom", "Shock Wave", "Self-Destruct"], "nature": "Jolly"},
+        "Triathlete Jacob": {"ability": "Static", "ivs": {"at": 24, "df": 24, "hp": 24, "sa": 24, "sd": 24, "sp": 24}, "level": 25, "moves": ["Thunderbolt", "Self-Destruct", "Sonic Boom"], "nature": "Jolly"}
     },
     "Vulpix":
     {
@@ -2803,13 +2803,13 @@ var CUSTOMHACKSETDEX_EK = {
     {
         "Beauty Connie": {"ability": "Swift Swim", "item": "Lum Berry", "level": 73, "moves": ["Dragon Dance", "Earthquake", "Muddy Water", "Rock Slide"], "nature": "Lonely"},
         "Fisherman Wade": {"ability": "Swift Swim", "item": "Mystic Water", "level": 42, "moves": ["Earthquake", "Surf", "Rock Slide", "Ice Beam"], "nature": "Gentle"},
-        "Fisherman Wayne": {"ability": "Swift Swim", "item": "Lum Berry", "level": 71, "moves": ["Earthquake", "Muddy Water", "Ancientpower", "Ice Beam"], "nature": "Bashful"},
-        "Parasol Lady Daphne": {"ability": "Swift Swim", "item": "Lum Berry", "level": 74, "moves": ["Dragon Dance", "Earthquake", "Ancientpower", "Return"], "nature": "Rash"},
+        "Fisherman Wayne": {"ability": "Swift Swim", "item": "Lum Berry", "level": 71, "moves": ["Earthquake", "Muddy Water", "Ancient Power", "Ice Beam"], "nature": "Bashful"},
+        "Parasol Lady Daphne": {"ability": "Swift Swim", "item": "Lum Berry", "level": 74, "moves": ["Dragon Dance", "Earthquake", "Ancient Power", "Return"], "nature": "Rash"},
         "Parasol Lady Kayley": {"ability": "Swift Swim", "item": "Quick Claw", "level": 74, "moves": ["Earth Power", "Hydro Pump", "Ice Beam", "Rain Dance"], "nature": "Lonely"},
         "Swimmerf Tisha": {"ability": "Swift Swim", "item": "Leftovers", "level": 66, "moves": ["Protect", "Earth Power", "Attract", "Ice Beam"], "nature": "Timid"},
         "Swimmerm Herman": {"ability": "Swift Swim", "level": 65, "moves": ["Bounce", "Earthquake", "Muddy Water", "Ice Beam"], "nature": "Lonely"},
         "Team Aqua Grunt #1 @ Mt. Pyre": {"ability": "Swift Swim", "item": "Scope Lens", "level": 50, "moves": ["Rain Dance", "Waterfall", "Earthquake", "Ice Beam"], "nature": "Jolly"},
-        "Team Aqua Grunt #2 @ Route 124": {"ability": "Swift Swim", "item": "Bright Powder", "level": 65, "moves": ["Rain Dance", "Hydro Pump", "Earth Power", "Ancientpower"], "nature": "Bashful"},
+        "Team Aqua Grunt #2 @ Route 124": {"ability": "Swift Swim", "item": "Bright Powder", "level": 65, "moves": ["Rain Dance", "Hydro Pump", "Earth Power", "Ancient Power"], "nature": "Bashful"},
         "Team Aqua Grunt #3 @ Weather Institute": {"ability": "Swift Swim", "item": "Lum Berry", "level": 46, "moves": ["Dragon Dance", "Earthquake", "Hidden Power Flying", "Rock Slide"], "nature": "Jolly"}
     },
     "Whismur":
@@ -2877,7 +2877,7 @@ var CUSTOMHACKSETDEX_EK = {
     },
     "Yanma":
     {
-        "School Kid Tammy": {"ability": "Speed Boost", "ivs": {"at": 24, "df": 24, "hp": 24, "sa": 24, "sd": 24, "sp": 24}, "level": 11, "moves": ["Aerial Ace", "Ancientpower", "Silver Wind", "Giga Drain"], "nature": "Careful"}
+        "School Kid Tammy": {"ability": "Speed Boost", "ivs": {"at": 24, "df": 24, "hp": 24, "sa": 24, "sd": 24, "sp": 24}, "level": 11, "moves": ["Aerial Ace", "Ancient Power", "Silver Wind", "Giga Drain"], "nature": "Careful"}
     },
     "Zangoose":
     {

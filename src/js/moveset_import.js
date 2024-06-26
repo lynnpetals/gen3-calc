@@ -311,7 +311,6 @@ function addSets(pokes, name) {
 		}
 		if (currentRow.startsWith("- ")) {
 			var move = currentRow.replace("- ", "").replace("[", "").replace("]", "").trim();
-			if (game == "Emerald Kaizo") move = move.replace("High Jump Kick", "Hi Jump Kick").replace("Sonic Boom", "Sonicboom").replace("Ancient Power", "Ancientpower").replace("Feint Attack", "Faint Attack");
 			currentPoke.moves.push(move);
 		}
 	}

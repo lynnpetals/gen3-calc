@@ -630,9 +630,9 @@ var SETDEX_GSC = {
     "Ubers Showdown Usage": {"item":"Leftovers","moves":["Baton Pass","Charm","Mean Look","Rest"]}
   },
   "Murkrow": {
-    "OU All-Out Attacker": {"item":"Leftovers","moves":["Drill Peck","Feint Attack","Pursuit","Night Shade"]},
+    "OU All-Out Attacker": {"item":"Leftovers","moves":["Drill Peck","Faint Attack","Pursuit","Night Shade"]},
     "PU Pursuit Trapper": {"item":"Leftovers","moves":["Pursuit","Drill Peck","Hidden Power Dark","Haze"]},
-    "1v1 Mixed Attacker": {"item":"Mint Berry","ivs":{"hp":6,"at":28,"df":24},"moves":["Drill Peck","Feint Attack","Hidden Power Fire","Rest"]},
+    "1v1 Mixed Attacker": {"item":"Mint Berry","ivs":{"hp":6,"at":28,"df":24},"moves":["Drill Peck","Faint Attack","Hidden Power Fire","Rest"]},
     "NU Showdown Usage": {"item":"Leftovers","moves":["Drill Peck","Pursuit","Protect","Hidden Power Dark"]}
   },
   "Slowking": {

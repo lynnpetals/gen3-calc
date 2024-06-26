@@ -790,7 +790,7 @@ var CUSTOMSETDEX_E = {
             "level": 76,
             "moves": [
                 "Water Pulse",
-                "Ancientpower",
+                "Ancient Power",
                 "Aerial Ace",
                 "Slash"
             ],
@@ -1425,7 +1425,7 @@ var CUSTOMSETDEX_E = {
                 "Psybeam",
                 "Selfdestruct",
                 "Sandstorm",
-                "Ancientpower"
+                "Ancient Power"
             ],
             "nature": "Serious"
         },
@@ -1607,7 +1607,7 @@ var CUSTOMSETDEX_E = {
                 "Night Shade",
                 "Spite",
                 "Will-O-Wisp",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Quirky"
         },
@@ -1627,7 +1627,7 @@ var CUSTOMSETDEX_E = {
                 "Night Shade",
                 "Spite",
                 "Will-O-Wisp",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Timid"
         },
@@ -2454,7 +2454,7 @@ var CUSTOMSETDEX_E = {
             "level": 43,
             "moves": [
                 "Ingrain",
-                "Feint Attack",
+                "Faint Attack",
                 "Spikes",
                 "Needle Arm"
             ],
@@ -2495,7 +2495,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Pin Missile",
                 "Ingrain",
-                "Feint Attack",
+                "Faint Attack",
                 "Spikes"
             ],
             "nature": "Impish"
@@ -3729,7 +3729,7 @@ var CUSTOMSETDEX_E = {
             "level": 41,
             "moves": [
                 "Earthquake",
-                "Ancientpower",
+                "Ancient Power",
                 "Psychic",
                 "Light Screen"
             ],
@@ -3749,7 +3749,7 @@ var CUSTOMSETDEX_E = {
             "level": 49,
             "moves": [
                 "Earthquake",
-                "Ancientpower",
+                "Ancient Power",
                 "Psychic",
                 "Light Screen"
             ],
@@ -3830,7 +3830,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Reflect",
                 "Light Screen",
-                "Ancientpower",
+                "Ancient Power",
                 "Earthquake"
             ],
             "nature": "Modest"
@@ -3994,7 +3994,7 @@ var CUSTOMSETDEX_E = {
             "level": 76,
             "moves": [
                 "Giga Drain",
-                "Ancientpower",
+                "Ancient Power",
                 "Ingrain",
                 "Confuse Ray"
             ],
@@ -10024,7 +10024,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 24,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Fury Swipes",
                 "Psybeam",
                 "Screech"
@@ -15658,7 +15658,7 @@ var CUSTOMSETDEX_E = {
                 "Thunderbolt",
                 "Supersonic",
                 "Thunder Wave",
-                "Sonicboom"
+                "Sonic Boom"
             ],
             "nature": "Adamant"
         },
@@ -15815,7 +15815,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 39,
             "moves": [
-                "Sonicboom",
+                "Sonic Boom",
                 "Thunder Wave",
                 "Metal Sound",
                 "Thunderbolt"
@@ -15838,7 +15838,7 @@ var CUSTOMSETDEX_E = {
                 "Supersonic",
                 "Shock Wave",
                 "Thunder Wave",
-                "Sonicboom"
+                "Sonic Boom"
             ],
             "nature": "Impish"
         },
@@ -18093,7 +18093,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 42,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Baton Pass",
                 "Crunch",
                 "Iron Defense"
@@ -18974,7 +18974,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 18,
             "moves": [
-                "Hi Jump Kick",
+                "High Jump Kick",
                 "Meditate",
                 "Confusion",
                 "Detect"
@@ -21561,7 +21561,7 @@ var CUSTOMSETDEX_E = {
                 "Nature Power",
                 "Fake Out",
                 "Torment",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Naive"
         },
@@ -21601,7 +21601,7 @@ var CUSTOMSETDEX_E = {
                 "Nature Power",
                 "Fake Out",
                 "Torment",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Calm"
         },
@@ -21621,7 +21621,7 @@ var CUSTOMSETDEX_E = {
                 "Nature Power",
                 "Fake Out",
                 "Torment",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Bashful"
         },
@@ -24630,7 +24630,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 43,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Knock Off",
                 "Confuse Ray",
                 "Shadow Ball"
@@ -24650,7 +24650,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 43,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Knock Off",
                 "Confuse Ray",
                 "Shadow Ball"
@@ -24673,7 +24673,7 @@ var CUSTOMSETDEX_E = {
                 "Fury Swipes",
                 "Fake Out",
                 "Detect",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Timid"
         },
@@ -24690,7 +24690,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 44,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Knock Off",
                 "Confuse Ray",
                 "Shadow Ball"
@@ -24733,7 +24733,7 @@ var CUSTOMSETDEX_E = {
                 "Fury Swipes",
                 "Fake Out",
                 "Detect",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Modest"
         },
@@ -24753,7 +24753,7 @@ var CUSTOMSETDEX_E = {
                 "Fury Swipes",
                 "Fake Out",
                 "Detect",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Modest"
         },
@@ -24772,7 +24772,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Fake Out",
                 "Detect",
-                "Feint Attack",
+                "Faint Attack",
                 "Knock Off"
             ],
             "nature": "Lax"
@@ -24791,7 +24791,7 @@ var CUSTOMSETDEX_E = {
             "level": 40,
             "moves": [
                 "Detect",
-                "Feint Attack",
+                "Faint Attack",
                 "Knock Off",
                 "Confuse Ray"
             ],
@@ -24810,7 +24810,7 @@ var CUSTOMSETDEX_E = {
             },
             "level": 42,
             "moves": [
-                "Feint Attack",
+                "Faint Attack",
                 "Knock Off",
                 "Confuse Ray",
                 "Shadow Ball"
@@ -27561,7 +27561,7 @@ var CUSTOMSETDEX_E = {
                 "Double Slap",
                 "Assist",
                 "Charm",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Naughty"
         },
@@ -27581,7 +27581,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Assist",
                 "Charm",
-                "Feint Attack",
+                "Faint Attack",
                 "Covet"
             ],
             "nature": "Naughty"
@@ -27621,7 +27621,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Assist",
                 "Charm",
-                "Feint Attack",
+                "Faint Attack",
                 "Covet"
             ],
             "nature": "Timid"
@@ -27641,7 +27641,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Assist",
                 "Charm",
-                "Feint Attack",
+                "Faint Attack",
                 "Covet"
             ],
             "nature": "Timid"
@@ -29129,7 +29129,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Tackle",
                 "Uproar",
-                "Feint Attack",
+                "Faint Attack",
                 "Psybeam"
             ],
             "nature": "Hasty"
@@ -29149,7 +29149,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Tackle",
                 "Uproar",
-                "Feint Attack",
+                "Faint Attack",
                 "Psybeam"
             ],
             "nature": "Rash"
@@ -32519,7 +32519,7 @@ var CUSTOMSETDEX_E = {
             "moves": [
                 "Bite",
                 "Sand Attack",
-                "Feint Attack"
+                "Faint Attack"
             ],
             "nature": "Gentle"
         }

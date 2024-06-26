@@ -5,7 +5,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
     "Lass Tiana": ["Igglybuff", "Sunkern", "Togepi"],
     "Bug Catcher Allen": ["Weedle", "Wurmple", "Metapod", "Silcoon"],
     // Route 104 (South)
-    "Bird Keeper Billy 1": ["Pidgey", "Wingull", "Taillow", "Rayquaza"],
+    "Bird Keeper Billy #1": ["Pidgey", "Wingull", "Taillow", "Rayquaza"],
     "Fisherman Darian": ["Magikarp", "Feebas", "Goldeen", "Luvdisc"],
     "Lady Cindy": ["Cleffa", "Pichu", "Azurill"],
     // Petalburg Woods
@@ -518,7 +518,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
 	"Youngster Ray04": ["Snorlax","Sableye","Wailord","Golem","Weezing","Gengar"],
 	"Champion Aubs": ["Entei","Venusaur","Charizard","Cacturne","Castform-Sunny","Camerupt"],
 	"Champion JakkyShane": ["Shiftry","Blaziken","Vileplume","Aggron","Ampharos","Exploud"],
-	"Bird Keeper Billy 3": ["Ho-Oh","Lugia","Dragonite","Aerodactyl","Pidgeot","Rayquaza"],
+	"Bird Keeper Billy #3": ["Ho-Oh","Lugia","Dragonite","Aerodactyl","Pidgeot","Rayquaza"],
     // Evergrande City
     "Elite Four Sidney": ["Sableye", "Jolteon", "Tauros", "Alakazam", "Machamp", "Houndoom"],
     "Elite Four Phoebe": ["Gengar", "Ludicolo", "Crobat", "Gardevoir", "Sableye", "Dusclops"],
