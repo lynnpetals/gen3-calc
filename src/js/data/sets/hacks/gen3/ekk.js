@@ -1395,7 +1395,7 @@ var CUSTOMHACKSETDEX_EKK = {"Absol":{"Team Magma Grunt #2 @ Route 112": {"abilit
  ,"Champion Safety": {"ability":"Truant","level":100,"item":"Choice Band","moves":["Hyper Beam"],"nature":"Jolly"}}
 
  ,"Slowbro":{"Beauty Danielle": {"ability":"Shell Armor","level":38 ,"item":"Leftovers","moves":[ "Psychic", "Flamethrower", "Earthquake", "Ice Beam"]}
- ,"Team Aqua Grunt #1 @ Weather Institute": {"ability":"Shell Armor","level":52 ,"item":"Leftovers","moves":[ "Thunder Wave", "Psychic", "Earthquake", "Ice Beam" ],"nature":"Jolly"}
+ ,"Team Aqua Grunt #1 @ Weather Institute": {"ability":"Shell Armor","level":52 ,"item":"Leftovers","moves":[ "Thunder Wave", "Psychic", "Thunder", "Ice Beam" ],"nature":"Jolly"}
  ,"Team Aqua Grunt #7 @ Mt. Pyre": {"ability":"Shell Armor","level":63 ,"item":"Leftovers","moves":[ "Thunder Wave", "Psychic", "Surf", "Signal Beam"]}
  ,"Psychic Samantha": {"ability":"Shell Armor","level":69 ,"item":"Leftovers","moves":[ "Calm Mind", "Slack Off", "Psychic", "Hydro Pump" ],"nature":"Jolly"}
  ,"Swimmerm Jack": {"ability":"Shell Armor","level":67,"moves":[ "Slack Off", "Ice Punch", "Psychic", "Water Pulse" ],"nature":"Hasty"}
