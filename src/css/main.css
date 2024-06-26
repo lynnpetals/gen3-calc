@@ -761,10 +761,10 @@ table.field {
 #p5 {
     background: repeating-linear-gradient(
         135deg, 
-        #cb73dfe0, 
-        #cb73dfe0 5px, 
-        #e194f2e0 5px, 
-        #e194f2e0 10px
+        #f3d2dde0, 
+        #f3d2dde0 50px,
+        #e8bbcbe0 50px, 
+        #e8bbcbe0 51px
     );
     width: 12em;
 }
