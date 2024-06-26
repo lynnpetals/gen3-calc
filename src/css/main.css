@@ -135,10 +135,14 @@ html, body {
     margin: 0;
     padding: 0;
     min-width: 100em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .wrapper {
     padding: 0 1em;
-    max-width: 1300px;
+    max-width: 130000px;
     margin: 0 auto;
 }
 .credits {
@@ -154,6 +158,8 @@ fieldset {
     float: left;
     background-color: #F1F4F9;
     border: 1px solid #AAAAAA;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
 }
 legend {
     font-weight: bold;
@@ -176,7 +182,6 @@ th {
     top: -10px;
 }
 .big-text {
-    text-align: left;
     font-weight: bold;
     font-size: 1.1em;
     margin: 0.5em 0;
@@ -211,15 +216,12 @@ th {
     font-size: 0.8em;
 }
 .panel {
-    float: left;
     display: inline-block; /* required for honkaculate to work */
-}
-.poke-info {
-    width: 32em;
+    vertical-align: top;
 }
 .field-info, .poke-import {
     text-align: center;
-    width: 27.5em;
+    width: 20.5em;
 }
 .holder-0 {
     position: absolute;
@@ -345,18 +347,22 @@ th {
 
 /* header */
 .move-result-group {
-    min-width: 50em;
-    margin: 1em 0 11.5em;
+    display: flex;
+    min-width: 30em;
+    justify-content: center;
 }
 .move-result-subgroup {
     float: left;
-    width: 50%;
+    width: 25%;
+    padding-bottom: 30px;
+    max-height: 110px;
 }
 .move-result-group .btn {
     margin-right: 1em;
 }
 .main-result-group {
     margin: 2em 0 1em;
+    text-align: center;
 }
 .result-move-header {
     font-size: 0.8em;
@@ -485,7 +491,7 @@ table.field {
 }
 
 .import-team-text {
-    min-width: 27em;
+    min-width: 20em;
     min-height: 10em;
     resize: vertical;
 }
@@ -696,4 +702,67 @@ table.field {
 .info-paragraph > b:hover {
     background: var(--fieldset-color);
     color: unset;
+}
+
+#gameSettings {
+    display:none;
+}
+
+
+.ivs.calc-trigger, .base.calc-trigger {
+    display:none !important; 
+}
+
+
+#p1{
+    
+    background: repeating-linear-gradient(
+        135deg, 
+        #72041a7c, 
+        #72041a7c 50px, 
+        #b6203e7c 50px, 
+        #b6203e7c 51px
+    );
+    /* background-color: #72041a7c; */
+}
+#p2{
+    background: repeating-linear-gradient(
+        135deg, 
+        #1b41897c, 
+        #1b41897c 50px, 
+        #466cb37c 50px, 
+        #466cb37c 51px
+    );
+    /* background-color: #1b41897c; */
+}
+#p3{
+    background: repeating-linear-gradient(
+        135deg, 
+        #9779257c, 
+        #9779257c 50px, 
+        #daae347c 50px, 
+        #daae347c 51px
+    );
+    /* background-color: #9779257c; */
+}
+
+#p4{
+    background: repeating-linear-gradient(
+        135deg, 
+        #101010e0, 
+        #101010e0 5px, 
+        #202020e0 5px, 
+        #202020e0 10px
+    );
+    width:23em;
+}
+#p5 {
+    background: repeating-linear-gradient(
+        135deg, 
+        #532c5ce0, 
+        #532c5ce0 5px, 
+        #632f6fe0 5px, 
+        #632f6fe0 10px
+    );
+    width: 4em;
 }
