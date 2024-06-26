@@ -685,6 +685,8 @@ table.field {
 
 .box-poke, .trainer-poke-list-opposing {
     min-height: 30px;
+    justify-content: center;
+    display: flex;
 }
 
 .deadzone:hover{
