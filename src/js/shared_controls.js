@@ -1658,8 +1658,9 @@ function loadDefaultLists() {
 			if ($("#randoms").prop("checked")) {
 				return object.pokemon;
 			} else {
-				return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
-			}
+				// return object.text;
+				return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.text) : ("<b>" + object.text + "</b>");
+}
 		},
 		query: function (query) {
 			var pageSize = 30;
@@ -1667,15 +1668,18 @@ function loadDefaultLists() {
 			var options = getSetOptions();
 			for (var i = 0; i < options.length; i++) {
 				var option = options[i];
-				var pokeName = option.pokemon.toUpperCase();
+				// var pokeName = option.pokemon.toUpperCase();
+				var fullName = option.text.toUpperCase();
 				if (!query.term || query.term.toUpperCase().split(" ").every(function (term) {
-					return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0 || pokeName.indexOf(" " + term) >= 0;
+					// return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0;
+					return fullName.indexOf(term) === 0 || fullName.indexOf("-" + term) >= 0 || fullName.indexOf(" " + term) >= 0 || fullName.indexOf("(" + term) >= 0;
+					// return fullName.indexOf(term) === 0 || fullName.indexOf("-" + term) >= 0 || fullName.indexOf("(" + term) >= 0;
 				})) {
 					if ($("#randoms").prop("checked")) {
-						if (option.id) results.push(option);
+if (option.id) results.push(option);
 					} else {
-						results.push(option);
-					}
+					results.push(option);
+}
 				}
 			}
 			query.callback({
@@ -1688,6 +1692,7 @@ function loadDefaultLists() {
 		}
 	});
 }
+
 
 function allPokemon(selector) {
 	var allSelector = "";
