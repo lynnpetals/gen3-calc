@@ -574,8 +574,6 @@ function predictMidTurnSwitchEmerald(p1, p2) {
 							$(resultLocations[0][i]["move"]).addClass("switch-risk");
 							$(".trainer-poke-switch.right-side").each(function(index, e) {
 								if (index == j) {
-									console.log(index)
-									console.log($(this))
 									$(this).addClass("switch-risk-mon");}
 							});
 						}

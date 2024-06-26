@@ -528,11 +528,13 @@ $(".move-selector").change(function () {
 	}
 	moveGroupObj.children(".move-z").prop("checked", false);
 	
-	if (moveName === "Transform") {
-		moveGroupObj.children(".transform").show();
-	} else {
-		moveGroupObj.children(".transform").hide();
-	}
+	//Transform is currently incorrectly implemented, TODO
+
+	// if (moveName === "Transform") {
+	// 	moveGroupObj.children(".transform").show();
+	// } else {
+	// 	moveGroupObj.children(".transform").hide();
+	// }
 });
 
 $(".item").change(function () {
@@ -554,28 +556,22 @@ function smogonAnalysis(pokemonName) {
 	var generation = ["rb", "gs", "rs", "dp", "bw", "xy", "sm", "ss", "sv"][gen - 1];
 	return "https://smogon.com/dex/" + generation + "/pokemon/" + pokemonName.toLowerCase() + "/";
 }
-
-function noMenuClick(e) {
-	e.preventDefault();
-}
-
-// auto-update set details on select
 $(".set-selector").change(function () {
 	window.NO_CALC = true;
 	var fullSetName = $(this).val();
 
 	if ($(this).hasClass('opposing') && game != "None") {
+		// topPokemonIcon1(fullSetName, $("#p2mon")[0])
 		var oldTrainer = window.CURRENT_TRAINER;
 		var nextPokemon = getTrainerPokemon(fullSetName);
 		var trainerHTML = "";
 		var switchHTML = "";
+		$('.trainer-poke-switch-list').html('');
 		for (var i in nextPokemon) {
 			if (nextPokemon[i][0].includes($('input.opposing').val())){
 				continue;
 			}
 			var pokemonName = nextPokemon[i].split(" (")[0];
-			var pokemonHTML = `<img class="trainer-poke right-side" src="https://raw.githubusercontent.com/May8th1995/sprites/master/${pokemonName}.png" data-id="${nextPokemon[i]}" title="${nextPokemon[i]}">`;
-			trainerHTML += pokemonHTML;
 			switchHTML += `<span style="width: 100%;"><img class="trainer-poke-switch right-side" src="https://raw.githubusercontent.com/May8th1995/sprites/master/${pokemonName}.png" data-id="${nextPokemon[i]}" title="${nextPokemon[i]}"><label style="width: 60%;" class="trainer-poke-switch-explain" data-id="${nextPokemon[i]}"></label><label class="trainer-poke-switch-xp" data-id="${nextPokemon[i]}"></label></span>`;
 			if (parseInt(i) + 1 < nextPokemon.length) switchHTML += "<br><br>";
 		}
@@ -627,8 +623,7 @@ $(".set-selector").change(function () {
 			}
 		}
 	}
-
-	$('.trainer-poke-list-opposing').html(trainerHTML);
+	$('.trainer-poke-switch-list').html(switchHTML);
 	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
 		mon.addEventListener("contextmenu", noMenuClick);
 	}
@@ -1916,8 +1911,8 @@ function getTrainerPokemon(trainerName) {
 
 $(document).on('click', '.left-side', function() {
 	var set = $(this).attr('data-id');
+	$('#save-change').attr("hidden", true);
 	$('.player').val(set);
-
 	$('.player').change();
 	$('.player .select2-chosen').text(set);
 })
@@ -2086,6 +2081,10 @@ function dragstart_handler(ev) {
 	pokeDragged = ev.target;
 }
 
+function noMenuClick(e) {
+	e.preventDefault();
+}
+
 function drop(ev) {
 	ev.preventDefault();
 	if (ev.target.classList.contains("dropzone")) {
@@ -2196,42 +2195,44 @@ $(document).ready(function () {
 	$('#cc-advanced').change(colorCodeUpdate);
 	$('#cc-spe-border')[0].checked=true;
 	$('#cc-ohko-color')[0].checked=true;
+	$('#save-change').click(saveTrainerPokemon);
 
-	$('.transform').on("click", function() {
-		var transformer = $(this).closest(".poke-info");
-		var target = $(transformer.attr("id") === "p1" ? "#p2" : "#p1");
+	//Transform is currently bugged
 
-		transformer.siblings().find(".forme").parent().replaceWith(target.siblings().find(".forme").parent());
-		transformer.find(".type1").val(target.find(".type1").val());
-		transformer.find(".type2").val(target.find(".type2").val());
-		for (i = 0; i < LEGACY_STATS[gen].length; i++) {
-			var stat = LEGACY_STATS[gen][i];
-			if (stat === "hp") continue;
-			transformer.find("." + stat + " .evs").val(target.find("." + stat + " .evs").val());
-			transformer.find("." + stat + " .ivs").val(target.find("." + stat + " .ivs").val());
-			transformer.find("." + stat + " .dvs").val(target.find("." + stat + " .dvs").val());
-		}
-		calcStats(transformer);
-		for (i = 0; i < 4; i++) {
-			var move = target.find(".move" + (i + 1) + " select.move-selector").val();
-			if (move.startsWith("Hidden Power")) {
-				var pokemon = createPokemon(transformer);
-				var ivs = {};
-				for (var j = 0; j <= LEGACY_STATS[9].length; j++) {
-					var s = LEGACY_STATS[9][j];
-					ivs[legacyStatToStat(s)] = (pokemon.ivs && pokemon.ivs[s]) || 31;
-				}
+	// $('.transform').on("click", function() {
+	// 	var transformer = $(this).closest(".poke-info");
+	// 	var target = $(transformer.attr("id") === "p1" ? "#p2" : "#p1");
+
+	// 	transformer.siblings().find(".forme").parent().replaceWith(target.siblings().find(".forme").parent());
+	// 	transformer.find(".type1").val(target.find(".type1").val());
+	// 	transformer.find(".type2").val(target.find(".type2").val());
+	// 	for (i = 0; i < LEGACY_STATS[gen].length; i++) {
+	// 		var stat = LEGACY_STATS[gen][i];
+	// 		if (stat === "hp") continue;
+	// 		transformer.find("." + stat + " .total").val(target.find("." + stat + " .total").val());
+	// 	}
+	// 	transformer.find(".nature").val(target.find(".nature").val());
+	// 	calcStats(transformer);
+	// 	for (i = 0; i < 4; i++) {
+	// 		var move = target.find(".move" + (i + 1) + " select.move-selector").val();
+	// 		if (move.startsWith("Hidden Power")) {
+	// 			var pokemon = createPokemon(transformer);
+	// 			var ivs = {};
+	// 			for (var j = 0; j <= LEGACY_STATS[9].length; j++) {
+	// 				var s = LEGACY_STATS[9][j];
+	// 				ivs[legacyStatToStat(s)] = (pokemon.ivs && pokemon.ivs[s]) || 31;
+	// 			}
 				
-				var expectedType = calc.Stats.getHiddenPower(GENERATION, ivs).type;
-				move = "Hidden Power " + expectedType;
-			}
-			setSelectValueIfValid(transformer.find(".move" + (i + 1) + " select.move-selector"), move, "(No Move)");
-			transformer.find(".move" + (i + 1) + " select.move-selector").change();
-		}
-		transformer.find(".ability").val(target.find(".ability").val());
-		transformer.find(".ability").change();
-		if (gen > 4) transformer.siblings().find(".gender").replaceWith(target.siblings().find(".gender"));
-	});
+	// 			var expectedType = calc.Stats.getHiddenPower(GENERATION, ivs).type;
+	// 			move = "Hidden Power " + expectedType;
+	// 		}
+	// 		setSelectValueIfValid(transformer.find(".move" + (i + 1) + " select.move-selector"), move, "(No Move)");
+	// 		transformer.find(".move" + (i + 1) + " select.move-selector").change();
+	// 	}
+	// 	transformer.find(".ability").val(target.find(".ability").val());
+	// 	transformer.find(".ability").change();
+	// 	if (gen > 4) transformer.siblings().find(".gender").replaceWith(target.siblings().find(".gender"));
+	// });
 	
 	$('#trainer-nav-help').click(() => {
 		alert("This section displays the enemy party in the correct in-game order, from top to bottom. Each Pokémon will list the next Pokémon that comes out after it faints. To mark dead Pokémon, right-click the Pokémon, and it will move onto calculating with the remaining mons. Left-click will load the Pokémon and select the set.\n\n" + 

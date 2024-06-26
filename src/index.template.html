@@ -221,7 +221,7 @@
         <div class="panel" id="panel-2">
             <div aria-label="Pok&eacute;mon 1" role="region">
                 <fieldset class="poke-info" id="p1">
-                    <legend align="center">Pok&eacute;mon 1</legend>
+                    <legend align="center">Pok&eacute;mon 1<button class="on-legend" id="save-change" hidden>Save Changes</button></legend>
                     <input type="text" class="set-selector calc-trigger player" />
                     <span id="importedSetsOptions" style="width:auto; display:none">
                         <input type="checkbox" id="importedSets" /> Only show imported sets <br />
@@ -229,8 +229,8 @@
                     <div class="info-group top i-f-stats">
                         <div>
                             <label class="selector-label">Type</label>
-                            <select aria-label="type2" class="selector-select type2 terrain-trigger calc-trigger"></select>
-                            <select aria-label="type1" class="selector-select type1 terrain-trigger calc-trigger"></select>
+                            <select aria-label="type2" class="selector-select type2 terrain-trigger save-trigger calc-trigger"></select>
+                            <select aria-label="type1" class="selector-select type1 terrain-trigger save-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -239,11 +239,11 @@
                         </div>
                         <div class="hide">
                             <label class="selector-label">Forme</label>
-                            <select class="selector-select forme calc-trigger"></select>
+                            <select class="selector-select forme save-trigger calc-trigger"></select>
                         </div>
                         <div class="hide">
                             <label class="selector-label">Gender</label>
-                            <select class="selector-select gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
+                            <select class="selector-select save-trigger gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
                         </div>
                         <div>
                             <label class="selector-label" for="levelL1">Level</label>
@@ -251,7 +251,7 @@
                             We use inputmode="decimal" so that mobile devices will have a numpad appear when inputting values.
                             https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/#aa-decimal
                             -->
-                            <input class="selector-select level calc-trigger" id="levelL1" value="100" inputmode="decimal" type="number" min="1" max="100" step="1" />
+                            <input class="selector-select level save-trigger calc-trigger" id="levelL1" value="100" inputmode="decimal" type="number" min="1" max="100" step="1" />
                         </div>
                         <div class="hide">
                             <label for="weightL1">Weight (kg)</label>
@@ -442,7 +442,7 @@
                     <div class="info-group info-selectors i-f-stats" style="direction: ltr;">
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
                             <label class="selector-label" for="natureL1">NATURE</label>
-                            <select class="selector-select nature calc-trigger" id="natureL1">
+                            <select class="selector-select nature save-trigger calc-trigger" id="natureL1">
                                 <option value="Adamant">Adamant (+Atk, -SpA)</option>
                                 <option value="Bashful">Bashful</option>
                                 <option value="Bold">Bold (+Def, -Atk)</option>
@@ -472,7 +472,7 @@
                         </div>
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
                             <label class="selector-label" for="abilityL1">ABILITY</label>
-                            <select class="selector-select ability terrain-trigger calc-trigger" id="abilityL1"></select>
+                            <select class="selector-select ability terrain-trigger save-trigger calc-trigger" id="abilityL1"></select>
                             <input hidden type="checkbox" title= "Is this ability active?" class="abilityToggle calc-trigger">
                             <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
                                 <option value="0">Zero allies fainted</option>
@@ -495,7 +495,7 @@
                         </div>
                         <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                             <label class="selector-label" for="itemL1">ITEM</label>
-                            <select class="selector-select item terrain-trigger calc-trigger" id="itemL1"></select>
+                            <select class="selector-select item terrain-trigger save-trigger calc-trigger" id="itemL1"></select>
                         </div>
                         <div>
                             <label class="selector-label" for="statusL1">STATUS</label>
@@ -537,7 +537,7 @@
                     </div>
                     <div class="info-group">
                         <label for="currentHpL1">Current HP</label>
-                        <input class="current-hp calc-trigger" id="currentHpL1" value="341" inputmode="decimal" />/<span class="max-hp">341</span> (
+                        <input type="number" class="current-hp calc-trigger" id="currentHpL1" value="341" min="0" inputmode="decimal" />/<span class="max-hp">341</span> (
                         <input class="percent-hp calc-trigger" value="100" inputmode="decimal" />%)
                         <input class="visually-hidden max calc-trigger btn-input" type="checkbox" id="maxL" />
                         <label class="btn btn-xwide gen-specific g8 hide" for="maxL"
@@ -549,7 +549,7 @@
                     <div hidden id="criticalHitInstruction">Force this attack to be a critical hit?</div>
                     <div hidden id="zMoveInstruction">Make this attack a Z-move?</div>
                     <div class="move1">
-                        <select class="move-selector calc-trigger small-select"></select>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select>
                         <input class="move-bp calc-trigger" value="50" inputmode="decimal" />
                         <select class="move-type calc-trigger"></select>
                         <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
@@ -586,7 +586,7 @@
                         <button class="transform" hidden>Transform</button>
                     </div>
                     <div class="move2">
-                        <select class="move-selector calc-trigger small-select"></select>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
                         <select class="move-type calc-trigger"></select>
                         <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
@@ -623,7 +623,7 @@
                         <button class="transform" hidden>Transform</button>
                     </div>
                     <div class="move3">
-                        <select class="move-selector calc-trigger small-select"></select>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
                         <select class="move-type calc-trigger"></select>
                         <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
@@ -660,7 +660,7 @@
                         <button class="transform" hidden>Transform</button>
                     </div>
                     <div class="move4">
-                        <select class="move-selector calc-trigger small-select"></select>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
                         <select class="move-type calc-trigger"></select>
                         <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
@@ -1030,12 +1030,11 @@
         <div class="panel" id="panel-4">
             <div aria-label="Pok&eacute;mon 2" role="region">
                 <fieldset class="poke-info" id="p2">
-                    <legend align="center">Pok&eacute;mon 2</legend>
+                    <legend align="center">Pok&eacute;mon 2<button type="button" class="on-legend" id="ai-help" flag="7">AI Flag: [7]</button></legend>
                     <input type="text" class="set-selector calc-trigger opposing" />
                     <span id="importedSetsOptions" style="width:auto; display:none">
                         <input type="checkbox" id="importedSets" /> Only show imported sets
                     </span>
-                    <small class="right game-specific gm1" hidden><button type="button" id="ai-help" flag="7">AI Flag: [7]</button></small>
                     <div class="info-group top i-f-o-stats">
                         <div>
                             <label class="selector-label">Type</label>
@@ -1361,7 +1360,7 @@
                     </div>
                     <div class="info-group">
                         <label for="currentHpR1">Current HP</label>
-                        <input class="current-hp calc-trigger" id="currentHpR1" value="341" inputmode="decimal" />/<span class="max-hp">341</span> (
+                        <input type="number" class="current-hp calc-trigger" id="currentHpR1" value="341" min="0" inputmode="decimal" />/<span class="max-hp">341</span> (
                         <input class="percent-hp calc-trigger" value="100" inputmode="decimal" />%)
                         <input class="visually-hidden max calc-trigger btn-input" type="checkbox" id="maxR" />
                         <label class="btn btn-xwide gen-specific g8 hide" for="maxR"
@@ -1375,7 +1374,7 @@
                         <label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="50" inputmode="decimal" />
-                        <select class="move-selector calc-trigger small-select"></select>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select>
                         <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR1"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR1" title="Make this attack a Z-move?">Z</label>
                         <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR1" />
@@ -1408,7 +1407,7 @@
                         <label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector calc-trigger small-select"></select>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select>
                         
                         <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR2"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR2" title="Make this attack a Z-move?">Z</label>
@@ -1442,7 +1441,7 @@
                         <label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR3" title="Make this attack a Z-move?">Z</label>
                     <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR3" />
                         <label class="stellar-btn btn" style="display: none;" for="stellarR3" title="Make this attack Stellar boosted?">Stellar</label>
@@ -1474,7 +1473,7 @@
                         <label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
+                        <select class="move-selector save-trigger calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR4" title="Make this attack a Z-move?">Z</label>
                         <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR4" />
                         <label class="stellar-btn btn" style="display: none;" for="stellarR4" title="Make this attack Stellar boosted?">Stellar</label>

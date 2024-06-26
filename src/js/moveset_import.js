@@ -14,11 +14,23 @@ function placeBsBtn() {
 	});
 }
 
+
+/*
+	for now only save the current trainer #p1
+*/
+function saveTrainerPokemon(){
+	$('#save-change').attr("hidden", true);
+	ExportPokemon($("#p1"));
+	$("#import.bs-btn").click()
+}
+
+
 function ExportPokemon(pokeInfo) {
 	var pokemon = createPokemon(pokeInfo);
+	var setName = $(".select2-chosen")[0].textContent.split(/^([^(@]+)(\((.+)\))? ?(@ (.+))?/)[3];
 	var EV_counter = 0;
 	var finalText = "";
-	finalText = pokemon.name + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
+	finalText = setName + " (" + pokemon.name + ")" + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
 	finalText += "Level: " + pokemon.level + "\n";
 	finalText += pokemon.nature && gen > 2 ? pokemon.nature + " Nature" + "\n" : "";
 	if (gen === 9) {
@@ -320,7 +332,7 @@ function addSets(pokes, name) {
 		addedpokes++;
 	}
 	if (addedpokes > 0) {
-		$(allPokemon("#importedSetsOptions")).css("display", "inline");
+		// $(allPokemon("#importedSetsOptions")).css("display", "inline");
 	} else {
 		alert("No sets imported, please check your syntax and try again");
 	}
@@ -411,7 +423,7 @@ $(document).ready(function () {
 	if (localStorage.customsets) {
 		customSets = JSON.parse(localStorage.customsets);
 		updateDex(customSets, selectFirstMon);
-		$(allPokemon("#importedSetsOptions")).css("display", "inline");
+		// $(allPokemon("#importedSetsOptions")).css("display", "inline");
 	} else {
 		loadDefaultLists();
 	}

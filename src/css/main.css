@@ -164,7 +164,13 @@ fieldset {
 legend {
     font-weight: bold;
     text-align: center;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 1em;
+    margin-bottom: 1em;
+  }
 th, td {
     padding: 0;
 }
@@ -800,9 +806,6 @@ table.field {
     flex-direction: column;
 
 }
-
-#ai-help{
-    float:right;
-    position:relative;
-    top:0.5em;
+.on-legend{
+    margin: 1em;
 }

@@ -213,7 +213,7 @@ $(".result-move").change(function () {
 			var desc = result.fullDesc(notation, false);
 			if (desc.indexOf('--') === -1) desc += ' -- possibly the worst move ever';
 			$("#mainResult").text(desc);
-			$("#damageValues").text("Possible damage amounts: (" + displayDamageHits(result.damage) + ")");
+			$("#damageValues").text("Rolls: (" + displayDamageHits(result.damage) + ")");
 		}
 	}
 });
@@ -290,6 +290,15 @@ function calculateAllMoves(gen, p1, p1field, p2, p2field) {
 	return results;
 }
 
+function saveTrigger(ev) {
+	var isUser = ev.originalEvent ? ev.originalEvent.isTrusted : false;
+	console.log("yippee2")
+	if (isUser || ev.added) { //ev.added is for the moves buttons
+		console.log("yippee")
+		$('#save-change').attr("hidden", false);
+	}
+}
+
 $(".mode").change(function () {
 	var params = new URLSearchParams(window.location.search);
 	params.set('mode', $(this).attr("id"));
@@ -347,6 +356,9 @@ $(document).ready(function () {
 		}
 		performCalculations();
 	});
+
+	
+	$(".save-trigger").bind("change keyup", saveTrigger);
 
 	$(".bait-trigger").bind("change keyup", function (ev) {
 		if (window.NO_CALC) {
