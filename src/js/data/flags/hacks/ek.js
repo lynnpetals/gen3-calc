@@ -550,9 +550,28 @@ var CUSTOMHACKFLAGS_EK = {
             "Team Magma Grunt #15 @ Magma Hideout",
             "Team Magma Grunt #16 @ Magma Hideout",
             "Magma Admin Courtney #1",
-            "Magma Leader Maxie #2"
+            "Magma Leader Maxie #2",
+            //Mossdeep Space Center
+            "Team Magma Grunt #1 @ Mossdeep Space Center",
+            "Team Magma Grunt #2 @ Mossdeep Space Center",
+            "Team Magma Grunt #3 @ Mossdeep Space Center",
+            "Magma Admin Courtney #2",
+            "Team Magma Grunt #4 @ Mossdeep Space Center",
+            "Team Magma Grunt #5 @ Mossdeep Space Center",
+            "Team Magma Grunt #6 @ Mossdeep Space Center",
+            "Magma Leader Maxie #3",
+            "Magma Admin Tabitha #2",
         ],
         "rain": [
+            // Weather Institute
+
+            "Team Aqua Grunt #1 @ Weather Institute",
+            "Team Aqua Grunt #2 @ Weather Institute",
+            "Team Aqua Grunt #3 @ Weather Institute",
+            "Team Aqua Grunt #4 @ Weather Institute",
+            "Team Aqua Grunt #5 @ Weather Institute",
+            "Aqua Admin Shelly #1",
+
             // Route 120
             "Battle Girl Tara",
             "Bird Keeper Colin",
@@ -560,6 +579,34 @@ var CUSTOMHACKFLAGS_EK = {
             "Ninja Boy Keigo",
             "Parasol Lady Angelica",
             "Cooltrainer Jennifer",
+
+            //Mt. Pyre
+                    
+            "Hex Maniac Leah",
+            "Team Aqua Grunt #1 @ Mt. Pyre",
+            "Pokémon Breeder Gabrielle",
+            "Team Aqua Grunt #2 @ Mt. Pyre",
+            "Team Aqua Grunt #3 @ Mt. Pyre",
+            "Team Aqua Grunt #4 @ Mt. Pyre",
+            "Hex Maniac Valerie",
+            "Team Aqua Grunt #5 @ Mt. Pyre",
+            "Team Aqua Grunt #6 @ Mt. Pyre",
+            "Team Aqua Grunt #7 @ Mt. Pyre",
+            "Team Aqua Grunt #8 @ Mt. Pyre",
+            "Team Aqua Grunt #9 @ Mt. Pyre",
+            "Team Aqua Grunt #10 @ Mt. Pyre",
+            "Aqua Admin Matt #1",
+            //Aqua Hideout
+                    
+            "Team Aqua Grunt #1 @ Aqua Hideout",
+            "Team Aqua Grunt #2 @ Aqua Hideout",
+            "Team Aqua Grunt #3 @ Aqua Hideout",
+            "Team Aqua Grunt #4 @ Aqua Hideout",
+            "Team Aqua Grunt #5 @ Aqua Hideout",
+            "Team Aqua Grunt #6 @ Aqua Hideout",
+            "Team Aqua Grunt #7 @ Aqua Hideout",
+            "Team Aqua Grunt #8 @ Aqua Hideout",
+            "Aqua Admin Matt #2",
             // Seafloor Cavern
             "Team Aqua Grunt #1 @ Seafloor Cavern",
             "Team Aqua Grunt #2 @ Seafloor Cavern",

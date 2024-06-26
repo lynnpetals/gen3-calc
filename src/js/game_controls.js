@@ -153,7 +153,7 @@ var CUSTOMFLAGS = [
 
 var CUSTOMHACKSETDEX = [
 	undefined, // None
-	typeof CUSTOMHACKSETDEX_EK === 'undefined' ? {} : CUSTOMHACKSETDEX_EK
+	typeof CUSTOMHACKSETDEX_EKK === 'undefined' ? {} : CUSTOMHACKSETDEX_EKK
 ];
 
 var HACKGEN = {
@@ -316,6 +316,8 @@ var phase1TypeMatchups = {
     "Normal-Ghost": 0.0,
     "Fighting-Ghost": 0.0
 };
+
+//TODO: Combine Switch-in and Enemy Party panels
 function predictSwitchOrderEmerald() {
 	var advanced = $("#advanced-bait").is(":checked");
 	var p1 = createPokemon($("#p1"));
@@ -530,6 +532,7 @@ function predictSwitchOrderEmerald() {
 }
 
 function predictSwitchOrder() {
+	return undefined; //TODO
 	switch (game) {
 		case "Emerald Kaizo":
 			return predictSwitchOrderEmerald();

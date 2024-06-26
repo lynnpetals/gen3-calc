@@ -1429,9 +1429,11 @@ $(".gen").change(function () {
 
 function getFirstValidSetOption() {
 	var sets = getSetOptions();
+	console.log("hei?")
 	// NB: The first set is never valid, so we start searching after it.
 	for (var i = 1; i < sets.length; i++) {
-		if (sets[i].id && sets[i].id.indexOf('(Blank Set)') === -1) return sets[i];
+		console.log(sets[i])
+		if (sets[i].id && sets[i].id.indexOf('(Blank Set)') === -1) {return sets[i];}
 	}
 	return undefined;
 }
@@ -1783,7 +1785,7 @@ function getTrainerNames() {
 			break;
 		
 		case "Emerald Kaizo":
-			allPokemon = CUSTOMHACKSETDEX_EK;
+			allPokemon = CUSTOMHACKSETDEX_EKK;
 			break;
 		
 		default:

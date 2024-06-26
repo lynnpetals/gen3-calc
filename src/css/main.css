@@ -137,8 +137,8 @@ html, body {
     min-width: 100em;
     height: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 .wrapper {
     padding: 0 1em;
@@ -354,14 +354,14 @@ th {
 .move-result-subgroup {
     float: left;
     width: 25%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     max-height: 110px;
 }
 .move-result-group .btn {
     margin-right: 1em;
 }
 .main-result-group {
-    margin: 2em 0 1em;
+    margin: 0em 0 1em;
     text-align: center;
 }
 .result-move-header {
@@ -723,6 +723,7 @@ table.field {
         #b6203e7c 50px, 
         #b6203e7c 51px
     );
+    width: 22em;
     /* background-color: #72041a7c; */
 }
 #p2{
@@ -733,6 +734,7 @@ table.field {
         #466cb37c 50px, 
         #466cb37c 51px
     );
+    width: 22em;
     /* background-color: #1b41897c; */
 }
 #p3{
@@ -765,4 +767,8 @@ table.field {
         #632f6fe0 10px
     );
     width: 4em;
+}
+.five-panels{
+    display:flex;
+    flex-flow: nowrap;
 }
