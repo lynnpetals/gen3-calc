@@ -226,11 +226,11 @@
                     <span id="importedSetsOptions" style="width:auto; display:none">
                         <input type="checkbox" id="importedSets" /> Only show imported sets <br />
                     </span>
-                    <div class="info-group top">
+                    <div class="info-group top i-f-stats">
                         <div>
-                            <label>Type</label>
-                            <select aria-label="type1" class="type1 terrain-trigger calc-trigger"></select>
-                            <select aria-label="type2" class="type2 terrain-trigger calc-trigger"></select>
+                            <label class="selector-label">Type</label>
+                            <select aria-label="type1" class="selector-select type1 terrain-trigger calc-trigger"></select>
+                            <select aria-label="type2" class="selector-select type2 terrain-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -238,20 +238,20 @@
                             <input type="checkbox" title= "Has this Pok&eacute;mon terastalized?" class="teraToggle terrain-trigger calc-trigger">
                         </div>
                         <div class="hide">
-                            <label>Forme</label>
-                            <select class="forme calc-trigger"></select>
+                            <label class="selector-label">Forme</label>
+                            <select class="selector-select forme calc-trigger"></select>
                         </div>
                         <div class="hide">
-                            <label>Gender</label>
-                            <select class="gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
+                            <label class="selector-label">Gender</label>
+                            <select class="selector-select gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
                         </div>
                         <div>
-                            <label for="levelL1">Level</label>
+                            <label class="selector-label" for="levelL1">Level</label>
                             <!--
                             We use inputmode="decimal" so that mobile devices will have a numpad appear when inputting values.
                             https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/#aa-decimal
                             -->
-                            <input class="level calc-trigger" id="levelL1" value="100" inputmode="decimal" type="number" min="1" max="100" step="1" />
+                            <input class="selector-select level calc-trigger" id="levelL1" value="100" inputmode="decimal" type="number" min="1" max="100" step="1" />
                         </div>
                         <div class="hide">
                             <label for="weightL1">Weight (kg)</label>
@@ -439,10 +439,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="info-group info-selectors">
+                    <div class="info-group info-selectors i-f-stats" style="direction: ltr;">
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                            <label for="natureL1">Nature</label>
-                            <select class="nature calc-trigger" id="natureL1">
+                            <label class="selector-label" for="natureL1">NATURE</label>
+                            <select class="selector-select nature calc-trigger" id="natureL1">
                                 <option value="Adamant">Adamant (+Atk, -SpA)</option>
                                 <option value="Bashful">Bashful</option>
                                 <option value="Bold">Bold (+Def, -Atk)</option>
@@ -471,8 +471,8 @@
                             </select>
                         </div>
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                            <label for="abilityL1">Ability</label>
-                            <select class="ability terrain-trigger calc-trigger" id="abilityL1"></select>
+                            <label class="selector-label" for="abilityL1">ABILITY</label>
+                            <select class="selector-select ability terrain-trigger calc-trigger" id="abilityL1"></select>
                             <input hidden type="checkbox" title= "Is this ability active?" class="abilityToggle calc-trigger">
                             <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
                                 <option value="0">Zero allies fainted</option>
@@ -494,12 +494,12 @@
                             <button class="transform" hidden>Transform</button>
                         </div>
                         <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
-                            <label for="itemL1">Item</label>
-                            <select class="item terrain-trigger calc-trigger" id="itemL1"></select>
+                            <label class="selector-label" for="itemL1">ITEM</label>
+                            <select class="selector-select item terrain-trigger calc-trigger" id="itemL1"></select>
                         </div>
                         <div>
-                            <label for="statusL1">Status</label>
-                            <select class="status calc-trigger" id="statusL1">
+                            <label class="selector-label" for="statusL1">STATUS</label>
+                            <select class="selector-select status calc-trigger" id="statusL1">
                                 <option value="Healthy">Healthy</option>
                                 <option value="Poisoned">Poisoned</option>
                                 <option value="Badly Poisoned">Badly Poisoned</option>
@@ -1035,11 +1035,12 @@
                     <span id="importedSetsOptions" style="width:auto; display:none">
                         <input type="checkbox" id="importedSets" /> Only show imported sets
                     </span>
-                    <div class="info-group top">
+                    <small class="right game-specific gm1" hidden><button type="button" id="ai-help" flag="7">AI Flag: [7]</button></small>
+                    <div class="info-group top i-f-o-stats">
                         <div>
-                            <label>Type</label>
-                            <select aria-label="Type 1" class="type1 terrain-trigger calc-trigger"></select>
-                            <select aria-label="Type 2" class="type2 terrain-trigger calc-trigger"></select>
+                            <label class="selector-label">Type</label>
+                            <select aria-label="Type 1" class="selector-select type1 terrain-trigger calc-trigger"></select>
+                            <select aria-label="Type 2" class="selector-select type2 terrain-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -1047,17 +1048,16 @@
                             <input type="checkbox" title= "Has this Pok&eacute;mon terastalized?" class="teraToggle terrain-trigger calc-trigger">
                         </div>
                         <div class="hide">
-                            <label>Forme</label>
-                            <select class="forme calc-trigger"></select>
+                            <label class="selector-label">Forme</label>
+                            <select class="selector-select forme calc-trigger"></select>
                         </div>
                         <div class="hide">
-                            <label>Gender</label>
-                            <select class="gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
+                            <label class="selector-label">Gender</label>
+                            <select class="selector-select gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
                         </div>
                         <div>
-                            <label for="levelR1">Level</label>
-                            <input class="level calc-trigger" id="levelR1" value="100" inputmode="decimal" type="number" min="1" max="100" step="1" />
-                            <small class="right game-specific gm1" hidden><button type="button" id="ai-help" flag="7">AI Flag: [7]</button></small>
+                            <label class="selector-label" for="levelR1">Level</label>
+                            <input class="selector-select level calc-trigger" id="levelR1" value="100" inputmode="decimal" type="number" min="1" max="100" step="1" />
                         </div>
                         <div class="hide">
                             <label for="weightR1">Weight (kg)</label>
@@ -1261,10 +1261,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="info-group info-selectors style="direction: rtl;">
+                    <div class="info-group info-selectors i-f-o-stats" style="direction: rtl;">
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                            <label for="natureR1">Nature</label>
-                            <select class="nature calc-trigger" id="natureR1">
+                            <select class="selector-select nature calc-trigger" id="natureR1">
                                 <option value="Adamant">Adamant (+Atk, -SpA)</option>
                                 <option value="Bashful">Bashful</option>
                                 <option value="Bold">Bold (+Def, -Atk)</option>
@@ -1291,10 +1290,10 @@
                                 <option value="Serious">Serious</option>
                                 <option value="Timid">Timid (+Spe, -Atk)</option>
                             </select>
+                            <label class="selector-label" for="natureR1">NATURE</label>
+                            
                         </div>
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                            <label for="abilityR1">Ability</label>
-                            <select class="ability terrain-trigger calc-trigger" id="abilityR1"></select>
                             <input hidden type="checkbox" title= "Is this ability active?" class="abilityToggle calc-trigger">
                             <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
                                 <option value="0">Zero allies fainted</option>
@@ -1313,23 +1312,16 @@
                                 <option value="spd">Special Defense</option>
                                 <option value="spe">Speed</option>
                             </select>
+                            <select class="selector-select ability terrain-trigger calc-trigger" id="abilityR1"></select>
                             <button class="transform" hidden>Transform</button>
+                            <label class="selector-label" for="abilityR1">ABILITY</label>
+                            
                         </div>
                         <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
-                            <label for="itemR1">Item</label>
-                            <select class="item terrain-trigger calc-trigger" id="itemR1"></select>
+                            <select class="selector-select item terrain-trigger calc-trigger" id="itemR1"></select>
+                            <label class="selector-label" for="itemR1">ITEM</label>
                         </div>
                         <div>
-                            <label for="statusR1">Status</label>
-                            <select class="status calc-trigger" id="statusR1">
-                                <option value="Healthy">Healthy</option>
-                                <option value="Poisoned">Poisoned</option>
-                                <option value="Badly Poisoned">Badly Poisoned</option>
-                                <option value="Burned">Burned</option>
-                                <option value="Paralyzed">Paralyzed</option>
-                                <option value="Asleep">Asleep</option>
-                                <option value="Frozen">Frozen</option>
-                            </select>
                             <select aria-label="Toxic counter" class="toxic-counter calc-trigger hide">
                                 <option value="1">1/16</option>
                                 <option value="2">2/16</option>
@@ -1347,6 +1339,16 @@
                                 <option value="14">14/16</option>
                                 <option value="15">15/16</option>
                             </select>
+                            <select class="selector-select status calc-trigger" id="statusR1">
+                                <option value="Healthy">Healthy</option>
+                                <option value="Poisoned">Poisoned</option>
+                                <option value="Badly Poisoned">Badly Poisoned</option>
+                                <option value="Burned">Burned</option>
+                                <option value="Paralyzed">Paralyzed</option>
+                                <option value="Asleep">Asleep</option>
+                                <option value="Frozen">Frozen</option>
+                            </select>
+                            <label class="selector-label" for="statusR1">STATUS</label>
                         </div>
                     </div>
                     <div class="info-group gen-specific g9">
@@ -1602,12 +1604,11 @@
     <script type="text/javascript" src="./js/game_controls.js?"></script>
 </div>
 
-<div class="credits">Original calculator created by Honko, maintained by Austin and Kris
-    <br />Fork created and maintained by anastarawneh
-    <ul><li><a href="https://github.com/anastarawneh/pokemon-damage-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>
-    <li><a href="https://github.com/anastarawneh/pokemon-damage-calc" class="links-lighten" target="_blank">GitHub repository</a></li></ul>
+<div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn) for usage of EKK. Last updated 26 June 2024.
+    <ul><li><a href="https://github.com/AFalsePrayer/ek-calc/tree/ekk-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>
+    <li><a href="https://github.com/AFalsePrayer/ek-calc/tree/ekk-calc" class="links-lighten" target="_blank">GitHub repository</a></li></ul>
 
-    <button type="button" id="dark-theme-toggle"></button>
+    <button type="button" id="dark-theme-toggle">
     <script type="text/javascript" src="./js/dark-theme-toggle.js?"></script>
 </div>
 

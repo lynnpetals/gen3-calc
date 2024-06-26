@@ -149,7 +149,7 @@ html, body {
     clear: both;
     padding: 20px;
     max-width: 1285px;
-    margin: 0px auto;
+    margin: 50px auto;
 }
 div.wrapper > div > span {
     padding-right: 5px;
@@ -773,4 +773,35 @@ table.field {
 .five-panels{
     display:flex;
     flex-flow: nowrap;
+}
+.info-selectors{
+    display: flex;
+    flex-direction: column;
+}
+.i-f-stats > div > .selector-label{
+    float:left;text-align: left;
+}
+
+.i-f-o-stats > div > .selector-label{
+    float:right;text-align: right;
+}
+
+.i-f-stats .selector-select{
+    float:right;
+}
+
+.i-f-o-stats .selector-select{
+    float:left;
+    direction: ltr;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#ai-help{
+    float:right;
+    position:relative;
+    top:0.5em;
 }
