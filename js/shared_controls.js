@@ -1793,7 +1793,7 @@ function getTrainerNames() {
 			break;
 		
 		case "Emerald Kaizo":
-			allPokemon = CUSTOMHACKSETDEX_EKK;
+			allPokemon = CUSTOMHACKSETDEX_EK;
 			break;
 		
 		default:
