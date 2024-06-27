@@ -1371,7 +1371,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "moves": [
                 "Hydro Cannon",
                 "Ice Beam",
-                "Hidden Power Electric",
+                "Thunder",
                 "Roar"
             ],
             "nature": "Sassy"
@@ -3383,7 +3383,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Brave"
         }
     },
-    "Dragonair": {
+    "Dragonair": { //Fixed
         "Fisherman Ben": {
             "ability": "Shed Skin",
             "level": 27,
@@ -3407,13 +3407,13 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Surf"
             ]
         },
-        "Team Aqua Grunt #5 @ Weather Institute": {
+        "Team Aqua Grunt #5 @ Weather Institute": { //Fixed
             "ability": "Shed Skin",
             "level": 54,
             "item": "Bright Powder",
             "moves": [
                 "Rain Dance",
-                "Thunderbolt",
+                "Thunder",
                 "Surf",
                 "Body Slam"
             ],
@@ -5709,7 +5709,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "nature": "Timid"
         }
     },
-    "Gorebyss": {
+    "Gorebyss": { //Confirmed
         "Team Aqua Grunt #3 @ Weather Institute": {
             "ability": "Swift Swim",
             "level": 53,
@@ -5717,7 +5717,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "moves": [
                 "Hydro Pump",
                 "Ice Beam",
-                "Hidden Power Electric",
+                "Thunder",
                 "Confuse Ray"
             ],
             "nature": "Lax"
@@ -6818,7 +6818,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Psychic",
                 "Fire Punch",
                 "Hypnosis",
-                "Thunder Punch"
+                "Thunder"
             ],
             "nature": "Sassy"
         },
@@ -7701,7 +7701,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "item": "Leftovers",
             "moves": [
                 "Rain Dance",
-                "Thunderbolt",
+                "Thunder",
                 "Surf",
                 "Ice Beam"
             ],
@@ -8208,7 +8208,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "item": "Scope Lens",
             "moves": [
                 "Fire Punch",
-                "Thunder Punch",
+                "Thunder",
                 "Ice Beam",
                 "Surf"
             ],
@@ -13950,7 +13950,7 @@ var CUSTOMHACKSETDEX_EKK = {
             ],
             "nature": "Jolly"
         },
-        "Team Aqua Grunt #7 @ Mt. Pyre": {
+        "Team Aqua Grunt #7 @ Mt. Pyre": { //Confirmed
             "ability": "Shell Armor",
             "level": 63,
             "item": "Leftovers",
