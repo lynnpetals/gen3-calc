@@ -396,6 +396,7 @@ function predictSwitchOrderEmerald() {
 
 	//TODO: condense Pokémon such that instead of six listings, it's a very short one
 	//Phase 1 should always be condensed, phase 2 doesn't need to be condensed since it's all a little complicated and depends on the mon that just died
+	var overallPhase = 2;
 
 	for (var i in partyMons) {
 		var dead = partyMons[i];
@@ -454,6 +455,10 @@ function predictSwitchOrderEmerald() {
 				}
 			}
 			if (nextMon) break;
+		}
+
+		if(nextMon){
+			overallPhase = 1;
 		}
 
 		// Phase 2 => Simple => Points for STAB moves for the dead mon and effective moves against me
@@ -524,10 +529,17 @@ function predictSwitchOrderEmerald() {
 			nextMon = highestDamage.pokemon.name;
 		}
 
+
+
 		var xp = Math.floor(Math.floor(pokedex[dead.species].expYield * dead.level / 7) * 1.5);
+
+		if(overallPhase == 1){
+			
+		}
 
 		if (nextMon) {
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(`${nextMon} (Phase ${phase})`);
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(``);
 			$(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
 		}
 	}
