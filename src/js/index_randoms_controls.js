@@ -78,7 +78,7 @@ function performCalculations() {
 			return secondMove.maxDamage - firstMove.maxDamage;
 		});
 		$(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
-		console.log(result.moveDesc(notation).split('('))
+		
 		$(resultLocations[0][i].damage).text(result.moveDesc(notation).split('(')[0]);
 		if(result.moveDesc(notation).includes('(')){
 			$(resultLocations[0][i].recoil).attr("hidden", false);
@@ -100,7 +100,7 @@ function performCalculations() {
 		p2.maxDamages.sort(function (firstMove, secondMove) {
 			return secondMove.maxDamage - firstMove.maxDamage;
 		});
-		console.log(resultLocations)
+		
 		$(resultLocations[1][i].move + " + label").text(p2.moves[i].name.replace("Hidden Power", "HP"));
 		$(resultLocations[1][i].damage).text(result.moveDesc(notation).split('(')[0]);
 		if(result.moveDesc(notation).includes('(')){
