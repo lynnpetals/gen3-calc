@@ -80,7 +80,7 @@ var CUSTOMHACKTRAINERNAMES_EK = [
 	// Route 117
 	"Triathlete Melina",
 	"Triathlete Dylan",
-	"Sr and Jr Anna & Meg",
+	"Sr And Jr Anna & Meg",
 	"Battle Girl Aisha",
 	"Pokémon Breeder Lydia",
 	"Pokémon Breeder Isaac",
@@ -125,7 +125,7 @@ var CUSTOMHACKTRAINERNAMES_EK = [
 	"Pokémon Trainer Red #2",
 	// Route 114
 	"Pokémaniac Steve",
-	"Sr and Jr Tyra & Ivy",
+	"Sr And Jr Tyra & Ivy",
 	"Kindler Bernie",
 	"Team Magma Grunt #1 @ Route 114",
 	"Team Magma Grunt #2 @ Route 114",
@@ -223,7 +223,7 @@ var CUSTOMHACKTRAINERNAMES_EK = [
 	"Bug Maniac Ali",
 	"Beauty Jessica",
 	"Pokémon Breeder David",
-	"Sr and Jr Kate & Joy",
+	"Sr And Jr Kate & Joy",
 	"Pokéfan Vanessa",
 	"Pokémon Breeder Nora",
 	"Cooltrainer Cristin",

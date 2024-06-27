@@ -7694,7 +7694,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bold"
         },
-        "Sr. And Jr. Tyra and Ivy": {
+        "Sr And Jr Tyra and Ivy": {
             "ability": "Rock Head",
             "gender": "M",
             "ivs": {
@@ -8941,7 +8941,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Sassy"
         },
-        "Sr. And Jr. Anna and Meg #5": {
+        "Sr And Jr Anna and Meg #5": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -11622,7 +11622,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Sr. And Jr. Anna and Meg #4": {
+        "Sr And Jr Anna and Meg #4": {
             "ability": "Pickup",
             "gender": "M",
             "ivs": {
@@ -11642,7 +11642,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Docile"
         },
-        "Sr. And Jr. Anna and Meg #5": {
+        "Sr And Jr Anna and Meg #5": {
             "ability": "Pickup",
             "gender": "M",
             "ivs": {
@@ -16509,7 +16509,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quiet"
         },
-        "Sr. And Jr. Anna and Meg": {
+        "Sr And Jr Anna and Meg": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -16528,7 +16528,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Sr. And Jr. Anna and Meg #2": {
+        "Sr And Jr Anna and Meg #2": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -16547,7 +16547,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Sr. And Jr. Anna and Meg #3": {
+        "Sr And Jr Anna and Meg #3": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -16566,7 +16566,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Sr. And Jr. Anna and Meg #4": {
+        "Sr And Jr Anna and Meg #4": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -21224,7 +21224,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Calm"
         },
-        "Sr. And Jr. Kim and Iris": {
+        "Sr And Jr Kim and Iris": {
             "ability": "Oblivious",
             "gender": "M",
             "ivs": {
@@ -24574,7 +24574,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Adamant"
         },
-        "Sr. And Jr. Tyra and Ivy": {
+        "Sr And Jr Tyra and Ivy": {
             "ability": "Natural Cure",
             "gender": "M",
             "ivs": {
@@ -27937,7 +27937,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Adamant"
         },
-        "Sr. And Jr. Kate and Joy": {
+        "Sr And Jr Kate and Joy": {
             "ability": "Truant",
             "gender": "M",
             "ivs": {
@@ -29094,7 +29094,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Sr. And Jr. Kate and Joy": {
+        "Sr And Jr Kate and Joy": {
             "ability": "Own Tempo",
             "gender": "M",
             "ivs": {
@@ -30526,7 +30526,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Jolly"
         },
-        "Sr. And Jr. Kim and Iris": {
+        "Sr And Jr Kim and Iris": {
             "ability": "Natural Cure",
             "gender": "M",
             "ivs": {
@@ -36022,7 +36022,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Gentle"
         },
-        "Sr. And Jr. Anna and Meg": {
+        "Sr And Jr Anna and Meg": {
             "ability": "Pickup",
             "gender": "M",
             "ivs": {
@@ -36042,7 +36042,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naughty"
         },
-        "Sr. And Jr. Anna and Meg #2": {
+        "Sr And Jr Anna and Meg #2": {
             "ability": "Pickup",
             "gender": "M",
             "ivs": {
@@ -36062,7 +36062,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naughty"
         },
-        "Sr. And Jr. Anna and Meg #3": {
+        "Sr And Jr Anna and Meg #3": {
             "ability": "Pickup",
             "gender": "M",
             "ivs": {

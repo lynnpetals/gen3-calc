@@ -102,7 +102,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
     // Route 117
     "Triathlete Melina": ["Ponyta", "Girafarig", "Flaaffy"],
     "Triathlete Dylan": ["Hitmontop", "Mantine", "Magnemite"],
-    "Sr and Jr Anna & Meg": ["Gligar", "Gastly", "Noctowl", "Baltoy"],
+    "Sr And Jr Anna & Meg": ["Gligar", "Gastly", "Noctowl", "Baltoy"],
     "Battle Girl Aisha": ["Meowth", "Meditite", "Delcatty"],
     "Pokémon Breeder Lydia": ["Gloom", "Azumarill", "Chansey"],
     "Pokémon Breeder Isaac": ["Cubone", "Weepinbell", "Ditto"],
@@ -157,7 +157,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
     "Pokémon Trainer Red": ["Pikachu", "Espeon", "Snorlax", "Blastoise", "Venusaur", "Charizard"],
     // Route 114
     "Pokémaniac Steve": ["Rhydon", "Kangaskhan", "Nidoqueen"],
-    "Sr and Jr Tyra & Ivy": ["Swellow", "Linoone"],
+    "Sr And Jr Tyra & Ivy": ["Swellow", "Linoone"],
     "Kindler Bernie": ["Shiftry", "Flareon", "Pelipper"],
     "Team Magma Grunt #1 @ Route 114": ["Weezing", "Magneton", "Rapidash", "Bellossom"],
     "Team Magma Grunt #2 @ Route 114": ["Exploud", "Marowak", "Altaria", "Vileplume"],
@@ -305,7 +305,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
     "Bug Maniac Ali": ["Ledian", "Gligar", "Pinsir"],
     "Beauty Jessica": ["Hitmontop", "Dewgong", "Persian"],
     "Pokémon Breeder David": ["Ninetales", "Bellossom", "Ampharos"],
-    "Sr and Jr Kate & Joy": ["Togetic", "Medicham"],
+    "Sr And Jr Kate & Joy": ["Togetic", "Medicham"],
     "Pokéfan Vanessa": ["Misdreavus", "Arcanine", "Wigglytuff", "Sudowoodo", "Raichu"],
     "Pokémon Breeder Nora": ["Sunflora", "Luvdisc", "Spinda"],
     "Cooltrainer Cristin": ["Steelix", "Slaking", "Crobat", "Exeggutor", "Blissey"],
@@ -374,7 +374,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
     "Sailor Ernest": ["Mightyena", "Hitmonchan"],
     "Bird Keeper Presley": ["Tropius", "Pelipper"],
     "Expert Auron": ["Flygon", "Machamp"],
-    "Sr and Jr Kim & Iris": ["Togetic", "Marowak"],
+    "Sr And Jr Kim & Iris": ["Togetic", "Marowak"],
     // Mossdeep Gym
     "Psychic Preston": ["Solrock", "Girafarig", "Claydol"],
     "Psychic Maura": ["Lunatone", "Xatu", "Chimecho"],
@@ -438,7 +438,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
     "Swimmerf Kara": ["Medicham"],
     "Swimmerm Herman": ["Huntail", "Whiscash"],
     "Swimmerf Susie": ["Wigglytuff"],
-    "Sis and Bro Reli & Ian": ["Azumarill", "Furret"],
+    "Sis And Bro Reli & Ian": ["Azumarill", "Furret"],
     // Sootopolis Gym
     "Beauty Connie": ["Qwilfish", "Seaking", "Manectric", "Whiscash", "Masquerain", "Mawile"],
     "Pokémon Ranger Andrea": ["Venusaur", "Huntail", "Glalie", "Lanturn", "Pinsir", "Pelipper"],

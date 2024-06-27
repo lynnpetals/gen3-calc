@@ -1220,7 +1220,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Levitate",
             "item": "Choice Band",
             "level": 22,
@@ -6282,7 +6282,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Gastly": {
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Levitate",
             "item": "Spell Tag",
             "level": 22,
@@ -6765,7 +6765,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Sassy"
         },
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Hyper Cutter",
             "item": "Choice Band",
             "level": 21,
@@ -9973,7 +9973,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Sr and Jr Tyra & Ivy": {
+        "Sr And Jr Tyra & Ivy": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 35,
@@ -11444,7 +11444,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naive"
         },
-        "Sr and Jr Kim & Iris": {
+        "Sr And Jr Kim & Iris": {
             "ability": "Lightningrod",
             "item": "Thick Club",
             "level": 66,
@@ -11788,7 +11788,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Relaxed"
         },
-        "Sr and Jr Kate & Joy": {
+        "Sr And Jr Kate & Joy": {
             "ability": "Pure Power",
             "item": "Choice Band",
             "level": 53,
@@ -13701,7 +13701,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Insomnia",
             "item": "Leftovers",
             "level": 20,
@@ -19212,7 +19212,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Calm"
         },
-        "Sr and Jr Tyra & Ivy": {
+        "Sr And Jr Tyra & Ivy": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 35,
@@ -19637,7 +19637,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Relaxed"
         },
-        "Sr and Jr Kate & Joy": {
+        "Sr And Jr Kate & Joy": {
             "ability": "Serene Grace",
             "item": "Leftovers",
             "level": 54,
@@ -19647,7 +19647,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Sr and Jr Kim & Iris": {
+        "Sr And Jr Kim & Iris": {
             "ability": "Serene Grace",
             "item": "Shoal Shell",
             "level": 100,

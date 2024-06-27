@@ -164,7 +164,7 @@ var CUSTOMHACKTRAINERNAMES_EKK = [
 	"Bug Maniac Ali",
 	"Beauty Jessica",
 	"Pokémon Breeder David",
-	"Sr and Jr Kate & Joy",
+	"Sr And Jr Kate & Joy",
 	"Pokéfan Vanessa",
 	"Pokémon Breeder Nora",
 	"Cooltrainer Cristin",

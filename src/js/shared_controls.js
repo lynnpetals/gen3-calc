@@ -649,6 +649,13 @@ $(".set-selector").change(function () {
 				$("#mindBadge").prop("checked", true);
 			}
 		}
+		if (flags["doubles"].includes(window.CURRENT_TRAINER)){
+			$("#doubles-format").prop("checked", true);
+		}
+		else{
+			$("#singles-format").prop("checked", true);
+		}
+		
 	}
 	$('.trainer-poke-switch-list').append(frag);
 	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
@@ -2175,7 +2182,7 @@ function nextTrainer() {
 			$(".opposing").val(setName);
 			$(".opposing").change();
 			$(".opposing .select2-chosen").text(setName);
-			topTrainerIcon(nextTrainerName, $("#p2sprite")[0]);
+			// topTrainerIcon(nextTrainerName, $("#p2sprite")[0]);
 		}
 	}
 }
@@ -2195,7 +2202,7 @@ function previousTrainer() {
 			$(".opposing").val(setName);
 			$(".opposing").change();
 			$(".opposing .select2-chosen").text(setName);
-			topTrainerIcon(previousTrainerName, $("#p2sprite")[0]);
+			// topTrainerIcon(previousTrainerName, $("#p2sprite")[0]);
 		}
 	}
 }
@@ -2204,7 +2211,7 @@ function previousTrainer() {
 
 function resetTrainer() {
 	var firstTrainerName = trainerNames[0];
-	topTrainerIcon(firstTrainerName, $("#p2sprite")[0]);
+	// topTrainerIcon(firstTrainerName, $("#p2sprite")[0]);
 	var party = partyOrder[firstTrainerName];
 	var pokemon = party[0];
 	var dupes = party.filter((item, index) => party.indexOf(item) != index);

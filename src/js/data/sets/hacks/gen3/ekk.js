@@ -9159,7 +9159,7 @@ var CUSTOMHACKSETDEX_EKK = {
             ],
             "nature": "Lax"
         },
-        "Sr and Jr Kim & Iris": {
+        "Sr And Jr Kim & Iris": {
             "ability": "Lightning Rod",
             "level": 66,
             "item": "Thick Club",
@@ -9384,7 +9384,7 @@ var CUSTOMHACKSETDEX_EKK = {
             ],
             "nature": "Mild"
         },
-        "Sr and Jr Kate & Joy": {
+        "Sr And Jr Kate & Joy": {
             "ability": "Pure Power",
             "level": 61,
             "item": "Choice Band",
@@ -15487,7 +15487,7 @@ var CUSTOMHACKSETDEX_EKK = {
             ],
             "nature": "Brave"
         },
-        "Sr and Jr Kate & Joy": {
+        "Sr And Jr Kate & Joy": {
             "ability": "Serene Grace",
             "level": 61,
             "item": "Leftovers",
@@ -15496,7 +15496,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Soft-Boiled"
             ]
         },
-        "Sr and Jr Kim & Iris": {
+        "Sr And Jr Kim & Iris": {
             "ability": "Serene Grace",
             "level": 100,
             "item": "Shoal Shell",

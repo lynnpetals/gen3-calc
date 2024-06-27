@@ -25777,7 +25777,7 @@ var CUSTOMSETDEX_Pl = {
             ],
             "nature": "Naive"
         },
-        "Sis and Bro Tara & Tim": {
+        "Sis And Bro Tara & Tim": {
             "ability": "Run Away",
             "gender": "M",
             "ivs": {
@@ -25796,7 +25796,7 @@ var CUSTOMSETDEX_Pl = {
             ],
             "nature": "Rash"
         },
-        "Sis and Bro Tara & Tim #2": {
+        "Sis And Bro Tara & Tim #2": {
             "ability": "Run Away",
             "gender": "M",
             "ivs": {
@@ -25815,7 +25815,7 @@ var CUSTOMSETDEX_Pl = {
             ],
             "nature": "Impish"
         },
-        "Sis and Bro Tara & Tim #2*": {
+        "Sis And Bro Tara & Tim #2*": {
             "ability": "Run Away",
             "gender": "M",
             "ivs": {
@@ -25834,7 +25834,7 @@ var CUSTOMSETDEX_Pl = {
             ],
             "nature": "Impish"
         },
-        "Sis and Bro Tara & Tim #3": {
+        "Sis And Bro Tara & Tim #3": {
             "ability": "Run Away",
             "gender": "M",
             "ivs": {
@@ -25853,7 +25853,7 @@ var CUSTOMSETDEX_Pl = {
             ],
             "nature": "Quiet"
         },
-        "Sis and Bro Tara & Tim #3*": {
+        "Sis And Bro Tara & Tim #3*": {
             "ability": "Run Away",
             "gender": "M",
             "ivs": {
@@ -25872,7 +25872,7 @@ var CUSTOMSETDEX_Pl = {
             ],
             "nature": "Quiet"
         },
-        "Sis and Bro Tara & Tim*": {
+        "Sis And Bro Tara & Tim*": {
             "ability": "Run Away",
             "gender": "M",
             "ivs": {
