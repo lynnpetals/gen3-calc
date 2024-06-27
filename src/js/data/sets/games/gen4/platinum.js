@@ -21074,7 +21074,7 @@ var CUSTOMSETDEX_Pl = {
         }
     },
     "Munchlax": {
-        "Collector Edwin": {
+        "Collector Edwin [Tag]": {
             "ability": "Pickup",
             "gender": "M",
             "ivs": {

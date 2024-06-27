@@ -12179,7 +12179,7 @@ var CUSTOMSETDEX_HGSS = {
             ],
             "nature": "Hardy"
         },
-        "Swimmer♀ Wendy": {
+        "Swimmer♀ Wendy [Tag]": {
             "ability": "Swift Swim",
             "gender": "F",
             "ivs": {
@@ -12199,7 +12199,7 @@ var CUSTOMSETDEX_HGSS = {
             ],
             "nature": "Modest"
         },
-        "Swimmer♀ Wendy*": {
+        "Swimmer♀ Wendy [Tag]*": {
             "ability": "Sniper",
             "gender": "F",
             "ivs": {

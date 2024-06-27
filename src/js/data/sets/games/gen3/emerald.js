@@ -56,7 +56,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hasty"
         },
-        "Cooltrainer Jazmyn": {
+        "Cooltrainer Jazmyn [Tag]": {
             "ability": "Pressure",
             "gender": "F",
             "ivs": {
@@ -163,7 +163,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Alakazam": {
-        "Psychic Cameron #5": {
+        "Psychic Cameron [Tag] #5": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -183,7 +183,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Psychic Jacki #5": {
+        "Psychic Jacki [Tag] #5": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -2502,7 +2502,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Camerupt": {
-        "Cooltrainer Brooke #5": {
+        "Cooltrainer Brooke [Tag] #5": {
             "ability": "Magma Armor",
             "gender": "F",
             "ivs": {
@@ -3449,7 +3449,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Impish"
         },
-        "Parasol Lady Kayley": {
+        "Parasol Lady Kayley [Tag]": {
             "ability": "Forecast",
             "gender": "F",
             "ivs": {
@@ -4992,7 +4992,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Duskull": {
-        "Hex Maniac Kindra": {
+        "Hex Maniac Kindra [Tag]": {
             "ability": "Levitate",
             "gender": "F",
             "ivs": {
@@ -5314,7 +5314,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Serious"
         },
-        "Guitarist Fernando": {
+        "Guitarist Fernando [Tag]": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -5334,7 +5334,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Guitarist Fernando #2": {
+        "Guitarist Fernando [Tag] #2": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -5354,7 +5354,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Guitarist Fernando #2*": {
+        "Guitarist Fernando [Tag] #2*": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -5374,7 +5374,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Timid"
         },
-        "Guitarist Fernando #3": {
+        "Guitarist Fernando [Tag] #3": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -5698,7 +5698,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Lonely"
         },
-        "Guitarist Fernando #5": {
+        "Guitarist Fernando [Tag] #5": {
             "ability": "Soundproof",
             "gender": "M",
             "ivs": {
@@ -6540,7 +6540,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Psychic Blake": {
+        "Psychic Blake [Tag]": {
             "ability": "Inner Focus",
             "gender": "M",
             "ivs": {
@@ -6684,7 +6684,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Lonely"
         },
-        "Aroma Lady Violet": {
+        "Aroma Lady Violet [Tag]": {
             "ability": "Chlorophyll",
             "gender": "F",
             "ivs": {
@@ -9587,7 +9587,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Hex Maniac Kathleen": {
+        "Hex Maniac Kathleen [Tag]": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9607,7 +9607,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Psychic Alix": {
+        "Psychic Alix [Tag]": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9647,7 +9647,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Timid"
         },
-        "Psychic Cameron #2": {
+        "Psychic Cameron [Tag] #2": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9667,7 +9667,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Psychic Cameron #3": {
+        "Psychic Cameron [Tag] #3": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9687,7 +9687,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Psychic Cameron #4": {
+        "Psychic Cameron [Tag] #4": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9707,7 +9707,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Psychic Jacki": {
+        "Psychic Jacki [Tag]": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9727,7 +9727,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Psychic Jacki #2": {
+        "Psychic Jacki [Tag] #2": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9747,7 +9747,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Psychic Jacki #3": {
+        "Psychic Jacki [Tag] #3": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9767,7 +9767,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Psychic Jacki #4": {
+        "Psychic Jacki [Tag] #4": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -9827,7 +9827,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Psychic Maura": {
+        "Psychic Maura [Tag]": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -10280,7 +10280,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quiet"
         },
-        "Psychic Alix": {
+        "Psychic Alix [Tag]": {
             "ability": "Synchronize",
             "gender": "F",
             "ivs": {
@@ -10320,7 +10320,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Psychic Preston": {
+        "Psychic Preston [Tag]": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -10462,7 +10462,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Adamant"
         },
-        "Ninja Boy Jonas": {
+        "Ninja Boy Jonas [Tag]": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -11804,7 +11804,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bold"
         },
-        "Collector Edwin": {
+        "Collector Edwin [Tag]": {
             "ability": "Swift Swim",
             "gender": "M",
             "ivs": {
@@ -11824,7 +11824,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Collector Edwin #2": {
+        "Collector Edwin [Tag] #2": {
             "ability": "Swift Swim",
             "gender": "M",
             "ivs": {
@@ -11844,7 +11844,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Collector Edwin #3": {
+        "Collector Edwin [Tag] #3": {
             "ability": "Swift Swim",
             "gender": "M",
             "ivs": {
@@ -11864,7 +11864,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Collector Edwin #4": {
+        "Collector Edwin [Tag] #4": {
             "ability": "Swift Swim",
             "gender": "M",
             "ivs": {
@@ -12642,7 +12642,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Guitarist Fernando": {
+        "Guitarist Fernando [Tag]": {
             "ability": "Soundproof",
             "gender": "M",
             "ivs": {
@@ -12662,7 +12662,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Guitarist Fernando #2": {
+        "Guitarist Fernando [Tag] #2": {
             "ability": "Soundproof",
             "gender": "M",
             "ivs": {
@@ -12682,7 +12682,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hasty"
         },
-        "Guitarist Fernando #3": {
+        "Guitarist Fernando [Tag] #3": {
             "ability": "Soundproof",
             "gender": "M",
             "ivs": {
@@ -12702,7 +12702,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Guitarist Fernando #4": {
+        "Guitarist Fernando [Tag] #4": {
             "ability": "Soundproof",
             "gender": "M",
             "ivs": {
@@ -12944,7 +12944,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hardy"
         },
-        "Collector Edwin #5": {
+        "Collector Edwin [Tag] #5": {
             "ability": "Swift Swim",
             "gender": "M",
             "ivs": {
@@ -13251,7 +13251,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Jacki": {
+        "Psychic Jacki [Tag]": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -13271,7 +13271,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Jacki #2": {
+        "Psychic Jacki [Tag] #2": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -13291,7 +13291,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Jacki #3": {
+        "Psychic Jacki [Tag] #3": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -13311,7 +13311,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Jacki #4": {
+        "Psychic Jacki [Tag] #4": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -13331,7 +13331,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Jacki #5": {
+        "Psychic Jacki [Tag] #5": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -14406,7 +14406,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Machop": {
-        "Black Belt Daisuke": {
+        "Black Belt Daisuke [Tag]": {
             "ability": "Guts",
             "gender": "M",
             "ivs": {
@@ -15642,7 +15642,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quiet"
         },
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Magnet Pull",
             "gender": "M",
             "ivs": {
@@ -16188,7 +16188,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Battle Girl Helene": {
+        "Battle Girl Helene [Tag]": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -16964,7 +16964,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Modest"
         },
-        "Guitarist Fernando #3": {
+        "Guitarist Fernando [Tag] #3": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -16984,7 +16984,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Guitarist Fernando #4": {
+        "Guitarist Fernando [Tag] #4": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -17004,7 +17004,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hasty"
         },
-        "Guitarist Fernando #4*": {
+        "Guitarist Fernando [Tag] #4*": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -17024,7 +17024,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hasty"
         },
-        "Guitarist Fernando #5": {
+        "Guitarist Fernando [Tag] #5": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -17044,7 +17044,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hasty"
         },
-        "Guitarist Fernando #5*": {
+        "Guitarist Fernando [Tag] #5*": {
             "ability": "Static",
             "gender": "M",
             "ivs": {
@@ -17332,7 +17332,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Mild"
         },
-        "Picnicker Irene": {
+        "Picnicker Irene [Tag]": {
             "ability": "Thick Fat",
             "gender": "F",
             "ivs": {
@@ -18100,7 +18100,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Calm"
         },
-        "Cooltrainer Wendy": {
+        "Cooltrainer Wendy [Tag]": {
             "ability": "Hyper Cutter",
             "gender": "F",
             "ivs": {
@@ -18641,7 +18641,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Impish"
         },
-        "Battle Girl Helene": {
+        "Battle Girl Helene [Tag]": {
             "ability": "Pure Power",
             "gender": "F",
             "ivs": {
@@ -18841,7 +18841,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bold"
         },
-        "Hex Maniac Sylvia": {
+        "Hex Maniac Sylvia [Tag]": {
             "ability": "Pure Power",
             "gender": "F",
             "ivs": {
@@ -20649,7 +20649,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Gentle"
         },
-        "Ruin Maniac Andres #3": {
+        "Ruin Maniac Andres [Tag] #3": {
             "ability": "Sturdy",
             "gender": "M",
             "ivs": {
@@ -20669,7 +20669,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Ruin Maniac Andres #4": {
+        "Ruin Maniac Andres [Tag] #4": {
             "ability": "Sturdy",
             "gender": "M",
             "ivs": {
@@ -20689,7 +20689,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Ruin Maniac Andres #5": {
+        "Ruin Maniac Andres [Tag] #5": {
             "ability": "Sturdy",
             "gender": "M",
             "ivs": {
@@ -20731,7 +20731,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Adamant"
         },
-        "Cooltrainer Brooke": {
+        "Cooltrainer Brooke [Tag]": {
             "ability": "Oblivious",
             "gender": "F",
             "ivs": {
@@ -20750,7 +20750,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Cooltrainer Brooke #2": {
+        "Cooltrainer Brooke [Tag] #2": {
             "ability": "Oblivious",
             "gender": "F",
             "ivs": {
@@ -20770,7 +20770,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Cooltrainer Brooke #3": {
+        "Cooltrainer Brooke [Tag] #3": {
             "ability": "Oblivious",
             "gender": "F",
             "ivs": {
@@ -20790,7 +20790,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Lax"
         },
-        "Cooltrainer Brooke #4": {
+        "Cooltrainer Brooke [Tag] #4": {
             "ability": "Oblivious",
             "gender": "F",
             "ivs": {
@@ -21007,7 +21007,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bold"
         },
-        "Kindler Hayden": {
+        "Kindler Hayden [Tag]": {
             "ability": "Oblivious",
             "gender": "M",
             "ivs": {
@@ -21485,7 +21485,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quiet"
         },
-        "Collector Edwin": {
+        "Collector Edwin [Tag]": {
             "ability": "Chlorophyll",
             "gender": "M",
             "ivs": {
@@ -21505,7 +21505,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naive"
         },
-        "Collector Edwin #2": {
+        "Collector Edwin [Tag] #2": {
             "ability": "Chlorophyll",
             "gender": "M",
             "ivs": {
@@ -21525,7 +21525,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naive"
         },
-        "Collector Edwin #3": {
+        "Collector Edwin [Tag] #3": {
             "ability": "Chlorophyll",
             "gender": "M",
             "ivs": {
@@ -21545,7 +21545,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naive"
         },
-        "Collector Edwin #4": {
+        "Collector Edwin [Tag] #4": {
             "ability": "Chlorophyll",
             "gender": "M",
             "ivs": {
@@ -21854,7 +21854,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Pelipper": {
-        "Bird Keeper Alberto": {
+        "Bird Keeper Alberto [Tag]": {
             "ability": "Keen Eye",
             "gender": "M",
             "ivs": {
@@ -21914,7 +21914,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Cooltrainer Brooke #3": {
+        "Cooltrainer Brooke [Tag] #3": {
             "ability": "Keen Eye",
             "gender": "F",
             "ivs": {
@@ -21934,7 +21934,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Sassy"
         },
-        "Cooltrainer Brooke #4": {
+        "Cooltrainer Brooke [Tag] #4": {
             "ability": "Keen Eye",
             "gender": "F",
             "ivs": {
@@ -21954,7 +21954,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Sassy"
         },
-        "Cooltrainer Brooke #5": {
+        "Cooltrainer Brooke [Tag] #5": {
             "ability": "Keen Eye",
             "gender": "F",
             "ivs": {
@@ -22014,7 +22014,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naive"
         },
-        "Cooltrainer Wendy": {
+        "Cooltrainer Wendy [Tag]": {
             "ability": "Keen Eye",
             "gender": "F",
             "ivs": {
@@ -22677,7 +22677,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Pinsir": {
-        "Bug Catcher Davis": {
+        "Bug Catcher Davis [Tag]": {
             "ability": "Hyper Cutter",
             "gender": "M",
             "ivs": {
@@ -23814,7 +23814,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Roselia": {
-        "Aroma Lady Celina": {
+        "Aroma Lady Celina [Tag]": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -23994,7 +23994,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Adamant"
         },
-        "Aroma Lady Violet": {
+        "Aroma Lady Violet [Tag]": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24014,7 +24014,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hardy"
         },
-        "Cooltrainer Brooke": {
+        "Cooltrainer Brooke [Tag]": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24034,7 +24034,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Cooltrainer Brooke #2": {
+        "Cooltrainer Brooke [Tag] #2": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24054,7 +24054,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Brave"
         },
-        "Cooltrainer Brooke #3": {
+        "Cooltrainer Brooke [Tag] #3": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24074,7 +24074,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Serious"
         },
-        "Cooltrainer Brooke #4": {
+        "Cooltrainer Brooke [Tag] #4": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24094,7 +24094,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Serious"
         },
-        "Cooltrainer Brooke #5": {
+        "Cooltrainer Brooke [Tag] #5": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24134,7 +24134,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Lax"
         },
-        "Cooltrainer Wendy": {
+        "Cooltrainer Wendy [Tag]": {
             "ability": "Natural Cure",
             "gender": "F",
             "ivs": {
@@ -24942,7 +24942,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Impish"
         },
-        "Camper Travis": {
+        "Camper Travis [Tag]": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -24962,7 +24962,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Lonely"
         },
-        "Camper Tyron": {
+        "Camper Tyron [Tag]": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25042,7 +25042,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Ruin Maniac Andres": {
+        "Ruin Maniac Andres [Tag]": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25062,7 +25062,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Impish"
         },
-        "Ruin Maniac Andres #2": {
+        "Ruin Maniac Andres [Tag] #2": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25082,7 +25082,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Impish"
         },
-        "Ruin Maniac Andres #2*": {
+        "Ruin Maniac Andres [Tag] #2*": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25102,7 +25102,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bold"
         },
-        "Ruin Maniac Andres #3": {
+        "Ruin Maniac Andres [Tag] #3": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25122,7 +25122,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Gentle"
         },
-        "Ruin Maniac Andres #3*": {
+        "Ruin Maniac Andres [Tag] #3*": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25142,7 +25142,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Ruin Maniac Andres #4": {
+        "Ruin Maniac Andres [Tag] #4": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25162,7 +25162,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Gentle"
         },
-        "Ruin Maniac Andres #4*": {
+        "Ruin Maniac Andres [Tag] #4*": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25182,7 +25182,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Ruin Maniac Andres*": {
+        "Ruin Maniac Andres [Tag]*": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25304,7 +25304,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Ruin Maniac Andres #5": {
+        "Ruin Maniac Andres [Tag] #5": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25324,7 +25324,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Serious"
         },
-        "Ruin Maniac Andres #5*": {
+        "Ruin Maniac Andres [Tag] #5*": {
             "ability": "Sand Veil",
             "gender": "M",
             "ivs": {
@@ -25992,7 +25992,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naive"
         },
-        "Collector Ed": {
+        "Collector Ed [Tag]": {
             "ability": "Shed Skin",
             "gender": "M",
             "ivs": {
@@ -26379,7 +26379,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Shiftry": {
-        "Collector Edwin #5": {
+        "Collector Edwin [Tag] #5": {
             "ability": "Chlorophyll",
             "gender": "M",
             "ivs": {
@@ -26399,7 +26399,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Sassy"
         },
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Chlorophyll",
             "gender": "M",
             "ivs": {
@@ -26757,7 +26757,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Rash"
         },
-        "Picnicker Bianca": {
+        "Picnicker Bianca [Tag]": {
             "ability": "Effect Spore",
             "gender": "F",
             "ivs": {
@@ -26817,7 +26817,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Serious"
         },
-        "Picnicker Irene": {
+        "Picnicker Irene [Tag]": {
             "ability": "Effect Spore",
             "gender": "F",
             "ivs": {
@@ -27035,7 +27035,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Shuppet": {
-        "Hex Maniac Kindra": {
+        "Hex Maniac Kindra [Tag]": {
             "ability": "Insomnia",
             "gender": "F",
             "ivs": {
@@ -28671,7 +28671,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Hardy"
         },
-        "Psychic Cameron": {
+        "Psychic Cameron [Tag]": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -28691,7 +28691,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Relaxed"
         },
-        "Psychic Cameron #2": {
+        "Psychic Cameron [Tag] #2": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -28711,7 +28711,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Psychic Cameron #3": {
+        "Psychic Cameron [Tag] #3": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -28731,7 +28731,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Psychic Cameron #4": {
+        "Psychic Cameron [Tag] #4": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -28751,7 +28751,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Psychic Cameron #5": {
+        "Psychic Cameron [Tag] #5": {
             "ability": "Levitate",
             "gender": "M",
             "ivs": {
@@ -29156,7 +29156,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Spoink": {
-        "Gentleman Nate": {
+        "Gentleman Nate [Tag]": {
             "ability": "Thick Fat",
             "gender": "M",
             "ivs": {
@@ -30648,7 +30648,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bashful"
         },
-        "Bird Keeper Phil": {
+        "Bird Keeper Phil [Tag]": {
             "ability": "Guts",
             "gender": "M",
             "ivs": {
@@ -30748,7 +30748,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Careful"
         },
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Guts",
             "gender": "M",
             "ivs": {
@@ -31069,7 +31069,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Bold"
         },
-        "Bird Keeper Josue": {
+        "Bird Keeper Josue [Tag]": {
             "ability": "Guts",
             "gender": "M",
             "ivs": {
@@ -32484,7 +32484,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Trapinch": {
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Hyper Cutter",
             "gender": "M",
             "ivs": {
@@ -33482,7 +33482,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Quirky"
         },
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Water Veil",
             "gender": "M",
             "ivs": {
@@ -34472,7 +34472,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Naive"
         },
-        "Bird Keeper Josue": {
+        "Bird Keeper Josue [Tag]": {
             "ability": "Keen Eye",
             "gender": "M",
             "ivs": {
@@ -34512,7 +34512,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Impish"
         },
-        "Cooltrainer Brooke": {
+        "Cooltrainer Brooke [Tag]": {
             "ability": "Keen Eye",
             "gender": "F",
             "ivs": {
@@ -34532,7 +34532,7 @@ var CUSTOMSETDEX_E = {
             ],
             "nature": "Serious"
         },
-        "Cooltrainer Brooke #2": {
+        "Cooltrainer Brooke [Tag] #2": {
             "ability": "Keen Eye",
             "gender": "F",
             "ivs": {
@@ -35459,7 +35459,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Xatu": {
-        "Bird Keeper Alberto": {
+        "Bird Keeper Alberto [Tag]": {
             "ability": "Synchronize",
             "gender": "M",
             "ivs": {
@@ -35705,7 +35705,7 @@ var CUSTOMSETDEX_E = {
         }
     },
     "Zangoose": {
-        "Collector Ed": {
+        "Collector Ed [Tag]": {
             "ability": "Immunity",
             "gender": "M",
             "ivs": {
