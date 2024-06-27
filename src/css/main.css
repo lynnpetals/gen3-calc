@@ -859,7 +859,8 @@ label.opposing, label.player {
   }
 
   #p1b, #p2b{
-    display:flex;
+    /* display:flex; */
+    display: none;
     flex-direction: column;
   }
 
