@@ -419,6 +419,8 @@ function autosetTerrain(ability, i) {
 	}
 }
 
+var prevMon = "";
+
 $("#p1 .item").bind("keyup change", function () {
 	autosetStatus("#p1", $(this).val());
 });
@@ -564,7 +566,7 @@ $(".set-selector").change(function () {
 		topPokemonIcon(fullSetName, $("#p2mon")[0])
 		// topPokemonIcon1(fullSetName, $("#p2mon")[0])
 		var oldTrainer = window.CURRENT_TRAINER;
-		var nextPokemon = getTrainerPokemon(fullSetName);
+		var nextPokemon = get_trainer_poks(fullSetName);
 		var trainerHTML = "";
 		var switchHTML = "";
 		$('.trainer-poke-switch-list').html('');
@@ -576,53 +578,58 @@ $(".set-selector").change(function () {
 			switchHTML += `<span style="width: 100%;"><img class="trainer-poke-switch right-side" src="https://raw.githubusercontent.com/May8th1995/sprites/master/${pokemonName}.png" data-id="${nextPokemon[i]}" title="${nextPokemon[i]}"><label style="width: 60%;" class="trainer-poke-switch-explain" data-id="${nextPokemon[i]}"></label><label class="trainer-poke-switch-xp" data-id="${nextPokemon[i]}"></label></span>`;
 			if (parseInt(i) + 1 < nextPokemon.length) switchHTML += "<br><br>";
 		}
+	}
 
-		if (flags) {
-			var weather = "clear";
-			for (var i in flags["weather"]) {
-				if (flags["weather"][i].includes(window.CURRENT_TRAINER)) {
-					weather = i;
-					break;
-				}
-			}
-			if (weather !== "any") $(`#${weather}`).prop("checked", true);
-
-			var badge = "";
-			for (var i in flags["badge"]) {
-				if (flags["badge"][i].includes(window.CURRENT_TRAINER)) {
-					badge = i;
-					break;
-				}
-			}
-			if (gen == 3) {
-				if (badge == "none") {
-					$("#stoneBadge").prop("checked", false);
-					$("#dynamoBadge").prop("checked", false);
-					$("#balanceBadge").prop("checked", false);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "stoneBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", false);
-					$("#balanceBadge").prop("checked", false);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "dynamoBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", true);
-					$("#balanceBadge").prop("checked", false);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "balanceBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", true);
-					$("#balanceBadge").prop("checked", true);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "mindBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", true);
-					$("#balanceBadge").prop("checked", true);
-					$("#mindBadge").prop("checked", true);
-				}
+	if (flags) {
+		var weather = "clear";
+		for (var i in flags["weather"]) {
+			if (flags["weather"][i].includes(window.CURRENT_TRAINER)) {
+				weather = i;
+				break;
 			}
 		}
+		if (weather !== "any") $(`#${weather}`).prop("checked", true);
+
+		var badge = "";
+		for (var i in flags["badge"]) {
+			if (flags["badge"][i].includes(window.CURRENT_TRAINER)) {
+				badge = i;
+				break;
+			}
+		}
+		if (gen == 3) {
+			if (badge == "none") {
+				$("#stoneBadge").prop("checked", false);
+				$("#dynamoBadge").prop("checked", false);
+				$("#balanceBadge").prop("checked", false);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "stoneBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", false);
+				$("#balanceBadge").prop("checked", false);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "dynamoBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", true);
+				$("#balanceBadge").prop("checked", false);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "balanceBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", true);
+				$("#balanceBadge").prop("checked", true);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "mindBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", true);
+				$("#balanceBadge").prop("checked", true);
+				$("#mindBadge").prop("checked", true);
+			}
+		}
+	}
+	$('.trainer-poke-switch-list').html(switchHTML);
+	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
+		mon.addEventListener("dragstart", dragstart_handler);
+		mon.addEventListener("contextmenu", noMenuClick);
 	}
 	if ($(this).hasClass('player')){
 		topPokemonIcon(fullSetName, $("#p1mon")[0])
@@ -633,7 +640,6 @@ $(".set-selector").change(function () {
 	}
 	if (oldTrainer !== window.CURRENT_TRAINER) $('.trainer-poke-switch-list').html(switchHTML);
 	
-	console.log($("label.opposing")[0])
 	$("label.opposing")[0].textContent = window.CURRENT_TRAINER;
 
 	var pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -641,15 +647,10 @@ $(".set-selector").change(function () {
 	var pokemon = pokedex[pokemonName];
 	if (pokemon) {
 		var pokeObj = $(this).closest(".poke-info");
-		var isAutoTera =
-		(startsWith(pokemonName, "Ogerpon") && endsWith(pokemonName, "Tera")) ||
-		pokemonName === 'Terapagos-Stellar';
 		if (stickyMoves.getSelectedSide() === pokeObj.prop("id")) {
 			stickyMoves.clearStickyMove();
 		}
-		pokeObj.find(".teraToggle").prop("checked", isAutoTera);
-		stellarButtonsVisibility(pokeObj, 0);
-		pokeObj.find(".boostedStat").val("");
+		pokeObj.find(".teraToggle").prop("checked", false);
 		pokeObj.find(".analysis").attr("href", smogonAnalysis(pokemonName));
 		pokeObj.find(".type1").val(pokemon.types[0]);
 		pokeObj.find(".type2").val(pokemon.types[1]);
@@ -675,14 +676,14 @@ $(".set-selector").change(function () {
 			$(this).closest('.poke-info').find(".extraSetAbilities").text(listAbilities.join(', '));
 			if (gen >= 2) $(this).closest('.poke-info').find(".item-pool").show();
 			$(this).closest('.poke-info').find(".extraSetItems").text(listItems.join(', '));
-			if (gen >= 9 || gen === 7 || gen === 6 || gen === 5 || gen === 4 || gen === 3) {
+			if (gen >= 9) {
 				$(this).closest('.poke-info').find(".role-pool").show();
-				if (gen >= 9) $(this).closest('.poke-info').find(".tera-type-pool").show();
+				$(this).closest('.poke-info').find(".tera-type-pool").show();
 			}
 			var listRoles = randdex[pokemonName].roles ? Object.keys(randdex[pokemonName].roles) : [];
 			$(this).closest('.poke-info').find(".extraSetRoles").text(listRoles.join(', '));
 			var listTeraTypes = [];
-			if (randdex[pokemonName].roles && gen >= 9) {
+			if (randdex[pokemonName].roles) {
 				for (var roleName in randdex[pokemonName].roles) {
 					var role = randdex[pokemonName].roles[roleName];
 					for (var q = 0; q < role.teraTypes.length; q++) {
@@ -692,7 +693,7 @@ $(".set-selector").change(function () {
 					}
 				}
 			}
-			pokeObj.find(".teraType").val(listTeraTypes[0] || getForcedTeraType(pokemonName) || pokemon.types[0]);
+			pokeObj.find(".teraType").val(listTeraTypes[0] || pokemon.types[0]);
 			$(this).closest('.poke-info').find(".extraSetTeraTypes").text(listTeraTypes.join(', '));
 		} else {
 			$(this).closest('.poke-info').find(".ability-pool").hide();
@@ -703,9 +704,9 @@ $(".set-selector").change(function () {
 		if (regSets || randset) {
 			var set = regSets ? correctHiddenPower(setdex[pokemonName][setName]) : randset;
 			if (regSets) {
-				pokeObj.find(".teraType").val(set.teraType || getForcedTeraType(pokemonName) || pokemon.types[0]);
+				pokeObj.find(".teraType").val(set.teraType || pokemon.types[0]);
 			}
-			pokeObj.find(".level").val(set.level === undefined ? 100 : set.level);
+			pokeObj.find(".level").val(set.level);
 			pokeObj.find(".hp .evs").val((set.evs && set.evs.hp !== undefined) ? set.evs.hp : 0);
 			pokeObj.find(".hp .ivs").val((set.ivs && set.ivs.hp !== undefined) ? set.ivs.hp : 31);
 			pokeObj.find(".hp .dvs").val((set.dvs && set.dvs.hp !== undefined) ? set.dvs.hp : 15);
@@ -729,7 +730,7 @@ $(".set-selector").change(function () {
 			}
 			var setMoves = set.moves;
 			if (randset) {
-				if (gen < 9 && gen !== 7 && gen !== 6 && gen !== 5 && gen !== 4 && gen !== 3) {
+				if (gen < 9) {
 					setMoves = randset.moves;
 				} else {
 					setMoves = [];
@@ -745,19 +746,7 @@ $(".set-selector").change(function () {
 			for (i = 0; i < 4; i++) {
 				moveObj = pokeObj.find(".move" + (i + 1) + " select.move-selector");
 				moveObj.attr('data-prev', moveObj.val());
-				if (moves[i] === "Hidden Power") {
-					var set = setdex[pokemonName][setName];
-					var ivs = {};
-					for (var i = 0; i <= LEGACY_STATS[9].length; i++) {
-						var s = LEGACY_STATS[9][i];
-						ivs[legacyStatToStat(s)] = (set.ivs && set.ivs[s]) || 31;
-					}
-
-					var expectedType = calc.Stats.getHiddenPower(GENERATION, ivs).type;
-					setSelectValueIfValid(moveObj, "Hidden Power " + expectedType, "(No Move)");
-				} else {
-					setSelectValueIfValid(moveObj, moves[i], "(No Move)");
-				}
+				setSelectValueIfValid(moveObj, moves[i], "(No Move)");
 				moveObj.change();
 			}
 			if (randset) {
@@ -765,8 +754,8 @@ $(".set-selector").change(function () {
 				$(this).closest('.poke-info').find(".extraSetMoves").html(formatMovePool(setMoves));
 			}
 		} else {
-			pokeObj.find(".teraType").val(getForcedTeraType(pokemonName) || pokemon.types[0]);
-			pokeObj.find(".level").val(defaultLevel);
+			pokeObj.find(".teraType").val(pokemon.types[0]);
+			pokeObj.find(".level").val(100);
 			pokeObj.find(".hp .evs").val(0);
 			pokeObj.find(".hp .ivs").val(31);
 			pokeObj.find(".hp .dvs").val(15);
@@ -776,12 +765,8 @@ $(".set-selector").change(function () {
 				pokeObj.find("." + LEGACY_STATS[gen][i] + " .dvs").val(15);
 			}
 			pokeObj.find(".nature").val("Hardy");
-			setSelectValueIfValid(abilityObj, pokemon.abilities[0], "");
-			if (startsWith(pokemonName, "Ogerpon-") && !startsWith(pokemonName, "Ogerpon-Teal")) {
-				itemObj.val(pokemonName.split("-")[1] + " Mask");
-			} else {
-				itemObj.val("");
-			}
+			setSelectValueIfValid(abilityObj, pokemon.ab, "");
+			itemObj.val("");
 			for (i = 0; i < 4; i++) {
 				moveObj = pokeObj.find(".move" + (i + 1) + " select.move-selector");
 				moveObj.attr('data-prev', moveObj.val());
@@ -864,6 +849,17 @@ $(".set-selector").change(function () {
 		}
 	}
 });
+
+function updateTickedHP(){
+	playtotal = $(".poke-info").find(".hp .total")[0].textContent;
+	optotal = $(".poke-info").find(".hp .total")[1].textContent;
+
+	$('#opposing-eighth')[0].textContent = Math.max(1, Math.trunc(optotal / 8))
+	$('#opposing-sixteenth')[0].textContent = Math.max(1, Math.trunc(optotal / 16))
+	$('#player-eighth')[0].textContent = Math.max(1, Math.trunc(playtotal / 8))
+	$('#player-sixteenth')[0].textContent = Math.max(1, Math.trunc(playtotal / 16))
+	
+}
 
 function trySendRiskyAlert() {
 	if (!localStorage.sentRiskyAlert) {
@@ -1381,7 +1377,7 @@ var RANDDEX = [
 	typeof GEN8RANDOMBATTLE === 'undefined' ? {} : GEN8RANDOMBATTLE,
 	typeof GEN9RANDOMBATTLE === 'undefined' ? {} : GEN9RANDOMBATTLE,
 ];
-var gen, genWasChanged, notation, pokedex, setdex, partyOrder, trainerNames, flags, randdex, typeChart, moves, abilities, items, calcHP, calcStat, GENERATION;
+var gen, genWasChanged, notation, pokedex, setdex, partyOrder, trainerNames, trainerSprites, flags, randdex, typeChart, moves, abilities, items, calcHP, calcStat, GENERATION;
 var DEFAULTGEN = 9;
 $(".gen").change(function () {
 	/*eslint-disable */
@@ -1859,25 +1855,102 @@ function addBoxed(poke) {
 	var newPoke = document.createElement("img");
 	newPoke.id = `${poke.name}${poke.nameProp}`
 	newPoke.className = "trainer-poke left-side";
-	newPoke.src = getSrcImgPokemon(poke);
+	newPoke.src = getSrcIconPokemon(poke);
 	newPoke.dataset.id = `${poke.name} (${poke.nameProp})`
 	newPoke.addEventListener("dragstart", dragstart_handler);
 	$('#box-poke-list')[0].appendChild(newPoke)
 }
+function getSrcIconPokemon(poke) {
+	if (!poke) {
+		return
+	}
 
-function getSrcImgPokemon(poke) {
+	if (poke.name == "Aegislash-Shield") {
+		return `https://raw.githubusercontent.com/May8th1995/sprites/master/Aegislash.png`
+	} else {
+			return `https://raw.githubusercontent.com/May8th1995/sprites/master/${poke.name}.png`
+	}
+}
+function getSrcImgPokemon2(poke) {
+	const animons = "abomasnow-f, abomasnow-mega, abomasnow, abra, absol-mega, absol, accelgor, aegislash-blade, aegislash, aegislashf, aerodactyl, aggron, aipom-f, aipom, alakazam-f, alakazam, alomomola, altaria, amaura, ambipom-f, ambipom, amoonguss, ampharos-mega, ampharos, anorith, applin, araquanid, arbok, arcanine, arceus-bug, arceus-dark, arceus-dragon, arceus-electric, arceus-fairy, arceus-fighting, arceus-fire, arceus-flying, arceus-ghost, arceus-grass, arceus-ground, arceus-ice, arceus-poison, arceus-psychic, arceus-rock, arceus-steel, arceus-water, arceus, archen, archeops, arctovish, ariados, armaldo, aron, arrokuda, articuno, audino, aurumoth, avalugg, axew, azelf, azumarill, azurill, bagon, baltoy, banette, barboach, basculegion-f, basculegion, basculin-bluestriped, basculin, bastiodon, bayleef, beartic, beautifly-f, beautifly, beedrill, beheeyem, beldum, bellossom, bellsprout, bergmite, bewear, bibarel-f, bibarel, bidoof-f, bidoof, binacle, bisharp, blastoise, blaziken-f, blaziken, blissey, blitzle, boldore, bonsly, bouffalant, bounsweet, braixen, braviary, breloom, bronzong, bronzor, budew, buizel-f, buizel, bulbasaur, buneary, burmy-sandy, burmy-trash, burmy, butterfree-f, butterfree, cacnea, cacturne-f, cacturne, camerupt-f, camerupt, carbink, carnivine, carracosta, carvanha, cascoon, castform-rainy, castform-snowy, castform-sunny, castform, caterpie, cawmodore, celebi, celesteela, chandelure, chansey, charizard, charjabug, charmander, charmeleon, chatot, cherrim-sunshine, cherrim, cherubi, chesnaught, chewtle, chikorita, chimchar, chimecho, chinchou, chingling, cinccino, cinderace-gmax, clamperl, clauncher, clawitzer, claydol, clefable, clefairy, cleffa, cloyster, cobalion, cofagrigus, combee-f, combee, combusken-f, combusken, comfey, conkeldurr, corphish, corsola, corviknight, corvisquire, cosmoem, cottonee, crabrawler, cradily, cranidos, crawdaunt, cresselia, croagunk-f, croagunk, crobat, croconaw, crustle, cryogonal, cubchoo, cubone, cursola, cutiefly, cyndaquil, darkrai, darmanitan-galarzen, darmanitan-zen, darmanitan, darumaka, dedenne, deerling-autumn, deerling-summer, deerling-winter, deerling, deino, delcatty, delibird, deoxys-attack, deoxys-defense, deoxys-speed, deoxys, dewgong, dewott, dewpider, dhelmise, dialga, diancie, diglett, ditto, dodrio-f, dodrio, doduo-f, doduo, donphan-f, donphan, dracovish, dragapult, dragonair, dragonite, drapion, dratini, drednaw, drifblim, drifloon, drilbur, drowzee, druddigon, ducklett, dugtrio, dunsparce, duosion, duraludon, durant, dusclops, dusknoir, duskull, dustox-f, dustox, dwebble, eelektrik, eelektross, eevee, ekans, eldegoss, electabuzz, electivire, electrike, electrode, elekid, elgyem, emboar, emolga, empoleon, entei, escavalier, espeon, eternatus, excadrill, exeggcute, exeggutor, exploud, farfetchd-galar, farfetchd, fearow, feebas, fennekin, feraligatr, ferroseed, ferrothorn, finneon-f, finneon, flaaffy, flareon, fletchling, floatzel-f, floatzel, florges, flygon, fomantis, foongus, forretress, fraxure, frillish-f, frillish, froakie, froslass, furret, gabite-f, gabite, gallade, galvantula, garbodor-gmax, garbodor, garchomp-f, garchomp-mega, garchomp, gardevoir-mega, gardevoir, gastly, gastrodon-east, gastrodon, genesect-burn, genesect-chill, genesect-douse, genesect-shock, genesect, gengar, geodude, gible-f, gible, gigalith, girafarig-f, girafarig, giratina-origin, giratina, glaceon, glalie, glameow, gligar-f, gligar, gliscor, gloom-f, gloom, golbat-f, golbat, goldeen-f, goldeen, golduck, golem, golett, golurk, goodra-hisui, goomy, gorebyss, gothita, gothitelle, gothorita, granbull, graveler, grimer, grimmsnarl, grotle, groudon, grovyle, growlithe, grubbin, grumpig, gulpin-f, gulpin, gurdurr, gyarados-f, gyarados, happiny, hariyama, haunter, haxorus, heatmor, heatran, heracross-f, heracross, herdier, hippopotas-f, hippopotas, hippowdon-f, hippowdon, hitmonchan, hitmonlee, hitmontop, honchkrow, honedge, hooh, hoothoot, hoppip, horsea, houndoom-f, houndoom, houndour, huntail, hydreigon, hypno-f, hypno, igglybuff, illumise, impidimp, infernape, ivysaur, jangmoo, jellicent-f, jellicent, jigglypuff, jirachi, jolteon, joltik, jumpluff, jynx, kabuto, kabutops, kadabra-f, kadabra, kakuna, kangaskhan, karrablast, kecleon, keldeo-resolute, keldeo, kingdra, kingler, kirlia, klang, klefki, klink, klinklang, koffing, komala, krabby, kricketot-f, kricketot, kricketune-f, kricketune, krokorok, krookodile, kyogre, kyurem-black, kyurem-white, kyurem, lairon, lampent, landorus-therian, landorus, lanturn, lapras, larvesta, larvitar, latias, latios, leafeon, leavanny, ledian-f, ledian, ledyba-f, ledyba, lickilicky, lickitung, liepard, lileep, lilligant, lillipup, linoone, litleo, litten, litwick, lombre, lopunny, lotad, loudred, lucario-mega, lucario, ludicolo-f, ludicolo, lugia, lumineon-f, lumineon, lunatone, lurantis, luvdisc, luxio-f, luxio, luxray-f, luxray, lycanroc-midnight, machamp, machoke, machop, magby, magcargo, magearna-original, magearna, magikarp-f, magikarp, magmar, magmortar, magnemite, magneton, magnezone, makuhita, malaconda, malamar, mamoswine-f, mamoswine, manaphy, mandibuzz, manectric, mankey, mantine, mantyke, maractus, mareep, marill, marowak, marshtomp, masquerain, mawile-mega, mawile, medicham-f, medicham, meditite-f, meditite, meganium-f, meganium, meloetta-pirouette, meloetta, meowth, mesprit, metagross, metang, metapod, mew, mewtwo-mega-y, mewtwo, mienfoo, mienshao, mightyena, milotic-f, milotic, miltank, mimejr, mimikyu-busted, mimikyu, minccino, minior-blue, minior-green, minior-indigo, minior-meteor, minior-orange, minior-violet, minior-yellow, minior, minun, misdreavus, mismagius, mollux, moltres, monferno, morelull, morpeko-hangry, morpeko, mothim, mrmime, mudkip, muk, munchlax, munna, murkrow-f, murkrow, musharna, naganadel, natu, necrozma, necturna, nidoking, nidoqueen, nidoranf, nidoranm, nidorina, nidorino, nincada, ninetales, ninjask, noctowl, nosepass, numel-f, numel, nuzleaf-f, nuzleaf, obstagoon, octillery-f, octillery, oddish, omanyte, omastar, onix, oricorio-pau, oshawott, pachirisu-f, pachirisu, palkia, palossand, palpitoad, pancham, pangoro, panpour, pansage, pansear, paras, parasect, patrat, pawniard, pelipper, perrserker, persian, petilil, phanpy, phione, pichu, pidgeot, pidgeotto, pidgey, pidove, pignite, pikachu-f, pikachu-starter-f, pikachu-starter, pikachu, pikipek, piloswine-f, piloswine, pincurchin, pineco, pinsir, piplup, plasmanta, plusle, pokestarblackbelt, pokestarblackdoor, pokestarbrycenman, pokestarf00, pokestarf002, pokestargiant, pokestarhumanoid, pokestarmonster, pokestarmt, pokestarmt2, pokestarsmeargle, pokestarspirit, pokestartransport, pokestarufo, pokestarufo2, pokestarwhitedoor, politoed-f, politoed, poliwag, poliwhirl, poliwrath, ponyta, poochyena, popplio, porygon, porygon2, porygonz, primeape, prinplup, probopass, psyduck, pupitar, purrloin, purugly, pyroar-f, pyroar, pyukumuku, quagsire-f, quagsire, quilava, quilladin, qwilfish, raboot, raichu-alola, raichu-f, raichu, raikou, ralts, rampardos, rapidash, raticate-f, raticate, rattata-alola, rattata-f, rattata, rayquaza, regice, regidrago, regigigas, regirock, registeel, relicanth-f, relicanth, remoraid, reshiram, reuniclus, rhydon-f, rhydon, rhyhorn-f, rhyhorn, rhyperior-f, rhyperior, ribombee, riolu, rockruff, roggenrola, rolycoly, roselia-f, roselia, roserade-f, roserade, rotom-fan, rotom-frost, rotom-heat, rotom-mow, rotom-wash, rotom, rowlet, rufflet, sableye, salamence, samurott, sandaconda, sandile, sandshrew, sandslash, sandygast, sawk, sawsbuck-autumn, sawsbuck-summer, sawsbuck-winter, sawsbuck, scatterbug, sceptile, scizor-f, scizor-mega, scizor, scolipede, scrafty, scraggy, scyther-f, scyther, seadra, seaking-f, seaking, sealeo, seedot, seel, seismitoad, sentret, serperior, servine, seviper, sewaddle, sharpedo, shaymin-sky, shaymin, shedinja, shelgon, shellder, shellos-east, shellos, shelmet, shieldon, shiftry-f, shiftry, shiinotic, shinx-f, shinx, shroomish, shuckle, shuppet, sigilyph, silcoon, silvally-bug, silvally-dark, silvally-dragon, silvally-electric, silvally-fairy, silvally-fighting, silvally-fire, silvally-flying, silvally-ghost, silvally-grass, silvally-ground, silvally-ice, silvally-poison, silvally-psychic, silvally-rock, silvally-steel, silvally-water, silvally, simipour, simisage, simisear, skarmory, skiddo, skiploom, skitty, skorupi, skuntank, slaking, slakoth, slowbro, slowking, slowpoke, slugma, smeargle, smoochum, sneasel-f, sneasel, snivy, snom, snorlax, snorunt, snover-f, snover, snubbull, sobble, solosis, solrock, spearow, spewpa, spheal, spinarak, spinda, spiritomb, spoink, spritzee, squirtle, stantler, staraptor-f, staraptor, staravia-f, staravia, starly-f, starly, starmie, staryu, steelix-f, steelix, steenee, stonjourner, stoutland, stunfisk, stunky, substitute, sudowoodo-f, sudowoodo, suicune, sunflora, sunkern, surskit, swablu, swadloon, swalot-f, swalot, swampert, swanna, swellow, swepa, swinub, swirlix, swoobat, sylveon, taillow, talonflame, tangela, tangrowth-f, tangrowth, tapukoko, tapulele, tauros, teddiursa, tentacool, tentacruel, tepig, terrakion, throh, thundurus-therian, thundurus, thwackey, timburr, tirtouga, togedemaru, togekiss, togepi, togetic, tomohawk-f, tomohawk, torchic-f, torchic, torkoal, tornadus-therian, tornadus, torterra, totodile, toxapex, toxel, toxicroak-f, toxicroak, tranquill, trapinch, treecko, trevenant, tropius, trubbish, trumbeak, turtonator, turtwig, tympole, tynamo, typenull, typhlosion, tyranitar, tyrantrum, tyrogue, tyrunt, umbreon, unfezant-f, unfezant, unown-b, unown-c, unown-d, unown-e, unown-exclamation, unown-f, unown-g, unown-h, unown-i, unown-j, unown-k, unown-l, unown-m, unown-n, unown-o, unown-p, unown-q, unown-question, unown-r, unown-s, unown-t, unown-u, unown-v, unown-w, unown-x, unown-y, unown-z, unown, ursaring-f, ursaring, uxie, vanillish, vanillite, vanilluxe, vaporeon, venipede, venomoth, venonat, venusaur-f, venusaur, vespiquen, vibrava, victini, victreebel, vigoroth, vikavolt, vileplume-f, vileplume, virizion, vivillon-archipelago, vivillon-continental, vivillon-elegant, vivillon-fancy, vivillon-garden, vivillon-highplains, vivillon-icysnow, vivillon-jungle, vivillon-marine, vivillon-modern, vivillon-monsoon, vivillon-ocean, vivillon-pokeball, vivillon-polar, vivillon-river, vivillon-sandstorm, vivillon-savanna, vivillon-sun, vivillon-tundra, vivillon, volbeat, volcarona, volkraken, voltorb, vullaby, vulpix, wailmer, wailord, walrein, wartortle, watchog, weavile-f, weavile, weedle, weepinbell, weezing, whimsicott, whirlipede, whiscash, whismur, wigglytuff, wimpod, wingull, wishiwashi-school, wishiwashi, wobbuffet-f, wobbuffet, woobat, wooloo, wooper-f, wooper, wormadam-sandy, wormadam-trash, wormadam, wurmple, wynaut, xatu-f, xatu, yamask, yamper, yanma, yanmega, yungoos, zacian, zamazenta, zangoose, zapdos, zebstrika, zekrom, zeraora, zigzagoon, zoroark, zorua, zubat-f, zubat, zweilous, zygarde"
 	//edge case
 	if (!poke) {
 		return
 	}
+	if (poke.name.toLowerCase() == "zygarde-10%") {
+		return "https://play.pokemonshowdown.com/sprites/gen5-back/zygarde-10.png"
+	}//this ruined my day
+	if (poke.name.toLowerCase() == "oricorio-pa'u"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/oricorio-pau.gif"
+	}
+	if (poke.name.toLowerCase() == "mr. mime"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/mrmime.gif"
+	}
+	if (poke.name.toLowerCase() == "farfetch’d"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/farfetchd.gif"
+	}
+	if (poke.name.toLowerCase() == "farfetch’d-galar"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/farfetchd-galar.gif"
+	}
+
 	if (poke.name == "Aegislash-Shield") {
 		return `https://raw.githubusercontent.com/May8th1995/sprites/master/Aegislash.png`
 	} else {
-		return `https://raw.githubusercontent.com/May8th1995/sprites/master/${poke.name}.png`
+		if (animons.includes(poke.name.toLowerCase() + ",")) {
+			return `https://play.pokemonshowdown.com/sprites/gen5ani-back/${poke.name.toLowerCase().replace(" ", "")}.gif`
+		}
+		else {
+			return `https://play.pokemonshowdown.com/sprites/gen5-back/${poke.name.toLowerCase().replace(" ", "")}.png`
+		}
 	}
 }
 
-function getTrainerPokemon(trainerName) {
+function getSrcImgPokemon1(poke) {
+	const animons = "abomasnow-f, abomasnow-mega, abomasnow, abra, absol-mega, absol, accelgor, aegislash-blade, aegislash, aerodactyl, aggron, aipom-f, aipom, alakazam-f, alakazam-mega, alakazam, alcremie-caramel, alcremie-lemon, alcremie-matcha, alcremie-mint, alcremie-rainbow, alcremie-rubycream, alcremie-rubyswirl, alcremie-salted, alcremie, alomomola, altaria, amaura, ambipom-f, ambipom, amoonguss, ampharos-mega, ampharos, anorith, applin, araquanid, arbok, arcanine, arceus-bug, arceus-dark, arceus-dragon, arceus-electric, arceus-fairy, arceus-fighting, arceus-fire, arceus-flying, arceus-ghost, arceus-grass, arceus-ground, arceus-ice, arceus-normal, arceus-poison, arceus-psychic, arceus-rock, arceus-steel, arceus-water, arceus, archen, archeops, arctovish, ariados, armaldo, aron, arrokuda, articuno-galar, articuno, audino, aurumoth, avalugg, axew, azelf, azumarill, azurill, bagon, baltoy, banette-mega, banette, barboach, barraskewda, basculegion-f, basculegion, basculin-bluestriped, basculin, bastiodon, bayleef, beartic, beautifly-f, beautifly, beedrill, beheeyem, beldum, bellossom, bellsprout, bergmite, bewear, bibarel-f, bibarel, bidoof-f, bidoof, binacle, bisharp, blastoise, blaziken-f, blaziken, blissey, blitzle, boldore, bonsly, bouffalant, bounsweet, braixen, braviary, breloom, bronzong, bronzor, bruxish, budew, buizel-f, buizel, bulbasaur, buneary, burmy-sandy, burmy-trash, burmy, butterfree-f, butterfree, buzzwole, cacnea, cacturne-f, cacturne, camerupt-f, camerupt, carbink, carnivine, carracosta, carvanha, cascoon, castform-rainy, castform-snowy, castform-sunny, castform, caterpie, cawmodore, celebi, celesteela, chandelure, chansey, charizard, charjabug, charmander, charmeleon, chatot, cherrim-sunshine, cherrim, cherubi, chesnaught, chewtle, chikorita, chimchar, chimecho, chinchou, chingling, chiyu, cinccino, clamperl, clauncher, clawitzer, claydol, clefable, clefairy, cleffa, clobbopus, clodsire, cloyster, cobalion, cofagrigus, colossoil-f, colossoil, combee-f, combee, combusken-f, combusken, comfey, conkeldurr, corphish, corsola-galar, corsola, corviknight, corvisquire, cosmoem, cottonee, crabrawler, cradily, cramorant, cranidos, crawdaunt, cresselia, croagunk-f, croagunk, crobat, croconaw, crustle, cryogonal, cubchoo, cubone, cursola, cutiefly, cyndaquil, darkrai, darmanitan-galarzen, darmanitan-zen, darmanitan, darumaka, dedenne, deerling-autumn, deerling-summer, deerling-winter, deerling, deino, delcatty, delibird, deoxys-attack, deoxys-defense, deoxys-speed, deoxys, dewgong, dewott, dewpider, dhelmise, dialga-origin, dialga, diancie, diglett-alola, diglett, ditto, dodrio-f, dodrio, doduo-f, doduo, donphan-f, donphan, dracovish, dracozolt, dragapult, dragonair, dragonite, drampa, drapion, dratini, drednaw, drifblim, drifloon, drilbur, drowzee, druddigon, ducklett, dugtrio-alola, dugtrio, dunsparce, duosion, duraludon, durant, dusclops, dusknoir, duskull, dustox-f, dustox, dwebble, eelektrik, eelektross, eevee, eiscue-noice, eiscue, ekans, eldegoss, electabuzz, electivire, electrike, electrode, elekid, elgyem, emboar, emolga, empoleon, entei, escavalier, espeon, eternatus, excadrill, exeggcute, exeggutor-alola, exeggutor, exploud, falinks, farfetchd-galar, farfetchd, fearow, feebas, fennekin, feraligatr, ferroseed, ferrothorn, finneon-f, finneon, flaaffy, flabebe-blue, flabebe-orange, flabebe-white, flabebe-yellow, flabebe, flareon, fletchling, floatzel-f, floatzel, floette, florges, fluttermane, flygon, fomantis, foongus, forretress, fraxure, frillish-f, frillish, froakie, froslass, furret, gabite-f, gabite, gallade, galvantula, garbodor, garchomp-f, garchomp-mega, garchomp, gardevoir-mega, gardevoir, gastly, gastrodon-east, gastrodon, genesect-burn, genesect-chill, genesect-douse, genesect-shock, genesect, gengar, geodude, gholdengo, gible-f, gible, gigalith, gimmighoul, girafarig-f, girafarig, giratina-origin, giratina, glaceon, glalie, glameow, gligar-f, gligar, glimmet, gliscor, gloom-f, gloom, golbat-f, golbat, goldeen-f, goldeen, golduck, golem, golett, golurk, goodra-hisui, goodra, goomy, gorebyss, gothita, gothitelle, gothorita, gougingfire, granbull, graveler, greattusk, greninja, grimer, grimmsnarl, grookey, grotle, groudon-primal, groudon, grovyle, growlithe, grubbin, grumpig, gulpin-f, gulpin, gurdurr, gyarados-f, gyarados, hakamoo, happiny, hariyama, hatenna, hatterene, haunter, haxorus, heatmor, heatran, heracross-f, heracross, herdier, hippopotas-f, hippopotas, hippowdon-f, hippowdon, hitmonchan, hitmonlee, hitmontop, honchkrow, honedge, hooh, hoopa-unbound, hoopa, hoothoot, hoppip, horsea, houndoom-f, houndoom, houndour, huntail, hydreigon, hypno-f, hypno, igglybuff, illumise, impidimp, infernape, inkay, ironhands, ironthorns, ironvaliant, ivysaur, jangmoo, jellicent-f, jellicent, jigglypuff, jirachi, jolteon, joltik, jumpluff, jynx, kabuto, kabutops, kadabra-f, kadabra, kakuna, kangaskhan, karrablast, kecleon, keldeo-resolute, keldeo, kingdra, kingler, kirlia, klang, klefki, klink, klinklang, koffing, komala, krabby, kricketot-f, kricketot, kricketune-f, kricketune, krokorok, krookodile, kyogre-primal, kyogre, kyurem-black, kyurem-white, kyurem, lairon, lampent, landorus-therian, landorus, lanturn, lapras, larvesta, larvitar, latias, latios, leafeon, leavanny, ledian-f, ledian, ledyba-f, ledyba, lickilicky, lickitung, liepard, lileep, lilligant-hisui, lilligant, lillipup, linoone, litleo, litten, litwick, lombre, lopunny, lotad, loudred, lucario-mega, lucario, ludicolo-f, ludicolo, lugia, lumineon-f, lumineon, lunatone, lurantis, luvdisc, luxio-f, luxio, luxray-f, luxray, lycanroc-dusk, lycanroc-midnight, lycanroc, machamp, machoke, machop, magby, magcargo, magearna-original, magearna, magikarp-f, magikarp, magmar, magmortar, magnemite, magneton, magnezone, makuhita, malaconda, malamar, mamoswine-f, mamoswine, manaphy, mandibuzz, manectric, mankey, mantine, mantyke, maractus, mareep, marill, marowak, marshadow, marshtomp, masquerain, maushold-four, maushold, mawile-mega, mawile, medicham-f, medicham, meditite-f, meditite, meganium-f, meganium, melmetal, meloetta-pirouette, meloetta, meltan, meowth-galar, meowth, mesprit, metagross, metang, metapod, mew, mewtwo-mega-x, mewtwo-mega-y, mewtwo-megax, mewtwo, mienfoo, mienshao, mightyena, milcery, milotic-f, milotic, miltank, mimejr, mimikyu-busted, mimikyu, minccino, minior-blue, minior-green, minior-indigo, minior-meteor, minior-orange, minior-violet, minior-yellow, minior, minun, miraidon, misdreavus, mismagius, mollux, moltres, monferno, morelull, morpeko-hangry, morpeko, mothim, mrmime, mudkip, muk, munchlax, munna, murkrow-f, murkrow, musharna, naganadel, natu, necrozma, necturna, nidoking, nidoqueen, nidoranf, nidoranm, nidorina, nidorino, nincada, ninetales, ninjask, noctowl, noivern, nosepass, numel-f, numel, nuzleaf-f, nuzleaf, obstagoon, octillery-f, octillery, oddish, omanyte, omastar, onix, oshawott, pachirisu-f, pachirisu, pajantom, palkia, palossand, palpitoad, pancham, pangoro, panpour, pansage, pansear, paras, parasect, patrat, pawniard, pelipper, perrserker, persian, petilil, phanpy, pheromosa, phione, pichu, pidgeot, pidgeotto, pidgey, pidove, pignite, pikachu-f, pikachu-starter-f, pikachu-starter, pikachu, pikipek, piloswine-f, piloswine, pincurchin, pineco, pinsir, piplup, plasmanta, plusle, pokestarblackbelt, pokestarblackdoor, pokestarbrycenman, pokestarf00, pokestarf002, pokestargiant, pokestarhumanoid, pokestarmonster, pokestarmt, pokestarmt2, pokestarsmeargle, pokestarspirit, pokestartransport, pokestarufo, pokestarufo2, pokestarwhitedoor, politoed-f, politoed, poliwag, poliwhirl, poliwrath, ponyta-galar, ponyta, poochyena, popplio, porygon, porygon2, porygonz, primeape, prinplup, probopass, psyduck, pupitar, purrloin, purugly, pyroar-f, pyroar, pyukumuku, quagsire-f, quagsire, quilava, quilladin, qwilfish, raboot, raichu-alola, raichu-f, raichu, raikou, ralts, rampardos, rapidash, raticate-alola, raticate-f, raticate, rattata-alola, rattata-f, rattata, rayquaza-mega, rayquaza, regice, regidrago, regigigas, regirock, registeel, relicanth-f, relicanth, remoraid, reshiram, reuniclus, rhydon-f, rhydon, rhyhorn-f, rhyhorn, rhyperior-f, rhyperior, ribombee, riolu, rockruff, roggenrola, rolycoly, rookidee, roselia-f, roselia, roserade-f, roserade, rotom-fan, rotom-frost, rotom-heat, rotom-mow, rotom-wash, rotom, rowlet, rufflet, runerigus, sableye, salamence, samurott, sandaconda, sandile, sandshrew, sandslash-alola, sandslash, sandygast, sawk, sawsbuck-autumn, sawsbuck-summer, sawsbuck-winter, sawsbuck, scatterbug, sceptile, scizor-f, scizor-mega, scizor, scolipede, scorbunny, scrafty, scraggy, scyther-f, scyther, seadra, seaking-f, seaking, sealeo, seedot, seel, seismitoad, sentret, serperior, servine, seviper, sewaddle, sharpedo, shaymin-sky, shaymin, shedinja, shelgon, shellder, shellos-east, shellos, shelmet, shieldon, shiftry-f, shiftry, shiinotic, shinx-f, shinx, shroomish, shuckle, shuppet, sigilyph, silcoon, silvally-bug, silvally-dark, silvally-dragon, silvally-electric, silvally-fairy, silvally-fighting, silvally-fire, silvally-flying, silvally-ghost, silvally-grass, silvally-ground, silvally-ice, silvally-poison, silvally-psychic, silvally-rock, silvally-steel, silvally-water, silvally, simipour, simisage, simisear, skarmory, skiddo, skiploom, skitty, skorupi, skuntank, slaking, slakoth, slowbro-galar, slowbro, slowking-galar, slowking, slowpoke-galar, slowpoke, slugma, slurpuff, smeargle, smoochum, sneasel-f, sneasel, snivy, snom, snorlax, snorunt, snover-f, snover, snubbull, sobble, solosis, solrock, spearow, spewpa, spheal, spinarak, spinda, spiritomb, spoink, spritzee, squirtle, stakataka, stantler, staraptor-f, staraptor, staravia-f, staravia, starly-f, starly, starmie, staryu, steelix-f, steelix-mega, steelix, steenee, stonjourner, stoutland, stufful, stunfisk, stunky, substitute, sudowoodo-f, sudowoodo, suicune, sunflora, sunkern, surskit, swablu, swadloon, swalot-f, swalot, swampert, swanna, swellow, swepa, swinub, swirlix, swoobat, sylveon, taillow, talonflame, tandemaus, tangela, tangrowth-f, tangrowth, tapukoko, tapulele, tatsugiri-droopy, tatsugiri-stretchy, tatsugiri, tauros, teddiursa, tentacool, tentacruel, tepig, terapagos-stellar, terrakion, throh, thundurus-therian, thundurus, thwackey, timburr, tinglu, tirtouga, togedemaru, togekiss, togepi, togetic, tomohawk-f, tomohawk, torchic-f, torchic, torkoal, tornadus-therian, tornadus, torterra, totodile, toxapex, toxel, toxicroak-f, toxicroak, toxtricity, tranquill, trapinch, treecko, trevenant, tropius, trubbish, trumbeak, turtonator, turtwig, tympole, tynamo, typenull, typhlosion, tyranitar, tyrantrum, tyrogue, tyrunt, umbreon, unfezant-f, unfezant, unown-b, unown-c, unown-d, unown-e, unown-exclamation, unown-f, unown-g, unown-h, unown-i, unown-j, unown-k, unown-l, unown-m, unown-n, unown-o, unown-p, unown-q, unown-question, unown-r, unown-s, unown-t, unown-u, unown-v, unown-w, unown-x, unown-y, unown-z, unown, ursaluna, ursaring-f, ursaring, uxie, vanillish, vanillite, vanilluxe, vaporeon, venipede, venomoth, venonat, venusaur-f, venusaur, vespiquen, vibrava, victini, victreebel, vigoroth, vikavolt, vileplume-f, vileplume, virizion, vivillon-archipelago, vivillon-continental, vivillon-elegant, vivillon-fancy, vivillon-garden, vivillon-highplains, vivillon-icysnow, vivillon-jungle, vivillon-marine, vivillon-modern, vivillon-monsoon, vivillon-ocean, vivillon-pokeball, vivillon-polar, vivillon-river, vivillon-sandstorm, vivillon-savanna, vivillon-sun, vivillon-tundra, vivillon, volbeat, volcarona, volkraken, voltorb-hisui, voltorb, vullaby, vulpix, wailmer, wailord, walrein, wartortle, watchog, weavile-f, weavile, weedle, weepinbell, weezing-galar, weezing, whimsicott, whirlipede, whiscash, whismur, wigglytuff, wimpod, wingull, wishiwashi-school, wishiwashi, wobbuffet-f, wobbuffet, wochien, woobat, wooloo, wooper-f, wooper, wormadam-sandy, wormadam-trash, wormadam, wurmple, wynaut, xatu-f, xatu, xerneas, xurkitree, yamask, yamper, yanma, yanmega, yungoos, yveltal, zacian, zamazenta, zangoose, zapdos, zebstrika, zekrom, zeraora, zigzagoon-galar, zigzagoon, zoroark-hisui, zoroark, zorua, zubat-f, zubat, zweilous, zygarde"
+	//edge case
+	if (!poke) {
+		return
+	}
+	if (poke.name.toLowerCase() == "zygarde-10%") {
+		return "https://play.pokemonshowdown.com/sprites/gen5/zygarde-10.png"
+	}//this ruined my day
+	if (poke.name.toLowerCase() == "oricorio-pa'u"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/oricorio-pau.gif"
+	}
+	if (poke.name.toLowerCase() == "mr. mime"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/mrmime.gif"
+	}
+	if (poke.name.toLowerCase() == "farfetch’d"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/farfetchd.gif"
+	}
+	if (poke.name.toLowerCase() == "farfetch’d-galar"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/farfetchd-galar.gif"
+	}
+	
+	if (poke.name.toLowerCase() == "nidoran-m"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/nidoranm.gif"
+	}
+	if (poke.name.toLowerCase() == "nidoran-f"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/nidoranf.gif"
+	}
+	
+	if (poke.name.toLowerCase() == "ho-oh"){
+		return "https://play.pokemonshowdown.com/sprites/gen5ani/hooh.gif"
+	}
+
+	if (poke.name == "Aegislash-Shield") {
+		return `https://raw.githubusercontent.com/May8th1995/sprites/master/Aegislash.png`
+	} else {
+		if (animons.includes(poke.name.toLowerCase() + ",")) {
+			return `https://play.pokemonshowdown.com/sprites/gen5ani/${poke.name.toLowerCase().replace(" ", "")}.gif`
+		}
+		else {
+			return `https://play.pokemonshowdown.com/sprites/gen5/${poke.name.toLowerCase().replace(" ", "")}.png`
+		}
+	}
+}
+
+function get_trainer_poks(trainerName) {
 	var trueName = trainerName.split("(")[1].replaceAll("*", "").split(")")[0].trim();
 	window.CURRENT_TRAINER = trueName;
 	if (!partyOrder || !Object.keys(partyOrder).length || !partyOrder[trueName]) {
@@ -2054,6 +2127,15 @@ function trashPokemon() {
 	$('#box-poke-list')[0].click();
 }
 
+function topTrainerIcon(fullname, node){
+	var trainer = fullname
+
+	spriteSRC = trainerSprites[trainer] 
+
+	node.src = spriteSRC
+// 	trainerSprites
+}
+
 function nextTrainer() {
 	if (trainerNames.includes(window.CURRENT_TRAINER)) {
 		var index = trainerNames.indexOf(window.CURRENT_TRAINER);
@@ -2069,6 +2151,7 @@ function nextTrainer() {
 			$(".opposing").val(setName);
 			$(".opposing").change();
 			$(".opposing .select2-chosen").text(setName);
+			topTrainerIcon(nextTrainerName, $("#p2sprite")[0]);
 		}
 	}
 }
@@ -2088,12 +2171,16 @@ function previousTrainer() {
 			$(".opposing").val(setName);
 			$(".opposing").change();
 			$(".opposing .select2-chosen").text(setName);
+			topTrainerIcon(previousTrainerName, $("#p2sprite")[0]);
 		}
 	}
 }
 
+
+
 function resetTrainer() {
 	var firstTrainerName = trainerNames[0];
+	topTrainerIcon(firstTrainerName, $("#p2sprite")[0]);
 	var party = partyOrder[firstTrainerName];
 	var pokemon = party[0];
 	var dupes = party.filter((item, index) => party.indexOf(item) != index);
@@ -2123,22 +2210,27 @@ function drop(ev) {
 	ev.preventDefault();
 	if (ev.target.classList.contains("dropzone")) {
 		pokeDragged.parentNode.removeChild(pokeDragged);
-		ev.target.appendChild(pokeDragged);
+		if(ev.target.tagName=="LEGEND"){
+			ev.target.parentNode.children[1].appendChild(pokeDragged);
+		}else{
+			ev.target.appendChild(pokeDragged);
+		}
+			
 	}
 	// if it's a pokemon
-	else if (ev.target.classList.contains("left-side")) {
-		//And if a sibling switch them
-		if (ev.target.parentNode == pokeDragged.parentNode) {
-			let prev1 = ev.target.previousSibling || ev.target;
-			let prev2 = pokeDragged.previousSibling || pokeDragged;
-
-			prev1.after(pokeDragged);
-			prev2.after(ev.target);
-		}
-		//if not just append to the box it belongs
-		else {
-			let prev1 = ev.target.previousSibling || ev.target;
-			prev1.after(pokeDragged);
+	else if(ev.target.classList.contains("left-side") || ev.target.classList.contains("right-side")) {
+		if (!cntrlIsPressed){
+			let prev1 = pokeDragged.previousElementSibling
+			if (!prev1){
+				ev.target.after(pokeDragged)
+			} else {
+				ev.target.before(pokeDragged)
+				prev1.after(ev.target)
+			}
+			//swaps
+		} else {
+			//appends before
+			ev.target.before(pokeDragged)
 		}
 	}
 	ev.target.classList.remove('over');
@@ -2151,6 +2243,43 @@ function handleDragEnter(ev) {
 function handleDragLeave(ev) {
 	ev.target.classList.remove('over');
 }
+
+
+/* dragging for the item box, note box*/
+// target elements with the "box-frame-header" class
+interact('.box-frame-header').draggable({
+    inertia: true,
+    modifiers: [
+      interact.modifiers.restrictRect({
+        restriction: document.body,
+        endOnly: true
+      })
+    ],
+    autoScroll: true,
+
+    listeners: {
+      // call this function on every dragmove event
+      move: dragMoveListener,
+    }
+  })
+  
+  
+function dragMoveListener (event) {
+	var target = event.target;
+	var parent = target.parentNode;
+	// special case for the screen box frame
+	if (target.classList.contains("screen-box-frame")) {
+		parent = target;
+	}
+    var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+    var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy ;
+	parent.style.left=x+"px";
+	parent.style.top=y+"px";
+    target.setAttribute('data-x', x);
+    target.setAttribute('data-y', y);
+}
+
+window.dragMoveListener = dragMoveListener
 
 function speedBorderSetsChange(ev){
 	var monImgs = document.getElementsByClassName("left-side");
@@ -2189,6 +2318,32 @@ $(".stat-changer").click((e) => {
 	}
 });
 
+window.isInDoubles = false;
+function switchIconSingle(){
+	document.getElementById("monDouble").removeAttribute("hidden");
+	window.isInDoubles = true;
+	return;	
+}
+
+function switchIconDouble(){
+	document.getElementById("monDouble").setAttribute("hidden" ,true);
+	window.isInDoubles = false;
+	return;
+}
+
+function openCloseItemBox(){
+	document.getElementById("item-box-frame").toggleAttribute("hidden");
+}
+
+function openCloseNoteBox(){
+	document.getElementById("note-box-frame").toggleAttribute("hidden");
+}
+
+function selectItem(ev){
+	var newItem = ev.target.getAttribute("data-id");
+	document.getElementById("itemL1").value=newItem;
+}
+
 var READY;
 $(document).ready(function () {
 	var params = new URLSearchParams(window.location.search);
@@ -2202,6 +2357,8 @@ $(document).ready(function () {
 	$("#percentage").change();
 	$("#singles-format").prop("checked", true);
 	$("#singles-format").change();
+	$('#singles-format').click(switchIconDouble);
+	$('#doubles-format').click(switchIconSingle);
 	$("#default-level-100").prop("checked", true);
 	$("#default-level-100").change();
 	loadDefaultLists();

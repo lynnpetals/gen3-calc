@@ -541,6 +541,14 @@ function predictSwitchOrderEmerald() {
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(`${nextMon} (Phase ${phase})`);
 			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(``);
 			$(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
+			
+			// var newPoke = document.createElement("img");
+			// newPoke.className = "trainer-poke-switched right-side";
+			// newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMon}.png`;
+			// newPoke.title = `${phase}`;
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
+			// $(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
 		}
 	}
 }
