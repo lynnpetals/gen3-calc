@@ -561,6 +561,7 @@ $(".set-selector").change(function () {
 	var fullSetName = $(this).val();
 
 	if ($(this).hasClass('opposing') && game != "None") {
+		topPokemonIcon(fullSetName, $("#p2mon")[0])
 		// topPokemonIcon1(fullSetName, $("#p2mon")[0])
 		var oldTrainer = window.CURRENT_TRAINER;
 		var nextPokemon = getTrainerPokemon(fullSetName);
@@ -623,11 +624,17 @@ $(".set-selector").change(function () {
 			}
 		}
 	}
+	if ($(this).hasClass('player')){
+		topPokemonIcon(fullSetName, $("#p1mon")[0])
+	}
 	$('.trainer-poke-switch-list').html(switchHTML);
 	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
 		mon.addEventListener("contextmenu", noMenuClick);
 	}
 	if (oldTrainer !== window.CURRENT_TRAINER) $('.trainer-poke-switch-list').html(switchHTML);
+	
+	console.log($("label.opposing")[0])
+	$("label.opposing")[0].textContent = window.CURRENT_TRAINER;
 
 	var pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
 	var setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
@@ -830,7 +837,7 @@ $(".set-selector").change(function () {
 			}
 		}
 		if (["Emerald Kaizo"].includes(game)) {
-			$("#ai-help").html(`AI Flag: [${ai}]`);
+			$("#ai-help").html(`🚩: [${ai}]`);
 			$("#ai-help").attr("flag", ai);
 
 			if (ai == 23) {
@@ -1907,6 +1914,34 @@ function getTrainerPokemon(trainerName) {
 		}
 		return matches;
 	}
+}
+
+function topPokemonIcon(fullname, node){
+	var mon = { name: fullname.split(" (")[0] };
+	var src = getSrcImgPokemon1(mon);
+	node.src = src;
+}
+
+function getSrcImgPokemon1(poke) {
+	//edge case
+	if (!poke) {
+		return
+	}
+	if (poke.name.toLowerCase() == "mr. mime"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/mrmime.gif"
+	}
+	
+	if (poke.name.toLowerCase() == "nidoran-m"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranm.gif"
+	}
+	if (poke.name.toLowerCase() == "nidoran-f"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranf.gif"
+	}
+	
+	if (poke.name.toLowerCase() == "ho-oh"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/hooh.gif"
+	}
+	return `https://play.pokemonshowdown.com/sprites/gen3/${poke.name.toLowerCase().replace(" ", "")}.png`
 }
 
 $(document).on('click', '.left-side', function() {

@@ -155,7 +155,6 @@ div.wrapper > div > span {
     padding-right: 5px;
 }
 fieldset {
-    float: left;
     background-color: #F1F4F9;
     border: 1px solid #AAAAAA;
     border-radius: 10px;
@@ -169,7 +168,7 @@ legend {
     align-items: center;
     justify-content: center;
     max-height: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1em; 
   }
 th, td {
     padding: 0;
@@ -397,7 +396,8 @@ th {
     margin: 1em 0;
 }
 .set-selector {
-    width: 100%;
+    width: 60%;
+    height: 2em;
 }
 .info-selectors select {
     width: 12em;
@@ -465,14 +465,9 @@ table.field {
 
 /* select2 overrides */
 .select2-container .select2-choice > .select2-chosen {
-    width: 100%;
+    width: 11em;
 }
 
-.select2-chosen {
-	word-wrap: break-word;
-	text-overflow: inherit;
-	white-space: normal !important;
-}
 
 .small-select.select2-container .select2-choice {
     font-size: 0.9em;
@@ -808,4 +803,26 @@ table.field {
 }
 .on-legend{
     margin: 1em;
+}
+button.on-legend{
+    min-width:4.5em;
+}
+label.opposing, label.player {
+    width:unset;
+    max-height: 2em;
+    max-width: 13em;
+}
+
+
+#p2mon, #p1mon {
+    height: 100px;
+    width: 100px;
+    object-fit: none;
+    flex-basis: fill-available;
+}  
+
+.info-group.display-sprites{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
