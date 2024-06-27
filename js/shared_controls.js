@@ -2361,12 +2361,16 @@ $(document).ready(function () {
 		var transformer = $(this).closest(".poke-info");
 		var target = $(transformer.attr("id") === "p1" ? "#p2" : "#p1");
 
+		
+
 		transformer.siblings().find(".forme").parent().replaceWith(target.siblings().find(".forme").parent());
 		transformer.find(".type1").val(target.find(".type1").val());
 		transformer.find(".type2").val(target.find(".type2").val());
+		console.log()
 		for (i = 0; i < LEGACY_STATS[gen].length; i++) {
 			var stat = LEGACY_STATS[gen][i];
 			if (stat === "hp") continue;
+			transformer.find("." + stat + " .base").val(target.find("." + stat + " .base").val());
 			transformer.find("." + stat + " .evs").val(target.find("." + stat + " .evs").val());
 			transformer.find("." + stat + " .ivs").val(target.find("." + stat + " .ivs").val());
 			transformer.find("." + stat + " .dvs").val(target.find("." + stat + " .dvs").val());
@@ -2376,10 +2380,10 @@ $(document).ready(function () {
 			var move = target.find(".move" + (i + 1) + " select.move-selector").val();
 			if (move.startsWith("Hidden Power")) {
 				var pokemon = createPokemon(transformer);
-				var ivs = {};
+				var baseStats = {};
 				for (var j = 0; j <= LEGACY_STATS[9].length; j++) {
 					var s = LEGACY_STATS[9][j];
-					ivs[legacyStatToStat(s)] = (pokemon.ivs && pokemon.ivs[s]) || 31;
+					baseStats[legacyStatToStat(s)] = (pokemon.ivs && pokemon.ivs[s]) || 31;
 				}
 				
 				var expectedType = calc.Stats.getHiddenPower(GENERATION, ivs).type;

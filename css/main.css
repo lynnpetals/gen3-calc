@@ -169,7 +169,13 @@ fieldset {
 legend {
     font-weight: bold;
     text-align: center;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 1em;
+    margin-bottom: 1em;
+  }
 th, td {
     padding: 0;
 }
@@ -370,7 +376,7 @@ th {
 }
 .move-result-subgroup {
     float: left;
-    width: 25%;
+    width: 40%;
     padding-bottom: 30px;
     max-height: 110px;
 }
@@ -911,4 +917,14 @@ table.field {
 
 #resultHeaderL, #resultHeaderR {
     background-color: #423d58;
+}
+.i-f-o-stats > table {
+text-align: center;width: 100%;
+}
+
+.ivs.calc-trigger, .base.calc-trigger {
+    display:none !important; 
+}
+.nature {
+    display:none !important;
 }

@@ -293,6 +293,7 @@ function calculateAllMoves(gen, p1, p1field, p2, p2field) {
 function saveTrigger(ev) {
 	var isUser = ev.originalEvent ? ev.originalEvent.isTrusted : false;
 	if (isUser || ev.added) { //ev.added is for the moves buttons
+		console.log("yippee")
 		$('#save-change').attr("hidden", false);
 	}
 }
