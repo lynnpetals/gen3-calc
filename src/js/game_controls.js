@@ -154,7 +154,7 @@ var CUSTOMFLAGS = [
 
 var CUSTOMHACKSETDEX = [
 	undefined, // None
-	typeof CUSTOMHACKSETDEX_EKK === 'undefined' ? {} : CUSTOMHACKSETDEX_EKK
+	typeof CUSTOMHACKSETDEX_EK === 'undefined' ? {} : CUSTOMHACKSETDEX_EK
 ];
 
 var HACKGEN = {
@@ -163,7 +163,7 @@ var HACKGEN = {
 
 var CUSTOMHACKTRAINERNAMES = [
 	undefined,
-	typeof CUSTOMHACKTRAINERNAMES_EKK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EKK
+	typeof CUSTOMHACKTRAINERNAMES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EK
 ];
 
 var CUSTOMHACKTRAINERSPRITES = [
@@ -173,7 +173,7 @@ var CUSTOMHACKTRAINERSPRITES = [
 
 var CUSTOMHACKPARTYORDER = [
 	undefined,
-	typeof CUSTOMHACKPARTYORDER_EKK === 'undefined' ? {} : CUSTOMHACKPARTYORDER_EKK
+	typeof CUSTOMHACKPARTYORDER_EK === 'undefined' ? {} : CUSTOMHACKPARTYORDER_EK
 ];
 
 var CUSTOMHACKFLAGS = [
@@ -533,13 +533,17 @@ function predictSwitchOrderEmerald() {
 		var xp = Math.floor(Math.floor(pokedex[dead.species].expYield * dead.level / 7) * 1.5);
 
 		if (nextMon) {
-			var newPoke = document.createElement("img");
-			newPoke.className = "trainer-poke-switched right-side";
-			newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMon}.png`;
-			newPoke.title = `${phase}`;
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
+			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(`${nextMon} (Phase ${phase})`);
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(``);
 			$(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
+			
+			// var newPoke = document.createElement("img");
+			// newPoke.className = "trainer-poke-switched right-side";
+			// newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMon}.png`;
+			// newPoke.title = `${phase}`;
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
+			// $(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
 		}
 	}
 }

@@ -566,7 +566,7 @@ $(".set-selector").change(function () {
 		topPokemonIcon(fullSetName, $("#p2mon")[0])
 		// topPokemonIcon1(fullSetName, $("#p2mon")[0])
 		var oldTrainer = window.CURRENT_TRAINER;
-		var nextPokemon = getTrainerPokemon(fullSetName);
+		var nextPokemon = get_trainer_poks(fullSetName);
 		var trainerHTML = "";
 		var switchHTML = "";
 		$('.trainer-poke-switch-list').html('');
@@ -578,6 +578,7 @@ $(".set-selector").change(function () {
 			switchHTML += `<span style="width: 100%;"><img class="trainer-poke-switch right-side" src="https://raw.githubusercontent.com/May8th1995/sprites/master/${pokemonName}.png" data-id="${nextPokemon[i]}" title="${nextPokemon[i]}"><label style="width: 60%;" class="trainer-poke-switch-explain" data-id="${nextPokemon[i]}"></label><label class="trainer-poke-switch-xp" data-id="${nextPokemon[i]}"></label></span>`;
 			if (parseInt(i) + 1 < nextPokemon.length) switchHTML += "<br><br>";
 		}
+	}
 
 	if (flags) {
 		var weather = "clear";
@@ -639,7 +640,6 @@ $(".set-selector").change(function () {
 	}
 	if (oldTrainer !== window.CURRENT_TRAINER) $('.trainer-poke-switch-list').html(switchHTML);
 	
-	console.log($("label.opposing")[0])
 	$("label.opposing")[0].textContent = window.CURRENT_TRAINER;
 
 	var pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -845,10 +845,21 @@ q
 				$(resultLocations[1][j].move + " + label").removeClass("risky-ai-move");
 			}
 
-// 			if ($(".risky-ai-move").length) trySendRiskyAlert();
-// 		}
-// 	}
-// });
+			if ($(".risky-ai-move").length) trySendRiskyAlert();
+		}
+	}
+});
+
+function updateTickedHP(){
+	playtotal = $(".poke-info").find(".hp .total")[0].textContent;
+	optotal = $(".poke-info").find(".hp .total")[1].textContent;
+
+	$('#opposing-eighth')[0].textContent = Math.max(1, Math.trunc(optotal / 8))
+	$('#opposing-sixteenth')[0].textContent = Math.max(1, Math.trunc(optotal / 16))
+	$('#player-eighth')[0].textContent = Math.max(1, Math.trunc(playtotal / 8))
+	$('#player-sixteenth')[0].textContent = Math.max(1, Math.trunc(playtotal / 16))
+	
+}
 
 function trySendRiskyAlert() {
 	if (!localStorage.sentRiskyAlert) {
@@ -2116,10 +2127,17 @@ function trashPokemon() {
 	$('#box-poke-list')[0].click();
 }
 
+function topTrainerIcon(fullname, node){
+	var trainer = fullname
+
+	spriteSRC = trainerSprites[trainer] 
+
+	node.src = spriteSRC
+// 	trainerSprites
+}
+
 function nextTrainer() {
 	if (trainerNames.includes(window.CURRENT_TRAINER)) {
-		console.log(CURRENT_TRAINER);
-		console.log(trainerNames)
 		var index = trainerNames.indexOf(window.CURRENT_TRAINER);
 		if (index + 1 !== trainerNames.length) {
 			var nextTrainerName = trainerNames[index + 1];
@@ -2157,6 +2175,8 @@ function previousTrainer() {
 		}
 	}
 }
+
+
 
 function resetTrainer() {
 	var firstTrainerName = trainerNames[0];

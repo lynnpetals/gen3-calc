@@ -366,13 +366,13 @@ th {
     justify-content: center;
 }
 .move-result-subgroup {
-    float: left;
     width: 40%;
     padding-bottom: 20px;
-    max-height: 110px;
+    display:flex;
+    flex-direction: column;
 }
 .move-result-group .btn {
-    margin-right: 1em;
+    margin: 0 1em;
 }
 .main-result-group {
     margin: 0em 0 1em;
@@ -381,7 +381,7 @@ th {
 .result-move-header {
     font-size: 0.8em;
     font-weight: bold;
-    margin: 0 0 5px;
+    margin: 0 2em;
 }
 
 /* pokemon info */
@@ -843,3 +843,55 @@ label.opposing, label.player {
     align-items: center;
     justify-content: space-between;
 }
+.exbg{
+    position:fixed;
+    height:100%;
+    object-fit:contain;
+    z-index: -1;
+}
+
+
+.visually-hidden:checked + .btn > img {
+    filter: grayscale(0%);
+  }
+  .btn > img {
+    filter: grayscale(100%);
+  }
+
+  #p1b, #p2b{
+    display:flex;
+    flex-direction: column;
+  }
+
+  #p1b span, #p2b span{
+    width: 100%;
+  }
+
+  #bg-image-a{
+    object-fit: cover; 
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  #resultGroupL > div, #resultGroupR > div {
+    display: flex;
+    flex-direction: row;
+  }
+  #resultGroupL > div{
+    justify-content: right;
+  }
+  #resultGroupR > div {
+    justify-content: left;
+  }
+  .display-damage-text {
+    display: inline-grid;
+    align-content: center;
+  }
+  #resultGroupL .display-damage-text {
+    justify-items: right;
+  }
+
+  .move-result-subgroup .btn.btn-xxxwide {
+    height: 2em;
+    align-content: center;
+  }
