@@ -27,6 +27,7 @@ $(".game").change(function() {
     setdex = !isHack ? CUSTOMSETDEX[gameId] : CUSTOMHACKSETDEX[gameId];
 	partyOrder = CUSTOMHACKPARTYORDER[1];
 	trainerNames = !isHack ? CUSTOMTRAINERNAMES[gameId] : CUSTOMHACKTRAINERNAMES[gameId];
+	trainerSprites = CUSTOMHACKTRAINERSPRITES_EK;
 	flags = !isHack ? CUSTOMFLAGS[gameId] : CUSTOMHACKFLAGS[gameId];
     if (typeof setdex === 'undefined') setdex = SETDEX[generation];
     clearField();
