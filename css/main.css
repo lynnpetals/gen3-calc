@@ -915,16 +915,18 @@ table.field {
     animation:move-twink-back 200s linear infinite;
   }
 
+
+  .i-f-o-stats > table {
+    text-align: center;width: 100%;
+    }
+    
+    .ivs.calc-trigger, .base.calc-trigger {
+        display:none !important; 
+    }
+    .nature {
+        display:none !important;
+    }
+
 #resultHeaderL, #resultHeaderR {
     background-color: #423d58;
-}
-.i-f-o-stats > table {
-text-align: center;width: 100%;
-}
-
-.ivs.calc-trigger, .base.calc-trigger {
-    display:none !important; 
-}
-.nature {
-    display:none !important;
 }
