@@ -649,6 +649,13 @@ $(".set-selector").change(function () {
 				$("#mindBadge").prop("checked", true);
 			}
 		}
+if (flags["doubles"].includes(window.CURRENT_TRAINER)){
+			$("#doubles-format").prop("checked", true);
+		}
+		else{
+			$("#singles-format").prop("checked", true);
+		}
+		
 	}
 	$('.trainer-poke-switch-list').append(frag);
 	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
@@ -687,7 +694,7 @@ $(".set-selector").change(function () {
 		var itemObj = pokeObj.find(".item");
 		var randset = $("#randoms").prop("checked") ? randdex[pokemonName] : undefined;
 		var regSets = pokemonName in setdex && setName in setdex[pokemonName];
-q
+
 		if (randset) {
 			var listItems = randdex[pokemonName].items ? randdex[pokemonName].items : [];
 			var listAbilities = randdex[pokemonName].abilities ? randdex[pokemonName].abilities : [];
