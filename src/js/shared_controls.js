@@ -2245,23 +2245,23 @@ function handleDragLeave(ev) {
 }
 
 
-/* dragging for the item box, note box*/
-// target elements with the "box-frame-header" class
-interact('.box-frame-header').draggable({
-    inertia: true,
-    modifiers: [
-      interact.modifiers.restrictRect({
-        restriction: document.body,
-        endOnly: true
-      })
-    ],
-    autoScroll: true,
+// /* dragging for the item box, note box*/
+// // target elements with the "box-frame-header" class
+// interact('.box-frame-header').draggable({
+//     inertia: true,
+//     modifiers: [
+//       interact.modifiers.restrictRect({
+//         restriction: document.body,
+//         endOnly: true
+//       })
+//     ],
+//     autoScroll: true,
 
-    listeners: {
-      // call this function on every dragmove event
-      move: dragMoveListener,
-    }
-  })
+//     listeners: {
+//       // call this function on every dragmove event
+//       move: dragMoveListener,
+//     }
+//   })
   
   
 function dragMoveListener (event) {
