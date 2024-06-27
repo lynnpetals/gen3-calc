@@ -311,7 +311,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ice Punch",
                 "Fire Punch"
             ],
-            "nature": "Lonely"
+            "nature": "Bashful"
         },
         "Elite Four Sidney": {
             "ability": "Synchronize",
@@ -957,7 +957,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ice Shard",
                 "Hydro Pump"
             ],
-            "nature": "Sassy"
+            "nature": "Bold"
         }
     },
     "Azumarill": {
@@ -983,7 +983,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Surf",
                 "Ice Beam"
             ],
-            "nature": "Quiet"
+            "nature": "Sassy"
         },
         "Ninja Boy Riley": {
             "ability": "Huge Power",
@@ -2734,7 +2734,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Tri Attack",
                 "Explosion"
             ],
-            "nature": "Timid"
+            "nature": "Bashful"
         },
         "Cooltrainer Jerome": {
             "ability": "Shell Armor",
@@ -2941,7 +2941,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Earthquake",
                 "Recover"
             ],
-            "nature": "Adamant"
+            "nature": "Calm"
         }
     },
     "Crawdaunt": {
@@ -3405,7 +3405,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Double-Edge",
                 "Ice Beam",
                 "Surf"
-            ]
+            ],
+            "nature": "Naive"
         },
         "Team Aqua Grunt #5 @ Weather Institute": { //Fixed
             "ability": "Shed Skin",
@@ -3942,7 +3943,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Cross Chop",
                 "Psychic"
             ],
-            "nature": "Brave"
+            "nature": "Quiet"
         },
         "Cooltrainer Marcel": {
             "ability": "Static",
@@ -4083,7 +4084,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "moves": [
                 "Explosion"
             ],
-            "nature": "Hasty"
+            "nature": "Adamant"
         }
     },
     "Elekid": {
@@ -4228,7 +4229,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Explosion",
                 "Psychic"
             ],
-            "nature": "Timid"
+            "nature": "Bashful"
         },
         "Cooltrainer Cristin": {
             "ability": "Chlorophyll",
@@ -5115,7 +5116,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ice Punch",
                 "Fire Punch"
             ],
-            "nature": "Bold"
+            "nature": "Sassy"
         },
         "Elite Four Phoebe": {
             "ability": "Synchronize",
@@ -5303,7 +5304,8 @@ var CUSTOMHACKSETDEX_EKK = {
             "moves": [
                 "Shadow Ball",
                 "Explosion"
-            ]
+            ],
+            "nature": "Quiet"
         },
         "Elite Four Phoebe": {
             "ability": "Levitate",
@@ -5651,7 +5653,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Surf",
                 "Psychic",
                 "Hidden Power Electric"
-            ]
+            ],
+            "nature": "Bold"
         }
     },
     "Golem": {
@@ -5706,10 +5709,10 @@ var CUSTOMHACKSETDEX_EKK = {
             "moves": [
                 "Explosion"
             ],
-            "nature": "Timid"
+            "nature": "Brave"
         }
     },
-    "Gorebyss": { //Confirmed
+    "Gorebyss": { //Confirmed movesets
         "Team Aqua Grunt #3 @ Weather Institute": {
             "ability": "Swift Swim",
             "level": 53,
@@ -5720,7 +5723,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Thunder",
                 "Confuse Ray"
             ],
-            "nature": "Lax"
+            "nature": "Quiet"
         },
         "Cooltrainer Jennifer": {
             "ability": "Swift Swim",
@@ -5918,7 +5921,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Superpower",
                 "Shadow Ball"
             ],
-            "nature": "Hasty"
+            "nature": "Adamant"
         }
     },
     "Graveler": {
@@ -6231,7 +6234,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Hydro Pump",
                 "Double-Edge"
             ],
-            "nature": "Jolly"
+            "nature": "Gentle"
         }
     },
     "Hariyama": {
@@ -6762,7 +6765,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ice Beam",
                 "Double-Edge"
             ],
-            "nature": "Timid"
+            "nature": "Brave"
         },
         "Swimmerm Herman": {
             "ability": "Swift Swim",
@@ -7219,7 +7222,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Waterfall",
                 "Rock Slide",
                 "X-scissors"
-            ]
+            ],
+            "nature": "Naughty"
         },
         "Team Aqua Grunt #2 @ Seafloor Cavern": {
             "ability": "Swift Swim",
@@ -7553,7 +7557,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Draco Meteor",
                 "Ice Beam",
                 "Hydro Pump"
-            ]
+            ],
+            "nature": "Careful"
         },
         "Elite Four Drake": {
             "ability": "Swift Swim",
@@ -7627,7 +7632,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "X-scissors",
                 "Superpower"
             ],
-            "nature": "Impish"
+            "nature": "Hardy"
         }
     },
     "Koffing": {
@@ -7905,7 +7910,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ice Beam",
                 "Ice Shard"
             ],
-            "nature": "Calm"
+            "nature": "Adamant"
         },
         "Champion Bokk": {
             "ability": "Shell Armor",
@@ -8291,7 +8296,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Hydro Pump",
                 "Fake Out",
                 "Ice Beam"
-            ]
+            ],
+            "nature": "Calm"
         },
         "Elite Four Phoebe": {
             "ability": "Swift Swim",
@@ -9043,7 +9049,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Surf",
                 "Air Slash"
             ],
-            "nature": "Adamant"
+            "nature": "Calm"
         },
         "Fisherman Henry": {
             "ability": "Swift Swim",
@@ -11058,7 +11064,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ice Beam",
                 "Ancient Power"
             ],
-            "nature": "Relaxed"
+            "nature": "Modest"
         },
         "Team Aqua Grunt #7 @ Mt. Pyre": {
             "ability": "Swift Swim",
@@ -11545,7 +11551,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Earth Power",
                 "Superpower"
             ],
-            "nature": "Gentle"
+            "nature": "Jolly"
         }
     },
     "Plusle": {
@@ -11994,7 +12000,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Thunder",
                 "Ice Beam"
             ],
-            "nature": "Careful"
+            "nature": "Modest"
         },
         "Champion ywt1": {
             "ability": "Trace",
@@ -12079,7 +12085,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Muddy Water",
                 "Recover"
             ],
-            "nature": "Bold"
+            "nature": "Jolly"
         },
         "Team Aqua Grunt #6 @ Mt. Pyre": {
             "ability": "Water Absorb",
@@ -12211,7 +12217,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Waterfall",
                 "Explosion"
             ],
-            "nature": "Rash"
+            "nature": "Hasty"
         },
         "Team Aqua Grunt #1 @ Aqua Hideout": {
             "ability": "Swift Swim",
@@ -12944,7 +12950,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Shadow Ball",
                 "Brick Break"
             ],
-            "nature": "Bold"
+            "nature": "Sassy"
         },
         "Elite Four Sidney": {
             "ability": "Pressure",
@@ -13450,7 +13456,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Poison Tail",
                 "Earthquake"
             ],
-            "nature": "Rash"
+            "nature": "Gentle"
         },
         "Team Aqua Grunt #1 @ Weather Institute": {
             "ability": "Shed Skin",
@@ -13462,7 +13468,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Earthquake",
                 "Giga Drain"
             ],
-            "nature": "Quiet"
+            "nature": "Hardy"
         },
         "Team Aqua Grunt #2 @ Mt. Pyre": {
             "ability": "Shed Skin",
@@ -13496,7 +13502,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Crunch",
                 "Hydro Pump",
                 "Poison Fang"
-            ]
+            ],
+            "nature": "Relaxed"
         },
         "Team Aqua Grunt #2 @ Mt. Pyre": {
             "ability": "Rough Skin",
@@ -13948,7 +13955,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Thunder",
                 "Ice Beam"
             ],
-            "nature": "Jolly"
+            "nature": "Gentle"
         },
         "Team Aqua Grunt #7 @ Mt. Pyre": { //Confirmed
             "ability": "Shell Armor",
@@ -13994,7 +14001,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Hydro Pump",
                 "Hidden Power Electric"
             ],
-            "nature": "Naughty"
+            "nature": "Gentle"
         }
     },
     "Slowking": {
@@ -14311,7 +14318,7 @@ var CUSTOMHACKSETDEX_EKK = {
             "moves": [
                 "Self-Destruct"
             ],
-            "nature": "Adamant"
+            "nature": "Calm"
         }
     },
     "Snorunt": {
@@ -14914,7 +14921,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Sludge Bomb",
                 "Brick Break"
             ],
-            "nature": "Gentle"
+            "nature": "Mild"
         },
         "Swimmerf Tisha": {
             "ability": "Liquid Ooze",
@@ -15046,7 +15053,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Ancient Power",
                 "Sludge Bomb"
             ],
-            "nature": "Jolly"
+            "nature": "Gentle"
         },
         "Elite Four Glacia": {
             "ability": "Swift Swim",
@@ -15794,7 +15801,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Superpower",
                 "Earth Power"
             ],
-            "nature": "Quiet"
+            "nature": "Lax"
         },
         "Elite Four Drake": {
             "ability": "Intimidate",
@@ -15846,7 +15853,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Moonlight",
                 "Pursuit"
             ],
-            "nature": "Jolly"
+            "nature": "Gentle"
         },
         "Gentleman Walter": {
             "ability": "Synchronize",
@@ -16676,7 +16683,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Self-Destruct",
                 "Water Spout"
             ],
-            "nature": "Sassy"
+            "nature": "Naive"
         },
         "Youngster Ray04": {
             "ability": "Pressure",
@@ -16684,7 +16691,8 @@ var CUSTOMHACKSETDEX_EKK = {
             "item": "Choice Band",
             "moves": [
                 "Self-Destruct"
-            ]
+            ],
+            "nature": "Quiet"
         },
         "Elite Four Glacia": {
             "ability": "Pressure",
@@ -16721,7 +16729,8 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Surf",
                 "Substitute",
                 "Ice Shard"
-            ]
+            ],
+            "nature": "Quiet"
         },
         "Team Aqua Grunt #9 @ Mt. Pyre": {
             "ability": "Rain Dish",
@@ -16943,7 +16952,8 @@ var CUSTOMHACKSETDEX_EKK = {
             "item": "Choice Band",
             "moves": [
                 "Explosion"
-            ]
+            ],
+            "nature": "Mild"
         }
     },
     "Whiscash": {
@@ -16969,7 +16979,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Hidden Power Flying",
                 "Rock Slide"
             ],
-            "nature": "Jolly"
+            "nature": "Gentle"
         },
         "Team Aqua Grunt #1 @ Mt. Pyre": {
             "ability": "Swift Swim",
@@ -16981,7 +16991,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Earthquake",
                 "Ice Beam"
             ],
-            "nature": "Jolly"
+            "nature": "Bold"
         },
         "Team Aqua Grunt #2 @ Route 124": {
             "ability": "Swift Swim",
@@ -17100,7 +17110,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Brick Break",
                 "Shadow Ball"
             ],
-            "nature": "Hasty"
+            "nature": "Gentle"
         },
         "Pokéfan Vanessa": {
             "ability": "Cute Charm",
@@ -17209,7 +17219,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Destiny Bond",
                 "Safeguard"
             ],
-            "nature": "Hasty"
+            "nature": "Rash"
         },
         "Team Aqua Grunt #8 @ Mt. Pyre": {
             "ability": "Shadow Tag",
@@ -17231,7 +17241,7 @@ var CUSTOMHACKSETDEX_EKK = {
                 "Mirror Coat",
                 "Destiny Bond"
             ],
-            "nature": "Modest"
+            "nature": "Rash"
         },
         "Team Magma Grunt #12 @ Magma Hideout": {
             "ability": "Shadow Tag",

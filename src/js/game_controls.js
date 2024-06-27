@@ -163,13 +163,13 @@ var HACKGEN = {
 
 var CUSTOMHACKTRAINERNAMES = [
 	undefined,
-	typeof CUSTOMHACKTRAINERNAMES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EK
+	typeof CUSTOMHACKTRAINERNAMES_EKK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EKK
 ];
 
-var CUSTOMHACKTRAINERSPRITES = [
-	undefined,
-	typeof CUSTOMHACKTRAINERSPRITES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERSPRITES_EK
-];
+// var CUSTOMHACKTRAINERSPRITES = [
+// 	undefined,
+// 	typeof CUSTOMHACKTRAINERSPRITES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERSPRITES_EK
+// ];
 
 var CUSTOMHACKPARTYORDER = [
 	undefined,
@@ -178,7 +178,7 @@ var CUSTOMHACKPARTYORDER = [
 
 var CUSTOMHACKFLAGS = [
 	undefined,
-	typeof CUSTOMHACKFLAGS_EK === 'undefined' ? {} : CUSTOMHACKFLAGS_EK
+	typeof CUSTOMHACKFLAGS_EKK === 'undefined' ? {} : CUSTOMHACKFLAGS_EKK
 ];
 
 function updateGenOptions() {

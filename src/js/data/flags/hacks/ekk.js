@@ -1,4 +1,4 @@
-var CUSTOMHACKFLAGS_EK = {
+var CUSTOMHACKFLAGS_EKK = {
     "ai": {
         // Check Bad Move
         1: [
