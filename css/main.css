@@ -701,11 +701,17 @@ table.field {
     background: linear-gradient(to right, #daff08 50%, #dd0b0b 0%);
 }
 
+.trainer-poke.left-side {
+    width: 3em;
+    object-fit: none;
+}
+
 .box-poke, .trainer-poke-list-opposing {
     min-height: 30px;
     display: flex;
     width: 17em;
     flex-wrap: wrap;
+    padding-bottom: 2em;
 }
 
 .deadzone:hover{
