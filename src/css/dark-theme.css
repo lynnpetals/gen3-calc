@@ -186,3 +186,54 @@ input.select2-input {
     background-color: #2c2c2c;
 }
 
+
+#p1{
+    
+    background: repeating-linear-gradient(
+        135deg, 
+        #72041a7c, 
+        #72041a7c 50px, 
+        #b6203e7c 50px, 
+        #b6203e7c 51px
+    );
+    /* background-color: #72041a7c; */
+}
+#p2{
+    background: repeating-linear-gradient(
+        135deg, 
+        #1b41897c, 
+        #1b41897c 50px, 
+        #466cb37c 50px, 
+        #466cb37c 51px
+    );
+    /* background-color: #1b41897c; */
+}
+#p3{
+    background: repeating-linear-gradient(
+        135deg, 
+        #9779257c, 
+        #9779257c 50px, 
+        #daae347c 50px, 
+        #daae347c 51px
+    );
+    /* background-color: #9779257c; */
+}
+
+#p4{
+    background: repeating-linear-gradient(
+        135deg, 
+        #101010e0, 
+        #101010e0 5px, 
+        #202020e0 5px, 
+        #202020e0 10px
+    );
+}
+#p5 {
+    background: repeating-linear-gradient(
+        135deg, 
+        #532c5ce0, 
+        #532c5ce0 5px, 
+        #632f6fe0 5px, 
+        #632f6fe0 10px
+    );
+}

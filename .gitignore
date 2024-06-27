@@ -9,3 +9,4 @@ Thumbs.db
 pnpm-debug.log
 npm-debug.log
 .vscode
+src/js/data/ek-raw-gen3.js

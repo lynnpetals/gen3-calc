@@ -25,7 +25,7 @@ $(".game").change(function() {
 	} else $(".hide-from-games").show();
     generation = gen;
     setdex = !isHack ? CUSTOMSETDEX[gameId] : CUSTOMHACKSETDEX[gameId];
-	partyOrder = !isHack ? CUSTOMPARTYORDER[gameId] : CUSTOMHACKPARTYORDER[gameId];
+	partyOrder = CUSTOMHACKPARTYORDER[1];
 	trainerNames = !isHack ? CUSTOMTRAINERNAMES[gameId] : CUSTOMHACKTRAINERNAMES[gameId];
 	trainerSprites = CUSTOMHACKTRAINERSPRITES_EK;
 	flags = !isHack ? CUSTOMFLAGS[gameId] : CUSTOMHACKFLAGS[gameId];
@@ -154,7 +154,7 @@ var CUSTOMFLAGS = [
 
 var CUSTOMHACKSETDEX = [
 	undefined, // None
-	typeof CUSTOMHACKSETDEX_EK === 'undefined' ? {} : CUSTOMHACKSETDEX_EK
+	typeof CUSTOMHACKSETDEX_EKK === 'undefined' ? {} : CUSTOMHACKSETDEX_EKK
 ];
 
 var HACKGEN = {
@@ -163,7 +163,7 @@ var HACKGEN = {
 
 var CUSTOMHACKTRAINERNAMES = [
 	undefined,
-	typeof CUSTOMHACKTRAINERNAMES_EK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EK
+	typeof CUSTOMHACKTRAINERNAMES_EKK === 'undefined' ? {} : CUSTOMHACKTRAINERNAMES_EKK
 ];
 
 var CUSTOMHACKTRAINERSPRITES = [
@@ -173,7 +173,7 @@ var CUSTOMHACKTRAINERSPRITES = [
 
 var CUSTOMHACKPARTYORDER = [
 	undefined,
-	typeof CUSTOMHACKPARTYORDER_EK === 'undefined' ? {} : CUSTOMHACKPARTYORDER_EK
+	typeof CUSTOMHACKPARTYORDER_EKK === 'undefined' ? {} : CUSTOMHACKPARTYORDER_EKK
 ];
 
 var CUSTOMHACKFLAGS = [
@@ -322,6 +322,8 @@ var phase1TypeMatchups = {
     "Normal-Ghost": 0.0,
     "Fighting-Ghost": 0.0
 };
+
+//TODO: Combine Switch-in and Enemy Party panels
 function predictSwitchOrderEmerald() {
 	var advanced = $("#advanced-bait").is(":checked");
 	var p1 = createPokemon($("#p1"));
@@ -343,7 +345,6 @@ function predictSwitchOrderEmerald() {
 		}
 	}
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
-
 	var hasDupes = (new Set(partySpecies)).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	if (hasDupes) {
@@ -360,7 +361,6 @@ function predictSwitchOrderEmerald() {
 			} else withMarkedDupes[i] = partySpecies[i];
 		}
 	} else withMarkedDupes = partySpecies;
-
 	var partyMons = [];
 	if (hasDupes) for (var i in withMarkedDupes) {
 		var current_trainer = window.CURRENT_TRAINER;
@@ -399,6 +399,10 @@ function predictSwitchOrderEmerald() {
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("👋");
 		}
 	}
+
+	//TODO: condense Pokémon such that instead of six listings, it's a very short one
+	//Phase 1 should always be condensed, phase 2 doesn't need to be condensed since it's all a little complicated and depends on the mon that just died
+
 	for (var i in partyMons) {
 		var dead = partyMons[i];
 		if (deadList.includes(dead)) continue;
@@ -481,7 +485,7 @@ function predictSwitchOrderEmerald() {
 							"Fissure", "Horn Drill", "Guilotine", "Sheer Cold",
 							"Flail", "Frustration", "Low Kick", "Magnitude", "Present", "Return", "Reversal",
 							"Counter", "Mirror Coat",
-							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonicboom", "Super Fang",
+							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonic Boom", "Super Fang",
 							"Bide", "Hidden Power"
 						)) continue;
 						var score = 1;
@@ -505,7 +509,7 @@ function predictSwitchOrderEmerald() {
 							"Fissure", "Horn Drill", "Guilotine", "Sheer Cold",
 							"Flail", "Frustration", "Low Kick", "Magnitude", "Present", "Return", "Reversal",
 							"Counter", "Mirror Coat",
-							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonicboom", "Super Fang",
+							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonic Boom", "Super Fang",
 							"Bide", "Hidden Power"
 						)) continue;
 						if (new calc.Move(GENERATION, $(".last-move-used > select.move-selector").val()).category == "Status") {

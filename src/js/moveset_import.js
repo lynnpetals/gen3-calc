@@ -4,7 +4,6 @@ function placeBsBtn() {
 
 	$("#import.bs-btn").click(function () {
 		var pokes = document.getElementsByClassName("import-team-text")[0].value;
-		console.log(pokes)
 		var name = "Custom Set"
 		addSets(pokes, name);
 		//erase the import text area
@@ -25,9 +24,10 @@ function saveTrainerPokemon(){
 
 function ExportPokemon(pokeInfo) {
 	var pokemon = createPokemon(pokeInfo);
+	var setName = $(".select2-chosen")[0].textContent.split(/^([^(@]+)(\((.+)\))? ?(@ (.+))?/)[3];
 	var EV_counter = 0;
 	var finalText = "";
-	finalText = pokemon.name + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
+	finalText = setName + " (" + pokemon.name + ")" + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
 	finalText += "Level: " + pokemon.level + "\n";
 	finalText += pokemon.nature && gen > 2 ? pokemon.nature + " Nature" + "\n" : "";
 	if (gen === 9) {
@@ -207,8 +207,8 @@ function updateDex(customsets, callback = null) {
 				if (!CUSTOMSETDEX_SM[pokemon]) CUSTOMSETDEX_SM[pokemon] = {};
 				CUSTOMSETDEX_SM[pokemon][moveset] = customsets[pokemon][moveset];
 			} else {
-				if (!CUSTOMHACKSETDEX_EK[pokemon]) CUSTOMHACKSETDEX_EK[pokemon] = {};
-				CUSTOMHACKSETDEX_EK[pokemon][moveset] = customsets[pokemon][moveset];
+				if (!CUSTOMHACKSETDEX_EKK[pokemon]) CUSTOMHACKSETDEX_EKK[pokemon] = {};
+				CUSTOMHACKSETDEX_EKK[pokemon][moveset] = customsets[pokemon][moveset];
 			}
 
 			var poke = {name: pokemon, nameProp: moveset};	
@@ -320,7 +320,6 @@ function addSets(pokes, name) {
 		}
 		if (currentRow.startsWith("- ")) {
 			var move = currentRow.replace("- ", "").replace("[", "").replace("]", "").trim();
-			if (game == "Emerald Kaizo") move = move.replace("High Jump Kick", "Hi Jump Kick").replace("Sonic Boom", "Sonicboom").replace("Ancient Power", "Ancientpower").replace("Feint Attack", "Faint Attack");
 			currentPoke.moves.push(move);
 		}
 	}
@@ -330,7 +329,7 @@ function addSets(pokes, name) {
 		addedpokes++;
 	}
 	if (addedpokes > 0) {
-		$(allPokemon("#importedSetsOptions")).css("display", "inline");
+		// $(allPokemon("#importedSetsOptions")).css("display", "inline");
 	} else {
 		alert("No sets imported, please check your syntax and try again");
 	}
@@ -421,7 +420,7 @@ $(document).ready(function () {
 	if (localStorage.customsets) {
 		customSets = JSON.parse(localStorage.customsets);
 		updateDex(customSets, selectFirstMon);
-		$(allPokemon("#importedSetsOptions")).css("display", "inline");
+		// $(allPokemon("#importedSetsOptions")).css("display", "inline");
 	} else {
 		loadDefaultLists();
 	}
