@@ -33,7 +33,7 @@ function display(gen, attacker, defender, move, field, damage, rawDesc, notation
     if (move.category === 'Status' && !move.named('Nature Power'))
         return "".concat(desc, ": ").concat(damageText);
     var koChanceText = getKOChance(gen, attacker, defender, move, field, damage, err).text;
-    return koChanceText ? "".concat(desc, "\n").concat(damageText, " -- ").concat(koChanceText) : "".concat(desc, "\n").concat(damageText);
+    return koChanceText ? "".concat(desc, ": ").concat(damageText, " -- ").concat(koChanceText) : "".concat(desc, ": ").concat(damageText);
 }
 exports.display = display;
 function displayMove(gen, attacker, defender, move, damage, notation) {

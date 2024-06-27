@@ -7,15 +7,17 @@ $("#p2 .item").bind("keyup change", function () {
 	autosetStatus("#p2", $(this).val());
 });
 
-var resultLocations = [[], []];
+var resultLocations = [[], [], []];
 for (var i = 0; i < 4; i++) {
 	resultLocations[0].push({
 		"move": "#resultMoveL" + (i + 1),
-		"damage": "#resultDamageL" + (i + 1)
+		"damage": "#resultDamageL" + (i + 1),
+		"recoil": "#resultRecoilL" + (i + 1)
 	});
 	resultLocations[1].push({
 		"move": "#resultMoveR" + (i + 1),
-		"damage": "#resultDamageR" + (i + 1)
+		"damage": "#resultDamageR" + (i + 1),
+		"recoil": "#resultRecoilR" + (i + 1)
 	});
 }
 
@@ -76,7 +78,16 @@ function performCalculations() {
 			return secondMove.maxDamage - firstMove.maxDamage;
 		});
 		$(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
-		$(resultLocations[0][i].damage).text(result.moveDesc(notation));
+		console.log(result.moveDesc(notation).split('('))
+		$(resultLocations[0][i].damage).text(result.moveDesc(notation).split('(')[0]);
+		if(result.moveDesc(notation).includes('(')){
+			$(resultLocations[0][i].recoil).attr("hidden", false);
+			$(resultLocations[0][i].recoil).text("("+ result.moveDesc(notation).split('(')[1])	
+		}
+		else{
+			$(resultLocations[0][i].recoil).attr("hidden", true);
+			$(resultLocations[0][i].recoil).text("")
+		}
 
 		// P2
 		result = damageResults[1][i];
@@ -89,8 +100,18 @@ function performCalculations() {
 		p2.maxDamages.sort(function (firstMove, secondMove) {
 			return secondMove.maxDamage - firstMove.maxDamage;
 		});
+		console.log(resultLocations)
 		$(resultLocations[1][i].move + " + label").text(p2.moves[i].name.replace("Hidden Power", "HP"));
-		$(resultLocations[1][i].damage).text(result.moveDesc(notation));
+		$(resultLocations[1][i].damage).text(result.moveDesc(notation).split('(')[0]);
+		if(result.moveDesc(notation).includes('(')){
+			$(resultLocations[1][i].recoil).attr("hidden", false);
+			$(resultLocations[1][i].recoil).text("("+ result.moveDesc(notation).split('(')[1])	
+		}
+		else{
+			$(resultLocations[1][i].recoil).attr("hidden", true);
+			$(resultLocations[1][i].recoil).text("")
+		}
+		// $(resultLocations[0][i].recoil).text
 
 		// BOTH
 		var bestMove;
@@ -117,8 +138,9 @@ function performCalculations() {
 	}
 	bestResult.prop("checked", true);
 	bestResult.change();
-	$("#resultHeaderL").text(p1.name + "'s Moves");
-	$("#resultHeaderR").text(p2.name + "'s Moves");
+	$("#resultHeaderL").text(p1.name);
+	$("#resultHeaderR").text(p2.name);
+	updateTickedHP();
 }
 
 function calculationsColors(p1info, p2, advanced) {
@@ -244,8 +266,8 @@ function displayDamageHits(damage) {
 			resultString += ")"
 		}
 		
-		return resultString
-	}
+		return resultString;
+	};
 	// Fixed Parental Bond Damage
 	if (typeof damage[0] === 'number' && typeof damage[1] === 'number') {
 		return '1st Hit: ' + damage[0] + '; 2nd Hit: ' + damage[1];
@@ -293,7 +315,6 @@ function calculateAllMoves(gen, p1, p1field, p2, p2field) {
 function saveTrigger(ev) {
 	var isUser = ev.originalEvent ? ev.originalEvent.isTrusted : false;
 	if (isUser || ev.added) { //ev.added is for the moves buttons
-		console.log("yippee")
 		$('#save-change').attr("hidden", false);
 	}
 }
@@ -353,8 +374,8 @@ $(document).ready(function () {
 		performCalculations();
 	});
 
+	
 	$(".save-trigger").bind("change keyup", saveTrigger);
-	$(".ic").click(saveTrigger);
 
 	$(".bait-trigger").bind("change keyup", function (ev) {
 		if (window.NO_CALC) {

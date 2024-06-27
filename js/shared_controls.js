@@ -530,11 +530,13 @@ $(".move-selector").change(function () {
 	}
 	moveGroupObj.children(".move-z").prop("checked", false);
 	
-	if (moveName === "Transform") {
-		moveGroupObj.children(".transform").show();
-	} else {
-		moveGroupObj.children(".transform").hide();
-	}
+	//Transform is currently incorrectly implemented, TODO
+
+	// if (moveName === "Transform") {
+	// 	moveGroupObj.children(".transform").show();
+	// } else {
+	// 	moveGroupObj.children(".transform").hide();
+	// }
 });
 
 $(".item").change(function () {
@@ -556,79 +558,26 @@ function smogonAnalysis(pokemonName) {
 	var generation = ["rb", "gs", "rs", "dp", "bw", "xy", "sm", "ss", "sv"][gen - 1];
 	return "https://smogon.com/dex/" + generation + "/pokemon/" + pokemonName.toLowerCase() + "/";
 }
-
-function isMonFromCurrentTrainer(current, neew) {
-	if (current){
-		current = current.dataset.id.split("(")[1].split(",")[0].trim();
-
-		neew = neew.split(",")[0];
-		
-		if ( current.substring(0,current.length -1 )== neew.substring(0,current.length -1 )) {
-			return true
-		} else{
-			return false
-		}
-	}else{
-		return false
-	}
-}
-
 $(".set-selector").change(function () {
 	window.NO_CALC = true;
 	var fullSetName = $(this).val();
-	var nextTrainer = "";
-	var monNumbers = 0
-	if ($(this).hasClass('opposing')) {
-		topPokemonIcon1(fullSetName, $("#p2mon")[0])
-		//topTrainerIcon(fullSetName, $("#p2")[0])
-		CURRENT_TRAINER_POKS = get_trainer_poks(fullSetName)
-		if(prevMon != "" && prevMon.split('(')[1] == fullSetName.split('(')[1]){
-			
+
+	if ($(this).hasClass('opposing') && game != "None") {
+		topPokemonIcon(fullSetName, $("#p2mon")[0])
+		// topPokemonIcon1(fullSetName, $("#p2mon")[0])
+		var oldTrainer = window.CURRENT_TRAINER;
+		var nextPokemon = get_trainer_poks(fullSetName);
+		var trainerHTML = "";
+		var switchHTML = "";
+		$('.trainer-poke-switch-list').html('');
+		for (var i in nextPokemon) {
+			if (nextPokemon[i][0].includes($('input.opposing').val())){
+				continue;
+			}
+			var pokemonName = nextPokemon[i].split(" (")[0];
+			switchHTML += `<span style="width: 100%;"><img class="trainer-poke-switch right-side" src="https://raw.githubusercontent.com/May8th1995/sprites/master/${pokemonName}.png" data-id="${nextPokemon[i]}" title="${nextPokemon[i]}"><label style="width: 60%;" class="trainer-poke-switch-explain" data-id="${nextPokemon[i]}"></label><label class="trainer-poke-switch-xp" data-id="${nextPokemon[i]}"></label></span>`;
+			if (parseInt(i) + 1 < nextPokemon.length) switchHTML += "<br><br>";
 		}
-			else{
-			// var next_poks = CURRENT_TRAINER_POKS.sort(sortmons)
-			var next_poks = CURRENT_TRAINER_POKS
-			monNumbers = next_poks.length;
-			var frag = new DocumentFragment();
-			var switchFrag = new DocumentFragment();
-			var switchHTML = ""
-			$('.trainer-poke-switch-list').html('');
-			for (i in next_poks) {
-				if (next_poks[i][0].includes($('input.opposing').val())) {
-					continue
-				}
-				var pok_name = next_poks[i].split(" (")[0]
-				if (pok_name == "zygarde-10%25") {
-					pok_name = "zygarde-10"
-				}//this ruined my day
-				var newPoke = document.createElement("img");
-				newPoke.className = "trainer-poke right-side";
-				newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${pok_name}.png`;
-				newPoke.title = `${next_poks[i]}`;
-				nextTrainer=`${next_poks[i]}`
-				newPoke.dataset.id = `${CURRENT_TRAINER_POKS[i]}`;
-				var pokeInside = document.createElement("div")
-				pokeInside.append(newPoke)
-				pokeInside.className = "shitty-right-align"
-				frag.append(pokeInside);
-
-				// var newSpan = document.createElement("span");
-				// newPoke.className = "trainer-poke-switch right-side"
-				// newSpan.append(newPoke)
-				// var switchPoke = document.createElement("img")
-				// var neoPoke = newPoke.cloneNode()
-				// newPoke.className = "trainer-poke-switch-target right-side"
-
-				switchHTML += `<span style="width: 100%;"><img class="trainer-poke-switch right-side" src="https://raw.githubusercontent.com/May8th1995/sprites/master/${pok_name}.png" data-id="${next_poks[i]}" title="${next_poks[i]}"><label class="trainer-poke-switch-explain" data-id="${next_poks[i]}"></label><br /><label class="trainer-poke-switch-xp" data-id="${next_poks[i]}"></label></span>`;
-				if (parseInt(i) + 1 < next_poks.length) switchHTML += "<br><br>";
-
-			}
-			}
-		
-		
-		
-	} else {
-		topPokemonIcon2(fullSetName, $("#p1mon")[0])
 	}
 
 	if (flags) {
@@ -682,6 +631,17 @@ $(".set-selector").change(function () {
 		mon.addEventListener("dragstart", dragstart_handler);
 		mon.addEventListener("contextmenu", noMenuClick);
 	}
+	if ($(this).hasClass('player')){
+		topPokemonIcon(fullSetName, $("#p1mon")[0])
+	}
+	$('.trainer-poke-switch-list').html(switchHTML);
+	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
+		mon.addEventListener("contextmenu", noMenuClick);
+	}
+	if (oldTrainer !== window.CURRENT_TRAINER) $('.trainer-poke-switch-list').html(switchHTML);
+	
+	$("label.opposing")[0].textContent = window.CURRENT_TRAINER;
+
 	var pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
 	var setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
 	var pokemon = pokedex[pokemonName];
@@ -845,10 +805,61 @@ q
 		if (pokemon.gender === "N") {
 			pokeObj.find(".gender").parent().hide();
 			pokeObj.find(".gender").val("");
-		} else pokeObj.find(".gender").parent().show();
+		} else {
+			// pokeObj.find(".gender").parent().show();
+			if (regSets && setdex[pokemonName][setName].gender === "M") pokeObj.find(".gender").val("Male");
+			if (regSets && setdex[pokemonName][setName].gender === "F") pokeObj.find(".gender").val("Female");
+		}
+		window.NO_CALC = false;
 	}
-	window.NO_CALC = false;
+
+	if ($(this).hasClass('opposing') && game != "None" && flags) {
+		var ai = 7;
+		for (var i in flags["ai"]) {
+			if (flags["ai"][i].includes(window.CURRENT_TRAINER)) {
+				ai = i;
+				break;
+			}
+		}
+		if (["Emerald Kaizo"].includes(game)) {
+			$("#ai-help").html(`🚩: [${ai}]`);
+			$("#ai-help").attr("flag", ai);
+
+			if (ai == 23) {
+				var pokemon = createPokemon($("#p2"));
+				riskyMoves = [
+					"Attract", "Counter", "Destiny Bond", "Focus Punch", "Mirror Coat",
+					"Sleep Powder", "Hypnosis", "Lovely Kiss", "Spore",
+					"Self-Destruct", "Explosion",
+					"Drill Run", "X-Scissors", "Cross Chop", "Dragon Claw",
+					"Confuse Ray", "Teeter Dance",
+					"Ancient Power", "Silver Wind"
+				];
+				for (var j in pokemon.moves) {
+					var move = pokemon.moves[j].name;
+					if (riskyMoves.includes(move)) $(resultLocations[1][j].move + " + label").addClass("risky-ai-move");
+					else $(resultLocations[1][j].move + " + label").removeClass("risky-ai-move");
+				}
+			} else {
+				for (var j in resultLocations[1])
+				$(resultLocations[1][j].move + " + label").removeClass("risky-ai-move");
+			}
+
+			if ($(".risky-ai-move").length) trySendRiskyAlert();
+		}
+	}
 });
+
+function updateTickedHP(){
+	playtotal = $(".poke-info").find(".hp .total")[0].textContent;
+	optotal = $(".poke-info").find(".hp .total")[1].textContent;
+
+	$('#opposing-eighth')[0].textContent = Math.max(1, Math.trunc(optotal / 8))
+	$('#opposing-sixteenth')[0].textContent = Math.max(1, Math.trunc(optotal / 16))
+	$('#player-eighth')[0].textContent = Math.max(1, Math.trunc(playtotal / 8))
+	$('#player-sixteenth')[0].textContent = Math.max(1, Math.trunc(playtotal / 16))
+	
+}
 
 function trySendRiskyAlert() {
 	if (!localStorage.sentRiskyAlert) {
@@ -1425,10 +1436,7 @@ function getFirstValidSetOption() {
 	var sets = getSetOptions();
 	// NB: The first set is never valid, so we start searching after it.
 	for (var i = 1; i < sets.length; i++) {
-		if (sets[i].id && sets[i].id.indexOf('(Blank Set)') === -1) {
-			//TODO: figure out how to make this save the last accessed pokemon
-			return sets[i];}
-		
+		if (sets[i].id && sets[i].id.indexOf('(Blank Set)') === -1) {return sets[i];}
 	}
 	return undefined;
 }
@@ -1648,8 +1656,9 @@ function loadDefaultLists() {
 			if ($("#randoms").prop("checked")) {
 				return object.pokemon;
 			} else {
-				return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
-			}
+				// return object.text;
+				return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.text) : ("<b>" + object.text + "</b>");
+}
 		},
 		query: function (query) {
 			var pageSize = 30;
@@ -1657,15 +1666,18 @@ function loadDefaultLists() {
 			var options = getSetOptions();
 			for (var i = 0; i < options.length; i++) {
 				var option = options[i];
-				var pokeName = option.pokemon.toUpperCase();
+				// var pokeName = option.pokemon.toUpperCase();
+				var fullName = option.text.toUpperCase();
 				if (!query.term || query.term.toUpperCase().split(" ").every(function (term) {
-					return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0 || pokeName.indexOf(" " + term) >= 0;
+					// return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0;
+					return fullName.indexOf(term) === 0 || fullName.indexOf("-" + term) >= 0 || fullName.indexOf(" " + term) >= 0 || fullName.indexOf("(" + term) >= 0;
+					// return fullName.indexOf(term) === 0 || fullName.indexOf("-" + term) >= 0 || fullName.indexOf("(" + term) >= 0;
 				})) {
 					if ($("#randoms").prop("checked")) {
-						if (option.id) results.push(option);
+if (option.id) results.push(option);
 					} else {
-						results.push(option);
-					}
+					results.push(option);
+}
 				}
 			}
 			query.callback({
@@ -1678,6 +1690,7 @@ function loadDefaultLists() {
 		}
 	});
 }
+
 
 function allPokemon(selector) {
 	var allSelector = "";
@@ -1780,7 +1793,7 @@ function getTrainerNames() {
 			break;
 		
 		case "Emerald Kaizo":
-			allPokemon = CUSTOMHACKSETDEX_EK;
+			allPokemon = CUSTOMHACKSETDEX_EKK;
 			break;
 		
 		default:
@@ -1976,44 +1989,48 @@ function get_trainer_poks(trainerName) {
 	}
 }
 
-
-function topPokemonIcon1(fullname, node) {
+function topPokemonIcon(fullname, node){
 	var mon = { name: fullname.split(" (")[0] };
 	var src = getSrcImgPokemon1(mon);
 	node.src = src;
 }
-function topPokemonIcon2(fullname, node) {
-	var mon = { name: fullname.split(" (")[0] };
-	var src = getSrcImgPokemon2(mon);
-	node.src = src;
+
+function getSrcImgPokemon1(poke) {
+	//edge case
+	if (!poke) {
+		return
+	}
+	if (poke.name.toLowerCase() == "mr. mime"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/mrmime.gif"
+	}
+	
+	if (poke.name.toLowerCase() == "nidoran-m"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranm.gif"
+	}
+	if (poke.name.toLowerCase() == "nidoran-f"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranf.gif"
+	}
+	
+	if (poke.name.toLowerCase() == "ho-oh"){
+		return "https://play.pokemonshowdown.com/sprites/gen3/hooh.gif"
+	}
+	return `https://play.pokemonshowdown.com/sprites/gen3/${poke.name.toLowerCase().replace(" ", "")}.png`
 }
-
-function topTrainerIcon(fullname, node){
-	var trainer = fullname
-
-	spriteSRC = trainerSprites[trainer] 
-
-	node.src = spriteSRC
-// 	trainerSprites
-}
-
-$(document).on('click', '.right-side', function () {
-	prevMon = $('.opposing').val()
-	var set = $(this).attr('data-id');
-	topPokemonIcon1(set, $("#p2mon")[0])
-	topTrainerIcon(set.split(" (")[1].split(")")[0], $("#p2sprite")[0])
-	$('.opposing').val(set);
-	$('.opposing').change();
-	$('.opposing .select2-chosen').text(set);
-})
 
 $(document).on('click', '.left-side', function() {
 	var set = $(this).attr('data-id');
-	topPokemonIcon2(set, $("#p1mon")[0]);
 	$('#save-change').attr("hidden", true);
 	$('.player').val(set);
 	$('.player').change();
 	$('.player .select2-chosen').text(set);
+})
+
+$(document).on('click', '.trainer-poke-switch.right-side', function() {
+	var set = $(this).attr('data-id');
+	$('.opposing').val(set);
+
+	$('.opposing').change();
+	$('.opposing .select2-chosen').text(set);
 })
 
 $(document).on('contextmenu', '.trainer-poke-switch.right-side', function() {
@@ -2023,6 +2040,7 @@ $(document).on('contextmenu', '.trainer-poke-switch.right-side', function() {
 
 	predictSwitchOrder();
 })
+
 
 function selectFirstMon() {
 	var pMons = document.getElementsByClassName("trainer-poke left-side");
@@ -2088,7 +2106,6 @@ function toggleInfoColorCode(){
 }
 
 function trashPokemon() {
-	console.log('hi')
 	var maybeMultiple = document.getElementById("trash-box").getElementsByClassName("trainer-poke");
 	if (maybeMultiple.length == 0){
 		return; //nothing to delete
@@ -2108,6 +2125,15 @@ function trashPokemon() {
 	document.getElementById("trash-box").innerHTML="";
 	localStorage.setItem("customsets", JSON.stringify(customSets));
 	$('#box-poke-list')[0].click();
+}
+
+function topTrainerIcon(fullname, node){
+	var trainer = fullname
+
+	spriteSRC = trainerSprites[trainer] 
+
+	node.src = spriteSRC
+// 	trainerSprites
 }
 
 function nextTrainer() {
@@ -2149,6 +2175,8 @@ function previousTrainer() {
 		}
 	}
 }
+
+
 
 function resetTrainer() {
 	var firstTrainerName = trainerNames[0];
@@ -2353,52 +2381,52 @@ $(document).ready(function () {
 	$('#next-trainer').click(nextTrainer);
 	$('#previous-trainer').click(previousTrainer);
 	$('#reset-trainer').click(resetTrainer);
-	$('#close-item-box, #ball-item').click(openCloseItemBox);
-	
+	$('#cc-spe-border').change(speedBorderSetsChange);
+	$('#cc-ohko-color').change(refreshColorCode);
+	$('#cc-advanced').change(colorCodeUpdate);
+	$('#cc-spe-border')[0].checked=true;
+	$('#cc-ohko-color')[0].checked=true;
 	$('#save-change').click(saveTrainerPokemon);
-	
-	$('.transform').on("click", function() {
-		var transformer = $(this).closest(".poke-info");
-		var target = $(transformer.attr("id") === "p1" ? "#p2" : "#p1");
 
-		
+	//Transform is currently bugged
 
-		transformer.siblings().find(".forme").parent().replaceWith(target.siblings().find(".forme").parent());
-		transformer.find(".type1").val(target.find(".type1").val());
-		transformer.find(".type2").val(target.find(".type2").val());
-		console.log()
-		for (i = 0; i < LEGACY_STATS[gen].length; i++) {
-			var stat = LEGACY_STATS[gen][i];
-			if (stat === "hp") continue;
-			transformer.find("." + stat + " .base").val(target.find("." + stat + " .base").val());
-			transformer.find("." + stat + " .evs").val(target.find("." + stat + " .evs").val());
-			transformer.find("." + stat + " .ivs").val(target.find("." + stat + " .ivs").val());
-			transformer.find("." + stat + " .dvs").val(target.find("." + stat + " .dvs").val());
-		}
-		calcStats(transformer);
-		for (i = 0; i < 4; i++) {
-			var move = target.find(".move" + (i + 1) + " select.move-selector").val();
-			if (move.startsWith("Hidden Power")) {
-				var pokemon = createPokemon(transformer);
-				var baseStats = {};
-				for (var j = 0; j <= LEGACY_STATS[9].length; j++) {
-					var s = LEGACY_STATS[9][j];
-					baseStats[legacyStatToStat(s)] = (pokemon.ivs && pokemon.ivs[s]) || 31;
-				}
+	// $('.transform').on("click", function() {
+	// 	var transformer = $(this).closest(".poke-info");
+	// 	var target = $(transformer.attr("id") === "p1" ? "#p2" : "#p1");
+
+	// 	transformer.siblings().find(".forme").parent().replaceWith(target.siblings().find(".forme").parent());
+	// 	transformer.find(".type1").val(target.find(".type1").val());
+	// 	transformer.find(".type2").val(target.find(".type2").val());
+	// 	for (i = 0; i < LEGACY_STATS[gen].length; i++) {
+	// 		var stat = LEGACY_STATS[gen][i];
+	// 		if (stat === "hp") continue;
+	// 		transformer.find("." + stat + " .total").val(target.find("." + stat + " .total").val());
+	// 	}
+	// 	transformer.find(".nature").val(target.find(".nature").val());
+	// 	calcStats(transformer);
+	// 	for (i = 0; i < 4; i++) {
+	// 		var move = target.find(".move" + (i + 1) + " select.move-selector").val();
+	// 		if (move.startsWith("Hidden Power")) {
+	// 			var pokemon = createPokemon(transformer);
+	// 			var ivs = {};
+	// 			for (var j = 0; j <= LEGACY_STATS[9].length; j++) {
+	// 				var s = LEGACY_STATS[9][j];
+	// 				ivs[legacyStatToStat(s)] = (pokemon.ivs && pokemon.ivs[s]) || 31;
+	// 			}
 				
-				var expectedType = calc.Stats.getHiddenPower(GENERATION, ivs).type;
-				move = "Hidden Power " + expectedType;
-			}
-			setSelectValueIfValid(transformer.find(".move" + (i + 1) + " select.move-selector"), move, "(No Move)");
-			transformer.find(".move" + (i + 1) + " select.move-selector").change();
-		}
-		transformer.find(".ability").val(target.find(".ability").val());
-		transformer.find(".ability").change();
-		if (gen > 4) transformer.siblings().find(".gender").replaceWith(target.siblings().find(".gender"));
-	});
+	// 			var expectedType = calc.Stats.getHiddenPower(GENERATION, ivs).type;
+	// 			move = "Hidden Power " + expectedType;
+	// 		}
+	// 		setSelectValueIfValid(transformer.find(".move" + (i + 1) + " select.move-selector"), move, "(No Move)");
+	// 		transformer.find(".move" + (i + 1) + " select.move-selector").change();
+	// 	}
+	// 	transformer.find(".ability").val(target.find(".ability").val());
+	// 	transformer.find(".ability").change();
+	// 	if (gen > 4) transformer.siblings().find(".gender").replaceWith(target.siblings().find(".gender"));
+	// });
 	
 	$('#trainer-nav-help').click(() => {
-		alert("This section displays the enemy party in the correct in-game order. Note that that is not always the order Pokémon are sent out. Click on a Pokémon sprite to load that Pokémon.\n\n" + 
+		alert("This section displays the enemy party in the correct in-game order, from top to bottom. Each Pokémon will list the next Pokémon that comes out after it faints. To mark dead Pokémon, right-click the Pokémon, and it will move onto calculating with the remaining mons. Left-click will load the Pokémon and select the set.\n\n" + 
 			  "If a Pokémon is marked with a red outline, there is a chance that the enemy will make a switch to that Pokémon the turn after you use a move that is also be marked with a red background. In case of multiple outlined Pokémon, the switch will only happen to a Pokémon that resists that move.");
 	});
 	$('#bait-help').click(() => {

@@ -25,7 +25,7 @@ $(".game").change(function() {
 	} else $(".hide-from-games").show();
     generation = gen;
     setdex = !isHack ? CUSTOMSETDEX[gameId] : CUSTOMHACKSETDEX[gameId];
-	partyOrder = !isHack ? CUSTOMPARTYORDER[gameId] : CUSTOMHACKPARTYORDER[gameId];
+	partyOrder = CUSTOMHACKPARTYORDER[1];
 	trainerNames = !isHack ? CUSTOMTRAINERNAMES[gameId] : CUSTOMHACKTRAINERNAMES[gameId];
 	trainerSprites = CUSTOMHACKTRAINERSPRITES_EK;
 	flags = !isHack ? CUSTOMFLAGS[gameId] : CUSTOMHACKFLAGS[gameId];
@@ -322,6 +322,8 @@ var phase1TypeMatchups = {
     "Normal-Ghost": 0.0,
     "Fighting-Ghost": 0.0
 };
+
+//TODO: Combine Switch-in and Enemy Party panels
 function predictSwitchOrderEmerald() {
 	var advanced = $("#advanced-bait").is(":checked");
 	var p1 = createPokemon($("#p1"));
@@ -343,7 +345,6 @@ function predictSwitchOrderEmerald() {
 		}
 	}
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
-
 	var hasDupes = (new Set(partySpecies)).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	if (hasDupes) {
@@ -360,7 +361,6 @@ function predictSwitchOrderEmerald() {
 			} else withMarkedDupes[i] = partySpecies[i];
 		}
 	} else withMarkedDupes = partySpecies;
-
 	var partyMons = [];
 	if (hasDupes) for (var i in withMarkedDupes) {
 		var current_trainer = window.CURRENT_TRAINER;
@@ -399,6 +399,10 @@ function predictSwitchOrderEmerald() {
 			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("👋");
 		}
 	}
+
+	//TODO: condense Pokémon such that instead of six listings, it's a very short one
+	//Phase 1 should always be condensed, phase 2 doesn't need to be condensed since it's all a little complicated and depends on the mon that just died
+
 	for (var i in partyMons) {
 		var dead = partyMons[i];
 		if (deadList.includes(dead)) continue;
@@ -481,7 +485,7 @@ function predictSwitchOrderEmerald() {
 							"Fissure", "Horn Drill", "Guilotine", "Sheer Cold",
 							"Flail", "Frustration", "Low Kick", "Magnitude", "Present", "Return", "Reversal",
 							"Counter", "Mirror Coat",
-							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonicboom", "Super Fang",
+							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonic Boom", "Super Fang",
 							"Bide", "Hidden Power"
 						)) continue;
 						var score = 1;
@@ -505,7 +509,7 @@ function predictSwitchOrderEmerald() {
 							"Fissure", "Horn Drill", "Guilotine", "Sheer Cold",
 							"Flail", "Frustration", "Low Kick", "Magnitude", "Present", "Return", "Reversal",
 							"Counter", "Mirror Coat",
-							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonicboom", "Super Fang",
+							"Dragon Rage", "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Sonic Boom", "Super Fang",
 							"Bide", "Hidden Power"
 						)) continue;
 						if (new calc.Move(GENERATION, $(".last-move-used > select.move-selector").val()).category == "Status") {
@@ -529,14 +533,17 @@ function predictSwitchOrderEmerald() {
 		var xp = Math.floor(Math.floor(pokedex[dead.species].expYield * dead.level / 7) * 1.5);
 
 		if (nextMon) {
-			var newPoke = document.createElement("img");
-			newPoke.className = "trainer-poke-switched right-side";
-			nextMonAsFilename = nextMon.split(' (')[0]
-			newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMonAsFilename}.png`;
-			newPoke.title = `${phase} [${nextMon}]`;
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
-			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
+			$(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(`${nextMon} (Phase ${phase})`);
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html(``);
 			$(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
+			
+			// var newPoke = document.createElement("img");
+			// newPoke.className = "trainer-poke-switched right-side";
+			// newPoke.src = `https://raw.githubusercontent.com/May8th1995/sprites/master/${nextMon}.png`;
+			// newPoke.title = `${phase}`;
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).html("");
+			// $(`.trainer-poke-switch-explain[data-id='${dead.setName}']`).append(newPoke)
+			// $(`.trainer-poke-switch-xp[data-id='${dead.setName}']`).html(`+${xp}`);
 		}
 	}
 }
