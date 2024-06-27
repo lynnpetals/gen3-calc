@@ -896,3 +896,6 @@ label.opposing, label.player {
     height: 2em;
     align-content: center;
   }
+.trainer-poke-switch-explain {
+  margin-left: 1em;
+}
