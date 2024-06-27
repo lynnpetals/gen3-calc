@@ -1,0 +1,11 @@
+import { Game, Generation } from '../data/interface';
+import { RawDesc } from '../desc';
+import { Pokemon } from '../pokemon';
+import { Move } from '../move';
+import { Field } from '../field';
+import { Result } from '../result';
+export declare function calculateADV(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, field: Field): Result;
+export declare function calculateBasePowerADV(attacker: Pokemon, defender: Pokemon, move: Move, desc: RawDesc, game?: Game, hit?: number): number;
+export declare function calculateBPModsADV(attacker: Pokemon, move: Move, desc: RawDesc, basePower: number): number;
+export declare function calculateAttackADV(gen: Generation, attacker: Pokemon, defender: Pokemon, move: Move, desc: RawDesc, field: Field, isCritical?: boolean): number;
+export declare function calculateDefenseADV(gen: Generation, defender: Pokemon, move: Move, desc: RawDesc, field: Field, isCritical?: boolean): number;
