@@ -254,7 +254,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Gentle"
         },
-        "Gentleman Nate": {
+        "Gentleman Nate [Tag]": {
             "ability": "Synchronize",
             "item": "Lum Berry",
             "level": 66,
@@ -399,7 +399,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Gentle"
         },
-        "Team Magma Grunt #2 @ Jagged Pass": {
+        "Team Magma Grunt #2 @ Jagged Pass [Tag]": {
             "ability": "Natural Cure",
             "item": "Scope Lens",
             "level": 35,
@@ -890,7 +890,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Cooltrainer Virgil": {
+        "Cooltrainer Virgil [Tag]": {
             "ability": "Battle Armor",
             "item": "Lum Berry",
             "level": 66,
@@ -1220,7 +1220,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Levitate",
             "item": "Choice Band",
             "level": 22,
@@ -1383,7 +1383,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Bayleef": {
-        "Picnicker Irene": {
+        "Picnicker Irene [Tag]": {
             "ability": "Overgrow",
             "item": "Leftovers",
             "level": 25,
@@ -1990,7 +1990,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Butterfree": {
-        "Aroma Lady Celina": {
+        "Aroma Lady Celina [Tag]": {
             "ability": "Compoundeyes",
             "level": 25,
             "moves": [
@@ -2250,7 +2250,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quiet"
         },
-        "Parasol Lady Kayley": {
+        "Parasol Lady Kayley [Tag]": {
             "ability": "Forecast",
             "item": "Quick Claw",
             "level": 74,
@@ -2274,7 +2274,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Team Magma Grunt #1 @ Mossdeep Space Center": {
+        "Team Magma Grunt #1 @ Mossdeep Space Center [Tag]": {
             "ability": "Forecast",
             "item": "Lum Berry",
             "level": 67,
@@ -2451,7 +2451,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Magma Admin Tabitha #2": {
+        "Magma Admin Tabitha #2 [Tag]": {
             "ability": "Blaze",
             "item": "Lum Berry",
             "level": 71,
@@ -2617,7 +2617,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Relaxed"
         },
-        "Kindler Hayden": {
+        "Kindler Hayden [Tag]": {
             "ability": "Blaze",
             "item": "Lum Berry",
             "level": 25,
@@ -2687,7 +2687,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Collector Edwin": {
+        "Collector Edwin [Tag]": {
             "ability": "Levitate",
             "ivs": {
                 "at": 24,
@@ -2741,7 +2741,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quiet"
         },
-        "Psychic Maura": {
+        "Psychic Maura [Tag]": {
             "ability": "Levitate",
             "item": "Leftovers",
             "level": 66,
@@ -2876,7 +2876,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lonely"
         },
-        "Gentleman Nate": {
+        "Gentleman Nate [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 67,
@@ -2924,7 +2924,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Brave"
         },
-        "Psychic Jacki": {
+        "Psychic Jacki [Tag]": {
             "ability": "Levitate",
             "item": "Choice Band",
             "level": 74,
@@ -2933,7 +2933,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lax"
         },
-        "Psychic Preston": {
+        "Psychic Preston [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 66,
@@ -3026,7 +3026,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lax"
         },
-        "Cooltrainer Virgil": {
+        "Cooltrainer Virgil [Tag]": {
             "ability": "Cute Charm",
             "item": "Leftovers",
             "level": 67,
@@ -3134,7 +3134,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Brave"
         },
-        "Team Magma Grunt #1 @ Mossdeep Space Center": {
+        "Team Magma Grunt #1 @ Mossdeep Space Center [Tag]": {
             "ability": "Cute Charm",
             "item": "Lum Berry",
             "level": 67,
@@ -3526,7 +3526,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Cooltrainer Jazmyn": {
+        "Cooltrainer Jazmyn [Tag]": {
             "ability": "Inner Focus",
             "item": "Quick Claw",
             "level": 76,
@@ -3624,7 +3624,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Croconaw": {
-        "Picnicker Irene": {
+        "Picnicker Irene [Tag]": {
             "ability": "Torrent",
             "item": "Mystic Water",
             "level": 25,
@@ -3849,7 +3849,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Brave"
         },
-        "Team Aqua Grunt #2 @ Route 124": {
+        "Team Aqua Grunt #2 @ Route 124 [Tag]": {
             "ability": "Swift Swim",
             "item": "Lum Berry",
             "level": 65,
@@ -4010,7 +4010,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Cooltrainer Wendy": {
+        "Cooltrainer Wendy [Tag]": {
             "ability": "Early Bird",
             "item": "Quick Claw",
             "level": 75,
@@ -4166,7 +4166,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Team Magma Grunt #1 @ Jagged Pass": {
+        "Team Magma Grunt #1 @ Jagged Pass [Tag]": {
             "ability": "Battle Armor",
             "item": "Choice Band",
             "level": 36,
@@ -4522,7 +4522,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Dugtrio": {
-        "Collector Ed": {
+        "Collector Ed [Tag]": {
             "ability": "Arena Trap",
             "item": "Choice Band",
             "level": 74,
@@ -4552,7 +4552,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Expert Macey": {
+        "Expert Macey [Tag]": {
             "ability": "Arena Trap",
             "item": "Leftovers",
             "level": 69,
@@ -4684,7 +4684,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Mild"
         },
-        "Hex Maniac Kathleen": {
+        "Hex Maniac Kathleen [Tag]": {
             "ability": "Pressure",
             "item": "Leftovers",
             "level": 66,
@@ -4987,7 +4987,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Expert Clifford": {
+        "Expert Clifford [Tag]": {
             "ability": "Static",
             "item": "Choice Band",
             "level": 67,
@@ -5020,7 +5020,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Guitarist Fernando": {
+        "Guitarist Fernando [Tag]": {
             "ability": "Static",
             "item": "Liechi Berry",
             "level": 74,
@@ -5065,7 +5065,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Team Magma Grunt #1 @ Jagged Pass": {
+        "Team Magma Grunt #1 @ Jagged Pass [Tag]": {
             "ability": "Static",
             "item": "Lum Berry",
             "level": 35,
@@ -5166,7 +5166,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quirky"
         },
-        "Gentleman Nate": {
+        "Gentleman Nate [Tag]": {
             "ability": "Synchronize",
             "item": "Lum Berry",
             "level": 67,
@@ -5320,7 +5320,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Alix": {
+        "Psychic Alix [Tag]": {
             "ability": "Chlorophyll",
             "level": 43,
             "moves": [
@@ -5331,7 +5331,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lax"
         },
-        "Psychic Samantha": {
+        "Psychic Samantha [Tag]": {
             "ability": "Chlorophyll",
             "item": "Lum Berry",
             "level": 66,
@@ -5403,7 +5403,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Team Magma Grunt #1 @ Mossdeep Space Center": {
+        "Team Magma Grunt #1 @ Mossdeep Space Center [Tag]": {
             "ability": "Chlorophyll",
             "item": "Lum Berry",
             "level": 67,
@@ -5441,7 +5441,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bold"
         },
-        "Guitarist Fernando": {
+        "Guitarist Fernando [Tag]": {
             "ability": "Vital Spirit",
             "item": "Quick Claw",
             "level": 74,
@@ -5637,7 +5637,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Relaxed"
         },
-        "Bird Keeper Josue": {
+        "Bird Keeper Josue [Tag]": {
             "ability": "Early Bird",
             "item": "Scope Lens",
             "level": 66,
@@ -5661,7 +5661,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Bird Keeper Phil": {
+        "Bird Keeper Phil [Tag]": {
             "ability": "Early Bird",
             "item": "Choice Band",
             "level": 45,
@@ -6071,7 +6071,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Modest"
         },
-        "Magma Leader Maxie #3": {
+        "Magma Leader Maxie #3 [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 71,
@@ -6282,7 +6282,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Gastly": {
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Levitate",
             "item": "Spell Tag",
             "level": 22,
@@ -6368,7 +6368,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Hex Maniac Kathleen": {
+        "Hex Maniac Kathleen [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 68,
@@ -6380,7 +6380,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Hex Maniac Kindra": {
+        "Hex Maniac Kindra [Tag]": {
             "ability": "Levitate",
             "item": "Quick Claw",
             "level": 74,
@@ -6392,7 +6392,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Hardy"
         },
-        "Magma Admin Tabitha #2": {
+        "Magma Admin Tabitha #2 [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 70,
@@ -6464,7 +6464,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Team Magma Grunt #2 @ Jagged Pass": {
+        "Team Magma Grunt #2 @ Jagged Pass [Tag]": {
             "ability": "Levitate",
             "item": "Bright Powder",
             "level": 36,
@@ -6553,7 +6553,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Girafarig": {
-        "Psychic Preston": {
+        "Psychic Preston [Tag]": {
             "ability": "Early Bird",
             "item": "Lum Berry",
             "level": 66,
@@ -6765,7 +6765,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Sassy"
         },
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Hyper Cutter",
             "item": "Choice Band",
             "level": 21,
@@ -6788,7 +6788,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Gloom": {
-        "Aroma Lady Celina": {
+        "Aroma Lady Celina [Tag]": {
             "ability": "Chlorophyll",
             "level": 26,
             "moves": [
@@ -7038,7 +7038,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Team Aqua Grunt #2 @ Route 124": {
+        "Team Aqua Grunt #2 @ Route 124 [Tag]": {
             "ability": "Swift Swim",
             "item": "Lum Berry",
             "level": 64,
@@ -7111,7 +7111,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Adamant"
         },
-        "Cooltrainer Hannah": {
+        "Cooltrainer Hannah [Tag]": {
             "ability": "Intimidate",
             "item": "Lum Berry",
             "level": 66,
@@ -7135,7 +7135,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Adamant"
         },
-        "Parasol Lady Missy": {
+        "Parasol Lady Missy [Tag]": {
             "ability": "Intimidate",
             "item": "Soft Sand",
             "level": 44,
@@ -7412,7 +7412,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Psychic Alix": {
+        "Psychic Alix [Tag]": {
             "ability": "Thick Fat",
             "level": 43,
             "moves": [
@@ -7423,7 +7423,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Blake": {
+        "Psychic Blake [Tag]": {
             "ability": "Thick Fat",
             "item": "Leftovers",
             "level": 66,
@@ -7435,7 +7435,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Timid"
         },
-        "Psychic Cameron": {
+        "Psychic Cameron [Tag]": {
             "ability": "Thick Fat",
             "item": "Quick Claw",
             "level": 74,
@@ -7541,7 +7541,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Cooltrainer Wendy": {
+        "Cooltrainer Wendy [Tag]": {
             "ability": "Intimidate",
             "item": "Quick Claw",
             "level": 75,
@@ -7679,7 +7679,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Hariyama": {
-        "Battle Girl Helene": {
+        "Battle Girl Helene [Tag]": {
             "ability": "Thick Fat",
             "level": 44,
             "moves": [
@@ -7807,7 +7807,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Bug Maniac Davis": {
+        "Bug Maniac Davis [Tag]": {
             "ability": "Guts",
             "item": "Quick Claw",
             "level": 74,
@@ -7843,7 +7843,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Expert Frederick": {
+        "Expert Frederick [Tag]": {
             "ability": "Guts",
             "item": "Quick Claw",
             "level": 76,
@@ -7869,7 +7869,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Hitmonchan": {
-        "Black Belt Daisuke": {
+        "Black Belt Daisuke [Tag]": {
             "ability": "Guts",
             "item": "Spell Tag",
             "ivs": {
@@ -7913,7 +7913,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Expert Nicholas": {
+        "Expert Nicholas [Tag]": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 67,
@@ -7950,7 +7950,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Hitmonlee": {
-        "Black Belt Daisuke": {
+        "Black Belt Daisuke [Tag]": {
             "ability": "Limber",
             "item": "Silk Scarf",
             "ivs": {
@@ -7982,7 +7982,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Calm"
         },
-        "Cooltrainer Virgil": {
+        "Cooltrainer Virgil [Tag]": {
             "ability": "Limber",
             "item": "Lum Berry",
             "level": 66,
@@ -8032,7 +8032,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Brave"
         },
-        "Black Belt Daisuke": {
+        "Black Belt Daisuke [Tag]": {
             "ability": "Intimidate",
             "item": "Hard Stone",
             "ivs": {
@@ -8052,7 +8052,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quiet"
         },
-        "Cooltrainer Hannah": {
+        "Cooltrainer Hannah [Tag]": {
             "ability": "Intimidate",
             "item": "Lum Berry",
             "level": 66,
@@ -8270,7 +8270,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Sassy"
         },
-        "Team Magma Grunt #2 @ Mossdeep Space Center": {
+        "Team Magma Grunt #2 @ Mossdeep Space Center [Tag]": {
             "ability": "Intimidate",
             "item": "Lum Berry",
             "level": 67,
@@ -8383,7 +8383,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Psychic Blake": {
+        "Psychic Blake [Tag]": {
             "ability": "Insomnia",
             "item": "Leftovers",
             "level": 66,
@@ -8395,7 +8395,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Adamant"
         },
-        "Psychic Cameron": {
+        "Psychic Cameron [Tag]": {
             "ability": "Insomnia",
             "item": "Quick Claw",
             "level": 74,
@@ -8506,7 +8506,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Ivysaur": {
-        "Picnicker Bianca": {
+        "Picnicker Bianca [Tag]": {
             "ability": "Overgrow",
             "level": 24,
             "moves": [
@@ -8759,7 +8759,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Careful"
         },
-        "Ninja Boy Jonas": {
+        "Ninja Boy Jonas [Tag]": {
             "ability": "Chlorophyll",
             "item": "Lum Berry",
             "level": 75,
@@ -8869,7 +8869,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Psychic Samantha": {
+        "Psychic Samantha [Tag]": {
             "ability": "Oblivious",
             "item": "Lum Berry",
             "level": 66,
@@ -9287,7 +9287,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Hex Maniac Kindra": {
+        "Hex Maniac Kindra [Tag]": {
             "ability": "Swift Swim",
             "item": "Quick Claw",
             "level": 74,
@@ -9708,7 +9708,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Hex Maniac Sylvia": {
+        "Hex Maniac Sylvia [Tag]": {
             "ability": "Shell Armor",
             "item": "Quick Claw",
             "level": 69,
@@ -9973,7 +9973,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Sr and Jr Tyra & Ivy": {
+        "Sr And Jr Tyra & Ivy": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 35,
@@ -10201,7 +10201,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Modest"
         },
-        "Guitarist Fernando": {
+        "Guitarist Fernando [Tag]": {
             "ability": "Swift Swim",
             "item": "Quick Claw",
             "level": 74,
@@ -10261,7 +10261,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Team Aqua Grunt #1 @ Route 124": {
+        "Team Aqua Grunt #1 @ Route 124 [Tag]": {
             "ability": "Swift Swim",
             "item": "Lum Berry",
             "level": 64,
@@ -10431,7 +10431,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Psychic Maura": {
+        "Psychic Maura [Tag]": {
             "ability": "Levitate",
             "item": "Leftovers",
             "level": 66,
@@ -11240,7 +11240,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Mantine": {
-        "Cooltrainer Wendy": {
+        "Cooltrainer Wendy [Tag]": {
             "ability": "Swift Swim",
             "item": "Quick Claw",
             "level": 75,
@@ -11384,7 +11384,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Lightningrod",
             "item": "Thick Club",
             "level": 75,
@@ -11432,7 +11432,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Gentle"
         },
-        "Ruin Maniac Andres": {
+        "Ruin Maniac Andres [Tag]": {
             "ability": "Lightningrod",
             "item": "Thick Club",
             "level": 66,
@@ -11444,7 +11444,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naive"
         },
-        "Sr and Jr Kim & Iris": {
+        "Sr And Jr Kim & Iris": {
             "ability": "Lightningrod",
             "item": "Thick Club",
             "level": 66,
@@ -11586,7 +11586,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lax"
         },
-        "Bug Maniac Davis": {
+        "Bug Maniac Davis [Tag]": {
             "ability": "Intimidate",
             "item": "Quick Claw",
             "level": 74,
@@ -11636,7 +11636,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bold"
         },
-        "Parasol Lady Missy": {
+        "Parasol Lady Missy [Tag]": {
             "ability": "Intimidate",
             "item": "Leftovers",
             "level": 46,
@@ -11788,7 +11788,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Relaxed"
         },
-        "Sr and Jr Kate & Joy": {
+        "Sr And Jr Kate & Joy": {
             "ability": "Pure Power",
             "item": "Choice Band",
             "level": 53,
@@ -11914,7 +11914,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Hardy"
         },
-        "Aroma Lady Violet": {
+        "Aroma Lady Violet [Tag]": {
             "ability": "Thick Fat",
             "item": "Quick Claw",
             "level": 74,
@@ -12118,7 +12118,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Expert Clifford": {
+        "Expert Clifford [Tag]": {
             "ability": "Clear Body",
             "item": "Lum Berry",
             "level": 66,
@@ -12142,7 +12142,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lax"
         },
-        "Magma Leader Maxie #3": {
+        "Magma Leader Maxie #3 [Tag]": {
             "ability": "Clear Body",
             "item": "Lum Berry",
             "level": 72,
@@ -12154,7 +12154,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Psychic Jacki": {
+        "Psychic Jacki [Tag]": {
             "ability": "Clear Body",
             "item": "Quick Claw",
             "level": 74,
@@ -12390,7 +12390,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Miltank": {
-        "Cooltrainer Brooke": {
+        "Cooltrainer Brooke [Tag]": {
             "ability": "Thick Fat",
             "item": "Lum Berry",
             "level": 30,
@@ -12602,7 +12602,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Hex Maniac Kathleen": {
+        "Hex Maniac Kathleen [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 69,
@@ -12614,7 +12614,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Hex Maniac Kindra": {
+        "Hex Maniac Kindra [Tag]": {
             "ability": "Levitate",
             "item": "Quick Claw",
             "level": 74,
@@ -12638,7 +12638,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Hasty"
         },
-        "Hex Maniac Sylvia": {
+        "Hex Maniac Sylvia [Tag]": {
             "ability": "Levitate",
             "item": "Quick Claw",
             "level": 69,
@@ -13701,7 +13701,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Sr and Jr Anna & Meg": {
+        "Sr And Jr Anna & Meg": {
             "ability": "Insomnia",
             "item": "Leftovers",
             "level": 20,
@@ -13904,7 +13904,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Omanyte": {
-        "Collector Edwin": {
+        "Collector Edwin [Tag]": {
             "ability": "Swift Swim",
             "level": 19,
             "moves": [
@@ -13953,7 +13953,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Team Aqua Grunt #1 @ Route 124": {
+        "Team Aqua Grunt #1 @ Route 124 [Tag]": {
             "ability": "Swift Swim",
             "item": "Mystic Water",
             "level": 65,
@@ -14081,7 +14081,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Pelipper": {
-        "Bird Keeper Alberto": {
+        "Bird Keeper Alberto [Tag]": {
             "ability": "Swift Swim",
             "item": "Quick Claw",
             "level": 74,
@@ -14747,7 +14747,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Poliwhirl": {
-        "Camper Tyron": {
+        "Camper Tyron [Tag]": {
             "ability": "Swift Swim",
             "item": "Never-Melt Ice",
             "level": 27,
@@ -14948,7 +14948,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Porygon": {
-        "Collector Edwin": {
+        "Collector Edwin [Tag]": {
             "ability": "Trace",
             "level": 19,
             "moves": [
@@ -15191,7 +15191,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Quagsire": {
-        "Cooltrainer Brooke": {
+        "Cooltrainer Brooke [Tag]": {
             "ability": "Water Absorb",
             "item": "Leftovers",
             "level": 30,
@@ -15312,7 +15312,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Quilava": {
-        "Picnicker Irene": {
+        "Picnicker Irene [Tag]": {
             "ability": "Blaze",
             "item": "Silk Scarf",
             "level": 25,
@@ -15417,7 +15417,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Adamant"
         },
-        "Parasol Lady Kayley": {
+        "Parasol Lady Kayley [Tag]": {
             "ability": "Swift Swim",
             "item": "Quick Claw",
             "level": 74,
@@ -15464,7 +15464,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Team Aqua Grunt #1 @ Route 124": {
+        "Team Aqua Grunt #1 @ Route 124 [Tag]": {
             "ability": "Swift Swim",
             "item": "Lum Berry",
             "level": 65,
@@ -15523,7 +15523,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Careful"
         },
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Lightningrod",
             "item": "Quick Claw",
             "level": 75,
@@ -16050,7 +16050,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Rhydon": {
-        "Cooltrainer Braxton": {
+        "Cooltrainer Braxton [Tag]": {
             "ability": "Lightningrod",
             "item": "Quick Claw",
             "level": 77,
@@ -16074,7 +16074,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quiet"
         },
-        "Ruin Maniac Andres": {
+        "Ruin Maniac Andres [Tag]": {
             "ability": "Lightningrod",
             "item": "Quick Claw",
             "level": 66,
@@ -16197,7 +16197,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Salamence": {
-        "Cooltrainer Jazmyn": {
+        "Cooltrainer Jazmyn [Tag]": {
             "ability": "Intimidate",
             "item": "Quick Claw",
             "level": 76,
@@ -16293,7 +16293,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Gentle"
         },
-        "Magma Admin Tabitha #2": {
+        "Magma Admin Tabitha #2 [Tag]": {
             "ability": "Intimidate",
             "item": "Lum Berry",
             "level": 70,
@@ -16555,7 +16555,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Modest"
         },
-        "Bug Maniac Davis": {
+        "Bug Maniac Davis [Tag]": {
             "ability": "Swarm",
             "item": "Quick Claw",
             "level": 74,
@@ -16615,7 +16615,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lax"
         },
-        "Team Magma Grunt #2 @ Jagged Pass": {
+        "Team Magma Grunt #2 @ Jagged Pass [Tag]": {
             "ability": "Swarm",
             "item": "Focus Band",
             "level": 35,
@@ -16903,7 +16903,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quiet"
         },
-        "Ninja Boy Jonas": {
+        "Ninja Boy Jonas [Tag]": {
             "ability": "Wonder Guard",
             "item": "Lum Berry",
             "level": 77,
@@ -17246,7 +17246,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Timid"
         },
-        "Bird Keeper Alberto": {
+        "Bird Keeper Alberto [Tag]": {
             "ability": "Keen Eye",
             "item": "Quick Claw",
             "level": 74,
@@ -17294,7 +17294,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Mild"
         },
-        "Cooltrainer Brooke": {
+        "Cooltrainer Brooke [Tag]": {
             "ability": "Keen Eye",
             "item": "Leftovers",
             "level": 30,
@@ -17332,7 +17332,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Skiploom": {
-        "Aroma Lady Celina": {
+        "Aroma Lady Celina [Tag]": {
             "ability": "Chlorophyll",
             "level": 25,
             "moves": [
@@ -17407,7 +17407,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quirky"
         },
-        "Expert Nicholas": {
+        "Expert Nicholas [Tag]": {
             "ability": "Truant",
             "item": "Lum Berry",
             "level": 67,
@@ -17531,7 +17531,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Mild"
         },
-        "Psychic Samantha": {
+        "Psychic Samantha [Tag]": {
             "ability": "Shell Armor",
             "item": "Leftovers",
             "level": 66,
@@ -17604,7 +17604,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Psychic Blake": {
+        "Psychic Blake [Tag]": {
             "ability": "Natural Cure",
             "item": "Leftovers",
             "level": 66,
@@ -17940,7 +17940,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Gentle"
         },
-        "Expert Clifford": {
+        "Expert Clifford [Tag]": {
             "ability": "Guts",
             "item": "Choice Band",
             "level": 66,
@@ -17949,7 +17949,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naive"
         },
-        "Expert Frederick": {
+        "Expert Frederick [Tag]": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 76,
@@ -18104,7 +18104,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Psychic Cameron": {
+        "Psychic Cameron [Tag]": {
             "ability": "Levitate",
             "item": "Quick Claw",
             "level": 74,
@@ -18116,7 +18116,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Mild"
         },
-        "Psychic Preston": {
+        "Psychic Preston [Tag]": {
             "ability": "Levitate",
             "item": "Lum Berry",
             "level": 66,
@@ -18140,7 +18140,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Team Magma Grunt #1 @ Jagged Pass": {
+        "Team Magma Grunt #1 @ Jagged Pass [Tag]": {
             "ability": "Levitate",
             "item": "Soft Sand",
             "level": 35,
@@ -18530,7 +18530,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Mild"
         },
-        "Psychic Jacki": {
+        "Psychic Jacki [Tag]": {
             "ability": "Natural Cure",
             "item": "Quick Claw",
             "level": 74,
@@ -19084,7 +19084,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Swellow": {
-        "Bird Keeper Alberto": {
+        "Bird Keeper Alberto [Tag]": {
             "ability": "Guts",
             "item": "Choice Band",
             "level": 74,
@@ -19152,7 +19152,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naive"
         },
-        "Cooltrainer Jazmyn": {
+        "Cooltrainer Jazmyn [Tag]": {
             "ability": "Guts",
             "item": "Quick Claw",
             "level": 76,
@@ -19176,7 +19176,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Expert Nicholas": {
+        "Expert Nicholas [Tag]": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 67,
@@ -19212,7 +19212,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Calm"
         },
-        "Sr and Jr Tyra & Ivy": {
+        "Sr And Jr Tyra & Ivy": {
             "ability": "Guts",
             "item": "Leftovers",
             "level": 35,
@@ -19355,7 +19355,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Magma Leader Maxie #3": {
+        "Magma Leader Maxie #3 [Tag]": {
             "ability": "Intimidate",
             "item": "Lum Berry",
             "level": 71,
@@ -19637,7 +19637,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Relaxed"
         },
-        "Sr and Jr Kate & Joy": {
+        "Sr And Jr Kate & Joy": {
             "ability": "Serene Grace",
             "item": "Leftovers",
             "level": 54,
@@ -19647,7 +19647,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Bashful"
         },
-        "Sr and Jr Kim & Iris": {
+        "Sr And Jr Kim & Iris": {
             "ability": "Serene Grace",
             "item": "Shoal Shell",
             "level": 100,
@@ -19938,7 +19938,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Timid"
         },
-        "Team Magma Grunt #2 @ Mossdeep Space Center": {
+        "Team Magma Grunt #2 @ Mossdeep Space Center [Tag]": {
             "ability": "Blaze",
             "item": "Lum Berry",
             "level": 67,
@@ -19964,7 +19964,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Tyranitar": {
-        "Cooltrainer Hannah": {
+        "Cooltrainer Hannah [Tag]": {
             "ability": "Intimidate",
             "item": "Lum Berry",
             "level": 66,
@@ -20174,7 +20174,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Sassy"
         },
-        "Expert Frederick": {
+        "Expert Frederick [Tag]": {
             "ability": "Guts",
             "item": "Quick Claw",
             "level": 76,
@@ -20358,7 +20358,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Venomoth": {
-        "Aroma Lady Violet": {
+        "Aroma Lady Violet [Tag]": {
             "ability": "Compoundeyes",
             "item": "Quick Claw",
             "level": 74,
@@ -20573,7 +20573,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Impish"
         },
-        "Team Magma Grunt #2 @ Mossdeep Space Center": {
+        "Team Magma Grunt #2 @ Mossdeep Space Center [Tag]": {
             "ability": "Chlorophyll",
             "item": "Lum Berry",
             "level": 67,
@@ -20779,7 +20779,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Modest"
         },
-        "Camper Travis": {
+        "Camper Travis [Tag]": {
             "ability": "Vital Spirit",
             "item": "Choice Band",
             "level": 26,
@@ -20832,7 +20832,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Naughty"
         },
-        "Aroma Lady Violet": {
+        "Aroma Lady Violet [Tag]": {
             "ability": "Chlorophyll",
             "item": "Quick Claw",
             "level": 74,
@@ -21268,7 +21268,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Wartortle": {
-        "Picnicker Bianca": {
+        "Picnicker Bianca [Tag]": {
             "ability": "Torrent",
             "level": 24,
             "moves": [
@@ -21361,7 +21361,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Serious"
         },
-        "Ninja Boy Jonas": {
+        "Ninja Boy Jonas [Tag]": {
             "ability": "Levitate",
             "item": "Salac Berry",
             "level": 74,
@@ -21507,7 +21507,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Rash"
         },
-        "Parasol Lady Kayley": {
+        "Parasol Lady Kayley [Tag]": {
             "ability": "Swift Swim",
             "item": "Quick Claw",
             "level": 74,
@@ -21554,7 +21554,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Team Aqua Grunt #2 @ Route 124": {
+        "Team Aqua Grunt #2 @ Route 124 [Tag]": {
             "ability": "Swift Swim",
             "item": "Bright Powder",
             "level": 65,
@@ -21636,7 +21636,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Sassy"
         },
-        "Hex Maniac Sylvia": {
+        "Hex Maniac Sylvia [Tag]": {
             "ability": "Cute Charm",
             "item": "Quick Claw",
             "level": 69,
@@ -21728,7 +21728,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Wobbuffet": {
-        "Battle Girl Helene": {
+        "Battle Girl Helene [Tag]": {
             "ability": "Shadow Tag",
             "level": 44,
             "moves": [
@@ -21758,7 +21758,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Lonely"
         },
-        "Collector Ed": {
+        "Collector Ed [Tag]": {
             "ability": "Shadow Tag",
             "item": "Leftovers",
             "level": 74,
@@ -21782,7 +21782,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quirky"
         },
-        "Expert Macey": {
+        "Expert Macey [Tag]": {
             "ability": "Shadow Tag",
             "item": "Lum Berry",
             "level": 69,
@@ -21954,7 +21954,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Docile"
         },
-        "Collector Ed": {
+        "Collector Ed [Tag]": {
             "ability": "Shadow Tag",
             "item": "Quick Claw",
             "ivs": {
@@ -21971,7 +21971,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Quiet"
         },
-        "Expert Macey": {
+        "Expert Macey [Tag]": {
             "ability": "Shadow Tag",
             "item": "Leftovers",
             "level": 100,
@@ -21996,7 +21996,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Xatu": {
-        "Bird Keeper Josue": {
+        "Bird Keeper Josue [Tag]": {
             "ability": "Early Bird",
             "item": "Quick Claw",
             "level": 66,
@@ -22008,7 +22008,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Hardy"
         },
-        "Bird Keeper Phil": {
+        "Bird Keeper Phil [Tag]": {
             "ability": "Early Bird",
             "item": "Leftovers",
             "level": 45,
@@ -22044,7 +22044,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Brave"
         },
-        "Psychic Maura": {
+        "Psychic Maura [Tag]": {
             "ability": "Early Bird",
             "item": "Lum Berry",
             "level": 66,
