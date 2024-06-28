@@ -58,8 +58,8 @@ function performCalculations() {
 	var battling = [p1, p2];
 	p1.maxDamages = [];
 	p2.maxDamages = [];
-	p1info.find(".sp .totalMod").text(p1.stats.spe);
-	p2info.find(".sp .totalMod").text(p2.stats.spe);
+	console.log(p1.stats);
+
 	var fastestSide = p1.stats.spe > p2.stats.spe ? 0 : p1.stats.spe === p2.stats.spe ? "tie" : 1;
 
 	var result, maxDamage;
@@ -121,9 +121,17 @@ function performCalculations() {
 			bestMove = battling[0].maxDamages[0].moveOrder;
 			var chosenPokemon = battling[0] === p1 ? "0" : "1";
 			bestResult = $(resultLocations[chosenPokemon][bestMove].move);
+			//TODO: Add better icons
+			p1info.find(".sp .totalMod").text("TIE");
+			p2info.find(".sp .totalMod").text("TIE");
+	
 		} else {
 			bestMove = battling[fastestSide].maxDamages[0].moveOrder;
 			bestResult = $(resultLocations[fastestSide][bestMove].move);
+			console.log($(".sp .totalMod"))
+			//TODO: Add better icons
+			$(".sp .totalMod").text("⬇️")
+			$(".sp .totalMod")[fastestSide].textContent = "⬆️";
 		}
 	}
 	if ($('.locked-move').length) {
