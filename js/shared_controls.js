@@ -568,7 +568,6 @@ $(".set-selector").change(function () {
 		var oldTrainer = window.CURRENT_TRAINER;
 		var nextPokemon = get_trainer_poks(fullSetName);
 		var frag = new DocumentFragment();
-		$('.trainer-poke-switch-list').html('');
 		for (var i in nextPokemon) {
 			if (nextPokemon[i][0].includes($('input.opposing').val())){
 				continue;
@@ -602,7 +601,6 @@ $(".set-selector").change(function () {
 			// <label style="width: 60%;" class="trainer-poke-switch-explain" data-id="${nextPokemon[i]}"></label><label class="trainer-poke-switch-xp" data-id="${nextPokemon[i]}"></label></span>`;
 			if (parseInt(i) + 1 < nextPokemon.length) frag.append(document.createElement("br"));
 		}
-	}
 
 	if (flags) {
 		var weather = "clear";
@@ -657,7 +655,13 @@ if (flags["doubles"].includes(window.CURRENT_TRAINER)){
 		}
 		
 	}
+		if(oldTrainer !== window.CURRENT_TRAINER){
+			$('.trainer-poke-switch-list').html('');
 	$('.trainer-poke-switch-list').append(frag);
+		}
+	}
+
+	
 	for (mon of document.getElementsByClassName('trainer-poke-switch-list')[0].children){
 		mon.addEventListener("dragstart", dragstart_handler);
 		mon.addEventListener("contextmenu", noMenuClick);
@@ -838,6 +842,7 @@ if (flags["doubles"].includes(window.CURRENT_TRAINER)){
 		}
 		window.NO_CALC = false;
 	}
+
 
 	if ($(this).hasClass('opposing') && game != "None" && flags) {
 		var ai = 7;
@@ -1893,7 +1898,7 @@ function getBabySprite(poke) {
 
 	if(GENERATION.num <= 5){
 		var num = POKEDEX_NUMBER[poke].slice(1);
-		return `./img/animated_menu_sprites/Ani${num}MS.png`;
+		return `https://raw.githubusercontent.com/AFalsePrayer/pkmn-menu-sprites/master/Ani${num}MS.png`;
 	}
 
 	if (poke.name == "Aegislash-Shield") {
