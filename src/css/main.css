@@ -1,3 +1,8 @@
+:root {
+    --speed-slower: blue;
+    --speed-faster: red;
+    --speed-tie: green;
+}
 /* header */
 a img {
     border: 0;
@@ -893,14 +898,25 @@ label.opposing, label.player {
     display: inline-grid;
     align-content: center;
   }
-  #resultGroupL .display-damage-text {
+#resultGroupL .display-damage-text {
     justify-items: right;
-  }
+}
 
-  .move-result-subgroup .btn.btn-xxxwide {
+.move-result-subgroup .btn.btn-xxxwide {
     height: 2em;
     align-content: center;
-  }
+}
 .trainer-poke-switch-explain {
   margin-left: 1em;
   }
+
+.totalMod{
+    /* display: inline-block;
+    width: 2.5em;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace; */
+}
+.speed-img{
+    width:1.5em;
+}
