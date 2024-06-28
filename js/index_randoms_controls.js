@@ -121,15 +121,30 @@ function performCalculations() {
 			bestMove = battling[0].maxDamages[0].moveOrder;
 			var chosenPokemon = battling[0] === p1 ? "0" : "1";
 			bestResult = $(resultLocations[chosenPokemon][bestMove].move);
-			p1info.find(".sp .totalMod").text("⬆️");
-			p2info.find(".sp .totalMod").text("⬆️");
-	
+			//TODO: Add better icons
+			
+			$(".sp .totalMod")[0].className = "totalMod speed-tie"
+			$(".sp .totalMod")[1].className = "totalMod speed-tie"
+			var img = document.createElement("img")
+			img.src = "./img/speed-tie.png"
+			img.className = "speed-img"
+			$(".sp .totalMod").html("")
+			$(".sp .totalMod").append(img)
+			
 		} else {
 			bestMove = battling[fastestSide].maxDamages[0].moveOrder;
 			bestResult = $(resultLocations[fastestSide][bestMove].move);
 			console.log($(".sp .totalMod"))
-			$(".sp .totalMod").text("⬇️")
-			$(".sp .totalMod")[fastestSide].textContent = "⬆️";
+			//TODO: Add better icons
+			var imgFaster = document.createElement("img")
+			var imgSlower = document.createElement("img")
+			imgFaster.src = "./img/speed-faster.png"
+			imgSlower.src = "./img/speed-slower.png"
+			imgFaster.className = "speed-img"
+			imgSlower.className = "speed-img"
+			$(".sp .totalMod").html("")
+			$(".sp .totalMod")[fastestSide].append(imgFaster)
+			$(".sp .totalMod")[1-fastestSide].append(imgSlower)
 		}
 	}
 	if ($('.locked-move').length) {

@@ -601,63 +601,63 @@ $(".set-selector").change(function () {
 			// <label style="width: 60%;" class="trainer-poke-switch-explain" data-id="${nextPokemon[i]}"></label><label class="trainer-poke-switch-xp" data-id="${nextPokemon[i]}"></label></span>`;
 			if (parseInt(i) + 1 < nextPokemon.length) frag.append(document.createElement("br"));
 		}
-		
-		if (flags) {
-			var weather = "clear";
-			for (var i in flags["weather"]) {
-				if (flags["weather"][i].includes(window.CURRENT_TRAINER)) {
-					weather = i;
-					break;
-				}
-			}
-			if (weather !== "any") $(`#${weather}`).prop("checked", true);
 
-			var badge = "";
-			for (var i in flags["badge"]) {
-				if (flags["badge"][i].includes(window.CURRENT_TRAINER)) {
-					badge = i;
-					break;
-				}
+	if (flags) {
+		var weather = "clear";
+		for (var i in flags["weather"]) {
+			if (flags["weather"][i].includes(window.CURRENT_TRAINER)) {
+				weather = i;
+				break;
 			}
-			if (gen == 3) {
-				if (badge == "none") {
-					$("#stoneBadge").prop("checked", false);
-					$("#dynamoBadge").prop("checked", false);
-					$("#balanceBadge").prop("checked", false);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "stoneBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", false);
-					$("#balanceBadge").prop("checked", false);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "dynamoBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", true);
-					$("#balanceBadge").prop("checked", false);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "balanceBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", true);
-					$("#balanceBadge").prop("checked", true);
-					$("#mindBadge").prop("checked", false);
-				} else if (badge == "mindBadge") {
-					$("#stoneBadge").prop("checked", true);
-					$("#dynamoBadge").prop("checked", true);
-					$("#balanceBadge").prop("checked", true);
-					$("#mindBadge").prop("checked", true);
-				}
-			}
-			if (flags["doubles"].includes(window.CURRENT_TRAINER)){
-				$("#doubles-format").prop("checked", true);
-			}
-			else{
-				$("#singles-format").prop("checked", true);
-			}
-			
 		}
+		if (weather !== "any") $(`#${weather}`).prop("checked", true);
+
+		var badge = "";
+		for (var i in flags["badge"]) {
+			if (flags["badge"][i].includes(window.CURRENT_TRAINER)) {
+				badge = i;
+				break;
+			}
+		}
+		if (gen == 3) {
+			if (badge == "none") {
+				$("#stoneBadge").prop("checked", false);
+				$("#dynamoBadge").prop("checked", false);
+				$("#balanceBadge").prop("checked", false);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "stoneBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", false);
+				$("#balanceBadge").prop("checked", false);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "dynamoBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", true);
+				$("#balanceBadge").prop("checked", false);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "balanceBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", true);
+				$("#balanceBadge").prop("checked", true);
+				$("#mindBadge").prop("checked", false);
+			} else if (badge == "mindBadge") {
+				$("#stoneBadge").prop("checked", true);
+				$("#dynamoBadge").prop("checked", true);
+				$("#balanceBadge").prop("checked", true);
+				$("#mindBadge").prop("checked", true);
+			}
+		}
+if (flags["doubles"].includes(window.CURRENT_TRAINER)){
+			$("#doubles-format").prop("checked", true);
+		}
+		else{
+			$("#singles-format").prop("checked", true);
+		}
+		
+	}
 		if(oldTrainer !== window.CURRENT_TRAINER){
 			$('.trainer-poke-switch-list').html('');
-			$('.trainer-poke-switch-list').append(frag);
+	$('.trainer-poke-switch-list').append(frag);
 		}
 	}
 
@@ -842,7 +842,7 @@ $(".set-selector").change(function () {
 		}
 		window.NO_CALC = false;
 	}
-	
+
 
 	if ($(this).hasClass('opposing') && game != "None" && flags) {
 		var ai = 7;
@@ -880,15 +880,6 @@ $(".set-selector").change(function () {
 		}
 	}
 });
-
-function saveLastSelect(isOpponent, fullSetName){
-	if(isOpponent){
-		localStorage.setItem("oppSet", fullSetName)
-	}
-	else{
-		localStorage.setItem("playerSet", fullSetName)
-	}
-}
 
 function updateTickedHP(){
 	playtotal = $(".poke-info").find(".hp .total")[0].textContent;
@@ -1906,7 +1897,6 @@ function getBabySprite(poke) {
 	}
 
 	if(GENERATION.num <= 5){
-		console.log(poke)
 		var num = POKEDEX_NUMBER[poke].slice(1);
 		return `https://raw.githubusercontent.com/AFalsePrayer/pkmn-menu-sprites/master/Ani${num}MS.png`;
 	}
@@ -1932,10 +1922,10 @@ function getGenBackSprite(poke) {
 	if (poke.name.toLowerCase() == "mr. mime"){
 		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/mrmime.gif"
 	}
-	if (poke.name.toLowerCase() == "farfetch'd"){
+	if (poke.name.toLowerCase() == "farfetch’d"){
 		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/farfetchd.gif"
 	}
-	if (poke.name.toLowerCase() == "farfetch'd-galar"){
+	if (poke.name.toLowerCase() == "farfetch’d-galar"){
 		return "https://play.pokemonshowdown.com/sprites/gen5ani-back/farfetchd-galar.gif"
 	}
 
@@ -1966,10 +1956,10 @@ function getGenSprite(poke) {
 	if (poke.name.toLowerCase() == "mr. mime"){
 		return "https://play.pokemonshowdown.com/sprites/gen5ani/mrmime.gif"
 	}
-	if (poke.name.toLowerCase() == "farfetch'd"){
+	if (poke.name.toLowerCase() == "farfetch’d"){
 		return "https://play.pokemonshowdown.com/sprites/gen5ani/farfetchd.gif"
 	}
-	if (poke.name.toLowerCase() == "farfetch'd-galar"){
+	if (poke.name.toLowerCase() == "farfetch’d-galar"){
 		return "https://play.pokemonshowdown.com/sprites/gen5ani/farfetchd-galar.gif"
 	}
 	
@@ -2433,12 +2423,6 @@ $(document).ready(function () {
 	$('#cc-spe-border')[0].checked=true;
 	$('#cc-ohko-color')[0].checked=true;
 	$('#save-change').click(saveTrainerPokemon);
-	// if(localStorage.oppSet){
-	// 	$(".set-selector")[1].change(localStorage.oppSet);
-	// }
-	// if(localStorage.playerSet){
-	// 	$(".set-selector")[0].change(localStorage.playerSet)
-	// }
 
 	//Transform is currently bugged
 
