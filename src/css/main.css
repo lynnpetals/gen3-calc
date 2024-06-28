@@ -898,4 +898,15 @@ label.opposing, label.player {
   }
 .trainer-poke-switch-explain {
   margin-left: 1em;
+  }
+
+.totalMod{
+    /* display: inline-block;
+    width: 2.5em;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace; */
+}
+.speed-img{
+    width:1.5em;
 }
