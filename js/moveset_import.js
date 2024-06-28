@@ -1,35 +1,44 @@
 function placeBsBtn() {
-	var importBtn = "<button id='import' class='bs-btn bs-btn-default'>Import</button>";
+	var importBtn =
+		"<button id='import' class='bs-btn bs-btn-default'>Import</button>";
 	$("#import-1_wrapper").append(importBtn);
 
 	$("#import.bs-btn").click(function () {
 		var pokes = document.getElementsByClassName("import-team-text")[0].value;
-		var name = "Custom Set"
+		var name = "Custom Set";
 		addSets(pokes, name);
 		//erase the import text area
-		document.getElementsByClassName("import-team-text")[0].value="";
+		document.getElementsByClassName("import-team-text")[0].value = "";
 	});
 }
-
 
 /*
 	for now only save the current trainer #p1
 */
-function saveTrainerPokemon(){
-	$('#save-change').attr("hidden", true);
+function saveTrainerPokemon() {
+	$("#save-change").attr("hidden", true);
 	ExportPokemon($("#p1"));
-	$("#import.bs-btn").click()
+	$("#import.bs-btn").click();
 }
-
 
 function ExportPokemon(pokeInfo) {
 	var pokemon = createPokemon(pokeInfo);
-	var setName = $(".select2-chosen")[0].textContent.split(/^([^(@]+)(\((.+)\))? ?(@ (.+))?/)[3];
+	var setName = $(".select2-chosen")[0].textContent.split(
+		/^([^(@]+)(\((.+)\))? ?(@ (.+))?/
+	)[3];
 	var EV_counter = 0;
 	var finalText = "";
-	finalText = setName + " (" + pokemon.name + ")" + (game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") + (pokemon.item ? " @ " + pokemon.item : "") + "\n";
+	finalText =
+		setName +
+		" (" +
+		pokemon.name +
+		")" +
+		(game > 0 && pokemon.gender != "N" ? " (" + pokemon.gender + ") " : "") +
+		(pokemon.item ? " @ " + pokemon.item : "") +
+		"\n";
 	finalText += "Level: " + pokemon.level + "\n";
-	finalText += pokemon.nature && gen > 2 ? pokemon.nature + " Nature" + "\n" : "";
+	finalText +=
+		pokemon.nature && gen > 2 ? pokemon.nature + " Nature" + "\n" : "";
 	if (gen === 9) {
 		var teraType = pokeInfo.find(".teraType").val();
 		if (teraType !== undefined && teraType !== pokemon.types[0]) {
@@ -99,33 +108,42 @@ function serialize(array, separator) {
 
 function statToLegacyStat(stat) {
 	switch (stat) {
-	case 'hp':
-		return "hp";
-	case 'atk':
-		return "at";
-	case 'def':
-		return "df";
-	case 'spa':
-		return "sa";
-	case 'spd':
-		return "sd";
-	case 'spe':
-		return "sp";
+		case "hp":
+			return "hp";
+		case "atk":
+			return "at";
+		case "def":
+			return "df";
+		case "spa":
+			return "sa";
+		case "spd":
+			return "sd";
+		case "spe":
+			return "sp";
 	}
 }
 
 function addToDex(poke) {
 	var dexObject = {};
 	if ($("#randoms").prop("checked")) {
-		if (GEN9RANDOMBATTLE[poke.name] == undefined) GEN9RANDOMBATTLE[poke.name] = {};
-		if (GEN8RANDOMBATTLE[poke.name] == undefined) GEN8RANDOMBATTLE[poke.name] = {};
-		if (GEN7RANDOMBATTLE[poke.name] == undefined) GEN7RANDOMBATTLE[poke.name] = {};
-		if (GEN6RANDOMBATTLE[poke.name] == undefined) GEN6RANDOMBATTLE[poke.name] = {};
-		if (GEN5RANDOMBATTLE[poke.name] == undefined) GEN5RANDOMBATTLE[poke.name] = {};
-		if (GEN4RANDOMBATTLE[poke.name] == undefined) GEN4RANDOMBATTLE[poke.name] = {};
-		if (GEN3RANDOMBATTLE[poke.name] == undefined) GEN3RANDOMBATTLE[poke.name] = {};
-		if (GEN2RANDOMBATTLE[poke.name] == undefined) GEN2RANDOMBATTLE[poke.name] = {};
-		if (GEN1RANDOMBATTLE[poke.name] == undefined) GEN1RANDOMBATTLE[poke.name] = {};
+		if (GEN9RANDOMBATTLE[poke.name] == undefined)
+			GEN9RANDOMBATTLE[poke.name] = {};
+		if (GEN8RANDOMBATTLE[poke.name] == undefined)
+			GEN8RANDOMBATTLE[poke.name] = {};
+		if (GEN7RANDOMBATTLE[poke.name] == undefined)
+			GEN7RANDOMBATTLE[poke.name] = {};
+		if (GEN6RANDOMBATTLE[poke.name] == undefined)
+			GEN6RANDOMBATTLE[poke.name] = {};
+		if (GEN5RANDOMBATTLE[poke.name] == undefined)
+			GEN5RANDOMBATTLE[poke.name] = {};
+		if (GEN4RANDOMBATTLE[poke.name] == undefined)
+			GEN4RANDOMBATTLE[poke.name] = {};
+		if (GEN3RANDOMBATTLE[poke.name] == undefined)
+			GEN3RANDOMBATTLE[poke.name] = {};
+		if (GEN2RANDOMBATTLE[poke.name] == undefined)
+			GEN2RANDOMBATTLE[poke.name] = {};
+		if (GEN1RANDOMBATTLE[poke.name] == undefined)
+			GEN1RANDOMBATTLE[poke.name] = {};
 	} else {
 		if (SETDEX_SV[poke.name] == undefined) SETDEX_SV[poke.name] = {};
 		if (SETDEX_SS[poke.name] == undefined) SETDEX_SS[poke.name] = {};
@@ -207,11 +225,13 @@ function updateDex(customsets, callback = null) {
 				if (!CUSTOMSETDEX_SM[pokemon]) CUSTOMSETDEX_SM[pokemon] = {};
 				CUSTOMSETDEX_SM[pokemon][moveset] = customsets[pokemon][moveset];
 			} else {
-				if (!CUSTOMHACKSETDEX_EK[pokemon]) CUSTOMHACKSETDEX_EK[pokemon] = {};
-				CUSTOMHACKSETDEX_EK[pokemon][moveset] = customsets[pokemon][moveset];
+				if (!CUSTOMHACKSETDEX_EK[pokemon])
+					CUSTOMHACKSETDEX_EK[pokemon] = {};
+				CUSTOMHACKSETDEX_EK[pokemon][moveset] =
+					customsets[pokemon][moveset];
 			}
 
-			var poke = {name: pokemon, nameProp: moveset};	
+			var poke = { name: pokemon, nameProp: moveset };
 			addBoxed(poke);
 		}
 	}
@@ -237,8 +257,14 @@ function addSets(pokes, name) {
 				addedpokes++;
 			}
 
-			currentPoke = Object.assign({}, calc.SPECIES[9][checkExeptions(split[3].trim())]);
-			currentPoke.name = split[3].trim().replace("Nidoran-f", "Nidoran-F").replace("Nidoran-m", "Nidoran-M");
+			currentPoke = Object.assign(
+				{},
+				calc.SPECIES[9][checkExeptions(split[3].trim())]
+			);
+			currentPoke.name = split[3]
+				.trim()
+				.replace("Nidoran-f", "Nidoran-F")
+				.replace("Nidoran-m", "Nidoran-M");
 			currentPoke.nameProp = split[1].trim();
 			currentPoke.moves = [];
 			currentPoke.nature = "Hardy";
@@ -250,13 +276,17 @@ function addSets(pokes, name) {
 			}
 
 			currentPoke = calc.SPECIES[9][checkExeptions(split[1].trim())];
-			currentPoke.name = split[1].trim().replace("-f", "-F").replace("-m", "-M");
+			currentPoke.name = split[1]
+				.trim()
+				.replace("-f", "-F")
+				.replace("-m", "-M");
 			currentPoke.nameProp = name;
 			currentPoke.moves = [];
 			currentPoke.nature = "Hardy";
 		}
 		if (!currentPoke) continue;
-		if (split[5] && calc.ITEMS[9].includes(split[5].trim())) currentPoke.item = split[5].trim();
+		if (split[5] && calc.ITEMS[9].includes(split[5].trim()))
+			currentPoke.item = split[5].trim();
 		currentPoke.isCustomSet = true;
 		if (currentRow.includes("Ability: ")) {
 			var ability = currentRow.replace("Ability: ", "").trim();
@@ -284,7 +314,8 @@ function addSets(pokes, name) {
 				var value = parseInt(dv.split(" ")[0]);
 				currentPoke.dvs[stat] = value;
 			}
-			if (currentPoke.dvs["sa"] !== undefined) currentPoke.dvs["sl"] = currentPoke.dvs["sa"];
+			if (currentPoke.dvs["sa"] !== undefined)
+				currentPoke.dvs["sl"] = currentPoke.dvs["sa"];
 		}
 		if (currentRow.includes("IVs: ")) {
 			if (gen < 3) {
@@ -296,7 +327,8 @@ function addSets(pokes, name) {
 					var value = parseInt(dv.split(" ")[0]);
 					currentPoke.dvs[stat] = value;
 				}
-				if (currentPoke.dvs["sa"] !== undefined) currentPoke.dvs["sl"] = currentPoke.dvs["sa"];
+				if (currentPoke.dvs["sa"] !== undefined)
+					currentPoke.dvs["sl"] = currentPoke.dvs["sa"];
 			} else {
 				currentPoke.ivs = {};
 				var ivs = currentRow.replace("IVs: ", "").trim().split(" / ");
@@ -319,7 +351,11 @@ function addSets(pokes, name) {
 			}
 		}
 		if (currentRow.startsWith("- ")) {
-			var move = currentRow.replace("- ", "").replace("[", "").replace("]", "").trim();
+			var move = currentRow
+				.replace("- ", "")
+				.replace("[", "")
+				.replace("]", "")
+				.trim();
 			currentPoke.moves.push(move);
 		}
 	}
@@ -337,69 +373,68 @@ function addSets(pokes, name) {
 
 function checkExeptions(poke) {
 	switch (poke) {
-	case 'Aegislash':
-		poke = "Aegislash-Blade";
-		break;
-	case 'Basculin-Blue-Striped':
-		poke = "Basculin";
-		break;
-	case 'Gastrodon-East':
-		poke = "Gastrodon";
-		break;
-	case 'Mimikyu-Busted-Totem':
-		poke = "Mimikyu-Totem";
-		break;
-	case 'Mimikyu-Busted':
-		poke = "Mimikyu";
-		break;
-	case 'Nidoran-f':
-		poke = "Nidoran-F";
-		break;
-	case 'Nidoran-m':
-		poke = "Nidoran-M";
-		break;
-	case 'Pikachu-Belle':
-	case 'Pikachu-Cosplay':
-	case 'Pikachu-Libre':
-	case 'Pikachu-Original':
-	case 'Pikachu-Partner':
-	case 'Pikachu-PhD':
-	case 'Pikachu-Pop-Star':
-	case 'Pikachu-Rock-Star':
-		poke = "Pikachu";
-		break;
-	case 'Vivillon-Fancy':
-	case 'Vivillon-Pokeball':
-		poke = "Vivillon";
-		break;
-	case 'Florges-White':
-	case 'Florges-Blue':
-	case 'Florges-Orange':
-	case 'Florges-Yellow':
-		poke = "Florges";
-		break;
-	case 'Shellos-East':
-		poke = "Shellos";
-		break;
-	case 'Deerling-Summer':
-	case 'Deerling-Autumn':
-	case 'Deerling-Winter':
-		poke = "Deerling";
-		break;
+		case "Aegislash":
+			poke = "Aegislash-Blade";
+			break;
+		case "Basculin-Blue-Striped":
+			poke = "Basculin";
+			break;
+		case "Gastrodon-East":
+			poke = "Gastrodon";
+			break;
+		case "Mimikyu-Busted-Totem":
+			poke = "Mimikyu-Totem";
+			break;
+		case "Mimikyu-Busted":
+			poke = "Mimikyu";
+			break;
+		case "Nidoran-f":
+			poke = "Nidoran-F";
+			break;
+		case "Nidoran-m":
+			poke = "Nidoran-M";
+			break;
+		case "Pikachu-Belle":
+		case "Pikachu-Cosplay":
+		case "Pikachu-Libre":
+		case "Pikachu-Original":
+		case "Pikachu-Partner":
+		case "Pikachu-PhD":
+		case "Pikachu-Pop-Star":
+		case "Pikachu-Rock-Star":
+			poke = "Pikachu";
+			break;
+		case "Vivillon-Fancy":
+		case "Vivillon-Pokeball":
+			poke = "Vivillon";
+			break;
+		case "Florges-White":
+		case "Florges-Blue":
+		case "Florges-Orange":
+		case "Florges-Yellow":
+			poke = "Florges";
+			break;
+		case "Shellos-East":
+			poke = "Shellos";
+			break;
+		case "Deerling-Summer":
+		case "Deerling-Autumn":
+		case "Deerling-Winter":
+			poke = "Deerling";
+			break;
 	}
 	return poke;
-
 }
 
 $("#clearSets").click(function () {
-	var yes = confirm("Do you really wish to delete all your Pokémon?")
-	if (!yes){
-		return
+	var yes = confirm("Do you really wish to delete all your Pokémon?");
+	if (!yes) {
+		return;
 	}
 	localStorage.removeItem("customsets");
 	$(allPokemon("#importedSetsOptions")).hide();
 	loadDefaultLists();
-	for (let zone of document.getElementsByClassName("dropzone")){
+	for (let zone of document.getElementsByClassName("dropzone")) {
 		zone.innerHTML = "";
 	}
 });
