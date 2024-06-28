@@ -2963,6 +2963,9 @@ const EK_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   Crawdaunt: {expYield: 161},
   Delcatty: {bs: {sp: 90}, expYield: 138},
   Deoxys: {expYield: 215},
+  'Deoxys-Attack': {expYield: 215},
+  'Deoxys-Defense': {expYield: 215},
+  'Deoxys-Speed': {expYield: 215},
   Dusclops: {bs: {hp: 90, at: 100}, expYield: 179},
   Duskull: {expYield: 97},
   Dustox: {expYield: 160},
@@ -3071,6 +3074,17 @@ const EK_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 };
 
 const EK: {[name: string]: SpeciesData} = extend(true, {}, ADV, EK_PATCH);
+
+const EKK_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
+  Lapras: {bs: {sa: 115}},
+  Vulpix: {bs: {sa: 80}},
+  Murkrow: {bs: {hp:100,at:125,df:52,sa:105,sd:52,sp:91}},
+  Sneasel: { bs:{hp:70,at:120,df:64,sa:45,sd:85,sp:125}},
+  Tyranitar: {bs: {sd:110}},
+  Sableye: {bs: {sa:105}},
+};
+
+const EKK: {[name: string]: SpeciesData} = extend(true, {}, EK, EKK_PATCH);
 
 const DPP_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   Aipom: {nfe: true},
@@ -10415,7 +10429,7 @@ const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PAT
 
 export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
-export const HACK_SPECIES = [{}, EK];
+export const HACK_SPECIES = [{}, EK, EKK];
 
 export class Species implements I.Species {
   private readonly gen: I.GenerationNum;

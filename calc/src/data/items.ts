@@ -159,6 +159,7 @@ const EK = ADV.concat([
   "Energy Powder",
   "Enigma Berry"
 ]);
+const EKK = EK;
 
 const DPP = ADV.concat([
   'Adamant Orb',
@@ -582,7 +583,7 @@ const BERRIES: {[berry: string]: {t: I.TypeName; p: number}} = {
 
 export const ITEMS = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
-export const HACK_ITEMS = [[], EK];
+export const HACK_ITEMS = [[], EK, EKK];
 
 export class Items implements I.Items {
   private readonly gen: I.GenerationNum;

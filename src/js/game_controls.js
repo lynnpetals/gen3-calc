@@ -2,7 +2,6 @@ var game, gameId, generation, isHack;
 $(".game").change(function () {
 	game = $("input[name='game']:checked + label").html();
 	gameId = ~~$(this).val();
-	isHack = ["Emerald Kaizo"].includes(game);
 	var params = new URLSearchParams(window.location.search);
 	if (game == "None") {
 		params.delete("game");
@@ -29,9 +28,9 @@ $(".game").change(function () {
 	} else $(".hide-from-games").show();
 	generation = gen;
 	setdex = CUSTOMHACKSETDEX[gameId];
-	partyOrder = CUSTOMHACKPARTYORDER[1];
+	partyOrder = CUSTOMHACKPARTYORDER[gameId];
 	trainerNames = CUSTOMHACKTRAINERNAMES[gameId];
-	trainerSprites = CUSTOMHACKTRAINERSPRITES_EK;
+	trainerSprites = CUSTOMHACKTRAINERSPRITES;
 	flags = CUSTOMHACKFLAGS[gameId];
 	if (typeof setdex === "undefined") setdex = SETDEX[generation];
 	clearField();
@@ -75,61 +74,39 @@ $(".game").change(function () {
 	$(".set-selector").change();
 });
 
-var GAMEGEN = {
-	1: 1,
-	2: 1,
-	3: 2,
-	4: 2,
-	5: 3,
-	6: 3,
-	7: 3,
-	8: 4,
-	9: 4,
-	10: 4,
-	11: 5,
-	12: 5,
-	13: 6,
-	14: 6,
-	15: 7,
-	16: 7,
-	17: 8,
-	18: 8,
-	19: 9,
-};
-
 var CUSTOMHACKSETDEX = [
 	undefined, // None
 	typeof CUSTOMHACKSETDEX_EK === "undefined" ? {} : CUSTOMHACKSETDEX_EK,
+	typeof CUSTOMHACKSETDEX_EKK === "undefined" ? {} : CUSTOMHACKSETDEX_EKK,
 ];
 
 var HACKGEN = {
 	1: 3,
+	2: 3,
 };
 
 var CUSTOMHACKTRAINERNAMES = [
 	undefined,
-	typeof CUSTOMHACKTRAINERNAMES_EK === "undefined"
-		? {}
-		: CUSTOMHACKTRAINERNAMES_EK,
+	typeof CUSTOMHACKTRAINERNAMES_EK === "undefined" ? {} : CUSTOMHACKTRAINERNAMES_EK,
+	typeof CUSTOMHACKTRAINERNAMES_EKK === "undefined" ? {} : CUSTOMHACKTRAINERNAMES_EKK,
 ];
 
 var CUSTOMHACKTRAINERSPRITES = [
 	undefined,
-	typeof CUSTOMHACKTRAINERSPRITES_EK === "undefined"
-		? {}
-		: CUSTOMHACKTRAINERSPRITES_EK,
+	typeof CUSTOMHACKTRAINERSPRITES_EK === "undefined" ? {} : CUSTOMHACKTRAINERSPRITES_EK,
+	typeof CUSTOMHACKTRAINERSPRITES_EKK === "undefined" ? {} : CUSTOMHACKTRAINERSPRITES_EKK,
 ];
 
 var CUSTOMHACKPARTYORDER = [
 	undefined,
-	typeof CUSTOMHACKPARTYORDER_EK === "undefined"
-		? {}
-		: CUSTOMHACKPARTYORDER_EK,
+	typeof CUSTOMHACKPARTYORDER_EK === "undefined" ? {} : CUSTOMHACKPARTYORDER_EK,
+	typeof CUSTOMHACKPARTYORDER_EKK === "undefined" ? {} : CUSTOMHACKPARTYORDER_EKK,
 ];
 
 var CUSTOMHACKFLAGS = [
 	undefined,
 	typeof CUSTOMHACKFLAGS_EK === "undefined" ? {} : CUSTOMHACKFLAGS_EK,
+	typeof CUSTOMHACKFLAGS_EKK === "undefined" ? {} : CUSTOMHACKFLAGS_EKK,
 ];
 
 function updateGenOptions() {

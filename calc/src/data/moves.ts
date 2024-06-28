@@ -626,6 +626,7 @@ const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 };
 
 const EK: {[name: string]: MoveData} = extend(true, {}, ADV, EK_PATCH);
+const EKK: {[name: string]: MoveData} = extend(true, {}, EK);
 
 delete EK['High Jump Kick'];
 delete EK['Sonic Boom'];
@@ -5013,7 +5014,7 @@ const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH);
 
 export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
-export const HACK_MOVES = [{}, EK];
+export const HACK_MOVES = [{}, EK, EKK];
 
 export class Moves implements I.Moves {
   private readonly gen: I.GenerationNum;

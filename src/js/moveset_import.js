@@ -211,6 +211,7 @@ function updateDex(customsets, callback = null) {
 			SETDEX_RBY[pokemon][moveset] = customsets[pokemon][moveset];
 
 			var gamemode = $("input[name='gamemode']:checked + label").html();
+			//TODO: why does this code exist fr
 			if (gamemode == "Vanilla") {
 				if (!CUSTOMSETDEX_Y[pokemon]) CUSTOMSETDEX_Y[pokemon] = {};
 				CUSTOMSETDEX_Y[pokemon][moveset] = customsets[pokemon][moveset];
@@ -225,10 +226,11 @@ function updateDex(customsets, callback = null) {
 				if (!CUSTOMSETDEX_SM[pokemon]) CUSTOMSETDEX_SM[pokemon] = {};
 				CUSTOMSETDEX_SM[pokemon][moveset] = customsets[pokemon][moveset];
 			} else {
-				if (!CUSTOMHACKSETDEX_EK[pokemon])
-					CUSTOMHACKSETDEX_EK[pokemon] = {};
-				CUSTOMHACKSETDEX_EK[pokemon][moveset] =
-					customsets[pokemon][moveset];
+				if (!CUSTOMHACKSETDEX_EK[pokemon]) CUSTOMHACKSETDEX_EK[pokemon]={};
+					CUSTOMHACKSETDEX_EK[pokemon][moveset] = customsets[pokemon][moveset];
+				if(!CUSTOMHACKSETDEX_EKK[pokemon]){ CUSTOMHACKSETDEX_EKK[pokemon]={};
+					CUSTOMHACKSETDEX_EKK[pokemon][moveset] = customsets[pokemon][moveset];
+				}				
 			}
 
 			var poke = { name: pokemon, nameProp: moveset };
