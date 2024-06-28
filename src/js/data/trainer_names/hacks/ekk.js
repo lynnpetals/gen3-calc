@@ -94,8 +94,8 @@ var CUSTOMHACKTRAINERNAMES_EKK = [
 	"Leader Flannery",
 	//Route 111
 	"Camper Drew",
-	"Camper Beau", 
-	"Picnicker Heidi", 
+	"Camper Beau",
+	"Picnicker Heidi",
 	"Picnicker Becky",
 	"Ruin Maniac Dusty",
 	// Petalburg Gym
@@ -229,7 +229,7 @@ var CUSTOMHACKTRAINERNAMES_EKK = [
 	"Swimmerf Tisha",
 	"Swimmerm Clarence",
 	//Route 132
-	"Fisherman Ronald", 
+	"Fisherman Ronald",
 	// Mossdeep Gym
 	"Psychic Preston",
 	"Psychic Maura",
@@ -285,13 +285,13 @@ var CUSTOMHACKTRAINERNAMES_EKK = [
 	"Champion ALB",
 	"Champion Safety",
 	"Champion Dood",
-	"Champion RedBlue", 
+	"Champion RedBlue",
 	"Champion Toxic",
 	"Not Champion Story",
 	"Champion amymae",
 	"Champion Bokk",
 	"Champion ywt1",
-	"Champion Buhrito", 
+	"Champion Buhrito",
 	"Champion Gian",
 	"Champion Gongas",
 	"Youngster Ray04",
