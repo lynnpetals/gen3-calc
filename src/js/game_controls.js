@@ -28,13 +28,11 @@ $(".game").change(function () {
 		$(".hide-from-games").hide();
 	} else $(".hide-from-games").show();
 	generation = gen;
-	setdex = !isHack ? CUSTOMSETDEX[gameId] : CUSTOMHACKSETDEX[gameId];
+	setdex = CUSTOMHACKSETDEX[gameId];
 	partyOrder = CUSTOMHACKPARTYORDER[1];
-	trainerNames = !isHack
-		? CUSTOMTRAINERNAMES[gameId]
-		: CUSTOMHACKTRAINERNAMES[gameId];
+	trainerNames = CUSTOMHACKTRAINERNAMES[gameId];
 	trainerSprites = CUSTOMHACKTRAINERSPRITES_EK;
-	flags = !isHack ? CUSTOMFLAGS[gameId] : CUSTOMHACKFLAGS[gameId];
+	flags = CUSTOMHACKFLAGS[gameId];
 	if (typeof setdex === "undefined") setdex = SETDEX[generation];
 	clearField();
 	$("#importedSets").prop("checked", false);
@@ -77,28 +75,6 @@ $(".game").change(function () {
 	$(".set-selector").change();
 });
 
-var CUSTOMSETDEX = [
-	undefined, // None
-	typeof CUSTOMSETDEX_RB === "undefined" ? {} : CUSTOMSETDEX_RB,
-	typeof CUSTOMSETDEX_Y === "undefined" ? {} : CUSTOMSETDEX_Y,
-	typeof CUSTOMSETDEX_GS === "undefined" ? {} : CUSTOMSETDEX_GS,
-	typeof CUSTOMSETDEX_C === "undefined" ? {} : CUSTOMSETDEX_C,
-	typeof CUSTOMSETDEX_RS === "undefined" ? {} : CUSTOMSETDEX_RS,
-	typeof CUSTOMSETDEX_E === "undefined" ? {} : CUSTOMSETDEX_E,
-	typeof CUSTOMSETDEX_FRLG === "undefined" ? {} : CUSTOMSETDEX_FRLG,
-	typeof CUSTOMSETDEX_DP === "undefined" ? {} : CUSTOMSETDEX_DP,
-	typeof CUSTOMSETDEX_Pl === "undefined" ? {} : CUSTOMSETDEX_Pl,
-	typeof CUSTOMSETDEX_HGSS === "undefined" ? {} : CUSTOMSETDEX_HGSS,
-	typeof CUSTOMSETDEX_BW === "undefined" ? {} : CUSTOMSETDEX_BW,
-	typeof CUSTOMSETDEX_B2W2 === "undefined" ? {} : CUSTOMSETDEX_B2W2,
-	typeof CUSTOMSETDEX_XY === "undefined" ? {} : CUSTOMSETDEX_XY,
-	typeof CUSTOMSETDEX_ORAS === "undefined" ? {} : CUSTOMSETDEX_ORAS,
-	typeof CUSTOMSETDEX_SM === "undefined" ? {} : CUSTOMSETDEX_SM,
-	typeof CUSTOMSETDEX_USUM === "undefined" ? {} : CUSTOMSETDEX_USUM,
-	typeof CUSTOMSETDEX_BDSP === "undefined" ? {} : CUSTOMSETDEX_BDSP,
-	typeof CUSTOMSETDEX_SV === "undefined" ? {} : CUSTOMSETDEX_SV,
-];
-
 var GAMEGEN = {
 	1: 1,
 	2: 1,
@@ -120,71 +96,6 @@ var GAMEGEN = {
 	18: 8,
 	19: 9,
 };
-
-var CUSTOMTRAINERNAMES = [
-	undefined, // None
-	typeof CUSTOMTRAINERNAMES_RB === "undefined" ? {} : CUSTOMTRAINERNAMES_RB,
-	typeof CUSTOMTRAINERNAMES_Y === "undefined" ? {} : CUSTOMTRAINERNAMES_Y,
-	typeof CUSTOMTRAINERNAMES_GS === "undefined" ? {} : CUSTOMTRAINERNAMES_GS,
-	typeof CUSTOMTRAINERNAMES_C === "undefined" ? {} : CUSTOMTRAINERNAMES_C,
-	typeof CUSTOMTRAINERNAMES_RS === "undefined" ? {} : CUSTOMTRAINERNAMES_RS,
-	typeof CUSTOMTRAINERNAMES_E === "undefined" ? {} : CUSTOMTRAINERNAMES_E,
-	typeof CUSTOMTRAINERNAMES_FRLG === "undefined"
-		? {}
-		: CUSTOMTRAINERNAMES_FRLG,
-	typeof CUSTOMTRAINERNAMES_DP === "undefined" ? {} : CUSTOMTRAINERNAMES_DP,
-	typeof CUSTOMTRAINERNAMES_Pl === "undefined" ? {} : CUSTOMTRAINERNAMES_Pl,
-	typeof CUSTOMTRAINERNAMES_HGSS === "undefined"
-		? {}
-		: CUSTOMTRAINERNAMES_HGSS,
-	typeof CUSTOMTRAINERNAMES_BW === "undefined" ? {} : CUSTOMTRAINERNAMES_BW,
-	typeof CUSTOMTRAINERNAMES_B2W2 === "undefined"
-		? {}
-		: CUSTOMTRAINERNAMES_B2W2,
-	typeof CUSTOMTRAINERNAMES_XY === "undefined" ? {} : CUSTOMTRAINERNAMES_XY,
-	typeof CUSTOMTRAINERNAMES_ORAS === "undefined"
-		? {}
-		: CUSTOMTRAINERNAMES_ORAS,
-	typeof CUSTOMTRAINERNAMES_SM === "undefined" ? {} : CUSTOMTRAINERNAMES_SM,
-];
-
-var CUSTOMPARTYORDER = [
-	undefined, // None
-	typeof CUSTOMPARTYORDER_RB === "undefined" ? {} : CUSTOMPARTYORDER_RB,
-	typeof CUSTOMPARTYORDER_Y === "undefined" ? {} : CUSTOMPARTYORDER_Y,
-	typeof CUSTOMPARTYORDER_GS === "undefined" ? {} : CUSTOMPARTYORDER_GS,
-	typeof CUSTOMPARTYORDER_C === "undefined" ? {} : CUSTOMPARTYORDER_C,
-	typeof CUSTOMPARTYORDER_RS === "undefined" ? {} : CUSTOMPARTYORDER_RS,
-	typeof CUSTOMPARTYORDER_E === "undefined" ? {} : CUSTOMPARTYORDER_E,
-	typeof CUSTOMPARTYORDER_FRLG === "undefined" ? {} : CUSTOMPARTYORDER_FRLG,
-	typeof CUSTOMPARTYORDER_DP === "undefined" ? {} : CUSTOMPARTYORDER_DP,
-	typeof CUSTOMPARTYORDER_Pl === "undefined" ? {} : CUSTOMPARTYORDER_Pl,
-	typeof CUSTOMPARTYORDER_HGSS === "undefined" ? {} : CUSTOMPARTYORDER_HGSS,
-	typeof CUSTOMPARTYORDER_BW === "undefined" ? {} : CUSTOMPARTYORDER_BW,
-	typeof CUSTOMPARTYORDER_B2W2 === "undefined" ? {} : CUSTOMPARTYORDER_B2W2,
-	typeof CUSTOMPARTYORDER_XY === "undefined" ? {} : CUSTOMPARTYORDER_XY,
-	typeof CUSTOMPARTYORDER_ORAS === "undefined" ? {} : CUSTOMPARTYORDER_ORAS,
-	typeof CUSTOMPARTYORDER_SM === "undefined" ? {} : CUSTOMPARTYORDER_SM,
-];
-
-var CUSTOMFLAGS = [
-	undefined, // None
-	typeof CUSTOMFLAGS_RB === "undefined" ? {} : CUSTOMFLAGS_RB,
-	typeof CUSTOMFLAGS_Y === "undefined" ? {} : CUSTOMFLAGS_Y,
-	typeof CUSTOMFLAGS_GS === "undefined" ? {} : CUSTOMFLAGS_GS,
-	typeof CUSTOMFLAGS_C === "undefined" ? {} : CUSTOMFLAGS_C,
-	typeof CUSTOMFLAGS_RS === "undefined" ? {} : CUSTOMFLAGS_RS,
-	typeof CUSTOMFLAGS_E === "undefined" ? {} : CUSTOMFLAGS_E,
-	typeof CUSTOMFLAGS_FRLG === "undefined" ? {} : CUSTOMFLAGS_FRLG,
-	typeof CUSTOMFLAGS_DP === "undefined" ? {} : CUSTOMFLAGS_DP,
-	typeof CUSTOMFLAGS_Pl === "undefined" ? {} : CUSTOMFLAGS_Pl,
-	typeof CUSTOMFLAGS_HGSS === "undefined" ? {} : CUSTOMFLAGS_HGSS,
-	typeof CUSTOMFLAGS_BW === "undefined" ? {} : CUSTOMFLAGS_BW,
-	typeof CUSTOMFLAGS_B2W2 === "undefined" ? {} : CUSTOMFLAGS_B2W2,
-	typeof CUSTOMFLAGS_XY === "undefined" ? {} : CUSTOMFLAGS_XY,
-	typeof CUSTOMFLAGS_ORAS === "undefined" ? {} : CUSTOMFLAGS_ORAS,
-	typeof CUSTOMFLAGS_SM === "undefined" ? {} : CUSTOMFLAGS_SM,
-];
 
 var CUSTOMHACKSETDEX = [
 	undefined, // None
@@ -222,8 +133,7 @@ var CUSTOMHACKFLAGS = [
 ];
 
 function updateGenOptions() {
-	var gamegen = !isHack ? GAMEGEN[gameId] : HACKGEN[gameId];
-	if (!isHack && gen == gamegen) return;
+	var gamegen =  HACKGEN[gameId];
 	gen = gamegen || gen;
 	GENERATION = calc.Generations.get(gen);
 	$("#gen" + gamegen).prop("checked", true);
@@ -246,11 +156,11 @@ function updateGenOptions() {
 			window.history.pushState({}, document.title, path);
 		}
 	}
-	pokedex = isHack ? calc.HACK_SPECIES[gameId] : calc.SPECIES[gen];
+	pokedex = calc.SPECIES[gen];
 	randdex = RANDDEX[gen];
 	typeChart = calc.TYPE_CHART[gen];
-	moves = isHack ? calc.HACK_MOVES[gameId] : calc.MOVES[gen];
-	items = isHack ? calc.HACK_ITEMS[gameId] : calc.ITEMS[gen];
+	moves = calc.MOVES[gen];
+	items = calc.ITEMS[gen];
 	abilities = calc.ABILITIES[gen];
 }
 
