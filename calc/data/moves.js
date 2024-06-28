@@ -613,6 +613,7 @@ var EK_PATCH = {
     'Wild Charge': { bp: 90, type: 'Electric', recoil: [1, 3] }
 };
 var EK = (0, util_1.extend)(true, {}, ADV, EK_PATCH);
+var EKK = (0, util_1.extend)(true, {}, EK);
 delete EK['High Jump Kick'];
 delete EK['Sonic Boom'];
 delete EK['Ancient Power'];
@@ -4991,7 +4992,7 @@ var SV_PATCH = {
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH);
 exports.MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
-exports.HACK_MOVES = [{}, EK];
+exports.HACK_MOVES = [{}, EK, EKK];
 var Moves = (function () {
     function Moves(gen) {
         this.gen = gen;

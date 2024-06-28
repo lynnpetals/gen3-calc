@@ -2995,6 +2995,9 @@ var EK_PATCH = {
     Crawdaunt: { expYield: 161 },
     Delcatty: { bs: { sp: 90 }, expYield: 138 },
     Deoxys: { expYield: 215 },
+    'Deoxys-Attack': { expYield: 215 },
+    'Deoxys-Defense': { expYield: 215 },
+    'Deoxys-Speed': { expYield: 215 },
     Dusclops: { bs: { hp: 90, at: 100 }, expYield: 179 },
     Duskull: { expYield: 97 },
     Dustox: { expYield: 160 },
@@ -3102,6 +3105,15 @@ var EK_PATCH = {
     Zigzagoon: { expYield: 60 }
 };
 var EK = (0, util_1.extend)(true, {}, ADV, EK_PATCH);
+var EKK_PATCH = {
+    Lapras: { bs: { sa: 115 } },
+    Vulpix: { bs: { sa: 80 } },
+    Murkrow: { bs: { hp: 100, at: 125, df: 52, sa: 105, sd: 52, sp: 91 } },
+    Sneasel: { bs: { hp: 70, at: 120, df: 64, sa: 45, sd: 85, sp: 125 } },
+    Tyranitar: { bs: { sd: 110 } },
+    Sableye: { bs: { sa: 105 } }
+};
+var EKK = (0, util_1.extend)(true, {}, EK, EKK_PATCH);
 var DPP_PATCH = {
     Aipom: { nfe: true },
     Dusclops: { nfe: true },
@@ -10420,7 +10432,7 @@ var SV_PATCH = {
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, PLA_PATCH);
 exports.SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
-exports.HACK_SPECIES = [{}, EK];
+exports.HACK_SPECIES = [{}, EK, EKK];
 var Species = (function () {
     function Species(gen) {
         this.gen = gen;
