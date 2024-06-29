@@ -825,7 +825,8 @@ function squashMultihit(gen: Generation, d: number[], hits: number, err = true) 
 
 function buildDescription(description: RawDesc, attacker: Pokemon, defender: Pokemon) {
   const [attackerLevel, defenderLevel] = getDescriptionLevels(attacker, defender);
-  var game: Game = (document.querySelector("input[name='game']:checked + label")?.innerHTML || "None") as Game;
+  var doc = document.getElementById("gameSelection") as HTMLSelectElement
+  var game: Game = ((document.getElementById("gameSelection") as HTMLSelectElement).options[doc.selectedIndex].text || "None") as Game;
   var isNoEVHack = ["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game);
   let output = '';
   if (description.attackBoost) {

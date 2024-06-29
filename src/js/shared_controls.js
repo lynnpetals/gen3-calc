@@ -1588,7 +1588,9 @@ function getMoveDetails(moveInfo, species, ability, item, useMax) {
 
 function createField() {
 	var gameType = $("input:radio[name='format']:checked").val();
-	var game = $("input[name='game']:checked + label").html();
+	// FROG
+	var doc = document.getElementById("gameSelection")
+	game = (doc).options[doc.selectedIndex].text
 	var isBeadsOfRuin = $("#beads").prop("checked");
 	var isTabletsOfRuin = $("#tablets").prop("checked");
 	var isSwordOfRuin = $("#sword").prop("checked");

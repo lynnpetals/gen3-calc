@@ -67,12 +67,19 @@
             <input class="mode visually-hidden" type="radio" name="mode" id="randoms" /><label class="btn btn-right btn-xwide" for="randoms">Random Battles</label>
         </span>
         <br />
-        <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
+        <!-- <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
             <span class="visually-hidden" id="selectGameInstruction">Select the game.</span>
-            <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left" for="game0">None</label>
-            <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-right btn-xwide" for="game1">Emerald Kaizo</label>
+            <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left btn-xwide" for="game0">None</label>
+            <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-mid btn-xwide" for="game1">Emerald Kaizo</label>
             <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
-        </span>
+        </span> -->
+        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction">
+            <optgroup label="Rom Hacks">
+                <option value="0" name="game" id="game0">None</option>
+                <option value="1" name="game" id="game1">Emerald Kaizo</option>
+                <option value="2" name="game" id="game2">Emerald Kaizo Kaizo</option>
+            </optgroup>
+        </select>
     </div>
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
         <div id="resultGroupL" aria-labelledby="resultHeaderL" class="move-result-subgroup left-results" role="radiogroup">
