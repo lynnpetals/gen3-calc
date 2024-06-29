@@ -69,8 +69,8 @@ $(".game").change(function () {
 		.remove()
 		.end()
 		.append('<option value="">(none)</option>' + itemOptions);
-
 	$(".set-selector").val(getFirstValidSetOption().id);
+	//need to load party before this happens
 	$(".set-selector").change();
 });
 
@@ -276,6 +276,7 @@ function predictSwitchOrderEmerald() {
 		}
 	}
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
+	// console.log(partySpecies)
 	var hasDupes = new Set(partySpecies).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	if (hasDupes) {
@@ -407,6 +408,8 @@ function predictSwitchOrderEmerald() {
 					else if (field.weather == "Rain") move.type = "Water";
 					else if (field.weather == "Hail") move.type = "Ice";
 				}
+				// console.log(enemy)
+				// console.log(move.type)
 				var typeEffectiveness1 = GENERATION.types.get(toID(move.type))
 					.effectiveness[defender.types[0]];
 				var typeEffectiveness2 = GENERATION.types.get(toID(move.type))
@@ -578,7 +581,7 @@ function predictSwitchOrderEmerald() {
 			}
 			nextMon = highestDamage.pokemon.name;
 		}
-
+		//BIGFLAG
 		var xp = Math.floor(
 			Math.floor((pokedex[dead.species].expYield * dead.level) / 7) * 1.5
 		);
