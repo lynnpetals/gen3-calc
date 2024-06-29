@@ -5011,6 +5011,7 @@ const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH);
 
 export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
+//HACK_GAMES
 export const HACK_MOVES = [{}, EK, EK];
 
 export class Moves implements I.Moves {

@@ -10427,6 +10427,7 @@ const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PAT
 
 export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
+//HACK_GAMES
 export const HACK_SPECIES = [{}, EK, EKK];
 
 export class Species implements I.Species {

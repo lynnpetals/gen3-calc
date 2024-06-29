@@ -582,6 +582,7 @@ const BERRIES: {[berry: string]: {t: I.TypeName; p: number}} = {
 
 export const ITEMS = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
+//HACK_GAMES
 export const HACK_ITEMS = [[], EK, EK];
 
 export class Items implements I.Items {

@@ -66,7 +66,7 @@ var CUSTOMHACKTRAINERNAMES_EK = [
 	"Psychic Edward",
 	"Psychic Jaclyn",
 	"Youngster Timmy",
-	"Collector Edwin [Tag]",
+	"Collector Edwin",
 	"Guitarist Joseph",
 	"Pokémon Trainer May #2 [Combusken]",
 	"Pokémon Trainer May #2 [Marshtomp]",
