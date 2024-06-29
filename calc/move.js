@@ -7,11 +7,12 @@ var SPECIAL = ['Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Psychic', 'Dark', '
 var Move = (function () {
     function Move(gen, name, options) {
         if (options === void 0) { options = {}; }
-        var _a, _b, _c;
+        var _a, _b;
         name = options.name || name;
         this.originalName = name;
         var data = (0, util_1.extend)(true, { name: name }, gen.moves.get((0, util_1.toID)(name)), options.overrides);
-        var game = (((_a = document.querySelector("input[name='game']:checked + label")) === null || _a === void 0 ? void 0 : _a.innerHTML) || "None");
+        var doc = document.getElementById("gameSelection");
+        var game = (document.getElementById("gameSelection").options[doc.selectedIndex].text || "None");
         if (["Emerald Kaizo"].includes(game)) {
             var hack_ids = { "Emerald Kaizo": 1 };
             data = (0, util_1.extend)(true, { name: name }, moves_1.HACK_MOVES_BY_ID[hack_ids[game]][(0, util_1.toID)(name)], options.overrides);
@@ -39,7 +40,7 @@ var Move = (function () {
                 category: data.category
             });
         }
-        if (options.useZ && ((_b = data.zMove) === null || _b === void 0 ? void 0 : _b.basePower)) {
+        if (options.useZ && ((_a = data.zMove) === null || _a === void 0 ? void 0 : _a.basePower)) {
             var zMoveName = getZMoveName(data.name, data.type, options.item);
             var zMove = gen.moves.get((0, util_1.toID)(zMoveName));
             data = (0, util_1.extend)(true, {}, zMove, {
@@ -84,7 +85,7 @@ var Move = (function () {
         this.category = data.category ||
             (gen.num < 4 ? (SPECIAL.includes(data.type) ? 'Special' : 'Physical') : 'Status');
         var stat = this.category === 'Special' ? 'spa' : 'atk';
-        if (((_c = data.self) === null || _c === void 0 ? void 0 : _c.boosts) && data.self.boosts[stat] && data.self.boosts[stat] < 0) {
+        if (((_b = data.self) === null || _b === void 0 ? void 0 : _b.boosts) && data.self.boosts[stat] && data.self.boosts[stat] < 0) {
             this.dropsStats = Math.abs(data.self.boosts[stat]);
         }
         this.timesUsed = (this.dropsStats && options.timesUsed) || 1;
