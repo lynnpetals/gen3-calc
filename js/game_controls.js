@@ -436,7 +436,7 @@ function predictSwitchOrderEmerald() {
 		}
 
 		// Phase 2 => Simple => Points for STAB moves for the dead mon and effective moves against me
-		//         => Adavnced => Actually calculating move damage
+		//         => Advanced => Actually calculating move damage
 		var highestDamage;
 		if (!nextMon) {
 			phase = 2;
