@@ -62,7 +62,10 @@ export class Move implements State.Move {
       var hack_ids: {[game_name: string]: number} = { "Emerald Kaizo": 1 };
       data = extend(true, {name}, HACK_MOVES_BY_ID[hack_ids[game]][toID(name)], options.overrides);
     }
-
+    if (["Emerald Kaizo Kaizo"].includes(game)) {
+      var hack_ids: {[game_name: string]: number} = { "Emerald Kaizo Kaizo": 2 };
+      data = extend(true, {name}, HACK_MOVES_BY_ID[hack_ids[game]][toID(name)], options.overrides);
+    }
     this.hits = 1;
     // If isZMove but there isn't a corresponding z-move, use the original move
     if (options.useMax && data.maxMove) {

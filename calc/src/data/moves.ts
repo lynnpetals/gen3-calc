@@ -195,6 +195,7 @@ const RBY: {[name: string]: MoveData} = {
   'Ice Punch': {bp: 75, type: 'Ice'},
   'Mega Kick': {bp: 120, type: 'Normal'},
   'Mega Punch': {bp: 80, type: 'Normal'},
+  'Paleo Wave': {bp: 85, type: 'Rock'},
   'Pay Day': {bp: 40, type: 'Normal'},
   Peck: {bp: 35, type: 'Flying'},
   Pound: {bp: 40, type: 'Normal'},
@@ -278,7 +279,7 @@ const GSC_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Ancient Power': {bp: 60, type: 'Rock'},
   'Bone Rush': {bp: 25, type: 'Ground', multihit: [2, 5]},
   Crunch: {bp: 80, type: 'Dark'},
-  'Faint Attack': {bp: 60, type: 'Dark'},
+  'Feint Attack': {bp: 60, type: 'Dark'},
   'Giga Drain': {bp: 60, type: 'Grass', drain: [1, 2]},
   'Hidden Power': {bp: 0, type: 'Normal'},
   'Mean Look': {bp: 0, category: 'Status', type: 'Normal'},
@@ -570,6 +571,8 @@ const ADV: {[name: string]: MoveData} = extend(true, {}, GSC, ADV_PATCH);
 const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   // Generation 1
   Crabhammer: {bp: 120},
+  Return: {bp:103},
+  Frustration: {bp:103},
   'Dizzy Punch': {bp: 90},
   'Glare': {type: 'Dark'},
   'High Jump Kick': {bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true},
@@ -582,7 +585,7 @@ const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   // Generation 2
   Aeroblast: {bp: 120},
   'Ancient Power': {bp: 80, type: 'Rock'},
-  'Faint Attack': {bp: 60, type: 'Dark'},
+  'Feint Attack': {bp: 60, type: 'Dark'},
   'Giga Drain': {bp: 75},
   'Rock Smash': {bp: 40},
   'Extreme Speed': {bp: 100},
@@ -788,7 +791,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Dizzy Punch': {isPunch: true, category: 'Physical'},
   'Dragon Rage': {category: 'Special'},
   'Egg Bomb': {category: 'Physical'},
-  'Faint Attack': {makesContact: true, category: 'Physical'},
+  'Feint Attack': {makesContact: true, category: 'Physical'},
   Frustration: {category: 'Physical'},
   'Hyper Fang': {isBite: true, category: 'Physical'},
   'Karate Chop': {category: 'Physical'},
@@ -2082,7 +2085,7 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Dragon Ascent': {zp: 190},
   'Dragon Rage': {zp: 100},
   'Egg Bomb': {zp: 180},
-  'Faint Attack': {zp: 120},
+  'Feint Attack': {zp: 120},
   'Fiery Dance': {zp: 160},
   'Flame Burst': {zp: 140},
   Frustration: {zp: 160},
@@ -3859,7 +3862,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Fake Out': {maxPower: 90},
   'False Swipe': {maxPower: 90},
   Feint: {maxPower: 90},
-  'Faint Attack': {maxPower: 110},
+  'Feint Attack': {maxPower: 110},
   'Fell Stinger': {maxPower: 100},
   'Fiery Dance': {maxPower: 130},
   'Final Gambit': {maxPower: 100},
@@ -5008,7 +5011,7 @@ const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH);
 
 export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
-export const HACK_MOVES = [{}, EK];
+export const HACK_MOVES = [{}, EK, EK];
 
 export class Moves implements I.Moves {
   private readonly gen: I.GenerationNum;
@@ -5124,6 +5127,7 @@ export const HACK_MOVES_BY_ID: Array<{[id: string]: Move}> = [];
 
 const HACKGEN = [
   0,
+  3,
   3
 ];
 
@@ -5132,7 +5136,7 @@ for (const moves of HACK_MOVES) {
   const map: {[id: string]: Move} = {};
   for (const move in moves) {
     const data = moves[move];
-    if ([1].includes(game)) {
+    if ([1, 2].includes(game)) {
       const m = new Move(move, data, HACKGEN[game]);
       map[m.id] = m;
     } else break;
