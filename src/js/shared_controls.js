@@ -510,7 +510,7 @@ $(".move-selector").change(function () {
 		var pokeObj = $(this).closest(".poke-info");
 		var pokemon = createPokemon(pokeObj);
 		var actual = calc.Stats.getHiddenPower(GENERATION, pokemon.ivs);
-		if (actual.type !== m[1] && !["Emerald Kaizo"].includes(game)) {
+		if (actual.type !== m[1] && !["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)) {
 			var hpIVs = calc.Stats.getHiddenPowerIVs(GENERATION, m[1]);
 			if (hpIVs && gen < 7) {
 				for (var i = 0; i < LEGACY_STATS[gen].length; i++) {
@@ -1005,7 +1005,7 @@ $(".set-selector").change(function () {
 				break;
 			}
 		}
-		if (["Emerald Kaizo"].includes(game)) {
+		if (["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)){
 			$("#ai-help").html(`🚩: [${ai}]`);
 			$("#ai-help").attr("flag", ai);
 
@@ -1277,7 +1277,7 @@ $(".forme").change(function () {
 });
 
 function correctHiddenPower(pokemon) {
-	if (["Emerald Kaizo"].includes(game)) return pokemon;
+	if (["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)) return pokemon;
 	// After Gen 7 bottlecaps means you can have a HP without perfect IVs
 	// Level 100 is elided from sets so if its undefined its level 100
 	if (gen >= 7 && (!pokemon.level || pokemon.level >= 100)) return pokemon;
@@ -2623,14 +2623,17 @@ function getGenSprite(poke) {
 		return;
 	}
 	if (poke.name.toLowerCase() == "mr. mime") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/mrmime.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/mrmime.png";
 	}
 
 	if (poke.name.toLowerCase() == "nidoran-m") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranm.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranm.png";
 	}
 	if (poke.name.toLowerCase() == "nidoran-f") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranf.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranf.png";
+	}
+	if (poke.name.toLowerCase() == "farfetch’d") {
+		return "https://play.pokemonshowdown.com/sprites/gen3/farfetchd.png";
 	}
 
 	if (poke.name.toLowerCase() == "ho-oh") {

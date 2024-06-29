@@ -358,6 +358,9 @@ function addSets(pokes, name) {
 				.replace("[", "")
 				.replace("]", "")
 				.trim();
+			console.log(move)
+			//Rename in-game moves to correspond to modern naming conventions
+			move = move.replace("Hi Jump Kick", "High Jump Kick").replace("Sonicboom", "Sonic Boom").replace("Ancientpower", "Ancient Power").replace("Faint Attack", "Feint Attack");
 			currentPoke.moves.push(move);
 		}
 	}

@@ -199,7 +199,7 @@ function performCalculations() {
 		stickyMoves.setSelectedMove(bestResult.prop("id"));
 	}
 	var game = $("input[name='game']:checked + label").html();
-	if (["Emerald Kaizo"].includes(game)) {
+	if (["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)){
 		predictMidTurnSwitch(p1, p2);
 		predictSwitchOrder();
 	}

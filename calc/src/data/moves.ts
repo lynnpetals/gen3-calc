@@ -571,19 +571,21 @@ const ADV: {[name: string]: MoveData} = extend(true, {}, GSC, ADV_PATCH);
 const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   // Generation 1
   Crabhammer: {bp: 120},
+  Return: {bp:103},
+  Frustration: {bp:103},
   'Dizzy Punch': {bp: 90},
   'Glare': {type: 'Dark'},
-  'Hi Jump Kick': {bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true},
+  'High Jump Kick': {bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true},
   'Petal Dance': {bp: 95},
-  'Sonicboom': {bp: 0, type: 'Normal'},
+  'Sonic Boom': {bp: 0, type: 'Normal'},
   'Sky Attack': {bp: 120, recoil: [1, 3]},
   'Super Fang': {type: 'Dark'},
   'Leech Life': {bp: 40},
   'Egg Bomb': {bp: 120, type: 'Grass', recoil: [1, 3]},
   // Generation 2
   Aeroblast: {bp: 120},
-  'Ancientpower': {bp: 80, type: 'Rock'},
-  'Faint Attack': {bp: 60, type: 'Dark'},
+  'Ancient Power': {bp: 80, type: 'Rock'},
+  'Feint Attack': {bp: 60, type: 'Dark'},
   'Giga Drain': {bp: 75},
   'Rock Smash': {bp: 40},
   'Extreme Speed': {bp: 100},
@@ -626,12 +628,7 @@ const EK_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 };
 
 const EK: {[name: string]: MoveData} = extend(true, {}, ADV, EK_PATCH);
-const EKK: {[name: string]: MoveData} = extend(true, {}, EK);
 
-delete EK['High Jump Kick'];
-delete EK['Sonic Boom'];
-delete EK['Ancient Power'];
-delete EK['Feint Attack'];
 delete EK['Comet Punch'];
 delete EK['Vise Grip'];
 delete EK['Horn Drill'];
@@ -5014,7 +5011,7 @@ const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH);
 
 export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
-export const HACK_MOVES = [{}, EK, EKK];
+export const HACK_MOVES = [{}, EK, EK];
 
 export class Moves implements I.Moves {
   private readonly gen: I.GenerationNum;
@@ -5130,6 +5127,7 @@ export const HACK_MOVES_BY_ID: Array<{[id: string]: Move}> = [];
 
 const HACKGEN = [
   0,
+  3,
   3
 ];
 
@@ -5138,7 +5136,7 @@ for (const moves of HACK_MOVES) {
   const map: {[id: string]: Move} = {};
   for (const move in moves) {
     const data = moves[move];
-    if ([1].includes(game)) {
+    if ([1, 2].includes(game)) {
       const m = new Move(move, data, HACKGEN[game]);
       map[m.id] = m;
     } else break;
