@@ -226,6 +226,7 @@ function updateDex(customsets, callback = null) {
 				if (!CUSTOMSETDEX_SM[pokemon]) CUSTOMSETDEX_SM[pokemon] = {};
 				CUSTOMSETDEX_SM[pokemon][moveset] = customsets[pokemon][moveset];
 			} else {
+				//HACK_GAMES
 				if (!CUSTOMHACKSETDEX_EK[pokemon]) CUSTOMHACKSETDEX_EK[pokemon]={};
 				CUSTOMHACKSETDEX_EK[pokemon][moveset] = customsets[pokemon][moveset];
 				if (!CUSTOMHACKSETDEX_EKK[pokemon]) CUSTOMHACKSETDEX_EKK[pokemon]={};

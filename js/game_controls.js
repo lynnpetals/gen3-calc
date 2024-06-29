@@ -75,6 +75,8 @@ $(".gameSelection").change(function () {
 	$(".set-selector").change();
 });
 
+
+//HACK_GAMES
 var CUSTOMHACKSETDEX = [
 	undefined, // None
 	typeof CUSTOMHACKSETDEX_EK === "undefined" ? {} : CUSTOMHACKSETDEX_EK,
@@ -255,7 +257,7 @@ var phase1TypeMatchups = {
 	"Fighting-Ghost": 0.0,
 };
 
-//TODO: Combine Switch-in and Enemy Party panels
+//Modifies the Switch panel HTML, adding corresponding text and EXP values.
 function predictSwitchOrderEmerald() {
 	var advanced = $("#advanced-bait").is(":checked");
 	var p1 = createPokemon($("#p1"));
@@ -279,6 +281,8 @@ function predictSwitchOrderEmerald() {
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
 	var hasDupes = new Set(partySpecies).size !== partySpecies.length;
 	var withMarkedDupes = [];
+	
+	//If the trainer has multiple of the same Pokémon species
 	if (hasDupes) {
 		var count = {};
 		for (var i in partySpecies) {
@@ -293,6 +297,8 @@ function predictSwitchOrderEmerald() {
 			} else withMarkedDupes[i] = partySpecies[i];
 		}
 	} else withMarkedDupes = partySpecies;
+	
+	//Add sets to the party
 	var partyMons = [];
 	if (hasDupes){
 		for (var i in withMarkedDupes) {
@@ -328,6 +334,8 @@ function predictSwitchOrderEmerald() {
 			}
 		}
 	}
+
+	//Check which mons are currently deceased
 	var deadList = [];
 	for (var i in partyMons) {
 		var dead = partyMons[i];

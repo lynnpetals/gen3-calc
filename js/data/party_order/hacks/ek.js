@@ -173,7 +173,7 @@ var CUSTOMHACKPARTYORDER_EK = {
 	"Psychic Edward": ["Slowpoke", "Exeggcute", "Abra"],
 	"Psychic Jaclyn": ["Unown", "Shuppet", "Kirlia"],
 	"Youngster Timmy": ["Kecleon", "Nuzleaf", "Lickitung"],
-	"Collector Edwin [Tag]": ["Chimecho", "Porygon", "Omanyte"],
+	"Collector Edwin": ["Chimecho", "Porygon", "Omanyte"],
 	"Guitarist Joseph": ["Elekid", "Lombre", "Wigglytuff"],
 	// Route 103
 	"Aroma Lady Daisy": [
