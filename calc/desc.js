@@ -649,7 +649,7 @@ function buildDescription(description, attacker, defender) {
     var _a;
     var _b = __read(getDescriptionLevels(attacker, defender), 2), attackerLevel = _b[0], defenderLevel = _b[1];
     var game = (((_a = document.querySelector("input[name='game']:checked + label")) === null || _a === void 0 ? void 0 : _a.innerHTML) || "None");
-    var isNoEVHack = ["Emerald Kaizo"].includes(game);
+    var isNoEVHack = ["Emerald Kaizo"].includes(game) || ["Emerald Kaizo Kaizo"].includes(game);
     var output = '';
     if (description.attackBoost) {
         if (description.attackBoost > 0) {

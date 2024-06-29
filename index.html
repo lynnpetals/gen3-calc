@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Emerald Kaizo Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?c5b28dec" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?efe3d595" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -163,13 +163,6 @@
     <div class="five-panels">
         <div class="panel" id="panel-1">
             <div class="trainer-pokes">
-                <div aria-label="Extra Player Numbers" role="region">
-                    <fieldset class="poke-info" id="p1b">
-                        <legend>Extra Player Info</legend>
-                        <span>1/8 of HP: <label id="player-eighth" class="player eighth-hp"></label></span>
-                        <span>1/16 of HP: <label id="player-sixteenth" class="player sixteenth-hp"></label></span>
-                    </fieldset>
-                </div>
                 <!--<div class="trainer-poke-list player-pokes">
                         <img class="trainer-poke-onside" src="https://play.pokemonshowdown.com/sprites/gen5/charizard.png">
                 </div>-->
@@ -262,8 +255,8 @@
                     <div class="info-group top i-f-stats">
                         <div>
                             <label class="selector-label">Type</label>
-                            <select aria-label="type2" class="selector-select type2 terrain-trigger save-trigger calc-trigger"></select>
-                            <select aria-label="type1" class="selector-select type1 terrain-trigger save-trigger calc-trigger"></select>
+                            <select aria-label="type2" class="selector-select type2 terrain-trigger calc-trigger"></select>
+                            <select aria-label="type1" class="selector-select type1 terrain-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -737,6 +730,31 @@
             <div aria-label="Field information" role="region">
                 <fieldset class="field-info" id="p3">
                     <legend align="center">Field</legend>
+                    <div aria-labelledby="chipDamage" class="" title="Chip damage.">
+                        <table style="width: 100%;">
+                            <tr>
+                                <th id="player-sixteenth"></th>
+                                <th>1/16 Damage</th>
+                                <th id="opposing-sixteenth"></th>
+                            </tr>
+                            <tr>
+                                <th id="player-eighth"></th>
+                                <th>1/8 Damage</th>
+                                <th id="opposing-eighth"></th>
+                            </tr>
+                            <tr>
+                                <th id="opposing-sixth"></th>
+                                <th>1/6 Damage</th>
+                                <th id="opposing-sixth"></th>
+                            </tr>
+                            <tr>
+                                <th id="opposing-fourth"></th>
+                                <th>1/4 Damage</th>
+                                <th id="opposing-fourth"></th>
+                            </tr>
+                        </table>
+                    </div>
+
                     <div aria-labelledby="selectBattleFormatInstruction" class="gen-specific g3 g4 g5 g6 g7 g8 g9" role="radiogroup" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                         <span class="visually-hidden" id="selectBattleFormatInstruction">Select the battle format.</span>
                         <input class="visually-hidden calc-trigger" type="radio" name="format" value="Singles" id="singles-format" />
@@ -1412,7 +1430,7 @@
                         <label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="50" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select>
+                        <select class="move-selector calc-trigger small-select"></select>
                         <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR1"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR1" title="Make this attack a Z-move?">Z</label>
                         <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR1" />
@@ -1445,7 +1463,7 @@
                         <label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select>
+                        <select class="move-selector calc-trigger small-select"></select>
                         
                         <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR2"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR2" title="Make this attack a Z-move?">Z</label>
@@ -1479,7 +1497,7 @@
                         <label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
+                        <select class="move-selector calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR3" title="Make this attack a Z-move?">Z</label>
                     <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR3" />
                         <label class="stellar-btn btn" style="display: none;" for="stellarR3" title="Make this attack Stellar boosted?">Stellar</label>
@@ -1511,7 +1529,7 @@
                         <label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
+                        <select class="move-selector calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR4" title="Make this attack a Z-move?">Z</label>
                         <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR4" />
                         <label class="stellar-btn btn" style="display: none;" for="stellarR4" title="Make this attack Stellar boosted?">Stellar</label>
@@ -1543,15 +1561,10 @@
         </div>
         <div class="panel" id="panel-5">
             <div aria-label="Extra Enemy Numbers" role="region">
-                <fieldset class="poke-info" id="p2b">
-                    <legend>Extra Enemy Info</legend>
-                    <span>1/8 of HP: <label id="opposing-eighth" class="opposing eighth-hp"></label></span>
-                    <span>1/16 of HP: <label id="opposing-sixteenth" class="opposing sixteenth-hp"></label></span>
-                </fieldset>
             </div>
-            <fieldset class="poke-info game-specific gm1" id="p5">
+            <fieldset class="poke-info" id="p5">
                 <legend align="center">Switch</legend>
-                <div class="game-specific gm1">
+                <div>
                     <hr>
                     <button type="button" id="previous-trainer">Prev</button>
                     <button type="button" id="next-trainer">Next</button>
@@ -1591,20 +1604,20 @@
     <script type="text/javascript" src="./calc/util.js?51463f0d"></script>
     <script type="text/javascript" src="./calc/stats.js?15f50e32"></script>
     <script type="text/javascript" src="./calc/data/species.js?efbb4622"></script>
-    <script type="text/javascript" src="./js/data/sets/gen9.js?0.3420634130826161"></script>
-    <script type="text/javascript" src="./js/data/sets/gen8.js?0.7845283211067726"></script>
-    <script type="text/javascript" src="./js/data/sets/gen7.js?0.6413210907094198"></script>
-    <script type="text/javascript" src="./js/data/sets/gen6.js?0.2534493413286283"></script>
-    <script type="text/javascript" src="./js/data/sets/gen5.js?0.14307340999874785"></script>
-    <script type="text/javascript" src="./js/data/sets/gen4.js?0.5203106261057697"></script>
-    <script type="text/javascript" src="./js/data/sets/gen3.js?0.37672349898597557"></script>
-    <script type="text/javascript" src="./js/data/sets/gen2.js?0.19774137058402141"></script>
-    <script type="text/javascript" src="./js/data/sets/gen1.js?0.9722593622464757"></script>
-    <script type="text/javascript" src="./js/data/sets/hacks/gen3/ek.js?193285b5"></script>
+    <script type="text/javascript" src="./js/data/sets/gen9.js?0.9504089051931202"></script>
+    <script type="text/javascript" src="./js/data/sets/gen8.js?0.37957266142722945"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js?0.6670310761048102"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js?0.006618951608307944"></script>
+    <script type="text/javascript" src="./js/data/sets/gen5.js?0.4432662548697117"></script>
+    <script type="text/javascript" src="./js/data/sets/gen4.js?0.7004476504381774"></script>
+    <script type="text/javascript" src="./js/data/sets/gen3.js?0.6671747457639572"></script>
+    <script type="text/javascript" src="./js/data/sets/gen2.js?0.5673337619077374"></script>
+    <script type="text/javascript" src="./js/data/sets/gen1.js?0.9487303240036875"></script>
+    <script type="text/javascript" src="./js/data/sets/hacks/gen3/ek.js?6671de49"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ek.js?c538c8e5"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ek.js?2a74d568"></script>
     <script type="text/javascript" src="./js/data/flags/hacks/ek.js?1246b1ff"></script>
-    <script type="text/javascript" src="./js/data/sets/hacks/gen3/ekk.js?7b5e7469"></script>
+    <script type="text/javascript" src="./js/data/sets/hacks/gen3/ekk.js?779e36d9"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ekk.js?ede1893c"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ekk.js?7871f3cd"></script>
     <script type="text/javascript" src="./js/data/flags/hacks/ekk.js?a541395d"></script>
@@ -1613,10 +1626,10 @@
     <script type="text/javascript" src="./calc/data/types.js?a641e10b"></script>
     <script type="text/javascript" src="./calc/data/natures.js?28612810"></script>
     <script type="text/javascript" src="./calc/data/abilities.js?95a9afd4"></script>
-    <script type="text/javascript" src="./calc/data/moves.js?6f4f0c23"></script>
-    <script type="text/javascript" src="./calc/data/items.js?a4c87d76"></script>
+    <script type="text/javascript" src="./calc/data/moves.js?7cb31854"></script>
+    <script type="text/javascript" src="./calc/data/items.js?ae016d49"></script>
     <script type="text/javascript" src="./calc/data/index.js?abecbd82"></script>
-    <script type="text/javascript" src="./calc/move.js?6c38056c"></script>
+    <script type="text/javascript" src="./calc/move.js?15d07c7f"></script>
     <script type="text/javascript" src="./calc/pokemon.js?1e459e1e"></script>
     <script type="text/javascript" src="./calc/field.js?410fb7b2"></script>
     <script type="text/javascript" src="./calc/items.js?067e42a4"></script>
@@ -1624,18 +1637,18 @@
     <script type="text/javascript" src="./calc/mechanics/gen789.js?01d413a2"></script>
     <script type="text/javascript" src="./calc/mechanics/gen56.js?cab200f7"></script>
     <script type="text/javascript" src="./calc/mechanics/gen4.js?c8ac642f"></script>
-    <script type="text/javascript" src="./calc/mechanics/gen3.js?5cacb31e"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen3.js?099f3cee"></script>
     <script type="text/javascript" src="./calc/mechanics/gen12.js?14e8e280"></script>
     <script type="text/javascript" src="./calc/calc.js?40a2d9b1"></script>
-    <script type="text/javascript" src="./calc/desc.js?14c2807f"></script>
+    <script type="text/javascript" src="./calc/desc.js?c4a02da3"></script>
     <script type="text/javascript" src="./calc/result.js?9f8881b5"></script>
     <script type="text/javascript" src="./calc/adaptable.js?92e49194"></script>
     <script type="text/javascript" src="./calc/index.js?b8906f6c"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?6b60f890"></script>
-    <script type="text/javascript" src="./js/index_randoms_controls.js?a6fa5d12"></script>
-    <script type="text/javascript" src="./js/moveset_import.js?dd9c67bf"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?62419bbd"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js?45404e86"></script>
+    <script type="text/javascript" src="./js/moveset_import.js?cb72fbe1"></script>
 
-    <script type="text/javascript" src="./js/game_controls.js?f417f209"></script>
+    <script type="text/javascript" src="./js/game_controls.js?a267fff8"></script>
         
     <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 28 June 2024.
         <ul><li><a href="https://github.com/AFalsePrayer/ek-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>

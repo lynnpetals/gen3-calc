@@ -133,11 +133,11 @@ function updateGenOptions() {
 			window.history.pushState({}, document.title, path);
 		}
 	}
-	pokedex = calc.SPECIES[gen];
+	pokedex = calc.HACK_SPECIES[gameId];
 	randdex = RANDDEX[gen];
 	typeChart = calc.TYPE_CHART[gen];
-	moves = calc.MOVES[gen];
-	items = calc.ITEMS[gen];
+	moves = calc.HACK_MOVES[gameId];
+	items = calc.HACK_ITEMS[gameId];
 	abilities = calc.ABILITIES[gen];
 }
 
@@ -293,7 +293,7 @@ function predictSwitchOrderEmerald() {
 		}
 	} else withMarkedDupes = partySpecies;
 	var partyMons = [];
-	if (hasDupes)
+	if (hasDupes){
 		for (var i in withMarkedDupes) {
 			var current_trainer = window.CURRENT_TRAINER;
 			if (withMarkedDupes[i].includes("(")) {
@@ -310,10 +310,14 @@ function predictSwitchOrderEmerald() {
 				return;
 			}
 		}
-	else
+	}
+	else{
+		// console.log(setdex)
+		// console.log(partySpecies)
+		//TODO: enemy party needs to also change when switching games before trying to calculate switch order
 		for (var i in partySpecies) {
-			partyMons.push(setdex[partySpecies[i]][window.CURRENT_TRAINER]);
 			try {
+				partyMons.push(setdex[partySpecies[i]][window.CURRENT_TRAINER]);
 				partyMons[i].species = partySpecies[i];
 				partyMons[
 					i
@@ -324,7 +328,7 @@ function predictSwitchOrderEmerald() {
 				return;
 			}
 		}
-
+	}
 	var deadList = [];
 	for (var i in partyMons) {
 		var dead = partyMons[i];
@@ -604,6 +608,8 @@ function predictSwitchOrder() {
 	switch (game) {
 		case "Emerald Kaizo":
 			return predictSwitchOrderEmerald();
+		case "Emerald Kaizo Kaizo":
+			return predictSwitchOrderEmerald();
 		default:
 			return undefined;
 	}
@@ -675,6 +681,8 @@ function predictMidTurnSwitchEmerald(p1, p2) {
 function predictMidTurnSwitch(p1, p2) {
 	switch (game) {
 		case "Emerald Kaizo":
+			return predictMidTurnSwitchEmerald(p1, p2);
+		case "Emerald Kaizo Kaizo":
 			return predictMidTurnSwitchEmerald(p1, p2);
 		default:
 			return false;

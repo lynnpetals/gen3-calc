@@ -220,7 +220,6 @@ var EK = ADV.concat([
     "Energy Powder",
     "Enigma Berry"
 ]);
-var EKK = EK;
 var DPP = ADV.concat([
     'Adamant Orb',
     'Armor Fossil',
@@ -626,7 +625,7 @@ var BERRIES = {
     'Yache Berry': { t: 'Ice', p: 80 }
 };
 exports.ITEMS = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
-exports.HACK_ITEMS = [[], EK, EKK];
+exports.HACK_ITEMS = [[], EK, EK];
 var Items = (function () {
     function Items(gen) {
         this.gen = gen;
