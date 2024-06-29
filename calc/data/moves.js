@@ -563,18 +563,20 @@ var ADV_PATCH = {
 var ADV = (0, util_1.extend)(true, {}, GSC, ADV_PATCH);
 var EK_PATCH = {
     Crabhammer: { bp: 120 },
+    Return: { bp: 103 },
+    Frustration: { bp: 103 },
     'Dizzy Punch': { bp: 90 },
     'Glare': { type: 'Dark' },
-    'Hi Jump Kick': { bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true },
+    'High Jump Kick': { bp: 85, type: 'Fighting', hasCrashDamage: true, makesContact: true },
     'Petal Dance': { bp: 95 },
-    'Sonicboom': { bp: 0, type: 'Normal' },
+    'Sonic Boom': { bp: 0, type: 'Normal' },
     'Sky Attack': { bp: 120, recoil: [1, 3] },
     'Super Fang': { type: 'Dark' },
     'Leech Life': { bp: 40 },
     'Egg Bomb': { bp: 120, type: 'Grass', recoil: [1, 3] },
     Aeroblast: { bp: 120 },
-    'Ancientpower': { bp: 80, type: 'Rock' },
-    'Faint Attack': { bp: 60, type: 'Dark' },
+    'Ancient Power': { bp: 80, type: 'Rock' },
+    'Feint Attack': { bp: 60, type: 'Dark' },
     'Giga Drain': { bp: 75 },
     'Rock Smash': { bp: 40 },
     'Extreme Speed': { bp: 100 },
@@ -613,10 +615,6 @@ var EK_PATCH = {
     'Wild Charge': { bp: 90, type: 'Electric', recoil: [1, 3] }
 };
 var EK = (0, util_1.extend)(true, {}, ADV, EK_PATCH);
-delete EK['High Jump Kick'];
-delete EK['Sonic Boom'];
-delete EK['Ancient Power'];
-delete EK['Feint Attack'];
 delete EK['Comet Punch'];
 delete EK['Vise Grip'];
 delete EK['Horn Drill'];
@@ -4991,7 +4989,7 @@ var SV_PATCH = {
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH);
 exports.MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
-exports.HACK_MOVES = [{}, EK];
+exports.HACK_MOVES = [{}, EK, EK];
 var Moves = (function () {
     function Moves(gen) {
         this.gen = gen;
@@ -5102,6 +5100,7 @@ finally {
 exports.HACK_MOVES_BY_ID = [];
 var HACKGEN = [
     0,
+    3,
     3
 ];
 var game = 0;
@@ -5111,7 +5110,7 @@ try {
         var map = {};
         for (var move in moves) {
             var data = moves[move];
-            if ([1].includes(game)) {
+            if ([1, 2].includes(game)) {
                 var m = new Move(move, data, HACKGEN[game]);
                 map[m.id] = m;
             }

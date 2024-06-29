@@ -810,13 +810,13 @@ table.field {
 	color: unset;
 }
 
-#gameSettings {
+.genSelection {
 	display: none;
 }
 
 .ivs.calc-trigger,
 .base.calc-trigger {
-	display: none !important;
+	/* display: none !important; */
 }
 
 #p1 {

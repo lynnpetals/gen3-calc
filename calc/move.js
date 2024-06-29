@@ -16,6 +16,10 @@ var Move = (function () {
             var hack_ids = { "Emerald Kaizo": 1 };
             data = (0, util_1.extend)(true, { name: name }, moves_1.HACK_MOVES_BY_ID[hack_ids[game]][(0, util_1.toID)(name)], options.overrides);
         }
+        if (["Emerald Kaizo Kaizo"].includes(game)) {
+            var hack_ids = { "Emerald Kaizo Kaizo": 2 };
+            data = (0, util_1.extend)(true, { name: name }, moves_1.HACK_MOVES_BY_ID[hack_ids[game]][(0, util_1.toID)(name)], options.overrides);
+        }
         this.hits = 1;
         if (options.useMax && data.maxMove) {
             var maxMoveName_1 = getMaxMoveName(data.type, options.species, !!(data.category === 'Status'), options.ability);

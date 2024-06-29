@@ -171,7 +171,6 @@ function performCalculations() {
 			bestResult = $(resultLocations[fastestSide][bestMove].move);
 		}
 	}
-	console.log($("#singles-format"));
 	if ($("input:radio[name='format']:checked").val() === "Singles") {
 		if (fastestSide === "tie") {
 			$(".sp .totalMod")[0].className = "totalMod speed-tie";
@@ -182,7 +181,6 @@ function performCalculations() {
 			$(".sp .totalMod").html("");
 			$(".sp .totalMod").append(img);
 		} else {
-			console.log($(".sp .totalMod"));
 			//TODO: Add better icons
 			var imgFaster = document.createElement("img");
 			var imgSlower = document.createElement("img");
@@ -201,7 +199,7 @@ function performCalculations() {
 		stickyMoves.setSelectedMove(bestResult.prop("id"));
 	}
 	var game = $("input[name='game']:checked + label").html();
-	if (["Emerald Kaizo"].includes(game)) {
+	if (["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)){
 		predictMidTurnSwitch(p1, p2);
 		predictSwitchOrder();
 	}

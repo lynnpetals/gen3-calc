@@ -23,9 +23,6 @@
 </head>
 
 <body class="dark-theme">
-<img class="exbg" id="bg-image-a" src="./img/calc-backg-v14a.png"/>
-<!-- <div class="twinkling"></div> -->
-<img class="exbg" id="bg-image-b" src="./img/calc-backg-v13b.png"/>
 
 
 <nav hidden><div class="header"><div class="header-inner">
@@ -69,19 +66,12 @@
             <input class="mode visually-hidden" type="radio" name="mode" id="all-vs-one" /><label class="btn btn-mid btn-wide gen-specific g3 g4 g5 g6 g7 g8 g9" for="all-vs-one">All vs One</label>
             <input class="mode visually-hidden" type="radio" name="mode" id="randoms" /><label class="btn btn-right btn-xwide" for="randoms">Random Battles</label>
         </span>
-        <span class="gamemodeSelection" aria-labelledby="selectGamemodeInstruction" role="radiogroup" title="Select the game mode.">
-            <span class="visually-hidden" id="selectGamemodeInstruction">Select the game mode.</span>
-            <input class="gamemode visually-hidden" type="radio" name="gamemode" id="vanilla" /><label class="btn btn-left btn-wide" for="vanilla">Vanilla</label>
-            <input class="gamemode visually-hidden" type="radio" name="gamemode" id="hacks" checked="checked" /><label class="btn btn-right btn-wide" for="hacks">ROM Hacks</label>
-        </span>
         <br />
         <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
             <span class="visually-hidden" id="selectGameInstruction">Select the game.</span>
             <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left" for="game0">None</label>
             <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-right btn-xwide" for="game1">Emerald Kaizo</label>
-        </span>
-        <span class="gameSelection game-specific gm1" hidden>
-            <a href="https://ekdex.anastarawneh.com" target="_blank"><input class="openDex visually-hidden" type="button" id="openDex" /><label class="btn" for="openDex">Pok&eacute;dex</label></a>
+            <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
         </span>
     </div>
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
@@ -171,20 +161,11 @@
         </div>
     </div>
     <div class="five-panels">
-        
         <div class="panel" id="panel-1">
             <div class="trainer-pokes">
-                <div aria-label="Extra Player Numbers" role="region">
-                    <fieldset class="poke-info" id="p1b">
-                        <legend>Extra Player Info</legend>
-                        <span>1/8 of HP: <label id="player-eighth" class="player eighth-hp"></label></span>
-                        <span>1/16 of HP: <label id="player-sixteenth" class="player sixteenth-hp"></label></span>
-                    </fieldset>
-                </div>
                 <!--<div class="trainer-poke-list player-pokes">
                         <img class="trainer-poke-onside" src="https://play.pokemonshowdown.com/sprites/gen5/charizard.png">
                 </div>-->
-                
                 <fieldset class="poke-info" id="p4">
                     <legend align="center">Team/Box</legend>
                     <div>
@@ -266,7 +247,6 @@
                     <legend align="center">Player<button class="on-legend" id="save-change" hidden>Save Changes</button></legend>
                     <div class="info-group display-sprites">
                         <img id="p1mon" src="" alt="" height="100px">
-                        
                         <input type="text" class="set-selector calc-trigger player" />
                     </div>
                     <span id="importedSetsOptions" style="width:auto; display:none">
@@ -275,8 +255,8 @@
                     <div class="info-group top i-f-stats">
                         <div>
                             <label class="selector-label">Type</label>
-                            <select aria-label="type2" class="selector-select type2 terrain-trigger save-trigger calc-trigger"></select>
-                            <select aria-label="type1" class="selector-select type1 terrain-trigger save-trigger calc-trigger"></select>
+                            <select aria-label="type2" class="selector-select type2 terrain-trigger calc-trigger"></select>
+                            <select aria-label="type1" class="selector-select type1 terrain-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -750,6 +730,31 @@
             <div aria-label="Field information" role="region">
                 <fieldset class="field-info" id="p3">
                     <legend align="center">Field</legend>
+                    <div aria-labelledby="chipDamage" class="" title="Chip damage.">
+                        <table style="width: 100%;">
+                            <tr>
+                                <th id="player-sixteenth"></th>
+                                <th>1/16 Damage</th>
+                                <th id="opposing-sixteenth"></th>
+                            </tr>
+                            <tr>
+                                <th id="player-eighth"></th>
+                                <th>1/8 Damage</th>
+                                <th id="opposing-eighth"></th>
+                            </tr>
+                            <tr>
+                                <th id="player-sixth"></th>
+                                <th>1/6 Damage</th>
+                                <th id="opposing-sixth"></th>
+                            </tr>
+                            <tr>
+                                <th id="player-fourth"></th>
+                                <th>1/4 Damage</th>
+                                <th id="opposing-fourth"></th>
+                            </tr>
+                        </table>
+                    </div>
+
                     <div aria-labelledby="selectBattleFormatInstruction" class="gen-specific g3 g4 g5 g6 g7 g8 g9" role="radiogroup" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                         <span class="visually-hidden" id="selectBattleFormatInstruction">Select the battle format.</span>
                         <input class="visually-hidden calc-trigger" type="radio" name="format" value="Singles" id="singles-format" />
@@ -1425,7 +1430,7 @@
                         <label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="50" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select>
+                        <select class="move-selector calc-trigger small-select"></select>
                         <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR1"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR1" title="Make this attack a Z-move?">Z</label>
                         <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR1" />
@@ -1458,7 +1463,7 @@
                         <label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select>
+                        <select class="move-selector calc-trigger small-select"></select>
                         
                         <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR2"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR2" title="Make this attack a Z-move?">Z</label>
@@ -1492,7 +1497,7 @@
                         <label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
+                        <select class="move-selector calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR3" title="Make this attack a Z-move?">Z</label>
                     <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR3" />
                         <label class="stellar-btn btn" style="display: none;" for="stellarR3" title="Make this attack Stellar boosted?">Stellar</label>
@@ -1524,7 +1529,7 @@
                         <label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
                         <select class="move-type calc-trigger"></select>
                         <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
-                        <select class="move-selector save-trigger calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
+                        <select class="move-selector calc-trigger small-select"></select><input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
                         <label class="btn z-btn gen-specific g7 g8 g9" for="zR4" title="Make this attack a Z-move?">Z</label>
                         <input aria-describedby="stellarBoostInstruction" class="move-stellar calc-trigger visually-hidden" type="checkbox" id="stellarR4" />
                         <label class="stellar-btn btn" style="display: none;" for="stellarR4" title="Make this attack Stellar boosted?">Stellar</label>
@@ -1556,15 +1561,10 @@
         </div>
         <div class="panel" id="panel-5">
             <div aria-label="Extra Enemy Numbers" role="region">
-                <fieldset class="poke-info" id="p2b">
-                    <legend>Extra Enemy Info</legend>
-                    <span>1/8 of HP: <label id="opposing-eighth" class="opposing eighth-hp"></label></span>
-                    <span>1/16 of HP: <label id="opposing-sixteenth" class="opposing sixteenth-hp"></label></span>
-                </fieldset>
             </div>
-            <fieldset class="poke-info game-specific gm1" id="p5">
+            <fieldset class="poke-info" id="p5">
                 <legend align="center">Switch</legend>
-                <div class="game-specific gm1">
+                <div>
                     <hr>
                     <button type="button" id="previous-trainer">Prev</button>
                     <button type="button" id="next-trainer">Next</button>
@@ -1617,6 +1617,10 @@
     <script type="text/javascript" src="./js/data/party_order/hacks/ek.js?"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ek.js?"></script>
     <script type="text/javascript" src="./js/data/flags/hacks/ek.js?"></script>
+    <script type="text/javascript" src="./js/data/sets/hacks/gen3/ekk.js?"></script>
+    <script type="text/javascript" src="./js/data/party_order/hacks/ekk.js?"></script>
+    <script type="text/javascript" src="./js/data/trainer_names/hacks/ekk.js?"></script>
+    <script type="text/javascript" src="./js/data/flags/hacks/ekk.js?"></script>
     <script type="text/javascript" src="./js/data/pokedex.js?"></script>
     <script type="text/javascript" src="./js/data/trainer_sprites/hacks/trainer_sprites.js?"></script>
     <script type="text/javascript" src="./calc/data/types.js?"></script>

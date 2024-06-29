@@ -510,7 +510,7 @@ $(".move-selector").change(function () {
 		var pokeObj = $(this).closest(".poke-info");
 		var pokemon = createPokemon(pokeObj);
 		var actual = calc.Stats.getHiddenPower(GENERATION, pokemon.ivs);
-		if (actual.type !== m[1] && !["Emerald Kaizo"].includes(game)) {
+		if (actual.type !== m[1] && !["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)) {
 			var hpIVs = calc.Stats.getHiddenPowerIVs(GENERATION, m[1]);
 			if (hpIVs && gen < 7) {
 				for (var i = 0; i < LEGACY_STATS[gen].length; i++) {
@@ -790,7 +790,6 @@ $(".set-selector").change(function () {
 			? randdex[pokemonName]
 			: undefined;
 		var regSets = pokemonName in setdex && setName in setdex[pokemonName];
-
 		if (randset) {
 			var listItems = randdex[pokemonName].items
 				? randdex[pokemonName].items
@@ -1005,7 +1004,7 @@ $(".set-selector").change(function () {
 				break;
 			}
 		}
-		if (["Emerald Kaizo"].includes(game)) {
+		if (["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)){
 			$("#ai-help").html(`🚩: [${ai}]`);
 			$("#ai-help").attr("flag", ai);
 
@@ -1059,16 +1058,14 @@ function updateTickedHP() {
 	playtotal = $(".poke-info").find(".hp .total")[0].textContent;
 	optotal = $(".poke-info").find(".hp .total")[1].textContent;
 
+	$("#opposing-fourth")[0].textContent = Math.max(1, Math.trunc(optotal / 4));
+	$("#opposing-sixth")[0].textContent = Math.max(1, Math.trunc(optotal / 6));
 	$("#opposing-eighth")[0].textContent = Math.max(1, Math.trunc(optotal / 8));
-	$("#opposing-sixteenth")[0].textContent = Math.max(
-		1,
-		Math.trunc(optotal / 16)
-	);
+	$("#opposing-sixteenth")[0].textContent = Math.max(1, Math.trunc(optotal / 16));
+	$("#player-fourth")[0].textContent = Math.max(1, Math.trunc(playtotal / 4));
+	$("#player-sixth")[0].textContent = Math.max(1, Math.trunc(playtotal / 6));
 	$("#player-eighth")[0].textContent = Math.max(1, Math.trunc(playtotal / 8));
-	$("#player-sixteenth")[0].textContent = Math.max(
-		1,
-		Math.trunc(playtotal / 16)
-	);
+	$("#player-sixteenth")[0].textContent = Math.max(1, Math.trunc(playtotal / 16));
 }
 
 function trySendRiskyAlert() {
@@ -1277,7 +1274,7 @@ $(".forme").change(function () {
 });
 
 function correctHiddenPower(pokemon) {
-	if (["Emerald Kaizo"].includes(game)) return pokemon;
+	if (["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game)) return pokemon;
 	// After Gen 7 bottlecaps means you can have a HP without perfect IVs
 	// Level 100 is elided from sets so if its undefined its level 100
 	if (gen >= 7 && (!pokemon.level || pokemon.level >= 100)) return pokemon;
@@ -2027,27 +2024,22 @@ function getSetOptions(sets) {
 		var pokeName = pokeNames[i];
 		setOptions.push({
 			pokemon: pokeName,
-			text: pokeName,
+			text: pokeName
 		});
 		if ($("#randoms").prop("checked")) {
 			if (pokeName in randdex) {
 				setOptions.push({
 					pokemon: pokeName,
-					set: "Randoms Set",
+					set: 'Randoms Set',
 					text: pokeName + " (Randoms)",
-					id: pokeName + " (Randoms)",
+					id: pokeName + " (Randoms)"
 				});
 			}
 		} else {
 			if (pokeName in setdex) {
-				var setNames = partyOrder
-					? Object.keys(setdex[pokeName]).sort((a, b) => {
-							return Object.keys(partyOrder).includes(b.split(" (")[0])
-								? Object.keys(partyOrder).indexOf(a.split(" (")[0]) -
-										Object.keys(partyOrder).indexOf(b.split(" (")[0])
-								: -1;
-					  })
-					: Object.keys(setdex[pokeName]);
+				var setNames = partyOrder ? Object.keys(setdex[pokeName]).sort((a, b) => {
+					return Object.keys(partyOrder).includes(b.split(" (")[0]) ? Object.keys(partyOrder).indexOf(a.split(" (")[0]) - Object.keys(partyOrder).indexOf(b.split(" (")[0]) : -1;
+				}) : Object.keys(setdex[pokeName]);
 				for (var j = 0; j < setNames.length; j++) {
 					var setName = setNames[j];
 					setOptions.push({
@@ -2056,7 +2048,7 @@ function getSetOptions(sets) {
 						text: pokeName + " (" + setName + ")",
 						id: pokeName + " (" + setName + ")",
 						isCustom: setdex[pokeName][setName].isCustomSet,
-						nickname: setdex[pokeName][setName].nickname || "",
+						nickname: setdex[pokeName][setName].nickname || ""
 					});
 				}
 			}
@@ -2064,7 +2056,7 @@ function getSetOptions(sets) {
 				pokemon: pokeName,
 				set: "Blank Set",
 				text: pokeName + " (Blank Set)",
-				id: pokeName + " (Blank Set)",
+				id: pokeName + " (Blank Set)"
 			});
 		}
 	}
@@ -2386,10 +2378,13 @@ function getTrainerNames() {
 		case "S/V":
 			allPokemon = CUSTOMSETDEX_SV;
 			break;
-
 		case "Emerald Kaizo":
 			allPokemon = CUSTOMHACKSETDEX_EK;
 			break;
+		case "Emerald Kaizo Kaizo":
+			allPokemon = CUSTOMHACKSETDEX_EKK;
+			break;
+	
 
 		default:
 			return [];
@@ -2472,9 +2467,9 @@ function getBabySprite(poke) {
 	}
 }
 function getGenBackSprite(poke) {
-	const animons =
-		"abomasnow-f, abomasnow-mega, abomasnow, abra, absol-mega, absol, accelgor, aegislash-blade, aegislash, aegislashf, aerodactyl, aggron, aipom-f, aipom, alakazam-f, alakazam, alomomola, altaria, amaura, ambipom-f, ambipom, amoonguss, ampharos-mega, ampharos, anorith, applin, araquanid, arbok, arcanine, arceus-bug, arceus-dark, arceus-dragon, arceus-electric, arceus-fairy, arceus-fighting, arceus-fire, arceus-flying, arceus-ghost, arceus-grass, arceus-ground, arceus-ice, arceus-poison, arceus-psychic, arceus-rock, arceus-steel, arceus-water, arceus, archen, archeops, arctovish, ariados, armaldo, aron, arrokuda, articuno, audino, aurumoth, avalugg, axew, azelf, azumarill, azurill, bagon, baltoy, banette, barboach, basculegion-f, basculegion, basculin-bluestriped, basculin, bastiodon, bayleef, beartic, beautifly-f, beautifly, beedrill, beheeyem, beldum, bellossom, bellsprout, bergmite, bewear, bibarel-f, bibarel, bidoof-f, bidoof, binacle, bisharp, blastoise, blaziken-f, blaziken, blissey, blitzle, boldore, bonsly, bouffalant, bounsweet, braixen, braviary, breloom, bronzong, bronzor, budew, buizel-f, buizel, bulbasaur, buneary, burmy-sandy, burmy-trash, burmy, butterfree-f, butterfree, cacnea, cacturne-f, cacturne, camerupt-f, camerupt, carbink, carnivine, carracosta, carvanha, cascoon, castform-rainy, castform-snowy, castform-sunny, castform, caterpie, cawmodore, celebi, celesteela, chandelure, chansey, charizard, charjabug, charmander, charmeleon, chatot, cherrim-sunshine, cherrim, cherubi, chesnaught, chewtle, chikorita, chimchar, chimecho, chinchou, chingling, cinccino, cinderace-gmax, clamperl, clauncher, clawitzer, claydol, clefable, clefairy, cleffa, cloyster, cobalion, cofagrigus, combee-f, combee, combusken-f, combusken, comfey, conkeldurr, corphish, corsola, corviknight, corvisquire, cosmoem, cottonee, crabrawler, cradily, cranidos, crawdaunt, cresselia, croagunk-f, croagunk, crobat, croconaw, crustle, cryogonal, cubchoo, cubone, cursola, cutiefly, cyndaquil, darkrai, darmanitan-galarzen, darmanitan-zen, darmanitan, darumaka, dedenne, deerling-autumn, deerling-summer, deerling-winter, deerling, deino, delcatty, delibird, deoxys-attack, deoxys-defense, deoxys-speed, deoxys, dewgong, dewott, dewpider, dhelmise, dialga, diancie, diglett, ditto, dodrio-f, dodrio, doduo-f, doduo, donphan-f, donphan, dracovish, dragapult, dragonair, dragonite, drapion, dratini, drednaw, drifblim, drifloon, drilbur, drowzee, druddigon, ducklett, dugtrio, dunsparce, duosion, duraludon, durant, dusclops, dusknoir, duskull, dustox-f, dustox, dwebble, eelektrik, eelektross, eevee, ekans, eldegoss, electabuzz, electivire, electrike, electrode, elekid, elgyem, emboar, emolga, empoleon, entei, escavalier, espeon, eternatus, excadrill, exeggcute, exeggutor, exploud, farfetchd-galar, farfetchd, fearow, feebas, fennekin, feraligatr, ferroseed, ferrothorn, finneon-f, finneon, flaaffy, flareon, fletchling, floatzel-f, floatzel, florges, flygon, fomantis, foongus, forretress, fraxure, frillish-f, frillish, froakie, froslass, furret, gabite-f, gabite, gallade, galvantula, garbodor-gmax, garbodor, garchomp-f, garchomp-mega, garchomp, gardevoir-mega, gardevoir, gastly, gastrodon-east, gastrodon, genesect-burn, genesect-chill, genesect-douse, genesect-shock, genesect, gengar, geodude, gible-f, gible, gigalith, girafarig-f, girafarig, giratina-origin, giratina, glaceon, glalie, glameow, gligar-f, gligar, gliscor, gloom-f, gloom, golbat-f, golbat, goldeen-f, goldeen, golduck, golem, golett, golurk, goodra-hisui, goomy, gorebyss, gothita, gothitelle, gothorita, granbull, graveler, grimer, grimmsnarl, grotle, groudon, grovyle, growlithe, grubbin, grumpig, gulpin-f, gulpin, gurdurr, gyarados-f, gyarados, happiny, hariyama, haunter, haxorus, heatmor, heatran, heracross-f, heracross, herdier, hippopotas-f, hippopotas, hippowdon-f, hippowdon, hitmonchan, hitmonlee, hitmontop, honchkrow, honedge, hooh, hoothoot, hoppip, horsea, houndoom-f, houndoom, houndour, huntail, hydreigon, hypno-f, hypno, igglybuff, illumise, impidimp, infernape, ivysaur, jangmoo, jellicent-f, jellicent, jigglypuff, jirachi, jolteon, joltik, jumpluff, jynx, kabuto, kabutops, kadabra-f, kadabra, kakuna, kangaskhan, karrablast, kecleon, keldeo-resolute, keldeo, kingdra, kingler, kirlia, klang, klefki, klink, klinklang, koffing, komala, krabby, kricketot-f, kricketot, kricketune-f, kricketune, krokorok, krookodile, kyogre, kyurem-black, kyurem-white, kyurem, lairon, lampent, landorus-therian, landorus, lanturn, lapras, larvesta, larvitar, latias, latios, leafeon, leavanny, ledian-f, ledian, ledyba-f, ledyba, lickilicky, lickitung, liepard, lileep, lilligant, lillipup, linoone, litleo, litten, litwick, lombre, lopunny, lotad, loudred, lucario-mega, lucario, ludicolo-f, ludicolo, lugia, lumineon-f, lumineon, lunatone, lurantis, luvdisc, luxio-f, luxio, luxray-f, luxray, lycanroc-midnight, machamp, machoke, machop, magby, magcargo, magearna-original, magearna, magikarp-f, magikarp, magmar, magmortar, magnemite, magneton, magnezone, makuhita, malaconda, malamar, mamoswine-f, mamoswine, manaphy, mandibuzz, manectric, mankey, mantine, mantyke, maractus, mareep, marill, marowak, marshtomp, masquerain, mawile-mega, mawile, medicham-f, medicham, meditite-f, meditite, meganium-f, meganium, meloetta-pirouette, meloetta, meowth, mesprit, metagross, metang, metapod, mew, mewtwo-mega-y, mewtwo, mienfoo, mienshao, mightyena, milotic-f, milotic, miltank, mimejr, mimikyu-busted, mimikyu, minccino, minior-blue, minior-green, minior-indigo, minior-meteor, minior-orange, minior-violet, minior-yellow, minior, minun, misdreavus, mismagius, mollux, moltres, monferno, morelull, morpeko-hangry, morpeko, mothim, mrmime, mudkip, muk, munchlax, munna, murkrow-f, murkrow, musharna, naganadel, natu, necrozma, necturna, nidoking, nidoqueen, nidoranf, nidoranm, nidorina, nidorino, nincada, ninetales, ninjask, noctowl, nosepass, numel-f, numel, nuzleaf-f, nuzleaf, obstagoon, octillery-f, octillery, oddish, omanyte, omastar, onix, oricorio-pau, oshawott, pachirisu-f, pachirisu, palkia, palossand, palpitoad, pancham, pangoro, panpour, pansage, pansear, paras, parasect, patrat, pawniard, pelipper, perrserker, persian, petilil, phanpy, phione, pichu, pidgeot, pidgeotto, pidgey, pidove, pignite, pikachu-f, pikachu-starter-f, pikachu-starter, pikachu, pikipek, piloswine-f, piloswine, pincurchin, pineco, pinsir, piplup, plasmanta, plusle, pokestarblackbelt, pokestarblackdoor, pokestarbrycenman, pokestarf00, pokestarf002, pokestargiant, pokestarhumanoid, pokestarmonster, pokestarmt, pokestarmt2, pokestarsmeargle, pokestarspirit, pokestartransport, pokestarufo, pokestarufo2, pokestarwhitedoor, politoed-f, politoed, poliwag, poliwhirl, poliwrath, ponyta, poochyena, popplio, porygon, porygon2, porygonz, primeape, prinplup, probopass, psyduck, pupitar, purrloin, purugly, pyroar-f, pyroar, pyukumuku, quagsire-f, quagsire, quilava, quilladin, qwilfish, raboot, raichu-alola, raichu-f, raichu, raikou, ralts, rampardos, rapidash, raticate-f, raticate, rattata-alola, rattata-f, rattata, rayquaza, regice, regidrago, regigigas, regirock, registeel, relicanth-f, relicanth, remoraid, reshiram, reuniclus, rhydon-f, rhydon, rhyhorn-f, rhyhorn, rhyperior-f, rhyperior, ribombee, riolu, rockruff, roggenrola, rolycoly, roselia-f, roselia, roserade-f, roserade, rotom-fan, rotom-frost, rotom-heat, rotom-mow, rotom-wash, rotom, rowlet, rufflet, sableye, salamence, samurott, sandaconda, sandile, sandshrew, sandslash, sandygast, sawk, sawsbuck-autumn, sawsbuck-summer, sawsbuck-winter, sawsbuck, scatterbug, sceptile, scizor-f, scizor-mega, scizor, scolipede, scrafty, scraggy, scyther-f, scyther, seadra, seaking-f, seaking, sealeo, seedot, seel, seismitoad, sentret, serperior, servine, seviper, sewaddle, sharpedo, shaymin-sky, shaymin, shedinja, shelgon, shellder, shellos-east, shellos, shelmet, shieldon, shiftry-f, shiftry, shiinotic, shinx-f, shinx, shroomish, shuckle, shuppet, sigilyph, silcoon, silvally-bug, silvally-dark, silvally-dragon, silvally-electric, silvally-fairy, silvally-fighting, silvally-fire, silvally-flying, silvally-ghost, silvally-grass, silvally-ground, silvally-ice, silvally-poison, silvally-psychic, silvally-rock, silvally-steel, silvally-water, silvally, simipour, simisage, simisear, skarmory, skiddo, skiploom, skitty, skorupi, skuntank, slaking, slakoth, slowbro, slowking, slowpoke, slugma, smeargle, smoochum, sneasel-f, sneasel, snivy, snom, snorlax, snorunt, snover-f, snover, snubbull, sobble, solosis, solrock, spearow, spewpa, spheal, spinarak, spinda, spiritomb, spoink, spritzee, squirtle, stantler, staraptor-f, staraptor, staravia-f, staravia, starly-f, starly, starmie, staryu, steelix-f, steelix, steenee, stonjourner, stoutland, stunfisk, stunky, substitute, sudowoodo-f, sudowoodo, suicune, sunflora, sunkern, surskit, swablu, swadloon, swalot-f, swalot, swampert, swanna, swellow, swepa, swinub, swirlix, swoobat, sylveon, taillow, talonflame, tangela, tangrowth-f, tangrowth, tapukoko, tapulele, tauros, teddiursa, tentacool, tentacruel, tepig, terrakion, throh, thundurus-therian, thundurus, thwackey, timburr, tirtouga, togedemaru, togekiss, togepi, togetic, tomohawk-f, tomohawk, torchic-f, torchic, torkoal, tornadus-therian, tornadus, torterra, totodile, toxapex, toxel, toxicroak-f, toxicroak, tranquill, trapinch, treecko, trevenant, tropius, trubbish, trumbeak, turtonator, turtwig, tympole, tynamo, typenull, typhlosion, tyranitar, tyrantrum, tyrogue, tyrunt, umbreon, unfezant-f, unfezant, unown-b, unown-c, unown-d, unown-e, unown-exclamation, unown-f, unown-g, unown-h, unown-i, unown-j, unown-k, unown-l, unown-m, unown-n, unown-o, unown-p, unown-q, unown-question, unown-r, unown-s, unown-t, unown-u, unown-v, unown-w, unown-x, unown-y, unown-z, unown, ursaring-f, ursaring, uxie, vanillish, vanillite, vanilluxe, vaporeon, venipede, venomoth, venonat, venusaur-f, venusaur, vespiquen, vibrava, victini, victreebel, vigoroth, vikavolt, vileplume-f, vileplume, virizion, vivillon-archipelago, vivillon-continental, vivillon-elegant, vivillon-fancy, vivillon-garden, vivillon-highplains, vivillon-icysnow, vivillon-jungle, vivillon-marine, vivillon-modern, vivillon-monsoon, vivillon-ocean, vivillon-pokeball, vivillon-polar, vivillon-river, vivillon-sandstorm, vivillon-savanna, vivillon-sun, vivillon-tundra, vivillon, volbeat, volcarona, volkraken, voltorb, vullaby, vulpix, wailmer, wailord, walrein, wartortle, watchog, weavile-f, weavile, weedle, weepinbell, weezing, whimsicott, whirlipede, whiscash, whismur, wigglytuff, wimpod, wingull, wishiwashi-school, wishiwashi, wobbuffet-f, wobbuffet, woobat, wooloo, wooper-f, wooper, wormadam-sandy, wormadam-trash, wormadam, wurmple, wynaut, xatu-f, xatu, yamask, yamper, yanma, yanmega, yungoos, zacian, zamazenta, zangoose, zapdos, zebstrika, zekrom, zeraora, zigzagoon, zoroark, zorua, zubat-f, zubat, zweilous, zygarde";
-	//edge case
+	// const animons =
+	// 	"abomasnow-f, abomasnow-mega, abomasnow, abra, absol-mega, absol, accelgor, aegislash-blade, aegislash, aegislashf, aerodactyl, aggron, aipom-f, aipom, alakazam-f, alakazam, alomomola, altaria, amaura, ambipom-f, ambipom, amoonguss, ampharos-mega, ampharos, anorith, applin, araquanid, arbok, arcanine, arceus-bug, arceus-dark, arceus-dragon, arceus-electric, arceus-fairy, arceus-fighting, arceus-fire, arceus-flying, arceus-ghost, arceus-grass, arceus-ground, arceus-ice, arceus-poison, arceus-psychic, arceus-rock, arceus-steel, arceus-water, arceus, archen, archeops, arctovish, ariados, armaldo, aron, arrokuda, articuno, audino, aurumoth, avalugg, axew, azelf, azumarill, azurill, bagon, baltoy, banette, barboach, basculegion-f, basculegion, basculin-bluestriped, basculin, bastiodon, bayleef, beartic, beautifly-f, beautifly, beedrill, beheeyem, beldum, bellossom, bellsprout, bergmite, bewear, bibarel-f, bibarel, bidoof-f, bidoof, binacle, bisharp, blastoise, blaziken-f, blaziken, blissey, blitzle, boldore, bonsly, bouffalant, bounsweet, braixen, braviary, breloom, bronzong, bronzor, budew, buizel-f, buizel, bulbasaur, buneary, burmy-sandy, burmy-trash, burmy, butterfree-f, butterfree, cacnea, cacturne-f, cacturne, camerupt-f, camerupt, carbink, carnivine, carracosta, carvanha, cascoon, castform-rainy, castform-snowy, castform-sunny, castform, caterpie, cawmodore, celebi, celesteela, chandelure, chansey, charizard, charjabug, charmander, charmeleon, chatot, cherrim-sunshine, cherrim, cherubi, chesnaught, chewtle, chikorita, chimchar, chimecho, chinchou, chingling, cinccino, cinderace-gmax, clamperl, clauncher, clawitzer, claydol, clefable, clefairy, cleffa, cloyster, cobalion, cofagrigus, combee-f, combee, combusken-f, combusken, comfey, conkeldurr, corphish, corsola, corviknight, corvisquire, cosmoem, cottonee, crabrawler, cradily, cranidos, crawdaunt, cresselia, croagunk-f, croagunk, crobat, croconaw, crustle, cryogonal, cubchoo, cubone, cursola, cutiefly, cyndaquil, darkrai, darmanitan-galarzen, darmanitan-zen, darmanitan, darumaka, dedenne, deerling-autumn, deerling-summer, deerling-winter, deerling, deino, delcatty, delibird, deoxys-attack, deoxys-defense, deoxys-speed, deoxys, dewgong, dewott, dewpider, dhelmise, dialga, diancie, diglett, ditto, dodrio-f, dodrio, doduo-f, doduo, donphan-f, donphan, dracovish, dragapult, dragonair, dragonite, drapion, dratini, drednaw, drifblim, drifloon, drilbur, drowzee, druddigon, ducklett, dugtrio, dunsparce, duosion, duraludon, durant, dusclops, dusknoir, duskull, dustox-f, dustox, dwebble, eelektrik, eelektross, eevee, ekans, eldegoss, electabuzz, electivire, electrike, electrode, elekid, elgyem, emboar, emolga, empoleon, entei, escavalier, espeon, eternatus, excadrill, exeggcute, exeggutor, exploud, farfetchd-galar, farfetchd, fearow, feebas, fennekin, feraligatr, ferroseed, ferrothorn, finneon-f, finneon, flaaffy, flareon, fletchling, floatzel-f, floatzel, florges, flygon, fomantis, foongus, forretress, fraxure, frillish-f, frillish, froakie, froslass, furret, gabite-f, gabite, gallade, galvantula, garbodor-gmax, garbodor, garchomp-f, garchomp-mega, garchomp, gardevoir-mega, gardevoir, gastly, gastrodon-east, gastrodon, genesect-burn, genesect-chill, genesect-douse, genesect-shock, genesect, gengar, geodude, gible-f, gible, gigalith, girafarig-f, girafarig, giratina-origin, giratina, glaceon, glalie, glameow, gligar-f, gligar, gliscor, gloom-f, gloom, golbat-f, golbat, goldeen-f, goldeen, golduck, golem, golett, golurk, goodra-hisui, goomy, gorebyss, gothita, gothitelle, gothorita, granbull, graveler, grimer, grimmsnarl, grotle, groudon, grovyle, growlithe, grubbin, grumpig, gulpin-f, gulpin, gurdurr, gyarados-f, gyarados, happiny, hariyama, haunter, haxorus, heatmor, heatran, heracross-f, heracross, herdier, hippopotas-f, hippopotas, hippowdon-f, hippowdon, hitmonchan, hitmonlee, hitmontop, honchkrow, honedge, hooh, hoothoot, hoppip, horsea, houndoom-f, houndoom, houndour, huntail, hydreigon, hypno-f, hypno, igglybuff, illumise, impidimp, infernape, ivysaur, jangmoo, jellicent-f, jellicent, jigglypuff, jirachi, jolteon, joltik, jumpluff, jynx, kabuto, kabutops, kadabra-f, kadabra, kakuna, kangaskhan, karrablast, kecleon, keldeo-resolute, keldeo, kingdra, kingler, kirlia, klang, klefki, klink, klinklang, koffing, komala, krabby, kricketot-f, kricketot, kricketune-f, kricketune, krokorok, krookodile, kyogre, kyurem-black, kyurem-white, kyurem, lairon, lampent, landorus-therian, landorus, lanturn, lapras, larvesta, larvitar, latias, latios, leafeon, leavanny, ledian-f, ledian, ledyba-f, ledyba, lickilicky, lickitung, liepard, lileep, lilligant, lillipup, linoone, litleo, litten, litwick, lombre, lopunny, lotad, loudred, lucario-mega, lucario, ludicolo-f, ludicolo, lugia, lumineon-f, lumineon, lunatone, lurantis, luvdisc, luxio-f, luxio, luxray-f, luxray, lycanroc-midnight, machamp, machoke, machop, magby, magcargo, magearna-original, magearna, magikarp-f, magikarp, magmar, magmortar, magnemite, magneton, magnezone, makuhita, malaconda, malamar, mamoswine-f, mamoswine, manaphy, mandibuzz, manectric, mankey, mantine, mantyke, maractus, mareep, marill, marowak, marshtomp, masquerain, mawile-mega, mawile, medicham-f, medicham, meditite-f, meditite, meganium-f, meganium, meloetta-pirouette, meloetta, meowth, mesprit, metagross, metang, metapod, mew, mewtwo-mega-y, mewtwo, mienfoo, mienshao, mightyena, milotic-f, milotic, miltank, mimejr, mimikyu-busted, mimikyu, minccino, minior-blue, minior-green, minior-indigo, minior-meteor, minior-orange, minior-violet, minior-yellow, minior, minun, misdreavus, mismagius, mollux, moltres, monferno, morelull, morpeko-hangry, morpeko, mothim, mrmime, mudkip, muk, munchlax, munna, murkrow-f, murkrow, musharna, naganadel, natu, necrozma, necturna, nidoking, nidoqueen, nidoranf, nidoranm, nidorina, nidorino, nincada, ninetales, ninjask, noctowl, nosepass, numel-f, numel, nuzleaf-f, nuzleaf, obstagoon, octillery-f, octillery, oddish, omanyte, omastar, onix, oricorio-pau, oshawott, pachirisu-f, pachirisu, palkia, palossand, palpitoad, pancham, pangoro, panpour, pansage, pansear, paras, parasect, patrat, pawniard, pelipper, perrserker, persian, petilil, phanpy, phione, pichu, pidgeot, pidgeotto, pidgey, pidove, pignite, pikachu-f, pikachu-starter-f, pikachu-starter, pikachu, pikipek, piloswine-f, piloswine, pincurchin, pineco, pinsir, piplup, plasmanta, plusle, pokestarblackbelt, pokestarblackdoor, pokestarbrycenman, pokestarf00, pokestarf002, pokestargiant, pokestarhumanoid, pokestarmonster, pokestarmt, pokestarmt2, pokestarsmeargle, pokestarspirit, pokestartransport, pokestarufo, pokestarufo2, pokestarwhitedoor, politoed-f, politoed, poliwag, poliwhirl, poliwrath, ponyta, poochyena, popplio, porygon, porygon2, porygonz, primeape, prinplup, probopass, psyduck, pupitar, purrloin, purugly, pyroar-f, pyroar, pyukumuku, quagsire-f, quagsire, quilava, quilladin, qwilfish, raboot, raichu-alola, raichu-f, raichu, raikou, ralts, rampardos, rapidash, raticate-f, raticate, rattata-alola, rattata-f, rattata, rayquaza, regice, regidrago, regigigas, regirock, registeel, relicanth-f, relicanth, remoraid, reshiram, reuniclus, rhydon-f, rhydon, rhyhorn-f, rhyhorn, rhyperior-f, rhyperior, ribombee, riolu, rockruff, roggenrola, rolycoly, roselia-f, roselia, roserade-f, roserade, rotom-fan, rotom-frost, rotom-heat, rotom-mow, rotom-wash, rotom, rowlet, rufflet, sableye, salamence, samurott, sandaconda, sandile, sandshrew, sandslash, sandygast, sawk, sawsbuck-autumn, sawsbuck-summer, sawsbuck-winter, sawsbuck, scatterbug, sceptile, scizor-f, scizor-mega, scizor, scolipede, scrafty, scraggy, scyther-f, scyther, seadra, seaking-f, seaking, sealeo, seedot, seel, seismitoad, sentret, serperior, servine, seviper, sewaddle, sharpedo, shaymin-sky, shaymin, shedinja, shelgon, shellder, shellos-east, shellos, shelmet, shieldon, shiftry-f, shiftry, shiinotic, shinx-f, shinx, shroomish, shuckle, shuppet, sigilyph, silcoon, silvally-bug, silvally-dark, silvally-dragon, silvally-electric, silvally-fairy, silvally-fighting, silvally-fire, silvally-flying, silvally-ghost, silvally-grass, silvally-ground, silvally-ice, silvally-poison, silvally-psychic, silvally-rock, silvally-steel, silvally-water, silvally, simipour, simisage, simisear, skarmory, skiddo, skiploom, skitty, skorupi, skuntank, slaking, slakoth, slowbro, slowking, slowpoke, slugma, smeargle, smoochum, sneasel-f, sneasel, snivy, snom, snorlax, snorunt, snover-f, snover, snubbull, sobble, solosis, solrock, spearow, spewpa, spheal, spinarak, spinda, spiritomb, spoink, spritzee, squirtle, stantler, staraptor-f, staraptor, staravia-f, staravia, starly-f, starly, starmie, staryu, steelix-f, steelix, steenee, stonjourner, stoutland, stunfisk, stunky, substitute, sudowoodo-f, sudowoodo, suicune, sunflora, sunkern, surskit, swablu, swadloon, swalot-f, swalot, swampert, swanna, swellow, swepa, swinub, swirlix, swoobat, sylveon, taillow, talonflame, tangela, tangrowth-f, tangrowth, tapukoko, tapulele, tauros, teddiursa, tentacool, tentacruel, tepig, terrakion, throh, thundurus-therian, thundurus, thwackey, timburr, tirtouga, togedemaru, togekiss, togepi, togetic, tomohawk-f, tomohawk, torchic-f, torchic, torkoal, tornadus-therian, tornadus, torterra, totodile, toxapex, toxel, toxicroak-f, toxicroak, tranquill, trapinch, treecko, trevenant, tropius, trubbish, trumbeak, turtonator, turtwig, tympole, tynamo, typenull, typhlosion, tyranitar, tyrantrum, tyrogue, tyrunt, umbreon, unfezant-f, unfezant, unown-b, unown-c, unown-d, unown-e, unown-exclamation, unown-f, unown-g, unown-h, unown-i, unown-j, unown-k, unown-l, unown-m, unown-n, unown-o, unown-p, unown-q, unown-question, unown-r, unown-s, unown-t, unown-u, unown-v, unown-w, unown-x, unown-y, unown-z, unown, ursaring-f, ursaring, uxie, vanillish, vanillite, vanilluxe, vaporeon, venipede, venomoth, venonat, venusaur-f, venusaur, vespiquen, vibrava, victini, victreebel, vigoroth, vikavolt, vileplume-f, vileplume, virizion, vivillon-archipelago, vivillon-continental, vivillon-elegant, vivillon-fancy, vivillon-garden, vivillon-highplains, vivillon-icysnow, vivillon-jungle, vivillon-marine, vivillon-modern, vivillon-monsoon, vivillon-ocean, vivillon-pokeball, vivillon-polar, vivillon-river, vivillon-sandstorm, vivillon-savanna, vivillon-sun, vivillon-tundra, vivillon, volbeat, volcarona, volkraken, voltorb, vullaby, vulpix, wailmer, wailord, walrein, wartortle, watchog, weavile-f, weavile, weedle, weepinbell, weezing, whimsicott, whirlipede, whiscash, whismur, wigglytuff, wimpod, wingull, wishiwashi-school, wishiwashi, wobbuffet-f, wobbuffet, woobat, wooloo, wooper-f, wooper, wormadam-sandy, wormadam-trash, wormadam, wurmple, wynaut, xatu-f, xatu, yamask, yamper, yanma, yanmega, yungoos, zacian, zamazenta, zangoose, zapdos, zebstrika, zekrom, zeraora, zigzagoon, zoroark, zorua, zubat-f, zubat, zweilous, zygarde";
+	// //edge case
 	if (!poke) {
 		return;
 	}
@@ -2619,14 +2614,17 @@ function getGenSprite(poke) {
 		return;
 	}
 	if (poke.name.toLowerCase() == "mr. mime") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/mrmime.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/mrmime.png";
 	}
 
 	if (poke.name.toLowerCase() == "nidoran-m") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranm.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranm.png";
 	}
 	if (poke.name.toLowerCase() == "nidoran-f") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranf.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/nidoranf.png";
+	}
+	if (poke.name.toLowerCase() == "farfetch’d") {
+		return "https://play.pokemonshowdown.com/sprites/gen3/farfetchd.png";
 	}
 
 	if (poke.name.toLowerCase() == "ho-oh") {
@@ -2976,7 +2974,7 @@ var READY;
 $(document).ready(function () {
 	var params = new URLSearchParams(window.location.search);
 	var g = GENERATION[params.get("gen")] || DEFAULTGEN;
-	var gm = params.get("game") || 1;
+	var gm = params.get("game") || 2;
 	$("#gen" + g).prop("checked", true);
 	$("#gen" + g).change();
 	$("#game" + gm).prop("checked", true);
