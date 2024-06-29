@@ -2380,6 +2380,7 @@ function getTrainerNames() {
 		case "S/V":
 			allPokemon = CUSTOMSETDEX_SV;
 			break;
+		//HACK_GAMES
 		case "Emerald Kaizo":
 			allPokemon = CUSTOMHACKSETDEX_EK;
 			break;

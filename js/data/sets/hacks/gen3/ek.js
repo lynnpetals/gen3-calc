@@ -2687,7 +2687,7 @@ var CUSTOMHACKSETDEX_EK = {
             ],
             "nature": "Jolly"
         },
-        "Collector Edwin [Tag]": {
+        "Collector Edwin": {
             "ability": "Levitate",
             "ivs": {
                 "at": 24,
@@ -13904,7 +13904,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Omanyte": {
-        "Collector Edwin [Tag]": {
+        "Collector Edwin": {
             "ability": "Swift Swim",
             "level": 19,
             "moves": [
@@ -14948,7 +14948,7 @@ var CUSTOMHACKSETDEX_EK = {
         }
     },
     "Porygon": {
-        "Collector Edwin [Tag]": {
+        "Collector Edwin": {
             "ability": "Trace",
             "level": 19,
             "moves": [
