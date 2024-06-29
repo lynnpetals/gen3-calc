@@ -322,27 +322,27 @@ $(".result-move").change(function () {
 });
 
 function aggregateRolls(rolls){
-		var resultString = "";
+	var resultString = "";
 	var prevDamage = rolls[0];
-		var rollCount = 1;
+	var rollCount = 1;
 	resultString += rolls[0];
 	for (var i = 1; i < rolls.length; i++) {
 		if (rolls[i] == prevDamage) {
-				rollCount++;
-			} else {
-				resultString +=
-					rollCount > 1
+			rollCount++;
+		} else {
+			resultString +=
+				rollCount > 1
 					? " [x" + rollCount + "], " + rolls[i]
 					: ", " + rolls[i];
-				rollCount = 1;
+			rollCount = 1;
 			prevDamage = rolls[i];
-			}
 		}
-		if (rollCount > 1) {
-			resultString += " [x" + rollCount + "])";
-		} else {
-			resultString += ")";
-		}
+	}
+	if (rollCount > 1) {
+		resultString += " [x" + rollCount + "])";
+	} else {
+		resultString += ")";
+	}
 	return resultString;
 }
 

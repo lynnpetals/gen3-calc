@@ -415,6 +415,8 @@ var CUSTOMHACKFLAGS_EKK = {
 		"Champion Aubs",
 		"Bird Keeper Billy #3",
 	],
+	"tag-battle":
+	[],
 	weather: {
 		clear: [
 			"Lady Vivian",

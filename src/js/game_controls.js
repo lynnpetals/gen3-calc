@@ -57,7 +57,18 @@ $(".gameSelection").change(function () {
 		.end()
 		.append('<option value="">(none)</option>' + typeOptions);
 	var moveOptions = getSelectOptions(Object.keys(moves), true);
+	var trainerOptions = getSelectOptions(trainerNames, true);
 	$("select.move-selector").find("option").remove().end().append(moveOptions);
+	$("select.tag-trainer-selector").find("option").remove().end().append(trainerOptions);
+	$("select.tag-trainer-selector").select2({
+		dropdownAutoWidth: true,
+		matcher: function (term, text) {
+			// 2nd condition is for Hidden Power
+			return (
+				text.toUpperCase().indexOf(term.toUpperCase()) === 0
+			);
+		},
+	})
 	var abilityOptions = getSelectOptions(abilities, true);
 	$("select.ability")
 		.find("option")

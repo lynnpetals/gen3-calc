@@ -811,7 +811,7 @@ table.field {
 }
 
 .genSelection {
-	display: none;
+	/* display: none; */
 }
 
 .ivs.calc-trigger,

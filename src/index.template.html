@@ -772,6 +772,11 @@
                         <label class="btn btn-left" for="singles-format">Singles</label>
                         <input class="visually-hidden calc-trigger" type="radio" name="format" value="Doubles" id="doubles-format" />
                         <label class="btn btn-right" for="doubles-format">Doubles</label>
+                        <div>
+                            <input class="visually-hidden" type="checkbox" value="Tag?" id="doubles-format-tag" />
+                            <label class="btn btn-small" for="doubles-format-tag">Tag?</label>
+                        </div>
+
                     </div>
                     <div class="hide-from-games" aria-labelledby="selectDefaultLevelInstruction" role="radiogroup" style="margin: auto auto 5px;" title="Select the default level.">
                     <span class="visually-hidden" id="selectDefaultLevelInstruction">Select the default level.</span>
@@ -1595,6 +1600,13 @@
                     <input class="move-bp bait-trigger" value="50" inputmode="decimal" />
                     <select class="move-type bait-trigger"></select>
                 </div>
+            </fieldset>
+            <fieldset class="poke-info tag-battle" id="p5">
+                <select class="tag-trainer-selector bait-trigger small-select"></select>
+                <legend align="center">Switch Tag</legend>
+                <!-- select form for second trainer -->
+                <hr>
+                <div class="trainer-poke-switch-list tag-battle" style="padding-top: 1rem; padding-bottom: 1rem;"></div>
             </fieldset>
         </div>
     </div>

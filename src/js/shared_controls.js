@@ -736,8 +736,17 @@ $(".set-selector").change(function () {
 			}
 			if (flags["doubles"].includes(window.CURRENT_TRAINER)) {
 				$("#doubles-format").prop("checked", true);
+				$("#doubles-format-tag").parent().attr("hidden", false);
+				if(flags["tag-battle"].includes(window.CURRENT_TRAINER)){
+					$("#doubles-format-tag").prop("checked", true);
+				}
+				else{
+					$("#doubles-format-tag").prop("checked", false);
+				}
 			} else {
 				$("#singles-format").prop("checked", true);
+				$("#doubles-format-tag").prop("checked", false);
+				$("#doubles-format-tag").parent().attr("hidden", true);
 			}
 		}
 		if (oldTrainer !== window.CURRENT_TRAINER) {
@@ -2953,6 +2962,7 @@ function switchIconSingle() {
 	
 	$(".speedText").attr("hidden", false)
 	$(".speedIcon").attr("hidden", true)
+	$("#doubles-format-tag").parent().attr("hidden", false);
 	window.isInDoubles = true;
 	return;
 }
@@ -2962,6 +2972,8 @@ function switchIconDouble() {
 	window.isInDoubles = false;
 	$(".speedText").attr("hidden", true)
 	$(".speedIcon").attr("hidden", false)
+	$("#doubles-format-tag").parent().attr("hidden", true);
+	$("#doubles-format-tag").prop("checked", false);
 	return;
 }
 
@@ -2986,6 +2998,15 @@ $(".totalMod").mouseleave((e) => {
 	console.log($(e.target)[0].className)
 })
 
+$("select.tag-trainer-selector").change(function(){
+	predictSwitchOrder();
+})
+
+$("#doubles-format-tag").change((e)=>{
+	console.log(e.target)
+	$(".poke-info.tag-battle").attr("hidden", !e.target.checked)
+})
+
 function selectItem(ev) {
 	var newItem = ev.target.getAttribute("data-id");
 	document.getElementById("itemL1").value = newItem;
@@ -3002,6 +3023,7 @@ $(document).ready(function () {
 	$("#game" + gm).change();
 	$("#percentage").prop("checked", true);
 	$("#percentage").change();
+	$(".poke-info.tag-battle").attr("hidden",true);
 	$("#singles-format").prop("checked", true);
 	$("#singles-format").change();
 	$("#singles-format").click(switchIconDouble);
