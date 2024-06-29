@@ -10,3 +10,5 @@ pnpm-debug.log
 npm-debug.log
 .vscode
 src/js/data/ek-raw-gen3.js
+src/js/data/sets/hacks/gen3/Untitled-1.ipynb
+src/js/data/sets/hacks/gen3/ekk.json
