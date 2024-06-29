@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Emerald Kaizo Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?d557fc1d" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?a55d91dc" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -67,12 +67,19 @@
             <input class="mode visually-hidden" type="radio" name="mode" id="randoms" /><label class="btn btn-right btn-xwide" for="randoms">Random Battles</label>
         </span>
         <br />
-        <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
+        <!-- <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
             <span class="visually-hidden" id="selectGameInstruction">Select the game.</span>
-            <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left" for="game0">None</label>
-            <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-right btn-xwide" for="game1">Emerald Kaizo</label>
+            <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left btn-xwide" for="game0">None</label>
+            <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-mid btn-xwide" for="game1">Emerald Kaizo</label>
             <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
-        </span>
+        </span> -->
+        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction">
+            <optgroup label="Rom Hacks">
+                <option value="0" name="game" id="game0">None</option>
+                <option value="1" name="game" id="game1">Emerald Kaizo</option>
+                <option value="2" name="game" id="game2">Emerald Kaizo Kaizo</option>
+            </optgroup>
+        </select>
     </div>
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
         <div id="resultGroupL" aria-labelledby="resultHeaderL" class="move-result-subgroup left-results" role="radiogroup">
@@ -459,7 +466,10 @@
                                             <option value="-6">-6</option>
                                         </select>
                                     </td>
-                                    <td><div class="totalMod">---</div>
+                                    <td><div class="totalMod">
+                                        <div class="speedText" hidden=""></div>
+                                        <div class="speedIcon"></div>
+                                    </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1279,7 +1289,10 @@
                                     </th>
                                 </tr>
                                 <tr class="sp">
-                                    <td><div class="totalMod">---</span>
+                                    <td><div class="totalMod">
+                                        <div class="speedText" hidden=""></div>
+                                        <div class="speedIcon"></div>
+                                    </span>
                                     </td>
                                     <td>
                                         <select class="boost calc-trigger">
@@ -1629,7 +1642,7 @@
     <script type="text/javascript" src="./calc/data/moves.js?b72e88d6"></script>
     <script type="text/javascript" src="./calc/data/items.js?53fdfd16"></script>
     <script type="text/javascript" src="./calc/data/index.js?083d2bc9"></script>
-    <script type="text/javascript" src="./calc/move.js?fe8b941a"></script>
+    <script type="text/javascript" src="./calc/move.js?64a931aa"></script>
     <script type="text/javascript" src="./calc/pokemon.js?e0fe71b6"></script>
     <script type="text/javascript" src="./calc/field.js?6334bb11"></script>
     <script type="text/javascript" src="./calc/items.js?3cbea98f"></script>
@@ -1640,17 +1653,17 @@
     <script type="text/javascript" src="./calc/mechanics/gen3.js?284eec63"></script>
     <script type="text/javascript" src="./calc/mechanics/gen12.js?e6857766"></script>
     <script type="text/javascript" src="./calc/calc.js?cd072314"></script>
-    <script type="text/javascript" src="./calc/desc.js?5e658a38"></script>
+    <script type="text/javascript" src="./calc/desc.js?b9be6ab2"></script>
     <script type="text/javascript" src="./calc/result.js?d5c7552b"></script>
     <script type="text/javascript" src="./calc/adaptable.js?afeb3759"></script>
     <script type="text/javascript" src="./calc/index.js?64200776"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?167c26a4"></script>
-    <script type="text/javascript" src="./js/index_randoms_controls.js?7126748e"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?718bd7a2"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js?af7fb6f9"></script>
     <script type="text/javascript" src="./js/moveset_import.js?fa326e3b"></script>
 
-    <script type="text/javascript" src="./js/game_controls.js?b87b7550"></script>
+    <script type="text/javascript" src="./js/game_controls.js?e7768f89"></script>
         
-    <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 28 June 2024.
+    <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 29 June 2024.
         <ul><li><a href="https://github.com/AFalsePrayer/ek-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>
         <li><a href="https://github.com/AFalsePrayer/ek-calc/" class="links-lighten" target="_blank">GitHub repository</a></li></ul>
 

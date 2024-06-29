@@ -816,7 +816,7 @@ table.field {
 
 .ivs.calc-trigger,
 .base.calc-trigger {
-	/* display: none !important; */
+	display: none !important;
 }
 
 #p1 {
