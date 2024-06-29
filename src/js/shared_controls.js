@@ -1058,16 +1058,14 @@ function updateTickedHP() {
 	playtotal = $(".poke-info").find(".hp .total")[0].textContent;
 	optotal = $(".poke-info").find(".hp .total")[1].textContent;
 
+	$("#opposing-fourth")[0].textContent = Math.max(1, Math.trunc(optotal / 4));
+	$("#opposing-sixth")[0].textContent = Math.max(1, Math.trunc(optotal / 6));
 	$("#opposing-eighth")[0].textContent = Math.max(1, Math.trunc(optotal / 8));
-	$("#opposing-sixteenth")[0].textContent = Math.max(
-		1,
-		Math.trunc(optotal / 16)
-	);
+	$("#opposing-sixteenth")[0].textContent = Math.max(1, Math.trunc(optotal / 16));
+	$("#player-fourth")[0].textContent = Math.max(1, Math.trunc(playtotal / 4));
+	$("#player-sixth")[0].textContent = Math.max(1, Math.trunc(playtotal / 6));
 	$("#player-eighth")[0].textContent = Math.max(1, Math.trunc(playtotal / 8));
-	$("#player-sixteenth")[0].textContent = Math.max(
-		1,
-		Math.trunc(playtotal / 16)
-	);
+	$("#player-sixteenth")[0].textContent = Math.max(1, Math.trunc(playtotal / 16));
 }
 
 function trySendRiskyAlert() {

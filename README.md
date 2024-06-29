@@ -1,174 +1,65 @@
-# Pokémon Damage Calculator
+# Lynn's Pokémon Damage Calculator
+This calculator is a fork of Smogon's damage calculator, modified by the lovely anastaraweh for the express purpose of Nuzlockes, and this version attempts to continue that mission, with a focus on pretty user interface and optimisation for multiple hack games.
 
-![Test Status](https://github.com/smogon/damage-calc/workflows/Tests/badge.svg)
-[![npm version](https://img.shields.io/npm/v/@smogon/calc.svg)](https://www.npmjs.com/package/@smogon/calc)&nbsp;
+I will not succumb to settling for the old showdown calc. A calculator shall be my canvas, and art is what will be made.
 
-Damage calculator for all generations of Pokémon battling.
+## Features
 
-If you are currently looking at [smogon/damage-calc][0] and not
-a fork, this is the official repository for the Pokémon Showdown! damage calculator:
-https://calc.pokemonshowdown.com.
+Previously added features:
+- R&B Calc features
+  - Box on the left to show all custom imported sets. Click an icon to load it.
+  - Colour coding to indicate OHKO and speed tiering across the box for Pokémon.
+  - Buttons that automatically progress between previous and next trainer.
+- Anastaraweh features
+  - AI flags for each trainer.
+  - Moves that the enemy AI can switch out on mid-battle are flagged.
+  - Enemy mons can be marked as dead, and the switch-in AI for Generation 3 is automatically calculated, showing which Pokémon will come out next against the current mon out.
+  - EXP yields for every enemy mon is listed.
+  - Sets are automatically set to the corresponding weather and badge boosts when selected.
+  - Badge boosts have been added.
+- KinglerChamp's VanillaNuzlockeCalc
+  - The set selector now searches through set names as well as Pokémon species. For example, the set name "Rayquaza (Bird Keeper Billy)" will show up if "Billy" is searched.
+Thank you for all the work of the aforementioned creators, this calculator would not be possible. Most of the work that I've done is simply repurposing what prior developers have done.
 
-This repository houses both the package implementing the core damage formula mechanics in each
-generation ([`@smogon/calc`][1]) as well as [logic and markup for the official UI][2].
+New features that I've added:
+- Speed icons, just like Emi's CK+ calculator. These are disabled when in doubles.
+- Double fights now also have flags.
+- Added animated menu icons in place of the previously static icons.
+- Added a sprite display.
+- Removed base stats and IVs from the screen, now only displaying the total stats. 
+- General UI overhaul, more symmetric and centred, more colourful, more everything.
+  - Recoil and recovery HP has been moved to be below the actual damage roll instead of being an extension of the original roll.
+- Damage rolls have been changed to no longer be duplicate, instead listed as a multiplier. No more counting damage rolls, you will simply be told how many rolls have that damage.
+- Chip damage table, so you no longer have to use your calculator to find out how much HP you regain from Leftovers.
 
-## `@smogon/calc`
+Future features planned:
+- Adding a Pokémon card when right-clicking on a boxed mon, showing a radar chart of a Pokémon's IVs and nature, like an actual dashboard summary. No more boring IV screens that don't include the ability and vice versa.
+- Changing the game button to be a dropdown menu.
+- Changing the damage rolls listing to be a slider ranging from the minimum to the maximum that the user can slide around to determine how many rolls kill, etc.
+- Creating APNG files so that I can continue using animated menu sprites for gen 6+ datasets.
+- Toggleable arrows that let the user decide which features they would like to hide (IVs, typings, HP, natures, etc).
+- Adding a second enemy party so that tag battles can display both enemies at once.
+- Dynamic background effects depending on the weather selected (for ambience, of course).
+- Adding Run&Bun to the games list...
+- A settings panel that allow the end-user to customise fonts, colours, backgrounds, etc.
 
-The `@smogon/calc` package powers the UI, providing a programmatic interface for computing damage
-ranges. This subpackage contains code that will run on both the server or browser and can be used
-as a building block for alternative UIs or applications.
+## Installation
+Trying to run this on your local machine?
 
-### Installation
+`npm install
+cd calc
+npm install
+cd ..
+node build
+open dist/index.html`
 
-```sh
-$ npm install @smogon/calc
-```
+If files outside of the /calc/ folder are modified, `node build view` is a much faster way of building (does not have to process any TypeScript). Any modifications to /calc/ will require you to rebuild entirely.
 
-Alternatively, as [detailed below](#browser), if you are using `@smogon/calc` in the browser and want
-a convenient way to get started, simply depend on a transpiled and minified version via [unpkg][5]:
+## Additional tools
+I have a script using Python's pandas library that imports JSON set data to output an actual readable table with each set, since species -> set-name -> actual-set is a lot less intuitive with trainers and Nuzlockes. Might upload that at some point.
 
-```html
-<script src="https://unpkg.com/@smogon/calc/dist/data/production.min.js"></script>
-<script src="https://unpkg.com/@smogon/calc"></script>
-```
+There's a repo that contains all the animated menu sprites I use for this project. Most sprites are raw game assets, but any trainer sprites not from the game assets are borrowed from the wonderful artists who contributed to Pokémon Showdown's trainer sprite gallery. Please check them out! Support your local artists, say no against the plight of charmless generative AI!
 
-*In this example, the `@smogon/calc/data` code is included as well to fulfill the calc's data
-layer requirement. Alternatively, a more fully-featured data layer such as [`@pkmn/data`][9] may
-be used instead, see below.*
-
-### Usage
-
-`@smogon/calc` exports all of the data types required to perform a calculation. The `calculate`
-methods require:
-
-- a `Generation` that contains information about which damage formula mechanics to apply and where
-  all of the data about the generation can be found.
-- attacker and defender `Pokemon` (note: only relevant attributes are required, everything else
-  should have sensible defaults). The `Pokemon` constructor also requires a `Generation` to provide
-  the Pokémon's data for the generation.
-- the `Move` being used by the attacker (which also requires a `Generation` argument to scope the
-  move data to the particular generation).
-- (optionally) a `Field` object containing information about the state of each `Side`.
-
-`calculate` returns a `Result` object that contains methods for fetching damage rolls, ranges,
-descriptions, recoil/drain information, etc.
-
-```ts
-import {calculate, Generations, Pokemon, Move} from '@smogon/calc';
-
-const gen = Generations.get(5); // alternatively: const gen = 5;
-const result = calculate(
-  gen,
-  new Pokemon(gen, 'Gengar', {
-    item: 'Choice Specs',
-    nature: 'Timid',
-    evs: {spa: 252},
-    boosts: {spa: 1},
-  }),
-  new Pokemon(gen, 'Chansey', {
-    item: 'Eviolite',
-    nature: 'Calm',
-    evs: {hp: 252, spd: 252},
-  }),
-  new Move(gen, 'Focus Blast')
-);
-```
-
-`@smogon/calc` comes packaged with all of the data required for damage calculation - by default, it
-exposes this via its `Generations` object from `@smogon/calc/data`. As a shortcut, the `Generation`
-argument required by `calculate`, `Pokemon`, `Move` can instead simply be the generation *number*
-(eg. `5`), and it will handle getting that generations `Generation` object behind the scenes from
-the data layer it ships with.
-
-**The data in `calc/data` must be kept in sync with Pokémon Showdown. If there is an issue with the
-calc's data, please fix it in the simulator first.** In general, you should probably not be
-making manual edits to any of the data files, and in the future, they are likely to be generated
-programmatically.
-
-In some advanced use cases, you may wish to use a different data layer with the calculator. The
-`@smogon/calc/adaptable` entry point can be used with any data layer that implements the calc's
-`Generations` interface. This interface is a subset of [`@pkmn/data`][9]'s `Generations` interface,
-so `@pkmn/data` (which contains all competitively relevant data from Pokémon Showdown) can be used
-with the adaptable entry point for applications which want to avoid having two separate sets of the
-same data shipped to users.
-
-```ts
-import {Dex} from '@pkmn/dex';
-import {Generations} from '@pkmn/data';
-import {calculate, Pokemon, Move, Field} from '@smogon/calc/adaptable';
-
-const gens = new Generations(Dex);
-
-const gen = gens.get(1);
-const result = calculate(
-  gen,
-  new Pokemon(gen, 'Gengar'),
-  new Pokemon(gen, 'Vulpix'),
-  new Move(gen, 'Surf'),
-  new Field({defenderSide: {isLightScreen: true}})
-);
-```
-
-### Browser
-
-The recommended way of using `@smogon/calc` in a web browser is to **configure your bundler**
-([Webpack][6], [Rollup][7], [Parcel][8], etc) to minimize it and package it with the rest of your
-application. If you do not use a bundler, a convenience `production.min.js` is included in the
-package. You simply need to depend on `./node_modules/@smogon/calc/production.min.js` in a `script`
-tag (which is what the unpkg shortcut above is doing), after which **`calc` will be
-accessible as a global.** You must also have a `Generations` implementation provided, you can either
-depend on the calculator's data layer by depending on
-`./node_modules/@smogon/calc/data/production.min.js` (or `@smogon/calc/data` via unpkg), or you can
-use an alternative data layer such as [`@pkmn/data`][9]. You must load your data layer
-**before** loading the calc:
-
-```html
-<script src="./node_modules/@smogon/calc/data/production.min.js"></script>
-<script src="./node_modules/@smogon/calc/production.min.js"></script>
-```
-
-## UI
-
-The [UI layer][2] is currently is written in vanilla JavaScript and HTML. To view the UI locally you
-first must install dependencies by running `npm install` at the top level and without `calc/`. This
-should create a `node_modules/` folder under both the root directory and under `calc/`:
-
-```sh
-$ npm install
-$ cd calc && npm install
-```
-
-Next, run `node build` from the root directory of your clone of this repository. This should
-run `npm run compile` in the `calc/` subdirectory to compile the `@smogon/calc` package from
-TypeScript to JavaScript that can be run in the browser, and then compile the 'templated' HTML
-and copy everything into the top-level `dist/` folder. To then view the UI, open `dist/index.html` -
-simply double-clicking on the file from your operating system's file manager UI should open it in
-your default browser.
-
-```sh
-$ node build
-$ open dist/index.html # open works on macOS, simply double-clicking the file on Windows/macOS works
-```
-
-**If you make changes to anything in `calc/`, you must run `node build` from the top level to
-compile the files and copy them into `dist/` again. If you make changes to the HTML or JavaScript in
-`src/`you must run `node build view` before the changes will become visible in your browser**
-(`node build` also works, but it is slower, as it will compile `calc/` as well, which is
-unnecessary if you did not make any changes to that directory).
-
-Before opening up a Pull Request, please ensure `npm test` passes:
-
-```sh
-$ npm test
-```
-
-### Import
-
-This repository also houses an internal package under `import/` which is used for populating the
-Pokémon sets data (as well as data about random battle options) used by the UI. Before making
-changes here you must run `npm install` from under the `import/` directory to install its
-dependencies as they are not installed by default. [`TASKS.md`][4] contains more information on
-how to programmatically update sets.
 
 ## Credits
 
