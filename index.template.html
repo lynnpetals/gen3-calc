@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Emerald Kaizo Calculator</title>
+    <title>Lynn's Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
     <link type="text/css" rel="stylesheet" href="./css/main.css?" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
@@ -73,7 +73,7 @@
             <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-mid btn-xwide" for="game1">Emerald Kaizo</label>
             <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
         </span> -->
-        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction">
+        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction" style="font-size:2em;">
             <optgroup label="Rom Hacks">
                 <option value="0" name="game" id="game0" disabled>None</option>
                 <option value="1" name="game" id="game1">Emerald Kaizo</option>
@@ -165,8 +165,8 @@
             <div id="tooltipText">Copied</div>
         </div>
         <div class="small-text"><span id="damageValues">(If you see this message for more than a few seconds, try enabling JavaScript.)</span></div>
-        <div class="small-text"><span id="drainValues">NoHand is a dogshit nuzlocker (!)</span></div>
-        <div class="small-text"><span id="recoilValues">Made with love &lsaquo;3</span></div>
+        <div class="small-text" hidden=""><span id="drainValues">NoHand is a dogshit nuzlocker (!)</span></div>
+        <div class="small-text" hidden=""><span id="recoilValues">Made with love &lsaquo;3</span></div>
     </div>
     <div class="five-panels">
         <div class="panel" id="panel-1">

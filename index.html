@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Emerald Kaizo Calculator</title>
+    <title>Lynn's Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?c265aedb" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?d557fc1d" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -73,9 +73,9 @@
             <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-mid btn-xwide" for="game1">Emerald Kaizo</label>
             <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
         </span> -->
-        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction">
+        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction" style="font-size:2em;">
             <optgroup label="Rom Hacks">
-                <option value="0" name="game" id="game0">None</option>
+                <option value="0" name="game" id="game0" disabled>None</option>
                 <option value="1" name="game" id="game1">Emerald Kaizo</option>
                 <option value="2" name="game" id="game2">Emerald Kaizo Kaizo</option>
             </optgroup>
@@ -165,8 +165,8 @@
             <div id="tooltipText">Copied</div>
         </div>
         <div class="small-text"><span id="damageValues">(If you see this message for more than a few seconds, try enabling JavaScript.)</span></div>
-        <div class="small-text"><span id="drainValues">(If you see this message for more than a few seconds, try enabling JavaScript.)</span></div>
-        <div class="small-text"><span id="recoilValues">(If you see this message for more than a few seconds, try enabling JavaScript.)</span></div>
+        <div class="small-text" hidden=""><span id="drainValues">NoHand is a dogshit nuzlocker (!)</span></div>
+        <div class="small-text" hidden=""><span id="recoilValues">Made with love &lsaquo;3</span></div>
     </div>
     <div class="five-panels">
         <div class="panel" id="panel-1">
@@ -1630,11 +1630,11 @@
     <script type="text/javascript" src="./js/data/sets/hacks/gen3/ek.js?3eeff053"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ek.js?50a1bb6a"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ek.js?08092f6a"></script>
-    <script type="text/javascript" src="./js/data/flags/hacks/ek.js?0e3b57bb"></script>
+    <script type="text/javascript" src="./js/data/flags/hacks/ek.js?21174b2d"></script>
     <script type="text/javascript" src="./js/data/sets/hacks/gen3/ekk.js?516f7888"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ekk.js?5f1a1245"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ekk.js?7061f08c"></script>
-    <script type="text/javascript" src="./js/data/flags/hacks/ekk.js?4a0a4fa7"></script>
+    <script type="text/javascript" src="./js/data/flags/hacks/ekk.js?4895dd95"></script>
     <script type="text/javascript" src="./js/data/pokedex.js?4ea3e1c8"></script>
     <script type="text/javascript" src="./js/data/trainer_sprites/hacks/trainer_sprites.js?ed4bae01"></script>
     <script type="text/javascript" src="./calc/data/types.js?6b065b89"></script>
@@ -1658,11 +1658,11 @@
     <script type="text/javascript" src="./calc/result.js?d5c7552b"></script>
     <script type="text/javascript" src="./calc/adaptable.js?afeb3759"></script>
     <script type="text/javascript" src="./calc/index.js?64200776"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?cc214e45"></script>
-    <script type="text/javascript" src="./js/index_randoms_controls.js?7f943035"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?b40cf4f6"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js?39a76a22"></script>
     <script type="text/javascript" src="./js/moveset_import.js?e6438056"></script>
 
-    <script type="text/javascript" src="./js/game_controls.js?ad0b0f00"></script>
+    <script type="text/javascript" src="./js/game_controls.js?e023eb91"></script>
         
     <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 29 June 2024.
         <ul><li><a href="https://github.com/AFalsePrayer/ek-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>
