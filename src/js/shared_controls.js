@@ -2948,14 +2948,19 @@ $(".stat-changer").click((e) => {
 
 window.isInDoubles = false;
 function switchIconSingle() {
-	document.getElementById("monDouble").removeAttribute("hidden");
+	// document.getElementById("monDouble").removeAttribute("hidden");
+	
+	$(".speedText").attr("hidden", false)
+	$(".speedIcon").attr("hidden", true)
 	window.isInDoubles = true;
 	return;
 }
 
 function switchIconDouble() {
-	document.getElementById("monDouble").setAttribute("hidden", true);
+	// document.getElementById("monDouble").setAttribute("hidden", true);
 	window.isInDoubles = false;
+	$(".speedText").attr("hidden", true)
+	$(".speedIcon").attr("hidden", false)
 	return;
 }
 
@@ -2966,6 +2971,19 @@ function openCloseItemBox() {
 function openCloseNoteBox() {
 	document.getElementById("note-box-frame").toggleAttribute("hidden");
 }
+
+$(".totalMod").mouseenter((e) => {
+	if($(e.target)[0].className){
+		$(".speedText").attr("hidden", false)
+	}
+	console.log($(e.target)[0].className)
+})
+$(".totalMod").mouseleave((e) => {
+	if($(e.target)[0].className){
+		$(".speedText").attr("hidden", true)
+	}
+	console.log($(e.target)[0].className)
+})
 
 function selectItem(ev) {
 	var newItem = ev.target.getAttribute("data-id");

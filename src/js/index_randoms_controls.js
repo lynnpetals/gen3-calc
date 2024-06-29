@@ -71,8 +71,8 @@ function performCalculations() {
 	var battling = [p1, p2];
 	p1.maxDamages = [];
 	p2.maxDamages = [];
-	p1info.find(".sp .totalMod").text(p1.stats.spe);
-	p2info.find(".sp .totalMod").text(p2.stats.spe);
+	p1info.find(".speedText").text(p1.stats.spe);
+	p2info.find(".speedText").text(p2.stats.spe);
 
 	var fastestSide =
 		p1.stats.spe > p2.stats.spe
@@ -172,14 +172,12 @@ function performCalculations() {
 		}
 	}
 	if ($("input:radio[name='format']:checked").val() === "Singles") {
+		$(".speedIcon").html('');
 		if (fastestSide === "tie") {
-			$(".sp .totalMod")[0].className = "totalMod speed-tie";
-			$(".sp .totalMod")[1].className = "totalMod speed-tie";
 			var img = document.createElement("img");
 			img.src = "./img/speed-tie.png";
 			img.className = "speed-img";
-			$(".sp .totalMod").html("");
-			$(".sp .totalMod").append(img);
+			$(".speedIcon").append(img);
 		} else {
 			//TODO: Add better icons
 			var imgFaster = document.createElement("img");
@@ -188,9 +186,8 @@ function performCalculations() {
 			imgSlower.src = "./img/speed-slower.png";
 			imgFaster.className = "speed-img";
 			imgSlower.className = "speed-img";
-			$(".sp .totalMod").html("");
-			$(".sp .totalMod")[fastestSide].append(imgFaster);
-			$(".sp .totalMod")[1 - fastestSide].append(imgSlower);
+			$(".speedIcon")[fastestSide].append(imgFaster);
+			$(".speedIcon")[1 - fastestSide].append(imgSlower);
 		}
 	}
 	if ($(".locked-move").length) {
