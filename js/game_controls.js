@@ -574,7 +574,11 @@ function predictSwitchOrderEmerald() {
 							createField().clone().swap()
 						);
 						var damage = calculation.damage;
+						console.log("MOVE: " + $(".last-move-used > select.move-selector").val())
+						console.log(damage)
+
 						var score = damage ? damage[damage.length - 1] : damage;
+						console.log(score)
 						if (score > highestDamage.score) {
 							score %= 256;
 							highestDamage.pokemon = next;

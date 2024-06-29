@@ -1438,6 +1438,7 @@ function createPokemon(pokeInfo) {
 	} else {
 		var setName = pokeInfo.find("input.set-selector").val();
 		var name;
+		console.log(setName)
 		if (setName.indexOf("(") === -1) {
 			name = setName;
 		} else {
@@ -2977,19 +2978,30 @@ $(".totalMod").mouseenter((e) => {
 	if($(e.target)[0].className){
 		$(".speedText").attr("hidden", false)
 	}
-	console.log($(e.target)[0].className)
 })
 $(".totalMod").mouseleave((e) => {
 	if($(e.target)[0].className){
 		$(".speedText").attr("hidden", true)
 	}
-	console.log($(e.target)[0].className)
 })
 
 function selectItem(ev) {
 	var newItem = ev.target.getAttribute("data-id");
 	document.getElementById("itemL1").value = newItem;
 }
+
+$(".chip-div").mouseenter((e)=>{
+	console.log("hello")
+	$("#chip-damage-display-panel").attr("hidden", false)
+})
+$(".chip-div").mouseleave((e)=>{
+	console.log("hello")
+	console.log($("#chipDamageToggle").prop("checked"))
+	if(!($("#chipDamageToggle").checked)){
+		$("#chip-damage-display-panel").attr("hidden", true)
+	}
+})
+
 
 var READY;
 $(document).ready(function () {
