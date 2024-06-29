@@ -646,9 +646,9 @@ function squashMultihit(gen, d, hits, err) {
     }
 }
 function buildDescription(description, attacker, defender) {
-    var _a;
-    var _b = __read(getDescriptionLevels(attacker, defender), 2), attackerLevel = _b[0], defenderLevel = _b[1];
-    var game = (((_a = document.querySelector("input[name='game']:checked + label")) === null || _a === void 0 ? void 0 : _a.innerHTML) || "None");
+    var _a = __read(getDescriptionLevels(attacker, defender), 2), attackerLevel = _a[0], defenderLevel = _a[1];
+    var doc = document.getElementById("gameSelection");
+    var game = (document.getElementById("gameSelection").options[doc.selectedIndex].text || "None");
     var isNoEVHack = ["Emerald Kaizo", "Emerald Kaizo Kaizo"].includes(game);
     var output = '';
     if (description.attackBoost) {

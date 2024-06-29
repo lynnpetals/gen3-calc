@@ -1,6 +1,7 @@
 var game, gameId, generation, isHack;
-$(".game").change(function () {
-	game = $("input[name='game']:checked + label").html();
+$(".gameSelection").change(function () {
+	var doc = document.getElementById("gameSelection")
+	game = (doc).options[doc.selectedIndex].text
 	gameId = ~~$(this).val();
 	var params = new URLSearchParams(window.location.search);
 	if (game == "None") {
@@ -276,7 +277,6 @@ function predictSwitchOrderEmerald() {
 		}
 	}
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
-	// console.log(partySpecies)
 	var hasDupes = new Set(partySpecies).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	if (hasDupes) {
@@ -313,8 +313,6 @@ function predictSwitchOrderEmerald() {
 		}
 	}
 	else{
-		// console.log(setdex)
-		// console.log(partySpecies)
 		//TODO: enemy party needs to also change when switching games before trying to calculate switch order
 		for (var i in partySpecies) {
 			try {
@@ -408,8 +406,6 @@ function predictSwitchOrderEmerald() {
 					else if (field.weather == "Rain") move.type = "Water";
 					else if (field.weather == "Hail") move.type = "Ice";
 				}
-				// console.log(enemy)
-				// console.log(move.type)
 				var typeEffectiveness1 = GENERATION.types.get(toID(move.type))
 					.effectiveness[defender.types[0]];
 				var typeEffectiveness2 = GENERATION.types.get(toID(move.type))

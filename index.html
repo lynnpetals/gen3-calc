@@ -67,12 +67,19 @@
             <input class="mode visually-hidden" type="radio" name="mode" id="randoms" /><label class="btn btn-right btn-xwide" for="randoms">Random Battles</label>
         </span>
         <br />
-        <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
+        <!-- <span class="gameSelection" aria-labelledby="selectGameInstruction" role="radiogroup" title="Select the game." style="padding-top: 5px;">
             <span class="visually-hidden" id="selectGameInstruction">Select the game.</span>
-            <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left" for="game0">None</label>
-            <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-right btn-xwide" for="game1">Emerald Kaizo</label>
+            <input class="game visually-hidden" type="radio" name="game" value="0" id="game0" /><label class="btn btn-left btn-xwide" for="game0">None</label>
+            <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-mid btn-xwide" for="game1">Emerald Kaizo</label>
             <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
-        </span>
+        </span> -->
+        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction">
+            <optgroup label="Rom Hacks">
+                <option value="0" name="game" id="game0">None</option>
+                <option value="1" name="game" id="game1">Emerald Kaizo</option>
+                <option value="2" name="game" id="game2">Emerald Kaizo Kaizo</option>
+            </optgroup>
+        </select>
     </div>
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
         <div id="resultGroupL" aria-labelledby="resultHeaderL" class="move-result-subgroup left-results" role="radiogroup">
@@ -459,7 +466,10 @@
                                             <option value="-6">-6</option>
                                         </select>
                                     </td>
-                                    <td><div class="totalMod">---</div>
+                                    <td><div class="totalMod">
+                                        <div class="speedText" hidden=""></div>
+                                        <div class="speedIcon"></div>
+                                    </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1279,7 +1289,10 @@
                                     </th>
                                 </tr>
                                 <tr class="sp">
-                                    <td><div class="totalMod">---</span>
+                                    <td><div class="totalMod">
+                                        <div class="speedText" hidden=""></div>
+                                        <div class="speedIcon"></div>
+                                    </span>
                                     </td>
                                     <td>
                                         <select class="boost calc-trigger">
@@ -1604,15 +1617,15 @@
     <script type="text/javascript" src="./calc/util.js?51463f0d"></script>
     <script type="text/javascript" src="./calc/stats.js?15f50e32"></script>
     <script type="text/javascript" src="./calc/data/species.js?9cc2da1a"></script>
-    <script type="text/javascript" src="./js/data/sets/gen9.js?0.4192114127527222"></script>
-    <script type="text/javascript" src="./js/data/sets/gen8.js?0.22732167358975452"></script>
-    <script type="text/javascript" src="./js/data/sets/gen7.js?0.25586438964964575"></script>
-    <script type="text/javascript" src="./js/data/sets/gen6.js?0.30015697674888964"></script>
-    <script type="text/javascript" src="./js/data/sets/gen5.js?0.354261916086531"></script>
-    <script type="text/javascript" src="./js/data/sets/gen4.js?0.3867799590297454"></script>
-    <script type="text/javascript" src="./js/data/sets/gen3.js?0.03901364667441154"></script>
-    <script type="text/javascript" src="./js/data/sets/gen2.js?0.15884128320824287"></script>
-    <script type="text/javascript" src="./js/data/sets/gen1.js?0.4505075598162369"></script>
+    <script type="text/javascript" src="./js/data/sets/gen9.js?0.5875601341475643"></script>
+    <script type="text/javascript" src="./js/data/sets/gen8.js?0.8547438603771196"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js?0.1947301018005554"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js?0.11903488144309016"></script>
+    <script type="text/javascript" src="./js/data/sets/gen5.js?0.03293349212349406"></script>
+    <script type="text/javascript" src="./js/data/sets/gen4.js?0.7328857991545443"></script>
+    <script type="text/javascript" src="./js/data/sets/gen3.js?0.324531183061616"></script>
+    <script type="text/javascript" src="./js/data/sets/gen2.js?0.056181776765747315"></script>
+    <script type="text/javascript" src="./js/data/sets/gen1.js?0.4489859563855483"></script>
     <script type="text/javascript" src="./js/data/sets/hacks/gen3/ek.js?6671de49"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ek.js?c538c8e5"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ek.js?2a74d568"></script>
@@ -1629,7 +1642,7 @@
     <script type="text/javascript" src="./calc/data/moves.js?7cb31854"></script>
     <script type="text/javascript" src="./calc/data/items.js?ae016d49"></script>
     <script type="text/javascript" src="./calc/data/index.js?abecbd82"></script>
-    <script type="text/javascript" src="./calc/move.js?15d07c7f"></script>
+    <script type="text/javascript" src="./calc/move.js?6edc00e1"></script>
     <script type="text/javascript" src="./calc/pokemon.js?1e459e1e"></script>
     <script type="text/javascript" src="./calc/field.js?410fb7b2"></script>
     <script type="text/javascript" src="./calc/items.js?067e42a4"></script>
@@ -1640,17 +1653,17 @@
     <script type="text/javascript" src="./calc/mechanics/gen3.js?099f3cee"></script>
     <script type="text/javascript" src="./calc/mechanics/gen12.js?14e8e280"></script>
     <script type="text/javascript" src="./calc/calc.js?40a2d9b1"></script>
-    <script type="text/javascript" src="./calc/desc.js?c270e569"></script>
+    <script type="text/javascript" src="./calc/desc.js?a3a333ad"></script>
     <script type="text/javascript" src="./calc/result.js?9f8881b5"></script>
     <script type="text/javascript" src="./calc/adaptable.js?92e49194"></script>
     <script type="text/javascript" src="./calc/index.js?b8906f6c"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?86057e49"></script>
-    <script type="text/javascript" src="./js/index_randoms_controls.js?45404e86"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?7b5f7ef2"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js?bdcf4907"></script>
     <script type="text/javascript" src="./js/moveset_import.js?c011dcc3"></script>
 
-    <script type="text/javascript" src="./js/game_controls.js?af68d732"></script>
+    <script type="text/javascript" src="./js/game_controls.js?61f82ac0"></script>
         
-    <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 28 June 2024.
+    <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 29 June 2024.
         <ul><li><a href="https://github.com/AFalsePrayer/ek-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>
         <li><a href="https://github.com/AFalsePrayer/ek-calc/" class="links-lighten" target="_blank">GitHub repository</a></li></ul>
 
