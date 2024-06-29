@@ -213,7 +213,7 @@ export function calculateBasePowerADV(
     break;
   case 'Eruption':
   case 'Water Spout':
-    if (game != 'Emerald Kaizo') {
+    if (game != 'Emerald Kaizo' && game != 'Emerald Kaizo Kaizo') {
       bp = Math.max(1, Math.floor((150 * attacker.curHP()) / attacker.maxHP()));
       desc.moveBP = bp;
     }

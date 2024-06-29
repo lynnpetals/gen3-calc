@@ -795,7 +795,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Swimmerf Katie": {
 			ability: "Insomnia",
 			level: 64,
-			moves: ["Faint Attack", "Shadow Ball", "Double-Edge", "Confuse Ray"],
+			moves: ["Feint Attack", "Shadow Ball", "Double-Edge", "Confuse Ray"],
 			nature: "Careful",
 		},
 		"Cooltrainer Ruben": {
@@ -1145,26 +1145,26 @@ var CUSTOMHACKSETDEX_EKK = {
 			ability: "Chlorophyll",
 			level: 35,
 			item: "Scope Lens",
-			moves: ["Magical Leaf", "Faint Attack", "Revenge", "Sleep Talk"],
+			moves: ["Magical Leaf", "Feint Attack", "Revenge", "Sleep Talk"],
 			nature: "Timid",
 		},
 		"Picnicker Heidi": {
 			ability: "Chlorophyll",
 			level: 40,
 			item: "Bright Powder",
-			moves: ["Needle Arm", "Brick Break", "Faint Attack", "Thunder Punch"],
+			moves: ["Needle Arm", "Brick Break", "Feint Attack", "Thunder Punch"],
 			nature: "Careful",
 		},
 		"Camper Branden": {
 			ability: "Chlorophyll",
 			level: 43,
-			moves: ["Ingrain", "Faint Attack", "Spikes", "Needle Arm"],
+			moves: ["Ingrain", "Feint Attack", "Spikes", "Needle Arm"],
 		},
 		"Ninja Boy Hideo": {
 			ability: "Chlorophyll",
 			level: 54,
 			item: "Bright Powder",
-			moves: ["Destiny Bond", "Needle Arm", "Brick Break", "Faint Attack"],
+			moves: ["Destiny Bond", "Needle Arm", "Brick Break", "Feint Attack"],
 		},
 		"Champion 5ymes": {
 			ability: "Chlorophyll",
@@ -6884,7 +6884,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Bird Keeper Alex": {
 			ability: "Insomnia",
 			level: 67,
-			moves: ["Faint Attack", "Extrasensory", "Double-Edge", "Sky Attack"],
+			moves: ["Feint Attack", "Extrasensory", "Double-Edge", "Sky Attack"],
 			nature: "Lonely",
 		},
 	},
@@ -10004,7 +10004,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			ability: "Synchronize",
 			level: 61,
 			item: "Leftovers",
-			moves: ["Mean Look", "Moonlight", "Baton Pass", "Faint Attack"],
+			moves: ["Mean Look", "Moonlight", "Baton Pass", "Feint Attack"],
 			nature: "Adamant",
 		},
 		"Team Aqua Grunt #6 @ Mt. Pyre": {
