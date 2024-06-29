@@ -164,8 +164,7 @@ function performCalculations() {
 			// Technically the order should be random in a speed tie, but this non-determinism makes manual testing more difficult.
 			// battling.sort(function () { return 0.5 - Math.random(); });
 			bestMove = battling[1].maxDamages[0].moveOrder;
-			var chosenPokemon = battling[1] === p1 ? "0" : "1";
-			bestResult = $(resultLocations[chosenPokemon][bestMove].move);
+			bestResult = $(resultLocations[1][bestMove].move);
 		} else {
 			bestMove = battling[fastestSide].maxDamages[0].moveOrder;
 			bestResult = $(resultLocations[fastestSide][bestMove].move);
@@ -309,32 +308,34 @@ $(".result-move").change(function () {
 			if (desc.indexOf("--") === -1)
 				desc += " -- possibly the worst move ever";
 			$("#mainResult").text(desc);
-			$("#damageValues").text(
-				"Rolls: (" + displayDamageHits(result.damage) + ")"
-			);
+			var drainValue = 0;
+			if(result.move.drain){
+				drainValue = result.move.drain
+			}
+			var recoilValue = 0;
+			if(result.move.recoil){
+				recoilValue = result.move.recoil
+			}
+			displayDamageHits(result.damage, drainValue, recoilValue)
 		}
 	}
 });
 
-function displayDamageHits(damage) {
-	// Fixed Damage
-	if (typeof damage === "number") return damage;
-	// Standard Damage
-	if (damage.length > 2) {
+function aggregateRolls(rolls){
 		var resultString = "";
-		var prevDamage = damage[0];
+	var prevDamage = rolls[0];
 		var rollCount = 1;
-		resultString += damage[0];
-		for (var i = 1; i < damage.length; i++) {
-			if (damage[i] == prevDamage) {
+	resultString += rolls[0];
+	for (var i = 1; i < rolls.length; i++) {
+		if (rolls[i] == prevDamage) {
 				rollCount++;
 			} else {
 				resultString +=
 					rollCount > 1
-						? " [x" + rollCount + "], " + damage[i]
-						: ", " + damage[i];
+					? " [x" + rollCount + "], " + rolls[i]
+					: ", " + rolls[i];
 				rollCount = 1;
-				prevDamage = damage[i];
+			prevDamage = rolls[i];
 			}
 		}
 		if (rollCount > 1) {
@@ -342,17 +343,40 @@ function displayDamageHits(damage) {
 		} else {
 			resultString += ")";
 		}
+	return resultString;
+}
 
-		return resultString;
+function displayDamageHits(damage, drain, recoil) {
+	
+	// Fixed Damage
+	if (typeof damage === "number") rollText = damage;
+	// Standard Damage
+	else if (damage.length > 2) {
+		rollText = aggregateRolls(damage);
 	}
 	// Fixed Parental Bond Damage
-	if (typeof damage[0] === "number" && typeof damage[1] === "number") {
-		return "1st Hit: " + damage[0] + "; 2nd Hit: " + damage[1];
+	else if (typeof damage[0] === "number" && typeof damage[1] === "number") {
+		rollText = "1st Hit: " + damage[0] + "; 2nd Hit: " + damage[1];
 	}
 	// Parental Bond Damage
-	return (
-		"1st Hit: " + damage[0].join(", ") + "; 2nd Hit: " + damage[1].join(", ")
-	);
+	// TODO IN THE DISTANT FUTURE: Apply agg to this
+	else {rollText = "1st Hit: " + damage[0].join(", ") + "; 2nd Hit: " + damage[1].join(", ")}
+	$("#damageValues").text("Rolls: (" + rollText + ")");
+
+	if(drain){
+		$("#drainValues").attr("hidden", false)
+		drainRolls = damage.map((e) => (e / drain[1])).map((e) => (e * drain[0])).map((e)=>(Math.trunc(e)))
+		var drainText = aggregateRolls(drainRolls)
+		$("#drainValues").text("Recovered: (" + drainText + ")");
+	}else $("#drainValues").attr("hidden", true);
+
+	if(recoil){
+		$("#recoilValues").attr("hidden", false)
+		recoilRolls = damage.map((e) => (e / recoil[1])).map((e) => (e * recoil[0])).map((e)=>(Math.trunc(e)))
+		var recoilText = aggregateRolls(recoilRolls)
+		$("#recoilValues").text("Recoil: (" + recoilText + ")");
+	}else $("#recoilValues").attr("hidden", true);
+
 }
 
 function findDamageResult(resultMoveObj) {

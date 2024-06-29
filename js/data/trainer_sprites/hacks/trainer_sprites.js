@@ -93,7 +93,7 @@ var CUSTOMHACKTRAINERSPRITES_EK = {
 		"https://play.pokemonshowdown.com/sprites/trainers/steven-gen6.png",
 	"Collector Ed [Tag]":
 		"https://play.pokemonshowdown.com/sprites/trainers/collector-masters.png",
-	"Collector Edwin [Tag]":
+	"Collector Edwin":
 		"https://play.pokemonshowdown.com/sprites/trainers/collector-masters.png",
 	"Collector Shawn":
 		"https://play.pokemonshowdown.com/sprites/trainers/collector-masters.png",
