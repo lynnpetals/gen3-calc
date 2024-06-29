@@ -227,11 +227,10 @@ function updateDex(customsets, callback = null) {
 				CUSTOMSETDEX_SM[pokemon][moveset] = customsets[pokemon][moveset];
 			} else {
 				if (!CUSTOMHACKSETDEX_EK[pokemon]) CUSTOMHACKSETDEX_EK[pokemon]={};
-					CUSTOMHACKSETDEX_EK[pokemon][moveset] = customsets[pokemon][moveset];
-				if(!CUSTOMHACKSETDEX_EKK[pokemon]){ CUSTOMHACKSETDEX_EKK[pokemon]={};
-					CUSTOMHACKSETDEX_EKK[pokemon][moveset] = customsets[pokemon][moveset];
-				}				
-			}
+				CUSTOMHACKSETDEX_EK[pokemon][moveset] = customsets[pokemon][moveset];
+				if (!CUSTOMHACKSETDEX_EKK[pokemon]) CUSTOMHACKSETDEX_EKK[pokemon]={};
+				CUSTOMHACKSETDEX_EKK[pokemon][moveset] = customsets[pokemon][moveset];
+			}				
 
 			var poke = { name: pokemon, nameProp: moveset };
 			addBoxed(poke);
@@ -358,7 +357,6 @@ function addSets(pokes, name) {
 				.replace("[", "")
 				.replace("]", "")
 				.trim();
-			console.log(move)
 			//Rename in-game moves to correspond to modern naming conventions
 			move = move.replace("Hi Jump Kick", "High Jump Kick").replace("Sonicboom", "Sonic Boom").replace("Ancientpower", "Ancient Power").replace("Faint Attack", "Feint Attack");
 			currentPoke.moves.push(move);
