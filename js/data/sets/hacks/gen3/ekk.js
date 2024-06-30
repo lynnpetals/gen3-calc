@@ -5214,7 +5214,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			nature: "Bold",
 		},
 		"Leader Brawly": {
-			level: 19,
+			level: 18,
 			item: "Lum Berry",
 			moves: ["Brick Break", "Shadow Ball", "Rock Slide", "Fake Out"],
 			nature: "Mild",
