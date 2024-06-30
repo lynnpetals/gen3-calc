@@ -278,9 +278,9 @@ function predictSwitchOrderEmerald() {
 				break;
 		}
 	}
-	console.log(window.CURRENT_TRAINER)
+	// console.log(window.CURRENT_TRAINER)
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
-	console.log(partySpecies)
+	// console.log(partySpecies)
 	var hasDupes = new Set(partySpecies).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	
@@ -315,6 +315,7 @@ function predictSwitchOrderEmerald() {
 				partyMons[i].setName = `${partySpecies[i]} (${current_trainer})`;
 				partyMons[i].name = withMarkedDupes[i];
 			} catch (ex) {
+				console.log("what")
 				$(".trainer-poke-switch-list").html("An error has occured.");
 				return;
 			}
@@ -331,6 +332,7 @@ function predictSwitchOrderEmerald() {
 				].setName = `${partySpecies[i]} (${window.CURRENT_TRAINER})`;
 				partyMons[i].name = partySpecies[i];
 			} catch (ex) {
+				console.log("what")
 				$(".trainer-poke-switch-list").html("An error has occured.");
 				return;
 			}
@@ -576,11 +578,11 @@ function predictSwitchOrderEmerald() {
 							createField().clone().swap()
 						);
 						var damage = calculation.damage;
-						console.log("MOVE: " + $(".last-move-used > select.move-selector").val())
-						console.log(damage)
+						// console.log("MOVE: " + $(".last-move-used > select.move-selector").val())
+						// console.log(damage)
 
 						var score = damage ? damage[damage.length - 1] : damage;
-						console.log(score)
+						// console.log(score)
 						if (score > highestDamage.score) {
 							score %= 256;
 							highestDamage.pokemon = next;

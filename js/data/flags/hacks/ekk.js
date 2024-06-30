@@ -338,7 +338,7 @@ var CUSTOMHACKFLAGS_EKK = {
 			"Cooltrainer Ruben",
 			"Cooltrainer Alexa",
 			// Victory Road
-			"Champion 5ymes",
+			"Champion Symes",
 			"Champion ALB",
 			"Champion Safety",
 			"Champion Dood",
@@ -610,7 +610,7 @@ var CUSTOMHACKFLAGS_EKK = {
 			"Magma Leader Maxie #3",
 			"Magma Admin Tabitha #2",
 			//Victory Road
-			"Champion 5ymes",
+			"Champion Symes",
 			"Champion ALB",
 			"Champion Safety",
 			"Champion Aubs",

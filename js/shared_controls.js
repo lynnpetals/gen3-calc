@@ -1438,7 +1438,7 @@ function createPokemon(pokeInfo) {
 	} else {
 		var setName = pokeInfo.find("input.set-selector").val();
 		var name;
-		console.log(setName)
+		// console.log(setName)
 		if (setName.indexOf("(") === -1) {
 			name = setName;
 		} else {
@@ -2460,7 +2460,7 @@ function getBabySprite(poke) {
 	}
 
 	if (GENERATION.num <= 5) {
-		console.log(poke)
+		// console.log(poke)
 		var num = POKEDEX_NUMBER[poke].slice(1);
 		return `https://raw.githubusercontent.com/AFalsePrayer/pkmn-menu-sprites/master/Ani${num}MS.png`;
 	}
@@ -2633,7 +2633,7 @@ function getGenSprite(poke) {
 	}
 
 	if (poke.name.toLowerCase() == "ho-oh") {
-		return "https://play.pokemonshowdown.com/sprites/gen3/hooh.gif";
+		return "https://play.pokemonshowdown.com/sprites/gen3/hooh.png";
 	}
 	return `https://play.pokemonshowdown.com/sprites/gen3/${poke.name
 		.toLowerCase()
@@ -2992,12 +2992,12 @@ function selectItem(ev) {
 }
 
 $(".chip-div").mouseenter((e)=>{
-	console.log("hello")
+	// console.log("hello")
 	$("#chip-damage-display-panel").attr("hidden", false)
 })
 $(".chip-div").mouseleave((e)=>{
-	console.log("hello")
-	console.log($("#chipDamageToggle").prop("checked"))
+	// console.log("hello")
+	// console.log($("#chipDamageToggle").prop("checked"))
 	if(!($("#chipDamageToggle").checked)){
 		$("#chip-damage-display-panel").attr("hidden", true)
 	}
@@ -3181,6 +3181,6 @@ function updateGameOptions() {
 			window.location.pathname + (params.length ? "?" + params : "")
 		);
 	}
-	console.log(game)
-	console.log(gameId)
+	// console.log(game)
+	// console.log(gameId)
 }
