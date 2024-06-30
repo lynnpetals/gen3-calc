@@ -387,7 +387,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion JakkyShane": {
 			level: 100,
 			item: "Bright Powder",
-			moves: ["Tail Glow", "Thunderbolt", "Fire Punch", "Hidden Power Ice"],
+			moves: ["Tail Glow", "Thunderbolt", "Fire Punch", "Ice Punch"],
 			nature: "Hasty",
 		},
 	},
@@ -758,7 +758,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Team Magma Grunt #3 @ Magma Hideout": {
 			level: 63,
 			item: "Lum Berry",
-			moves: ["Sleep Powder", "Solar Beam", "Weather Ball", "Leech Seed"],
+			moves: ["Sleep Powder", "Solar Beam", "Weather Ball Fire", "Leech Seed"],
 			nature: "Mild",
 		},
 		"Swimmerm Santiago": {
@@ -1090,7 +1090,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Aubs": {
 			level: 100,
 			item: "Quick Claw",
-			moves: ["Overheat", "Earth Power", "Ancient Power", "Explosion"],
+			moves: ["Overheat", "Earthquake", "Ancient Power", "Explosion"],
 			nature: "Bold",
 		},
 	},
@@ -1140,7 +1140,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Magma Admin Courtney #1": {
 			level: 68,
 			item: "Lum Berry",
-			moves: ["Weather Ball", "Ice Beam", "Thunderbolt", "Solar Beam"],
+			moves: ["Weather Ball Fire", "Ice Beam", "Thunderbolt", "Solar Beam"],
 			nature: "Quiet",
 		},
 		"Champion Aubs": {
@@ -1160,19 +1160,19 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Team Aqua Grunt #3 @ Seafloor Cavern": {
 			level: 75,
 			item: "Scope Lens",
-			moves: ["Thunder", "Weather Ball", "Ice Beam", "Attract"],
+			moves: ["Thunder", "Weather Ball Water", "Ice Beam", "Attract"],
 			nature: "Naughty",
 		},
 		"Leader #1 Wallace": {
 			level: 76,
 			item: "Lum Berry",
-			moves: ["Thunder", "Ice Beam", "Weather Ball", "Hidden Power Grass"],
+			moves: ["Thunder", "Ice Beam", "Weather Ball Water", "Hidden Power Grass"],
 			nature: "Sassy",
 		},
 		"Leader #2 Juan": {
 			level: 76,
 			item: "Lum Berry",
-			moves: ["Weather Ball", "Ice Beam", "Thunder", "Hidden Power Grass"],
+			moves: ["Weather Ball Water", "Ice Beam", "Thunder", "Hidden Power Grass"],
 			nature: "Modest",
 		},
 		"Cooltrainer Jennifer": {
@@ -1344,13 +1344,11 @@ var CUSTOMHACKSETDEX_EKK = {
 	},
 	Chinchou: {
 		"Team Aqua Grunt #2 @ Slateport City": {
-			Ability: "Volt Absorb",
 			level: 25,
 			item: "King's Rock",
 			moves: ["Thunder Wave", "Water Pulse", "Shock Wave", "Headbutt"],
 		},
 		"Fisherman Ben": {
-			Ability: "Volt Absorb",
 			level: 28,
 			item: "Lum Berry",
 			moves: ["Thunder Wave", "Ice Beam", "Thunderbolt", "Surf"],
@@ -1447,6 +1445,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		},
 		"Champion 5ymes": {
 			level: 100,
+			item: "Master Ball",
 			moves: ["Earthquake", "Signal Beam", "Psychic", "Explosion"],
 			nature: "Mild",
 		},
@@ -1747,12 +1746,12 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Brick Break", "Crunch", "Body Slam", "Water Pulse"],
 		},
 		"Pokémon Trainer Brendan #2 [Treecko]": {
-			level: 25,
+			level: 24,
 			moves: ["Body Slam", "Ice Punch", "Waterfall", "Aerial Ace"],
 			nature: "Jolly",
 		},
 		"Pokémon Trainer May #2 [Treecko]": {
-			level: 25,
+			level: 24,
 			moves: ["Body Slam", "Attract", "Waterfall", "Aerial Ace"],
 			nature: "Lonely",
 		},
@@ -2366,7 +2365,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			nature: "Naughty",
 		},
 		"Gentleman Nate": {
-			level: 69,
+			level: 67,
 			item: "Lum Berry",
 			moves: ["Skill Swap", "Psychic", "Bite", "Toxic"],
 			nature: "Bold",
@@ -2755,6 +2754,12 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: ["Earthquake", "Flamethrower", "Signal Beam", "Ancient Power"],
 		},
+		"Old Couple Miu & Yuki": {
+			level: 75,
+			item: "Quick Claw",
+			moves: ["Earth Power", "Ancient Power", "Signal Beam", "Giga Drain"],
+			nature: "Careful",
+		},
 		"Cooltrainer Ruben": {
 			level: 71,
 			item: "Lum Berry",
@@ -2801,7 +2806,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Shadow Ball", "Secret Power", "Super Fang", "Brick Break"],
 		},
 		"Parasol Lady Angelica": {
-			level: 51,
+			level: 60,
 			item: "Silk Scarf",
 			moves: ["Super Fang", "Quick Attack", "Double-Edge", "Surf"],
 			nature: "Relaxed",
@@ -2915,6 +2920,17 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: ["Imprison", "Protect", "Shadow Ball", "Brick Break"],
 		},
+		"Hex Maniac Kindra": {
+			level:74,
+			item: "Quick Claw",
+			moves: ['Sludge Bomb', 'Thunder', 'Ice Punch', 'Hypnosis'],
+		},
+		"Old Couple Miu & Yuki": {
+			level: 75,
+			item: "Quick Claw",
+			moves: ["Skill Swap", "Thunder", "Psychic", "Ice Punch"],
+			nature: "Careful",
+		},
 		"Magma Admin Tabitha #2": {
 			level: 73,
 			item: "Lum Berry",
@@ -3010,7 +3026,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Team Magma Grunt #9 @ Magma Hideout": {
 			level: 65,
 			item: "Focus Band",
-			moves: ["Ice Beam", "Weather Ball", "Earthquake", "Ice Shard"],
+			moves: ["Ice Beam", "Weather Ball Fire", "Earthquake", "Ice Shard"],
 			nature: "Hasty",
 		},
 		"Team Aqua Grunt #3 @ Aqua Hideout": {
@@ -3033,7 +3049,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Pokémon Ranger Andrea": {
 			level: 75,
 			item: "Lum Berry",
-			moves: ["Weather Ball", "Ice Beam", "Earthquake", "Ice Shard"],
+			moves: ["Weather Ball Water", "Ice Beam", "Earthquake", "Ice Shard"],
 			nature: "Bold",
 		},
 		"Champion amymae": {
@@ -3049,7 +3065,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Elite Four Glacia": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Weather Ball", "Ice Beam", "Spikes", "Explosion"],
+			moves: ["Weather Ball Water", "Ice Beam", "Spikes", "Explosion"],
 			nature: "Hasty",
 		},
 	},
@@ -3134,7 +3150,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Gian": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Calm Mind", "Surf", "Psychic", "Hidden Power Electric"],
+			moves: ["Calm Mind", "Surf", "Psychic", "Thunder"],
 			nature: "Bold",
 		},
 	},
@@ -3865,6 +3881,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		},
 		"Beauty Sheila": {
 			level: 36,
+			item: "Miracle Seed",
 			moves: ["Sleep Powder", "Aerial Ace", "Giga Drain", "Synthesis"],
 			nature: "Lax",
 		},
@@ -4054,7 +4071,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Body Slam", "Flamethrower", "Shadow Ball", "Brick Break"],
 		},
 		"Ninja Boy Hideo": {
-			level: 54,
+			level: 50,
 			item: "Lum Berry",
 			moves: ["Fake Out", "Brick Break", "Shadow Sneak", "Double-Edge"],
 			nature: "Naive",
@@ -4284,7 +4301,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		},
 		"Champion amymae": {
 			level: 100,
-			item: "Quick Claw",
+			item: "Lum Berry",
 			moves: ["Thunder", "Icy Wind", "Hydro Pump", "Hidden Power Grass"],
 			nature: "Naive",
 		},
@@ -4561,8 +4578,8 @@ var CUSTOMHACKSETDEX_EKK = {
 	Lugia: {
 		"Bird Keeper Billy #3": {
 			level: 100,
-			item: "100",
-			moves: ["Ice Beam", "Psycho Boost", "Aeroblast", "Weather Ball"],
+			item: "Lum Berry",
+			moves: ["Ice Beam", "Psycho Boost", "Aeroblast", "Flamethrower"],
 			nature: "Careful",
 		},
 	},
@@ -5116,7 +5133,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Attract", "Protect", "Flash Cannon", "Brick Break"],
 		},
 		"Beauty Connie": {
-			level: 71,
+			level: 75,
 			item: "Lum Berry",
 			moves: ["Sing", "Rock Slide", "Brick Break", "Shadow Ball"],
 			nature: "Bold",
@@ -5581,6 +5598,11 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Quick Claw",
 			moves: ["Perish Song", "Sleep Talk", "Rest"],
 		},
+		"Hex Maniac Kindra": {
+			level:74,
+			item: "Quick Claw",
+			moves: ["Thunder", 'Hypnosis', 'Psychic', 'Shadow Ball']
+		},
 		"Hex Maniac Kathleen": {
 			level: 69,
 			item: "Lum Berry",
@@ -5731,6 +5753,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		},
 		"Champion Dood": {
 			level: 100,
+			item: "Lum Berry",
 			moves: ["Head Smash", "Poison Tail", "Earthquake", "Shadow Ball"],
 			nature: "Naive",
 		},
@@ -5961,6 +5984,12 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Giga Drain", "X-scissors", "Dig", "Aerial Ace"],
 			nature: "Timid",
 		},
+		"Old Couple Miu & Yuki": {
+			level: 75,
+			item: "Bright Powder",
+			moves: ["X-scissors", "Shadow Ball", "Hidden Power Ground", "Swords Dance"],
+			nature: "Careful",
+		},
 		"Gentleman Franklin": {
 			level: 100,
 			item: "Lum Berry",
@@ -6030,7 +6059,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			nature: "Bold",
 		},
 		"Ninja Boy Hideo": {
-			level: 54,
+			level: 48,
 			item: "Leftovers",
 			moves: ["Octazooka", "Ice Beam", "Body Slam", "Gunk Shot"],
 			nature: "Careful",
@@ -6578,7 +6607,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Not Champion Story": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Tail Glow", "Hydro Pump", "Thunder", "Ice Beam"],
+			moves: ["Tail Glow", "Hydro Pump", "Thunder"],
 			nature: "Modest",
 		},
 		"Champion ywt1": {
@@ -6711,7 +6740,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			nature: "Lonely",
 		},
 		"Team Aqua Grunt #4 @ Seafloor Cavern": {
-			level: 70,
+			level: 75,
 			item: "Scope Lens",
 			moves: ["Substitute", "Explosion", "Sludge Bomb", "Surf"],
 			nature: "Mild",
@@ -6868,7 +6897,7 @@ var CUSTOMHACKSETDEX_EKK = {
 	},
 	Raikou: {
 		"Aqua Leader Archie": {
-			level: 75,
+			level: 76,
 			item: "Lum Berry",
 			moves: ["Thunder", "Hidden Power Grass", "Weather Ball"],
 			nature: "Lax",
@@ -7083,7 +7112,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion ywt1": {
 			level: 100,
 			item: "Leftovers",
-			moves: ["Shadow Ball", "Recover", "Brick Break", "Shadow Ball"],
+			moves: ["Shadow Ball", "Recover", "Brick Break", "Will-O-Wisp"],
 			nature: "Lax",
 		},
 		"Youngster Ray04": {
@@ -7620,6 +7649,12 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Hyper Beam"],
 			nature: "Hasty",
 		},
+		"Old Couple Miu & Yuki": {
+			level: 75,
+			item: "Quick Claw",
+			moves: ["Superpower", "Crush Claw", "Shadow Ball", "Aerial Ace"],
+			nature: "Careful",
+		},
 		"Champion Safety": {
 			level: 100,
 			item: "Choice Band",
@@ -7997,6 +8032,12 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "King's Rock",
 			moves: ["Thunder Wave", "Thunder", "Ice Beam", "Psychic"],
 			nature: "Brave",
+		},
+		"Old Couple Miu & Yuki": {
+			level: 74,
+			item: "Quick Claw",
+			moves: ["Skill Swap", "Psychic", "Hydro Pump", "Thunder"],
+			nature: "Careful",
 		},
 		"Aqua Admin Shelly #2": {
 			level: 76,
@@ -8606,7 +8647,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			level: 100,
 			item: "Lum Berry",
 			moves: [
-				"Heat Wave",
+				"Overheat",
 				"Solar Beam",
 				"Earthquake",
 				"Hidden Power Electric",
@@ -8896,7 +8937,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Magma Admin Courtney #1": {
 			level: 68,
 			item: "Lum Berry",
-			moves: ["Sleep Powder", "Weather Ball", "Solar Beam", "Ancient Power"],
+			moves: ["Sleep Powder", "Weather Ball Fire", "Solar Beam", "Ancient Power"],
 			nature: "Modest",
 		},
 		"Team Magma Grunt #2 @ Mossdeep Space Center": {
@@ -8908,7 +8949,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Pokémon Ranger Andrea": {
 			level: 75,
 			item: "Lum Berry",
-			moves: ["Sleep Powder", "Weather Ball", "Ancient Power"],
+			moves: ["Sleep Powder", "Weather Ball Water", "Ancient Power", "Leaf Blade"],
 			nature: "Adamant",
 		},
 		"Champion Safety": {
@@ -8958,7 +8999,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: [
 				"Gunk Shot",
-				"Weather Ball",
+				"Weather Ball Fire",
 				"Solar Beam",
 				"Hidden Power Rock",
 			],
@@ -8978,7 +9019,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Team Magma Grunt #4 @ Magma Hideout": {
 			level: 64,
 			item: "Bright Powder",
-			moves: ["Sleep Powder", "Solar Beam", "Gunk Shot", "Weather Ball"],
+			moves: ["Sleep Powder", "Solar Beam", "Gunk Shot", "Weather Ball Fire"],
 			nature: "Sassy",
 		},
 		"Team Magma Grunt #14 @ Magma Hideout": {
@@ -8986,7 +9027,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: [
 				"Solar Beam",
-				"Weather Ball",
+				"Weather Ball Fire",
 				"Gunk Shot",
 				"Hidden Power Rock",
 			],
@@ -9006,7 +9047,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Team Aqua Grunt #1 @ Seafloor Cavern": {
 			level: 74,
 			item: "Quick Claw",
-			moves: ["Weather Ball", "Sleep Powder", "Gunk Shot", "Leaf Blade"],
+			moves: ["Weather Ball Water", "Sleep Powder", "Gunk Shot", "Leaf Blade"],
 			nature: "Adamant",
 		},
 		"Swimmerm Clarence": {
@@ -9018,7 +9059,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Parasol Lady Daphne": {
 			level: 75,
 			item: "Lum Berry",
-			moves: ["Weather Ball", "Leaf Blade", "Gunk Shot", "Sleep Powder"],
+			moves: ["Weather Ball Water", "Leaf Blade", "Gunk Shot", "Sleep Powder"],
 			nature: "Quiet",
 		},
 	},
@@ -9080,7 +9121,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: [
 				"Solar Beam",
 				"Hidden Power Ice",
-				"Weather Ball",
+				"Weather Ball Fire",
 				"Sleep Powder",
 			],
 			nature: "Mild",
@@ -9208,13 +9249,13 @@ var CUSTOMHACKSETDEX_EKK = {
 			nature: "Quiet",
 		},
 		"Team Aqua Grunt #9 @ Mt. Pyre": {
-			level: 65,
+			level: 64,
 			item: "Leftovers",
 			moves: ["Blizzard", "Surf", "Super Fang", "Earthquake"],
 			nature: "Naive",
 		},
 		"Team Magma Grunt #9 @ Magma Hideout": {
-			level: 64,
+			level: 65,
 			item: "Leftovers",
 			moves: ["Ice Beam", "Ice Shard", "Earthquake", "Surf"],
 			nature: "Lax",
@@ -9518,7 +9559,7 @@ var CUSTOMHACKSETDEX_EKK = {
 	Wooper: {
 		"Fisherman Elliot": {
 			level: 15,
-			moves: ["Magnitude", "Rock Tomb", "Recover"],
+			moves: ["Magnitude", "Rock Tomb", "Water Pulse"],
 		},
 	},
 	Wurmple: {
