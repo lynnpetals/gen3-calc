@@ -2460,6 +2460,7 @@ function getBabySprite(poke) {
 	}
 
 	if (GENERATION.num <= 5) {
+		console.log(poke)
 		var num = POKEDEX_NUMBER[poke].slice(1);
 		return `https://raw.githubusercontent.com/AFalsePrayer/pkmn-menu-sprites/master/Ani${num}MS.png`;
 	}
