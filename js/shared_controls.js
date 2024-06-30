@@ -3168,9 +3168,10 @@ $("#mainResult").click(function () {
 function updateGameOptions() {
 	if (!READY) return;
 	var params = new URLSearchParams(window.location.search);
-	$("#game0").prop("checked", true);
-	game = "None";
-	gameId = 0;
+	// $("#game0").prop("checked", true);
+	$(".gameSelection").val(1).change()
+	game = "Emerald Kaizo";
+	gameId = 1;
 	params.delete("game");
 	params = "" + params;
 	if (window.history && window.history.replaceState) {
@@ -3180,4 +3181,6 @@ function updateGameOptions() {
 			window.location.pathname + (params.length ? "?" + params : "")
 		);
 	}
+	console.log(game)
+	console.log(gameId)
 }
