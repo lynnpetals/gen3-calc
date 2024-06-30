@@ -1460,7 +1460,7 @@ var CUSTOMHACKPARTYORDER_EK = {
 	"Cooltrainer Jonathan": ["Sceptile"],
 	"Black Belt Kiyo": ["Medicham"],
 	// Route 133
-	"Swimmerf Linda": ["Cloyster", "Grumpid"],
+	"Swimmerf Linda": ["Cloyster", "Grumpig"],
 	"Expert Mollie": ["Gardevoir"],
 	"Expert Conor": ["Scyther"],
 	"Bird Keeper Beck": ["Swellow"],

@@ -51,55 +51,6 @@ var CUSTOMHACKPARTYORDER_EKK = {
 		"Snorunt",
 		"Carvanha",
 	],
-	// Rustboro City
-	"Pokémon Trainer May #1.5 [Torchic]": [
-		"Farfetch’d",
-		"Minun",
-		"Nidorina",
-		"Chikorita",
-		"Squirtle",
-		"Combusken",
-	],
-	"Pokémon Trainer May #1.5 [Mudkip]": [
-		"Farfetch’d",
-		"Nidorina",
-		"Minun",
-		"Bulbasaur",
-		"Quilava",
-		"Marshtomp",
-	],
-	"Pokémon Trainer May #1.5 [Treecko]": [
-		"Farfetch’d",
-		"Nidorina",
-		"Minun",
-		"Totodile",
-		"Charmander",
-		"Grovyle",
-	],
-	"Pokémon Trainer Brendan #1.5 [Torchic]": [
-		"Farfetch’d",
-		"Nidorino",
-		"Plusle",
-		"Chikorita",
-		"Squirtle",
-		"Combusken",
-	],
-	"Pokémon Trainer Brendan #1.5 [Mudkip]": [
-		"Farfetch’d",
-		"Nidorino",
-		"Plusle",
-		"Quilava",
-		"Bulbasaur",
-		"Marshtomp",
-	],
-	"Pokémon Trainer Brendan #1.5 [Treecko]": [
-		"Farfetch’d",
-		"Nidorino",
-		"Plusle",
-		"Totodile",
-		"Charmander",
-		"Grovyle",
-	],
 	// Dewford Gym
 	"Battle Girl Laura": ["Makuhita", "Machop", "Meditite"],
 	"Black Belt Takao": ["Tyrogue", "Mankey", "Vigoroth"],
@@ -452,12 +403,6 @@ var CUSTOMHACKPARTYORDER_EKK = {
 	"Camper Ethan": ["Kingler", "Pinsir", "Stantler"],
 	"Picnicker Diana": ["Tangela", "Nosepass", "Plusle"],
 	"Triathlete Julio": ["Persian", "Swalot", "Sealeo"],
-	// Mt. Chimney
-	"Beauty Shirley": ["Ledian", "Wigglytuff", "Chimecho"],
-	"Beauty Sheila": ["Clamperl", "Ninetales", "Jumpluff"],
-	"Expert Shelby": ["Cloyster", "Medicham", "Marowak", "Ursaring"],
-	"Beauty Melissa": ["Camerupt", "Rapidash", "Kecleon"],
-	"Hiker Sawyer": ["Golbat", "Stantler", "Primeape"],
 	// Lavaridge Gym
 	"Kindler Jeff": ["Magmar", "Ninetales", "Camerupt", "Torkoal"],
 	"Ruin Maniac Eli": ["Exploud", "Solrock", "Weezing", "Camerupt"],
@@ -1446,7 +1391,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
 	"Cooltrainer Jonathan": ["Sceptile"],
 	"Black Belt Kiyo": ["Medicham"],
 	// Route 133
-	"Swimmerf Linda": ["Cloyster", "Grumpid"],
+	"Swimmerf Linda": ["Cloyster", "Grumpig"],
 	"Expert Mollie": ["Gardevoir"],
 	"Expert Conor": ["Scyther"],
 	"Bird Keeper Beck": ["Swellow"],
@@ -1688,4 +1633,95 @@ var CUSTOMHACKPARTYORDER_EKK = {
 		"Aerodactyl",
 		"Deoxys-Attack",
 	],
+	//Optionals
+	// Rustboro City
+	"Pokémon Trainer May #1.5 [Torchic]": [
+		"Farfetch’d",
+		"Minun",
+		"Nidorina",
+		"Chikorita",
+		"Squirtle",
+		"Combusken",
+	],
+	"Pokémon Trainer May #1.5 [Mudkip]": [
+		"Farfetch’d",
+		"Nidorina",
+		"Minun",
+		"Bulbasaur",
+		"Quilava",
+		"Marshtomp",
+	],
+	"Pokémon Trainer May #1.5 [Treecko]": [
+		"Farfetch’d",
+		"Nidorina",
+		"Minun",
+		"Totodile",
+		"Charmander",
+		"Grovyle",
+	],
+	"Pokémon Trainer Brendan #1.5 [Torchic]": [
+		"Farfetch’d",
+		"Nidorino",
+		"Plusle",
+		"Chikorita",
+		"Squirtle",
+		"Combusken",
+	],
+	"Pokémon Trainer Brendan #1.5 [Mudkip]": [
+		"Farfetch’d",
+		"Nidorino",
+		"Plusle",
+		"Quilava",
+		"Bulbasaur",
+		"Marshtomp",
+	],
+	"Pokémon Trainer Brendan #1.5 [Treecko]": [
+		"Farfetch’d",
+		"Nidorino",
+		"Plusle",
+		"Totodile",
+		"Charmander",
+		"Grovyle",
+	],
+	"Cooltrainer Wilton": ["Forretress", "Gyarados", "Porygon2"],
+	"Ruin Maniac Bryan": ["Omanyte", "Lileep", "Duskull"],
+	"Collector Hector": ["Marshtomp", "Combusken", "Grovyle"],
+	"Psychic Marlene": ["Grumpig", "Medicham", "Hypno"],
+	"Team Magma Grunt #3 @ Jagged Pass": [
+		"Mr. Mime",
+		"Clefable",
+		"Meganium",
+		"Ninetales",
+	],
+	// Mt. Chimney
+	"Beauty Shirley": ["Ledian", "Wigglytuff", "Chimecho"],
+	"Beauty Sheila": ["Clamperl", "Ninetales", "Jumpluff"],
+	"Expert Shelby": ["Cloyster", "Medicham", "Marowak", "Ursaring"],
+	"Beauty Melissa": ["Camerupt", "Rapidash", "Kecleon"],
+	"Hiker Sawyer": ["Golbat", "Stantler", "Primeape"],
+	// Route 103
+	"Swimmerf Isabelle": ["Qwilfish"],
+	"Swimmerm Pete": ["Raichu"],
+	// Route 115
+	"Battle Girl Cyndy": ["Medicham"],
+	"Ninja Boy Jaiden": ["Starmie", "Swalot"],
+	"Triathlete Kyra": ["Rapidash", "Girafarig"],
+	"Black Belt Koichi": ["Machop", "Hitmonchan"],
+	"Battle Girl Helene [Tag]": ["Wobbuffet", "Hariyama"],
+	"Psychic Alix [Tag]": ["Grumpig", "Exeggutor"],
+	"Expert Timothy": ["Kingdra", "Miltank", "Ampharos"],
+	// Route 105
+	"Ruin Maniac Foster": ["Relicanth", "Glalie"],
+	"Bird Keeper Josue [Tag]": ["Fearow", "Xatu"],
+	"Ruin Maniac Andres [Tag]": ["Rhydon", "Marowak"],
+	// Route 108
+	"Team Aqua Grunt @ Route 108": ["Starmie"],
+	"Cooltrainer Carolina": ["Kangaskhan", "Torkoal", "Vileplume"],
+	"Sailor Cory": ["Seaking", "Hitmontop", "Raticate"],
+	//Route 118
+	"Interviewers Gabby & Ty #2": ["Xatu", "Exploud"],
+	//Magma Hideout
+	"Bird Keeper Billy #2":[
+		"Salamence", "Aerodactyl", "Moltres", "Dragonite", "Ho-Oh", "Rayquaza"
+	]
 };

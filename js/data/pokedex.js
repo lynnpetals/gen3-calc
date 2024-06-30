@@ -313,7 +313,7 @@ var POKEDEX_NUMBER = {
 	Tyranitar: "0248",
 	"Mega Tyranitar": "0248",
 	Lugia: "0249",
-	"Ho-oh": "0250",
+	"Ho-Oh": "0250",
 	Celebi: "0251",
 	Treecko: "0252",
 	Grovyle: "0253",
