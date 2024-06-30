@@ -70,7 +70,6 @@ $(".gameSelection").change(function () {
 		.remove()
 		.end()
 		.append('<option value="">(none)</option>' + itemOptions);
-	console.log(gen)
 	$(".set-selector").val(getFirstValidSetOption().id);
 	//need to load party before this happens
 	$(".set-selector").change();
