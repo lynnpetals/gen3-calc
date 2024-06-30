@@ -1456,7 +1456,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
 		"Milotic",
 	],
 	// Victory Road
-	"Champion 5ymes": [
+	"Champion Symes": [
 		"Houndoom",
 		"Tyranitar",
 		"Typhlosion",

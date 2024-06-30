@@ -1023,7 +1023,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Bright Powder",
 			moves: ["Destiny Bond", "Needle Arm", "Brick Break", "Feint Attack"],
 		},
-		"Champion 5ymes": {
+		"Champion Symes": {
 			level: 100,
 			item: "Bright Powder",
 			moves: ["Needle Arm", "Crunch", "Weather Ball", "Hidden Power Rock"],
@@ -1443,7 +1443,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Scope Lens",
 			moves: ["Earthquake", "Psychic", "Ice Beam", "Shadow Ball"],
 		},
-		"Champion 5ymes": {
+		"Champion Symes": {
 			level: 100,
 			item: "Master Ball",
 			moves: ["Earthquake", "Signal Beam", "Psychic", "Explosion"],
@@ -3093,10 +3093,10 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Earthquake", "Rock Slide", "Aerial Ace", "Swords Dance"],
 			nature: "Gentle",
 		},
-		"Champion 5ymes": {
+		"Champion Symes": {
 			level: 100,
 			item: "Bright Powder",
-			moves: ["Earthquake", "Sword Dance", "Rock Slide", "Air Slash"],
+			moves: ["Earthquake", "Swords Dance", "Rock Slide", "Air Slash"],
 			nature: "Modest",
 		},
 	},
@@ -3702,7 +3702,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: ["Sunny Day", "Overheat", "Crunch", "Hidden Power Grass"],
 		},
-		"Champion 5ymes": {
+		"Champion Symes": {
 			level: 100,
 			item: "Lum Berry",
 			moves: ["Overheat", "Crunch", "Hidden Power Grass", "Pursuit"],
@@ -8643,7 +8643,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			moves: ["Blast Burn"],
 			nature: "Lonely",
 		},
-		"Champion 5ymes": {
+		"Champion Symes": {
 			level: 100,
 			item: "Lum Berry",
 			moves: [
@@ -8694,7 +8694,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: ["Counter", "Crunch", "Ice Beam", "Thunderbolt"],
 		},
-		"Champion 5ymes": {
+		"Champion Symes": {
 			level: 100,
 			item: "Bright Powder",
 			moves: ["Ancient Power", "Superpower", "Fire Blast", "Solar Beam"],

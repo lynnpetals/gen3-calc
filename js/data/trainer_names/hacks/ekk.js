@@ -281,7 +281,7 @@ var CUSTOMHACKTRAINERNAMES_EKK = [
 	"Cooltrainer Ruben",
 	"Cooltrainer Alexa",
 	// Victory Road
-	"Champion 5ymes",
+	"Champion Symes",
 	"Champion ALB",
 	"Champion Safety",
 	"Champion Dood",
