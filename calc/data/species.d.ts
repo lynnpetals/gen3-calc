@@ -1,4 +1,4 @@
-import * as I from './interface';
+import * as I from "./interface";
 export interface SpeciesData {
     readonly types: [I.TypeName] | [I.TypeName, I.TypeName];
     readonly bs: {
@@ -33,7 +33,7 @@ export declare class Species implements I.Species {
     [Symbol.iterator](): Generator<Specie, void, unknown>;
 }
 declare class Specie implements I.Specie {
-    readonly kind: 'Species';
+    readonly kind: "Species";
     readonly id: I.ID;
     readonly name: I.SpeciesName;
     readonly types: [I.TypeName] | [I.TypeName, I.TypeName];

@@ -278,7 +278,9 @@ function predictSwitchOrderEmerald() {
 				break;
 		}
 	}
+	console.log(window.CURRENT_TRAINER)
 	var partySpecies = partyOrder[window.CURRENT_TRAINER];
+	console.log(partySpecies)
 	var hasDupes = new Set(partySpecies).size !== partySpecies.length;
 	var withMarkedDupes = [];
 	
