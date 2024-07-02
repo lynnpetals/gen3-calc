@@ -1014,10 +1014,13 @@ label.player {
 	justify-content: center;
 
 }
+<<<<<<< HEAD
 
 .gameIconImg {
 	height:6em;
 }
+=======
+>>>>>>> 931eb5c255096b78c14dabe47f72f1c174a4e9da
 .move-result-group {
 	display: flex;
 	min-width: 30em;
