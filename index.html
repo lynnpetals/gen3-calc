@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Lynn's Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?0b84cd42" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?1665bcff" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -73,7 +73,7 @@
             <input class="game visually-hidden" type="radio" name="game" value="1" id="game1" checked="checked" /><label class="btn btn-mid btn-xwide" for="game1">Emerald Kaizo</label>
             <input class="game visually-hidden" type="radio" name="game" value="2" id="game2" checked="checked" /><label class="btn btn-right btn-xwide" for="game2">Emerald Kaizo Kaizo</label>
         </span> -->
-        <select id="gameSelection" class="gameSelection" aria-labelledby="selectGameInstruction" style="font-size:2em;">
+        <select id="gameSelection" class="gameSelection">
             <optgroup label="Rom Hacks">
                 <option value="0" name="game" id="game0" disabled>None</option>
                 <option value="1" name="game" id="game1">Emerald Kaizo</option>
@@ -81,6 +81,10 @@
             </optgroup>
         </select>
     </div>
+    <div class="gameIconDiv">
+        <span class="gameIcon" class="gameIcon"></span>
+    </div>
+    <hr>
     <div aria-label="Move selection" class="move-result-group" role="region" title="Select a move to show detailed results.">
         <div id="resultGroupL" aria-labelledby="resultHeaderL" class="move-result-subgroup left-results" role="radiogroup">
             <div class="result-move-header"><span id="resultHeaderL">Pok&eacute;mon 1's Moves (select one to show detailed results)</span>
@@ -953,19 +957,19 @@
                                     <input aria-describedby="selectScreenInstruction" class="visually-hidden calc-trigger" type="checkbox" id="reflectL" />
                                     <label class="btn btn-wide" for="reflectL">Reflect</label>
                                 </div></td>
-                                <td><div class="right" title="Is this Pok&eacute;mon protected by Reflect and/or Light Screen?">
+                                <td><div class="right" title="Is this Pok&eacute;mon protected by Reflect?">
                                     <input aria-describedby="selectScreenInstruction" class="visually-hidden calc-trigger" type="checkbox" id="reflectR" />
                                     <label class="btn btn-wide" for="reflectR">Reflect</label>
                                 </div></td>
                             </tr>
                             <tr>
                                 <td><div class="left" title="Is this Pok&eacute;mon protected by Light Screen?">
-                                    <input aria-describedby="selectScreenInstruction" class="visually-hidden calc-trigger" type="checkbox" id="lightScreenR" />
-                                    <label class="btn btn-xwide" for="lightScreenR">Light Screen</label>
-                                </div></td>
-                                <td><div class="right" title="Is this Pok&eacute;mon protected by Reflect and/or Light Screen?">
                                     <input aria-describedby="selectScreenInstruction" class="visually-hidden calc-trigger" type="checkbox" id="lightScreenL" />
                                     <label class="btn btn-xwide" for="lightScreenL">Light Screen</label>
+                                </div></td>
+                                <td><div class="right" title="Is this Pok&eacute;mon protected by Light Screen?">
+                                    <input aria-describedby="selectScreenInstruction" class="visually-hidden calc-trigger" type="checkbox" id="lightScreenR" />
+                                    <label class="btn btn-xwide" for="lightScreenR">Light Screen</label>
                                 </div></td>
                             </tr>
                             <tr class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
@@ -1662,7 +1666,7 @@
     <script type="text/javascript" src="./js/index_randoms_controls.js?7344125f"></script>
     <script type="text/javascript" src="./js/moveset_import.js?81510520"></script>
 
-    <script type="text/javascript" src="./js/game_controls.js?85ea1d81"></script>
+    <script type="text/javascript" src="./js/game_controls.js?9198952d"></script>
         
     <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 29 June 2024.
         <ul><li><a href="https://github.com/AFalsePrayer/ek-calc/contributors" class="links-lighten" target="_blank">Contributors</a></li>
