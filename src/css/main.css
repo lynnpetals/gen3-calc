@@ -423,6 +423,12 @@ th {
 	background: #ffff99;
 }
 
+#gameSettings{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
 .genSelection,
 .notationSelection,
 .modeSelection,
@@ -430,7 +436,7 @@ th {
 .gameSelection {
 	display: inline-block;
 	position: relative;
-	top: -8px;
+	top: 0px;
 }
 
 /* header */
@@ -996,3 +1002,24 @@ label.player {
 .speed-img {
 	width: 1.5em;
 }
+
+.gameIconText {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.gameIconDiv {
+	display: flex;
+	min-width: 30em;
+	justify-content: center;
+
+}
+
+.gameIconImg {
+	height:6em;
+}
+.move-result-group {
+	display: flex;
+	min-width: 30em;
+	justify-content: center;
+  }
