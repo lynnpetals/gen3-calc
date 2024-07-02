@@ -33,7 +33,7 @@ $(".gameSelection").change(function () {
 	trainerNames = CUSTOMHACKTRAINERNAMES[gameId];
 	trainerSprites = CUSTOMHACKTRAINERSPRITES;
 	flags = CUSTOMHACKFLAGS[gameId];
-	if (typeof setdex === "undefined") setdex = SETDEX[generation];
+	if (typeof setdex === "undefined") setdex = SETDEX[9];
 	clearField();
 	$("#importedSets").prop("checked", false);
 	loadDefaultLists();
