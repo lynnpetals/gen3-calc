@@ -1902,7 +1902,7 @@ $(".gen").change(function () {
 	/* eslint-enable */
 	// declaring these variables with var here makes z moves not work; TODO
 	pokedex = calc.SPECIES[gen];
-	setdex = SETDEX[gen];
+	setdex = SETDEX[9];
 	randdex = RANDDEX[gen];
 	typeChart = calc.TYPE_CHART[gen];
 	moves = calc.MOVES[gen];

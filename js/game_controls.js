@@ -33,7 +33,7 @@ $(".gameSelection").change(function () {
 	trainerNames = CUSTOMHACKTRAINERNAMES[gameId];
 	trainerSprites = CUSTOMHACKTRAINERSPRITES;
 	flags = CUSTOMHACKFLAGS[gameId];
-	if (typeof setdex === "undefined") setdex = SETDEX[generation];
+	if (typeof setdex === "undefined") setdex = SETDEX[9];
 	clearField();
 	$("#importedSets").prop("checked", false);
 	loadDefaultLists();
@@ -73,6 +73,25 @@ $(".gameSelection").change(function () {
 	$(".set-selector").val(getFirstValidSetOption().id);
 	//need to load party before this happens
 	$(".set-selector").change();
+	
+	var label = document.createElement('label');
+	label.textContent = game
+	label.className = "gameIconText"
+
+	var img = document.createElement('img');
+	switch(gameId){
+		case 1:
+			img.src = "https://play.pokemonshowdown.com/sprites/gen5ani/rayquaza-mega.gif"
+			break;
+		case 2:
+			img.src = "https://play.pokemonshowdown.com/sprites/gen5ani-shiny/rayquaza-mega.gif"
+			break;
+	}
+	img.className = "gameIconImg"
+	
+	$(".gameIcon").html('')
+	$(".gameIcon").append(label)
+	$(".gameIcon").append(img)
 });
 
 
