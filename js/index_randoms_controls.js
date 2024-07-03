@@ -184,7 +184,7 @@ function performCalculations() {
 			bestResult = $(resultLocations[fastestSide][bestMove].move);
 		}
 	}
-	if ($("input:radio[name='format']:checked").val() === "Singles") {
+	if ($("input:radio[name='format']:checked").val()) {
 		$(".speedIcon").html('');
 		if (fastestSide === "tie") {
 			var img = document.createElement("img");
@@ -253,7 +253,6 @@ function performCalculations() {
 			//guaranteed kill vs not sure
 			var isDefKill = minn[i] >= $("#currentHpL1")[0].valueAsNumber
 			var ohkoClassName = isDefKill ? "ohko" : "can-ohko"
-			canKOPlayer = isDefKill || canKOPlayer;
 			$(resultLocations[1][i].move + " + label").addClass(ohkoClassName)
 			var emoji = isDefKill ? "💀 " : "😱 " ;
 			$(resultLocations[1][i].move + " + label").text(emoji + $(resultLocations[1][i].move + " + label").text())

@@ -56,6 +56,15 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Steven Tag": {
 			level: 70,
 			moves: ["Fly", "Steel Wing", "Rock Blast", "Return"],
+			ivs: {
+				hp: 0,
+				at: 0,
+				sa: 0,
+				sp: 0,
+				df: 0,
+				sd: 0,
+			},
+			nature: "Brave",
 		},
 		"Old Couple John & Jay": {
 			level: 75,
@@ -5323,7 +5332,15 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Steven Tag": {
 			level: 70,
 			moves: ["Psychic", "Shadow Ball", "Meteor Mash", "Brick Break"],
-			nature: "Brave",
+			ivs: {
+				hp: 31,
+				at: 31,
+				sa: 31,
+				sp: 31,
+				df: 31,
+				sd: 31,
+			},
+			nature: "Adamant",
 		},
 		"Magma Leader Maxie #3": {
 			level: 73,
@@ -8025,7 +8042,15 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Steven Tag": {
 			level: 70,
 			moves: ["Surf", "Psychic", "Thunderbolt", "Dive"],
-			nature: "Lonely",
+			ivs: {
+				hp: 0,
+				at: 0,
+				sa: 0,
+				sp: 0,
+				df: 0,
+				sd: 0,
+			},
+			nature: "Impish",
 		},
 		"Team Aqua Grunt #1 @ Seafloor Cavern": {
 			level: 74,
