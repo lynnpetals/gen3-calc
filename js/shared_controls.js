@@ -3142,7 +3142,9 @@ $(document).ready(function () {
 		dropzone.ondrop = drop;
 		dropzone.ondragover = allowDrop;
 	}
-
+	$(".loadingScreen")[0].style.visibility = "hidden";
+	$(".wrapper").attr("hidden", false)
+	$(".credits").attr("hidden", false)
 	READY = true;
 });
 
