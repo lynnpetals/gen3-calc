@@ -311,7 +311,7 @@
                             <input type="checkbox" id="importedSets" /> Only show imported sets <br />
                         </span>
                         <div class="info-group top i-f-stats">
-                            <div>
+                            <div class="typeLabel">
                                 <label class="selector-label">Type</label>
                                 <select aria-label="type2"
                                     class="selector-select type2 terrain-trigger calc-trigger"></select>
@@ -324,11 +324,11 @@
                                 <input type="checkbox" title="Has this Pok&eacute;mon terastalized?"
                                     class="teraToggle terrain-trigger calc-trigger">
                             </div>
-                            <div class="hide">
+                            <div class="hide formeLabel">
                                 <label class="selector-label">Forme</label>
                                 <select class="selector-select forme save-trigger calc-trigger"></select>
                             </div>
-                            <div class="hide">
+                            <div class="hide genderLabel">
                                 <label class="selector-label">Gender</label>
                                 <select class="selector-select save-trigger gender calc-trigger">
                                     <option></option>
@@ -336,7 +336,7 @@
                                     <option>Female</option>
                                 </select>
                             </div>
-                            <div>
+                            <div class="levelLabel">
                                 <label class="selector-label" for="levelL1">Level</label>
                                 <!--
                                 We use inputmode="decimal" so that mobile devices will have a numpad appear when inputting values.
@@ -540,7 +540,7 @@
                             </table>
                         </div>
                         <div class="info-group info-selectors i-f-stats" style="direction: ltr;">
-                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9 natureLabel">
                                 <label class="selector-label" for="natureL1">NATURE</label>
                                 <select class="selector-select nature save-trigger calc-trigger" id="natureL1">
                                     <option value="Adamant">Adamant (+Atk, -SpA)</option>
@@ -570,7 +570,7 @@
                                     <option value="Timid">Timid (+Spe, -Atk)</option>
                                 </select>
                             </div>
-                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9"  style="display: ruby;">
+                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9 abilityLabel"  style="display: ruby;">
                                 <label class="selector-label" for="abilityL1">ABILITY</label>
                                 <select class="selector-select ability terrain-trigger save-trigger calc-trigger"
                                     id="abilityL1"></select>
@@ -596,12 +596,12 @@
                                 </select>
                                 <button class="transform" hidden>Transform</button>
                             </div>
-                            <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
+                            <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9 itemLabel">
                                 <label class="selector-label" for="itemL1">ITEM</label>
                                 <select class="selector-select item terrain-trigger save-trigger calc-trigger"
                                     id="itemL1"></select>
                             </div>
-                            <div>
+                            <div class="statusLabel">
                                 <label class="selector-label" for="statusL1">STATUS</label>
                                 <select class="selector-select status calc-trigger" id="statusL1">
                                     <option value="Healthy">Healthy</option>
@@ -641,7 +641,7 @@
                             </div>
                             <br />
                         </div>
-                        <div class="info-group">
+                        <div class="info-group HPLabel">
                             <label for="currentHpL1">Current HP</label>
                             <input type="number" class="current-hp calc-trigger" id="currentHpL1" value="341" min="0"
                                 inputmode="decimal" />/<span class="max-hp">341</span> (
@@ -1408,7 +1408,7 @@
                             <input type="checkbox" id="importedSets" /> Only show imported sets
                         </span>
                         <div class="info-group top i-f-o-stats">
-                            <div>
+                            <div class="typeLabel">
                                 <label class="selector-label">Type</label>
                                 <select aria-label="Type 1"
                                     class="selector-select type1 terrain-trigger calc-trigger"></select>
@@ -1421,11 +1421,11 @@
                                 <input type="checkbox" title="Has this Pok&eacute;mon terastalized?"
                                     class="teraToggle terrain-trigger calc-trigger">
                             </div>
-                            <div class="hide">
+                            <div class="hide formeLabel">
                                 <label class="selector-label">Forme</label>
                                 <select class="selector-select forme calc-trigger"></select>
                             </div>
-                            <div class="hide">
+                            <div class="hide genderLabel">
                                 <label class="selector-label">Gender</label>
                                 <select class="selector-select gender calc-trigger">
                                     <option></option>
@@ -1433,7 +1433,7 @@
                                     <option>Female</option>
                                 </select>
                             </div>
-                            <div>
+                            <div class="levelLabel">
                                 <label class="selector-label" for="levelR1">Level</label>
                                 <input class="selector-select level calc-trigger" id="levelR1" value="100"
                                     inputmode="decimal" min="1" max="100" step="1" />
@@ -1646,7 +1646,7 @@
                             </table>
                         </div>
                         <div class="info-group info-selectors i-f-o-stats" style="direction: rtl;">
-                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9 natureLabel">
                                 <select class="selector-select nature calc-trigger" id="natureR1">
                                     <option value="Adamant">Adamant (+Atk, -SpA)</option>
                                     <option value="Bashful">Bashful</option>
@@ -1677,7 +1677,7 @@
                                 <label class="selector-label" for="natureR1">NATURE</label>
 
                             </div>
-                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9" style="display: ruby;">
+                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9 abilityLabel" style="display: ruby;">
                                 
                                 <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
                                     <option value="0">Zero allies fainted</option>
@@ -1704,11 +1704,11 @@
                                 <label class="selector-label" for="abilityR1">ABILITY</label>
 
                             </div>
-                            <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
+                            <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9 itemLabel">
                                 <select class="selector-select item terrain-trigger calc-trigger" id="itemR1"></select>
                                 <label class="selector-label" for="itemR1">ITEM</label>
                             </div>
-                            <div>
+                            <div class="statusLabel">
                                 <select aria-label="Toxic counter" class="toxic-counter calc-trigger hide">
                                     <option value="1">1/16</option>
                                     <option value="2">2/16</option>
@@ -1748,7 +1748,7 @@
                             </div>
                             <br />
                         </div>
-                        <div class="info-group">
+                        <div class="info-group HPLabel">
                             <label for="currentHpR1">Current HP</label>
                             <input type="number" class="current-hp calc-trigger" id="currentHpR1" value="341" min="0"
                                 inputmode="decimal" />/<span class="max-hp">341</span> (
