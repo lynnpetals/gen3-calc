@@ -2952,9 +2952,6 @@ $(".stat-changer").click((e) => {
 window.isInDoubles = false;
 function switchIconSingle() {
 	// document.getElementById("monDouble").removeAttribute("hidden");
-	
-	$(".speedText").attr("hidden", false)
-	$(".speedIcon").attr("hidden", true)
 	window.isInDoubles = true;
 	return;
 }
@@ -2962,8 +2959,6 @@ function switchIconSingle() {
 function switchIconDouble() {
 	// document.getElementById("monDouble").setAttribute("hidden", true);
 	window.isInDoubles = false;
-	$(".speedText").attr("hidden", true)
-	$(".speedIcon").attr("hidden", false)
 	return;
 }
 
@@ -2975,14 +2970,10 @@ function openCloseNoteBox() {
 	document.getElementById("note-box-frame").toggleAttribute("hidden");
 }
 
-$(".totalMod").mouseenter((e) => {
+$(".totalMod").click((e) => {
 	if($(e.target)[0].className){
-		$(".speedText").attr("hidden", false)
-	}
-})
-$(".totalMod").mouseleave((e) => {
-	if($(e.target)[0].className){
-		$(".speedText").attr("hidden", true)
+		$(".speedText").toggle()
+		$(".speedIcon").toggle()
 	}
 })
 
@@ -3160,7 +3151,9 @@ $(document).ready(function () {
 		dropzone.ondrop = drop;
 		dropzone.ondragover = allowDrop;
 	}
-
+	$(".loadingScreen")[0].style.visibility = "hidden";
+	$(".wrapper").attr("hidden", false)
+	$(".credits").attr("hidden", false)
 	READY = true;
 });
 
