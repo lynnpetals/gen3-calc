@@ -266,9 +266,9 @@
                     </span>
                     <div class="info-group top i-f-stats">
                         <div>
-                            <label class="selector-label">Type</label>
-                            <select aria-label="type2" class="selector-select type2 terrain-trigger calc-trigger"></select>
-                            <select aria-label="type1" class="selector-select type1 terrain-trigger calc-trigger"></select>
+                            <label class="selector-label type">Type</label>
+                            <select aria-label="type2" class="selector-select type type2 terrain-trigger calc-trigger"></select>
+                            <select aria-label="type1" class="selector-select type type1 terrain-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -276,7 +276,7 @@
                             <input type="checkbox" title= "Has this Pok&eacute;mon terastalized?" class="teraToggle terrain-trigger calc-trigger">
                         </div>
                         <div class="hide">
-                            <label class="selector-label">Forme</label>
+                            <label class="selector-label forme">Forme</label>
                             <select class="selector-select forme save-trigger calc-trigger"></select>
                         </div>
                         <div class="hide">
@@ -284,7 +284,7 @@
                             <select class="selector-select save-trigger gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
                         </div>
                         <div>
-                            <label class="selector-label" for="levelL1">Level</label>
+                            <label class="selector-label level" for="levelL1">Level</label>
                             <!--
                             We use inputmode="decimal" so that mobile devices will have a numpad appear when inputting values.
                             https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/#aa-decimal
@@ -482,7 +482,7 @@
                     </div>
                     <div class="info-group info-selectors i-f-stats" style="direction: ltr;">
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                            <label class="selector-label" for="natureL1">NATURE</label>
+                            <label class="selector-label nature" for="natureL1">NATURE</label>
                             <select class="selector-select nature save-trigger calc-trigger" id="natureL1">
                                 <option value="Adamant">Adamant (+Atk, -SpA)</option>
                                 <option value="Bashful">Bashful</option>
@@ -512,7 +512,7 @@
                             </select>
                         </div>
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                            <label class="selector-label" for="abilityL1">ABILITY</label>
+                            <label class="selector-label ability" for="abilityL1">ABILITY</label>
                             <select class="selector-select ability terrain-trigger save-trigger calc-trigger" id="abilityL1"></select>
                             <input hidden type="checkbox" title= "Is this ability active?" class="abilityToggle calc-trigger">
                             <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
@@ -535,11 +535,11 @@
                             <button class="transform" hidden>Transform</button>
                         </div>
                         <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
-                            <label class="selector-label" for="itemL1">ITEM</label>
+                            <label class="selector-label item" for="itemL1">ITEM</label>
                             <select class="selector-select item terrain-trigger save-trigger calc-trigger" id="itemL1"></select>
                         </div>
                         <div>
-                            <label class="selector-label" for="statusL1">STATUS</label>
+                            <label class="selector-label status" for="statusL1">STATUS</label>
                             <select class="selector-select status calc-trigger" id="statusL1">
                                 <option value="Healthy">Healthy</option>
                                 <option value="Poisoned">Poisoned</option>
@@ -577,7 +577,7 @@
                         <br />
                     </div>
                     <div class="info-group">
-                        <label for="currentHpL1">Current HP</label>
+                        <label class="current-hp" for="currentHpL1">Current HP</label>
                         <input type="number" class="current-hp calc-trigger" id="currentHpL1" value="341" min="0" inputmode="decimal" />/<span class="max-hp">341</span> (
                         <input class="percent-hp calc-trigger" value="100" inputmode="decimal" />%)
                         <input class="visually-hidden max calc-trigger btn-input" type="checkbox" id="maxL" />
@@ -1108,9 +1108,9 @@
                     </span>
                     <div class="info-group top i-f-o-stats">
                         <div>
-                            <label class="selector-label">Type</label>
-                            <select aria-label="Type 1" class="selector-select type1 terrain-trigger calc-trigger"></select>
-                            <select aria-label="Type 2" class="selector-select type2 terrain-trigger calc-trigger"></select>
+                            <label class="selector-label type">Type</label>
+                            <select aria-label="Type 1" class="selector-select type type1 terrain-trigger calc-trigger"></select>
+                            <select aria-label="Type 2" class="selector-select type type2 terrain-trigger calc-trigger"></select>
                         </div>
                         <div class="gen-specific g9">
                             <label>Tera Type</label>
@@ -1118,7 +1118,7 @@
                             <input type="checkbox" title= "Has this Pok&eacute;mon terastalized?" class="teraToggle terrain-trigger calc-trigger">
                         </div>
                         <div class="hide">
-                            <label class="selector-label">Forme</label>
+                            <label class="selector-label forme">Forme</label>
                             <select class="selector-select forme calc-trigger"></select>
                         </div>
                         <div class="hide">
@@ -1126,7 +1126,7 @@
                             <select class="selector-select gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
                         </div>
                         <div>
-                            <label class="selector-label" for="levelR1">Level</label>
+                            <label class="selector-label level" for="levelR1">Level</label>
                             <input class="selector-select level calc-trigger" id="levelR1" value="100" inputmode="decimal" min="1" max="100" step="1" />
                         </div>
                         <div class="hide">
@@ -1363,7 +1363,7 @@
                                 <option value="Serious">Serious</option>
                                 <option value="Timid">Timid (+Spe, -Atk)</option>
                             </select>
-                            <label class="selector-label" for="natureR1">NATURE</label>
+                            <label class="selector-label nature" for="natureR1">NATURE</label>
                             
                         </div>
                         <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
@@ -1387,15 +1387,15 @@
                             </select>
                             <select class="selector-select ability terrain-trigger calc-trigger" id="abilityR1"></select>
                             <button class="transform" hidden>Transform</button>
-                            <label class="selector-label" for="abilityR1">ABILITY</label>
+                            <label class="selector-label ability" for="abilityR1">ABILITY</label>
                             
                         </div>
                         <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                             <select class="selector-select item terrain-trigger calc-trigger" id="itemR1"></select>
-                            <label class="selector-label" for="itemR1">ITEM</label>
+                            <label class="selector-label item" for="itemR1">ITEM</label>
                         </div>
                         <div>
-                            <select aria-label="Toxic counter" class="toxic-counter calc-trigger hide">
+                            <select aria-label="Toxic counter" class="toxic-counter status calc-trigger hide">
                                 <option value="1">1/16</option>
                                 <option value="2">2/16</option>
                                 <option value="3">3/16</option>
@@ -1421,7 +1421,7 @@
                                 <option value="Asleep">Asleep</option>
                                 <option value="Frozen">Frozen</option>
                             </select>
-                            <label class="selector-label" for="statusR1">STATUS</label>
+                            <label class="selector-label status" for="statusR1">STATUS</label>
                         </div>
                     </div>
                     <div class="info-group gen-specific g9">
@@ -1433,7 +1433,7 @@
                         <br />
                     </div>
                     <div class="info-group">
-                        <label for="currentHpR1">Current HP</label>
+                        <label class="current-hp" for="currentHpR1">Current HP</label>
                         <input type="number" class="current-hp calc-trigger" id="currentHpR1" value="341" min="0" inputmode="decimal" />/<span class="max-hp">341</span> (
                         <input class="percent-hp calc-trigger" value="100" inputmode="decimal" />%)
                         <input class="visually-hidden max calc-trigger btn-input" type="checkbox" id="maxR" />
@@ -1623,14 +1623,14 @@
     <script type="text/javascript" src="./calc/stats.js?15f50e32"></script>
     <script type="text/javascript" src="./calc/data/species.js?3b90a6bb"></script>
     <script type="text/javascript" src="./js/data/sets/gen9.js?4752ead0"></script>
-    <script type="text/javascript" src="./js/data/sets/gen8.js?0.9218552770718542"></script>
-    <script type="text/javascript" src="./js/data/sets/gen7.js?0.573911021320322"></script>
-    <script type="text/javascript" src="./js/data/sets/gen6.js?0.8886439327242759"></script>
-    <script type="text/javascript" src="./js/data/sets/gen5.js?0.3121900849482029"></script>
-    <script type="text/javascript" src="./js/data/sets/gen4.js?0.5945166594609892"></script>
-    <script type="text/javascript" src="./js/data/sets/gen3.js?0.7646532152315753"></script>
-    <script type="text/javascript" src="./js/data/sets/gen2.js?0.8088329532146092"></script>
-    <script type="text/javascript" src="./js/data/sets/gen1.js?0.38039403300805597"></script>
+    <script type="text/javascript" src="./js/data/sets/gen8.js?0.26627085329551936"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js?0.495595143011462"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js?0.783038013847899"></script>
+    <script type="text/javascript" src="./js/data/sets/gen5.js?0.9233448928179153"></script>
+    <script type="text/javascript" src="./js/data/sets/gen4.js?0.422874007526985"></script>
+    <script type="text/javascript" src="./js/data/sets/gen3.js?0.31090042726697"></script>
+    <script type="text/javascript" src="./js/data/sets/gen2.js?0.13110435114922536"></script>
+    <script type="text/javascript" src="./js/data/sets/gen1.js?0.4018514197535872"></script>
     <script type="text/javascript" src="./js/data/sets/hacks/gen3/ek.js?d9ed98e7"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ek.js?1f20871f"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ek.js?0a87dbc8"></script>
