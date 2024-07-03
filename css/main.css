@@ -206,6 +206,34 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 .wrapper {
 	padding: 0 1em;
@@ -664,6 +692,8 @@ table.field {
 	width: auto;
 	cursor: pointer;
 	box-sizing: border-box;
+	transition-property: outline-color;
+    transition-duration: 0.4s;
 }
 
 .trainer-poke-switch:hover {
@@ -987,6 +1017,8 @@ label.player {
 .move-result-subgroup .btn.btn-xxxwide {
 	height: 2em;
 	align-content: center;
+	transition-property: color;
+    transition-duration: 0.4s;
 }
 .trainer-poke-switch-explain {
 	margin-left: 1em;
@@ -1035,3 +1067,19 @@ label.player {
 	color: red !important;
 	text-transform: uppercase;
 }
+
+.loadingScreen {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 8em;
+	  -webkit-animation: none; /* Safari, Chrome and Opera > 12.1 */
+		 -moz-animation: none; /* Firefox < 16 */
+		  -ms-animation: none; /* Internet Explorer */
+		   -o-animation: none; /* Opera < 12.1 */
+			  animation: none;
+  }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Lynn's Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?336d937b" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?dfb46266" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -24,6 +24,9 @@
 
 <body class="dark-theme">
 
+    <div class="loadingScreen">
+        <span>Loading...</span>
+    </div>
 
     <nav hidden>
         <div class="header">
@@ -45,7 +48,7 @@
             </div>
         </div>
     </nav>
-    <div class="wrapper">
+    <div class="wrapper" hidden>
 
         <!-- TODO: Change this section from selecting a generation and a hack? Yeah, make it a dropdown instead where you can just find the game you want to play. -->
         <div id="gameSettings" aria-label="Settings" role="region">
@@ -492,7 +495,9 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <div class="speedIcon"></div>
+                                            <div class="speedIcon">
+                                                <img src="./img/speed-tie.png" class="speed-img">
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="sp">
@@ -564,7 +569,7 @@
                                     <option value="Timid">Timid (+Spe, -Atk)</option>
                                 </select>
                             </div>
-                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
+                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9"  style="display: ruby;">
                                 <label class="selector-label" for="abilityL1">ABILITY</label>
                                 <select class="selector-select ability terrain-trigger save-trigger calc-trigger"
                                     id="abilityL1"></select>
@@ -1563,7 +1568,9 @@
                                     </tr>
                                     <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                                         <td>
-                                            <div class="speedIcon"></div>
+                                            <div class="speedIcon">
+                                                <img src="./img/speed-tie.png" class="speed-img">
+                                            </div>
                                         </td>
                                         <td>
                                             <select class="boost calc-trigger">
@@ -1669,9 +1676,8 @@
                                 <label class="selector-label" for="natureR1">NATURE</label>
 
                             </div>
-                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                                <input hidden type="checkbox" title="Is this ability active?"
-                                    class="abilityToggle calc-trigger">
+                            <div class="gen-specific g3 g4 g5 g6 g7 g8 g9" style="display: ruby;">
+                                
                                 <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
                                     <option value="0">Zero allies fainted</option>
                                     <option value="1">One ally fainted</option>
@@ -1692,6 +1698,7 @@
                                 </select>
                                 <select class="selector-select ability terrain-trigger calc-trigger"
                                     id="abilityR1"></select>
+                                <input hidden type="checkbox" title="Is this ability active?" class="abilityToggle calc-trigger">
                                 <button class="transform" hidden>Transform</button>
                                 <label class="selector-label" for="abilityR1">ABILITY</label>
 
@@ -1966,14 +1973,14 @@
     <script type="text/javascript" src="./calc/stats.js?15f50e32"></script>
     <script type="text/javascript" src="./calc/data/species.js?3b90a6bb"></script>
     <script type="text/javascript" src="./js/data/sets/gen9.js?4752ead0"></script>
-    <script type="text/javascript" src="./js/data/sets/gen8.js?0.3806014565680691"></script>
-    <script type="text/javascript" src="./js/data/sets/gen7.js?0.41863926314742783"></script>
-    <script type="text/javascript" src="./js/data/sets/gen6.js?0.5720617287848848"></script>
-    <script type="text/javascript" src="./js/data/sets/gen5.js?0.4345604881645342"></script>
-    <script type="text/javascript" src="./js/data/sets/gen4.js?0.033542628334041646"></script>
-    <script type="text/javascript" src="./js/data/sets/gen3.js?0.42196798868700824"></script>
-    <script type="text/javascript" src="./js/data/sets/gen2.js?0.9066664634944934"></script>
-    <script type="text/javascript" src="./js/data/sets/gen1.js?0.15645452405526594"></script>
+    <script type="text/javascript" src="./js/data/sets/gen8.js?0.8695639687467485"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js?0.8220125090287744"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js?0.65449353096519"></script>
+    <script type="text/javascript" src="./js/data/sets/gen5.js?0.46969390561284974"></script>
+    <script type="text/javascript" src="./js/data/sets/gen4.js?0.14042424981658597"></script>
+    <script type="text/javascript" src="./js/data/sets/gen3.js?0.43156936285312764"></script>
+    <script type="text/javascript" src="./js/data/sets/gen2.js?0.7000414127183823"></script>
+    <script type="text/javascript" src="./js/data/sets/gen1.js?0.06887576586271749"></script>
     <script type="text/javascript" src="./js/data/sets/hacks/gen3/ek.js?d9ed98e7"></script>
     <script type="text/javascript" src="./js/data/party_order/hacks/ek.js?1f20871f"></script>
     <script type="text/javascript" src="./js/data/trainer_names/hacks/ek.js?0a87dbc8"></script>
@@ -2005,7 +2012,7 @@
     <script type="text/javascript" src="./calc/result.js?9f8881b5"></script>
     <script type="text/javascript" src="./calc/adaptable.js?92e49194"></script>
     <script type="text/javascript" src="./calc/index.js?b8906f6c"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?bf76aa25"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?5da4a5e3"></script>
     <script type="text/javascript" src="./js/index_randoms_controls.js?cc44fb15"></script>
     <script type="text/javascript" src="./js/moveset_import.js?81510520"></script>
 
@@ -2018,7 +2025,7 @@
     </div>
 
 
-    <div class="credits">Original calculator created by Honko, maintained by Austin and Kris, fork created and
+    <div class="credits" hidden>Original calculator created by Honko, maintained by Austin and Kris, fork created and
         maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 29 June 2024.
         <ul>
             <li><a href="https://github.com/AFalsePrayer/ek-calc/contributors" class="links-lighten"
