@@ -1023,3 +1023,27 @@ label.player {
 	min-width: 30em;
 	justify-content: center;
   }
+
+  #settingsGearIcon {
+	cursor:pointer;
+  }
+
+  #settingsPage {
+	backdrop-filter: blur(3px);
+	background-color: green;
+	height:80%;
+	width:80%;
+	position:absolute;
+	margin:auto;
+  }
+  .settingsOverlay{
+	backdrop-filter: blur(3px);
+	height:100%;
+	width:100%;
+	margin:auto;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index:100;
+  }

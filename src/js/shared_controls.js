@@ -3145,6 +3145,15 @@ $(document).ready(function () {
 		predictSwitchOrder();
 	});
 
+
+	$("#settingsGearIcon").click(()=>{
+		console.log("hi")
+		$(".settingsOverlay").attr("hidden", false)
+	});
+	$(".settingsOverlay").click(()=>{
+
+		$(".settingsOverlay").attr("hidden", true)	
+	})
 	for (let dropzone of document.getElementsByClassName("dropzone")) {
 		dropzone.ondragenter = handleDragEnter;
 		dropzone.ondragleave = handleDragLeave;
