@@ -2952,9 +2952,6 @@ $(".stat-changer").click((e) => {
 window.isInDoubles = false;
 function switchIconSingle() {
 	// document.getElementById("monDouble").removeAttribute("hidden");
-	
-	$(".speedText").attr("hidden", false)
-	$(".speedIcon").attr("hidden", true)
 	window.isInDoubles = true;
 	return;
 }
@@ -2962,8 +2959,6 @@ function switchIconSingle() {
 function switchIconDouble() {
 	// document.getElementById("monDouble").setAttribute("hidden", true);
 	window.isInDoubles = false;
-	$(".speedText").attr("hidden", true)
-	$(".speedIcon").attr("hidden", false)
 	return;
 }
 
