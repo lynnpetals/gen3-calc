@@ -1023,3 +1023,15 @@ label.player {
 	min-width: 30em;
 	justify-content: center;
   }
+
+  
+.highest-roll{
+	color:lime !important;
+}
+.can-ohko{
+	color: orange !important;
+}
+.ohko{
+	color: red !important;
+	text-transform: uppercase;
+}

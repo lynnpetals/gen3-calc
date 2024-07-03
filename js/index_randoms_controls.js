@@ -68,6 +68,7 @@ function performCalculations() {
 	damageResults = calculateAllMoves(gen, p1, p1field, p2, p2field);
 	p1 = damageResults[0][0].attacker;
 	p2 = damageResults[1][0].attacker;
+
 	var battling = [p1, p2];
 	p1.maxDamages = [];
 	p2.maxDamages = [];
@@ -84,6 +85,8 @@ function performCalculations() {
 	var result, maxDamage;
 	var bestResult;
 	var zProtectAlerted = false;
+	var minn = new Array();
+	var maxx = new Array();
 	for (var i = 0; i < 4; i++) {
 		// P1
 		result = damageResults[0][i];
@@ -124,6 +127,9 @@ function performCalculations() {
 		// P2
 		result = damageResults[1][i];
 		maxDamage = result.range()[1] * p2.moves[i].hits;
+		minn.push(result.range()[0])
+		maxx.push(result.range()[1])
+		
 		if (
 			!zProtectAlerted &&
 			maxDamage > 0 &&
@@ -144,6 +150,9 @@ function performCalculations() {
 		$(resultLocations[1][i].move + " + label").text(
 			p2.moves[i].name.replace("Hidden Power", "HP")
 		);
+
+		// $(resultLocations[1][i].move + " + label").removeClass("highest-roll")
+
 		$(resultLocations[1][i].damage).text(
 			result.moveDesc(notation).split("(")[0]
 		);
@@ -189,6 +198,38 @@ function performCalculations() {
 			$(".speedIcon")[1 - fastestSide].append(imgSlower);
 		}
 	}
+
+
+	let maxRoll = maxx.indexOf(Math.max(...maxx));
+	//take the look at the max roll in these four
+
+	//check the corresponding minimum roll
+	let minRoll = minn[maxRoll];
+
+	for (i of [...Array(4).keys()]){
+		$(resultLocations[1][i].move + " + label").removeClass("highest-roll")
+		$(resultLocations[1][i].move + " + label").removeClass("ohko")
+		$(resultLocations[1][i].move + " + label").removeClass("can-ohko")
+		if(maxx[i] >= $("#currentHpL1")[0].valueAsNumber){
+			//This move kills!
+			//guaranteed kill vs not sure
+			var ohkoClassName = minn[i] >= $("#currentHpL1")[0].valueAsNumber ? "ohko" : "can-ohko"
+			
+			$(resultLocations[1][i].move + " + label").addClass(ohkoClassName)
+			continue;
+		}
+		$(resultLocations[1][i].move + " + label").removeClass("ohko")
+		$(resultLocations[1][i].move + " + label").removeClass("can-ohko")
+		if(maxx[i]>=minRoll){
+			//This move can max roll!
+			$(resultLocations[1][i].move + " + label").addClass("highest-roll")
+		}
+	}
+
+	//check which max rolls are greater than this minimum roll
+
+	//all these rolls are highlighted
+
 	if ($(".locked-move").length) {
 		bestResult = $(".locked-move");
 	} else {
