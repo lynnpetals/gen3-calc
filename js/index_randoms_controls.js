@@ -87,6 +87,7 @@ function performCalculations() {
 	var zProtectAlerted = false;
 	var minn = new Array();
 	var maxx = new Array();
+	var moveNames = new Array();
 	for (var i = 0; i < 4; i++) {
 		// P1
 		result = damageResults[0][i];
@@ -127,8 +128,12 @@ function performCalculations() {
 		// P2
 		result = damageResults[1][i];
 		maxDamage = result.range()[1] * p2.moves[i].hits;
+
+
+		//TODO:
 		minn.push(result.range()[0])
 		maxx.push(result.range()[1])
+		moveNames.push(p2.moves[i].name)
 		
 		if (
 			!zProtectAlerted &&
@@ -200,29 +205,69 @@ function performCalculations() {
 	}
 
 
-	let maxRoll = maxx.indexOf(Math.max(...maxx));
+	//For each move name, check that move name (moveNames[i]) is not in list of power 1 and discouraged moves, otherwise mark flags
+	//0 - normal move, 1 - discouraged move, 2 - power 1 move
+	var moveFlags = []
+	console.log(moveNames)
+	moveNames.forEach((i)=>{
+		let power1moves = ["Fissure", "Horn Drill", "Guillotine", "Sheer Cold", "Flail", "Low Kick", "Magnitude", "Present", "Reversal", "Counter", "Mirror Coat", "Dragon Rage",  "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Super Fang"]
+		let discouragedMoves = ["Explosion","Self-Destruct","Razor Wind","Solar Beam","Blast Burn","Hydro Cannon","Frenzy Plant","Hyper Beam","Dream Eater","Focus Punch"]
+		if(power1moves.includes(i)){
+			moveFlags.push(2)
+		}
+		else if(discouragedMoves.includes(i)){
+			moveFlags.push(1)
+		}
+		else{
+			moveFlags.push(0)
+		}
+	})
+
+	var maxRoll = 1;
+	var maxIndex = -1;
+	var alwaysKOPlayer = false;
 	//take the look at the max roll in these four
+	//TODO: This actually needs to be a loop to skip power 1 and discouraged moves
+	for (i of [...Array(4).keys()]){
+		if(maxx[i] >= maxRoll){
+			if(moveFlags[i] != 2){
+				alwaysKOPlayer = minn[i] >= $("#currentHpL1")[0].valueAsNumber || alwaysKOPlayer;
+			}
+			if(moveFlags[i] == 0){
+				maxRoll = maxx[i]
+				maxIndex = i;
+			}
+		}
+	}
 
 	//check the corresponding minimum roll
-	let minRoll = minn[maxRoll];
-
+	let minRoll = minn[maxIndex];
 	for (i of [...Array(4).keys()]){
 		$(resultLocations[1][i].move + " + label").removeClass("highest-roll")
 		$(resultLocations[1][i].move + " + label").removeClass("ohko")
 		$(resultLocations[1][i].move + " + label").removeClass("can-ohko")
-		if(maxx[i] >= $("#currentHpL1")[0].valueAsNumber){
+
+		//Check that move name (moveNames[i]) is not in list of power 1 and discouraged moves, otherwise mark flags
+		if(maxx[i] >= $("#currentHpL1")[0].valueAsNumber && moveFlags[i] != 2){
 			//This move kills!
 			//guaranteed kill vs not sure
-			var ohkoClassName = minn[i] >= $("#currentHpL1")[0].valueAsNumber ? "ohko" : "can-ohko"
-			
+			var isDefKill = minn[i] >= $("#currentHpL1")[0].valueAsNumber
+			var ohkoClassName = isDefKill ? "ohko" : "can-ohko"
+			canKOPlayer = isDefKill || canKOPlayer;
 			$(resultLocations[1][i].move + " + label").addClass(ohkoClassName)
+			var emoji = isDefKill ? "💀 " : "😱 " ;
+			$(resultLocations[1][i].move + " + label").text(emoji + $(resultLocations[1][i].move + " + label").text())
 			continue;
 		}
-		$(resultLocations[1][i].move + " + label").removeClass("ohko")
-		$(resultLocations[1][i].move + " + label").removeClass("can-ohko")
-		if(maxx[i]>=minRoll){
+		if(maxx[i]>=minRoll && moveFlags[i] == 0 && !alwaysKOPlayer){
 			//This move can max roll!
 			$(resultLocations[1][i].move + " + label").addClass("highest-roll")
+			$(resultLocations[1][i].move + " + label").text("‼️ " + $(resultLocations[1][i].move + " + label").text())
+		}
+	}
+	if(alwaysKOPlayer){
+		for (i of [...Array(4).keys()]){
+			$(resultLocations[1][i].move + " + label").removeClass("highest-roll")
 		}
 	}
 
