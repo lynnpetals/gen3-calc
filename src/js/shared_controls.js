@@ -2975,14 +2975,10 @@ function openCloseNoteBox() {
 	document.getElementById("note-box-frame").toggleAttribute("hidden");
 }
 
-$(".totalMod").mouseenter((e) => {
+$(".totalMod").click((e) => {
 	if($(e.target)[0].className){
-		$(".speedText").attr("hidden", false)
-	}
-})
-$(".totalMod").mouseleave((e) => {
-	if($(e.target)[0].className){
-		$(".speedText").attr("hidden", true)
+		$(".speedText").toggle()
+		$(".speedIcon").toggle()
 	}
 })
 
