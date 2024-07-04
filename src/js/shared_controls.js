@@ -751,6 +751,9 @@ $(".set-selector").change(function () {
 		mon.addEventListener("dragstart", dragstart_handler);
 		mon.addEventListener("contextmenu", noMenuClick);
 	}
+	$("#p4 img").each((e)=>{
+		$("#p4 img")[e].addEventListener("contextmenu", noMenuClick);
+	})
 	if ($(this).hasClass("player")) {
 		topPokemonIcon(fullSetName, $("#p1mon")[0]);
 	}
@@ -2657,6 +2660,52 @@ $(document).on("contextmenu", ".trainer-poke-switch.right-side", function () {
 	else $(this).addClass("dead");
 
 	predictSwitchOrder();
+});
+
+$(document).on("contextmenu", ".left-side", function () {
+	//here we fucking go.
+	console.log(createPokemon($(this).attr("data-id")))
+	let qwilfish = createPokemon($(this).attr("data-id"))
+
+	const statLabels = {
+		labels: [
+		  'HP',
+		  'Attack',
+		  'Defense',
+		  'Special Attack',
+		  'Special Defense',
+		  'Speed'
+		],
+		datasets: [{
+			label: 'IVs',
+			data: [qwilfish.ivs.hp,
+				qwilfish.ivs.atk,
+				qwilfish.ivs.def,
+				qwilfish.ivs.spa,
+				qwilfish.ivs.spd,
+				qwilfish.ivs.spe
+			]
+		}]
+	}
+
+	let chart = new Chart(ctx, {
+		type: 'radar',
+		data: statLabels,
+		options: {
+			scales: {
+				r:{
+					suggestedMin: 0,
+					suggestedMax: 31
+				}
+			},
+		  	elements: {
+				line: {
+			  		borderWidth: 3
+				}
+		  	}
+		},
+	});
+
 });
 
 function selectFirstMon() {

@@ -44,6 +44,7 @@
     "calc"
   ],
   "dependencies": {
-    "@smogon/calc": "^0.7.0"
+    "@smogon/calc": "^0.7.0",
+    "chart.js": "^4.4.3"
   }
 }
