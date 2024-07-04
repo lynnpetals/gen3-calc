@@ -1088,5 +1088,7 @@ label.player {
   }
   .settingsPanels{
 	display:flex;
-	flex-direction: row;
   }
+  .settingsPage fieldset{
+	width:100%;
+}
