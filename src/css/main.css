@@ -801,7 +801,6 @@ table.field {
 .trainer-poke-list-opposing {
 	min-height: 30px;
 	display: flex;
-	width: 17em;
 	flex-wrap: wrap;
 	padding-bottom: 2em;
 }
@@ -873,7 +872,11 @@ table.field {
         #d3d3d3e0 5px, 
         #d3d3d3e0 10px
     );
-	width: 17em;
+	resize:both;
+	overflow:auto;
+	width:17em;
+	display:flex;
+    flex-direction:column;
 }
 #p5 {
 	background: repeating-linear-gradient(
@@ -1091,4 +1094,11 @@ label.player {
   }
   .settingsPage fieldset{
 	width:100%;
+}
+
+div:has(> #box-poke-list){
+    flex-grow:1;
+}
+#p4 > div {
+	margin: 5px 0;
 }
