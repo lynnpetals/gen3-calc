@@ -1,5 +1,5 @@
 # Lynn's Pokémon Damage Calculator
-This calculator is a fork of Smogon's damage calculator, modified by the lovely anastaraweh for the express purpose of Nuzlockes, and this version attempts to continue that mission, with a focus on pretty user interface and optimisation for multiple hack games.
+This calculator is a fork of Smogon's damage calculator, modified by the lovely anastarawneh for the express purpose of Nuzlockes, and this version attempts to continue that mission, with a focus on pretty user interface and optimisation for multiple hack games.
 
 I will not succumb to settling for the old showdown calc. A calculator shall be my canvas, and art is what will be made.
 
@@ -10,7 +10,7 @@ Previously added features:
   - Box on the left to show all custom imported sets. Click an icon to load it.
   - Colour coding to indicate OHKO and speed tiering across the box for Pokémon.
   - Buttons that automatically progress between previous and next trainer.
-- Anastaraweh features
+- anastarawneh features
   - AI flags for each trainer.
   - Moves that the enemy AI can switch out on mid-battle are flagged.
   - Enemy mons can be marked as dead, and the switch-in AI for Generation 3 is automatically calculated, showing which Pokémon will come out next against the current mon out.
