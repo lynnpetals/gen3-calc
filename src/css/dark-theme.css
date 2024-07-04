@@ -186,7 +186,7 @@ input.select2-input {
 }
 
 
-#p1{
+#p1, .playerSettings{
     
     background: repeating-linear-gradient(
         135deg, 
@@ -197,7 +197,7 @@ input.select2-input {
     );
     /* background-color: #72041a7c; */
 }
-#p2{
+#p2, .opposingSettings{
     background: repeating-linear-gradient(
         135deg, 
         #1b41897c, 
@@ -207,7 +207,7 @@ input.select2-input {
     );
     /* background-color: #1b41897c; */
 }
-#p3{
+#p3, .fieldSettings{
     background: repeating-linear-gradient(
         135deg, 
         #9779257c, 
