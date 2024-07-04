@@ -3163,7 +3163,7 @@ const EK_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     bs: { hp: 50, at: 60, df: 95, sa: 120, sd: 70, sp: 70 },
     expYield: 161,
   },
-  "Farfetch\u2019": {
+  "Farfetch\u2019d": {
     abilities: { 0: "Keen Eye" },
     bs: { hp: 52, at: 90, df: 55, sa: 58, sd: 62, sp: 60 },
     expYield: 94,

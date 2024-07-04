@@ -88,6 +88,7 @@ $(".gameSelection").change(function () {
 			break;
 	}
 	img.className = "gameIconImg"
+	$("#spriteGenSelection").change()
 	
 	$(".gameIcon").html('')
 	$(".gameIcon").append(label)
