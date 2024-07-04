@@ -1035,13 +1035,13 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Symes": {
 			level: 100,
 			item: "Bright Powder",
-			moves: ["Needle Arm", "Crunch", "Weather Ball", "Hidden Power Rock"],
+			moves: ["Needle Arm", "Crunch", "Weather Ball Fire", "Hidden Power Rock"],
 			nature: "Jolly",
 		},
 		"Champion Aubs": {
 			level: 100,
 			item: "Focus Band",
-			moves: ["Frenzy Plant", "Weather Ball", "Crunch"],
+			moves: ["Frenzy Plant", "Weather Ball Fire", "Crunch"],
 			nature: "Adamant",
 		},
 	},
@@ -1155,7 +1155,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Aubs": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Ice Beam", "Weather Ball", "Shadow Ball", "Icy Wind"],
+			moves: ["Ice Beam", "Weather Ball Fire", "Shadow Ball", "Icy Wind"],
 			nature: "Careful",
 		},
 	},
@@ -2463,7 +2463,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion ALB": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Ancient Power", "Solar Beam", "Psychic", "Weather Ball"],
+			moves: ["Ancient Power", "Solar Beam", "Psychic", "Weather Ball Fire"],
 			nature: "Lax",
 		},
 	},
@@ -3066,7 +3066,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Focus Band",
 			moves: [
 				"Ice Beam",
-				"Weather Ball",
+				"Weather Ball Water",
 				"Explosion",
 				"Hidden Power Psychic",
 			],
@@ -5312,7 +5312,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion ALB": {
 			level: 100,
 			item: "Bright Powder",
-			moves: ["Solar Beam", "Earthquake", "Ancient Power", "Weather Ball"],
+			moves: ["Solar Beam", "Earthquake", "Ancient Power", "Weather Ball Fire"],
 			nature: "Naive",
 		},
 	},
@@ -6630,7 +6630,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion ywt1": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Tri Attack", "Weather Ball", "Thunder", "Recover"],
+			moves: ["Tri Attack", "Weather Ball Water", "Thunder", "Recover"],
 			nature: "Careful",
 		},
 	},
@@ -6916,7 +6916,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Aqua Leader Archie": {
 			level: 76,
 			item: "Lum Berry",
-			moves: ["Thunder", "Hidden Power Grass", "Weather Ball"],
+			moves: ["Thunder", "Hidden Power Grass", "Weather Ball Water"],
 			nature: "Lax",
 		},
 	},
@@ -8980,7 +8980,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Safety": {
 			level: 100,
 			item: "Focus Band",
-			moves: ["Ancient Power", "Solar Beam", "Weather Ball", "Sludge Bomb"],
+			moves: ["Ancient Power", "Solar Beam", "Weather Ball Fire", "Sludge Bomb"],
 		},
 		"Champion Gongas": {
 			level: 100,
@@ -8991,7 +8991,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Aubs": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Solar Beam", "Weather Ball", "Sludge Bomb", "Ancient Power"],
+			moves: ["Solar Beam", "Weather Ball Fire", "Sludge Bomb", "Ancient Power"],
 		},
 	},
 	Vibrava: {
@@ -9156,7 +9156,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			item: "Lum Berry",
 			moves: [
 				"Sludge Bomb",
-				"Weather Ball",
+				"Weather Ball Fire",
 				"Frenzy Plant",
 				"Hidden Power Rock",
 			],
@@ -9698,7 +9698,7 @@ var CUSTOMHACKSETDEX_EKK = {
 		"Champion Buhrito": {
 			level: 100,
 			item: "Lum Berry",
-			moves: ["Thunder", "Weather Ball"],
+			moves: ["Thunder", "Weather Ball Water"],
 		},
 	},
 	Zubat: {

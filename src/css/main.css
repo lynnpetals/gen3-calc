@@ -206,6 +206,7 @@ body {
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
+	z-index:-5;
 }
 
 @keyframes fadein {
@@ -1074,4 +1075,156 @@ label.player {
 	font-size: 8em;
 	z-index: 3;
 	flex-direction: column;
+  }
+  .settingsPanels{
+	display:flex;
+  }
+  .settingsPage fieldset{
+	width:100%;
+}
+
+
+/* WEATHER */
+
+.rainy-weather {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	background: linear-gradient(to bottom, #202020, #111119);
+  }
+  .rain {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -3;
+  }
+  
+  .rain.back-row {
+	display: none;
+	z-index: -4;
+	bottom: 60px;
+	opacity: 0.5;
+  }
+  
+  .rainy-weather.back-row-toggle .rain.back-row {
+	display: block;
+  }
+  
+  .drop {
+	position: absolute;
+	bottom: 100%;
+	width: 15px;
+	height: 120px;
+	pointer-events: none;
+	animation: drop 0.5s linear infinite;
+  }
+  
+  @keyframes drop {
+	0% {
+	  transform: translateY(0vh);
+	}
+	75% {
+	  transform: translateY(90vh);
+	}
+	100% {
+	  transform: translateY(90vh);
+	}
+  }
+  
+  .stem {
+	width: 3px;
+	height: 60%;
+	margin-left: 7px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+	animation: stem 0.5s linear infinite;
+  }
+  
+  @keyframes stem {
+	0% {
+	  opacity: 1;
+	}
+	65% {
+	  opacity: 1;
+	}
+	75% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+  
+  .splat {
+	width: 15px;
+	height: 10px;
+	border-top: 3px dotted rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	opacity: 1;
+	transform: scale(0);
+	animation: splat 0.5s linear infinite;
+	display: none;
+  }
+  
+  .rainy-weather.splat-toggle .splat {
+	display: block;
+  }
+  
+  @keyframes splat {
+	0% {
+	  opacity: 1;
+	  transform: scale(0);
+	}
+	80% {
+	  opacity: 1;
+	  transform: scale(0);
+	}
+	90% {
+	  opacity: 0.5;
+	  transform: scale(1);
+	}
+	100% {
+	  opacity: 0;
+	  transform: scale(1.5);
+	}
+  }
+  
+  .toggle:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .toggle:active {
+	background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .toggle.active {
+	background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .splat-toggle {
+	top: 20px;
+  }
+  
+  .back-row-toggle {
+	top: 90px;
+	line-height: 12px;
+	padding-top: 14px;
+  }
+
+  .sunny-weather {
+	width: 400px; height: 240px;
+	overflow: hidden;
+	display: grid;
+  }
+  .sunny-weather > * {
+	grid-area: 1/1;
+  }
+  .shapes {
+	color:  transparent;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-shadow: 0 0 40px #fff;
+	font: bolder 320pt/320pt monospace;
+	mix-blend-mode: multiply;
   }

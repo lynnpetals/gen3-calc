@@ -328,6 +328,14 @@ $(".ability").bind("keyup change", function () {
 
 function autosetQP(pokemon) {
 	var currentWeather = $("input:radio[name='weather']:checked").val();
+	if(currentWeather == "Rain"){
+		$(".rainy-weather").attr("hidden", false)
+		makeItRain();
+	}
+	else{
+		$(".rainy-weather").attr("hidden", true)
+		$('.rain').empty();
+	}
 	var currentTerrain =
 		$("input:checkbox[name='terrain']:checked").val() || "No terrain";
 
@@ -3012,6 +3020,9 @@ $(document).ready(function () {
 	$("#doubles-format").click(switchIconSingle);
 	$("#default-level-100").prop("checked", true);
 	$("#default-level-100").change();
+
+
+
 	loadDefaultLists();
 	$(".move-selector").select2({
 		dropdownAutoWidth: true,
