@@ -288,12 +288,6 @@ th {
 	cursor: pointer;
 	opacity: 0.7;
 }
-#mainResult {
-	background-color: #222222;
-}
-#damageValues {
-	background-color: #222222;
-}
 #tooltipText {
 	position: absolute;
 	left: 42%;
@@ -322,8 +316,7 @@ th {
 	display: inline-block; /* required for honkaculate to work */
 	vertical-align: top;
 }
-.field-info,
-.poke-import {
+.field-info,.badge-info, .poke-import {
 	text-align: center;
 	width: 20.5em;
 }
@@ -530,17 +523,6 @@ select.toxic-counter {
 .move-selector {
 	width: 9.5em;
 }
-.poke-info input.move-bp {
-	width: 2em;
-	background: rgb(31, 31, 31);
-}
-.percent-hp.calc-trigger {
-	background: rgb(31, 31, 31);
-}
-.level.calc-trigger {
-	background: rgb(31, 31, 31);
-}
-
 .move-type {
 	width: 5.5em;
 }
@@ -587,7 +569,7 @@ table.field {
 
 [hidden],
 .hide {
-	display: none;
+	display: none !important;
 }
 
 /* select2 overrides */
@@ -850,7 +832,7 @@ table.field {
 	/* display: none !important; */
 }
 
-#p1 {
+#p1,.playerSettings {
 	background: repeating-linear-gradient(
 		135deg,
 		#ffbfcc7c,
@@ -861,7 +843,7 @@ table.field {
 	width: 22em;
 	/* background-color: #72041a7c; */
 }
-#p2 {
+#p2,.opposingSettings{
 	background: repeating-linear-gradient(
 		135deg,
 		#7aa2ed7c,
@@ -872,7 +854,7 @@ table.field {
 	width: 22em;
 	/* background-color: #1b41897c; */
 }
-#p3 {
+#p3,.fieldSettings {
 	background: repeating-linear-gradient(
 		135deg,
 		#f3d06e7c,
@@ -885,22 +867,22 @@ table.field {
 
 #p4 {
 	background: repeating-linear-gradient(
-		135deg,
-		#f3bebee0,
-		#f3bebee0 5px,
-		#e3bbbbe0 5px,
-		#e3bbbbe0 10px
-	);
+        135deg, 
+        #eaeaeae0, 
+        #eaeaeae0 5px, 
+        #d3d3d3e0 5px, 
+        #d3d3d3e0 10px
+    );
 	width: 17em;
 }
 #p5 {
 	background: repeating-linear-gradient(
-		135deg,
-		#f3d2dde0,
-		#f3d2dde0 50px,
-		#e8bbcbe0 50px,
-		#e8bbcbe0 51px
-	);
+        135deg, 
+        #e198f5e0, 
+        #e198f5e0 5px, 
+        #e2b8ebe0 5px, 
+        #e2b8ebe0 10px
+    );
 	width: 12em;
 }
 .five-panels {
@@ -1051,6 +1033,35 @@ label.player {
 	justify-content: center;
   }
 
+  #settingsGearIcon {
+	cursor:pointer;
+	width: 4em;
+	height: 4em;
+	display: block;
+	fill: currentcolor;
+	position:fixed;
+	top:80%;
+	left:0%;
+  }
+
+  .settingsPage {
+	backdrop-filter: blur(3px);
+	background-color: var(--background);
+	position:absolute;
+	margin:auto;
+  }
+  .settingsOverlay{
+	backdrop-filter: blur(3px);
+	height:100%;
+	width:100%;
+	margin:auto;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index:100;
+  }
+
   
 .highest-roll{
 	color:lime !important;
@@ -1074,4 +1085,8 @@ label.player {
 	font-size: 8em;
 	z-index: 3;
 	flex-direction: column;
+  }
+  .settingsPanels{
+	display:flex;
+	flex-direction: row;
   }
