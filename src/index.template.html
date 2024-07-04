@@ -877,7 +877,7 @@
                 <div aria-label="Field information" role="region">
                     <fieldset class="field-info" id="p3">
                         <legend align="center">Field</legend>
-                        <div aria-labelledby="chipDamage" class="" title="Chip damage.">
+                        <div name="chip-damage" title="Chip damage.">
                             <table style="width: 100%;">
                                 <tr>
                                     <th id="player-sixteenth"></th>
@@ -2141,6 +2141,8 @@
 
                     </legend>
                     <div style="display:flex; flex-direction: column;">
+                        <input class="visually-hidden" type="checkbox" name="chip-damage" id="chip-damage-label" checked /><label class="btn btn-wide" for="chip-damage-label">Chip</label>
+                        <hr>
                         <input class="visually-hidden" type="checkbox" name="spikesLabel" id="spikesLabel" checked /><label class="btn btn-wide" for="spikesLabel">Spikes</label>
                         <input class="visually-hidden" type="checkbox" name="reflectLabel" id="reflectLabel" checked /><label class="btn btn-wide" for="reflectLabel">Reflect</label>
                         <input class="visually-hidden" type="checkbox" name="lightScreenLabel" id="lightScreenLabel" checked /><label class="btn btn-wide" for="lightScreenLabel">Light Screen</label>
@@ -2149,6 +2151,9 @@
                         <input class="visually-hidden" type="checkbox" name="foresightLabel" id="foresightLabel" checked /><label class="btn btn-wide" for="foresightLabel">Foresight</label>
                         <input class="visually-hidden" type="checkbox" name="helpingHandLabel" id="helpingHandLabel" checked /><label class="btn btn-wide" for="helpingHandLabel">Helping Hand</label>
                         <input class="visually-hidden" type="checkbox" name="switchingLabel" id="switchingLabel" checked /><label class="btn btn-wide" for="switchingLabel">Switching</label>
+                        <hr>
+                        <input class="visually-hidden" type="checkbox" name="badge-info" id="badge-label" checked /><label class="btn btn-wide" for="badge-label">Badges</label>
+                        <input class="visually-hidden" type="checkbox" name="poke-import" id="import-label" checked /><label class="btn btn-wide" for="import-label">Import</label>
                     </div>
 
                 </fieldset>

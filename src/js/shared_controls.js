@@ -3023,6 +3023,10 @@ $(document).ready(function () {
 		})
 
 		$("#panel-3").attr("hidden", !$("#settingsFieldButton").prop("checked"))
+		
+		$(".field-info div[name=chip-damage]").attr("hidden", !$("#chip-damage-label").prop("checked"));
+		$(".badge-info").attr("hidden", !$("#badge-label").prop("checked"));
+		$(".poke-import").attr("hidden", !$("#import-label").prop("checked"));
 
 		$(".fieldSettings input").each((e)=>{
 			// console.log($(".fieldSettings input")[e].name)
@@ -3081,6 +3085,7 @@ $(document).ready(function () {
 		$("#opposing-status").prop("checked", true);
 		$("#opposing-health").prop("checked", true);
 		$("#opposing-moves").prop("checked", true);
+		$("#chip-damage-label").prop("checked", true);
 		$("#spikesLabel").prop("checked", false);
 		$("#reflectLabel").prop("checked", false);
 		$("#lightScreenLabel").prop("checked", false);
