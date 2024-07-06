@@ -266,7 +266,8 @@ function addSets(pokes, name) {
 			currentPoke.name = split[3]
 				.trim()
 				.replace("Nidoran-f", "Nidoran-F")
-				.replace("Nidoran-m", "Nidoran-M");
+				.replace("Nidoran-m", "Nidoran-M")
+				.replace("Mr. mime", "Mr. Mime");
 			currentPoke.nameProp = split[1].trim();
 			currentPoke.moves = [];
 			currentPoke.nature = "Hardy";
