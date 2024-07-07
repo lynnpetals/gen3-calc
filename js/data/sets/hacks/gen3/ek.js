@@ -3775,7 +3775,7 @@ var CUSTOMHACKSETDEX_EK = {
             "nature": "Bold"
         }
     },
-    "Deoxys-Attack": {
+    "Deoxys": {
         "Champion Steven": {
             "ability": "Pressure",
             "item": "Lum Berry",
