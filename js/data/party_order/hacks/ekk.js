@@ -1631,7 +1631,7 @@ var CUSTOMHACKPARTYORDER_EKK = {
 		"Jirachi",
 		"Mewtwo",
 		"Aerodactyl",
-		"Deoxys",
+		"Deoxys-Attack",
 	],
 	//Optionals
 	// Rustboro City

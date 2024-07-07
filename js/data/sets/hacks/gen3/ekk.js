@@ -1765,7 +1765,7 @@ var CUSTOMHACKSETDEX_EKK = {
 			nature: "Lonely",
 		},
 	},
-	"Deoxys": {
+	"Deoxys-Attack": {
 		"Champion Steven": {
 			level: 100,
 			item: "Lum Berry",
