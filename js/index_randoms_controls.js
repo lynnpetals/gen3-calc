@@ -425,8 +425,6 @@ function aggregateRolls(rolls){
 		}
 		if (rollCount > 1) {
 			resultString += " [x" + rollCount + "])";
-		} else {
-			resultString += ")";
 		}
 	return resultString;
 }
@@ -453,14 +451,16 @@ function displayDamageHits(damage, drain, recoil) {
 		drainRolls = damage.map((e) => (e / drain[1])).map((e) => (e * drain[0])).map((e)=>(Math.trunc(e)))
 		var drainText = aggregateRolls(drainRolls)
 		$("#drainValues").text("Recovered: (" + drainText + ")");
-	}else $("#drainValues").attr("hidden", true);
+	}else 
+	{$("#drainValues").attr("hidden", true)};
 
 	if(recoil){
 		$("#recoilValues").attr("hidden", false)
 		recoilRolls = damage.map((e) => (e / recoil[1])).map((e) => (e * recoil[0])).map((e)=>(Math.trunc(e)))
 		var recoilText = aggregateRolls(recoilRolls)
 		$("#recoilValues").text("Recoil: (" + recoilText + ")");
-	}else $("#recoilValues").attr("hidden", true);
+	}else 
+	{$("#recoilValues").attr("hidden", true)};
 
 }
 
