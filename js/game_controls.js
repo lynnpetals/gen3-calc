@@ -92,7 +92,6 @@ $(".gameSelection").change(function () {
 	
 	$(".gameIcon").html('')
 	$(".gameIcon").append(label)
-	$(".gameIcon").append(img)
 });
 
 
