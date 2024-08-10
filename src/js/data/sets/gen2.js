@@ -264,8 +264,8 @@ var SETDEX_GSC = {
   },
   "Raticate": {
     "OU Super Fang": {"item":"Leftovers","moves":["Super Fang","Substitute","Mimic","Body Slam"]},
-    "1v1 Mixed Attacker": {"item":"Pink Bow","moves":["Screech","Curse","Hyper Beam","Ice Beam"]},
-    "NU Showdown Usage": {"item":"Leftovers","moves":["Super Fang","Return","Rest","Sleep Talk"]}
+    "NU Super Fang": {"item":"Leftovers","moves":["Super Fang","Double-Edge","Rest","Sleep Talk"]},
+    "1v1 Mixed Attacker": {"item":"Pink Bow","moves":["Screech","Curse","Hyper Beam","Ice Beam"]}
   },
   "Fearow": {
     "NU Wallbreaker": {"item":"Leftovers","moves":["Double-Edge","Drill Peck","Rest","Sleep Talk"]}
@@ -595,7 +595,8 @@ var SETDEX_GSC = {
     "NU Showdown Usage": {"moves":["Surf","Double-Edge","Thief","Iron Tail"]}
   },
   "Ledian": {
-    "OU Baton Pass": {"item":"Leftovers","moves":["Baton Pass","Agility","Light Screen","Reflect"]}
+    "OU Baton Pass": {"item":"Leftovers","moves":["Baton Pass","Agility","Light Screen","Reflect"]},
+    "NU Baton Pass": {"item":"Leftovers","moves":["Light Screen","Barrier","Agility","Baton Pass"]}
   },
   "Crobat": {
     "UU Haze": {"moves":["Haze","Wing Attack","Thief","Confuse Ray"]},
