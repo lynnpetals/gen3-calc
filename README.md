@@ -47,10 +47,15 @@ Future features planned:
 Trying to run this on your local machine?
 
 `npm install
+
 cd calc
+
 npm install
+
 cd ..
+
 node build
+
 open dist/index.html`
 
 If files outside of the /calc/ folder are modified, `node build view` is a much faster way of building (does not have to process any TypeScript). Any modifications to /calc/ will require you to rebuild entirely.
