@@ -208,7 +208,6 @@ function performCalculations() {
 	//For each move name, check that move name (moveNames[i]) is not in list of power 1 and discouraged moves, otherwise mark flags
 	//0 - normal move, 1 - discouraged move, 2 - power 1 move
 	var moveFlags = []
-	console.log(moveNames)
 	moveNames.forEach((i)=>{
 		let power1moves = ["Fissure", "Horn Drill", "Guillotine", "Sheer Cold", "Flail", "Low Kick", "Magnitude", "Present", "Reversal", "Counter", "Mirror Coat", "Dragon Rage",  "Endeavor", "Night Shade", "Psywave", "Seismic Toss", "Sonic Boom", "Super Fang"]
 		let discouragedMoves = ["Explosion","Self-Destruct","Razor Wind","Solar Beam","Blast Burn","Hydro Cannon","Frenzy Plant","Hyper Beam","Dream Eater","Focus Punch"]

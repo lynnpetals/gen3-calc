@@ -10,6 +10,16 @@ function placeBsBtn() {
 		//erase the import text area
 		document.getElementsByClassName("import-team-text")[0].value = "";
 	});
+	$("#pokenav-minus-sync").click(() => 
+		fetch("http://localhost:31124/update")
+			.then((v)=>{ return v.text();})
+			.then((text)=>{
+				var name = "Custom Set";
+				addSets(text, name)
+			}
+		).catch((e) => {console.error(e)})
+	);
+
 }
 
 /*
