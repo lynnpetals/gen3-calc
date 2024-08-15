@@ -356,6 +356,25 @@ $("#p1 .ability").bind("keyup change", function () {
 
 $("input[name='weather']").change(function () {
 	var allPokemon = $(".poke-info");
+	var xyz = $(".forme")
+	xyz.each((i, val) => {
+		if ($(val).children('option').length > 0 && $(val).val().includes('Castform')){
+			switch ($(this).val()) {
+				case "Rain":
+					$(val).val("Castform-Rainy").change()
+					break;
+				case "Sun":
+					$(val).val("Castform-Sunny").change()
+					break;
+				case "Hail":
+					$(val).val("Castform-Snowy").change()
+					break;
+				default:
+					$(val).val("Castform").change()
+					break;
+			}
+		}
+	})
 	allPokemon.each(function () {
 		autosetQP($(this));
 	});
@@ -691,6 +710,7 @@ $(".set-selector").change(function () {
 
 		if (flags) {
 			var weather = "clear";
+			var oldWeather = $("input[name='weather']:checked").val()
 			for (var i in flags["weather"]) {
 				if (flags["weather"][i].includes(window.CURRENT_TRAINER)) {
 					weather = i;
@@ -698,6 +718,9 @@ $(".set-selector").change(function () {
 				}
 			}
 			if (weather !== "any") $(`#${weather}`).prop("checked", true);
+			if (oldWeather != $("input[name='weather']:checked").val()){
+				$("input[name='weather']:checked").change()
+			}
 
 			var badge = "";
 			for (var i in flags["badge"]) {
@@ -966,7 +989,8 @@ $(".set-selector").change(function () {
 			if (is50lvl) pokeObj.find(".level").val(50);
 			//if (isDoubles) field.gameType = 'Doubles'; *TODO*
 		}
-		var formeObj = $(this).siblings().find(".forme").parent();
+		// var formeObj = $(this).siblings().find(".forme").parent();
+		var formeObj = $(this).parent().siblings().find(".formeLabel")
 		itemObj.prop("disabled", false);
 		var baseForme;
 		if (pokemon.baseSpecies && pokemon.baseSpecies !== pokemon.name) {
@@ -1216,7 +1240,9 @@ $(".forme").change(function () {
 			fullSetName.indexOf("(") + 1,
 			fullSetName.lastIndexOf(")")
 		);
-
+	var xy = $(this).parent().parent().parent().find('.display-sprites').find('img')[0]
+	// topPokemonIcon($(this).val(), xy)
+	xy.src = getGenSprite($(this).val());
 	$(this).parent().siblings().find(".type1").val(altForme.types[0]);
 	$(this)
 		.parent()
@@ -2519,7 +2545,7 @@ function getGenSprite(poke) {
 	if (!poke) {
 		return;
 	}
-	let pokeName = poke.name.toLowerCase();
+	let pokeName = poke.toLowerCase();
 	switch(pokeName){
 		case "zygarde-10%": 
 			pokeName = "zygarde-10";
@@ -2626,7 +2652,7 @@ function get_trainer_poks(trainerName) {
 }
 
 function topPokemonIcon(fullname, node) {
-	var mon = { name: fullname.split(" (")[0] };
+	var mon = fullname.split(" (")[0];
 	var src = getGenSprite(mon);
 	node.setAttribute("data-id", fullname)
 	node.src = src;
@@ -2748,14 +2774,14 @@ function trashPokemon() {
 	$("#box-poke-list")[0].click();
 }
 
-function topTrainerIcon(fullname, node) {
-	var trainer = fullname;
+// function topTrainerIcon(fullname, node) {
+// 	var trainer = fullname;
 
-	spriteSRC = trainerSprites[trainer];
+// 	spriteSRC = trainerSprites[trainer];
 
-	node.src = spriteSRC;
-	// 	trainerSprites
-}
+// 	node.src = spriteSRC;
+// 	// 	trainerSprites
+// }
 
 function nextTrainer() {
 	if (trainerNames.includes(window.CURRENT_TRAINER)) {
@@ -2774,7 +2800,7 @@ function nextTrainer() {
 			$(".opposing").val(setName);
 			$(".opposing").change();
 			$(".opposing .select2-chosen").text(setName);
-			topTrainerIcon(nextTrainerName, $("#p2sprite")[0]);
+			// topTrainerIcon(nextTrainerName, $("#p2sprite")[0]);
 		}
 	}
 }
@@ -2796,7 +2822,7 @@ function previousTrainer() {
 			$(".opposing").val(setName);
 			$(".opposing").change();
 			$(".opposing .select2-chosen").text(setName);
-			topTrainerIcon(previousTrainerName, $("#p2sprite")[0]);
+			// topTrainerIcon(previousTrainerName, $("#p2sprite")[0]);
 		}
 	}
 }
