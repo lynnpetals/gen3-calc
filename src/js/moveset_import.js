@@ -14,7 +14,7 @@ function placeBsBtn() {
 		fetch("http://localhost:31124/ping")
 			.then((v)=>{ return v.text();})
 			.then((text)=>{
-				return text=='Ping!'
+				return text=='Pong'
 			})
 			.then((ping) => {
 				if(ping){
