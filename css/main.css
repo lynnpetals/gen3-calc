@@ -567,9 +567,8 @@ table.field {
 	width: 100%;
 }
 
-[hidden],
-.hide {
-	display: none !important;
+[hidden], .hide {
+	display: none;
 }
 
 /* select2 overrides */
@@ -939,7 +938,7 @@ label.player {
 	flex-basis: fill-available;
 }
 
-.info-group.display-sprites {
+.display-sprites {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
