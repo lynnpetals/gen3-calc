@@ -11,14 +11,29 @@ function placeBsBtn() {
 		document.getElementsByClassName("import-team-text")[0].value = "";
 	});
 	$("#pokenav-minus-sync").click(() => 
-		fetch("http://localhost:31124/update")
+		fetch("http://localhost:31124/ping")
 			.then((v)=>{ return v.text();})
 			.then((text)=>{
-				var name = "Custom Set";
-				addSets(text, name)
-			}
-		).catch((e) => {console.error(e)})
-	);
+				return text=='Ping!'
+			})
+			.then((ping) => {
+				if(ping){
+					fetch("http://localhost:31124/update")
+					.then((v)=>{ return v.text();})
+					.then((text)=>{
+						var name = "Custom Set";
+						addSets(text, name)
+					}).catch((e) => {
+						console.error(e)})
+				}
+				else{
+					alert('Pokénav Minus was not correctly loaded. Must be downloaded and running in mGBA to make this button work, which can be found in the bottom of this calc.')
+				}
+			})
+			.catch((e)=>{
+				alert('Pokénav Minus was not correctly loaded. Must be downloaded and running in mGBA to make this button work, which can be found in the bottom of this calc.')
+			})
+	)
 
 }
 
