@@ -1438,7 +1438,6 @@ function createPokemon(pokeInfo) {
 	} else {
 		var setName = pokeInfo.find("input.set-selector").val();
 		var name;
-		// console.log(setName)
 		if (setName.indexOf("(") === -1) {
 			name = setName;
 		} else {
@@ -2459,7 +2458,6 @@ function getBabySprite(poke) {
 		return;
 	}
 	if (GENERATION.num <= 5) {
-		// console.log(poke)
 		let pokeName = poke
 		// if($("#ekkSpriteToggle").prop("checked")){
 		// 	switch(pokeName){
@@ -2564,7 +2562,6 @@ function getGenSprite(poke) {
 
 	switch($("#spriteGenSelection").val()){
 		case "3":
-			console.log("whoa?")
 			return `https://play.pokemonshowdown.com/sprites/gen3/${pokeName}.png`;
 		case "4":
 			return `https://play.pokemonshowdown.com/sprites/gen4/${pokeName}.png`;
@@ -2978,12 +2975,9 @@ function selectItem(ev) {
 }
 
 $(".chip-div").mouseenter((e)=>{
-	// console.log("hello")
 	$("#chip-damage-display-panel").attr("hidden", false)
 })
 $(".chip-div").mouseleave((e)=>{
-	// console.log("hello")
-	// console.log($("#chipDamageToggle").prop("checked"))
 	if(!($("#chipDamageToggle").checked)){
 		$("#chip-damage-display-panel").attr("hidden", true)
 	}
@@ -3038,8 +3032,6 @@ $(document).ready(function () {
 		$(".poke-import").attr("hidden", !$("#import-label").prop("checked"));
 
 		$(".fieldSettings input").each((e)=>{
-			// console.log($(".fieldSettings input")[e].name)
-			// console.log($(".field tr." + $(".fieldSettings input")[e].name))
 			$(".field tr[name=" + $(".fieldSettings input")[e].name + "]").attr("hidden", !$(".fieldSettings input")[e].checked)
 		})
 
@@ -3281,6 +3273,4 @@ function updateGameOptions() {
 			window.location.pathname + (params.length ? "?" + params : "")
 		);
 	}
-	// console.log(game)
-	// console.log(gameId)
 }
