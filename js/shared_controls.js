@@ -357,8 +357,6 @@ $("#p1 .ability").bind("keyup change", function () {
 $("input[name='weather']").change(function () {
 	var allPokemon = $(".poke-info");
 	var xyz = $(".forme")
-	console.log($(this).val())
-	console.log(xyz)
 	xyz.each((i, val) => {
 		if ($(val).children('option').length > 0 && $(val).val().includes('Castform')){
 			switch ($(this).val()) {
@@ -713,7 +711,6 @@ $(".set-selector").change(function () {
 		if (flags) {
 			var weather = "clear";
 			var oldWeather = $("input[name='weather']:checked").val()
-			console.log(oldWeather)
 			for (var i in flags["weather"]) {
 				if (flags["weather"][i].includes(window.CURRENT_TRAINER)) {
 					weather = i;
@@ -722,7 +719,6 @@ $(".set-selector").change(function () {
 			}
 			if (weather !== "any") $(`#${weather}`).prop("checked", true);
 			if (oldWeather != $("input[name='weather']:checked").val()){
-				console.log("alert")
 				$("input[name='weather']:checked").change()
 			}
 

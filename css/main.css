@@ -1,3 +1,14 @@
+:root {
+    /* Should make it easier to change colors in the future */
+    --text: #252525;
+    --background: #efefef;
+    --button-hover: black;
+    --button-selected: #232e51;
+    --fieldset-color: #2a2a2a;
+
+    --column-1: #2a2a2a;
+}
+
 /* header */
 a img {
 	border: 0;
@@ -922,6 +933,10 @@ table.field {
 }
 button.on-legend {
 	min-width: 4.5em;
+}
+button {
+	color: var(--text);
+	background-color: var(--background);
 }
 label.opposing,
 label.player {
