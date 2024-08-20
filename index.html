@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Lynn's Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?e4537957" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?5f35d90d" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -162,6 +162,10 @@
                     <label class="btn btn-xxxwide btn-bottom" for="resultMoveL4">Loading...</label>
 
                 </div>
+                <div>
+                    <input class="move-crit calc-trigger visually-hidden" type="checkbox" name="critL" id="critL"/>
+                    <label class="btn crit-btn" for="critL">Crit</label>
+                </div>
             </div>
             <div id="resultGroupR" aria-labelledby="resultHeaderR" class="move-result-subgroup right-results"
                 role="radiogroup">
@@ -203,6 +207,10 @@
                         <span id="resultDamageR4">??? - ???%</span>
                         <span id="resultRecoilR4"></span>
                     </div>
+                </div>
+                <div>
+                    <input class="move-crit calc-trigger visually-hidden" type="checkbox" name="critR" id="critR"/>
+                    <label class="btn crit-btn" for="critR">Crit</label>
                 </div>
             </div>
         </div>
@@ -317,6 +325,15 @@
                                 <select aria-label="type1"
                                     class="selector-select type1 terrain-trigger calc-trigger"></select>
                             </div>
+                            <div class="levelLabel">
+                                <label class="selector-label" for="levelL1">Level</label>
+                                <!--
+                                We use inputmode="decimal" so that mobile devices will have a numpad appear when inputting values.
+                                https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/#aa-decimal
+                                -->
+                                <input class="selector-select level save-trigger calc-trigger" id="levelL1" value="100"
+                                    inputmode="decimal" type="number" min="1" max="100" step="1" />
+                            </div>
                             <div class="gen-specific g9">
                                 <label>Tera Type</label>
                                 <select class="teraType terrain-trigger calc-trigger"></select>
@@ -335,15 +352,7 @@
                                     <option>Female</option>
                                 </select>
                             </div>
-                            <div class="levelLabel">
-                                <label class="selector-label" for="levelL1">Level</label>
-                                <!--
-                                We use inputmode="decimal" so that mobile devices will have a numpad appear when inputting values.
-                                https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/#aa-decimal
-                                -->
-                                <input class="selector-select level save-trigger calc-trigger" id="levelL1" value="100"
-                                    inputmode="decimal" type="number" min="1" max="100" step="1" />
-                            </div>
+                            
                             <div class="hide">
                                 <label for="weightL1">Weight (kg)</label>
                                 <input class="weight calc-trigger" id="weightL1" value="10.0" />
@@ -673,7 +682,7 @@
                             <br />
                         </div>
                         <div class="info-group HPLabel">
-                            <label for="currentHpL1">Current HP</label>
+                            <label for="currentHpL1">HP</label>
                             <input type="number" class="current-hp calc-trigger" id="currentHpL1" value="341" min="0"
                                 inputmode="decimal" />/<span class="max-hp">341</span> (
                             <input class="percent-hp calc-trigger" value="100" inputmode="decimal" />%)
@@ -684,7 +693,6 @@
                             <br />
                             Health <div class="hpbar"></div>
                         </div>
-                        <div hidden id="criticalHitInstruction">Force this attack to be a critical hit?</div>
                         <div hidden id="zMoveInstruction">Make this attack a Z-move?</div>
                         <div class="moveLabel">
                             <div class="move1">
@@ -695,10 +703,6 @@
                                     <option value="Physical">Physical</option>
                                     <option value="Special">Special</option>
                                 </select>
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL1" />
-                                <label class="btn crit-btn" for="critL1"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden"
                                     type="checkbox" id="zL1" />
                                 <label class="btn z-btn gen-specific g7 g8 g9" for="zL1"
@@ -740,10 +744,6 @@
                                     <option value="Physical">Physical</option>
                                     <option value="Special">Special</option>
                                 </select>
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL2" />
-                                <label class="btn crit-btn" for="critL2"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden"
                                     type="checkbox" id="zL2" />
                                 <label class="btn z-btn gen-specific g7 g8 g9" for="zL2"
@@ -785,10 +785,6 @@
                                     <option value="Physical">Physical</option>
                                     <option value="Special">Special</option>
                                 </select>
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL3" />
-                                <label class="btn crit-btn" for="critL3"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden"
                                     type="checkbox" id="zL3" />
                                 <label class="btn z-btn gen-specific g7 g8 g9" for="zL3"
@@ -830,10 +826,6 @@
                                     <option value="Physical">Physical</option>
                                     <option value="Special">Special</option>
                                 </select>
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL4" />
-                                <label class="btn crit-btn" for="critL4"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden"
                                     type="checkbox" id="zL4" />
                                 <label class="btn z-btn gen-specific g7 g8 g9" for="zL4"
@@ -1447,6 +1439,11 @@
                                 <select aria-label="Type 2"
                                     class="selector-select type2 terrain-trigger calc-trigger"></select>
                             </div>
+                            <div class="levelLabel">
+                                <label class="selector-label" for="levelR1">Level</label>
+                                <input class="selector-select level calc-trigger" id="levelR1" value="100"
+                                    inputmode="decimal" min="1" max="100" step="1" />
+                            </div>
                             <div class="gen-specific g9">
                                 <label>Tera Type</label>
                                 <select class="teraType terrain-trigger calc-trigger"></select>
@@ -1465,11 +1462,7 @@
                                     <option>Female</option>
                                 </select>
                             </div>
-                            <div class="levelLabel">
-                                <label class="selector-label" for="levelR1">Level</label>
-                                <input class="selector-select level calc-trigger" id="levelR1" value="100"
-                                    inputmode="decimal" min="1" max="100" step="1" />
-                            </div>
+                            
                             <div class="hide">
                                 <label for="weightR1">Weight (kg)</label>
                                 <input class="weight calc-trigger" id="weightR1" value="10.0" />
@@ -1813,7 +1806,7 @@
                             <br />
                         </div>
                         <div class="info-group HPLabel">
-                            <label for="currentHpR1">Current HP</label>
+                            <label for="currentHpR1">HP</label>
                             <input type="number" class="current-hp calc-trigger" id="currentHpR1" value="341" min="0"
                                 inputmode="decimal" />/<span class="max-hp">341</span> (
                             <input class="percent-hp calc-trigger" value="100" inputmode="decimal" />%)
@@ -1826,10 +1819,6 @@
                         </div>
                         <div class="moveLabel">
                             <div class="move1">
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR1" />
-                                <label class="btn crit-btn" for="critR1"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <select class="move-type calc-trigger"></select>
                                 <input class="move-bp calc-trigger" value="50" inputmode="decimal" />
                                 <select class="move-selector calc-trigger small-select"></select>
@@ -1867,10 +1856,6 @@
                                 <button class="transform" hidden>Transform</button>
                             </div>
                             <div class="move2">
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR2" />
-                                <label class="btn crit-btn" for="critR2"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <select class="move-type calc-trigger"></select>
                                 <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
                                 <select class="move-selector calc-trigger small-select"></select>
@@ -1909,10 +1894,6 @@
                                 <button class="transform" hidden>Transform</button>
                             </div>
                             <div class="move3">
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR3" />
-                                <label class="btn crit-btn" for="critR3"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <select class="move-type calc-trigger"></select>
                                 <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
                                 <select class="move-selector calc-trigger small-select"></select><input
@@ -1950,10 +1931,6 @@
                                 <button class="transform" hidden>Transform</button>
                             </div>
                             <div class="move4">
-                                <input aria-describedby="criticalHitInstruction"
-                                    class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR4" />
-                                <label class="btn crit-btn" for="critR4"
-                                    title="Force this attack to be a critical hit?">Crit</label>
                                 <select class="move-type calc-trigger"></select>
                                 <input class="move-bp calc-trigger" value="0" inputmode="decimal" />
                                 <select class="move-selector calc-trigger small-select"></select><input
@@ -2079,7 +2056,7 @@
     <script type="text/javascript" src="./calc/result.js?d5c7552b"></script>
     <script type="text/javascript" src="./calc/adaptable.js?afeb3759"></script>
     <script type="text/javascript" src="./calc/index.js?64200776"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?7f1969d2"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?413fdad7"></script>
     <script type="text/javascript" src="./js/index_randoms_controls.js?9252ef97"></script>
     <script type="text/javascript" src="./js/animated_mons.js?66c75909"></script>
     <script type="text/javascript" src="./js/moveset_import.js?77fca823"></script>
