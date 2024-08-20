@@ -579,7 +579,6 @@ $(".move-selector").change(function () {
 	$(this).attr("data-prev", moveName);
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
-	moveGroupObj.children(".move-crit").prop("checked", move.willCrit === true);
 
 	var stat = move.category === "Special" ? "spa" : "atk";
 	var dropsStats =
@@ -1585,7 +1584,13 @@ function getGender(gender) {
 function getMoveDetails(moveInfo, species, ability, item, useMax) {
 	var moveName = moveInfo.find("select.move-selector").val();
 	var isZMove = gen > 6 && moveInfo.find("input.move-z").prop("checked");
-	var isCrit = moveInfo.find(".move-crit").prop("checked");
+	let pwhich = moveInfo.parents()[1].id
+	if(pwhich == 'p1'){
+		var isCrit = $("#critL").prop("checked");
+	}
+	else if(pwhich == 'p2'){
+		var isCrit = $("#critR").prop("checked");
+	}
 	var isStellarFirstUse = moveInfo.find(".move-stellar").prop("checked");
 	var hits = +moveInfo.find(".move-hits").val();
 	var timesUsed = +moveInfo.find(".stat-drops").val();
@@ -3096,7 +3101,7 @@ $(document).ready(function () {
 		$("#players-item").prop("checked", true);
 		$("#players-status").prop("checked", true);
 		$("#players-health").prop("checked", true);
-		$("#players-moves").prop("checked", true);
+		$("#players-moves").prop("checked", false);
 		$("#opposing-type").prop("checked", true);
 		$("#opposing-level").prop("checked", true);
 		$("#opposing-stats").prop("checked", true);
@@ -3110,7 +3115,7 @@ $(document).ready(function () {
 		$("#opposing-item").prop("checked", true);
 		$("#opposing-status").prop("checked", true);
 		$("#opposing-health").prop("checked", true);
-		$("#opposing-moves").prop("checked", true);
+		$("#opposing-moves").prop("checked", false);
 		$("#chip-damage-label").prop("checked", true);
 		$("#spikesLabel").prop("checked", false);
 		$("#reflectLabel").prop("checked", false);
