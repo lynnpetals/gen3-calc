@@ -400,7 +400,7 @@ $(".result-move").change(function () {
 			if(result.move.recoil){
 				recoilValue = result.move.recoil
 			}
-			displayDamageHits(result.damage, drainValue, recoilValue)
+			displayDamageHits(result.damage, drainValue, recoilValue, $(this))
 		}
 	}
 });
@@ -428,13 +428,59 @@ function aggregateRolls(rolls){
 	return resultString;
 }
 
-function displayDamageHits(damage, drain, recoil) {
+function displayDamageHits(damage, drain, recoil, obj) {
 	
 	// Fixed Damage
-	if (typeof damage === "number") rollText = damage;
+	if (typeof damage === "number") {
+		rollText = damage;
+		if(drain){
+			$("#drainValues").attr("hidden", false)
+			drainRolls = Math.min(Math.max(Math.trunc( damage / drain[1] * drain[0]),1), damage)
+			$("#drainValues").text("Recovered: (" + drainRolls + ")");
+		}else 
+		{$("#drainValues").attr("hidden", true)};
+		if(recoil){
+			$("#recoilValues").attr("hidden", false);	
+			recoilRolls = Math.min(Math.max(Math.trunc( damage / recoil[1] * recoil[0]),1), damage)
+			$("#recoilValues").text("Recoil: (" + recoilRolls + ")");
+		}else 
+		{$("#recoilValues").attr("hidden", true)};
+	}
 	// Standard Damage
 	else if (damage.length > 2) {
 		rollText = aggregateRolls(damage);
+		let pOE = $(obj).closest('.move-result-subgroup').attr('id')
+		let recoilCap = 0
+		if(pOE == 'resultGroupL'){
+			recoilCap = $('#currentHpR1').val()
+		}
+		else if(pOE == 'resultGroupR'){
+			recoilCap = $('#currentHpL1').val()
+		}
+		else{
+			console.error("Huh? An error occurred.")
+		}
+		if(drain){
+			$("#drainValues").attr("hidden", false)
+			drainRolls = damage.map((e) => (Math.min(recoilCap, e) / drain[1])).map((e) => (e * drain[0])).map((e)=>(Math.trunc(e))).map((e)=>Math.max(e, 1))
+			for (var i = 0; i < 16; i++){
+				drainRolls[i] = Math.min(damage[i], drainRolls[i])
+			}
+			var drainText = aggregateRolls(drainRolls)
+			$("#drainValues").text("Recovered: (" + drainText + ")");
+		}else 
+		{$("#drainValues").attr("hidden", true)};
+	
+		if(recoil){
+			$("#recoilValues").attr("hidden", false)
+			recoilRolls = damage.map((e) => (Math.min(recoilCap, e) / recoil[1])).map((e) => (e * recoil[0])).map((e)=>Math.trunc(e)).map((e)=>Math.max(e, 1))
+			for (var i = 0; i < 16; i++){
+				recoilRolls[i] = Math.min(damage[i], recoilRolls[i])
+			}
+			var recoilText = aggregateRolls(recoilRolls)
+			$("#recoilValues").text("Recoil: (" + recoilText + ")");
+		}else 
+		{$("#recoilValues").attr("hidden", true)};
 	}
 	// Fixed Parental Bond Damage
 	else if (typeof damage[0] === "number" && typeof damage[1] === "number") {
@@ -444,22 +490,6 @@ function displayDamageHits(damage, drain, recoil) {
 	// TODO IN THE DISTANT FUTURE: Apply agg to this
 	else {rollText = "1st Hit: " + damage[0].join(", ") + "; 2nd Hit: " + damage[1].join(", ")}
 	$("#damageValues").text("Rolls: (" + rollText + ")");
-
-	if(drain){
-		$("#drainValues").attr("hidden", false)
-		drainRolls = damage.map((e) => (e / drain[1])).map((e) => (e * drain[0])).map((e)=>(Math.trunc(e)))
-		var drainText = aggregateRolls(drainRolls)
-		$("#drainValues").text("Recovered: (" + drainText + ")");
-	}else 
-	{$("#drainValues").attr("hidden", true)};
-
-	if(recoil){
-		$("#recoilValues").attr("hidden", false)
-		recoilRolls = damage.map((e) => (e / recoil[1])).map((e) => (e * recoil[0])).map((e)=>(Math.trunc(e)))
-		var recoilText = aggregateRolls(recoilRolls)
-		$("#recoilValues").text("Recoil: (" + recoilText + ")");
-	}else 
-	{$("#recoilValues").attr("hidden", true)};
 
 }
 
