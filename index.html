@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Lynn's Calculator</title>
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./css/main.css?5f35d90d" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css?152c5258" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="./css/dark-theme.css" id="dark-theme-styles">
     <!-- Immediately loads the dark theme in order to reduce FOIT -->
@@ -2016,10 +2016,10 @@
     <script type="text/javascript" src="./calc/util.js?8fa0c7ff"></script>
     <script type="text/javascript" src="./calc/stats.js?7963e8a3"></script>
     <script type="text/javascript" src="./calc/data/species.js?4a63f649"></script>
-    <script type="text/javascript" src="./js/data/sets/gen9.js?e9cd1d69"></script>
+    <script type="text/javascript" src="./js/data/sets/gen9.js?e6f1fd69"></script>
     <script type="text/javascript" src="./js/data/sets/gen8.js?b9f0b275"></script>
-    <script type="text/javascript" src="./js/data/sets/gen7.js?2ddc433c"></script>
-    <script type="text/javascript" src="./js/data/sets/gen6.js?9f52033a"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js?52fb5bd9"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js?8af43e58"></script>
     <script type="text/javascript" src="./js/data/sets/gen5.js?f034dec2"></script>
     <script type="text/javascript" src="./js/data/sets/gen4.js?3d9453bb"></script>
     <script type="text/javascript" src="./js/data/sets/gen3.js?487124b3"></script>
@@ -2056,8 +2056,8 @@
     <script type="text/javascript" src="./calc/result.js?d5c7552b"></script>
     <script type="text/javascript" src="./calc/adaptable.js?afeb3759"></script>
     <script type="text/javascript" src="./calc/index.js?64200776"></script>
-    <script type="text/javascript" src="./js/shared_controls.js?413fdad7"></script>
-    <script type="text/javascript" src="./js/index_randoms_controls.js?9252ef97"></script>
+    <script type="text/javascript" src="./js/shared_controls.js?40315ba8"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js?4e5bf7ee"></script>
     <script type="text/javascript" src="./js/animated_mons.js?66c75909"></script>
     <script type="text/javascript" src="./js/moveset_import.js?77fca823"></script>
 
@@ -2185,6 +2185,10 @@
         </div>
     </div>
 
+    <div class="builtin-calculator" id="builtin-calculator">
+        <input type="text" onchange="updateNumbers()"/>
+        <label name="result"/>
+    </div>
 
     <div class="credits" hidden>Original calculator created by Honko, maintained by Austin and Kris, fork created and
         maintained by anastarawneh, modified by AFalsePrayer (Lynn). Last updated 15 August 2024.
