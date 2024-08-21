@@ -1127,7 +1127,10 @@ div:has(> #box-poke-list){
 #builtin-calculator {
 	position: fixed;
 	bottom: 0px;
-	right: 400px;
+	right: 10%;
+	background-color: #8b8b8b7a;
+	border-radius: 10px 10px 0 0;
+	padding: 0.5em;
 }
 .critPanel{ 
 	border: red 10px dashed;
