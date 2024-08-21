@@ -1124,3 +1124,12 @@ div:has(> #box-poke-list){
 #p4 > div {
 	margin: 5px 0;
 }
+#builtin-calculator {
+	position: fixed;
+	bottom: 0px;
+	right: 400px;
+}
+.critPanel{ 
+	border: red 10px dashed;
+}
+

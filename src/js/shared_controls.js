@@ -1587,9 +1587,11 @@ function getMoveDetails(moveInfo, species, ability, item, useMax) {
 	let pwhich = moveInfo.parents()[1].id
 	if(pwhich == 'p1'){
 		var isCrit = $("#critL").prop("checked");
+		$("#critL").closest('.move-result-subgroup').toggleClass("critPanel", isCrit)
 	}
 	else if(pwhich == 'p2'){
 		var isCrit = $("#critR").prop("checked");
+		$("#critR").closest('.move-result-subgroup').toggleClass("critPanel", isCrit)
 	}
 	var isStellarFirstUse = moveInfo.find(".move-stellar").prop("checked");
 	var hits = +moveInfo.find(".move-hits").val();
