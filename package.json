@@ -44,6 +44,7 @@
     "calc"
   ],
   "dependencies": {
-    "@smogon/calc": "^0.7.0"
+    "@smogon/calc": "^0.7.0",
+    "mathjs": "^13.0.3"
   }
 }

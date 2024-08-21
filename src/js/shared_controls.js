@@ -1581,6 +1581,27 @@ function getGender(gender) {
 	return "F";
 }
 
+
+//TODO: make this respond instantaneously to change
+$(document).on("input", '#builtin-calculator input[type="text"]', function () {
+	console.log("hello")
+	let i = $('#builtin-calculator input').val()
+	try {
+		let eval = math.evaluate(i)	
+		if(eval != Math.trunc(eval)){
+			eval = '≈' + Math.trunc(eval)
+		}
+		else{
+			eval = '=' + eval
+		}
+		$('#builtin-calculator label').text(eval)
+	}
+	catch (error) {
+		console.error('Invalid expression.')
+		$('#builtin-calculator label').text('?')
+	}
+});
+
 function getMoveDetails(moveInfo, species, ability, item, useMax) {
 	var moveName = moveInfo.find("select.move-selector").val();
 	var isZMove = gen > 6 && moveInfo.find("input.move-z").prop("checked");
@@ -3266,17 +3287,21 @@ $(document).ready(function () {
 		dropzone.ondragover = allowDrop;
 	}
 
-	$(".wrapper").attr("hidden", false)
-	$(".credits").attr("hidden", false)
-	$(".settingsGearIconDiv").attr("hidden", false)
+	$(".wrapper").show()
+	$(".credits").show()
+	$(".settingsGearIconDiv").show()
+	$(".builtin-calculator").show()
 	
 	$("#players-stats").change()
 	$("#opposing-stats").change()
 	$("#players-info-selectors").change()
 	$("#opposing-info-selectors").change()
+	$('#builtin-calculator input').change()
+	
+	console.log($('#builtin-calculator input'))
 
 	$("#saveSettingsButton").trigger("click");
-	$(".loadingScreen")[0].style.visibility = "hidden";
+	$(".loadingScreen").hide()
 	READY = true;
 });
 
