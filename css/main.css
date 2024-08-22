@@ -401,8 +401,8 @@ th {
 }
 .visually-hidden:checked + .btn {
 	font-weight: bold;
-	color: #111111;
-	background: #f5f5f5;
+	color: #c9c9c9;
+	background: #252525;
 }
 .visually-hidden[type="radio"]:checked + .btn {
 	cursor: default;
@@ -1128,7 +1128,7 @@ div:has(> #box-poke-list){
 	position: fixed;
 	bottom: 0px;
 	right: 10%;
-	background-color: #8b8b8b7a;
+	background-color: #2e2e2ee6;
 	border-radius: 10px 10px 0 0;
 	padding: 0.5em;
 }

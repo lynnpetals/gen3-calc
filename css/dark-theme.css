@@ -5,7 +5,7 @@
     --text: #e4e4e4;
     --background: #1b1b1b;
     --button-hover: black;
-    --button-selected: #232e51;
+    --button-selected: #cfcfcf;
     --fieldset-color: #2a2a2a;
 
     --column-1: #2a2a2a;
@@ -35,7 +35,7 @@ html, body {
 
 .visually-hidden:checked + .btn {
     font-weight: bold;
-    color: var(--text);
+    color: #2c2c2ce0;
     background: var(--button-selected);
 }
 

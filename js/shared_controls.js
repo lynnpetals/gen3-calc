@@ -1584,12 +1584,12 @@ function getGender(gender) {
 
 //TODO: make this respond instantaneously to change
 $(document).on("input", '#builtin-calculator input[type="text"]', function () {
-	console.log("hello")
 	let i = $('#builtin-calculator input').val()
 	try {
 		let eval = math.evaluate(i)	
 		if(eval != Math.trunc(eval)){
-			eval = '≈' + Math.trunc(eval)
+			let rounded_eval = Number(eval).toFixed(2)
+			eval = '≈' + (rounded_eval)
 		}
 		else{
 			eval = '=' + eval
@@ -1597,7 +1597,7 @@ $(document).on("input", '#builtin-calculator input[type="text"]', function () {
 		$('#builtin-calculator label').text(eval)
 	}
 	catch (error) {
-		console.error('Invalid expression.')
+		// console.error('Invalid expression.')
 		$('#builtin-calculator label').text('?')
 	}
 });
@@ -3297,8 +3297,6 @@ $(document).ready(function () {
 	$("#players-info-selectors").change()
 	$("#opposing-info-selectors").change()
 	$('#builtin-calculator input').change()
-	
-	console.log($('#builtin-calculator input'))
 
 	$("#saveSettingsButton").trigger("click");
 	$(".loadingScreen").hide()
