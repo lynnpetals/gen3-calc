@@ -112,17 +112,25 @@ function performCalculations() {
 			p1.moves[i].name.replace("Hidden Power", "HP")
 		);
 
-		$(resultLocations[0][i].damage).text(
-			result.moveDesc(notation).split("(")[0]
-		);
-		if (result.moveDesc(notation).includes("(")) {
-			$(resultLocations[0][i].recoil).attr("hidden", false);
-			$(resultLocations[0][i].recoil).text(
-				"(" + result.moveDesc(notation).split("(")[1]
+		if(p1.moves[i].category == 'Status' && result.moveDesc(notation).split("(")[0] == '0 - 0%'){
+			$(resultLocations[0][i].damage).text('Status');
+		}
+		else if(p1.moves[i].category != 'Status' && result.moveDesc(notation).split("(")[0] == '0 - 0%'){
+			$(resultLocations[0][i].damage).text('No Damage');
+		}
+		else{
+			$(resultLocations[0][i].damage).text(
+				result.moveDesc(notation).split("(")[0]
 			);
-		} else {
-			$(resultLocations[0][i].recoil).attr("hidden", true);
-			$(resultLocations[0][i].recoil).text("");
+			if (result.moveDesc(notation).includes("(")) {
+				$(resultLocations[0][i].recoil).attr("hidden", false);
+				$(resultLocations[0][i].recoil).text(
+					"(" + result.moveDesc(notation).split("(")[1]
+				);
+			} else {
+				$(resultLocations[0][i].recoil).attr("hidden", true);
+				$(resultLocations[0][i].recoil).text("");
+			}
 		}
 
 		// P2
@@ -158,17 +166,25 @@ function performCalculations() {
 
 		// $(resultLocations[1][i].move + " + label").removeClass("highest-roll")
 
-		$(resultLocations[1][i].damage).text(
-			result.moveDesc(notation).split("(")[0]
-		);
-		if (result.moveDesc(notation).includes("(")) {
-			$(resultLocations[1][i].recoil).attr("hidden", false);
-			$(resultLocations[1][i].recoil).text(
-				"(" + result.moveDesc(notation).split("(")[1]
+		if(p2.moves[i].category == 'Status' && result.moveDesc(notation).split("(")[0] == '0 - 0%'){
+			$(resultLocations[1][i].damage).text('Status');
+		}
+		else if(p2.moves[i].category != 'Status' && result.moveDesc(notation).split("(")[0] == '0 - 0%'){
+			$(resultLocations[1][i].damage).text('No Damage');
+		}
+		else{
+			$(resultLocations[1][i].damage).text(
+				result.moveDesc(notation).split("(")[0]
 			);
-		} else {
-			$(resultLocations[1][i].recoil).attr("hidden", true);
-			$(resultLocations[1][i].recoil).text("");
+			if (result.moveDesc(notation).includes("(")) {
+				$(resultLocations[1][i].recoil).attr("hidden", false);
+				$(resultLocations[1][i].recoil).text(
+					"(" + result.moveDesc(notation).split("(")[1]
+				);
+			} else {
+				$(resultLocations[1][i].recoil).attr("hidden", true);
+				$(resultLocations[1][i].recoil).text("");
+			}
 		}
 		// $(resultLocations[0][i].recoil).text
 
