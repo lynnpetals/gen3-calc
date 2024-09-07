@@ -53,6 +53,9 @@ var SETDEX_SS = {
   "Zamazenta-Crowned": {
     "Ubers The Shield (Tank)": {"ability":"Dauntless Shield","item":"Rusted Shield","nature":"Careful","evs":{"hp":252,"df":64,"sd":192},"moves":["Behemoth Bash","Close Combat","Rest","Howl"]}
   },
+  "Kitsunoh": {
+    "CAP Choice Scarf": {"ability":"Iron Fist","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Poltergeist","Meteor Mash","U-turn","Trick"]}
+  },
   "Ivysaur": {
     "ZU Sun Sweeper": {"ability":"Chlorophyll","item":"Eviolite","nature":"Timid","evs":{"df":4,"sa":252,"sp":252},"moves":["Growth","Solar Beam","Sludge Bomb","Weather Ball"]}
   },
@@ -4102,9 +4105,6 @@ var SETDEX_SS = {
   },
   "Arghonaut": {
     "CAP Physical Wall": {"ability":"Unaware","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Spikes","Circle Throw","Knock Off","Recover"]}
-  },
-  "Kitsunoh": {
-    "CAP Choice Scarf": {"ability":"Iron Fist","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Poltergeist","Meteor Mash","U-turn","Trick"]}
   },
   "Cyclohm": {
     "CAP Physically Defensive": {"ability":"Static","item":"Heavy-Duty Boots","nature":"Bold","evs":{"hp":252,"df":252,"sa":4},"moves":["Volt Switch","Flamethrower","Draco Meteor","Slack Off"]}
