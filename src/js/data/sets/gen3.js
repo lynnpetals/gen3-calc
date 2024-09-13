@@ -169,7 +169,7 @@ var SETDEX_ADV = {
   "Togetic": {
     "NU Baton Pass": {"ability":"Serene Grace","item":"Leftovers","nature":"Calm","evs":{"hp":252,"df":120,"sd":136},"moves":["Ancient Power","Baton Pass","Soft-Boiled","Fire Blast"]},
     "NU 2v2 Standard": {"ability":"Serene Grace","item":"Leftovers","nature":"Calm","evs":{"hp":252,"df":160,"sd":96},"moves":["Follow Me","Counter","Soft-Boiled","Thunder Wave"]},
-    "PU Baton Pass Support": {"ability":"Serene Grace","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Baton Pass","Soft-Boiled","Thunder Wave","Ancient Power"]}
+    "PU Physical Wall": {"ability":"Serene Grace","item":"Leftovers","nature":"Bold","ivs":{"at":30,"sa":30},"evs":{"hp":252,"df":160,"sd":4,"sp":92},"moves":["Thunder Wave","Soft-Boiled","Psychic","Hidden Power Grass"]}
   },
   "Ampharos": {
     "OU Focus Punch": {"ability":"Static","item":"Leftovers","nature":"Quiet","evs":{"hp":252,"at":156,"sa":100},"moves":["Focus Punch","Thunderbolt","Reflect","Thunder Wave"]},
