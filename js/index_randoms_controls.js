@@ -255,40 +255,6 @@ function performCalculations() {
 		}
 	}
 
-	//check the corresponding minimum roll
-	let minRoll = minn[maxIndex];
-	for (i of [...Array(4).keys()]){
-		$(resultLocations[1][i].move + " + label").removeClass("highest-roll")
-		$(resultLocations[1][i].move + " + label").removeClass("ohko")
-		$(resultLocations[1][i].move + " + label").removeClass("can-ohko")
-
-		//Check that move name (moveNames[i]) is not in list of power 1 and discouraged moves, otherwise mark flags
-		if(maxx[i] >= $("#currentHpL1")[0].valueAsNumber && moveFlags[i] != 2){
-			//This move kills!
-			//guaranteed kill vs not sure
-			var isDefKill = minn[i] >= $("#currentHpL1")[0].valueAsNumber
-			var ohkoClassName = isDefKill ? "ohko" : "can-ohko"
-			$(resultLocations[1][i].move + " + label").addClass(ohkoClassName)
-			var emoji = isDefKill ? "💀 " : "😱 " ;
-			$(resultLocations[1][i].move + " + label").text(emoji + $(resultLocations[1][i].move + " + label").text())
-			continue;
-		}
-		if(maxx[i]>=minRoll && moveFlags[i] == 0 && !alwaysKOPlayer){
-			//This move can max roll!
-			$(resultLocations[1][i].move + " + label").addClass("highest-roll")
-			$(resultLocations[1][i].move + " + label").text("‼️ " + $(resultLocations[1][i].move + " + label").text())
-		}
-	}
-	if(alwaysKOPlayer){
-		for (i of [...Array(4).keys()]){
-			$(resultLocations[1][i].move + " + label").removeClass("highest-roll")
-		}
-	}
-
-	//check which max rolls are greater than this minimum roll
-
-	//all these rolls are highlighted
-
 	if ($(".locked-move").length) {
 		bestResult = $(".locked-move");
 	} else {

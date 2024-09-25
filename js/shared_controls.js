@@ -1588,7 +1588,7 @@ $(document).on("input", '#builtin-calculator input[type="text"]', function () {
 	try {
 		let eval = math.evaluate(i)	
 		if(eval != Math.trunc(eval)){
-			let rounded_eval = Number(eval).toFixed(2)
+			let rounded_eval = Number(eval)
 			eval = '≈' + (rounded_eval)
 		}
 		else{
