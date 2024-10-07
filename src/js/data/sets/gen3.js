@@ -470,7 +470,6 @@ var SETDEX_ADV = {
     "LC Defensive": {"level":5,"ability":"Levitate","item":"Sitrus Berry","nature":"Impish","ivs":{"sa":30,"sp":30},"evs":{"hp":116,"at":76,"df":236,"sp":80},"moves":["Sludge Bomb","Hidden Power Water","Thief","Explosion"]},
     "ZU Defensive": {"ability":"Levitate","item":"Leftovers","nature":"Relaxed","ivs":{"at":30,"df":30,"sa":30},"evs":{"hp":252,"at":4,"df":252},"moves":["Sludge Bomb","Hidden Power Water","Will-O-Wisp","Pain Split"]},
     "ZU Sun Setter": {"ability":"Levitate","item":"Leftovers","nature":"Relaxed","ivs":{"at":30,"sa":30},"evs":{"hp":252,"at":4,"df":252},"moves":["Sunny Day","Sludge Bomb","Hidden Power Grass","Pain Split"]},
-    "ZU Utility": {"ability":"Levitate","item":"Leftovers","nature":"Relaxed","ivs":{"at":30,"sa":30},"evs":{"hp":248,"df":252,"sd":8},"moves":["Memento","Sludge Bomb","Hidden Power Grass","Will-O-Wisp"]},
     "PU Showdown Usage": {"ability":"Levitate","item":"Leftovers","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Sludge Bomb","Explosion","Protect","Toxic"]}
   },
   "Weezing": {
