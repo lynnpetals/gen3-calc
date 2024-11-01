@@ -341,7 +341,7 @@ var SETDEX_ADV = {
     "OU Perish Trap": {"ability":"Levitate","item":"Leftovers","nature":"Timid","evs":{"hp":248,"sd":60,"sp":200},"moves":["Mean Look","Perish Song","Taunt","Destiny Bond"]},
     "Doubles OU Fast Attacker": {"ability":"Levitate","item":"Lum Berry","nature":"Timid","evs":{"hp":4,"sa":252,"sp":252},"moves":["Ice Punch","Fire Punch","Explosion","Destiny Bond"]},
     "Doubles OU Bulky Utility": {"ability":"Levitate","item":"Lum Berry","nature":"Timid","evs":{"hp":252,"sa":80,"sp":176},"moves":["Ice Punch","Fire Punch","Will-O-Wisp","Destiny Bond"]},
-    "Ubers Showdown Usage": {"ability":"Levitate","item":"Leftovers","nature":"Hasty","evs":{"at":252,"sa":4,"sp":252},"moves":["Will-O-Wisp","Explosion","Thunder","Shadow Ball"]}
+    "Ubers Showdown Usage": {"ability":"Levitate","item":"Leftovers","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Will-O-Wisp","Shadow Ball","Explosion","Taunt"]}
   },
   "Electrode": {
     "UU Substitute": {"ability":"Static","item":"Petaya Berry","nature":"Rash","ivs":{"at":30,"df":30},"evs":{"hp":12,"at":32,"df":116,"sa":252,"sp":96},"moves":["Thunderbolt","Substitute","Explosion","Hidden Power Ice"]}
@@ -640,7 +640,7 @@ var SETDEX_ADV = {
   },
   "Magneton": {
     "OU Trapper": {"ability":"Magnet Pull","item":"Magnet","nature":"Modest","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":4,"sa":252,"sp":252},"moves":["Thunderbolt","Hidden Power Fire","Toxic","Protect"]},
-    "Ubers Showdown Usage": {"ability":"Magnet Pull","item":"Salac Berry","nature":"Modest","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":4,"sa":252,"sp":252},"moves":["Hidden Power Fire","Thunderbolt","Toxic","Thunder Wave"]}
+    "Ubers Showdown Usage": {"ability":"Magnet Pull","item":"Leftovers","nature":"Modest","ivs":{"at":30,"sa":30,"sp":30},"evs":{"df":4,"sa":252,"sp":252},"moves":["Hidden Power Fire","Thunderbolt","Thunder Wave","Thunder"]}
   },
   "Doduo": {
     "PU Choice Band": {"ability":"Early Bird","item":"Choice Band","nature":"Jolly","ivs":{"sa":30,"sd":30},"evs":{"at":252,"sd":4,"sp":252},"moves":["Double-Edge","Quick Attack","Drill Peck","Hidden Power Ground"]},
@@ -664,8 +664,7 @@ var SETDEX_ADV = {
     "UU Choice Band": {"ability":"Sticky Hold","item":"Choice Band","nature":"Adamant","ivs":{"df":30,"sd":30},"evs":{"hp":252,"at":252,"sd":4},"moves":["Sludge Bomb","Focus Punch","Hidden Power Ghost","Explosion"]}
   },
   "Cloyster": {
-    "OU Spiker": {"ability":"Shell Armor","item":"Leftovers","nature":"Timid","evs":{"hp":72,"sa":8,"sd":244,"sp":184},"moves":["Spikes","Surf","Rapid Spin","Explosion"]},
-    "Ubers Showdown Usage": {"ability":"Shell Armor","item":"Leftovers","nature":"Naive","evs":{"hp":156,"at":56,"df":16,"sa":16,"sd":76,"sp":172},"moves":["Rapid Spin","Explosion","Spikes","Surf"]}
+    "OU Spiker": {"ability":"Shell Armor","item":"Leftovers","nature":"Timid","evs":{"hp":72,"sa":8,"sd":244,"sp":184},"moves":["Spikes","Surf","Rapid Spin","Explosion"]}
   },
   "Gastly": {
     "PU Offensive": {"ability":"Levitate","item":"Leftovers","nature":"Timid","ivs":{"at":30,"df":30},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunderbolt","Hidden Power Ice","Giga Drain","Substitute"]},
@@ -753,7 +752,7 @@ var SETDEX_ADV = {
     "NU Flail": {"ability":"Water Veil","item":"Liechi Berry","nature":"Lonely","evs":{"at":252,"sa":184,"sp":72},"moves":["Agility","Substitute","Hydro Pump","Flail"]},
     "NU Choice Band": {"ability":"Water Veil","item":"Choice Band","nature":"Lonely","ivs":{"sa":30,"sd":30},"evs":{"at":252,"sa":148,"sp":108},"moves":["Megahorn","Ice Beam","Hydro Pump","Hidden Power Ground"]},
     "ZU Mixed": {"ability":"Water Veil","item":"Leftovers","nature":"Lonely","ivs":{"df":30,"sd":30,"sp":30},"evs":{"hp":252,"at":176,"sd":20,"sp":60},"moves":["Hydro Pump","Megahorn","Hidden Power Rock","Protect"]},
-    "ZU Choice Band": {"ability":"Swift Swim","item":"Choice Band","nature":"Lonely","ivs":{"df":30,"sd":30,"sp":30},"evs":{"at":252,"sa":4,"sp":252},"moves":["Double-Edge","Megahorn","Hydro Pump","Hidden Power Rock"]},
+    "ZU Choice Band": {"ability":"Water Veil","item":"Choice Band","nature":"Lonely","ivs":{"at":30,"sa":30},"evs":{"at":252,"sa":4,"sp":252},"moves":["Double-Edge","Megahorn","Hydro Pump","Hidden Power Grass"]},
     "PU Showdown Usage": {"ability":"Swift Swim","item":"Lum Berry","nature":"Modest","ivs":{"at":30,"sa":30},"evs":{"hp":184,"sa":252,"sp":72},"moves":["Hydro Pump","Rain Dance","Hidden Power Grass","Ice Beam"]}
   },
   "Staryu": {
@@ -849,7 +848,8 @@ var SETDEX_ADV = {
     "UU Swords Dance + Flail": {"ability":"Battle Armor","item":"Salac Berry","nature":"Jolly","evs":{"hp":12,"at":252,"df":68,"sp":176},"moves":["Endure","Flail","Swords Dance","Rock Slide"]},
     "UU Knock Off": {"ability":"Battle Armor","item":"Leftovers","nature":"Adamant","ivs":{"sa":30,"sd":30},"evs":{"hp":70,"at":252,"sp":188},"moves":["Hidden Power Ground","Rock Slide","Knock Off","Swords Dance"]},
     "UU Rain Dance Sweeper": {"ability":"Swift Swim","item":"Leftovers","nature":"Naughty","evs":{"hp":156,"at":252,"sa":92,"sp":8},"moves":["Rain Dance","Swords Dance","Rock Slide","Surf"]},
-    "UU Choice Band": {"ability":"Battle Armor","item":"Choice Band","nature":"Adamant","ivs":{"sa":30,"sd":30},"evs":{"hp":70,"at":252,"sp":188},"moves":["Double-Edge","Rock Slide","Hidden Power Ground","Brick Break"]}
+    "UU Choice Band": {"ability":"Battle Armor","item":"Choice Band","nature":"Adamant","ivs":{"sa":30,"sd":30},"evs":{"hp":70,"at":252,"sp":188},"moves":["Double-Edge","Rock Slide","Hidden Power Ground","Brick Break"]},
+    "Ubers Showdown Usage": {"ability":"Swift Swim","item":"Choice Band","nature":"Adamant","ivs":{"df":30,"sd":30},"evs":{"hp":24,"at":252,"df":4,"sp":228},"moves":["Rock Slide","Double-Edge","Rapid Spin","Hidden Power Ghost"]}
   },
   "Aerodactyl": {
     "OU Choice Band": {"ability":"Rock Head","item":"Choice Band","nature":"Jolly","ivs":{"hp":30,"at":30,"df":30,"sa":30,"sd":30},"evs":{"hp":4,"at":252,"sp":252},"moves":["Rock Slide","Double-Edge","Earthquake","Hidden Power Flying"]},
@@ -1020,7 +1020,7 @@ var SETDEX_ADV = {
     "OU SubSalac": {"ability":"Swarm","item":"Salac Berry","nature":"Adamant","ivs":{"hp":30},"evs":{"at":252,"df":4,"sp":252},"moves":["Swords Dance","Megahorn","Substitute","Rock Slide"]},
     "OU Choice Band": {"ability":"Swarm","item":"Choice Band","nature":"Adamant","ivs":{"df":30,"sd":30},"evs":{"hp":4,"at":252,"sp":252},"moves":["Megahorn","Brick Break","Rock Slide","Hidden Power Ghost"]},
     "Doubles OU Choice Band": {"ability":"Swarm","item":"Choice Band","nature":"Adamant","ivs":{"df":30,"sd":30},"evs":{"hp":104,"at":176,"sp":228},"moves":["Megahorn","Brick Break","Earthquake","Hidden Power Ghost"]},
-    "Ubers Showdown Usage": {"ability":"Swarm","item":"Salac Berry","nature":"Adamant","evs":{"hp":12,"at":244,"sp":252},"moves":["Megahorn","Rock Slide","Swords Dance","Substitute"]}
+    "Ubers Showdown Usage": {"ability":"Swarm","item":"Salac Berry","nature":"Adamant","evs":{"hp":20,"at":136,"sd":216,"sp":136},"moves":["Megahorn","Rock Slide","Swords Dance","Substitute"]}
   },
   "Sneasel": {
     "UU Physical Attacker": {"ability":"Inner Focus","item":"Liechi Berry","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Shadow Ball","Brick Break","Double-Edge","Swords Dance"]}
@@ -1063,7 +1063,8 @@ var SETDEX_ADV = {
   },
   "Donphan": {
     "OU Tank": {"ability":"Sturdy","item":"Leftovers","nature":"Impish","ivs":{"df":30,"sd":30,"sp":30},"evs":{"hp":252,"at":44,"df":188,"sp":24},"moves":["Earthquake","Hidden Power Rock","Rest","Rapid Spin"]},
-    "OU Choice Band": {"ability":"Sturdy","item":"Choice Band","nature":"Adamant","ivs":{"at":30,"df":30,"sd":30},"evs":{"hp":80,"at":188,"df":216,"sp":24},"moves":["Earthquake","Rock Slide","Hidden Power Bug","Rapid Spin"]}
+    "OU Choice Band": {"ability":"Sturdy","item":"Choice Band","nature":"Adamant","ivs":{"at":30,"df":30,"sd":30},"evs":{"hp":80,"at":188,"df":216,"sp":24},"moves":["Earthquake","Rock Slide","Hidden Power Bug","Rapid Spin"]},
+    "Ubers Showdown Usage": {"ability":"Sturdy","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Rapid Spin","Rest","Odor Sleuth","Earthquake"]}
   },
   "Porygon2": {
     "OU Standard": {"ability":"Trace","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":200,"sd":56},"moves":["Recover","Ice Beam","Thunderbolt","Thunder Wave"]}
@@ -1112,8 +1113,7 @@ var SETDEX_ADV = {
     "OU Pursuit": {"ability":"Sand Stream","item":"Leftovers","nature":"Modest","evs":{"hp":252,"sa":252,"sp":4},"moves":["Pursuit","Crunch","Fire Blast","Roar"]},
     "OU Mixed": {"ability":"Sand Stream","item":"Lum Berry","nature":"Hasty","ivs":{"at":30,"sa":30},"evs":{"at":4,"sa":252,"sp":252},"moves":["Fire Blast","Hidden Power Grass","Ice Beam","Brick Break"]},
     "OU Choice Band": {"ability":"Sand Stream","item":"Choice Band","nature":"Adamant","ivs":{"at":30,"df":30,"sd":30},"evs":{"hp":4,"at":252,"sp":252},"moves":["Rock Slide","Focus Punch","Earthquake","Hidden Power Bug"]},
-    "Doubles OU Dragon Dance": {"ability":"Sand Stream","item":"Lum Berry","nature":"Jolly","ivs":{"df":30,"sd":30,"sp":30},"evs":{"hp":4,"at":252,"sp":252},"moves":["Hidden Power Rock","Earthquake","Dragon Dance","Protect"]},
-    "Ubers Showdown Usage": {"ability":"Sand Stream","item":"Leftovers","nature":"Calm","evs":{"hp":252,"df":28,"sd":220,"sp":8},"moves":["Pursuit","Crunch","Rest","Rock Slide"]}
+    "Doubles OU Dragon Dance": {"ability":"Sand Stream","item":"Lum Berry","nature":"Jolly","ivs":{"df":30,"sd":30,"sp":30},"evs":{"hp":4,"at":252,"sp":252},"moves":["Hidden Power Rock","Earthquake","Dragon Dance","Protect"]}
   },
   "Lugia": {
     "Ubers Great Wall": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":160,"sp":96},"moves":["Reflect","Toxic","Whirlwind","Recover"]},
