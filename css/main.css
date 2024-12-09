@@ -851,10 +851,10 @@ table.field {
 #p1,.playerSettings {
 	background: repeating-linear-gradient(
 		135deg,
-		#ffbfcc7c,
-		#ffbfcc7c 50px,
-		#b6203e7c 50px,
-		#b6203e7c 51px
+		#bfbfbf7c,
+		#bfbfbf7c 50px,
+		#1616167c 50px,
+		#1616167c 51px
 	);
 	width: 18em;
 	/* background-color: #72041a7c; */
@@ -862,10 +862,10 @@ table.field {
 #p2,.opposingSettings{
 	background: repeating-linear-gradient(
 		135deg,
-		#7aa2ed7c,
-		#7aa2ed7c 50px,
-		#466cb37c 50px,
-		#466cb37c 51px
+		#bfbfbf7c,
+		#bfbfbf7c 50px,
+		#1616167c 50px,
+		#1616167c 51px
 	);
 	width: 18em;
 	/* background-color: #1b41897c; */
@@ -873,10 +873,10 @@ table.field {
 #p3,.fieldSettings {
 	background: repeating-linear-gradient(
 		135deg,
-		#f3d06e7c,
-		#f3d06e7c 50px,
-		#daae347c 50px,
-		#daae347c 51px
+		#bfbfbf7c,
+		#bfbfbf7c 50px,
+		#1616167c 50px,
+		#1616167c 51px
 	);
 	/* background-color: #9779257c; */
 }
@@ -898,10 +898,10 @@ table.field {
 #p5 {
 	background: repeating-linear-gradient(
         135deg, 
-        #e198f5e0, 
-        #e198f5e0 5px, 
-        #e2b8ebe0 5px, 
-        #e2b8ebe0 10px
+        #eaeaeae0, 
+        #eaeaeae0 5px, 
+        #d3d3d3e0 5px, 
+        #d3d3d3e0 10px
     );
 	width: 12em;
 }

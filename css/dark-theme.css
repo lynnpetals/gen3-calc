@@ -190,30 +190,30 @@ input.select2-input {
     
     background: repeating-linear-gradient(
         135deg, 
-        #72041a7c, 
-        #72041a7c 50px, 
-        #b6203e7c 50px, 
-        #b6203e7c 51px
+        #3f3f3f7c, 
+        #3f3f3f7c 50px, 
+        #c6c6c67c 50px, 
+        #c6c6c67c 51px
     );
     /* background-color: #72041a7c; */
 }
 #p2, .opposingSettings{
     background: repeating-linear-gradient(
         135deg, 
-        #1b41897c, 
-        #1b41897c 50px, 
-        #466cb37c 50px, 
-        #466cb37c 51px
+        #3f3f3f7c, 
+        #3f3f3f7c 50px, 
+        #c6c6c67c 50px, 
+        #c6c6c67c 51px
     );
     /* background-color: #1b41897c; */
 }
 #p3, .fieldSettings{
     background: repeating-linear-gradient(
         135deg, 
-        #9779257c, 
-        #9779257c 50px, 
-        #daae347c 50px, 
-        #daae347c 51px
+        #3f3f3f7c, 
+        #3f3f3f7c 50px, 
+        #c6c6c67c 50px, 
+        #c6c6c67c 51px
     );
     /* background-color: #9779257c; */
 }
@@ -230,9 +230,9 @@ input.select2-input {
 #p5 {
     background: repeating-linear-gradient(
         135deg, 
-        #532c5ce0, 
-        #532c5ce0 5px, 
-        #632f6fe0 5px, 
-        #632f6fe0 10px
+        #3f3f3f7c, 
+        #3f3f3f7c 50px, 
+        #c6c6c67c 50px, 
+        #c6c6c67c 51px
     );
 }
