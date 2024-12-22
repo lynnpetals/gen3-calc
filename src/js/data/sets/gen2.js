@@ -687,8 +687,8 @@ var SETDEX_GSC = {
   },
   "Forretress": {
     "OU Spikes": {"item":"Leftovers","ivs":{"hp":6,"at":28,"df":24},"moves":["Spikes","Rapid Spin","Toxic","Hidden Power Fire"]},
-    "1v1 Rapid Spin": {"item":"Leftovers","moves":["Curse","Rest","Pin Missile","Rapid Spin"]},
-    "Ubers Showdown Usage": {"item":"Leftovers","ivs":{"hp":6,"at":28,"df":24},"moves":["Spikes","Rapid Spin","Explosion","Hidden Power Fire"]}
+    "Ubers Entry Hazard Setter": {"item":"Leftovers","ivs":{"hp":6,"at":28,"df":24},"moves":["Spikes","Toxic","Rapid Spin","Hidden Power Fire"]},
+    "1v1 Rapid Spin": {"item":"Leftovers","moves":["Curse","Rest","Pin Missile","Rapid Spin"]}
   },
   "Dunsparce": {
     "NU RestTalk": {"item":"Leftovers","moves":["Curse","Return","Rest","Sleep Talk"]}
