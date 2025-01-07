@@ -32,7 +32,7 @@ var SETDEX_RBY = {
   },
   "Fearow": {
     "NU All-Out Attacker": {"moves":["Hyper Beam","Double-Edge","Drill Peck","Agility"]},
-    "PU Offensive": {"moves":["Double-Edge","Drill Peck","Hyper Beam","Agility"]}
+    "PU Showdown Usage": {"moves":["Drill Peck","Hyper Beam","Double-Edge","Agility"]}
   },
   "Arbok": {
     "OU Wrapper": {"moves":["Glare","Wrap","Earthquake","Hyper Beam"]},
@@ -112,7 +112,7 @@ var SETDEX_RBY = {
   "Arcanine": {
     "UU Agility Sweeper": {"moves":["Agility","Body Slam","Hyper Beam","Fire Blast"]},
     "NU Defensive": {"moves":["Fire Blast","Body Slam","Hyper Beam","Rest"]},
-    "PU Bulky Attacker": {"moves":["Fire Blast","Body Slam","Hyper Beam","Agility"]}
+    "PU Showdown Usage": {"moves":["Fire Blast","Body Slam","Hyper Beam","Agility"]}
   },
   "Poliwag": {
     "PU Amnesia Sweeper": {"moves":["Hypnosis","Amnesia","Hydro Pump","Psychic"]}
@@ -217,7 +217,7 @@ var SETDEX_RBY = {
     "Tradebacks OU Standard": {"moves":["Clamp","Explosion","Blizzard","Rest"]}
   },
   "Gastly": {
-    "NU Hypnosis": {"moves":["Hypnosis","Thunderbolt","Mega Drain","Night Shade"]},
+    "NU Hypnosis": {"moves":["Hypnosis","Thunderbolt","Psychic","Explosion"]},
     "PU Offensive Sleeper": {"moves":["Hypnosis","Thunderbolt","Psychic","Substitute"]}
   },
   "Haunter": {
@@ -356,7 +356,7 @@ var SETDEX_RBY = {
   },
   "Tauros": {
     "OU The Bull": {"moves":["Body Slam","Hyper Beam","Blizzard","Earthquake"]},
-    "Ubers Standard": {"moves":["Body Slam","Hyper Beam","Earthquake","Blizzard"]},
+    "Ubers The Bull": {"moves":["Body Slam","Hyper Beam","Earthquake","Blizzard"]},
     "1v1 The Bull": {"moves":["Hyper Beam","Body Slam","Earthquake","Fire Blast"]},
     "Tradebacks OU The Bull": {"moves":["Body Slam","Hyper Beam","Earthquake","Blizzard"]}
   },
