@@ -743,15 +743,9 @@ var SETDEX_XY = {
     "Battle Spot Doubles Special Attacker": {"level":50,"ability":"Blaze","item":"Charizardite Y","nature":"Modest","evs":{"df":4,"sa":252,"sp":252},"moves":["Heat Wave","Solar Beam","Overheat","Protect"]},
     "Monotype Wallbreaker (Fire)": {"ability":"Blaze","item":"Charizardite Y","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Fire Blast","Solar Beam","Focus Blast","Defog"]},
     "Monotype Wallbreaker (Flying)": {"ability":"Blaze","item":"Charizardite Y","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Fire Blast","Solar Beam","Focus Blast","Roost"]},
-    "1v1 Fast": {"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Substitute","Dragon Dance","Outrage","Flare Blitz"]},
-    "1v1 Bulky Will-O-Wisp": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":248,"at":12,"df":72,"sp":176},"moves":["Dragon Dance","Will-O-Wisp","Flare Blitz","Outrage"]},
-    "1v1 Mixed Bulk": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":248,"at":20,"df":72,"sd":96,"sp":72},"moves":["Outrage","Flare Blitz","Flame Charge","Dragon Dance"]},
-    "1v1 Offensive Swords Dance": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":128,"at":252,"sp":128},"moves":["Swords Dance","Flame Charge","Outrage","Flare Blitz"]},
-    "1v1 Counter": {"ability":"Tough Claws","item":"Charizardite X","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Counter","Dragon Dance","Outrage","Flare Blitz"]},
-    "1v1 Specially Defensive": {"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"hp":252,"sd":140,"sp":116},"moves":["Dragon Dance","Will-O-Wisp","Outrage","Flare Blitz"]},
-    "1v1 Brick Break": {"ability":"Blaze","item":"Charizardite X","nature":"Adamant","evs":{"hp":252,"at":56,"sd":32,"sp":168},"moves":["Brick Break","Dragon Dance","Flare Blitz","Outrage"]},
     "CAP Dragon Dance": {"ability":"Blaze","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Dragon Dance","Flare Blitz","Dragon Claw","Roost"]},
     "CAP Drought Wallbreaker": {"ability":"Blaze","item":"Charizardite Y","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Fire Blast","Solar Beam","Focus Blast","Roost"]},
+    "1v1 Showdown Usage": {"ability":"Blaze","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Flare Blitz","Outrage","Dragon Dance","Will-O-Wisp"]},
     "Battle Spot Triples Showdown Usage": {"level":50,"ability":"Blaze","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Dragon Claw","Iron Tail","Flare Blitz","Dragon Rush"]}
   },
   "Charizard-Mega-X": {
@@ -762,14 +756,8 @@ var SETDEX_XY = {
     "Battle Spot Singles Dragon Dance": {"level":50,"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Dragon Dance","Outrage","Flare Blitz","Earthquake"]},
     "Battle Spot Singles Versatile Sweeper": {"level":50,"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Swords Dance","Flame Charge","Outrage","Flare Blitz"]},
     "Battle Spot Singles Defensive": {"level":50,"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"hp":172,"df":116,"sp":220},"moves":["Will-O-Wisp","Roost","Dragon Claw","Flame Charge"]},
-    "1v1 Fast": {"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Substitute","Dragon Dance","Outrage","Flare Blitz"]},
-    "1v1 Bulky Will-O-Wisp": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":248,"at":12,"df":72,"sp":176},"moves":["Dragon Dance","Will-O-Wisp","Flare Blitz","Outrage"]},
-    "1v1 Mixed Bulk": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":248,"at":20,"df":72,"sd":96,"sp":72},"moves":["Outrage","Flare Blitz","Flame Charge","Dragon Dance"]},
-    "1v1 Offensive Swords Dance": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":128,"at":252,"sp":128},"moves":["Swords Dance","Flame Charge","Outrage","Flare Blitz"]},
-    "1v1 Counter": {"ability":"Tough Claws","item":"Charizardite X","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Counter","Dragon Dance","Outrage","Flare Blitz"]},
-    "1v1 Specially Defensive": {"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"hp":252,"sd":140,"sp":116},"moves":["Dragon Dance","Will-O-Wisp","Outrage","Flare Blitz"]},
-    "1v1 Brick Break": {"ability":"Tough Claws","item":"Charizardite X","nature":"Adamant","evs":{"hp":252,"at":56,"sd":32,"sp":168},"moves":["Brick Break","Dragon Dance","Flare Blitz","Outrage"]},
     "CAP Dragon Dance": {"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Dragon Dance","Flare Blitz","Dragon Claw","Roost"]},
+    "1v1 Showdown Usage": {"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Flare Blitz","Outrage","Dragon Dance","Will-O-Wisp"]},
     "Battle Spot Triples Showdown Usage": {"level":50,"ability":"Tough Claws","item":"Charizardite X","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Dragon Claw","Iron Tail","Flare Blitz","Dragon Rush"]}
   },
   "Charizard-Mega-Y": {
@@ -1446,6 +1434,7 @@ var SETDEX_XY = {
   "Aerodactyl": {
     "OU Offensive": {"ability":"Unnerve","item":"Aerodactylite","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Stone Edge","Aerial Ace","Aqua Tail","Fire Fang"]},
     "OU Pursuit Trapper": {"ability":"Unnerve","item":"Aerodactylite","nature":"Jolly","evs":{"hp":168,"at":124,"sp":216},"moves":["Pursuit","Aerial Ace","Aqua Tail","Roost"]},
+    "OU Lead": {"ability":"Pressure","item":"Rocky Helmet","nature":"Jolly","evs":{"hp":4,"df":252,"sp":252},"moves":["Stealth Rock","Taunt","Earthquake","Defog"]},
     "Ubers Prehistoric Beast (Offensive)": {"ability":"Pressure","item":"Aerodactylite","nature":"Jolly","evs":{"hp":40,"at":252,"sp":216},"moves":["Stealth Rock","Taunt","Stone Edge","Earthquake"]},
     "UU All-Out Attacker": {"ability":"Unnerve","item":"Aerodactylite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Stone Edge","Wing Attack","Earthquake","Roost"]},
     "UU Hone Claws": {"ability":"Unnerve","item":"Aerodactylite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Hone Claws","Stone Edge","Wing Attack","Earthquake"]},
@@ -2610,6 +2599,7 @@ var SETDEX_XY = {
     "PU SubSeed": {"ability":"Harvest","item":"Sitrus Berry","nature":"Bold","evs":{"hp":248,"df":252,"sd":8},"moves":["Leech Seed","Substitute","Air Slash","Protect"]}
   },
   "Absol": {
+    "OU Swords Dance": {"ability":"Justified","item":"Absolite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Sucker Punch","Knock Off","Iron Tail"]},
     "UU Swords Dance": {"ability":"Justified","item":"Absolite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Knock Off","Sucker Punch","Superpower"]},
     "UU All-Out Attacker": {"ability":"Justified","item":"Absolite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Sucker Punch","Pursuit","Superpower"]},
     "RU All-Out Attacker": {"ability":"Super Luck","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Sucker Punch","Superpower","Play Rough"]},
@@ -2617,6 +2607,7 @@ var SETDEX_XY = {
     "Battle Spot Triples Showdown Usage": {"level":50,"ability":"Super Luck","item":"Scope Lens","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Sucker Punch","Knock Off","Psycho Cut","Superpower"]}
   },
   "Absol-Mega": {
+    "OU Swords Dance": {"ability":"Magic Bounce","item":"Absolite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Sucker Punch","Knock Off","Iron Tail"]},
     "UU Swords Dance": {"ability":"Magic Bounce","item":"Absolite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Knock Off","Sucker Punch","Superpower"]},
     "UU All-Out Attacker": {"ability":"Magic Bounce","item":"Absolite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Sucker Punch","Pursuit","Superpower"]},
     "Pure Hackmons Showdown Usage": {"ability":"Huge Power","item":"Choice Scarf","nature":"Lonely","evs":{"at":252,"sd":4,"sp":252},"moves":["Pursuit","Knock Off","Gear Grind","Close Combat"]}
@@ -3555,7 +3546,8 @@ var SETDEX_XY = {
   },
   "Serperior": {
     "OU Utility Attacker": {"ability":"Contrary","item":"Leftovers","nature":"Timid","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":56,"sa":200,"sp":252},"moves":["Leaf Storm","Hidden Power Fire","Glare","Substitute"]},
-    "OU Dual Screens": {"ability":"Contrary","item":"Light Clay","nature":"Timid","evs":{"hp":252,"sa":4,"sp":252},"moves":["Light Screen","Reflect","Leaf Storm","Glare"]},
+    "OU Dual Screens": {"ability":"Contrary","item":"Light Clay","nature":"Timid","evs":{"hp":252,"df":4,"sp":252},"moves":["Light Screen","Reflect","Leaf Storm","Taunt"]},
+    "OU Bulky Serperior": {"ability":"Contrary","item":"Chesto Berry","nature":"Timid","ivs":{"df":30,"sd":30,"sp":30},"evs":{"hp":200,"df":44,"sa":12,"sp":252},"moves":["Leaf Storm","Hidden Power Rock","Glare","Rest"]},
     "Battle Spot Singles Solid Snake": {"level":50,"ability":"Contrary","item":"Rocky Helmet","nature":"Timid","evs":{"hp":116,"df":220,"sp":172},"moves":["Reflect","Synthesis","Leaf Storm","Glare"]},
     "Battle Spot Singles Offensive Leaf Storm": {"level":50,"ability":"Contrary","item":"Focus Sash","nature":"Timid","ivs":{"at":30,"sa":30,"sp":30},"evs":{"sa":248,"sd":12,"sp":248},"moves":["Leaf Storm","Hidden Power Fire","Dragon Pulse","Glare"]},
     "1v1 Subseed": {"ability":"Contrary","item":"Leftovers","nature":"Timid","ivs":{"at":0},"evs":{"hp":252,"sa":4,"sp":252},"moves":["Leaf Storm","Protect","Leech Seed","Substitute"]},
@@ -3668,9 +3660,12 @@ var SETDEX_XY = {
     "LC Spinner": {"level":5,"ability":"Mold Breaker","item":"Berry Juice","nature":"Jolly","evs":{"hp":36,"at":76,"df":36,"sd":76,"sp":212},"moves":["Stealth Rock","Earthquake","Rock Slide","Rapid Spin"]}
   },
   "Excadrill": {
-    "OU Sand Rush Sweeper": {"ability":"Sand Rush","item":"Leftovers","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Earthquake","Iron Head","Rapid Spin","Swords Dance"]},
-    "OU Bulky Spinner": {"ability":"Mold Breaker","item":"Leftovers","nature":"Careful","evs":{"hp":252,"sd":216,"sp":40},"moves":["Earthquake","Iron Head","Toxic","Rapid Spin"]},
-    "OU Choice Scarf": {"ability":"Mold Breaker","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Earthquake","Iron Head","Rock Slide","Rapid Spin"]},
+    "OU Fast Utility": {"ability":"Mold Breaker","item":"Leftovers","nature":"Jolly","evs":{"hp":32,"df":56,"sd":168,"sp":252},"moves":["Toxic","Rapid Spin","Earthquake","Iron Head"]},
+    "OU Sand Rush": {"ability":"Sand Rush","item":"Leftovers","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Rapid Spin","Earthquake","Iron Head"]},
+    "OU Specially Defensive": {"ability":"Mold Breaker","item":"Leftovers","nature":"Careful","evs":{"hp":172,"at":44,"sd":252,"sp":40},"moves":["Toxic","Rapid Spin","Earthquake","Iron Head"]},
+    "OU Physically Defensive": {"ability":"Mold Breaker","item":"Leftovers","nature":"Impish","evs":{"hp":40,"df":252,"sd":88,"sp":128},"moves":["Toxic","Rapid Spin","Earthquake","Iron Head"]},
+    "OU Choice Scarf": {"ability":"Mold Breaker","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Rock Slide","Rapid Spin","Earthquake","Iron Head"]},
+    "OU Suicide Lead": {"ability":"Mold Breaker","item":"Focus Sash","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Stealth Rock","Rapid Spin","Earthquake","Rock Tomb"]},
     "Ubers Lead": {"ability":"Mold Breaker","item":"Focus Sash","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Stealth Rock","Rapid Spin","Toxic","Earthquake"]},
     "Ubers Sand Rush Sweeper": {"ability":"Sand Rush","item":"Life Orb","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Earthquake","Iron Head","Rapid Spin","Swords Dance"]},
     "Doubles OU Sand Rush Attacker": {"ability":"Sand Rush","item":"Life Orb","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Earthquake","Iron Head","Rock Slide","Protect"]},
@@ -4142,6 +4137,7 @@ var SETDEX_XY = {
   },
   "Bisharp": {
     "OU Swords Dance": {"ability":"Defiant","item":"Life Orb","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Knock Off","Swords Dance","Iron Head","Sucker Punch"]},
+    "OU Assault Vest": {"ability":"Defiant","item":"Assault Vest","nature":"Adamant","evs":{"hp":248,"at":252,"sd":8},"moves":["Pursuit","Sucker Punch","Iron Head","Knock Off"]},
     "Doubles OU All-Out Attacker": {"ability":"Defiant","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Knock Off","Sucker Punch","Iron Head","Protect"]},
     "Battle Spot Doubles Standard": {"level":50,"ability":"Defiant","item":"Life Orb","nature":"Adamant","ivs":{"hp":29},"evs":{"at":252,"sd":4,"sp":252},"moves":["Sucker Punch","Knock Off","Iron Head","Protect"]},
     "Monotype Swords Dance (Dark)": {"ability":"Defiant","item":"Dread Plate","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Knock Off","Swords Dance","Sucker Punch","Iron Head"]},

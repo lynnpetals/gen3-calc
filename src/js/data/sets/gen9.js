@@ -103,9 +103,9 @@ var SETDEX_SV = {
   },
   "Clefable": {
     "OU Utility": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Water","evs":{"hp":252,"df":252,"sd":4},"moves":["Stealth Rock","Moonblast","Moonlight","Knock Off"]},
-    "OU Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fire","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Moonblast","Moonlight","Flamethrower"]},
+    "OU Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fire","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Moonblast","Moonlight","Knock Off"]},
     "Monotype Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":252,"df":196,"sp":60},"moves":["Moonblast","Thunderbolt","Moonlight","Calm Mind"]},
-    "National Dex Utility": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fairy","evs":{"hp":252,"df":252,"sd":4},"moves":["Moonblast","Stealth Rock","Knock Off","Soft-Boiled"]},
+    "National Dex Utility": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fairy","evs":{"hp":252,"df":244,"sd":12},"moves":["Moonblast","Stealth Rock","Knock Off","Soft-Boiled"]},
     "National Dex Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fairy","evs":{"hp":252,"df":252,"sd":4},"moves":["Moonblast","Calm Mind","Knock Off","Soft-Boiled"]},
     "National Dex UU Utility": {"ability":"Magic Guard","item":"Rocky Helmet","nature":"Bold","teraType":"Fairy","evs":{"hp":252,"df":252,"sd":4},"moves":["Moonblast","Soft-Boiled","Thunder Wave","Stealth Rock"]},
     "National Dex Monotype Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":252,"df":196,"sp":60},"moves":["Moonblast","Thunderbolt","Soft-Boiled","Calm Mind"]},
@@ -331,7 +331,7 @@ var SETDEX_SV = {
   },
   "Chansey": {
     "OU Defensive": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","teraType":"Steel","ivs":{"at":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Stealth Rock","Seismic Toss","Soft-Boiled","Thunder Wave"]},
-    "RU Defensive": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","teraType":"Ghost","ivs":{"at":0},"evs":{"hp":4,"df":252,"sd":252},"moves":["Stealth Rock","Seismic Toss","Soft-Boiled","Heal Bell"]},
+    "RU Defensive": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","teraType":"Dark","evs":{"hp":56,"df":252,"sd":200},"moves":["Seismic Toss","Soft-Boiled","Stealth Rock","Thunder Wave"]},
     "Monotype Defensive": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","teraType":"Normal","evs":{"hp":252,"df":252,"sd":4},"moves":["Seismic Toss","Soft-Boiled","Stealth Rock","Thunder Wave"]},
     "National Dex Little Pink Blob": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","teraType":"Normal","ivs":{"at":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Seismic Toss","Soft-Boiled","Toxic","Stealth Rock"]},
     "National Dex Ubers Special Wall": {"ability":"Natural Cure","item":"Eviolite","nature":"Sassy","teraType":"Grass","ivs":{"at":0,"sp":0},"evs":{"hp":8,"df":252,"sd":248},"moves":["Aromatherapy","Soft-Boiled","Confide","Seismic Toss"]},
@@ -541,7 +541,6 @@ var SETDEX_SV = {
   },
   "Mew": {
     "UU Hazard Lead": {"ability":"Synchronize","item":"Red Card","nature":"Timid","teraType":"Ghost","ivs":{"at":0},"evs":{"hp":252,"df":96,"sp":160},"moves":["Spikes","Stealth Rock","Will-O-Wisp","Taunt"]},
-    "RU Nasty Plot": {"ability":"Synchronize","item":"Life Orb","nature":"Timid","teraType":"Fairy","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Psyshock","Earth Power","Draining Kiss"]},
     "Monotype Nasty Plot": {"ability":"Synchronize","item":"Life Orb","nature":"Timid","teraType":"Psychic","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Vacuum Wave","Flamethrower","Ice Beam"]},
     "National Dex UU Utility": {"ability":"Synchronize","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Psychic","ivs":{"at":0},"evs":{"hp":252,"df":168,"sp":88},"moves":["Will-O-Wisp","Spikes","Knock Off","Soft-Boiled"]},
     "National Dex UU Suicide Lead": {"ability":"Synchronize","item":"Red Card","nature":"Jolly","teraType":"Psychic","evs":{"hp":252,"at":4,"sp":252},"moves":["Stealth Rock","Spikes","Taunt","Explosion"]},
@@ -549,6 +548,7 @@ var SETDEX_SV = {
     "Almost Any Ability Prankster": {"ability":"Prankster","item":"Light Clay","nature":"Jolly","evs":{"hp":248,"df":164,"sp":96},"moves":["Reflect","Light Screen","Taunt","U-turn"]},
     "Almost Any Ability All-Out Attacker": {"ability":"Magic Guard","item":"Life Orb","nature":"Mild","evs":{"at":4,"sa":252,"sp":252},"moves":["Ice Beam","Gunk Shot","Close Combat","Flamethrower"]},
     "Almost Any Ability Setup Sweeper": {"ability":"Magic Guard","item":"Leftovers","nature":"Timid","ivs":{"at":0},"evs":{"hp":252,"sa":4,"sp":252},"moves":["Calm Mind","Iron Defense","Stored Power","Body Press"]},
+    "RU Showdown Usage": {"ability":"Synchronize","item":"Life Orb","nature":"Timid","teraType":"Psychic","evs":{"sa":252,"sd":4,"sp":252},"moves":["Draining Kiss","Nasty Plot","Earth Power","Spikes"]},
     "National Dex Doubles Showdown Usage": {"ability":"Synchronize","item":"Sitrus Berry","nature":"Jolly","teraType":"Psychic","evs":{"hp":252,"sd":4,"sp":252},"moves":["Fake Out","Trick Room","Transform","Imprison"]}
   },
   "Typhlosion-Hisui": {
@@ -653,7 +653,7 @@ var SETDEX_SV = {
     "Almost Any Ability Showdown Usage": {"ability":"Fluffy","item":"Icy Rock","nature":"Relaxed","evs":{"hp":252,"df":252,"sd":4},"moves":["Chilly Reception","Slack Off","Thunder Wave","Future Sight"]}
   },
   "Forretress": {
-    "RU Support": {"ability":"Sturdy","item":"Leftovers","nature":"Relaxed","teraType":"Fighting","ivs":{"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Spikes","Body Press","Rapid Spin","Gyro Ball"]},
+    "RU Support": {"ability":"Sturdy","item":"Leftovers","nature":"Relaxed","teraType":"Ghost","evs":{"hp":252,"df":164,"sd":92},"moves":["Spikes","Body Press","Volt Switch","Gyro Ball"]},
     "Monotype Hazard Support (Bug)": {"ability":"Sturdy","item":"Rocky Helmet","nature":"Relaxed","teraType":"Bug","ivs":{"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Spikes","Rapid Spin","Gyro Ball","Volt Switch"]},
     "National Dex Monotype Entry Hazard Support (Bug)": {"ability":"Sturdy","item":"Rocky Helmet","nature":"Relaxed","teraType":"Bug","ivs":{"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Spikes","Rapid Spin","Gyro Ball","Volt Switch"]},
     "UU Showdown Usage": {"ability":"Sturdy","item":"Leftovers","nature":"Bold","teraType":"Bug","evs":{"hp":252,"df":252,"sd":4},"moves":["Rapid Spin","Stealth Rock","Volt Switch","Spikes"]},
@@ -692,10 +692,10 @@ var SETDEX_SV = {
     "UU Choice Band": {"ability":"Technician","item":"Choice Band","nature":"Adamant","teraType":"Steel","evs":{"at":252,"sd":4,"sp":252},"moves":["Bullet Punch","U-turn","Close Combat","Knock Off"]},
     "BSS Reg F Pivot": {"level":50,"ability":"Technician","item":"Assault Vest","nature":"Adamant","teraType":"Water","evs":{"hp":252,"at":92,"sd":164},"moves":["Bullet Punch","U-turn","Knock Off","Dual Wingbeat"]},
     "BSS Reg F Swords Dance": {"level":50,"ability":"Technician","item":"Sitrus Berry","nature":"Adamant","teraType":"Water","evs":{"hp":236,"at":228,"df":20,"sd":20,"sp":4},"moves":["Swords Dance","Bullet Punch","Close Combat","Knock Off"]},
+    "Monotype Swords Dance Scizor (Bug)": {"ability":"Technician","item":"Metal Coat","nature":"Adamant","teraType":"Bug","evs":{"hp":56,"at":252,"sp":200},"moves":["Swords Dance","Bullet Punch","Close Combat","Knock Off"]},
     "Monotype Swords Dance (Steel)": {"ability":"Technician","item":"Metal Coat","nature":"Adamant","teraType":"Bug","evs":{"hp":40,"at":252,"sp":216},"moves":["Swords Dance","Bullet Punch","Close Combat","Trailblaze"]},
     "Monotype Choice Band (Steel)": {"ability":"Technician","item":"Choice Band","nature":"Adamant","teraType":"Bug","evs":{"hp":120,"at":252,"sp":136},"moves":["Bullet Punch","Close Combat","Knock Off","U-turn"]},
     "Monotype Choice Band (Bug)": {"ability":"Technician","item":"Choice Band","nature":"Adamant","teraType":"Bug","evs":{"hp":4,"at":252,"sp":252},"moves":["Bullet Punch","Close Combat","U-turn","Knock Off"]},
-    "Monotype Swords Dance (Bug)": {"ability":"Technician","item":"Metal Coat","nature":"Adamant","teraType":"Bug","evs":{"hp":40,"at":252,"sp":216},"moves":["Swords Dance","Bullet Punch","Close Combat","Trailblaze"]},
     "National Dex Bulky Swords Dance": {"ability":"Light Metal","item":"Scizorite","nature":"Impish","teraType":"Bug","evs":{"hp":248,"df":112,"sd":128,"sp":20},"moves":["Swords Dance","Bullet Punch","Knock Off","Roost"]},
     "National Dex Swords Dance + 3 Attacks": {"ability":"Light Metal","item":"Scizorite","nature":"Adamant","teraType":"Bug","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Bullet Punch","Close Combat","Knock Off"]},
     "National Dex UU Offensive Swords Dance": {"ability":"Technician","item":"Life Orb","nature":"Adamant","teraType":"Bug","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Bullet Punch","Knock Off","Dual Wingbeat"]},
@@ -1161,7 +1161,7 @@ var SETDEX_SV = {
     "UU 3 Attacks + Roost": {"ability":"Intimidate","item":"Heavy-Duty Boots","nature":"Modest","teraType":"Water","ivs":{"at":0},"evs":{"hp":160,"sa":252,"sp":96},"moves":["Draco Meteor","Hurricane","Hydro Pump","Roost"]},
     "UU Dragon Dance": {"ability":"Moxie","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Fire","evs":{"hp":96,"at":252,"sp":160},"moves":["Dragon Dance","Outrage","Temper Flare","Roost"]},
     "RU Special Attacker": {"ability":"Intimidate","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Steel","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Draco Meteor","Hurricane","Flamethrower","Roost"]},
-    "RU Dragon Dance": {"ability":"Moxie","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Dragon Dance","Dragon Claw","Dual Wingbeat","Earthquake"]},
+    "RU Offensive Dragon Dance": {"ability":"Moxie","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Dragon Dance","Dual Wingbeat","Earthquake","Roost"]},
     "BSS Reg F Specsmence Returns": {"level":50,"ability":"Intimidate","item":"Choice Specs","nature":"Timid","teraType":"Fairy","evs":{"hp":4,"sa":252,"sp":252},"moves":["Draco Meteor","Hurricane","Flamethrower","Tera Blast"]},
     "BSS Reg F Physically Offensive": {"level":50,"ability":"Intimidate","item":"Life Orb","nature":"Jolly","teraType":"Flying","evs":{"at":252,"sd":4,"sp":252},"moves":["Dual Wingbeat","Outrage","Earthquake","Dragon Dance"]},
     "BSS Reg F Mixed Attacker": {"level":50,"ability":"Intimidate","item":"Life Orb","nature":"Naive","teraType":"Steel","evs":{"sa":252,"sd":4,"sp":252},"moves":["Dual Wingbeat","Draco Meteor","Outrage","Fire Blast"]},
@@ -1319,6 +1319,7 @@ var SETDEX_SV = {
   },
   "Deoxys-Defense": {
     "Monotype Stallbreaker (Psychic)": {"ability":"Pressure","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Psychic","ivs":{"at":0},"evs":{"hp":248,"df":84,"sp":176},"moves":["Cosmic Power","Taunt","Night Shade","Recover"]},
+    "Monotype Physically Defensive": {"ability":"Pressure","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Psychic","ivs":{"at":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Night Shade","Teleport","Recover","Spikes"]},
     "Almost Any Ability Defensive": {"ability":"Unaware","item":"Leftovers","nature":"Relaxed","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Night Shade","Recover","Spikes","Teleport"]},
     "National Dex UU Showdown Usage": {"ability":"Pressure","item":"Leftovers","nature":"Calm","teraType":"Psychic","evs":{"hp":252,"df":252,"sd":4},"moves":["Teleport","Stealth Rock","Knock Off","Spikes"]}
   },
@@ -1587,6 +1588,7 @@ var SETDEX_SV = {
     "Ubers Defensive": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Impish","teraType":"Water","evs":{"hp":244,"df":252,"sd":12},"moves":["Earthquake","Toxic","Spikes","Protect"]},
     "BSS Reg F Glis": {"level":50,"ability":"Poison Heal","item":"Toxic Orb","nature":"Impish","teraType":"Steel","evs":{"hp":212,"df":228,"sp":68},"moves":["Earthquake","Substitute","Toxic","Protect"]},
     "Monotype Swords Dance (Flying)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Jolly","teraType":"Ground","evs":{"hp":244,"df":32,"sd":224,"sp":8},"moves":["Swords Dance","Earthquake","Facade","Protect"]},
+    "Monotype SubTox (Ground)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Jolly","teraType":"Ground","evs":{"hp":244,"sd":220,"sp":44},"moves":["Earthquake","Protect","Substitute","Toxic"]},
     "Monotype Entry Hazard Support (Flying)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Careful","teraType":"Ground","evs":{"hp":244,"sd":204,"sp":60},"moves":["Stealth Rock","Toxic","Earthquake","Protect"]},
     "Monotype Swords Dance (Ground)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Careful","teraType":"Ground","evs":{"hp":244,"sd":248,"sp":16},"moves":["Swords Dance","Earthquake","Knock Off","Protect"]},
     "Monotype Defensive Utility (Ground)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Impish","teraType":"Ground","evs":{"hp":244,"df":80,"sd":48,"sp":136},"moves":["Earthquake","Knock Off","Toxic","Protect"]},
@@ -1611,7 +1613,7 @@ var SETDEX_SV = {
     "RU Agility": {"ability":"Download","item":"Heavy-Duty Boots","nature":"Modest","teraType":"Ground","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Agility","Tera Blast","Ice Beam","Thunderbolt"]},
     "National Dex Monotype Z-Conversion": {"ability":"Adaptability","item":"Normalium Z","nature":"Timid","teraType":"Normal","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Conversion","Thunderbolt","Ice Beam"]},
     "1v1 Choice Specs": {"ability":"Adaptability","item":"Choice Specs","nature":"Modest","teraType":"Normal","evs":{"hp":156,"df":72,"sa":144,"sp":136},"moves":["Hyper Beam","Uproar","Dark Pulse","Thunderbolt"]},
-    "1v1 Life Orb": {"ability":"Adaptability","item":"Life Orb","nature":"Modest","teraType":"Normal","evs":{"hp":156,"df":4,"sa":160,"sp":188},"moves":["Hyper Beam","Nasty Plot","Substitute","Uproar"]},
+    "1v1 Life Orb": {"ability":"Adaptability","item":"Life Orb","nature":"Modest","teraType":"Normal","evs":{"hp":156,"df":4,"sa":212,"sp":136},"moves":["Hyper Beam","Nasty Plot","Substitute","Uproar"]},
     "1v1 Choice Scarf": {"ability":"Adaptability","item":"Choice Scarf","nature":"Timid","teraType":"Normal","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hyper Beam","Uproar","Trick","Ice Beam"]},
     "1v1 Custap Berry": {"ability":"Adaptability","item":"Custap Berry","nature":"Modest","teraType":"Normal","evs":{"hp":160,"df":72,"sa":88,"sp":188},"moves":["Hyper Beam","Nasty Plot","Endure","Uproar"]},
     "National Dex UU Showdown Usage": {"ability":"Adaptability","item":"Normalium Z","nature":"Timid","teraType":"Normal","evs":{"sa":252,"sd":4,"sp":252},"moves":["Conversion","Ice Beam","Thunderbolt","Tri Attack"]}
@@ -1769,7 +1771,7 @@ var SETDEX_SV = {
     "National Dex Trick Room Setter": {"ability":"Levitate","item":"Mental Herb","nature":"Relaxed","teraType":"Psychic","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Ice Beam","Moonlight","Trick Room","Lunar Dance"]},
     "National Dex Ubers Trick Room Setter": {"ability":"Levitate","item":"Mental Herb","nature":"Sassy","teraType":"Water","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":176,"sd":80},"moves":["Trick Room","Lunar Dance","Magic Coat","Toxic"]},
     "1v1 Clear Amulet": {"ability":"Levitate","item":"Clear Amulet","nature":"Bold","teraType":"Psychic","evs":{"hp":252,"df":44,"sd":72,"sp":140},"moves":["Stored Power","Calm Mind","Moonlight","Reflect"]},
-    "1v1 Choice Scarf": {"ability":"Levitate","item":"Choice Scarf","nature":"Bold","teraType":"Psychic","ivs":{"at":0},"evs":{"hp":240,"df":64,"sd":20,"sp":184},"moves":["Moonblast","Psychic","Trick","Moonlight"]},
+    "1v1 Choice Scarf": {"ability":"Levitate","item":"Choice Scarf","nature":"Bold","teraType":"Psychic","ivs":{"at":0},"evs":{"hp":240,"df":64,"sa":52,"sd":36,"sp":116},"moves":["Psychic","Moonblast","Trick","Moonlight"]},
     "1v1 Choice Specs": {"ability":"Levitate","item":"Choice Specs","nature":"Modest","teraType":"Psychic","evs":{"sa":252,"sd":4,"sp":252},"moves":["Psychic","Ice Beam","Thunderbolt","Future Sight"]},
     "Almost Any Ability Unaware": {"ability":"Unaware","item":"Leftovers","nature":"Bold","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Moonlight","Stored Power","Moonblast"]},
     "National Dex Doubles Showdown Usage": {"ability":"Levitate","item":"Mental Herb","nature":"Calm","teraType":"Psychic","evs":{"hp":252,"df":252,"sd":4},"moves":["Lunar Blessing","Trick Room","Ally Switch","Psychic"]},
@@ -1799,7 +1801,7 @@ var SETDEX_SV = {
     "Monotype Choice Scarf (Dark)": {"ability":"Bad Dreams","item":"Choice Scarf","nature":"Timid","teraType":"Dark","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Sludge Bomb","Psychic","Trick"]},
     "Monotype Nasty Plot": {"ability":"Bad Dreams","item":"Leftovers","nature":"Timid","teraType":"Dark","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Dark Pulse","Psychic","Substitute"]},
     "1v1 Choice Scarf": {"ability":"Bad Dreams","item":"Choice Scarf","nature":"Timid","teraType":"Dark","evs":{"df":4,"sa":252,"sp":252},"moves":["Dark Pulse","Trick","Ice Beam","Sludge Bomb"]},
-    "1v1 Choice Specs": {"ability":"Bad Dreams","item":"Choice Specs","nature":"Timid","teraType":"Dark","evs":{"df":4,"sa":252,"sp":252},"moves":["Dark Pulse","Ice Beam","Thunder","Focus Blast"]},
+    "1v1 Choice Specs": {"ability":"Bad Dreams","item":"Choice Specs","nature":"Timid","teraType":"Dark","evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Ice Beam","Thunder","Focus Blast"]},
     "CAP Showdown Usage": {"ability":"Bad Dreams","item":"Leftovers","nature":"Timid","teraType":"Dark","evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Sludge Bomb","Nasty Plot","Ice Beam"]}
   },
   "Shaymin": {
@@ -2002,11 +2004,6 @@ var SETDEX_SV = {
     "ZU Bulky Attacker": {"ability":"Guts","item":"Eviolite","nature":"Adamant","teraType":"Steel","evs":{"hp":248,"at":16,"df":244},"moves":["Drain Punch","Knock Off","Mach Punch","Defog"]},
     "PU Showdown Usage": {"ability":"Guts","item":"Eviolite","nature":"Adamant","teraType":"Fighting","evs":{"hp":248,"at":16,"df":244},"moves":["Drain Punch","Defog","Mach Punch","Knock Off"]}
   },
-  "Conkeldurr": {
-    "RU Flame Orb": {"ability":"Guts","item":"Flame Orb","nature":"Adamant","teraType":"Steel","evs":{"hp":92,"at":252,"sp":164},"moves":["Facade","Close Combat","Knock Off","Mach Punch"]},
-    "UU Showdown Usage": {"ability":"Guts","item":"Flame Orb","nature":"Adamant","teraType":"Fighting","evs":{"hp":132,"at":252,"sp":124},"moves":["Mach Punch","Knock Off","Drain Punch","Facade"]},
-    "National Dex RU Showdown Usage": {"ability":"Guts","item":"Flame Orb","nature":"Adamant","teraType":"Fighting","evs":{"hp":252,"at":252,"sd":4},"moves":["Mach Punch","Knock Off","Drain Punch","Facade"]}
-  },
   "Leavanny": {
     "NU Sticky Web Support": {"ability":"Overcoat","item":"Focus Sash","nature":"Jolly","teraType":"Ghost","evs":{"at":252,"sd":4,"sp":252},"moves":["Sticky Web","Knock Off","Pounce","Leaf Blade"]},
     "ZU Showdown Usage": {"ability":"Swarm","item":"Focus Sash","nature":"Jolly","teraType":"Bug","evs":{"at":252,"sd":4,"sp":252},"moves":["Sticky Web","Knock Off","Triple Axel","Pounce"]}
@@ -2105,7 +2102,8 @@ var SETDEX_SV = {
     "Ubers UU Choice Scarf": {"ability":"Shadow Tag","item":"Choice Scarf","nature":"Bold","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Trick","Calm Mind","Rest","Charm"]}
   },
   "Reuniclus": {
-    "OU Stallbreaker": {"ability":"Magic Guard","item":"Life Orb","nature":"Modest","teraType":"Water","evs":{"hp":252,"sa":212,"sp":44},"moves":["Psychic Noise","Knock Off","Focus Blast","Recover"]},
+    "OU Recover + 3 Attacks": {"ability":"Magic Guard","item":"Life Orb","nature":"Modest","teraType":"Water","evs":{"hp":252,"sa":212,"sp":44},"moves":["Psychic Noise","Knock Off","Focus Blast","Recover"]},
+    "OU Trick Room": {"ability":"Magic Guard","item":"Life Orb","nature":"Quiet","teraType":"Fighting","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":4,"sa":252},"moves":["Trick Room","Psychic Noise","Focus Blast","Shadow Ball"]},
     "RU Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","teraType":"Water","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Psychic Noise","Focus Blast","Recover"]},
     "RU Defensive Pivot": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Water","evs":{"hp":252,"df":252,"sd":4},"moves":["Psychic Noise","Knock Off","Thunder Wave","Recover"]},
     "Monotype Calm Mind": {"ability":"Magic Guard","nature":"Bold","teraType":"Psychic","ivs":{"at":0},"evs":{"hp":252,"df":212,"sp":44},"moves":["Calm Mind","Psyshock","Focus Blast","Recover"]},
@@ -2412,7 +2410,7 @@ var SETDEX_SV = {
     "Anything Goes Defensive Pivot": {"ability":"Intimidate","item":"Rocky Helmet","nature":"Impish","teraType":"Water","evs":{"hp":248,"df":252,"sd":8},"moves":["U-turn","Earthquake","Taunt","Stealth Rock"]},
     "1v1 Choice Band": {"ability":"Intimidate","item":"Choice Band","nature":"Jolly","teraType":"Ground","evs":{"hp":168,"at":80,"sd":92,"sp":168},"moves":["Earthquake","Outrage","U-turn","Rock Tomb"]},
     "1v1 Life Orb": {"ability":"Intimidate","item":"Life Orb","nature":"Adamant","teraType":"Ground","evs":{"hp":44,"at":252,"df":120,"sp":92},"moves":["Earthquake","Outrage","Bulk Up","Hammer Arm"]},
-    "1v1 Assault Vest": {"ability":"Intimidate","item":"Assault Vest","nature":"Adamant","teraType":"Ground","evs":{"hp":244,"at":120,"df":32,"sd":104,"sp":8},"moves":["Earthquake","Outrage","Bulldoze","U-turn"]},
+    "1v1 Assault Vest": {"ability":"Intimidate","item":"Assault Vest","nature":"Jolly","teraType":"Ground","evs":{"hp":244,"df":24,"sd":72,"sp":168},"moves":["Earthquake","Outrage","U-turn","Bulldoze"]},
     "Almost Any Ability Physical Wall": {"ability":"Fluffy","item":"Rocky Helmet","nature":"Adamant","evs":{"hp":252,"at":248,"sp":8},"moves":["Earthquake","Smack Down","U-turn","Stealth Rock"]},
     "Almost Any Ability Desolate Land": {"ability":"Desolate Land","item":"Leftovers","nature":"Naive","evs":{"at":252,"sa":4,"sp":252},"moves":["Earthquake","Weather Ball","U-turn","Stealth Rock"]},
     "Ubers UU Choice Scarf": {"ability":"Intimidate","item":"Choice Scarf","nature":"Jolly","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Earthquake","Stone Edge","U-turn","Crunch"]},
@@ -2456,7 +2454,7 @@ var SETDEX_SV = {
     "Ubers UU Choice Specs": {"ability":"Turboblaze","item":"Choice Specs","nature":"Modest","teraType":"Fire","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Draco Meteor","Ice Beam","Freeze-Dry","Fusion Flare"]}
   },
   "Keldeo": {
-    "OU Boots Attacker": {"ability":"Justified","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Aura Sphere","Vacuum Wave","Flip Turn"]},
+    "OU Boots Attacker": {"ability":"Justified","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Secret Sword","Vacuum Wave","Flip Turn"]},
     "UU Pivot": {"ability":"Justified","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Focus Blast","Vacuum Wave","Flip Turn"]},
     "UU Calm Mind": {"ability":"Justified","item":"Leftovers","nature":"Timid","teraType":"Steel","evs":{"sa":252,"sd":4,"sp":252},"moves":["Calm Mind","Surf","Secret Sword","Substitute"]},
     "UU Choice Specs": {"ability":"Justified","item":"Choice Specs","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Secret Sword","Flip Turn","Vacuum Wave"]},
@@ -2471,7 +2469,7 @@ var SETDEX_SV = {
     "National Dex Showdown Usage": {"ability":"Justified","item":"Choice Specs","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Secret Sword","Surf","Scald","Vacuum Wave"]}
   },
   "Keldeo-Resolute": {
-    "OU Boots Attacker": {"ability":"Justified","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Aura Sphere","Vacuum Wave","Flip Turn"]},
+    "OU Boots Attacker": {"ability":"Justified","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Secret Sword","Vacuum Wave","Flip Turn"]},
     "UU Pivot": {"ability":"Justified","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Focus Blast","Vacuum Wave","Flip Turn"]},
     "UU Calm Mind": {"ability":"Justified","item":"Leftovers","nature":"Timid","teraType":"Steel","evs":{"sa":252,"sd":4,"sp":252},"moves":["Calm Mind","Surf","Secret Sword","Substitute"]},
     "UU Choice Specs": {"ability":"Justified","item":"Choice Specs","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Surf","Secret Sword","Flip Turn","Vacuum Wave"]},
@@ -2512,9 +2510,9 @@ var SETDEX_SV = {
     "Monotype Choice Specs (Dark)": {"ability":"Protean","item":"Choice Specs","nature":"Timid","teraType":"Water","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Sludge Wave","Ice Beam","Extrasensory"]},
     "Monotype Choice Specs (Water)": {"ability":"Protean","item":"Choice Specs","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Ice Beam","Extrasensory","Sludge Wave"]},
     "National Dex Battle Bond": {"ability":"Battle Bond","item":"Life Orb","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Dark Pulse","Water Shuriken","Ice Beam"]},
-    "National Dex Monotype Choice Scarf (Water)": {"ability":"Protean","item":"Choice Scarf","nature":"Naive","teraType":"Water","evs":{"at":4,"sa":252,"sp":252},"moves":["Dark Pulse","Gunk Shot","Ice Beam","U-turn"]},
     "National Dex Monotype Choice Specs (Water)": {"ability":"Protean","item":"Choice Specs","nature":"Timid","teraType":"Water","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Sludge Wave","Ice Beam","Extrasensory"]},
     "National Dex Monotype Choice Specs (Dark)": {"ability":"Protean","item":"Choice Specs","nature":"Timid","teraType":"Water","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Sludge Wave","Ice Beam","Extrasensory"]},
+    "National Dex Monotype Choice Scarf (Water)": {"ability":"Protean","item":"Choice Scarf","nature":"Naive","teraType":"Water","evs":{"at":4,"sa":252,"sp":252},"moves":["Dark Pulse","Gunk Shot","Ice Beam","U-turn"]},
     "1v1 Life Orb": {"ability":"Protean","item":"Life Orb","nature":"Hasty","teraType":"Water","evs":{"at":252,"sa":8,"sd":64,"sp":184},"moves":["Gunk Shot","Hydro Cannon","U-turn","Shadow Sneak"]},
     "Balanced Hackmons Showdown Usage": {"ability":"Sniper","item":"Choice Band","nature":"Jolly","teraType":"Water","evs":{"hp":252,"at":252,"df":252,"sd":252,"sp":252},"moves":["Surging Strikes","Wicked Blow","Flower Trick","Flip Turn"]},
     "Almost Any Ability Showdown Usage": {"ability":"Mega Launcher","item":"Choice Specs","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Ice Beam","U-turn","Water Shuriken"]}
@@ -2687,7 +2685,7 @@ var SETDEX_SV = {
     "NU Special Wall": {"ability":"Clear Body","item":"Leftovers","nature":"Sassy","teraType":"Water","evs":{"hp":252,"df":4,"sd":252},"moves":["Stealth Rock","Diamond Storm","Body Press","Encore"]},
     "NU Offensive Trick Room": {"ability":"Clear Body","item":"Power Herb","nature":"Quiet","teraType":"Grass","ivs":{"sp":0},"evs":{"hp":252,"sa":252,"sd":4},"moves":["Trick Room","Meteor Beam","Moonblast","Earth Power"]},
     "Doubles OU Trick Room Sweeper": {"ability":"Clear Body","item":"Weakness Policy","nature":"Sassy","teraType":"Grass","ivs":{"sp":0},"evs":{"hp":252,"at":232,"df":24},"moves":["Diamond Storm","Body Press","Trick Room","Protect"]},
-    "National Dex Wallbreaker": {"ability":"Clear Body","item":"Diancite","nature":"Timid","teraType":"Rock","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Earth Power","Mystical Fire","Power Gem"]},
+    "National Dex Wallbreaker": {"ability":"Magic Bounce","item":"Diancite","nature":"Timid","teraType":"Rock","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Earth Power","Mystical Fire","Power Gem"]},
     "National Dex Lead": {"ability":"Clear Body","item":"Diancite","nature":"Timid","teraType":"Rock","ivs":{"at":0},"evs":{"hp":244,"df":12,"sp":252},"moves":["Stealth Rock","Moonblast","Substitute","Endeavor"]},
     "National Dex Ubers Lead": {"ability":"Clear Body","item":"Diancite","nature":"Hasty","teraType":"Rock","evs":{"hp":108,"sa":184,"sp":216},"moves":["Diamond Storm","Moonblast","Explosion","Spikes"]},
     "National Dex Monotype Mixed Wallbreaker (Rock)": {"ability":"Magic Bounce","item":"Diancite","nature":"Naive","teraType":"Rock","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Mystical Fire","Earth Power","Diamond Storm"]},
@@ -2700,7 +2698,7 @@ var SETDEX_SV = {
     "UU Showdown Usage": {"ability":"Clear Body","item":"Power Herb","nature":"Quiet","teraType":"Rock","evs":{"hp":248,"df":8,"sa":252},"moves":["Moonblast","Earth Power","Trick Room","Meteor Beam"]}
   },
   "Diancie-Mega": {
-    "National Dex Wallbreaker": {"ability":"Magic Bounce","item":"Diancite","nature":"Timid","teraType":"Rock","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Earth Power","Mystical Fire","Power Gem"]},
+    "National Dex Wallbreaker": {"ability":"Magic Bounce","item":"Diancite","nature":"Timid","teraType":"Rock","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Earth Power","Mystical Fire","Power Gem"]},
     "National Dex Lead": {"ability":"Magic Bounce","item":"Diancite","nature":"Timid","teraType":"Rock","ivs":{"at":0},"evs":{"hp":244,"df":12,"sp":252},"moves":["Stealth Rock","Moonblast","Substitute","Endeavor"]},
     "National Dex Ubers Lead": {"ability":"Magic Bounce","item":"Diancite","nature":"Hasty","teraType":"Rock","evs":{"hp":108,"sa":184,"sp":216},"moves":["Diamond Storm","Moonblast","Explosion","Spikes"]},
     "National Dex Monotype Mixed Wallbreaker (Rock)": {"ability":"Magic Bounce","item":"Diancite","nature":"Naive","teraType":"Rock","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Mystical Fire","Earth Power","Diamond Storm"]},
@@ -2797,6 +2795,7 @@ var SETDEX_SV = {
     "National Dex RU Defensive": {"ability":"Torrent","item":"Leftovers","nature":"Calm","teraType":"Water","ivs":{"at":0},"evs":{"hp":252,"df":136,"sd":120},"moves":["Rest","Sleep Talk","Scald","Moonblast"]},
     "National Dex RU Choice Specs": {"ability":"Torrent","item":"Choice Specs","nature":"Modest","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Hydro Pump","Flip Turn","Energy Ball"]},
     "National Dex RU Calm Mind": {"ability":"Torrent","item":"Leftovers","nature":"Calm","teraType":"Water","ivs":{"at":0},"evs":{"hp":248,"df":24,"sd":236},"moves":["Calm Mind","Scald","Moonblast","Substitute"]},
+    "1v1 Life Orb": {"ability":"Torrent","item":"Life Orb","nature":"Modest","teraType":"Water","ivs":{"at":0},"evs":{"hp":144,"df":216,"sa":120,"sp":28},"moves":["Moonblast","Hydro Cannon","Icy Wind","Encore"]},
     "1v1 Weakness Policy": {"ability":"Torrent","item":"Weakness Policy","nature":"Bold","teraType":"Water","evs":{"hp":88,"df":244,"sp":176},"moves":["Hydro Cannon","Draining Kiss","Calm Mind","Charm"]},
     "1v1 Custap Berry": {"ability":"Torrent","item":"Custap Berry","nature":"Modest","teraType":"Water","evs":{"hp":144,"df":216,"sa":148},"moves":["Hydro Cannon","Moonblast","Endure","Encore"]},
     "1v1 Choice Specs": {"ability":"Liquid Voice","item":"Choice Specs","nature":"Modest","teraType":"Water","evs":{"hp":252,"df":160,"sa":24,"sd":72},"moves":["Hydro Cannon","Moonblast","Energy Ball","Uproar"]},
@@ -2972,7 +2971,7 @@ var SETDEX_SV = {
     "National Dex Doubles Showdown Usage": {"ability":"Soundproof","item":"Kommonium Z","nature":"Timid","teraType":"Dragon","evs":{"sa":252,"sd":4,"sp":252},"moves":["Clanging Scales","Protect","Flash Cannon","Aura Sphere"]}
   },
   "Tapu Koko": {
-    "National Dex Offensive Pivot": {"ability":"Electric Surge","item":"Electrium Z","nature":"Timid","teraType":"Electric","evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunderbolt","Hidden Power Ice","U-turn","Roost"]},
+    "National Dex Offensive Pivot": {"ability":"Electric Surge","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Electric","evs":{"df":4,"sa":252,"sp":252},"moves":["Thunderbolt","Roost","Hidden Power Ice","U-turn"]},
     "National Dex Choice Specs": {"ability":"Electric Surge","item":"Choice Specs","nature":"Timid","teraType":"Electric","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunderbolt","Dazzling Gleam","Hidden Power Ice","Volt Switch"]},
     "National Dex Calm Mind": {"ability":"Electric Surge","item":"Fairium Z","nature":"Timid","teraType":"Electric","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Calm Mind","Thunderbolt","Dazzling Gleam","Roost"]},
     "National Dex Dual Screens": {"ability":"Electric Surge","item":"Light Clay","nature":"Jolly","teraType":"Electric","evs":{"hp":252,"df":4,"sp":252},"moves":["Reflect","Light Screen","U-turn","Taunt"]},
@@ -3368,9 +3367,6 @@ var SETDEX_SV = {
   "Zamazenta": {
     "OU IronPress": {"ability":"Dauntless Shield","item":"Leftovers","nature":"Jolly","teraType":"Fire","evs":{"hp":252,"df":88,"sp":168},"moves":["Iron Defense","Body Press","Crunch","Roar"]},
     "OU All-Out Attacker": {"ability":"Dauntless Shield","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Dark","evs":{"at":252,"sd":4,"sp":252},"moves":["Close Combat","Crunch","Stone Edge","Heavy Slam"]},
-    "Monotype Choice Band": {"ability":"Dauntless Shield","item":"Choice Band","nature":"Jolly","teraType":"Fighting","evs":{"hp":8,"at":216,"sd":32,"sp":252},"moves":["Close Combat","Heavy Slam","Ice Fang","Crunch"]},
-    "Monotype Iron Defense": {"ability":"Dauntless Shield","item":"Leftovers","nature":"Jolly","teraType":"Fighting","evs":{"hp":248,"df":8,"sp":252},"moves":["Iron Defense","Body Press","Substitute","Heavy Slam"]},
-    "Monotype Choice Scarf": {"ability":"Dauntless Shield","item":"Choice Scarf","nature":"Jolly","teraType":"Fighting","evs":{"hp":8,"at":236,"sd":32,"sp":232},"moves":["Close Combat","Heavy Slam","Crunch","Stone Edge"]},
     "National Dex All-Out Attacker": {"ability":"Dauntless Shield","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Fighting","evs":{"at":252,"sd":4,"sp":252},"moves":["Close Combat","Crunch","Stone Edge","Ice Fang"]},
     "National Dex Iron Defense + Body Press": {"ability":"Dauntless Shield","item":"Leftovers","nature":"Jolly","teraType":"Fighting","evs":{"at":132,"df":124,"sp":252},"moves":["Iron Defense","Body Press","Crunch","Substitute"]},
     "Almost Any Ability Choice Band": {"ability":"Sword of Ruin","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Close Combat","Crunch","Stone Edge","Heavy Slam"]},
@@ -3378,6 +3374,7 @@ var SETDEX_SV = {
     "Almost Any Ability IronPress": {"ability":"Scrappy","item":"Leftovers","nature":"Jolly","evs":{"df":252,"sd":4,"sp":252},"moves":["Body Press","Stone Edge","Iron Defense","Substitute"]},
     "Ubers UU Iron Defense": {"ability":"Dauntless Shield","item":"Leftovers","nature":"Jolly","teraType":"Fairy","evs":{"df":252,"sd":4,"sp":252},"moves":["Iron Defense","Body Press","Substitute","Heavy Slam"]},
     "Balanced Hackmons Showdown Usage": {"ability":"Fur Coat","item":"Covert Cloak","nature":"Jolly","teraType":"Fighting","evs":{"hp":252,"at":252,"df":252,"sd":252,"sp":252},"moves":["Strength Sap","Mortal Spin","Combat Torque","Knock Off"]},
+    "Monotype Showdown Usage": {"ability":"Dauntless Shield","item":"Leftovers","nature":"Jolly","teraType":"Fighting","evs":{"hp":248,"df":8,"sp":252},"moves":["Heavy Slam","Body Press","Iron Defense","Substitute"]},
     "CAP Showdown Usage": {"ability":"Dauntless Shield","item":"Leftovers","nature":"Jolly","teraType":"Fighting","evs":{"hp":252,"df":88,"sp":168},"moves":["Crunch","Body Press","Iron Defense","Roar"]}
   },
   "Zamazenta-Crowned": {
@@ -3415,9 +3412,9 @@ var SETDEX_SV = {
   },
   "Urshifu-Rapid-Strike": {
     "Ubers Choice Band": {"ability":"Unseen Fist","item":"Choice Band","nature":"Adamant","teraType":"Water","evs":{"at":252,"df":4,"sp":252},"moves":["Surging Strikes","Close Combat","Poison Jab","U-turn"]},
+    "VGC 2024 Reg F Glass Cannon": {"level":50,"ability":"Unseen Fist","item":"Focus Sash","nature":"Jolly","teraType":"Water","evs":{"hp":4,"at":252,"sp":252},"moves":["Surging Strikes","Close Combat","Aqua Jet","Protect"]},
     "VGC 2024 Reg F Choice Scarf": {"level":50,"ability":"Unseen Fist","item":"Choice Scarf","nature":"Adamant","teraType":"Ghost","evs":{"hp":4,"at":252,"sp":252},"moves":["Surging Strikes","Close Combat","U-turn","Aqua Jet"]},
     "VGC 2024 Reg F Bulky Attacker": {"level":50,"ability":"Unseen Fist","item":"Mystic Water","nature":"Adamant","teraType":"Water","evs":{"hp":60,"at":76,"df":20,"sd":196,"sp":156},"moves":["Surging Strikes","Close Combat","Taunt","Detect"]},
-    "VGC 2024 Reg F Glass Cannon": {"level":50,"ability":"Unseen Fist","item":"Focus Sash","nature":"Jolly","teraType":"Water","evs":{"hp":4,"at":252,"sp":252},"moves":["Surging Strikes","Close Combat","Aqua Jet","Protect"]},
     "VGC 2024 Reg F Mystic Water": {"level":50,"ability":"Unseen Fist","item":"Mystic Water","nature":"Adamant","teraType":"Water","evs":{"hp":60,"at":156,"df":20,"sd":196,"sp":76},"moves":["Surging Strikes","Close Combat","Detect","Aqua Jet"]},
     "BSS Reg F Offensive": {"level":50,"ability":"Unseen Fist","item":"Punching Glove","nature":"Jolly","teraType":"Water","evs":{"hp":4,"at":252,"sp":252},"moves":["Surging Strikes","Close Combat","Aqua Jet","Swords Dance"]},
     "BSS Reg F Choice Item Attacker": {"level":50,"ability":"Unseen Fist","item":"Choice Scarf","nature":"Jolly","teraType":"Water","evs":{"hp":4,"at":252,"sp":252},"moves":["Surging Strikes","Close Combat","U-turn","Ice Spinner"]},
@@ -3575,8 +3572,8 @@ var SETDEX_SV = {
   },
   "Basculegion-F": {
     "RU Choice Scarf": {"ability":"Adaptability","item":"Choice Scarf","nature":"Timid","teraType":"Ghost","evs":{"df":4,"sa":252,"sp":252},"moves":["Shadow Ball","Surf","Ice Beam","Flip Turn"]},
-    "RU Choice Specs": {"ability":"Adaptability","item":"Choice Specs","nature":"Timid","teraType":"Ghost","evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Surf","Ice Beam","Flip Turn"]},
     "RU Agility": {"ability":"Adaptability","item":"Weakness Policy","nature":"Modest","teraType":"Ghost","ivs":{"at":0},"evs":{"df":52,"sa":236,"sd":24,"sp":196},"moves":["Agility","Shadow Ball","Surf","Ice Beam"]},
+    "RU Choice Specs": {"ability":"Adaptability","item":"Choice Specs","nature":"Timid","teraType":"Ghost","evs":{"df":4,"sa":252,"sp":252},"moves":["Surf","Shadow Ball","Ice Beam","Flip Turn"]},
     "Monotype Swift Swim Wallbreaker (Water)": {"ability":"Swift Swim","item":"Choice Specs","nature":"Modest","teraType":"Water","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Surf","Hydro Pump","Ice Beam"]},
     "National Dex RU Choice Scarf": {"ability":"Adaptability","item":"Choice Scarf","nature":"Timid","teraType":"Water","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Surf","Shadow Ball","Ice Beam"]},
     "National Dex RU Choice Specs": {"ability":"Adaptability","item":"Choice Specs","nature":"Modest","teraType":"Water","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Surf","Shadow Ball","Ice Beam"]},
@@ -3901,7 +3898,7 @@ var SETDEX_SV = {
   },
   "Revavroom": {
     "UU Shift Gear": {"ability":"Filter","item":"Air Balloon","nature":"Adamant","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Shift Gear","Iron Head","Gunk Shot","High Horsepower"]},
-    "RU Shift Gear": {"ability":"Filter","item":"Air Balloon","nature":"Adamant","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Shift Gear","Gunk Shot","High Horsepower","Iron Head"]}
+    "RU Showdown Usage": {"ability":"Filter","item":"Air Balloon","nature":"Adamant","teraType":"Steel","evs":{"at":252,"sd":4,"sp":252},"moves":["Shift Gear","Gunk Shot","High Horsepower","Iron Head"]}
   },
   "Cyclizar": {
     "OU Utility": {"ability":"Regenerator","item":"Assault Vest","nature":"Jolly","teraType":"Fire","evs":{"hp":252,"sd":88,"sp":168},"moves":["Rapid Spin","Knock Off","U-turn","Temper Flare"]},
@@ -4318,7 +4315,7 @@ var SETDEX_SV = {
   },
   "Wo-Chien": {
     "OU Defensive": {"ability":"Tablets of Ruin","item":"Leftovers","nature":"Impish","teraType":"Fairy","evs":{"hp":252,"df":252,"sd":4},"moves":["Knock Off","Foul Play","Leech Seed","Protect"]},
-    "RU Specially Defensive": {"ability":"Tablets of Ruin","item":"Leftovers","nature":"Careful","teraType":"Poison","evs":{"hp":252,"sd":200,"sp":56},"moves":["Knock Off","Foul Play","Leech Seed","Protect"]},
+    "RU Specially Defensive": {"ability":"Tablets of Ruin","item":"Leftovers","nature":"Careful","teraType":"Poison","evs":{"hp":252,"df":4,"sd":252},"moves":["Knock Off","Foul Play","Leech Seed","Protect"]},
     "NU Defensive": {"ability":"Tablets of Ruin","item":"Leftovers","nature":"Careful","teraType":"Poison","evs":{"hp":252,"df":4,"sd":252},"moves":["Knock Off","Leech Seed","Protect","Stun Spore"]},
     "PU Leech Seed": {"ability":"Tablets of Ruin","item":"Leftovers","nature":"Impish","teraType":"Poison","evs":{"hp":252,"df":252,"sd":4},"moves":["Leech Seed","Protect","Knock Off","Ruination"]},
     "PU RestTalk": {"ability":"Tablets of Ruin","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Poison","evs":{"hp":252,"df":252,"sd":4},"moves":["Knock Off","Foul Play","Rest","Sleep Talk"]},
@@ -4867,6 +4864,11 @@ var SETDEX_SV = {
   },
   "Skiddo": {
     "LC Showdown Usage": {"level":5,"ability":"Sap Sipper","item":"Eviolite","nature":"Careful","evs":{"hp":148,"df":52,"sd":220,"sp":20},"moves":["Bulk Up","Horn Leech","Milk Drink","Facade"]}
+  },
+  "Conkeldurr": {
+    "RU Showdown Usage": {"ability":"Guts","item":"Flame Orb","nature":"Adamant","teraType":"Fighting","evs":{"hp":92,"at":252,"sp":164},"moves":["Mach Punch","Knock Off","Facade","Drain Punch"]},
+    "UU Showdown Usage": {"ability":"Guts","item":"Flame Orb","nature":"Adamant","teraType":"Fighting","evs":{"hp":132,"at":252,"sp":124},"moves":["Mach Punch","Knock Off","Drain Punch","Facade"]},
+    "National Dex RU Showdown Usage": {"ability":"Guts","item":"Flame Orb","nature":"Adamant","teraType":"Fighting","evs":{"hp":252,"at":252,"sd":4},"moves":["Mach Punch","Knock Off","Drain Punch","Facade"]}
   },
   "Honchkrow": {
     "PU Showdown Usage": {"ability":"Moxie","item":"Choice Scarf","nature":"Jolly","teraType":"Dark","evs":{"at":252,"sd":4,"sp":252},"moves":["Sucker Punch","U-turn","Brave Bird","Night Slash"]},

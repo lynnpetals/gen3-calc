@@ -92,7 +92,7 @@ var SETDEX_RBY = {
     "UU Physical Attacker": {"moves":["Earthquake","Rock Slide","Slash","Toxic"]}
   },
   "Persian": {
-    "OU Slash": {"moves":["Slash","Hyper Beam","Bubble Beam","Thunderbolt"]},
+    "OU Slash": {"moves":["Slash","Body Slam","Bubble Beam","Thunderbolt"]},
     "Ubers Slash": {"moves":["Slash","Hyper Beam","Thunderbolt","Bubble Beam"]},
     "UU Revenge Killer": {"moves":["Slash","Hyper Beam","Thunderbolt","Toxic"]},
     "1v1 Slash": {"moves":["Slash","Hyper Beam","Thunderbolt","Screech"]},
