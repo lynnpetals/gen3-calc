@@ -1833,7 +1833,7 @@ var SETDEX_DPP = {
     "LC Choice Scarf": {"level":5,"ability":"Sand Veil","item":"Choice Scarf","nature":"Hasty","ivs":{"at":30,"df":30},"evs":{"hp":36,"at":156,"sa":76,"sp":236},"moves":["Dark Pulse","Brick Break","Needle Arm","Hidden Power Ice"]}
   },
   "Cacturne": {
-    "NU Offensive Spikes": {"ability":"Sand Veil","item":"Leftovers","nature":"Modest","evs":{"hp":132,"sa":252,"sp":124},"moves":["Spikes","Energy Ball","Dark Pulse","Sucker Punch"]}
+    "NU Offensive Spikes": {"ability":"Sand Veil","item":"Leftovers","nature":"Modest","evs":{"hp":172,"sa":252,"sp":84},"moves":["Spikes","Energy Ball","Dark Pulse","Sucker Punch"]}
   },
   "Swablu": {
     "LC King Cotton (Physically Defensive)": {"level":5,"ability":"Natural Cure","item":"Oran Berry","nature":"Impish","evs":{"hp":236,"df":196,"sd":76},"moves":["Roost","Pluck","Protect","Toxic"]}
