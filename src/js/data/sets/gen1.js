@@ -320,7 +320,7 @@ var SETDEX_RBY = {
   "Starmie": {
     "OU Special Attacker": {"moves":["Recover","Thunder Wave","Blizzard","Psychic"]},
     "Ubers Paralysis Lead": {"moves":["Thunder Wave","Recover","Psychic","Blizzard"]},
-    "1v1 Psychic Stall": {"moves":["Psychic","Ice Beam","Recover","Reflect"]},
+    "1v1 Psychic Attacker": {"moves":["Psychic","Ice Beam","Reflect","Recover"]},
     "Tradebacks OU Standard": {"moves":["Recover","Thunder Wave","Blizzard","Psychic"]}
   },
   "Mr. Mime": {
@@ -335,7 +335,7 @@ var SETDEX_RBY = {
   "Jynx": {
     "OU Lead Sleeper": {"moves":["Lovely Kiss","Blizzard","Psychic","Rest"]},
     "Ubers Sleep Lead": {"moves":["Lovely Kiss","Blizzard","Psychic","Counter"]},
-    "1v1 Special Attacker": {"moves":["Ice Beam","Psychic","Blizzard","Rest"]},
+    "1v1 Offensive": {"moves":["Blizzard","Ice Beam","Psychic","Rest"]},
     "Tradebacks OU Sleep Lead": {"moves":["Lovely Kiss","Blizzard","Psychic","Rest"]}
   },
   "Electabuzz": {
