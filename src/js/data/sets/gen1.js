@@ -31,8 +31,7 @@ var SETDEX_RBY = {
     "NU All-out Attacker": {"moves":["Hyper Beam","Body Slam","Bubble Beam","Thunderbolt"]}
   },
   "Fearow": {
-    "NU All-Out Attacker": {"moves":["Hyper Beam","Double-Edge","Drill Peck","Agility"]},
-    "PU Showdown Usage": {"moves":["Drill Peck","Hyper Beam","Double-Edge","Agility"]}
+    "NU All-Out Attacker": {"moves":["Hyper Beam","Double-Edge","Drill Peck","Agility"]}
   },
   "Arbok": {
     "OU Wrapper": {"moves":["Glare","Wrap","Earthquake","Hyper Beam"]},
@@ -112,8 +111,7 @@ var SETDEX_RBY = {
   },
   "Arcanine": {
     "UU Agility Sweeper": {"moves":["Agility","Body Slam","Hyper Beam","Fire Blast"]},
-    "NU Defensive": {"moves":["Fire Blast","Body Slam","Hyper Beam","Rest"]},
-    "PU Showdown Usage": {"moves":["Fire Blast","Body Slam","Hyper Beam","Agility"]}
+    "NU Defensive": {"moves":["Fire Blast","Body Slam","Hyper Beam","Rest"]}
   },
   "Poliwag": {
     "PU Amnesia Sweeper": {"moves":["Hypnosis","Amnesia","Hydro Pump","Psychic"]}
@@ -377,7 +375,7 @@ var SETDEX_RBY = {
   "Vaporeon": {
     "UU Bulky Special Attacker": {"moves":["Surf","Blizzard","Body Slam","Rest"]},
     "Tradebacks OU Growth": {"moves":["Growth","Surf","Acid Armor","Rest"]},
-    "OU Showdown Usage": {"moves":["Rest","Acid Armor","Ice Beam","Body Slam"]}
+    "OU Showdown Usage": {"moves":["Rest","Acid Armor","Body Slam","Hydro Pump"]}
   },
   "Jolteon": {
     "OU Offensive": {"moves":["Thunder Wave","Thunderbolt","Double Kick","Rest"]},
