@@ -43,7 +43,7 @@ var SETDEX_GSC = {
   },
   "Nidoqueen": {
     "OU Standard": {"item":"Leftovers","moves":["Earthquake","Lovely Kiss","Thunder","Ice Beam"]},
-    "UU The Queen of UU (3 attacks)": {"item":"Leftovers","moves":["Earthquake","Thunder","Ice Beam","Lovely Kiss"]},
+    "UU The Queen of UU (3 attacks)": {"item":"Leftovers","moves":["Earthquake","Thunder","Ice Beam","Moonlight"]},
     "1v1 Mint Berry": {"item":"Mint Berry","moves":["Earthquake","Ice Beam","Charm","Rest"]}
   },
   "Nidoking": {
@@ -158,8 +158,8 @@ var SETDEX_GSC = {
   "Granbull": {
     "UU Curse RestTalk": {"item":"Leftovers","moves":["Curse","Frustration","Rest","Sleep Talk"]},
     "UU Cleric RestTalk": {"item":"Leftovers","moves":["Frustration","Heal Bell","Rest","Sleep Talk"]},
-    "UU Coverage Attacker": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Curse","Frustration","Hidden Power Ground","Lovely Kiss"]},
-    "UU Coverage RestTalk": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Frustration","Hidden Power Ground","Rest","Sleep Talk"]}
+    "UU Curse Kiss": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Curse","Frustration","Hidden Power Ground","Lovely Kiss"]},
+    "UU Coverage RestTalk": {"item":"Leftovers","moves":["Frustration","Thunder","Rest","Sleep Talk"]}
   },
   "Hitmonlee": {
     "NU RestTalk": {"item":"Leftovers","moves":["High Jump Kick","Body Slam","Rest","Sleep Talk"]},
@@ -483,8 +483,8 @@ var SETDEX_GSC = {
     "1v1 Recover": {"item":"Leftovers","moves":["Surf","Ice Beam","Recover","Substitute"]}
   },
   "Scyther": {
-    "UU Swords Dance": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Swords Dance","Wing Attack","Hidden Power Ground","Baton Pass"]},
     "UU All-Out-Attacker": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Swords Dance","Wing Attack","Hidden Power Ground","Double-Edge"]},
+    "UU Swords Dance": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Swords Dance","Wing Attack","Hidden Power Ground","Baton Pass"]},
     "1v1 Swords Dance + Substitute": {"item":"Leftovers","ivs":{"at":26,"df":26},"moves":["Hidden Power Bug","Wing Attack","Swords Dance","Substitute"]}
   },
   "Jynx": {
@@ -503,7 +503,7 @@ var SETDEX_GSC = {
     "1v1 Scope Lens": {"item":"Scope Lens","moves":["Fire Blast","Screech","Cross Chop","Thunder Punch"]}
   },
   "Pinsir": {
-    "UU Swords Dance": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Swords Dance","Hidden Power Ground","Double-Edge","Submission"]},
+    "UU Swords Dance": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Swords Dance","Return","Hidden Power Ground","Rock Throw"]},
     "UU RestTalk": {"item":"Leftovers","moves":["Rest","Sleep Talk","Swords Dance","Body Slam"]}
   },
   "Tauros": {
@@ -512,8 +512,7 @@ var SETDEX_GSC = {
     "1v1 Toxic Stall": {"item":"Leftovers","moves":["Return","Toxic","Protect","Substitute"]}
   },
   "Gyarados": {
-    "UU All-out Offensive": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Hydro Pump","Thunder","Double-Edge","Hidden Power Ground"]},
-    "UU Rest": {"item":"Leftovers","ivs":{"hp":14,"at":24,"df":26},"moves":["Hydro Pump","Hidden Power Flying","Roar","Rest"]},
+    "UU All-out Offensive": {"item":"Leftovers","ivs":{"hp":14,"at":24,"df":26},"moves":["Hidden Power Flying","Hydro Pump","Thunder","Double-Edge"]},
     "1v1 Anti-Tyranitar": {"item":"Mystic Water","ivs":{"hp":14,"at":24,"df":26},"moves":["Hydro Pump","Surf","Hidden Power Flying","Substitute"]},
     "1v1 Mixed Attacker": {"item":"Leftovers","ivs":{"hp":14,"at":24,"df":26},"moves":["Surf","Hidden Power Flying","Substitute","Toxic"]}
   },
@@ -682,7 +681,8 @@ var SETDEX_GSC = {
     "OU Oh, no! It's Wobbuffet! (Counter + Mirror Coat)": {"item":"Leftovers","moves":["Counter","Mirror Coat","Destiny Bond","Safeguard"]}
   },
   "Girafarig": {
-    "UU Amnesia + Baton Pass": {"item":"Leftovers","moves":["Baton Pass","Amnesia","Thunder","Psychic"]}
+    "UU Mixed": {"item":"Leftovers","moves":["Earthquake","Thunder","Return","Psychic"]},
+    "UU Amnesia Pass": {"item":"Leftovers","moves":["Amnesia","Baton Pass","Thunder","Psychic"]}
   },
   "Pineco": {
     "NU Entry Hazard Setter": {"item":"Leftovers","moves":["Spikes","Rapid Spin","Explosion","Toxic"]}
