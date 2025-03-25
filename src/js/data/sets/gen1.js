@@ -193,8 +193,7 @@ var SETDEX_RBY = {
   },
   "Magneton": {
     "UU Bulky Special Attacker": {"moves":["Thunderbolt","Thunder Wave","Double-Edge","Rest"]},
-    "NU Offensive": {"moves":["Thunder Wave","Thunderbolt","Thunder","Rest"]},
-    "PU Special Attacker": {"moves":["Thunderbolt","Thunder Wave","Hyper Beam","Screech"]}
+    "NU Offensive": {"moves":["Thunder Wave","Thunderbolt","Thunder","Rest"]}
   },
   "Farfetch’d": {
     "PU Double Dance": {"moves":["Slash","Agility","Swords Dance","Body Slam"]}
