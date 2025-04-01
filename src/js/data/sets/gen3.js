@@ -432,11 +432,12 @@ var SETDEX_ADV = {
     "ZU Showdown Usage": {"ability":"Oblivious","item":"Leftovers","nature":"Calm","evs":{"hp":252,"df":4,"sd":252},"moves":["Seismic Toss","Wish","Thunder Wave","Protect"]}
   },
   "Torkoal": {
+    "NU Defensive": {"ability":"White Smoke","item":"Leftovers","nature":"Relaxed","ivs":{"at":30,"sa":30},"evs":{"hp":248,"sa":92,"sd":168},"moves":["Fire Blast","Explosion","Toxic","Hidden Power Grass"]},
+    "NU RestTalk": {"ability":"White Smoke","item":"Leftovers","nature":"Relaxed","ivs":{"at":30,"sa":30},"evs":{"hp":248,"sa":8,"sd":252},"moves":["Flamethrower","Hidden Power Grass","Rest","Sleep Talk"]},
     "NU Curse": {"ability":"White Smoke","item":"Leftovers","nature":"Relaxed","evs":{"hp":252,"at":184,"sd":72},"moves":["Curse","Fire Blast","Rock Slide","Explosion"]},
     "NU Yawn": {"ability":"White Smoke","item":"Leftovers","nature":"Relaxed","ivs":{"at":30,"df":30},"evs":{"hp":252,"sa":184,"sd":72},"moves":["Yawn","Explosion","Fire Blast","Hidden Power Ice"]},
     "NU Choice Band": {"ability":"White Smoke","item":"Choice Band","nature":"Brave","ivs":{"sa":30,"sd":30},"evs":{"hp":252,"at":252,"sa":4},"moves":["Explosion","Overheat","Rock Slide","Hidden Power Ground"]},
-    "NU Staller": {"ability":"White Smoke","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":176,"sd":80},"moves":["Iron Defense","Amnesia","Toxic","Rest"]},
-    "NU RestTalk": {"ability":"White Smoke","item":"Leftovers","nature":"Bold","ivs":{"at":30,"sa":30},"evs":{"hp":252,"sa":120,"sd":136},"moves":["Rest","Sleep Talk","Fire Blast","Hidden Power Grass"]}
+    "NU Staller": {"ability":"White Smoke","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":176,"sd":80},"moves":["Iron Defense","Amnesia","Toxic","Rest"]}
   },
   "Lunatone": {
     "UU Special Attacker": {"ability":"Levitate","item":"Leftovers","nature":"Modest","evs":{"hp":252,"df":240,"sp":16},"moves":["Hypnosis","Psychic","Ice Beam","Calm Mind"]}
@@ -1368,7 +1369,7 @@ var SETDEX_ADV = {
     "UU Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","ivs":{"at":30,"sa":30},"evs":{"hp":252,"at":4,"sp":252},"moves":["Spikes","Explosion","Earthquake","Hidden Power Grass"]},
     "NU Bulky Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Naive","evs":{"hp":252,"at":4,"sp":252},"moves":["Spikes","Taunt","Ice Beam","Explosion"]},
     "NU Physical Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Spikes","Earthquake","Shadow Ball","Explosion"]},
-    "OU Showdown Usage": {"ability":"Inner Focus","item":"Salac Berry","nature":"Timid","evs":{"hp":40,"sd":252,"sp":216},"moves":["Spikes","Ice Beam","Explosion","Taunt"]}
+    "OU Showdown Usage": {"ability":"Inner Focus","item":"Choice Band","nature":"Adamant","evs":{"hp":188,"at":120,"sp":200},"moves":["Spikes","Explosion","Ice Beam","Taunt"]}
   },
   "Sealeo": {
     "PU Tank": {"ability":"Thick Fat","item":"Leftovers","nature":"Timid","ivs":{"at":2,"sa":30},"evs":{"sa":236,"sd":48,"sp":224},"moves":["Surf","Ice Beam","Hidden Power Grass","Substitute"]}
