@@ -1368,8 +1368,7 @@ var SETDEX_ADV = {
   "Glalie": {
     "UU Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","ivs":{"at":30,"sa":30},"evs":{"hp":252,"at":4,"sp":252},"moves":["Spikes","Explosion","Earthquake","Hidden Power Grass"]},
     "NU Bulky Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Naive","evs":{"hp":252,"at":4,"sp":252},"moves":["Spikes","Taunt","Ice Beam","Explosion"]},
-    "NU Physical Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Spikes","Earthquake","Shadow Ball","Explosion"]},
-    "OU Showdown Usage": {"ability":"Inner Focus","item":"Choice Band","nature":"Adamant","evs":{"hp":188,"at":120,"sp":200},"moves":["Spikes","Explosion","Ice Beam","Taunt"]}
+    "NU Physical Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Spikes","Earthquake","Shadow Ball","Explosion"]}
   },
   "Sealeo": {
     "PU Tank": {"ability":"Thick Fat","item":"Leftovers","nature":"Timid","ivs":{"at":2,"sa":30},"evs":{"sa":236,"sd":48,"sp":224},"moves":["Surf","Ice Beam","Hidden Power Grass","Substitute"]}

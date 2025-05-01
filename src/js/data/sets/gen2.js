@@ -290,7 +290,8 @@ var SETDEX_GSC = {
   "Parasect": {
     "OU Double Powder": {"item":"Leftovers","ivs":{"at":26,"df":26},"moves":["Spore","Hidden Power Bug","Giga Drain","Stun Spore"]},
     "OU Special Sweeper": {"item":"Leftovers","ivs":{"hp":6,"at":28,"df":24},"moves":["Spore","Growth","Giga Drain","Hidden Power Fire"]},
-    "OU Swords Dance": {"item":"Leftovers","ivs":{"at":26,"df":26},"moves":["Spore","Hidden Power Bug","Return","Swords Dance"]}
+    "OU Swords Dance": {"item":"Leftovers","ivs":{"at":26,"df":26},"moves":["Spore","Hidden Power Bug","Return","Swords Dance"]},
+    "PU Showdown Usage": {"item":"Leftovers","ivs":{"at":26,"df":26},"moves":["Double-Edge","Hidden Power Bug","Spore","Swords Dance"]}
   },
   "Venomoth": {
     "PU Status Moth": {"item":"Leftovers","moves":["Sleep Powder","Stun Spore","Psychic","Sludge Bomb"]},
@@ -450,8 +451,7 @@ var SETDEX_GSC = {
   },
   "Chansey": {
     "UU Defensive Cleric": {"item":"Leftovers","moves":["Present","Thunder","Heal Bell","Soft-Boiled"]},
-    "1v1 Curse": {"item":"Lucky Punch","moves":["Curse","Double-Edge","Rest","Counter"]},
-    "OU Showdown Usage": {"item":"Leftovers","moves":["Soft-Boiled","Heal Bell","Light Screen","Flash"]}
+    "1v1 Curse": {"item":"Lucky Punch","moves":["Curse","Double-Edge","Rest","Counter"]}
   },
   "Tangela": {
     "OU Double Powder": {"item":"Leftovers","moves":["Stun Spore","Sleep Powder","Giga Drain","Reflect"]},
@@ -680,7 +680,8 @@ var SETDEX_GSC = {
     "1v1 Toxic + Pain Split": {"item":"Leftovers","moves":["Growl","Pain Split","Toxic","Spite"]}
   },
   "Wobbuffet": {
-    "OU Oh, no! It's Wobbuffet! (Counter + Mirror Coat)": {"item":"Leftovers","moves":["Counter","Mirror Coat","Destiny Bond","Safeguard"]}
+    "OU Oh, no! It's Wobbuffet! (Counter + Mirror Coat)": {"item":"Leftovers","moves":["Counter","Mirror Coat","Destiny Bond","Safeguard"]},
+    "PU Showdown Usage": {"item":"Leftovers","moves":["Counter","Destiny Bond","Mirror Coat","Safeguard"]}
   },
   "Girafarig": {
     "UU Mixed": {"item":"Leftovers","moves":["Earthquake","Thunder","Return","Psychic"]},
@@ -827,6 +828,27 @@ var SETDEX_GSC = {
   },
   "Celebi": {
     "Ubers Standard": {"item":"Leftovers","moves":["Heal Bell","Recover","Leech Seed","Psychic"]}
+  },
+  "Croconaw": {
+    "PU Showdown Usage": {"item":"Leftovers","moves":["Rest","Rock Slide","Sleep Talk","Surf"]}
+  },
+  "Wartortle": {
+    "PU Showdown Usage": {"item":"Leftovers","moves":["Surf","Zap Cannon","Rest","Sleep Talk"]}
+  },
+  "Ivysaur": {
+    "PU Showdown Usage": {"item":"Leftovers","moves":["Leech Seed","Razor Leaf","Sleep Powder","Synthesis"]}
+  },
+  "Koffing": {
+    "PU Showdown Usage": {"item":"Leftovers","ivs":{"hp":14,"at":28,"df":26},"moves":["Explosion","Sludge Bomb","Haze","Hidden Power Water"]}
+  },
+  "Geodude": {
+    "PU Showdown Usage": {"item":"Leftovers","ivs":{"hp":22,"at":26,"df":24},"moves":["Curse","Earthquake","Hidden Power Rock","Rapid Spin"]}
+  },
+  "Quilava": {
+    "PU Showdown Usage": {"item":"Leftovers","moves":["Double-Edge","Fire Blast","Rest","Sleep Talk"]}
+  },
+  "Krabby": {
+    "PU Showdown Usage": {"item":"Miracle Berry","moves":["Return","Substitute","Swords Dance","Surf"]}
   },
   "Tentacool": {
     "NU Showdown Usage": {"item":"Leftovers","moves":["Toxic","Hydro Pump","Rapid Spin","Sludge Bomb"]}
