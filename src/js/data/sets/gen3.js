@@ -687,7 +687,7 @@ var SETDEX_ADV = {
   },
   "Kingler": {
     "NU Choice Band": {"ability":"Hyper Cutter","item":"Choice Band","nature":"Naughty","ivs":{"df":30,"sd":30},"evs":{"at":252,"sa":4,"sp":252},"moves":["Double-Edge","Hidden Power Ghost","Surf","Blizzard"]},
-    "NU Flail": {"ability":"Hyper Cutter","item":"Salac Berry","nature":"Naughty","ivs":{"df":30,"sd":30},"evs":{"at":252,"sa":4,"sp":252},"moves":["Endure","Flail","Hidden Power Ghost","Swords Dance"]},
+    "NU Flail": {"ability":"Hyper Cutter","item":"Salac Berry","nature":"Adamant","ivs":{"df":30,"sd":30},"evs":{"at":252,"sa":4,"sp":252},"moves":["Endure","Flail","Hidden Power Ghost","Swords Dance"]},
     "NU Defensive": {"ability":"Hyper Cutter","item":"Leftovers","nature":"Adamant","evs":{"hp":252,"at":180,"sp":72},"moves":["Body Slam","Knock Off","Toxic","Surf"]},
     "PU Swords Dance": {"ability":"Hyper Cutter","item":"Leftovers","nature":"Adamant","ivs":{"df":30,"sd":30},"evs":{"at":252,"df":4,"sp":252},"moves":["Swords Dance","Double-Edge","Hidden Power Ghost","Mud Shot"]}
   },
