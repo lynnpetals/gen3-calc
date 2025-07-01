@@ -286,7 +286,7 @@ var SETDEX_GSC = {
     "PU Offensive": {"item":"Leftovers","ivs":{"hp":14,"at":24},"moves":["Wing Attack","Hidden Power Ground","Giga Drain","Screech"]}
   },
   "Gloom": {
-    "NU Status-spreading Defensive Pivot": {"item":"Leftovers","moves":["Stun Spore","Curse","Sludge Bomb","Moonlight"]}
+    "NU Bulky Setup Sweeper": {"item":"Leftovers","moves":["Swords Dance","Sludge Bomb","Stun Spore","Moonlight"]}
   },
   "Parasect": {
     "OU Double Powder": {"item":"Leftovers","ivs":{"at":26,"df":26},"moves":["Spore","Hidden Power Bug","Giga Drain","Stun Spore"]},
@@ -349,6 +349,9 @@ var SETDEX_GSC = {
     "1v1 Scary Face + Encore": {"item":"Leftovers","moves":["Cross Chop","Encore","Scary Face","Fire Blast"]},
     "1v1 Mint Berry + Thief": {"item":"Mint Berry","moves":["Cross Chop","Curse","Rest","Thief"]},
     "1v1 Scope Lens": {"item":"Scope Lens","moves":["Cross Chop","Rock Slide","Fire Blast","Earthquake"]}
+  },
+  "Tentacool": {
+    "NU Rapid Spin": {"item":"Leftovers","moves":["Hydro Pump","Sludge Bomb","Rapid Spin","Protect"]}
   },
   "Tentacruel": {
     "OU Druidcruel (Swords Dance)": {"item":"Leftovers","moves":["Swords Dance","Substitute","Sludge Bomb","Hydro Pump"]},
@@ -454,7 +457,7 @@ var SETDEX_GSC = {
   "Chansey": {
     "UU Defensive Cleric": {"item":"Leftovers","moves":["Present","Thunder","Heal Bell","Soft-Boiled"]},
     "1v1 Curse": {"item":"Lucky Punch","moves":["Curse","Double-Edge","Rest","Counter"]},
-    "OU Showdown Usage": {"item":"Leftovers","moves":["Soft-Boiled","Heal Bell","Light Screen","Flash"]}
+    "OU Showdown Usage": {"item":"Leftovers","moves":["Soft-Boiled","Heal Bell","Light Screen","Flamethrower"]}
   },
   "Tangela": {
     "OU Double Powder": {"item":"Leftovers","moves":["Stun Spore","Sleep Powder","Giga Drain","Reflect"]},
@@ -853,8 +856,5 @@ var SETDEX_GSC = {
   },
   "Krabby": {
     "PU Showdown Usage": {"item":"Miracle Berry","moves":["Return","Substitute","Swords Dance","Surf"]}
-  },
-  "Tentacool": {
-    "NU Showdown Usage": {"item":"Leftovers","moves":["Toxic","Hydro Pump","Rapid Spin","Sludge Bomb"]}
   }
 };
