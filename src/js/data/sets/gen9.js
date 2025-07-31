@@ -1544,7 +1544,7 @@ var SETDEX_SV = {
     "NU Aurora Veil Setter": {"ability":"Snow Warning","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Water","evs":{"hp":248,"df":252,"sp":8},"moves":["Aurora Veil","Blizzard","Giga Drain","Earth Power"]},
     "NU Special Attacker": {"ability":"Snow Warning","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Ground","evs":{"df":4,"sa":252,"sp":252},"moves":["Blizzard","Giga Drain","Earth Power","Leech Seed"]},
     "PU Aurora Veil": {"ability":"Snow Warning","item":"Eject Pack","nature":"Timid","teraType":"Ghost","evs":{"df":4,"sa":252,"sp":252},"moves":["Aurora Veil","Leaf Storm","Blizzard","Earth Power"]},
-    "Monotype Aurora Veil (Grass)": {"ability":"Snow Warning","item":"Heavy-Duty Boots","nature":"Relaxed","teraType":"Grass","evs":{"hp":248,"df":252,"sd":8},"moves":["Aurora Veil","Blizzard","Body Press","Ice Shard"]},
+    "Monotype Sailor Snow (Aurora Veil Support) (Grass)": {"ability":"Snow Warning","item":"Heavy-Duty Boots","nature":"Relaxed","teraType":"Grass","evs":{"hp":248,"df":252,"sd":8},"moves":["Aurora Veil","Blizzard","Ice Shard","Body Press"]},
     "Monotype Hail Setter (Ice)": {"ability":"Snow Warning","item":"Icy Rock","nature":"Modest","teraType":"Grass","ivs":{"at":0},"evs":{"hp":40,"sa":252,"sp":216},"moves":["Aurora Veil","Blizzard","Giga Drain","Earth Power"]},
     "National Dex Doubles Showdown Usage": {"ability":"Snow Warning","item":"Abomasite","nature":"Quiet","teraType":"Grass","evs":{"hp":252,"df":4,"sa":252},"moves":["Blizzard","Protect","Giga Drain","Ice Shard"]}
   },
@@ -3592,8 +3592,9 @@ var SETDEX_SV = {
     "BSS Reg F Agility": {"level":50,"ability":"Adaptability","item":"Focus Sash","nature":"Adamant","teraType":"Ghost","evs":{"hp":4,"at":252,"sp":252},"moves":["Agility","Last Respects","Wave Crash","Aqua Jet"]},
     "Monotype Choice Band (Water)": {"ability":"Swift Swim","item":"Choice Band","nature":"Jolly","teraType":"Water","evs":{"at":252,"sd":4,"sp":252},"moves":["Wave Crash","Aqua Jet","Psychic Fangs","Liquidation"]},
     "National Dex Ubers Choice Scarf Sweeper": {"ability":"Adaptability","item":"Choice Scarf","nature":"Jolly","teraType":"Fighting","evs":{"at":252,"df":4,"sp":252},"moves":["Last Respects","Wave Crash","Tera Blast","Flip Turn"]},
+    "National Dex Doubles Swift Swim": {"ability":"Swift Swim","item":"Life Orb","nature":"Adamant","teraType":"Ghost","evs":{"hp":160,"at":128,"sp":220},"moves":["Wave Crash","Last Respects","Aqua Jet","Flip Turn"]},
+    "National Dex Doubles Choice Scarf": {"ability":"Adaptability","item":"Choice Scarf","nature":"Jolly","teraType":"Ghost","evs":{"at":252,"sd":4,"sp":252},"moves":["Wave Crash","Last Respects","Aqua Jet","Flip Turn"]},
     "1v1 Showdown Usage": {"ability":"Adaptability","item":"Assault Vest","nature":"Adamant","teraType":"Water","evs":{"hp":252,"at":252,"sd":4},"moves":["Phantom Force","Wave Crash","Aqua Jet","Night Shade"]},
-    "National Dex Doubles Showdown Usage": {"ability":"Swift Swim","item":"Focus Sash","nature":"Adamant","teraType":"Water","evs":{"at":252,"sd":4,"sp":252},"moves":["Last Respects","Aqua Jet","Wave Crash","Flip Turn"]},
     "UU Showdown Usage": {"ability":"Swift Swim","item":"Choice Band","nature":"Adamant","teraType":"Water","evs":{"at":252,"sd":4,"sp":252},"moves":["Wave Crash","Flip Turn","Psychic Fangs","Aqua Jet"]},
     "National Dex RU Showdown Usage": {"ability":"Adaptability","item":"Ghostium Z","nature":"Adamant","teraType":"Water","evs":{"at":252,"sd":4,"sp":252},"moves":["Aqua Jet","Phantom Force","Liquidation","Substitute"]},
     "VGC 2024 Reg F Showdown Usage": {"level":50,"ability":"Swift Swim","item":"Choice Band","nature":"Adamant","teraType":"Water","evs":{"at":252,"df":4,"sp":252},"moves":["Last Respects","Wave Crash","Aqua Jet","Flip Turn"]}
@@ -4432,14 +4433,13 @@ var SETDEX_SV = {
     "Almost Any Ability Choice Item": {"ability":"Sword of Ruin","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Outrage","U-turn","Earthquake"]},
     "Almost Any Ability RegenVest": {"ability":"Regenerator","item":"Assault Vest","nature":"Jolly","evs":{"hp":248,"sd":68,"sp":192},"moves":["Knock Off","U-turn","Earthquake","Stone Edge"]},
     "Almost Any Ability Magic Guard": {"ability":"Magic Guard","item":"Life Orb","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Knock Off","Earthquake","U-turn","Roost"]},
-    "CAP Dragon Dance": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Jolly","teraType":"Flying","evs":{"at":252,"sd":4,"sp":252},"moves":["Dragon Dance","Knock Off","Acrobatics","Earthquake"]},
-    "CAP Choice Band": {"ability":"Protosynthesis","item":"Choice Band","nature":"Jolly","teraType":"Dark","evs":{"at":220,"df":36,"sp":252},"moves":["Knock Off","Outrage","Earthquake","U-turn"]},
     "Ubers UU All Out Dragon Dance": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Adamant","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Earthquake","Outrage","Dragon Dance"]},
     "Ubers UU Disruptive Dragon Dance": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Adamant","teraType":"Fairy","evs":{"at":252,"sd":4,"sp":252},"moves":["Iron Head","Earthquake","Taunt","Dragon Dance"]},
     "Ubers UU Choice Item": {"ability":"Protosynthesis","item":"Choice Scarf","nature":"Adamant","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Earthquake","Outrage","U-turn"]},
     "Ubers UU Boots Pivot": {"ability":"Protosynthesis","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Ground","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Earthquake","Roost","U-turn"]},
     "National Dex Showdown Usage": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Jolly","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Earthquake","Dragon Dance","Outrage"]},
-    "National Dex Doubles Showdown Usage": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Jolly","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Breaking Swipe","Tailwind","Protect"]}
+    "National Dex Doubles Showdown Usage": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Jolly","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Breaking Swipe","Tailwind","Protect"]},
+    "CAP Showdown Usage": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Jolly","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Dragon Dance","Earthquake","Acrobatics"]}
   },
   "Iron Valiant": {
     "OU Mixed": {"ability":"Quark Drive","item":"Booster Energy","nature":"Naive","teraType":"Steel","evs":{"at":4,"sa":252,"sp":252},"moves":["Moonblast","Close Combat","Knock Off","Encore"]},
