@@ -148,7 +148,7 @@ var SETDEX_SV = {
     "CAP Showdown Usage": {"ability":"Snow Warning","item":"Light Clay","nature":"Timid","teraType":"Ice","evs":{"hp":252,"df":4,"sp":252},"moves":["Aurora Veil","Encore","Freeze-Dry","Moonblast"]}
   },
   "Vileplume": {
-    "RU Phyiscally Defensive": {"ability":"Effect Spore","item":"Leftovers","nature":"Bold","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Sludge Wave","Giga Drain","Strength Sap","Leech Seed"]},
+    "RU Physically Defensive": {"ability":"Effect Spore","item":"Leftovers","nature":"Bold","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Sludge Wave","Giga Drain","Strength Sap","Leech Seed"]},
     "NU Physically Defensive": {"ability":"Effect Spore","item":"Rocky Helmet","nature":"Bold","teraType":"Water","evs":{"hp":252,"df":252,"sp":4},"moves":["Sludge Bomb","Giga Drain","Leech Seed","Strength Sap"]}
   },
   "Venomoth": {
@@ -1612,7 +1612,7 @@ var SETDEX_SV = {
     "Monotype Swords Dance (Ground)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Careful","teraType":"Ground","evs":{"hp":244,"sd":248,"sp":16},"moves":["Swords Dance","Earthquake","Knock Off","Protect"]},
     "Monotype Defensive Utility (Ground)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Impish","teraType":"Ground","evs":{"hp":244,"df":80,"sd":48,"sp":136},"moves":["Earthquake","Knock Off","Toxic","Protect"]},
     "National Dex Utility": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Careful","teraType":"Ground","evs":{"hp":244,"df":36,"sd":228},"moves":["Earthquake","Toxic","Spikes","Protect"]},
-    "National Dex Swords Dance": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Jolly","teraType":"Ground","evs":{"hp":244,"sd":152,"sp":112},"moves":["Earthquake","Swords Dance","Roost","Facade"]},
+    "National Dex Swords Dance": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Careful","teraType":"Ground","evs":{"hp":244,"df":36,"sd":228},"moves":["Earthquake","Swords Dance","Roost","Facade"]},
     "National Dex Monotype Stallbreaker (Flying)": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Jolly","teraType":"Ground","evs":{"hp":244,"df":20,"sd":236,"sp":8},"moves":["Earthquake","Knock Off","Taunt","Roost"]},
     "Anything Goes Defensive": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Impish","teraType":"Water","evs":{"hp":244,"df":252,"sd":12},"moves":["Spikes","Earthquake","Knock Off","Protect"]},
     "Almost Any Ability Physically Defensive": {"ability":"Fluffy","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Earthquake","U-turn","Spikes","Toxic"]},
@@ -2479,8 +2479,8 @@ var SETDEX_SV = {
     "National Dex Monotype Choice Specs (Dragon)": {"ability":"Pressure","item":"Choice Specs","nature":"Timid","teraType":"Dragon","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Draco Meteor","Ice Beam","Freeze-Dry","Focus Blast"]},
     "National Dex Monotype Substitute + Roost (Ice)": {"ability":"Pressure","item":"Chople Berry","nature":"Timid","teraType":"Dragon","ivs":{"at":0},"evs":{"hp":56,"sa":192,"sd":8,"sp":252},"moves":["Freeze-Dry","Earth Power","Substitute","Roost"]},
     "1v1 Choice Specs": {"ability":"Pressure","item":"Choice Specs","nature":"Modest","teraType":"Dragon","ivs":{"at":0},"evs":{"hp":4,"sa":148,"sd":132,"sp":224},"moves":["Draco Meteor","Ice Beam","Freeze-Dry","Earth Power"]},
+    "1v1 Haban Berry": {"ability":"Pressure","item":"Haban Berry","nature":"Modest","teraType":"Dragon","evs":{"hp":252,"df":76,"sa":36,"sd":144},"moves":["Draco Meteor","Ice Beam","Freeze-Dry","Glaciate"]},
     "1v1 Anti-Porygon-Z": {"ability":"Pressure","item":"Choice Specs","nature":"Timid","teraType":"Dragon","ivs":{"at":0},"evs":{"hp":56,"sa":76,"sd":152,"sp":224},"moves":["Draco Meteor","Ice Beam","Freeze-Dry","Earth Power"]},
-    "1v1 Haban Berry": {"ability":"Pressure","item":"Haban Berry","nature":"Modest","teraType":"Dragon","evs":{"hp":184,"df":28,"sa":60,"sp":236},"moves":["Draco Meteor","Glaciate","Freeze-Dry","Earth Power"]},
     "1v1 Choice Scarf": {"ability":"Pressure","item":"Choice Scarf","nature":"Modest","teraType":"Dragon","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Draco Meteor","Ice Beam","Focus Blast","Freeze-Dry"]},
     "1v1 Weakness Policy": {"ability":"Pressure","item":"Weakness Policy","nature":"Modest","teraType":"Dragon","evs":{"hp":172,"df":176,"sa":104,"sp":56},"moves":["Earth Power","Freeze-Dry","Reflect","Draco Meteor"]},
     "1v1 Assault Vest": {"ability":"Pressure","item":"Assault Vest","nature":"Calm","teraType":"Dragon","evs":{"hp":88,"sa":184,"sd":236},"moves":["Draco Meteor","Freeze-Dry","Glaciate","Earth Power"]},
@@ -2965,7 +2965,7 @@ var SETDEX_SV = {
     "LC Defensive": {"level":5,"ability":"Water Compaction","item":"Eviolite","nature":"Bold","teraType":"Water","ivs":{"at":0},"evs":{"hp":156,"df":36,"sa":196,"sd":76},"moves":["Shore Up","Stealth Rock","Shadow Ball","Earth Power"]}
   },
   "Palossand": {
-    "RU Defensive": {"ability":"Water Compaction","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Water","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Stealth Rock","Scorching Sands","Shadow Ball","Shore Up"]},
+    "RU Defensive": {"ability":"Water Compaction","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Water","evs":{"hp":252,"df":252,"sd":4},"moves":["Stealth Rock","Scorching Sands","Shadow Ball","Shore Up"]},
     "NU Physical Wall": {"ability":"Water Compaction","nature":"Bold","teraType":"Dragon","ivs":{"at":0},"evs":{"hp":252,"df":252,"sp":4},"moves":["Stealth Rock","Scorching Sands","Shadow Ball","Shore Up"]}
   },
   "Minior": {
@@ -4350,8 +4350,8 @@ var SETDEX_SV = {
     "BSS Reg F Choice Item": {"level":50,"ability":"Good as Gold","item":"Choice Scarf","nature":"Timid","teraType":"Flying","ivs":{"at":0},"evs":{"hp":4,"sa":252,"sp":252},"moves":["Shadow Ball","Make It Rain","Trick","Nasty Plot"]},
     "BSS Reg F Nasty Plot": {"level":50,"ability":"Good as Gold","item":"Covert Cloak","nature":"Modest","teraType":"Flying","ivs":{"at":0},"evs":{"hp":156,"sa":124,"sp":228},"moves":["Nasty Plot","Shadow Ball","Make It Rain","Recover"]},
     "BSS Reg F Defensive": {"level":50,"ability":"Good as Gold","item":"Rocky Helmet","nature":"Bold","teraType":"Flying","ivs":{"at":0},"evs":{"hp":252,"df":220,"sp":36},"moves":["Recover","Thunder Wave","Hex","Make It Rain"]},
-    "Monotype Thunder Wave (Steel)": {"ability":"Good as Gold","item":"Heavy-Duty Boots","nature":"Modest","teraType":"Steel","ivs":{"at":0},"evs":{"hp":232,"sa":48,"sd":124,"sp":104},"moves":["Thunder Wave","Hex","Make It Rain","Recover"]},
     "Monotype Choice Scarf (Steel)": {"ability":"Good as Gold","item":"Choice Scarf","nature":"Timid","teraType":"Steel","evs":{"sa":252,"sd":4,"sp":252},"moves":["Make It Rain","Shadow Ball","Trick","Focus Blast"]},
+    "Monotype Thunder Wave (Steel)": {"ability":"Good as Gold","item":"Heavy-Duty Boots","nature":"Modest","teraType":"Steel","ivs":{"at":0},"evs":{"hp":232,"sa":48,"sd":124,"sp":104},"moves":["Thunder Wave","Hex","Make It Rain","Recover"]},
     "Monotype Nasty Plot (Steel)": {"ability":"Good as Gold","item":"Air Balloon","nature":"Timid","teraType":"Steel","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Shadow Ball","Focus Blast","Make It Rain"]},
     "Monotype Nasty Plot (Ghost)": {"ability":"Good as Gold","item":"Air Balloon","nature":"Bold","teraType":"Steel","ivs":{"at":0},"evs":{"hp":252,"df":152,"sp":104},"moves":["Nasty Plot","Make It Rain","Shadow Ball","Recover"]},
     "Monotype Choice Scarf (Ghost)": {"ability":"Good as Gold","item":"Choice Scarf","nature":"Timid","teraType":"Steel","evs":{"sa":252,"sd":4,"sp":252},"moves":["Make It Rain","Shadow Ball","Trick","Focus Blast"]},

@@ -184,7 +184,8 @@ var SETDEX_DPP = {
     "OU Choice Specs": {"ability":"Pressure","item":"Choice Specs","nature":"Modest","ivs":{"hp":30,"at":30,"df":30,"sa":30,"sd":30},"evs":{"hp":4,"sa":252,"sp":252},"moves":["Thunderbolt","Hidden Power Flying","Heat Wave","U-turn"]},
     "OU Specially Defensive": {"ability":"Pressure","item":"Leftovers","nature":"Calm","ivs":{"at":30,"df":30},"evs":{"hp":248,"sd":228,"sp":32},"moves":["Thunderbolt","Hidden Power Ice","Heat Wave","Roost"]},
     "OU Agility": {"ability":"Pressure","item":"Leftovers","nature":"Modest","ivs":{"at":30,"df":30},"evs":{"hp":112,"sa":252,"sp":144},"moves":["Agility","Thunderbolt","Hidden Power Ice","Roost"]},
-    "Doubles OU Showdown Usage": {"ability":"Pressure","item":"Sitrus Berry","nature":"Timid","evs":{"hp":252,"sd":180,"sp":76},"moves":["Thunderbolt","Roost","Thunder Wave","U-turn"]}
+    "Doubles OU Bulky Special Attacker": {"ability":"Pressure","item":"Sitrus Berry","nature":"Modest","ivs":{"at":30,"df":30},"evs":{"hp":248,"sa":128,"sd":24,"sp":108},"moves":["Thunderbolt","Hidden Power Ice","Heat Wave","Protect"]},
+    "Doubles OU Choice Scarf": {"ability":"Pressure","item":"Choice Scarf","nature":"Modest","ivs":{"at":2,"df":30},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunderbolt","Heat Wave","Hidden Power Ice","U-turn"]}
   },
   "Moltres": {
     "OU SubRoost": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":248,"df":200,"sp":60},"moves":["Substitute","Roost","Flamethrower","Toxic"]},
