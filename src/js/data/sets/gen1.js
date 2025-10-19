@@ -167,7 +167,7 @@ var SETDEX_RBY = {
     "Tradebacks OU Wrap": {"moves":["Wrap","Surf","Blizzard","Hyper Beam"]}
   },
   "Graveler": {
-    "PU Tank": {"moves":["Earthquake","Rock Slide","Counter","Explosion"]}
+    "PU Tank": {"moves":["Earthquake","Rock Slide","Substitute","Explosion"]}
   },
   "Golem": {
     "OU Explosion": {"moves":["Rock Slide","Earthquake","Body Slam","Explosion"]},
@@ -217,7 +217,7 @@ var SETDEX_RBY = {
   },
   "Gastly": {
     "NU Hypnosis": {"moves":["Hypnosis","Thunderbolt","Psychic","Explosion"]},
-    "PU Offensive Sleeper": {"moves":["Hypnosis","Thunderbolt","Psychic","Substitute"]}
+    "PU Offensive Sleeper": {"moves":["Hypnosis","Thunderbolt","Psychic","Explosion"]}
   },
   "Haunter": {
     "UU Sleeper": {"moves":["Hypnosis","Night Shade","Thunderbolt","Explosion"]}
