@@ -2430,6 +2430,7 @@ var SETDEX_SV = {
     "Doubles OU Special Attacker": {"ability":"Sheer Force","item":"Life Orb","nature":"Timid","teraType":"Poison","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Earth Power","Sludge Bomb","Sandsear Storm","Protect"]},
     "VGC 2024 Reg F Life Orb": {"level":50,"ability":"Sheer Force","item":"Life Orb","nature":"Modest","teraType":"Poison","ivs":{"at":0},"evs":{"hp":132,"df":4,"sa":116,"sd":4,"sp":252},"moves":["Earth Power","Sludge Bomb","Sandsear Storm","Protect"]},
     "VGC 2024 Reg F Choice Scarf": {"level":50,"ability":"Sheer Force","item":"Choice Scarf","nature":"Timid","teraType":"Ground","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sandsear Storm","Earth Power","Sludge Bomb","U-turn"]},
+    "Monotype Choice Scarf (Flying)": {"ability":"Sheer Force","item":"Choice Scarf","nature":"Naive","teraType":"Ground","evs":{"at":4,"sa":252,"sp":252},"moves":["Earth Power","Sludge Wave","Rock Slide","U-turn"]},
     "Monotype Gravity breaker (Ground)": {"ability":"Sheer Force","item":"Life Orb","nature":"Timid","teraType":"Ground","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Gravity","Earth Power","Focus Blast","Sludge Wave"]},
     "Monotype Choice Scarf Landorus (Ground)": {"ability":"Sheer Force","item":"Choice Scarf","nature":"Modest","teraType":"Ground","evs":{"sa":252,"sd":4,"sp":252},"moves":["Earth Power","Sludge Wave","Focus Blast","U-turn"]},
     "Monotype All-out Attacker (Flying)": {"ability":"Sheer Force","item":"Life Orb","nature":"Naive","teraType":"Ground","evs":{"sa":252,"sd":4,"sp":252},"moves":["Earth Power","Focus Blast","Psychic","Rock Slide"]},
@@ -3027,7 +3028,7 @@ var SETDEX_SV = {
     "PU Swords Dance": {"ability":"Strong Jaw","item":"Mystic Water","nature":"Jolly","teraType":"Dark","evs":{"at":252,"df":4,"sp":252},"moves":["Swords Dance","Psychic Fangs","Aqua Jet","Crunch"]}
   },
   "Kommo-o": {
-    "OU Clangorous Soul": {"ability":"Soundproof","item":"Chesto Berry","nature":"Timid","teraType":"Normal","evs":{"sa":252,"sd":4,"sp":252},"moves":["Clangorous Soul","Boomburst","Flamethrower","Rest"]},
+    "OU Clangorous Soul": {"ability":"Soundproof","item":"Throat Spray","nature":"Timid","teraType":"Normal","evs":{"sa":252,"sd":4,"sp":252},"moves":["Clangorous Soul","Boomburst","Flamethrower","Clanging Scales"]},
     "Doubles OU Iron Defense": {"ability":"Bulletproof","item":"Leftovers","nature":"Bold","teraType":"Fire","evs":{"hp":252,"df":252,"sd":4},"moves":["Iron Defense","Body Press","Flamethrower","Protect"]},
     "Doubles OU Clangorous Soul": {"ability":"Bulletproof","item":"Clear Amulet","nature":"Jolly","teraType":"Fire","evs":{"hp":136,"at":204,"sp":168},"moves":["Drain Punch","Fire Punch","Clangorous Soul","Protect"]},
     "VGC 2024 Reg F Clangorous Soul": {"level":50,"ability":"Overcoat","item":"Throat Spray","nature":"Modest","teraType":"Fire","ivs":{"at":0},"evs":{"hp":100,"sa":220,"sp":188},"moves":["Clangorous Soul","Clanging Scales","Flamethrower","Protect"]},
