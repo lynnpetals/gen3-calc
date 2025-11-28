@@ -1624,7 +1624,6 @@ var SETDEX_SV = {
     "CAP Swords Dance": {"ability":"Poison Heal","item":"Toxic Orb","nature":"Careful","teraType":"Water","evs":{"hp":244,"df":36,"sd":228},"moves":["Swords Dance","Earthquake","Knock Off","Protect"]}
   },
   "Mamoswine": {
-    "OU Lead": {"ability":"Oblivious","item":"Focus Sash","nature":"Jolly","teraType":"Ghost","evs":{"at":252,"df":4,"sp":252},"moves":["Stealth Rock","Earthquake","Ice Shard","Endeavor"]},
     "OU Choice Band": {"ability":"Thick Fat","item":"Choice Band","nature":"Adamant","teraType":"Ice","evs":{"at":252,"df":4,"sp":252},"moves":["Icicle Crash","Earthquake","Ice Shard","Knock Off"]},
     "UU Substitute": {"ability":"Thick Fat","item":"Leftovers","nature":"Adamant","teraType":"Grass","evs":{"at":252,"sd":4,"sp":252},"moves":["Substitute","Earthquake","Icicle Crash","Trailblaze"]},
     "Monotype Choice Band (Ground)": {"ability":"Thick Fat","item":"Choice Band","nature":"Adamant","teraType":"Ice","evs":{"at":252,"sd":4,"sp":252},"moves":["Earthquake","Icicle Crash","Ice Shard","Knock Off"]},
@@ -3122,7 +3121,7 @@ var SETDEX_SV = {
     "National Dex Ubers Ultra Dragon Dance": {"ability":"Prism Armor","item":"Ultranecrozium Z","nature":"Adamant","teraType":"Psychic","evs":{"hp":40,"at":248,"df":80,"sp":140},"moves":["Dragon Dance","Photon Geyser","Earthquake","Stone Edge"]},
     "National Dex Ubers Dragon Dance": {"ability":"Prism Armor","item":"Solganium Z","nature":"Adamant","teraType":"Psychic","evs":{"hp":132,"at":252,"sp":124},"moves":["Dragon Dance","Sunsteel Strike","Earthquake","Stone Edge"]},
     "National Dex Ubers Defensive": {"ability":"Prism Armor","item":"Rocky Helmet","nature":"Careful","teraType":"Poison","evs":{"hp":252,"df":72,"sd":184},"moves":["Sunsteel Strike","Knock Off","Stealth Rock","Morning Sun"]},
-    "National Dex Ubers Ultra Stealth Rock": {"ability":"Prism Armor","item":"Ultranecrozium Z","nature":"Naive","teraType":"Psychic","ivs":{"at":1},"evs":{"hp":8,"df":44,"sa":232,"sp":224},"moves":["Stealth Rock","Photon Geyser","Earth Power","Stone Edge"]},
+    "National Dex Ubers Ultra Stealth Rock": {"ability":"Prism Armor","item":"Ultranecrozium Z","nature":"Naive","teraType":"Psychic","ivs":{"at":4},"evs":{"hp":16,"df":24,"sa":244,"sp":224},"moves":["Stealth Rock","Photon Geyser","Earth Power","Stone Edge"]},
     "Anything Goes Bulky Dragon Dance": {"ability":"Prism Armor","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Fire","evs":{"hp":248,"df":132,"sp":128},"moves":["Dragon Dance","Sunsteel Strike","Earthquake","Moonlight"]},
     "Anything Goes Offensive": {"ability":"Prism Armor","item":"Life Orb","nature":"Jolly","teraType":"Steel","evs":{"at":252,"df":4,"sp":252},"moves":["Dragon Dance","Sunsteel Strike","Earthquake","Stone Edge"]},
     "Balanced Hackmons Showdown Usage": {"ability":"Prankster","item":"Metronome","nature":"Brave","teraType":"Psychic","evs":{"hp":252,"at":252,"df":252,"sa":252,"sd":252},"moves":["Gigaton Hammer","Copycat","Destiny Bond","Swords Dance"]}
@@ -4805,7 +4804,7 @@ var SETDEX_SV = {
     "CAP Contrary Tank": {"ability":"Contrary","item":"Heavy-Duty Boots","nature":"Modest","teraType":"Fairy","evs":{"sa":252,"sd":132,"sp":124},"moves":["Overheat","Earth Power","Giga Drain","Synthesis"]}
   },
   "Fidgit": {
-    "CAP Persistent": {"ability":"Persistent","item":"Focus Sash","nature":"Jolly","teraType":"Water","evs":{"hp":252,"df":4,"sp":252},"moves":["Trick Room","Healing Wish","Stealth Rock","Encore"]}
+    "CAP Persistent": {"ability":"Persistent","item":"Focus Sash","nature":"Bold","teraType":"Water","evs":{"hp":248,"df":224,"sd":36},"moves":["Trick Room","Healing Wish","Stealth Rock","Encore"]}
   },
   "Stratagem": {
     "CAP Meteor Beam": {"ability":"Levitate","item":"Power Herb","nature":"Timid","teraType":"Fire","evs":{"df":4,"sa":252,"sp":252},"moves":["Meteor Beam","Paleo Wave","Energy Ball","Fire Blast"]}
