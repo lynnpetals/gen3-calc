@@ -21,9 +21,7 @@ var SETDEX_ADV = {
   },
   "Wartortle": {
     "PU Defensive": {"ability":"Torrent","item":"Leftovers","nature":"Bold","ivs":{"at":30,"sa":30},"evs":{"hp":248,"df":188,"sp":72},"moves":["Rapid Spin","Surf","Toxic","Hidden Power Grass"]},
-    "ZU Tank": {"ability":"Torrent","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":136,"sa":120},"moves":["Surf","Ice Beam","Toxic","Protect"]},
-    "ZU Defensive": {"ability":"Torrent","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Surf","Seismic Toss","Refresh","Protect"]},
-    "ZU Offensive": {"ability":"Torrent","item":"Salac Berry","nature":"Modest","ivs":{"at":30,"sa":30},"evs":{"hp":4,"df":12,"sa":252,"sp":240},"moves":["Substitute","Hydro Pump","Hidden Power Grass","Rain Dance"]}
+    "ZU Showdown Usage": {"ability":"Torrent","item":"Leftovers","nature":"Bold","evs":{"hp":248,"df":252,"sa":8},"moves":["Surf","Protect","Toxic","Refresh"]}
   },
   "Blastoise": {
     "OU Standard": {"ability":"Torrent","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":148,"sa":68,"sp":40},"moves":["Surf","Ice Beam","Rapid Spin","Roar"]},
