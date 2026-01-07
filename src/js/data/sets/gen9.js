@@ -428,7 +428,7 @@ var SETDEX_SV = {
     "National Dex Ubers Choice Scarf": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Ghost","ivs":{"sp":0},"evs":{"hp":248,"at":8,"df":252},"moves":["Transform"]},
     "National Dex RU Choice Scarf": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Normal","ivs":{"sp":0},"evs":{"hp":248,"at":8,"df":252},"moves":["Transform"]},
     "National Dex Monotype Scarf Imposter": {"ability":"Imposter","item":"Choice Scarf","nature":"Impish","teraType":"Normal","ivs":{"at":30},"evs":{"hp":248,"at":8,"df":252},"moves":["Transform"]},
-    "Anything Goes Revenge Killer": {"ability":"Imposter","item":"Choice Scarf","nature":"Quiet","teraType":"Normal","ivs":{"sp":0},"evs":{"hp":248,"at":8,"sa":252},"moves":["Transform"]},
+    "Anything Goes Revenge Killer": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Normal","ivs":{"sp":0},"evs":{"hp":248,"at":8,"df":252},"moves":["Transform"]},
     "ZU Revenge Killer": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Steel","ivs":{"sp":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Transform"]},
     "UU Showdown Usage": {"ability":"Imposter","item":"Choice Scarf","nature":"Quiet","teraType":"Normal","evs":{"hp":248,"df":8,"sa":252},"moves":["Transform"]}
   },
@@ -927,8 +927,9 @@ var SETDEX_SV = {
     "National Dex Ubers Showdown Usage": {"ability":"Multiscale","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Psychic","evs":{"hp":252,"df":244,"sd":12},"moves":["Roost","Defog","Whirlwind","Toxic"]}
   },
   "Ho-Oh": {
-    "Ubers Defensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Fairy","evs":{"hp":248,"df":252,"sd":8},"moves":["Sacred Fire","Brave Bird","Whirlwind","Recover"]},
-    "Ubers Offensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Adamant","teraType":"Ground","evs":{"hp":104,"at":252,"sp":152},"moves":["Sacred Fire","Brave Bird","Earthquake","Recover"]},
+    "Ubers Defensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Fairy","evs":{"hp":252,"df":252,"sd":4},"moves":["Sacred Fire","Brave Bird","Whirlwind","Recover"]},
+    "Ubers Offensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Flying","evs":{"at":252,"df":4,"sp":252},"moves":["Sacred Fire","Brave Bird","Substitute","Recover"]},
+    "Ubers Choice Scarf": {"ability":"Regenerator","item":"Choice Scarf","nature":"Jolly","teraType":"Fire","evs":{"at":252,"df":4,"sp":252},"moves":["Sacred Fire","Brave Bird","Earthquake","Flare Blitz"]},
     "National Dex Ubers Offensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Adamant","teraType":"Grass","evs":{"hp":248,"at":176,"df":20,"sd":56,"sp":8},"moves":["Sacred Fire","Brave Bird","Defog","Thunder Wave"]},
     "National Dex Ubers Defensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Grass","evs":{"hp":248,"df":204,"sd":56},"moves":["Sacred Fire","Toxic","Defog","Whirlwind"]},
     "National Dex Ubers Choice Band": {"ability":"Regenerator","item":"Choice Band","nature":"Jolly","teraType":"Flying","evs":{"at":252,"df":4,"sp":252},"moves":["Brave Bird","Sacred Fire","Earthquake","Defog"]},
@@ -2110,8 +2111,8 @@ var SETDEX_SV = {
     "OU Sun Sweeper": {"ability":"Chlorophyll","item":"Life Orb","nature":"Adamant","teraType":"Fire","evs":{"at":252,"sd":4,"sp":252},"moves":["Close Combat","Solar Blade","Triple Axel","Tera Blast"]},
     "UU Sun Sweeper": {"ability":"Chlorophyll","item":"Life Orb","nature":"Adamant","teraType":"Ice","evs":{"at":252,"sd":4,"sp":252},"moves":["Solar Blade","Close Combat","Triple Axel","Healing Wish"]},
     "Doubles OU Sun Support": {"ability":"Chlorophyll","item":"Focus Sash","nature":"Jolly","teraType":"Ghost","evs":{"at":252,"df":4,"sp":252},"moves":["Solar Blade","Sleep Powder","After You","Encore"]},
-    "Monotype Victory Dance Sweeper (Grass)": {"ability":"Hustle","item":"Wide Lens","nature":"Jolly","teraType":"Grass","evs":{"at":252,"sd":4,"sp":252},"moves":["Victory Dance","Close Combat","Ice Spinner","Sleep Powder"]},
     "Monotype Victory Dance (Fighting)": {"ability":"Hustle","item":"Wide Lens","nature":"Jolly","teraType":"Grass","evs":{"at":252,"sd":4,"sp":252},"moves":["Victory Dance","Leaf Blade","Close Combat","Ice Spinner"]},
+    "Monotype Victory Dance Sweeper (Grass)": {"ability":"Hustle","item":"Wide Lens","nature":"Jolly","teraType":"Grass","evs":{"at":252,"sd":4,"sp":252},"moves":["Victory Dance","Close Combat","Ice Spinner","Sleep Powder"]},
     "National Dex Monotype Victory Dance (Grass)": {"ability":"Hustle","item":"Fightinium Z","nature":"Jolly","teraType":"Grass","evs":{"at":252,"df":4,"sp":252},"moves":["Victory Dance","Close Combat","Leaf Blade","Ice Spinner"]},
     "RU Showdown Usage": {"ability":"Hustle","item":"Wide Lens","nature":"Jolly","teraType":"Grass","evs":{"at":252,"sd":4,"sp":252},"moves":["Close Combat","Victory Dance","Leaf Blade","Ice Spinner"]},
     "National Dex Doubles Showdown Usage": {"ability":"Chlorophyll","item":"Focus Sash","nature":"Adamant","teraType":"Grass","evs":{"at":252,"sd":4,"sp":252},"moves":["Close Combat","Solar Blade","Sleep Powder","Protect"]},
@@ -2148,10 +2149,10 @@ var SETDEX_SV = {
   },
   "Zoroark-Hisui": {
     "UU Nasty Plot": {"ability":"Illusion","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Ghost","evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Focus Blast","Hyper Voice","Nasty Plot"]},
+    "Monotype Choice Specs (Normal)": {"ability":"Illusion","item":"Choice Specs","nature":"Timid","teraType":"Normal","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Flamethrower","Focus Blast","Trick"]},
     "Monotype Swords Dance (Ghost)": {"ability":"Illusion","item":"Life Orb","nature":"Jolly","teraType":"Normal","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Poltergeist","Low Kick","Shadow Sneak"]},
     "Monotype Choice Scarf (Ghost)": {"ability":"Illusion","item":"Choice Scarf","nature":"Timid","teraType":"Normal","evs":{"df":4,"sa":252,"sp":252},"moves":["Shadow Ball","Focus Blast","Flamethrower","U-turn"]},
     "Monotype Utility (Ghost)": {"ability":"Illusion","item":"Leftovers","nature":"Timid","teraType":"Normal","evs":{"hp":252,"sa":4,"sp":252},"moves":["Hex","Knock Off","Will-O-Wisp","Substitute"]},
-    "Monotype Choice Specs (Normal)": {"ability":"Illusion","item":"Choice Specs","nature":"Timid","teraType":"Normal","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Trick","Shadow Ball","Flamethrower","Focus Blast"]},
     "Monotype Choice Scarf (Normal)": {"ability":"Illusion","item":"Choice Scarf","nature":"Naive","teraType":"Normal","evs":{"at":4,"sa":252,"sp":252},"moves":["Shadow Ball","Flamethrower","Focus Blast","U-turn"]},
     "National Dex UU Nasty Plot": {"ability":"Illusion","item":"Fightinium Z","nature":"Timid","teraType":"Normal","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Shadow Ball","Focus Blast","Grass Knot"]},
     "National Dex UU Choice Specs": {"ability":"Illusion","item":"Choice Specs","nature":"Timid","teraType":"Normal","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Focus Blast","Grass Knot","Trick"]},
@@ -3014,7 +3015,7 @@ var SETDEX_SV = {
   },
   "Lurantis": {
     "PU Pajama Pants": {"ability":"Contrary","item":"Heavy-Duty Boots","nature":"Relaxed","teraType":"Poison","evs":{"hp":252,"df":240,"sp":16},"moves":["Defog","Superpower","Leaf Storm","Synthesis"]},
-    "ZU Defog": {"ability":"Contrary","item":"Heavy-Duty Boots","nature":"Sassy","teraType":"Poison","evs":{"hp":248,"df":8,"sd":252},"moves":["Leaf Storm","Superpower","Synthesis","Defog"]}
+    "ZU Defog": {"ability":"Contrary","item":"Heavy-Duty Boots","nature":"Sassy","teraType":"Poison","evs":{"hp":248,"df":8,"sd":252},"moves":["Defog","Synthesis","Leaf Storm","Superpower"]}
   },
   "Salazzle": {
     "RU Substitute + Toxic": {"ability":"Corrosion","item":"Leftovers","nature":"Timid","teraType":"Dark","ivs":{"at":0},"evs":{"hp":248,"sa":8,"sp":252},"moves":["Flamethrower","Substitute","Protect","Toxic"]},
