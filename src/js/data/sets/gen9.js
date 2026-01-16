@@ -2336,6 +2336,7 @@ var SETDEX_SV = {
     "National Dex UU Showdown Usage": {"ability":"Overcoat","item":"Leftovers","nature":"Careful","teraType":"Dark","evs":{"hp":196,"sd":252,"sp":60},"moves":["Roost","Taunt","Brave Bird","Knock Off"]}
   },
   "Hydreigon": {
+    "OU Choice Specs": {"ability":"Levitate","item":"Choice Specs","nature":"Timid","teraType":"Steel","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Draco Meteor","Flash Cannon","Earth Power"]},
     "OU Nasty Plot": {"ability":"Levitate","item":"Leftovers","nature":"Timid","teraType":"Steel","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Draco Meteor","Flash Cannon","Substitute"]},
     "UU Nasty Plot": {"ability":"Levitate","item":"Leftovers","nature":"Timid","teraType":"Poison","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Draco Meteor","Flamethrower","Thunder Wave"]},
     "UU Choice Scarf": {"ability":"Levitate","item":"Choice Scarf","nature":"Timid","teraType":"Dragon","evs":{"sa":252,"sd":4,"sp":252},"moves":["Draco Meteor","Dark Pulse","Fire Blast","U-turn"]},
