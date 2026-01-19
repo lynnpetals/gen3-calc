@@ -421,7 +421,7 @@ var SETDEX_SV = {
     "Ubers Choice Scarf": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Fairy","ivs":{"sp":0},"evs":{"hp":252,"at":4,"df":252},"moves":["Transform"]},
     "RU Imposter": {"ability":"Imposter","item":"Choice Scarf","nature":"Quiet","teraType":"Steel","ivs":{"sp":0},"evs":{"hp":248,"df":8,"sa":252},"moves":["Transform"]},
     "NU Among Us (Imposter)": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Steel","ivs":{"sp":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Transform"]},
-    "PU Choice Scarf": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Ghost","evs":{"hp":248,"df":252,"sd":8},"moves":["Transform"]},
+    "PU Revenge Killer": {"ability":"Imposter","item":"Choice Scarf","nature":"Sassy","teraType":"Steel","ivs":{"sp":0},"evs":{"hp":248,"at":8,"df":252},"moves":["Transform"]},
     "VGC 2024 Reg F Choice Scarf": {"level":50,"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Ghost","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Transform"]},
     "BSS Reg F Revenge Killer": {"level":50,"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Ghost","ivs":{"sp":0},"evs":{"hp":252,"at":4,"df":252},"moves":["Transform"]},
     "Monotype Choice Scarf Revenge Killer": {"ability":"Imposter","item":"Choice Scarf","nature":"Relaxed","teraType":"Normal","ivs":{"sp":0},"evs":{"hp":248,"at":8,"df":252},"moves":["Transform"]},
@@ -1449,7 +1449,7 @@ var SETDEX_SV = {
     "LC Rain Wallbreaker": {"level":5,"ability":"Swift Swim","item":"Oran Berry","nature":"Jolly","teraType":"Water","evs":{"at":236,"sd":36,"sp":236},"moves":["Bulk Up","Wave Crash","Ice Spinner","Brick Break"]}
   },
   "Floatzel": {
-    "PU I Need My Floatie": {"ability":"Water Veil","item":"Choice Band","nature":"Jolly","teraType":"Water","evs":{"at":252,"df":4,"sp":252},"moves":["Wave Crash","Aqua Jet","Flip Turn","Ice Spinner"]},
+    "PU Choice Band": {"ability":"Water Veil","item":"Choice Band","nature":"Jolly","teraType":"Water","evs":{"at":252,"df":4,"sp":252},"moves":["Wave Crash","Flip Turn","Aqua Jet","Ice Spinner"]},
     "BSS Reg F Swift Weasel": {"level":50,"ability":"Swift Swim","item":"Choice Band","nature":"Adamant","teraType":"Water","evs":{"hp":60,"at":252,"sp":196},"moves":["Wave Crash","Liquidation","Aqua Jet","Ice Spinner"]}
   },
   "Shellos": {
@@ -4154,7 +4154,7 @@ var SETDEX_SV = {
     "Balanced Hackmons Magic Bounce": {"ability":"Magic Bounce","item":"Black Sludge","nature":"Sassy","teraType":"Poison","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":252,"sa":252,"sd":252},"moves":["Shore Up","Ruination","Topsy-Turvy","Teleport"]}
   },
   "Farigiraf": {
-    "PU Offensive Trick Room": {"ability":"Armor Tail","item":"Leftovers","nature":"Quiet","teraType":"Fire","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":4,"sa":252},"moves":["Trick Room","Nasty Plot","Psyshock","Tera Blast"]},
+    "PU Offensive Trick Room": {"ability":"Armor Tail","item":"Leftovers","nature":"Quiet","teraType":"Fairy","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":4,"sa":252},"moves":["Trick Room","Nasty Plot","Psyshock","Tera Blast"]},
     "Doubles OU TR Attacker": {"ability":"Armor Tail","item":"Safety Goggles","nature":"Quiet","teraType":"Fairy","evs":{"hp":88,"df":84,"sa":252,"sd":84},"moves":["Trick Room","Psychic","Tera Blast","Protect"]},
     "VGC 2024 Reg F Bulky Support": {"level":50,"ability":"Armor Tail","item":"Electric Seed","nature":"Calm","teraType":"Ground","ivs":{"at":0},"evs":{"hp":228,"df":100,"sd":180},"moves":["Psychic","Foul Play","Trick Room","Helping Hand"]},
     "VGC 2024 Reg F Throat Spray": {"level":50,"ability":"Armor Tail","item":"Throat Spray","nature":"Modest","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":180,"df":92,"sa":156,"sd":76,"sp":4},"moves":["Trick Room","Psychic","Hyper Voice","Protect"]},
