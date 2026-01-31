@@ -12,7 +12,7 @@ var SETDEX_RBY = {
     "UU Showdown Usage": {"moves":["Earthquake","Fire Blast","Swords Dance","Hyper Beam"]}
   },
   "Blastoise": {
-    "NU Don't Use Blastoise": {"moves":["Surf","Blizzard","Body Slam","Seismic Toss"]}
+    "NU Bulky Attacker": {"moves":["Surf","Body Slam","Seismic Toss","Blizzard"]}
   },
   "Pidgeot": {
     "PU Offensive": {"moves":["Double-Edge","Hyper Beam","Agility","Sand Attack"]}
@@ -303,10 +303,10 @@ var SETDEX_RBY = {
   },
   "Porygon": {
     "OU Wall": {"moves":["Recover","Thunder Wave","Ice Beam","Thunderbolt"]},
+    "NU Support": {"moves":["Thunder Wave","Recover","Double-Edge","Blizzard"]},
     "PU Support": {"moves":["Thunder Wave","Recover","Blizzard","Psychic"]},
     "PU Agility": {"moves":["Agility","Recover","Psychic","Thunder Wave"]},
-    "Tradebacks OU Bulky Support": {"moves":["Recover","Thunder Wave","Ice Beam","Thunderbolt"]},
-    "NU Showdown Usage": {"moves":["Recover","Thunder Wave","Thunderbolt","Hyper Beam"]}
+    "Tradebacks OU Bulky Support": {"moves":["Recover","Thunder Wave","Ice Beam","Thunderbolt"]}
   },
   "Omastar": {
     "OU Tank": {"moves":["Hydro Pump","Ice Beam","Body Slam","Rest"]},
