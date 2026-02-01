@@ -198,7 +198,8 @@ var SETDEX_RBY = {
     "Tradebacks OU Standard": {"moves":["Sleep Powder","Psychic","Explosion","Double-Edge"]}
   },
   "Hitmonlee": {
-    "1v1 Offensive": {"moves":["High Jump Kick","Jump Kick","Rolling Kick","Meditate"]}
+    "1v1 Offensive": {"moves":["High Jump Kick","Jump Kick","Rolling Kick","Meditate"]},
+    "OU Showdown Usage": {"moves":["High Jump Kick","Body Slam","Counter","Mega Kick"]}
   },
   "Rhydon": {
     "OU Standard": {"moves":["Earthquake","Rock Slide","Body Slam","Substitute"]},
@@ -374,6 +375,9 @@ var SETDEX_RBY = {
     "Ubers GGMew (Reflect Sweeper)": {"moves":["Reflect","Swords Dance","Body Slam","Soft-Boiled"]},
     "Ubers Explosive Lure": {"moves":["Thunder Wave","Swords Dance","Body Slam","Explosion"]},
     "Ubers Lutrew / PaRaSiTe Mew (Transform)": {"moves":["Transform","Thunder Wave","Soft-Boiled","Reflect"]}
+  },
+  "Onix": {
+    "OU Showdown Usage": {"moves":["Bind","Earthquake","Rest","Toxic"]}
   },
   "Omanyte": {
     "PU Showdown Usage": {"moves":["Blizzard","Body Slam","Rest","Surf"]}
