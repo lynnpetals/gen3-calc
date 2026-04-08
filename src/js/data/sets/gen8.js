@@ -1608,8 +1608,9 @@ var SETDEX_SS = {
     "Battle Stadium Singles Offensive": {"level":50,"ability":"Solid Rock","item":"Weakness Policy","nature":"Adamant","evs":{"hp":252,"at":252,"sp":4},"moves":["Rock Blast","Earthquake","Swords Dance","Ice Punch"]},
     "Battle Stadium Singles Focus Sash": {"level":50,"ability":"Solid Rock","item":"Focus Sash","nature":"Adamant","evs":{"hp":252,"at":252,"sp":4},"moves":["Rock Blast","Earthquake","Metal Burst","Stealth Rock"]},
     "1v1 Choice Band": {"ability":"Solid Rock","item":"Choice Band","nature":"Adamant","evs":{"at":216,"df":128,"sp":164},"moves":["Earthquake","Rock Wrecker","Rock Blast","Ice Punch"]},
-    "1v1 Anti-Galarian Darmanitan": {"ability":"Solid Rock","item":"Assault Vest","nature":"Impish","ivs":{"sp":26},"evs":{"hp":252,"at":76,"df":88,"sd":92},"moves":["Rock Wrecker","Earthquake","Avalanche","Rock Blast"]},
-    "1v1 Anti Magnezone": {"ability":"Solid Rock","item":"Assault Vest","nature":"Careful","evs":{"hp":252,"at":36,"sd":96,"sp":124},"moves":["Rock Wrecker","Earthquake","Bulldoze","Avalanche"]},
+    "1v1 Standard Assault Vest": {"ability":"Solid Rock","item":"Assault Vest","nature":"Impish","ivs":{"sp":26},"evs":{"hp":252,"at":76,"df":88,"sd":92},"moves":["Rock Wrecker","Earthquake","Avalanche","Rock Blast"]},
+    "1v1 Anti-Magnezone": {"ability":"Solid Rock","item":"Assault Vest","nature":"Careful","evs":{"hp":152,"at":84,"df":12,"sd":136,"sp":124},"moves":["Rock Wrecker","Earthquake","Bulldoze","Avalanche"]},
+    "1v1 Custap Berry": {"ability":"Solid Rock","item":"Custap Berry","nature":"Adamant","ivs":{"df":16,"sd":25},"evs":{"at":252,"sp":252},"moves":["Rock Wrecker","Earthquake","Swords Dance","Endure"]},
     "National Dex Monotype Showdown Usage": {"ability":"Solid Rock","item":"Weakness Policy","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Earthquake","Fire Punch","Ice Punch","Rock Slide"]}
   },
   "Tangrowth": {
