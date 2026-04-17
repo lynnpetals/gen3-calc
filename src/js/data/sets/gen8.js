@@ -873,10 +873,11 @@ var SETDEX_SS = {
     "National Dex Swords Dance": {"ability":"Skill Link","item":"Heracronite","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Close Combat","Rock Blast","Pin Missile"]}
   },
   "Sneasel": {
+    "RU Swords Dance": {"ability":"Inner Focus","item":"Heavy-Duty Boots","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Triple Axel","Knock Off","Ice Shard","Swords Dance"]},
+    "RU Choice Band": {"ability":"Inner Focus","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Triple Axel","Knock Off","Ice Shard","Low Kick"]},
     "NU Wallbreaker": {"ability":"Inner Focus","item":"Heavy-Duty Boots","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Triple Axel","Knock Off","Ice Shard"]},
     "PU Swords Dance": {"ability":"Inner Focus","item":"Heavy-Duty Boots","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Knock Off","Triple Axel","Ice Shard"]},
-    "PU Choice Band": {"ability":"Inner Focus","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Triple Axel","Ice Shard","Low Kick"]},
-    "RU Showdown Usage": {"ability":"Inner Focus","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Triple Axel","Low Kick","Ice Shard"]}
+    "PU Choice Band": {"ability":"Inner Focus","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Knock Off","Triple Axel","Ice Shard","Low Kick"]}
   },
   "Piloswine": {
     "Monotype Stealth Rock (Ice)": {"ability":"Thick Fat","item":"Eviolite","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Stealth Rock","Earthquake","Rock Slide","Ice Shard"]},
@@ -2099,6 +2100,7 @@ var SETDEX_SS = {
     "UU Life Orb + 3 Attacks": {"ability":"Magic Guard","item":"Life Orb","nature":"Modest","evs":{"hp":188,"df":32,"sa":252,"sd":36},"moves":["Psychic","Thunder","Focus Blast","Recover"]},
     "RU Defensive Calm Mind": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Psyshock","Focus Blast","Recover"]},
     "RU Assault Vest": {"ability":"Regenerator","item":"Assault Vest","nature":"Modest","evs":{"hp":248,"sa":24,"sd":236},"moves":["Psyshock","Future Sight","Focus Blast","Shadow Ball"]},
+    "RU Rocky Helmet": {"ability":"Magic Guard","item":"Rocky Helmet","nature":"Bold","evs":{"hp":252,"df":252,"sa":4},"moves":["Psychic","Recover","Knock Off","Toxic"]},
     "Monotype Stored Power": {"ability":"Magic Guard","item":"Leftovers","nature":"Bold","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Recover","Stored Power","Iron Defense"]},
     "National Dex Calm Mind": {"ability":"Magic Guard","item":"Fightinium Z","nature":"Bold","evs":{"hp":252,"df":212,"sp":44},"moves":["Calm Mind","Psyshock","Focus Blast","Recover"]},
     "1v1 Stored Power": {"ability":"Magic Guard","item":"Sitrus Berry","nature":"Bold","evs":{"hp":244,"df":180,"sd":84},"moves":["Acid Armor","Calm Mind","Stored Power","Recover"]}
@@ -3626,7 +3628,7 @@ var SETDEX_SS = {
   },
   "Polteageist": {
     "OU Shell Smash": {"ability":"Weak Armor","item":"Focus Sash","nature":"Modest","evs":{"sa":252,"sd":4,"sp":252},"moves":["Shell Smash","Shadow Ball","Stored Power","Giga Drain"]},
-    "RU Shell Smash": {"ability":"Cursed Body","item":"White Herb","nature":"Timid","evs":{"hp":28,"df":32,"sa":252,"sp":196},"moves":["Shell Smash","Shadow Ball","Strength Sap","Giga Drain"]},
+    "RU Shell Smash": {"ability":"Cursed Body","item":"White Herb","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Shell Smash","Shadow Ball","Strength Sap","Giga Drain"]},
     "Monotype Shell Smash": {"ability":"Weak Armor","item":"White Herb","nature":"Timid","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Shell Smash","Shadow Ball","Stored Power","Giga Drain"]},
     "National Dex Showdown Usage": {"ability":"Weak Armor","item":"Focus Sash","nature":"Modest","evs":{"df":4,"sa":252,"sp":252},"moves":["Shell Smash","Stored Power","Shadow Ball","Giga Drain"]},
     "UU Showdown Usage": {"ability":"Weak Armor","item":"Focus Sash","nature":"Modest","evs":{"hp":4,"sa":252,"sp":252},"moves":["Shell Smash","Shadow Ball","Stored Power","Giga Drain"]}
@@ -3734,6 +3736,7 @@ var SETDEX_SS = {
     "PU Showdown Usage": {"ability":"Hunger Switch","item":"Heavy-Duty Boots","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Aura Wheel","Rapid Spin","Parting Shot","Psychic Fangs"]}
   },
   "Copperajah": {
+    "RU Offensive": {"ability":"Heavy Metal","item":"Assault Vest","nature":"Adamant","evs":{"hp":108,"at":148,"sd":252},"moves":["Heavy Slam","Power Whip","Earthquake","Substitute"]},
     "NU Assault Vest": {"ability":"Heavy Metal","item":"Assault Vest","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Heavy Slam","Power Whip","Stone Edge","Superpower"]},
     "NU Stealth Rock": {"ability":"Heavy Metal","item":"Leftovers","nature":"Adamant","evs":{"hp":156,"at":16,"sd":252,"sp":84},"moves":["Stealth Rock","Heavy Slam","Power Whip","Rock Slide"]}
   },
