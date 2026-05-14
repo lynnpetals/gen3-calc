@@ -852,7 +852,8 @@ var SETDEX_ADV = {
     "Doubles OU Choice Band": {"ability":"Rock Head","item":"Choice Band","nature":"Jolly","ivs":{"df":30,"sd":30,"sp":30},"evs":{"hp":76,"at":252,"sp":180},"moves":["Earthquake","Hidden Power Rock","Double-Edge","Aerial Ace"]}
   },
   "Snorlax": {
-    "OU CurseLax": {"ability":"Immunity","item":"Leftovers","nature":"Careful","evs":{"hp":144,"at":96,"df":132,"sd":136},"moves":["Curse","Rest","Return","Shadow Ball"]},
+    "OU Offensive Curse": {"ability":"Immunity","item":"Leftovers","nature":"Adamant","evs":{"hp":204,"at":224,"df":60,"sd":8,"sp":12},"moves":["Curse","Body Slam","Shadow Ball","Earthquake"]},
+    "OU CurseRestLax": {"ability":"Immunity","item":"Leftovers","nature":"Careful","evs":{"hp":144,"at":96,"df":132,"sd":136},"moves":["Curse","Rest","Return","Shadow Ball"]},
     "OU Utility Lax": {"ability":"Immunity","item":"Leftovers","nature":"Adamant","evs":{"hp":92,"at":116,"df":144,"sd":144,"sp":12},"moves":["Self-Destruct","Body Slam","Shadow Ball","Focus Punch"]},
     "Ubers Offensive CurseLax": {"ability":"Immunity","item":"Leftovers","nature":"Careful","evs":{"hp":120,"df":136,"sd":252},"moves":["Curse","Body Slam","Protect","Self-Destruct"]},
     "Ubers Amnesia CurseLax": {"ability":"Immunity","item":"Leftovers","nature":"Careful","evs":{"hp":208,"df":252,"sd":48},"moves":["Curse","Amnesia","Rest","Body Slam"]},

@@ -291,6 +291,7 @@ var SETDEX_RBY = {
   },
   "Vaporeon": {
     "Tradebacks OU Growth": {"moves":["Growth","Surf","Acid Armor","Rest"]},
+    "OU Showdown Usage": {"moves":["Rest","Sand Attack","Ice Beam","Haze"]},
     "UU Showdown Usage": {"moves":["Rest","Surf","Acid Armor","Ice Beam"]}
   },
   "Jolteon": {
