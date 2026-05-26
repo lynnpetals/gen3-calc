@@ -1842,7 +1842,7 @@ var SETDEX_SV = {
   },
   "Darkrai": {
     "OU Nasty Plot": {"ability":"Bad Dreams","item":"Leftovers","nature":"Timid","teraType":"Poison","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Dark Pulse","Sludge Bomb","Ice Beam"]},
-    "OU Choice Scarf": {"ability":"Bad Dreams","item":"Choice Scarf","nature":"Timid","teraType":"Poison","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Sludge Bomb","Ice Beam","Trick"]},
+    "OU Choice Scarf": {"ability":"Bad Dreams","item":"Choice Scarf","nature":"Timid","teraType":"Poison","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Sludge Bomb","Trick","Ice Beam"]},
     "OU Boots Attacker": {"ability":"Bad Dreams","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Poison","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Ice Beam","Sludge Bomb","Will-O-Wisp"]},
     "OU Choice Specs": {"ability":"Bad Dreams","item":"Choice Specs","nature":"Timid","teraType":"Dark","evs":{"df":4,"sa":252,"sp":252},"moves":["Dark Pulse","Sludge Bomb","Focus Blast","Ice Beam"]},
     "OU All-Out Attacker": {"ability":"Bad Dreams","item":"Life Orb","nature":"Timid","teraType":"Poison","evs":{"sa":252,"sd":4,"sp":252},"moves":["Dark Pulse","Ice Beam","Sludge Bomb","Focus Blast"]},
@@ -4436,7 +4436,7 @@ var SETDEX_SV = {
   },
   "Ting-Lu": {
     "OU Defensive Utility": {"ability":"Vessel of Ruin","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":252,"df":4,"sd":252},"moves":["Stealth Rock","Earthquake","Ruination","Whirlwind"]},
-    "OU Resting-Lu": {"ability":"Vessel of Ruin","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":252,"df":4,"sd":252},"moves":["Earthquake","Rest","Ruination","Sleep Talk"]},
+    "OU Resting-Lu (Rest)": {"ability":"Vessel of Ruin","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":252,"df":4,"sd":252},"moves":["Rest","Earthquake","Ruination","Sleep Talk"]},
     "Ubers Special Wall": {"ability":"Vessel of Ruin","item":"Leftovers","nature":"Careful","teraType":"Steel","evs":{"hp":252,"at":4,"sd":252},"moves":["Earthquake","Ruination","Spikes","Whirlwind"]},
     "VGC 2024 Reg F Sand Tomb Support": {"level":50,"ability":"Vessel of Ruin","item":"Rocky Helmet","nature":"Careful","teraType":"Poison","evs":{"hp":76,"at":4,"df":172,"sd":252,"sp":4},"moves":["Sand Tomb","Ruination","Taunt","Stomping Tantrum"]},
     "VGC 2024 Reg F Assault Vest": {"level":50,"ability":"Vessel of Ruin","item":"Assault Vest","nature":"Adamant","teraType":"Poison","evs":{"hp":100,"at":76,"df":116,"sd":212,"sp":4},"moves":["Stomping Tantrum","Ruination","Body Press","Heavy Slam"]},
@@ -4818,7 +4818,7 @@ var SETDEX_SV = {
     "Ubers Showdown Usage": {"ability":"Tera Shift","item":"Heavy-Duty Boots","nature":"Impish","teraType":"Stellar","evs":{"hp":252,"df":252,"sp":4},"moves":["Rapid Spin","Toxic","Stealth Rock","Roar"]}
   },
   "Pecharunt": {
-    "OU Pivot": {"ability":"Poison Puppeteer","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Dark","ivs":{"at":0},"evs":{"hp":252,"df":228,"sp":28},"moves":["Malignant Chain","Foul Play","Parting Shot","Recover"]},
+    "OU Pivot": {"ability":"Poison Puppeteer","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Dark","ivs":{"at":0},"evs":{"hp":252,"df":228,"sp":28},"moves":["Parting Shot","Recover","Malignant Chain","Foul Play"]},
     "OU Nasty Plot": {"ability":"Poison Puppeteer","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Ghost","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Malignant Chain","Shadow Ball","Recover"]},
     "Monotype Physically Defensive (Poison)": {"ability":"Poison Puppeteer","item":"Heavy-Duty Boots","nature":"Bold","teraType":"Poison","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Hex","Malignant Chain","Nasty Plot","Recover"]},
     "Monotype Physically Defensive (Ghost)": {"ability":"Poison Puppeteer","item":"Black Sludge","nature":"Bold","teraType":"Poison","ivs":{"at":0},"evs":{"hp":252,"df":228,"sp":28},"moves":["Malignant Chain","Shadow Ball","Parting Shot","Recover"]},
