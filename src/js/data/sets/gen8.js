@@ -1562,7 +1562,8 @@ var SETDEX_SS = {
     "RU Nasty Plot": {"ability":"Dry Skin","item":"Life Orb","nature":"Timid","evs":{"df":4,"sa":252,"sp":252},"moves":["Nasty Plot","Focus Blast","Sludge Bomb","Shadow Ball"]},
     "NU Swords Dance": {"ability":"Dry Skin","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Gunk Shot","Low Kick","Sucker Punch"]},
     "NU Nasty Plot": {"ability":"Dry Skin","item":"Life Orb","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Focus Blast","Sludge Bomb","Vacuum Wave"]},
-    "Monotype Swords Dance (Fighting)": {"ability":"Dry Skin","item":"Life Orb","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Earthquake","Gunk Shot","Sucker Punch"]}
+    "Monotype Swords Dance (Fighting)": {"ability":"Dry Skin","item":"Life Orb","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Earthquake","Gunk Shot","Sucker Punch"]},
+    "OU Showdown Usage": {"ability":"Dry Skin","item":"Black Sludge","nature":"Jolly","evs":{"hp":52,"at":252,"sp":204},"moves":["Drain Punch","Gunk Shot","Swords Dance","Ice Punch"]}
   },
   "Snover": {
     "LC Hail Setter": {"level":5,"ability":"Snow Warning","item":"Icy Rock","nature":"Naive","evs":{"hp":36,"at":20,"df":36,"sa":180,"sd":36,"sp":196},"moves":["Blizzard","Giga Drain","Ice Shard","Protect"]}
@@ -1991,7 +1992,8 @@ var SETDEX_SS = {
     "1v1 Occa Berry": {"ability":"Prankster","item":"Occa Berry","nature":"Careful","evs":{"hp":240,"df":100,"sd":168},"moves":["Leech Seed","Substitute","Protect","Taunt"]},
     "1v1 Kebia Berry": {"ability":"Prankster","item":"Kebia Berry","nature":"Bold","evs":{"hp":248,"df":56,"sd":204},"moves":["Leech Seed","Substitute","Protect","Taunt"]},
     "RU Showdown Usage": {"ability":"Prankster","item":"Leftovers","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Defog","Moonblast","Encore","U-turn"]},
-    "NU Showdown Usage": {"ability":"Prankster","item":"Heat Rock","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Encore","U-turn","Sunny Day","Defog"]}
+    "NU Showdown Usage": {"ability":"Prankster","item":"Heat Rock","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Encore","U-turn","Sunny Day","Defog"]},
+    "OU Showdown Usage": {"ability":"Prankster","item":"Light Clay","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Tailwind","Light Screen","Taunt","Safeguard"]}
   },
   "Lilligant": {
     "ZU Quiver Dance": {"ability":"Chlorophyll","item":"Life Orb","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Quiver Dance","Giga Drain","Pollen Puff","Sleep Powder"]},
@@ -2556,8 +2558,7 @@ var SETDEX_SS = {
     "UU Swords Dance": {"ability":"Huge Power","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Quick Attack","Earthquake","Fire Punch"]},
     "Monotype Wallbreaker (Normal)": {"ability":"Huge Power","item":"Choice Band","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Body Slam","Earthquake","Quick Attack","Fire Punch"]},
     "1v1 Life Orb": {"ability":"Huge Power","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":232,"sd":40,"sp":232},"moves":["Swords Dance","Earthquake","Quick Attack","Gunk Shot"]},
-    "National Dex Monotype Showdown Usage": {"ability":"Huge Power","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Earthquake","Quick Attack","Fire Punch","Swords Dance"]},
-    "OU Showdown Usage": {"ability":"Huge Power","item":"Choice Scarf","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Earthquake","Fire Punch","Body Slam","Knock Off"]}
+    "National Dex Monotype Showdown Usage": {"ability":"Huge Power","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Earthquake","Quick Attack","Fire Punch","Swords Dance"]}
   },
   "Talonflame": {
     "RU Utility Pivot": {"ability":"Flame Body","item":"Heavy-Duty Boots","nature":"Jolly","evs":{"hp":16,"at":252,"sp":240},"moves":["Will-O-Wisp","Brave Bird","U-turn","Roost"]},
@@ -2947,8 +2948,7 @@ var SETDEX_SS = {
     "PU Offensive Support": {"ability":"Shield Dust","item":"Heavy-Duty Boots","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sticky Web","Moonblast","Stun Spore","U-turn"]},
     "Monotype Sticky Web Lead (Fairy)": {"ability":"Shield Dust","item":"Focus Sash","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sticky Web","Bug Buzz","Stun Spore","Moonblast"]},
     "National Dex Showdown Usage": {"ability":"Shield Dust","item":"Focus Sash","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sticky Web","Stun Spore","Moonblast","Hidden Power Fire"]},
-    "National Dex Monotype Showdown Usage": {"ability":"Shield Dust","item":"Focus Sash","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sticky Web","Stun Spore","Moonblast","Bug Buzz"]},
-    "OU Showdown Usage": {"ability":"Shield Dust","item":"Choice Scarf","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sticky Web","Moonblast","Trick","Defog"]}
+    "National Dex Monotype Showdown Usage": {"ability":"Shield Dust","item":"Focus Sash","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Sticky Web","Stun Spore","Moonblast","Bug Buzz"]}
   },
   "Lycanroc": {
     "RU Lead": {"ability":"Steadfast","item":"Focus Sash","nature":"Naive","ivs":{"hp":0,"df":0,"sd":0},"evs":{"at":252,"sp":252},"moves":["Stealth Rock","Taunt","Accelerock","Endeavor"]},
