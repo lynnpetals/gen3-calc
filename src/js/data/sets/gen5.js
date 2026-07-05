@@ -628,6 +628,7 @@ var SETDEX_BW = {
     "UU CroCune": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Calm Mind","Rest","Sleep Talk","Scald"]},
     "UU RestTalk": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Rest","Sleep Talk","Scald","Roar"]},
     "Doubles OU Calm Mind": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":216,"sd":40},"moves":["Scald","Calm Mind","Substitute","Protect"]},
+    "VGC 2013 Bulky Support": {"level":50,"ability":"Pressure","item":"Sitrus Berry","nature":"Calm","ivs":{"at":0},"evs":{"hp":252,"df":4,"sa":4,"sd":12,"sp":236},"moves":["Scald","Ice Beam","Snarl","Tailwind"]},
     "1v1 Showdown Usage": {"ability":"Pressure","item":"Choice Specs","nature":"Relaxed","evs":{"hp":248,"df":8,"sa":252},"moves":["Surf","Ice Beam","Calm Mind","Whirlpool"]}
   },
   "Swellow": {
