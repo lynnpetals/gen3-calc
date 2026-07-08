@@ -222,7 +222,8 @@ var SETDEX_BW = {
   },
   "Hitmontop": {
     "UU Rapid Spin": {"ability":"Intimidate","item":"Leftovers","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Rapid Spin","Foresight","Sucker Punch","Close Combat"]},
-    "Doubles OU Offensive Utility": {"ability":"Intimidate","item":"Fighting Gem","nature":"Adamant","evs":{"hp":192,"at":252,"sp":64},"moves":["Fake Out","Close Combat","Toxic","Wide Guard"]}
+    "Doubles OU Offensive Utility": {"ability":"Intimidate","item":"Fighting Gem","nature":"Adamant","evs":{"hp":192,"at":252,"sp":64},"moves":["Fake Out","Close Combat","Toxic","Wide Guard"]},
+    "VGC 2013 Offensive Support": {"level":50,"ability":"Intimidate","item":"Fighting Gem","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Fake Out","Close Combat","Sucker Punch","Wide Guard"]}
   },
   "Treecko": {
     "LC Attacking Lead": {"level":5,"ability":"Overgrow","item":"Eviolite","nature":"Hasty","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":36,"sa":240,"sp":200},"moves":["Leaf Storm","Hidden Power Fire","Giga Drain","Quick Attack"]},
@@ -1699,7 +1700,8 @@ var SETDEX_BW = {
     "UU Offensive Dragon Dance": {"ability":"Swift Swim","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Dragon Dance","Outrage","Waterfall","Rain Dance"]},
     "UU Choice Specs": {"ability":"Swift Swim","item":"Choice Specs","nature":"Modest","ivs":{"sa":30},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Draco Meteor","Hydro Pump","Dragon Pulse","Hidden Power Electric"]},
     "UU ChestoRest": {"ability":"Swift Swim","item":"Chesto Berry","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Rest","Dragon Dance","Outrage","Waterfall"]},
-    "Doubles OU Weather Attacker": {"ability":"Swift Swim","item":"Life Orb","nature":"Modest","evs":{"df":4,"sa":252,"sp":252},"moves":["Muddy Water","Draco Meteor","Substitute","Protect"]}
+    "Doubles OU Weather Attacker": {"ability":"Swift Swim","item":"Life Orb","nature":"Modest","evs":{"df":4,"sa":252,"sp":252},"moves":["Muddy Water","Draco Meteor","Substitute","Protect"]},
+    "VGC 2013 Rain Sweeper": {"level":50,"ability":"Swift Swim","item":"Life Orb","nature":"Modest","ivs":{"at":0},"evs":{"hp":4,"sa":252,"sp":252},"moves":["Draco Meteor","Muddy Water","Substitute","Protect"]}
   },
   "Donphan": {
     "OU Support": {"ability":"Sturdy","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sp":4},"moves":["Rapid Spin","Earthquake","Stealth Rock","Ice Shard"]},
