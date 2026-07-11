@@ -2747,6 +2747,7 @@ var SETDEX_BW = {
     "OU Bulk Up": {"ability":"Guts","item":"Leftovers","nature":"Careful","evs":{"hp":252,"at":4,"sd":252},"moves":["Bulk Up","Mach Punch","Drain Punch","Payback"]},
     "OU Four Attacks": {"ability":"Iron Fist","item":"Life Orb","nature":"Adamant","evs":{"hp":20,"at":236,"sd":252},"moves":["Drain Punch","Ice Punch","Thunder Punch","Mach Punch"]},
     "Doubles OU Physical Attacker": {"ability":"Iron Fist","item":"Life Orb","nature":"Brave","ivs":{"sp":0},"evs":{"hp":144,"at":252,"sd":112},"moves":["Hammer Arm","Mach Punch","Ice Punch","Detect"]},
+    "VGC 2013 Trick Room Sweeper": {"level":50,"ability":"Iron Fist","item":"Life Orb","nature":"Brave","ivs":{"sp":0},"evs":{"hp":68,"at":252,"sd":188},"moves":["Hammer Arm","Mach Punch","Ice Punch","Detect"]},
     "1v1 Fighting Gem": {"ability":"Iron Fist","item":"Fighting Gem","nature":"Adamant","evs":{"hp":248,"at":132,"sd":128},"moves":["Hammer Arm","Mach Punch","Bulk Up","Stone Edge"]}
   },
   "Tympole": {
