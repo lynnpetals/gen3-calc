@@ -818,7 +818,7 @@ var SETDEX_SS = {
     "ZU Coil": {"ability":"Serene Grace","item":"Leftovers","nature":"Careful","evs":{"at":252,"sd":252,"sp":4},"moves":["Coil","Roost","Body Slam","Bite"]}
   },
   "Steelix": {
-    "RU Defensive": {"ability":"Sturdy","item":"Leftovers","nature":"Careful","evs":{"hp":252,"at":4,"sd":252},"moves":["Stealth Rock","Earthquake","Heavy Slam","Toxic"]},
+    "RU Defensive": {"ability":"Sturdy","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Stealth Rock","Earthquake","Heavy Slam","Toxic"]},
     "Monotype Physically Defensive (Ground)": {"ability":"Sturdy","item":"Leftovers","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Heavy Slam","Body Press","Iron Defense","Substitute"]},
     "National Dex Monotype Curse (Ground)": {"ability":"Sturdy","item":"Steelixite","nature":"Impish","evs":{"hp":252,"at":4,"sd":252},"moves":["Curse","Heavy Slam","Rest","Sleep Talk"]},
     "1v1 Choice Band": {"ability":"Sturdy","item":"Choice Band","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Heavy Slam","Bulldoze","Earthquake","Fire Fang"]},
@@ -1148,7 +1148,7 @@ var SETDEX_SS = {
     "Monotype Showdown Usage": {"ability":"Scrappy","item":"Choice Scarf","nature":"Modest","evs":{"sa":252,"sd":4,"sp":252},"moves":["Boomburst","Fire Blast","Ice Beam","Surf"]}
   },
   "Sableye": {
-    "RU Defensive Utility": {"ability":"Prankster","item":"Heavy-Duty Boots","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Knock Off","Will-O-Wisp","Recover","Taunt"]},
+    "RU Defensive Utility": {"ability":"Prankster","item":"Heavy-Duty Boots","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Knock Off","Will-O-Wisp","Recover","Encore"]},
     "NU Anti-Setup Wall": {"ability":"Prankster","item":"Rocky Helmet","nature":"Impish","evs":{"hp":252,"at":4,"df":252},"moves":["Encore","Will-O-Wisp","Knock Off","Recover"]},
     "PU Physical Wall": {"ability":"Prankster","item":"Rocky Helmet","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Knock Off","Recover","Will-O-Wisp","Taunt"]},
     "Monotype Stallbreaker (Dark)": {"ability":"Prankster","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":252,"sd":4},"moves":["Taunt","Will-O-Wisp","Knock Off","Recover"]},
@@ -2777,10 +2777,10 @@ var SETDEX_SS = {
     "ZU Choice Band": {"ability":"Natural Cure","item":"Choice Band","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Poltergeist","Wood Hammer","Sucker Punch","Trick"]}
   },
   "Gourgeist": {
-    "RU Choice Band": {"ability":"Frisk","item":"Choice Band","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Poltergeist","Power Whip","Shadow Sneak","Trick"]},
     "ZU Weakness Policy": {"ability":"Frisk","item":"Weakness Policy","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Flame Charge","Poltergeist","Power Whip","Shadow Sneak"]}
   },
   "Gourgeist-Small": {
+    "RU Choice Band": {"ability":"Frisk","item":"Choice Band","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Poltergeist","Power Whip","Shadow Sneak","Trick"]},
     "PU Choice Scarf": {"ability":"Frisk","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Power Whip","Poltergeist","Rock Slide","Trick"]},
     "ZU Choice Scarf": {"ability":"Frisk","item":"Choice Scarf","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Power Whip","Poltergeist","Trick","Synthesis"]},
     "ZU Choice Band": {"ability":"Frisk","item":"Choice Band","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Power Whip","Poltergeist","Shadow Sneak","Trick"]}
