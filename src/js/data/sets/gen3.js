@@ -1119,7 +1119,8 @@ var SETDEX_ADV = {
     "OU Offensive": {"ability":"Natural Cure","item":"Leftovers","nature":"Timid","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":76,"sa":252,"sp":180},"moves":["Calm Mind","Giga Drain","Hidden Power Fire","Psychic"]},
     "OU Leech Seed + 3 Attacks": {"ability":"Natural Cure","item":"Leftovers","nature":"Modest","ivs":{"at":30,"sa":30,"sp":30},"evs":{"sa":252,"sd":76,"sp":180},"moves":["Leech Seed","Giga Drain","Hidden Power Fire","Psychic"]},
     "OU Swords Dance": {"ability":"Natural Cure","item":"Leftovers","nature":"Impish","evs":{"hp":244,"df":124,"sp":140},"moves":["Swords Dance","Baton Pass","Leech Seed","Recover"]},
-    "OU Defensive Calm Mind": {"ability":"Natural Cure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":124,"sa":76,"sd":36,"sp":20},"moves":["Calm Mind","Leech Seed","Psychic","Recover"]}
+    "OU Defensive Calm Mind": {"ability":"Natural Cure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":124,"sa":76,"sd":36,"sp":20},"moves":["Calm Mind","Leech Seed","Psychic","Recover"]},
+    "Doubles OU Calm Mind": {"ability":"Natural Cure","item":"Leftovers","nature":"Modest","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":252,"df":40,"sa":92,"sd":4,"sp":120},"moves":["Psychic","Hidden Power Fire","Calm Mind","Protect"]}
   },
   "Mightyena": {
     "NU Cleric Phazer": {"ability":"Intimidate","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Heal Bell","Roar","Crunch","Toxic"]},

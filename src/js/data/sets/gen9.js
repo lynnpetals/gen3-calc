@@ -515,7 +515,7 @@ var SETDEX_SV = {
     "OU Dragon Dance + Scale Shot": {"ability":"Multiscale","item":"Loaded Dice","nature":"Jolly","teraType":"Fire","evs":{"at":252,"df":4,"sp":252},"moves":["Dragon Dance","Scale Shot","Fire Punch","Encore"]},
     "OU Bulky Phazer (3 Attacks + Roost)": {"ability":"Multiscale","item":"Heavy-Duty Boots","nature":"Adamant","teraType":"Normal","evs":{"hp":252,"at":240,"sp":16},"moves":["Dragon Tail","Extreme Speed","Earthquake","Roost"]},
     "OU Choice Band": {"ability":"Multiscale","item":"Choice Band","nature":"Adamant","teraType":"Normal","evs":{"at":252,"df":4,"sp":252},"moves":["Outrage","Extreme Speed","Earthquake","Fire Punch"]},
-    "Doubles OU Choice Band": {"ability":"Inner Focus","item":"Choice Band","nature":"Adamant","teraType":"Normal","evs":{"hp":252,"at":252,"sd":4},"moves":["Extreme Speed","Dragon Claw","Ice Spinner","Fire Punch"]},
+    "Doubles OU Priority Attacker": {"ability":"Inner Focus","item":"Choice Band","nature":"Adamant","teraType":"Normal","evs":{"hp":252,"at":252,"sd":4},"moves":["Extreme Speed","Dragon Claw","Iron Head","Stomping Tantrum"]},
     "VGC 2024 Reg F Choice Band": {"level":50,"ability":"Inner Focus","item":"Choice Band","nature":"Adamant","teraType":"Normal","evs":{"hp":196,"at":252,"df":4,"sd":4,"sp":52},"moves":["Extreme Speed","Aerial Ace","Outrage","Stomping Tantrum"]},
     "VGC 2024 Reg F Loaded Dice Sweeper": {"level":50,"ability":"Inner Focus","item":"Loaded Dice","nature":"Adamant","teraType":"Steel","evs":{"hp":4,"at":252,"sp":252},"moves":["Scale Shot","Iron Head","Extreme Speed","Protect"]},
     "BSS Reg F Choice Band": {"level":50,"ability":"Multiscale","item":"Choice Band","nature":"Adamant","teraType":"Normal","ivs":{"sa":0},"evs":{"hp":252,"at":252,"sp":4},"moves":["Extreme Speed","Outrage","Earthquake","Low Kick"]},
@@ -646,7 +646,8 @@ var SETDEX_SV = {
     "National Dex Monotype Specially Defensive (Water)": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Sassy","teraType":"Water","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":4,"sd":252},"moves":["Future Sight","Scald","Slack Off","Teleport"]}
   },
   "Slowking-Galar": {
-    "OU Defensive Pivot": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Sassy","teraType":"Water","ivs":{"sp":0},"evs":{"hp":252,"df":4,"sd":252},"moves":["Chilly Reception","Sludge Bomb","Future Sight","Thunder Wave"]},
+    "OU Specially Defensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Sassy","teraType":"Water","ivs":{"sp":0},"evs":{"hp":252,"df":4,"sd":252},"moves":["Chilly Reception","Sludge Bomb","Future Sight","Thunder Wave"]},
+    "OU Physically Defensive": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Relaxed","teraType":"Grass","ivs":{"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Chilly Reception","Sludge Bomb","Future Sight","Thunder Wave"]},
     "OU Assault Vest": {"ability":"Regenerator","item":"Assault Vest","nature":"Modest","teraType":"Water","evs":{"hp":252,"df":8,"sa":152,"sd":96},"moves":["Psyshock","Sludge Bomb","Flamethrower","Ice Beam"]},
     "BSS Reg F AV Tank": {"level":50,"ability":"Regenerator","item":"Assault Vest","nature":"Calm","teraType":"Normal","evs":{"hp":252,"sd":252,"sp":4},"moves":["Future Sight","Sludge Bomb","Acid Spray","Earthquake"]},
     "Monotype Specially Defensive (Poison)": {"ability":"Regenerator","item":"Heavy-Duty Boots","nature":"Sassy","teraType":"Poison","evs":{"hp":252,"sa":4,"sd":252},"moves":["Future Sight","Ice Beam","Chilly Reception","Slack Off"]},
@@ -3703,6 +3704,7 @@ var SETDEX_SV = {
   "Enamorus": {
     "OU Choice Scarf": {"ability":"Contrary","item":"Choice Scarf","nature":"Modest","teraType":"Ground","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Earth Power","Mystical Fire","Healing Wish"]},
     "OU Choice Specs": {"ability":"Contrary","item":"Choice Specs","nature":"Timid","teraType":"Fairy","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Earth Power","Mystical Fire","Healing Wish"]},
+    "OU Substitute + 3 Attacks": {"ability":"Contrary","item":"Life Orb","nature":"Modest","teraType":"Fairy","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Substitute","Moonblast","Earth Power","Draining Kiss"]},
     "Monotype Mixed Attacker (Fairy)": {"ability":"Contrary","item":"Expert Belt","nature":"Naive","teraType":"Fairy","evs":{"at":4,"sa":252,"sp":252},"moves":["Moonblast","Superpower","Earth Power","Mystical Fire"]},
     "Monotype Choice Scarf (Fairy)": {"ability":"Contrary","item":"Choice Scarf","nature":"Naive","teraType":"Fairy","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Superpower","Earth Power","Healing Wish"]},
     "Monotype Choice Scarf (Flying)": {"ability":"Contrary","item":"Choice Scarf","nature":"Naive","teraType":"Fairy","evs":{"sa":252,"sd":4,"sp":252},"moves":["Moonblast","Superpower","Earth Power","Healing Wish"]},
@@ -3870,7 +3872,6 @@ var SETDEX_SV = {
   },
   "Ceruledge": {
     "OU Swords Dance": {"ability":"Weak Armor","item":"Life Orb","nature":"Adamant","teraType":"Ghost","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Bitter Blade","Shadow Sneak","Poltergeist"]},
-    "OU Bulk Up": {"ability":"Flash Fire","item":"Covert Cloak","nature":"Careful","teraType":"Bug","evs":{"hp":252,"sd":172,"sp":84},"moves":["Bulk Up","Bitter Blade","Shadow Sneak","Taunt"]},
     "BSS Reg F Bulk Up Sweeper": {"level":50,"ability":"Flash Fire","item":"Leftovers","nature":"Impish","teraType":"Fairy","evs":{"hp":252,"at":4,"df":252},"moves":["Bitter Blade","Bulk Up","Taunt","Shadow Sneak"]},
     "BSS Reg F Focus Sash Attacker": {"level":50,"ability":"Weak Armor","item":"Focus Sash","nature":"Adamant","teraType":"Fire","evs":{"at":252,"sd":4,"sp":252},"moves":["Bitter Blade","Close Combat","Shadow Sneak","Swords Dance"]},
     "Monotype Swords Dance (Fire)": {"ability":"Weak Armor","item":"Focus Sash","nature":"Jolly","teraType":"Fire","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Poltergeist","Bitter Blade","Shadow Sneak"]},
@@ -4027,7 +4028,7 @@ var SETDEX_SV = {
     "LC Hazard Setter": {"level":5,"ability":"Toxic Debris","item":"Eviolite","nature":"Timid","teraType":"Ghost","evs":{"hp":132,"df":100,"sa":76,"sp":196},"moves":["Stealth Rock","Power Gem","Mud Shot","Sludge Bomb"]}
   },
   "Glimmora": {
-    "OU Lead": {"ability":"Toxic Debris","item":"Red Card","nature":"Bold","teraType":"Ghost","evs":{"hp":252,"df":212,"sp":44},"moves":["Stealth Rock","Mortal Spin","Power Gem","Earth Power"]},
+    "OU Lead": {"ability":"Toxic Debris","item":"Red Card","nature":"Bold","teraType":"Ghost","evs":{"hp":252,"df":252,"sd":4},"moves":["Stealth Rock","Mortal Spin","Power Gem","Earth Power"]},
     "OU Offensive": {"ability":"Toxic Debris","item":"Power Herb","nature":"Timid","teraType":"Ghost","evs":{"sa":252,"sd":4,"sp":252},"moves":["Meteor Beam","Earth Power","Mortal Spin","Stealth Rock"]},
     "Ubers Suicide Lead": {"ability":"Toxic Debris","item":"Focus Sash","nature":"Timid","teraType":"Ghost","evs":{"df":172,"sa":84,"sp":252},"moves":["Stealth Rock","Mortal Spin","Mud Shot","Dazzling Gleam"]},
     "Doubles OU Meteor Beam": {"ability":"Toxic Debris","item":"Power Herb","nature":"Timid","teraType":"Grass","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Meteor Beam","Sludge Bomb","Earth Power","Spiky Shield"]},
@@ -4644,7 +4645,7 @@ var SETDEX_SV = {
     "OU Utility": {"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"at":252,"sd":4,"sp":252},"moves":["Ivy Cudgel","U-turn","Knock Off","Spikes"]},
     "OU Swords Dance": {"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Ivy Cudgel","Trailblaze","Play Rough"]},
     "OU All-Out Attacker": {"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"at":252,"df":4,"sp":252},"moves":["Ivy Cudgel","Knock Off","Play Rough","Trailblaze"]},
-    "Doubles OU Bulky Attacker": {"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"hp":200,"at":124,"sp":184},"moves":["Ivy Cudgel","Horn Leech","Follow Me","Spiky Shield"]},
+    "Doubles OU Offensive Utility": {"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"hp":120,"at":136,"sp":252},"moves":["Ivy Cudgel","Power Whip","Follow Me","Spiky Shield"]},
     "VGC 2024 Reg F Offensive Redirector": {"level":50,"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"hp":212,"at":84,"df":12,"sd":12,"sp":188},"moves":["Ivy Cudgel","Horn Leech","Follow Me","Spiky Shield"]},
     "BSS Reg F Swords Dance": {"level":50,"ability":"Water Absorb","item":"Wellspring Mask","nature":"Jolly","teraType":"Water","evs":{"hp":4,"at":196,"df":52,"sd":4,"sp":252},"moves":["Swords Dance","Ivy Cudgel","Horn Leech","Play Rough"]},
     "BSS Reg F Specially Defensive": {"level":50,"ability":"Water Absorb","item":"Wellspring Mask","nature":"Careful","teraType":"Water","evs":{"hp":252,"at":4,"df":4,"sd":188,"sp":60},"moves":["Ivy Cudgel","Horn Leech","Encore","Leech Seed"]},
@@ -4735,7 +4736,8 @@ var SETDEX_SV = {
   },
   "Raging Bolt": {
     "OU Calm Mind": {"ability":"Protosynthesis","item":"Booster Energy","nature":"Modest","teraType":"Fairy","ivs":{"at":20},"evs":{"df":4,"sa":252,"sp":252},"moves":["Calm Mind","Thunderclap","Dragon Pulse","Thunderbolt"]},
-    "OU Choice Specs": {"ability":"Protosynthesis","item":"Choice Specs","nature":"Modest","teraType":"Fairy","ivs":{"at":20},"evs":{"df":4,"sa":252,"sp":252},"moves":["Thunderbolt","Draco Meteor","Thunderclap","Volt Switch"]},
+    "OU Choice Specs Pivot": {"ability":"Protosynthesis","item":"Choice Specs","nature":"Modest","teraType":"Fairy","ivs":{"at":20},"evs":{"df":4,"sa":252,"sp":252},"moves":["Thunderbolt","Draco Meteor","Thunderclap","Volt Switch"]},
+    "OU All-Out Attacker": {"ability":"Protosynthesis","item":"Life Orb","nature":"Modest","teraType":"Flying","ivs":{"at":20},"evs":{"df":4,"sa":252,"sp":252},"moves":["Thunderclap","Dragon Pulse","Weather Ball","Thunderbolt"]},
     "OU Boots Pivot": {"ability":"Protosynthesis","item":"Heavy-Duty Boots","nature":"Modest","teraType":"Fairy","ivs":{"at":20},"evs":{"df":4,"sa":252,"sp":252},"moves":["Thunderbolt","Thunderclap","Volt Switch","Dragon Pulse"]},
     "Doubles OU Assault Vest": {"ability":"Protosynthesis","item":"Assault Vest","nature":"Modest","teraType":"Fairy","evs":{"hp":248,"df":60,"sa":92,"sd":108},"moves":["Thunderclap","Draco Meteor","Thunderbolt","Snarl"]},
     "Doubles OU Calm Mind": {"ability":"Protosynthesis","item":"Leftovers","nature":"Modest","teraType":"Fairy","ivs":{"at":20},"evs":{"hp":252,"df":188,"sa":68},"moves":["Thunderclap","Dragon Pulse","Calm Mind","Protect"]},
