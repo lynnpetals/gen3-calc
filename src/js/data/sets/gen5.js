@@ -630,6 +630,7 @@ var SETDEX_BW = {
     "UU RestTalk": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Rest","Sleep Talk","Scald","Roar"]},
     "Doubles OU Calm Mind": {"ability":"Pressure","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":216,"sd":40},"moves":["Scald","Calm Mind","Substitute","Protect"]},
     "VGC 2013 Bulky Support": {"level":50,"ability":"Pressure","item":"Sitrus Berry","nature":"Calm","ivs":{"at":0},"evs":{"hp":252,"df":4,"sa":4,"sd":12,"sp":236},"moves":["Scald","Ice Beam","Snarl","Tailwind"]},
+    "VGC 2013 Calm Mind": {"level":50,"ability":"Pressure","item":"Chesto Berry","nature":"Bold","ivs":{"at":0},"evs":{"hp":228,"df":36,"sa":4,"sd":4,"sp":236},"moves":["Calm Mind","Scald","Ice Beam","Rest"]},
     "1v1 Showdown Usage": {"ability":"Pressure","item":"Choice Specs","nature":"Relaxed","evs":{"hp":248,"df":8,"sa":252},"moves":["Surf","Ice Beam","Calm Mind","Whirlpool"]}
   },
   "Swellow": {
@@ -972,6 +973,8 @@ var SETDEX_BW = {
     "UU Dual Screens": {"ability":"Levitate","item":"Light Clay","nature":"Bold","evs":{"hp":252,"df":176,"sd":80},"moves":["Reflect","Light Screen","Lunar Dance","Psychic"]},
     "UU Substitute + Calm Mind": {"ability":"Levitate","item":"Leftovers","nature":"Timid","ivs":{"df":30,"sa":30,"sd":30,"sp":30},"evs":{"hp":252,"df":4,"sp":252},"moves":["Calm Mind","Substitute","Psyshock","Hidden Power Fighting"]},
     "Doubles OU Offensive": {"ability":"Levitate","item":"Expert Belt","nature":"Timid","ivs":{"sa":30,"sd":30},"evs":{"df":4,"sa":252,"sp":252},"moves":["Psychic","Ice Beam","Hidden Power Ground","Thunder Wave"]},
+    "VGC 2013 Bulky Support": {"level":50,"ability":"Levitate","item":"Sitrus Berry","nature":"Sassy","ivs":{"sp":0},"evs":{"hp":212,"df":60,"sa":160,"sd":76},"moves":["Psychic","Ice Beam","Skill Swap","Trick Room"]},
+    "VGC 2013 Expert Belt Offensive": {"level":50,"ability":"Levitate","item":"Expert Belt","nature":"Modest","ivs":{"at":3,"sa":30,"sd":30},"evs":{"hp":132,"df":4,"sa":248,"sd":8,"sp":116},"moves":["Psyshock","Icy Wind","Hidden Power Ground","Trick Room"]},
     "1v1 Showdown Usage": {"ability":"Levitate","item":"Choice Scarf","nature":"Bold","evs":{"hp":52,"df":224,"sp":232},"moves":["Moonlight","Ice Beam","Trick","Psychic"]}
   },
   "Pidgey": {
@@ -2914,7 +2917,8 @@ var SETDEX_BW = {
   "Escavalier": {
     "UU Offensive": {"ability":"Swarm","item":"Choice Band","nature":"Adamant","evs":{"hp":248,"at":252,"sd":8},"moves":["Megahorn","Iron Head","Pursuit","Return"]},
     "UU Defensive": {"ability":"Swarm","item":"Leftovers","nature":"Careful","evs":{"hp":248,"at":8,"sd":252},"moves":["Megahorn","Iron Head","Pursuit","Toxic"]},
-    "RU Tank": {"ability":"Swarm","item":"Choice Band","nature":"Adamant","evs":{"hp":132,"at":252,"sp":124},"moves":["Megahorn","Pursuit","Iron Head","Sleep Talk"]}
+    "RU Tank": {"ability":"Swarm","item":"Choice Band","nature":"Adamant","evs":{"hp":132,"at":252,"sp":124},"moves":["Megahorn","Pursuit","Iron Head","Sleep Talk"]},
+    "VGC 2013 Trick Room Attacker": {"level":50,"ability":"Swarm","item":"Bug Gem","nature":"Brave","ivs":{"sp":0},"evs":{"hp":252,"at":252,"sd":4},"moves":["Megahorn","Iron Head","Swords Dance","Protect"]}
   },
   "Foongus": {
     "LC Pivot": {"level":5,"ability":"Regenerator","item":"Eviolite","nature":"Calm","ivs":{"at":0},"evs":{"hp":44,"df":76,"sa":76,"sd":236,"sp":76},"moves":["Stun Spore","Synthesis","Giga Drain","Sludge Bomb"]}
