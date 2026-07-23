@@ -2284,6 +2284,7 @@ var SETDEX_BW = {
     "OU Physically Defensive": {"ability":"Storm Drain","item":"Leftovers","nature":"Relaxed","evs":{"hp":252,"df":252,"sd":4},"moves":["Recover","Scald","Ice Beam","Toxic"]},
     "Ubers Tank": {"ability":"Storm Drain","item":"Leftovers","nature":"Calm","evs":{"hp":252,"sd":248,"sp":8},"moves":["Scald","Recover","Toxic","Mirror Coat"]},
     "Doubles OU Offensive Utility": {"ability":"Storm Drain","item":"Sitrus Berry","nature":"Calm","evs":{"hp":232,"df":88,"sa":108,"sd":80},"moves":["Earth Power","Ice Beam","Recover","Toxic"]},
+    "VGC 2013 Bulky Utility": {"level":50,"ability":"Storm Drain","item":"Rindo Berry","nature":"Calm","evs":{"hp":172,"df":148,"sa":52,"sd":132,"sp":4},"moves":["Earth Power","Ice Beam","Recover","Protect"]},
     "Monotype Physically Defensive (Ground)": {"ability":"Storm Drain","item":"Leftovers","nature":"Relaxed","ivs":{"at":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Earthquake","Scald","Toxic","Recover"]}
   },
   "Ambipom": {
