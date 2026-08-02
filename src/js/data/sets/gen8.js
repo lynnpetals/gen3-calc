@@ -452,6 +452,7 @@ var SETDEX_SS = {
     "Anything Goes Wall Cleric": {"ability":"Natural Cure","item":"Eviolite","nature":"Calm","ivs":{"at":0},"evs":{"hp":4,"df":252,"sd":252},"moves":["Aromatherapy","Soft-Boiled","Toxic","Confide"]},
     "1v1 Stall": {"ability":"Healer","item":"Eviolite","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Seismic Toss","Soft-Boiled","Toxic","Counter"]},
     "National Dex Monotype Showdown Usage": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Soft-Boiled","Seismic Toss","Stealth Rock","Toxic"]},
+    "OU Showdown Usage": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Soft-Boiled","Toxic","Seismic Toss","Aromatherapy"]},
     "CAP Showdown Usage": {"ability":"Natural Cure","item":"Eviolite","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Seismic Toss","Soft-Boiled","Stealth Rock","Teleport"]}
   },
   "Tangela": {
@@ -588,7 +589,8 @@ var SETDEX_SS = {
   "Snorlax": {
     "RU CurseLax": {"ability":"Thick Fat","item":"Leftovers","nature":"Careful","evs":{"hp":208,"at":36,"df":172,"sd":84,"sp":8},"moves":["Curse","Body Slam","Earthquake","Rest"]},
     "NU CurseLax": {"ability":"Immunity","item":"Leftovers","nature":"Careful","evs":{"hp":12,"df":244,"sd":252},"moves":["Curse","Body Slam","Earthquake","Rest"]},
-    "Monotype Curse Sweeper (Normal)": {"ability":"Thick Fat","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":120,"sd":136},"moves":["Curse","Darkest Lariat","Rest","Sleep Talk"]}
+    "Monotype Curse Sweeper (Normal)": {"ability":"Thick Fat","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":120,"sd":136},"moves":["Curse","Darkest Lariat","Rest","Sleep Talk"]},
+    "OU Showdown Usage": {"ability":"Immunity","item":"Chople Berry","nature":"Adamant","evs":{"at":252,"df":252,"sp":4},"moves":["Heat Crash","Body Slam","Curse","Counter"]}
   },
   "Snorlax-Gmax": {
     "Battle Stadium Singles Gmax Setup Sweeper": {"level":50,"ability":"Gluttony","item":"Figy Berry","nature":"Impish","evs":{"hp":228,"df":252,"sd":28},"moves":["Facade","Belly Drum","Heavy Slam","Earthquake"]},
@@ -994,6 +996,7 @@ var SETDEX_SS = {
     "RU Choice Band": {"ability":"Inner Focus","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Extreme Speed","Sacred Fire","Stone Edge","Flare Blitz"]},
     "1v1 Pressure Stall": {"ability":"Pressure","item":"Leftovers","nature":"Jolly","evs":{"at":4,"df":252,"sp":252},"moves":["Protect","Substitute","Sacred Fire","Toxic"]},
     "1v1 Assault Vest": {"ability":"Inner Focus","item":"Assault Vest","nature":"Adamant","evs":{"hp":8,"at":164,"sd":120,"sp":216},"moves":["Flare Blitz","Bulldoze","Eruption","Extreme Speed"]},
+    "OU Showdown Usage": {"ability":"Inner Focus","item":"Heavy-Duty Boots","nature":"Adamant","evs":{"at":252,"sd":252,"sp":4},"moves":["Extreme Speed","Sacred Fire","Stomping Tantrum","Crunch"]},
     "VGC 2022 Showdown Usage": {"level":50,"ability":"Inner Focus","item":"Focus Sash","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Sacred Fire","Extreme Speed","Snarl","Bulldoze"]},
     "VGC 2021 Showdown Usage": {"level":50,"ability":"Inner Focus","item":"Life Orb","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Sacred Fire","Extreme Speed","Stone Edge","Protect"]}
   },
@@ -1563,7 +1566,7 @@ var SETDEX_SS = {
     "NU Swords Dance": {"ability":"Dry Skin","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Gunk Shot","Low Kick","Sucker Punch"]},
     "NU Nasty Plot": {"ability":"Dry Skin","item":"Life Orb","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Focus Blast","Sludge Bomb","Vacuum Wave"]},
     "Monotype Swords Dance (Fighting)": {"ability":"Dry Skin","item":"Life Orb","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Earthquake","Gunk Shot","Sucker Punch"]},
-    "OU Showdown Usage": {"ability":"Dry Skin","item":"Black Sludge","nature":"Jolly","evs":{"hp":52,"at":252,"sp":204},"moves":["Drain Punch","Gunk Shot","Swords Dance","Ice Punch"]}
+    "OU Showdown Usage": {"ability":"Dry Skin","item":"Life Orb","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Drain Punch","Swords Dance","Gunk Shot","Ice Punch"]}
   },
   "Snover": {
     "LC Hail Setter": {"level":5,"ability":"Snow Warning","item":"Icy Rock","nature":"Naive","evs":{"hp":36,"at":20,"df":36,"sa":180,"sd":36,"sp":196},"moves":["Blizzard","Giga Drain","Ice Shard","Protect"]}
@@ -1993,7 +1996,7 @@ var SETDEX_SS = {
     "1v1 Kebia Berry": {"ability":"Prankster","item":"Kebia Berry","nature":"Bold","evs":{"hp":248,"df":56,"sd":204},"moves":["Leech Seed","Substitute","Protect","Taunt"]},
     "RU Showdown Usage": {"ability":"Prankster","item":"Leftovers","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Defog","Moonblast","Encore","U-turn"]},
     "NU Showdown Usage": {"ability":"Prankster","item":"Heat Rock","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Encore","U-turn","Sunny Day","Defog"]},
-    "OU Showdown Usage": {"ability":"Prankster","item":"Light Clay","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Tailwind","Light Screen","Taunt","Safeguard"]}
+    "OU Showdown Usage": {"ability":"Prankster","item":"Light Clay","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Tailwind","Taunt","Light Screen","Encore"]}
   },
   "Lilligant": {
     "ZU Quiver Dance": {"ability":"Chlorophyll","item":"Life Orb","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Quiver Dance","Giga Drain","Pollen Puff","Sleep Powder"]},
@@ -2558,7 +2561,8 @@ var SETDEX_SS = {
     "UU Swords Dance": {"ability":"Huge Power","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Quick Attack","Earthquake","Fire Punch"]},
     "Monotype Wallbreaker (Normal)": {"ability":"Huge Power","item":"Choice Band","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Body Slam","Earthquake","Quick Attack","Fire Punch"]},
     "1v1 Life Orb": {"ability":"Huge Power","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":232,"sd":40,"sp":232},"moves":["Swords Dance","Earthquake","Quick Attack","Gunk Shot"]},
-    "National Dex Monotype Showdown Usage": {"ability":"Huge Power","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Earthquake","Quick Attack","Fire Punch","Swords Dance"]}
+    "National Dex Monotype Showdown Usage": {"ability":"Huge Power","item":"Choice Band","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Earthquake","Quick Attack","Fire Punch","Swords Dance"]},
+    "OU Showdown Usage": {"ability":"Huge Power","item":"Choice Scarf","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Earthquake","Body Slam","Fire Punch","Knock Off"]}
   },
   "Talonflame": {
     "RU Utility Pivot": {"ability":"Flame Body","item":"Heavy-Duty Boots","nature":"Jolly","evs":{"hp":16,"at":252,"sp":240},"moves":["Will-O-Wisp","Brave Bird","U-turn","Roost"]},
