@@ -502,6 +502,7 @@ var SETDEX_BW = {
     "OU Offensive": {"ability":"Iron Barbs","item":"Lum Berry","nature":"Brave","ivs":{"sp":0},"evs":{"hp":252,"at":252,"sd":4},"moves":["Stealth Rock","Power Whip","Gyro Ball","Spikes"]},
     "Ubers Support": {"ability":"Iron Barbs","item":"Leftovers","nature":"Sassy","ivs":{"sp":0},"evs":{"hp":252,"at":48,"sd":208},"moves":["Spikes","Power Whip","Gyro Ball","Stealth Rock"]},
     "Ubers Choice Band": {"ability":"Iron Barbs","item":"Choice Band","nature":"Brave","ivs":{"sp":0},"evs":{"hp":252,"at":252,"sd":4},"moves":["Power Whip","Gyro Ball","Bulldoze","Explosion"]},
+    "VGC 2013 Bulky Offensive": {"level":50,"ability":"Iron Barbs","item":"Leftovers","nature":"Sassy","ivs":{"sp":0},"evs":{"hp":252,"at":68,"sd":188},"moves":["Gyro Ball","Power Whip","Leech Seed","Protect"]},
     "Monotype Specially Defensive (Grass)": {"ability":"Iron Barbs","item":"Leftovers","nature":"Relaxed","evs":{"hp":252,"df":48,"sd":208},"moves":["Spikes","Leech Seed","Power Whip","Protect"]},
     "Monotype Mixed Wall (Steel)": {"ability":"Iron Barbs","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":128,"sd":128},"moves":["Spikes","Protect","Leech Seed","Power Whip"]},
     "Doubles OU Showdown Usage": {"ability":"Iron Barbs","item":"Leftovers","nature":"Sassy","evs":{"hp":248,"at":8,"sd":252},"moves":["Leech Seed","Gyro Ball","Stealth Rock","Knock Off"]},
@@ -1489,7 +1490,7 @@ var SETDEX_BW = {
   "Chinchou": {
     "PU Special Wall": {"ability":"Volt Absorb","item":"Eviolite","nature":"Calm","evs":{"hp":248,"df":8,"sd":252},"moves":["Rest","Sleep Talk","Scald","Volt Switch"]},
     "LC Choice Scarf": {"level":5,"ability":"Water Absorb","item":"Choice Scarf","nature":"Timid","ivs":{"at":0},"evs":{"df":52,"sa":228,"sp":220},"moves":["Volt Switch","Hydro Pump","Thunderbolt","Toxic"]},
-    "LC Defensive": {"level":5,"ability":"Water Absorb","item":"Eviolite","nature":"Calm","ivs":{"at":0},"evs":{"hp":76,"df":52,"sd":228,"sp":140},"moves":["Surf","Volt Switch","Toxic","Protect"]}
+    "LC Defensive": {"level":5,"ability":"Water Absorb","item":"Eviolite","nature":"Calm","ivs":{"at":0},"evs":{"hp":76,"df":52,"sd":228,"sp":140},"moves":["Scald","Volt Switch","Toxic","Protect"]}
   },
   "Lanturn": {
     "UU Special Tank": {"ability":"Volt Absorb","item":"Leftovers","nature":"Calm","evs":{"hp":204,"df":96,"sd":208},"moves":["Scald","Volt Switch","Heal Bell","Thunder Wave"]},
@@ -2423,8 +2424,7 @@ var SETDEX_BW = {
     "Monotype Sand Stream": {"ability":"Sand Stream","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Stealth Rock","Whirlwind","Earthquake","Slack Off"]}
   },
   "Skorupi": {
-    "LC RestTalk": {"level":5,"ability":"Battle Armor","item":"Eviolite","nature":"Careful","evs":{"hp":36,"at":36,"df":196,"sd":236},"moves":["Rest","Sleep Talk","Acupressure","X-Scissor"]},
-    "LC Toxic Spiker": {"level":5,"ability":"Sniper","item":"Eviolite","nature":"Jolly","evs":{"hp":36,"at":196,"df":36,"sp":236},"moves":["Toxic Spikes","Cross Poison","X-Scissor","Knock Off"]}
+    "LC Toxic Spikes": {"level":5,"ability":"Battle Armor","item":"Eviolite","nature":"Timid","evs":{"hp":36,"df":36,"sa":196,"sp":236},"moves":["Knock Off","Toxic Spikes","Sludge Bomb","Taunt"]}
   },
   "Drapion": {
     "UU Support": {"ability":"Battle Armor","item":"Leftovers","nature":"Careful","evs":{"hp":252,"df":4,"sd":252},"moves":["Toxic Spikes","Taunt","Crunch","Whirlwind"]},
@@ -2755,6 +2755,7 @@ var SETDEX_BW = {
     "OU Four Attacks": {"ability":"Iron Fist","item":"Life Orb","nature":"Adamant","evs":{"hp":20,"at":236,"sd":252},"moves":["Drain Punch","Ice Punch","Thunder Punch","Mach Punch"]},
     "Doubles OU Physical Attacker": {"ability":"Iron Fist","item":"Life Orb","nature":"Brave","ivs":{"sp":0},"evs":{"hp":144,"at":252,"sd":112},"moves":["Hammer Arm","Mach Punch","Ice Punch","Detect"]},
     "VGC 2013 Trick Room Sweeper": {"level":50,"ability":"Iron Fist","item":"Life Orb","nature":"Brave","ivs":{"sp":0},"evs":{"hp":68,"at":252,"sd":188},"moves":["Hammer Arm","Mach Punch","Ice Punch","Detect"]},
+    "VGC 2013 Bulky Attacker": {"level":50,"ability":"Iron Fist","item":"Sitrus Berry","nature":"Adamant","evs":{"hp":212,"at":32,"df":12,"sd":252},"moves":["Drain Punch","Ice Punch","Mach Punch","Protect"]},
     "1v1 Fighting Gem": {"ability":"Iron Fist","item":"Fighting Gem","nature":"Adamant","evs":{"hp":248,"at":132,"sd":128},"moves":["Hammer Arm","Mach Punch","Bulk Up","Stone Edge"]}
   },
   "Tympole": {
@@ -3080,7 +3081,8 @@ var SETDEX_BW = {
   },
   "Bisharp": {
     "UU Swords Dance": {"ability":"Defiant","item":"Leftovers","nature":"Adamant","evs":{"hp":52,"at":252,"sp":204},"moves":["Swords Dance","Sucker Punch","Substitute","Low Kick"]},
-    "Doubles OU Physical Attacker": {"ability":"Defiant","item":"Life Orb","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Night Slash","Sucker Punch","Low Kick","Protect"]}
+    "Doubles OU Physical Attacker": {"ability":"Defiant","item":"Life Orb","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Night Slash","Sucker Punch","Low Kick","Protect"]},
+    "VGC 2013 Defiant Attacker": {"level":50,"ability":"Defiant","item":"Dark Gem","nature":"Adamant","evs":{"hp":252,"at":252,"sp":4},"moves":["Sucker Punch","Night Slash","Iron Head","Protect"]}
   },
   "Bouffalant": {
     "UU Swords Dance": {"ability":"Reckless","item":"Lum Berry","nature":"Adamant","evs":{"hp":252,"at":252,"df":4},"moves":["Swords Dance","Head Charge","Earthquake","Wild Charge"]},

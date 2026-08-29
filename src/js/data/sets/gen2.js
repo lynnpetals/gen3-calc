@@ -221,8 +221,8 @@ var SETDEX_GSC = {
   "Ariados": {
     "UU Baton Pass Trapper": {"item":"Leftovers","moves":["Spider Web","Protect","Disable","Baton Pass"]},
     "UU Physical Attacker": {"ivs":{"at":26,"df":26},"moves":["Sludge Bomb","Hidden Power Bug","Screech","Thief"]},
-    "PU AgiliPass + Spider Web": {"item":"Leftovers","moves":["Spider Web","Agility","Baton Pass","Sludge Bomb"]},
-    "NU Showdown Usage": {"item":"Leftovers","moves":["Baton Pass","Sludge Bomb","Spider Web","Protect"]}
+    "NU Trapper": {"item":"Leftovers","moves":["Spider Web","Agility","Baton Pass","Sludge Bomb"]},
+    "PU AgiliPass + Spider Web": {"item":"Leftovers","moves":["Spider Web","Agility","Baton Pass","Sludge Bomb"]}
   },
   "Qwilfish": {
     "OU Spikes": {"item":"Leftovers","moves":["Curse","Sludge Bomb","Hydro Pump","Spikes"]},

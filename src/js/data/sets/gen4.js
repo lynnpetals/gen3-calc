@@ -2074,6 +2074,8 @@ var SETDEX_DPP = {
     "Ubers Thunder Wave Lead": {"ability":"Drizzle","item":"Lum Berry","nature":"Modest","evs":{"hp":144,"sa":252,"sp":112},"moves":["Thunder Wave","Hydro Pump","Ice Beam","Thunder"]},
     "Ubers ChestoRest": {"ability":"Drizzle","item":"Chesto Berry","nature":"Modest","evs":{"hp":240,"df":232,"sp":36},"moves":["Calm Mind","Rest","Surf","Ice Beam"]},
     "Ubers Baitogre": {"ability":"Drizzle","item":"Life Orb","nature":"Hasty","evs":{"at":4,"sa":252,"sp":252},"moves":["Waterfall","Surf","Thunder Wave","Thunder"]},
+    "VGC 2010 Standard Offensive": {"level":50,"ability":"Drizzle","item":"Choice Scarf","nature":"Modest","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Water Spout","Thunder","Blizzard","Muddy Water"]},
+    "VGC 2010 Trick Room Sweeper": {"level":50,"ability":"Drizzle","item":"Macho Brace","nature":"Quiet","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":4,"sa":252},"moves":["Water Spout","Thunder","Blizzard","Protect"]},
     "Anything Goes Showdown Usage": {"ability":"Drizzle","item":"Choice Scarf","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunder","Ice Beam","Surf","Water Spout"]}
   },
   "Groudon": {

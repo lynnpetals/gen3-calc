@@ -4137,7 +4137,7 @@ var SETDEX_XY = {
     "LC Choice Scarf": {"level":5,"ability":"Defiant","item":"Choice Scarf","nature":"Jolly","evs":{"at":236,"df":36,"sd":36,"sp":196},"moves":["Knock Off","Iron Head","Pursuit","Brick Break"]}
   },
   "Bisharp": {
-    "OU Swords Dance": {"ability":"Defiant","item":"Life Orb","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Knock Off","Swords Dance","Iron Head","Sucker Punch"]},
+    "OU Swords Dance": {"ability":"Defiant","item":"Black Glasses","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Knock Off","Swords Dance","Iron Head","Sucker Punch"]},
     "OU Assault Vest": {"ability":"Defiant","item":"Assault Vest","nature":"Adamant","evs":{"hp":248,"at":252,"sd":8},"moves":["Pursuit","Sucker Punch","Iron Head","Knock Off"]},
     "Doubles OU All-Out Attacker": {"ability":"Defiant","item":"Life Orb","nature":"Adamant","evs":{"hp":4,"at":252,"sp":252},"moves":["Knock Off","Sucker Punch","Iron Head","Protect"]},
     "Battle Spot Doubles Standard": {"level":50,"ability":"Defiant","item":"Life Orb","nature":"Adamant","ivs":{"hp":29},"evs":{"at":252,"sd":4,"sp":252},"moves":["Sucker Punch","Knock Off","Iron Head","Protect"]},
@@ -4484,10 +4484,10 @@ var SETDEX_XY = {
     "RU Swords Dance": {"ability":"Gale Wings","nature":"Adamant","evs":{"hp":152,"at":252,"df":104},"moves":["Swords Dance","Acrobatics","Will-O-Wisp","Roost"]}
   },
   "Talonflame": {
-    "OU Choice Band": {"ability":"Gale Wings","item":"Choice Band","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Brave Bird","Flare Blitz","U-turn","Will-O-Wisp"]},
-    "OU Bulky Swords Dance": {"ability":"Gale Wings","nature":"Adamant","evs":{"hp":248,"at":252,"df":8},"moves":["Acrobatics","Swords Dance","Roost","Will-O-Wisp"]},
-    "OU Specially Defensive": {"ability":"Gale Wings","item":"Leftovers","nature":"Careful","evs":{"hp":248,"df":8,"sd":252},"moves":["Brave Bird","Will-O-Wisp","Roost","Swords Dance"]},
+    "OU Bulky Swords Dance": {"ability":"Gale Wings","item":"Leftovers","nature":"Adamant","evs":{"hp":248,"at":192,"df":8,"sp":60},"moves":["Brave Bird","Swords Dance","Roost","Will-O-Wisp"]},
     "OU Offensive Swords Dance": {"ability":"Gale Wings","item":"Leftovers","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Brave Bird","Swords Dance","Roost","Flare Blitz"]},
+    "OU Specially Defensive": {"ability":"Gale Wings","item":"Leftovers","nature":"Careful","evs":{"hp":248,"df":8,"sd":252},"moves":["Brave Bird","Will-O-Wisp","Roost","Swords Dance"]},
+    "OU Choice Band": {"ability":"Gale Wings","item":"Choice Band","nature":"Adamant","evs":{"at":252,"df":4,"sp":252},"moves":["Brave Bird","Flare Blitz","U-turn","Will-O-Wisp"]},
     "Doubles OU Gale Wings Attacker": {"ability":"Gale Wings","item":"Choice Band","nature":"Adamant","evs":{"hp":248,"at":252,"df":8},"moves":["Brave Bird","Flare Blitz","Sleep Talk"]},
     "VGC 2016 Offensive Support": {"level":50,"ability":"Gale Wings","item":"Life Orb","nature":"Adamant","evs":{"at":252,"sd":4,"sp":252},"moves":["Brave Bird","Flare Blitz","Tailwind","Quick Guard"]},
     "Battle Spot Triples Offensive Support": {"level":50,"ability":"Gale Wings","item":"Sharp Beak","nature":"Jolly","evs":{"hp":60,"at":196,"sp":252},"moves":["Brave Bird","Tailwind","Quick Guard","Snatch"]},
