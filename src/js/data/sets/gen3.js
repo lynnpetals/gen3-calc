@@ -1350,7 +1350,7 @@ var SETDEX_ADV = {
   },
   "Anorith": {
     "PU Swords Dance": {"ability":"Battle Armor","item":"Lum Berry","nature":"Jolly","ivs":{"at":30,"df":30,"sd":30},"evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Hidden Power Bug","Rock Slide","Brick Break"]},
-    "LC Swords Dance": {"level":5,"ability":"Battle Armor","item":"Sitrus Berry","nature":"Jolly","ivs":{"at":30,"df":30,"sd":30},"evs":{"at":236,"df":36,"sp":236},"moves":["Swords Dance","Rock Blast","Hidden Power Bug","Brick Break"]},
+    "LC Swords Dance": {"level":5,"ability":"Battle Armor","item":"Sitrus Berry","nature":"Jolly","ivs":{"at":30,"df":30,"sd":30},"evs":{"at":240,"sp":236},"moves":["Swords Dance","Rock Blast","Hidden Power Bug","Brick Break"]},
     "LC Bulky Knock Off": {"level":5,"ability":"Battle Armor","item":"Sitrus Berry","nature":"Jolly","ivs":{"sd":30,"sp":30},"evs":{"hp":76,"at":76,"df":116,"sp":240},"moves":["Knock Off","Rock Blast","Hidden Power Bug","Brick Break"]},
     "LC Choice Band": {"level":5,"ability":"Battle Armor","item":"Choice Band","nature":"Jolly","ivs":{"at":30,"df":30,"sd":30},"evs":{"at":240,"sp":236},"moves":["Hidden Power Bug","Rock Blast","Brick Break","Ancient Power"]},
     "ZU Salac Berry": {"ability":"Battle Armor","item":"Salac Berry","nature":"Adamant","evs":{"at":252,"sd":180,"sp":76},"moves":["Rock Slide","Brick Break","Substitute","Swords Dance"]},

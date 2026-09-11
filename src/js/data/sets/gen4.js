@@ -2527,6 +2527,7 @@ var SETDEX_DPP = {
     "Ubers Choice Specs": {"ability":"Pressure","item":"Choice Specs","nature":"Modest","evs":{"hp":224,"sa":252,"sp":32},"moves":["Draco Meteor","Dragon Pulse","Thunder","Fire Blast"]},
     "Ubers Trick Room": {"ability":"Pressure","item":"Life Orb","nature":"Quiet","ivs":{"sp":0},"evs":{"hp":4,"at":252,"sa":252},"moves":["Trick Room","Draco Meteor","Outrage","Thunder"]},
     "Ubers Choice Band": {"ability":"Pressure","item":"Choice Band","nature":"Adamant","evs":{"hp":224,"at":252,"sp":32},"moves":["Outrage","Earthquake","Dragon Claw","Overheat"]},
+    "VGC 2010 Fast Offensive": {"level":50,"ability":"Pressure","item":"Choice Specs","nature":"Modest","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Draco Meteor","Dragon Pulse","Fire Blast","Blizzard"]},
     "Anything Goes Showdown Usage": {"ability":"Pressure","item":"Choice Scarf","nature":"Modest","evs":{"df":64,"sa":252,"sp":192},"moves":["Thunder","Dragon Pulse","Stealth Rock","Roar"]}
   },
   "Palkia": {
