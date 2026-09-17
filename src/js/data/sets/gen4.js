@@ -2084,6 +2084,7 @@ var SETDEX_DPP = {
     "Ubers Offensive Rock Polish": {"ability":"Drought","item":"Life Orb","nature":"Adamant","evs":{"hp":112,"at":252,"df":8,"sp":136},"moves":["Rock Polish","Earthquake","Fire Punch","Dragon Claw"]},
     "Ubers Thunder Wave + Swords Dance": {"ability":"Drought","item":"Leftovers","nature":"Adamant","evs":{"hp":200,"at":200,"df":108},"moves":["Thunder Wave","Swords Dance","Earthquake","Stone Edge"]},
     "Ubers Choice Band": {"ability":"Drought","item":"Choice Band","nature":"Adamant","evs":{"hp":252,"at":224,"df":32},"moves":["Earthquake","Stone Edge","Dragon Claw","Fire Punch"]},
+    "VGC 2010 Trick Room Sweeper": {"level":50,"ability":"Drought","item":"Iron Ball","nature":"Brave","ivs":{"sp":0},"evs":{"hp":252,"at":252,"sd":4},"moves":["Earthquake","Rock Slide","Fling","Protect"]},
     "Anything Goes Showdown Usage": {"ability":"Drought","item":"Leftovers","nature":"Sassy","evs":{"hp":252,"df":44,"sd":212},"moves":["Earthquake","Stealth Rock","Roar","Toxic"]}
   },
   "Rayquaza": {
