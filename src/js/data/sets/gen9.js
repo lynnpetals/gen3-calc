@@ -1342,7 +1342,7 @@ var SETDEX_SV = {
   },
   "Jirachi": {
     "UU Specially Defensive": {"ability":"Serene Grace","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":248,"sd":164,"sp":96},"moves":["Wish","Protect","Iron Head","U-turn"]},
-    "UU Stealth Rock": {"ability":"Serene Grace","item":"Leftovers","nature":"Jolly","teraType":"Steel","evs":{"hp":248,"at":8,"sp":252},"moves":["Stealth Rock","Thunder","Iron Head","U-turn"]},
+    "UU Stealth Rock": {"ability":"Serene Grace","item":"Leftovers","nature":"Jolly","teraType":"Water","evs":{"hp":248,"at":8,"sp":252},"moves":["Stealth Rock","Thunder","Iron Head","U-turn"]},
     "UU Substitute Serene Grace": {"ability":"Serene Grace","item":"Leftovers","nature":"Hasty","teraType":"Steel","evs":{"hp":248,"at":8,"sp":252},"moves":["Substitute","Zen Headbutt","Iron Head","Thunder"]},
     "Monotype Choice Scarf (Psychic)": {"ability":"Serene Grace","item":"Choice Scarf","nature":"Jolly","teraType":"Steel","evs":{"at":252,"df":4,"sp":252},"moves":["Iron Head","Trick","U-turn","Healing Wish"]},
     "Monotype Choice Scarf (Steel)": {"ability":"Serene Grace","item":"Choice Scarf","nature":"Jolly","teraType":"Steel","evs":{"at":252,"sd":4,"sp":252},"moves":["Iron Head","Ice Punch","U-turn","Healing Wish"]},
