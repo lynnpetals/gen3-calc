@@ -53,7 +53,8 @@ var SETDEX_RBY = {
     "Tradebacks OU Amnesia": {"moves":["Amnesia","Blizzard","Body Slam","Rest"]}
   },
   "Ninetales": {
-    "UU Offensive": {"moves":["Fire Blast","Body Slam","Hyper Beam","Quick Attack"]}
+    "UU Offensive": {"moves":["Fire Blast","Body Slam","Hyper Beam","Quick Attack"]},
+    "UU Fire Spin Pivot": {"moves":["Fire Blast","Fire Spin","Body Slam","Confuse Ray"]}
   },
   "Wigglytuff": {
     "NU Support": {"moves":["Thunder Wave","Hyper Beam","Blizzard","Body Slam"]}
@@ -243,6 +244,7 @@ var SETDEX_RBY = {
   },
   "Mr. Mime": {
     "NU Support": {"moves":["Thunder Wave","Psychic","Thunderbolt","Seismic Toss"]},
+    "NU Standard": {"moves":["Psychic","Thunderbolt","Seismic Toss","Thunder Wave"]},
     "Tradebacks OU Hypnosis": {"moves":["Hypnosis","Thunderbolt","Psychic","Seismic Toss"]}
   },
   "Scyther": {

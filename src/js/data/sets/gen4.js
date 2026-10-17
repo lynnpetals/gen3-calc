@@ -839,7 +839,8 @@ var SETDEX_DPP = {
     "OU Calm Mind": {"ability":"Levitate","item":"Leftovers","nature":"Bold","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":252,"df":112,"sa":48,"sd":80,"sp":16},"moves":["Calm Mind","Psychic","Hidden Power Fire","Rest"]},
     "Ubers Wall": {"ability":"Levitate","item":"Leftovers","nature":"Bold","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":252,"df":252,"sd":4},"moves":["Ice Beam","Moonlight","Thunder Wave","Hidden Power Fire"]},
     "Ubers Dual Screens": {"ability":"Levitate","item":"Light Clay","nature":"Timid","evs":{"hp":252,"sd":24,"sp":232},"moves":["Light Screen","Reflect","Lunar Dance","Thunder Wave"]},
-    "Doubles OU Utility": {"ability":"Levitate","item":"Sitrus Berry","nature":"Bold","evs":{"hp":252,"df":176,"sd":80},"moves":["Psychic","Toxic","Helping Hand","Trick Room"]}
+    "Doubles OU Utility": {"ability":"Levitate","item":"Sitrus Berry","nature":"Bold","evs":{"hp":252,"df":176,"sd":80},"moves":["Psychic","Toxic","Helping Hand","Trick Room"]},
+    "VGC 2010 Trick Room Support": {"level":50,"ability":"Levitate","item":"Sitrus Berry","nature":"Sassy","ivs":{"at":0,"sp":0},"evs":{"hp":252,"df":4,"sd":252},"moves":["Trick Room","Psychic","Helping Hand","Light Screen"]}
   },
   "Weedle": {
     "LC Soon to be Kakuna": {"level":5,"ability":"Shield Dust","item":"Life Orb","nature":"Adamant","evs":{"hp":196,"at":236,"df":36,"sp":36},"moves":["Bug Bite","Poison Sting","String Shot"]}
@@ -1670,6 +1671,8 @@ var SETDEX_DPP = {
     "Ubers Defensive": {"ability":"Rain Dish","item":"Leftovers","nature":"Calm","evs":{"hp":200,"df":56,"sd":252},"moves":["Leech Seed","Substitute","Protect","Ice Beam"]},
     "UU Special Attacker": {"ability":"Swift Swim","item":"Life Orb","nature":"Modest","evs":{"hp":32,"sa":252,"sp":224},"moves":["Surf","Energy Ball","Ice Beam","Rain Dance"]},
     "UU Swords Dance": {"ability":"Swift Swim","item":"Life Orb","nature":"Adamant","evs":{"hp":32,"at":252,"sp":224},"moves":["Swords Dance","Waterfall","Seed Bomb","Ice Punch"]},
+    "VGC 2010 Rain Dance Sweeper": {"level":50,"ability":"Swift Swim","item":"Life Orb","nature":"Modest","evs":{"hp":4,"sa":252,"sp":252},"moves":["Grass Knot","Hydro Pump","Leech Seed","Protect"]},
+    "VGC 2010 Bulky Support": {"level":50,"ability":"Swift Swim","item":"Sitrus Berry","nature":"Calm","evs":{"hp":244,"sa":44,"sp":220},"moves":["Fake Out","Leech Seed","Grass Knot","Protect"]},
     "Doubles OU Showdown Usage": {"ability":"Swift Swim","item":"Wide Lens","nature":"Modest","evs":{"hp":4,"sa":252,"sp":252},"moves":["Ice Beam","Hydro Pump","Energy Ball","Focus Blast"]}
   },
   "Seedot": {
